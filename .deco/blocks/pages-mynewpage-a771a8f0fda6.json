@@ -3,10 +3,28 @@
   "path": "/bertas",
   "sections": [
     {
-      "__resolveType": "site/sections/Hero.tsx"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "HeroBanner"
+      }
     },
     {
-      "__resolveType": "site/sections/SimpleTextList.tsx"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "ArticleCarousel"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "HalfBannerWithText"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

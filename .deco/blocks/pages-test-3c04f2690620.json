@@ -3,6 +3,12 @@
   "path": "/ecoplus",
   "sections": [
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
       "__resolveType": "HeroBanner"
     },
     {

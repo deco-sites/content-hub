@@ -3,9 +3,13 @@
   "path": "/ecoplus",
   "sections": [
     {
-      "__resolveType": "site/sections/Nav.tsx"
+      "__resolveType": "site/sections/Hero.tsx"
     },
     {
+      "__resolveType": "site/sections/BlogPosts.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Theme/Theme.tsx",
       "font": {
         "fonts": [
           {
@@ -55,21 +59,14 @@
         "--rounded-box": "1rem",
         "--rounded-badge": "1.9rem",
         "--animation-input": "0.2s"
-      },
-      "__resolveType": "site/sections/Theme/Theme.tsx"
-    },
-    {
-      "__resolveType": "site/sections/Hero.tsx"
+      }
     },
     {
       "__resolveType": "site/sections/ImageWithParagraph.tsx"
     },
     {
-      "placement": "right",
-      "__resolveType": "site/sections/ImageWithParagraph.tsx"
-    },
-    {
-      "__resolveType": "site/sections/BlogPosts.tsx"
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "placement": "right"
     },
     {
       "__resolveType": "site/sections/Footer.tsx"

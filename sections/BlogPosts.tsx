@@ -59,8 +59,8 @@ export default function BlogPosts({
   return (
     <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm py-12 lg:py-28">
       <div class="space-y-16">
-        <div class="flex flex-col lg:flex-row gap-4 justify-between">
-          <div class="space-y-6 lg:w-1/2">
+        <div class="flex flex-col lg:flex-row gap-4 justify-center">
+          <div class="space-y-6 text-center lg:w-1/2">
             <h2 class="text-4xl leading-snug">
               {title}
             </h2>

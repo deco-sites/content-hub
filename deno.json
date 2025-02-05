@@ -6,7 +6,7 @@
     "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@0.3.4",
     "@deco/durable": "jsr:@deco/durable@0.5.3",
     "@deco/warp": "jsr:@deco/warp@0.3.8",
-    "@eluxlab/library-components": "npm:@eluxlab/library-components@^0.1.2-beta.0",
+    "@eluxlab/library-components": "https://esm.sh/@eluxlab/library-components@0.1.2-beta.0?external=react,react-dom,react/jsx-runtime&target=es2022",
     "@hono/hono": "jsr:@hono/hono@^4.5.4",
     "@std/assert": "jsr:@std/assert@^1.0.2",
     "@std/async": "jsr:@std/async@^0.224.1",
@@ -29,6 +29,8 @@
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
     "partytown/": "https://deno.land/x/partytown@0.4.8/",
     "preact": "npm:preact@10.23.1",
+    "react": "npm:preact@10.23.1/compat",
+    "react-dom": "npm:preact@10.23.1/compat",
     "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
     "simple-git": "npm:simple-git@^3.25.0",
     "std/": "https://deno.land/std@0.190.0/",
@@ -78,7 +80,7 @@
       ]
     }
   },
-  "nodeModulesDir": "auto",
+  "nodeModulesDir": false,
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact",

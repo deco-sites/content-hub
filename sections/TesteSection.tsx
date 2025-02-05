@@ -1,11 +1,11 @@
-// Document https://docs.deco.cx/en/cms-capabilities/content/sections#sections
-// import { Button } from "npm:@eluxlab/library-components";
+import React from "preact/compat";
+import { Button } from "@eluxlab/library-components";
 
 export default function TesteSection() {
   return (
     <div>
       <h2>TesteSection</h2>
-      {/* <Button /> */}
+      <Button />
     </div>
   );
 }

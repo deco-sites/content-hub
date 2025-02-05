@@ -1,11 +1,9 @@
 import React from "preact/compat";
-// import { Button } from "@eluxlab/library-components";
 
 export default function TesteSection() {
   return (
     <div>
-      <h2>TesteSection</h2>
-      {/* <Button /> */}
+      <h2>TesteSection 2</h2>
     </div>
   );
 }

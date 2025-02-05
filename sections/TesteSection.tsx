@@ -1,11 +1,11 @@
 import React from "preact/compat";
-import { Button } from "@eluxlab/library-components";
+// import { Button } from "@eluxlab/library-components";
 
 export default function TesteSection() {
   return (
     <div>
       <h2>TesteSection</h2>
-      <Button />
+      {/* <Button /> */}
     </div>
   );
 }

@@ -42,8 +42,7 @@
     "daisyui": "npm:daisyui@4.4.19",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
     "@deco/deco": "jsr:@deco/deco@1.109.0",
-    "@deco/dev": "jsr:@deco/dev@1.109.0",
-    "swiper": "https://esm.sh/swiper@11.2.1"
+    "@deco/dev": "jsr:@deco/dev@1.109.0"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
@@ -81,10 +80,11 @@
       ]
     }
   },
-  "nodeModulesDir": "none",
+  "nodeModulesDir": false,
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "experimentalDecorators": true
   },
   "lock": false
 }

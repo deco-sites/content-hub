@@ -12,6 +12,14 @@
       "__resolveType": "HeroBanner"
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Teste.tsx",
+        "title": "teste",
+        "description": "<p>teste</p>"
+      }
+    },
+    {
       "__resolveType": "ArticleCarousel"
     },
     {

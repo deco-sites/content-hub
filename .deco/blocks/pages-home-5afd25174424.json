@@ -25,6 +25,20 @@
           }
         ]
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ThreeeColuns.tsx",
+        "rightText": "<p>Os produtos são selecionados com base na etiquetagem energética e testes rigorosos no alto desempenho em economia de energia e água. Aqueles que apresentam os mais altos índices de eficiência são incluídos no programa Electrolux EcoPlus.</p>",
+        "leftText": "<p>85%* do impacto ambiental de um eletrodoméstico, em todo seu ciclo de vida, acontece durante a fase de uso, na casa dos consumidores, principalmente devido à utilização de energia. Pensando nisso, o Electrolux Ecoplus chega com o objetivo de ajudar os consumidores a fazerem escolhas ainda mais responsáveis, através da seleção dos produtos mais eficientes do portfólio Electrolux.</p><p><span style=\"font-size: 10pt\">*De acordo com estudos realizados pela Electrolux, que avaliam o impacto ambiental dos produtos em seu ciclo de vida, desde extração da matéria prima, manufatura, logística, uso e destino final, conforme ISO 14040-14043.</span></p>",
+        "imageSrc": "https://data.decoassets.com/content-hub/ca9ae9fd-f84e-4595-9fb6-9e63dabe8f2f/maquina.png",
+        "alt": "Máquina de Lavar",
+        "width": "520px",
+        "height": "520px",
+        "rightTextColor": "#000040",
+        "leftTextColor": "#000040"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

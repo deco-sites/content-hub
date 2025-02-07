@@ -2933,6 +2933,9 @@ input.tab:checked + .tab-content,
 .min-h-\[42px\] {
   min-height: 42px;
 }
+.min-h-\[492px\] {
+  min-height: 492px;
+}
 .min-h-full {
   min-height: 100%;
 }
@@ -3312,6 +3315,13 @@ input.tab:checked + .tab-content,
 }
 .border-t {
   border-top-width: 1px;
+}
+.border-solid {
+  border-style: solid;
+}
+.border-\[\#dfe7ea\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(223 231 234 / var(--tw-border-opacity));
 }
 .border-base-content {
   --tw-border-opacity: 1;

@@ -1,5 +1,5 @@
 import Component from "site/components/ui/Slider.tsx";
-import { ISliderConfigs } from "site/types/Slider.d.ts";
+import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
 /**
  * @title {{#alt}}{{alt}}{{/alt}}{{^alt}}Banner{{/alt}}

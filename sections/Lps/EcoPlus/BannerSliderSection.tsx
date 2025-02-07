@@ -3,7 +3,7 @@ import { useId } from "site/sdk/useId.ts";
 import { ISliderConfigs } from "site/types/Slider.d.ts";
 
 /**
- * @description Seção principal com um slider de banners.
+ * @description Seção com um slider de banners.
  */
 interface Props {
   /**
@@ -17,7 +17,7 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
-export default function Hero({
+export default function BannerSliderSection({
   banners,
   configs = {}
 }: Props): React.JSX.Element {

@@ -42,7 +42,7 @@
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
     "@deco/deco": "jsr:@deco/deco@1.109.0",
     "@deco/dev": "jsr:@deco/dev@1.109.0",
-    "swiper": "https://esm.sh/swiper@11.2.1"
+    "@eluxlab/library-components": "https://esm.sh/@eluxlab/library-components@0.1.1?external=react,react-dom,react/jsx-runtime&target=es2022"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",

@@ -1,5 +1,5 @@
-import { Slider } from "http://127.0.0.1:5500/dist/index.js";
-import { ISliderConfigs } from "site/types/Slider.d.ts";
+import { Slider } from "@eluxlab/library-components";
+import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
 export type SwiperSliderProps = {
   slides: React.JSX.Element[] | [];

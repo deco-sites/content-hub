@@ -102,7 +102,7 @@ export interface ISliderConfigs {
    * @title Slides visíveis por vez
    * @hide
    */
-  slidesPerView?: number | string;
+  slidesPerView?: number | "auto";
 
   /**
    * @title Breakpoints

@@ -3,42 +3,28 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "Header"
-    },
-    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/TesteSection.tsx"
+        "__resolveType": "site/sections/TitleSection.tsx",
+        "iconRedirect": "#",
+        "iconAlt": "Geladeira",
+        "iconTitle": "<p>Geladeira</p>",
+        "iconSrc": "https://data.decoassets.com/content-hub/fd1fc150-d987-46a4-ac50-e1cbdb1c2495/SCR-20250204-pkoy.png",
+        "icons": [
+          {
+            "iconTitle": "<p>Geladeira</p>",
+            "iconAlt": "Geladeira",
+            "iconRedirect": "#",
+            "iconSrc": "https://data.decoassets.com/content-hub/fd1fc150-d987-46a4-ac50-e1cbdb1c2495/SCR-20250204-pkoy.png"
+          },
+          {
+            "iconTitle": "<p>Geladeira 2</p>",
+            "iconAlt": "Geladeira 2",
+            "iconRedirect": "#",
+            "iconSrc": "https://data.decoassets.com/content-hub/fd1fc150-d987-46a4-ac50-e1cbdb1c2495/SCR-20250204-pkoy.png"
+          }
+        ]
       }
-    },
-    {
-      "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p>Click here to tweak this text however you want.</p>",
-      "cta": [],
-      "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-    },
-    {
-      "__resolveType": "site/sections/Logos.tsx"
-    },
-    {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx"
-    },
-    {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx",
-      "placement": "right"
-    },
-    {
-      "__resolveType": "site/sections/BlogPosts.tsx"
-    },
-    {
-      "__resolveType": "site/sections/Testimonials.tsx",
-      "arrows": true
-    },
-    {
-      "__resolveType": "site/sections/Faq.tsx"
-    },
-    {
-      "__resolveType": "Footer"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

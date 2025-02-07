@@ -1,7 +1,8 @@
 {
-  "deno.enable": true,
-  "editor.quickSuggestions": {
-    "strings": true
+  "deno.lint": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
   },
-  "editor.defaultFormatter": "denoland.vscode-deno"
+  "deno.enable": true,
+  "deno.path": "C:\\Users\\renan.coelho\\.deno\\bin\\deno.exe"
 }

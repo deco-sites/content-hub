@@ -15,7 +15,7 @@ interface IconItem {
   iconTarget?: boolean;
 }
 
-function Example({ title, subtitle, icons = [] }: Props) {
+function TitleSection({ title, subtitle, icons = [] }: Props) {
   return (
     <>
       <div>
@@ -41,4 +41,4 @@ function Example({ title, subtitle, icons = [] }: Props) {
   );
 }
 
-export default Example;
+export default TitleSection;

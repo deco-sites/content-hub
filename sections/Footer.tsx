@@ -42,9 +42,8 @@ export interface Props {
 
 export default function Footer({
   logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
-    alt: "Logo",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
+    alt: "Logo"
   },
   links = [
     {
@@ -54,8 +53,8 @@ export default function Footer({
         { label: "Link Two", href: "/" },
         { label: "Link Three", href: "/" },
         { label: "Link Four", href: "/" },
-        { label: "Link Five", href: "/" },
-      ],
+        { label: "Link Five", href: "/" }
+      ]
     },
     {
       title: "Column Two",
@@ -64,8 +63,8 @@ export default function Footer({
         { label: "Link Seven", href: "/" },
         { label: "Link Eight", href: "/" },
         { label: "Link Nine", href: "/" },
-        { label: "Link Ten", href: "/" },
-      ],
+        { label: "Link Ten", href: "/" }
+      ]
     },
     {
       title: "Column Three",
@@ -74,39 +73,39 @@ export default function Footer({
         { label: "Link Twelve", href: "/" },
         { label: "Link FourThirteenteen", href: "/" },
         { label: "Link Fourteen", href: "/" },
-        { label: "Link Fifteen", href: "/" },
-      ],
-    },
+        { label: "Link Fifteen", href: "/" }
+      ]
+    }
   ],
   subscribe = {
     title: "Subcribe",
     description:
       "Join our newsletter to stay up to date on features and releases.",
     instructions:
-      "By subscribing you agree to with our <a href='/' target='_blank' class='link'>Privacy Policy</a> and provide consent to receive updates from our company.",
+      "By subscribing you agree to with our <a href='/' target='_blank' class='link'>Privacy Policy</a> and provide consent to receive updates from our company."
   },
   madeWith = {
     label: "Made with",
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/cc202be0-af57-4b32-b9c9-d1d7dc97bf85",
-    href: "https://deco.cx",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/cc202be0-af57-4b32-b9c9-d1d7dc97bf85",
+    href: "https://deco.cx"
   },
   copyright = "© 2024 deco.cx. All rights reserved.",
   bottomLinks = [
     { label: "Privacy Policy", href: "/" },
     { label: "Terms of Service", href: "/" },
-    { label: "Cookies Settings", href: "/" },
+    { label: "Cookies Settings", href: "/" }
   ],
   social = [
     { network: "Facebook", href: "" },
     { network: "Instagram", href: "" },
     { network: "X - Twitter", href: "" },
     { network: "Linkedin", href: "" },
-    { network: "Youtube", href: "" },
-  ],
+    { network: "Youtube", href: "" }
+  ]
 }: Props) {
   return (
     <div class="lg:container mx-auto md:max-w-6xl px-4 pt-16 text-sm">
+      <div class="teste123321"></div>
       <div class="flex flex-col gap-20">
         <div class="flex flex-col gap-6 justify-between lg:flex-row">
           <div>
@@ -118,10 +117,10 @@ export default function Footer({
             />
           </div>
           <div class="flex gap-9">
-            {links?.map((link) => (
+            {links?.map(link => (
               <div>
                 <h4 class="font-semibold mb-4">{link.title}</h4>
-                {link.items?.map((item) => (
+                {link.items?.map(item => (
                   <a
                     class="block hover:underline link no-underline py-1"
                     href={item.href}
@@ -153,8 +152,7 @@ export default function Footer({
               <p
                 class="text-xs"
                 dangerouslySetInnerHTML={{ __html: subscribe.instructions }}
-              >
-              </p>
+              ></p>
             </form>
           </div>
         </div>
@@ -175,7 +173,7 @@ export default function Footer({
             </a>
             <span>{copyright}</span>
             <div class="flex gap-2 justify-between lg:gap-6">
-              {bottomLinks?.map((item) => (
+              {bottomLinks?.map(item => (
                 <a class="link" href={item.href} target="_blank">
                   {item.label}
                 </a>
@@ -183,7 +181,7 @@ export default function Footer({
             </div>
           </div>
           <div class="flex gap-3">
-            {social?.map((item) => (
+            {social?.map(item => (
               <a class="block" href={item.href} target="_blank">
                 {item.network == "Facebook" && (
                   <svg

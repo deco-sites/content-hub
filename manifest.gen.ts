@@ -15,10 +15,8 @@ import * as $$$$$$4 from "./sections/Hero.tsx";
 import * as $$$$$$13 from "./sections/hero2.tsx";
 import * as $$$$$$5 from "./sections/ImageWithParagraph.tsx";
 import * as $$$$$$6 from "./sections/Logos.tsx";
-import * as $$$$$$7 from "./sections/Lps/EcoPlus/BannerSliderSection.tsx";
 import * as $$$$$$8 from "./sections/Lps/EcoPlus/InfoCardWithImageSliderSection.tsx";
 import * as $$$$$$9 from "./sections/Testimonials.tsx";
-import * as $$$$$$10 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -36,6 +34,15 @@ const manifest = {
     "site/sections/Lps/EcoPlus/InfoCardWithImageSliderSection.tsx": $$$$$$8,
     "site/sections/Testimonials.tsx": $$$$$$9,
     "site/sections/Theme/Theme.tsx": $$$$$$10,
+    "site/sections/hero-1.tsx": $$$$$$10,
+    "site/sections/hero-2.tsx": $$$$$$11,
+    "site/sections/Hero.tsx": $$$$$$4,
+    "site/sections/hero2.tsx": $$$$$$12,
+    "site/sections/ImageWithParagraph.tsx": $$$$$$5,
+    "site/sections/InfoCardComponent.tsx": $$$$$$6,
+    "site/sections/Logos.tsx": $$$$$$7,
+    "site/sections/Testimonials.tsx": $$$$$$8,
+    "site/sections/Theme/Theme.tsx": $$$$$$9,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

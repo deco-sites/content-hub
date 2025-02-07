@@ -5,6 +5,7 @@
 import * as $_app from "./routes/_app.tsx";
 import * as $BannerSlider from "./islands/BannerSlider.tsx";
 import * as $InfoCardWithImageSlider from "./islands/InfoCardWithImageSlider.tsx";
+
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {

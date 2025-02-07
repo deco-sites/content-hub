@@ -2894,6 +2894,9 @@ input.tab:checked + .tab-content,
 .h-\[3px\] {
   height: 3px;
 }
+.h-auto {
+  height: auto;
+}
 .h-full {
   height: 100%;
 }

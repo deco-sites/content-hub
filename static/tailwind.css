@@ -1232,6 +1232,10 @@ html {
     border-radius: inherit;
   }
 }
+.\!link {
+  cursor: pointer !important;
+  text-decoration-line: underline !important;
+}
 .link {
   cursor: pointer;
   text-decoration-line: underline;
@@ -1936,9 +1940,17 @@ input.tab:checked + .tab-content,
   margin-bottom: 0px;
   margin-inline-start: -1px;
 }
+.\!link:focus {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+}
 .link:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+.\!link:focus-visible {
+  outline: 2px solid currentColor !important;
+  outline-offset: 2px !important;
 }
 .link:focus-visible {
   outline: 2px solid currentColor;
@@ -2915,6 +2927,9 @@ input.tab:checked + .tab-content,
 .w-min {
   width: -moz-min-content;
   width: min-content;
+}
+.w-screen {
+  width: 100vw;
 }
 .min-w-\[100px\] {
   min-width: 100px;

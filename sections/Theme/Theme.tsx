@@ -15,23 +15,23 @@ export interface ThemeColors {
    */
   "base-100"?: string;
   /** @format color-input */
-  "primary"?: string;
+  primary?: string;
   /** @format color-input */
-  "secondary"?: string;
+  secondary?: string;
   /**
    * @title Accent
    * @format color-input */
-  "tertiary"?: string;
+  tertiary?: string;
   /** @format color-input */
-  "neutral"?: string;
+  neutral?: string;
   /** @format color-input */
-  "success"?: string;
+  success?: string;
   /** @format color-input */
-  "warning"?: string;
+  warning?: string;
   /** @format color-input */
-  "error"?: string;
+  error?: string;
   /** @format color-input */
-  "info"?: string;
+  info?: string;
 }
 
 export interface ComplementaryColors {
@@ -136,11 +136,7 @@ export interface Props {
   mode?: "light" | "dark";
 }
 
-type Theme =
-  & ThemeColors
-  & ComplementaryColors
-  & Button
-  & Miscellaneous;
+type Theme = ThemeColors & ComplementaryColors & Button & Miscellaneous;
 
 const darken = (color: string, percentage: number) =>
   new Color(color).darken(percentage);
@@ -154,9 +150,7 @@ const contrasted = (color: string, percentage = 0.8) => {
   return isDark(c) ? c.mix("white", percentage) : c.mix("black", percentage);
 };
 
-const toVariables = (
-  t: Theme & Required<ThemeColors>,
-): [string, string][] => {
+const toVariables = (t: Theme & Required<ThemeColors>): [string, string][] => {
   const toValue = (color: string | ReturnType<typeof darken>) => {
     const [l, c, h] = new Color(color).oklch;
 
@@ -191,7 +185,7 @@ const toVariables = (
     "--erc": t["error-content"] ?? contrasted(t["error"]),
 
     "--in": t["info"],
-    "--inc": t["info-content"] ?? contrasted(t["info"]),
+    "--inc": t["info-content"] ?? contrasted(t["info"])
   }).map(([key, color]) => [key, toValue(color)] as [string, string]);
 
   const miscellaneousVariables = Object.entries({
@@ -203,22 +197,22 @@ const toVariables = (
     "--btn-focus-scale": t["--btn-focus-scale"],
     "--border-btn": t["--border-btn"],
     "--tab-border": t["--tab-border"],
-    "--tab-radius": t["--tab-radius"],
+    "--tab-radius": t["--tab-radius"]
   });
 
   return [...colorVariables, ...miscellaneousVariables];
 };
 
 const defaultTheme = {
-  "primary": "oklch(1 0 0)",
-  "secondary": "oklch(1 0 0)",
-  "tertiary": "oklch(1 0 0)",
-  "neutral": "oklch(1 0 0)",
+  primary: "oklch(1 0 0)",
+  secondary: "oklch(1 0 0)",
+  tertiary: "oklch(1 0 0)",
+  neutral: "oklch(1 0 0)",
   "base-100": "oklch(1 0 0)",
-  "info": "oklch(1 0 0)",
-  "success": "oklch(0.9054 0.1546 194.7689)",
-  "warning": "oklch(1 0 0)",
-  "error": "oklch(1 0 0)",
+  info: "oklch(1 0 0)",
+  success: "oklch(0.9054 0.1546 194.7689)",
+  warning: "oklch(1 0 0)",
+  error: "oklch(1 0 0)",
 
   "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
   "--rounded-btn": "0.2rem" as const, // border radius rounded-btn utility class, used in buttons and similar element
@@ -228,7 +222,7 @@ const defaultTheme = {
   "--btn-focus-scale": "0.95" as const, // scale transform of button when you focus on it
   "--border-btn": "1px" as const, // border width of buttons
   "--tab-border": "1px", // border width of tabs
-  "--tab-radius": "0.5rem", // border radius of tabs
+  "--tab-radius": "0.5rem" // border radius of tabs
 };
 
 /**
@@ -246,14 +240,14 @@ function Section({
   buttonStyle,
   otherStyles,
   font,
-  colorScheme,
+  colorScheme
 }: Props) {
   const theme = {
     ...defaultTheme,
     ...complementaryColors,
     ...mainColors,
     ...buttonStyle,
-    ...otherStyles,
+    ...otherStyles
   };
 
   const variables = [
@@ -261,10 +255,9 @@ function Section({
     [
       "--font-family",
       font?.family ||
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
-    ],
-  ]
-    .map(([name, value]) => ({ name, value }));
+        "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif"
+    ]
+  ].map(([name, value]) => ({ name, value }));
 
   return (
     <SiteTheme
@@ -279,15 +272,41 @@ export function Preview(props: Props) {
   const adminColorMode = props.mode === "dark" ? "dark" : "light";
   return (
     <>
-      {
-        /* This stylesheet is used to simulate the colors from the admin's color schema (admin's light or dark mode), which are not accessible in the site's color schema.
-        * This is a temporary solution until the admin's color schema is accessible.
-        * TODO(@carol): Change this temporary solution / discuss with designers a doable approach
-       */
-      }
+      {/* This stylesheet is used to simulate the colors from the admin's color schema (admin's light or dark mode), which are not accessible in the site's color schema.
+       * This is a temporary solution until the admin's color schema is accessible.
+       * TODO(@carol): Change this temporary solution / discuss with designers a doable approach
+       */}
       <style>
         {`
-          @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;700&display=swap');
+          @font-face {
+            font-family: 'Electrolux Sans';
+            src:
+              url('assets/fonts/ElectroluxSans-Regular.woff2') format('woff2'),
+              url('assets/fonts/ElectroluxSans-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+          }
+
+          @font-face {
+            font-family: 'Electrolux Sans';
+            src:
+              url('assets/fonts/ElectroluxSans-Bold.woff2') format('woff2'),
+              url('assets/fonts/ElectroluxSans-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+          }
+
+          @font-face {
+            font-family: 'Electrolux Sans';
+            src:
+              url('assets/fonts/ElectroluxSans-SemiBold.woff2') format('woff2'),
+              url('assets/fonts/ElectroluxSans-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+          }
 
           :root {
             --admin-color-dark-bg: #0d1717;
@@ -299,7 +318,7 @@ export function Preview(props: Props) {
             --admin-border-hover-color-light: #819292;
             --admin-border-hover-color-dark: #949e9e;
             --admin-hover-bg-color: #fafafa;
-            --admin-font-family: 'Albert Sans', sans-serif;
+            --admin-font-family: 'Electrolux Sans', sans-serif;
           }
 
           .admin-font-family {
@@ -370,9 +389,7 @@ export function Preview(props: Props) {
       <div
         className={`flex flex-col gap-2 p-1 text-base w-full ${adminColorMode}`}
       >
-        <div className="admin-font-family">
-          Components and styles
-        </div>
+        <div className="admin-font-family">Components and styles</div>
         <div className="flex flex-col w-full gap-2">
           <PreviewContainer
             title="Text colors"
@@ -405,9 +422,7 @@ export function Preview(props: Props) {
         </div>
       </div>
       {props.font?.family && (
-        <div className="text-center py-2">
-          Font: {props.font.family}
-        </div>
+        <div className="text-center py-2">Font: {props.font.family}</div>
       )}
     </>
   );
@@ -418,7 +433,7 @@ const ButtonSizesPreview = () => {
     lg: "Large",
     md: "Normal",
     sm: "Small",
-    xs: "Tiny",
+    xs: "Tiny"
   };
 
   const buttonStyles = ["", "primary", "secondary", "accent"];
@@ -439,7 +454,7 @@ const ButtonSizesPreview = () => {
 
   return (
     <div className="bg-base-100 overflow-x-auto rounded-lg flex flex-col p-2 gap-2">
-      {buttonStyles.map((style) => renderButtonRow(style))}
+      {buttonStyles.map(style => renderButtonRow(style))}
     </div>
   );
 };
@@ -450,7 +465,7 @@ const ButtonColorsPreview = () => {
     { class: "", label: "Button" },
     { class: "btn-primary", label: "Primary" },
     { class: "btn-secondary", label: "Secondary" },
-    { class: "btn-accent", label: "Accent" },
+    { class: "btn-accent", label: "Accent" }
   ];
 
   const renderButtonRow = (type: string) => (
@@ -469,7 +484,7 @@ const ButtonColorsPreview = () => {
 
   return (
     <div className="bg-base-100 overflow-x-auto rounded-lg flex flex-col p-2 gap-2">
-      {buttonTypesClasses.map((type) => renderButtonRow(type))}
+      {buttonTypesClasses.map(type => renderButtonRow(type))}
     </div>
   );
 };
@@ -479,12 +494,12 @@ const ButtonStylesPreview = () => {
     { class: "btn", label: "Button" },
     { class: "btn-outline", label: "Outline" },
     { class: "btn-ghost text-[initial]", label: "Ghost" },
-    { class: "btn-link", label: "Link" },
+    { class: "btn-link", label: "Link" }
   ];
 
   return (
     <div className="bg-base-100 overflow-x-auto rounded-lg flex flex-row p-2 gap-2">
-      {buttons.map((button) => (
+      {buttons.map(button => (
         <button className={`btn btn-xs md:btn-sm capitalize ${button.class}`}>
           {button.label}
         </button>
@@ -498,7 +513,7 @@ const TextColorsPreview = () => {
     "text-[initial]",
     "text-primary",
     "text-secondary",
-    "text-accent",
+    "text-accent"
   ];
 
   return (
@@ -512,20 +527,21 @@ const TextColorsPreview = () => {
   );
 };
 
-const PreviewContainer = (
-  { mode, title, children, codeString }: {
-    mode: string;
-    title: string;
-    children: ComponentChildren;
-    codeString: string;
-  },
-) => {
-  const borderClass = mode === "dark"
-    ? "border-color-dark"
-    : "border-color-light";
-  const btnOutlineClass = mode === "dark"
-    ? "btn-outline-dark"
-    : "btn-outline-light";
+const PreviewContainer = ({
+  mode,
+  title,
+  children,
+  codeString
+}: {
+  mode: string;
+  title: string;
+  children: ComponentChildren;
+  codeString: string;
+}) => {
+  const borderClass =
+    mode === "dark" ? "border-color-dark" : "border-color-light";
+  const btnOutlineClass =
+    mode === "dark" ? "btn-outline-dark" : "btn-outline-light";
   const checkboxId = `show-code-${title.replace(/\s+/g, "-").toLowerCase()}`;
   const codeBlockId = `code-block-${title.replace(/\s+/g, "-").toLowerCase()}`;
 
@@ -545,15 +561,15 @@ const PreviewContainer = (
     }
     #${checkboxId}:checked ~ .hide-label {
       background-color: ${
-    mode === "dark"
-      ? "var(--admin-hover-bg-color)"
-      : "var(--admin-text-color-light)"
-  };
+        mode === "dark"
+          ? "var(--admin-hover-bg-color)"
+          : "var(--admin-text-color-light)"
+      };
       color: ${
-    mode === "dark"
-      ? "var(--admin-text-color-light)"
-      : "var(--admin-hover-bg-color)"
-  };
+        mode === "dark"
+          ? "var(--admin-text-color-light)"
+          : "var(--admin-hover-bg-color)"
+      };
     }
   `;
 
@@ -651,12 +667,12 @@ const snippets = {
   <button class="btn btn-md btn-secondary">Normal</button>
   <button class="btn btn-sm btn-secondary">Small</button>
   <button class="btn btn-xs btn-secondary">Tiny</button>
-  
+
   {/* Fourth row */}
   <button class="btn btn-lg btn-accent">Large</button>
   <button class="btn btn-md btn-accent">Normal</button>
   <button class="btn btn-sm btn-accent">Small</button>
-  <button class="btn btn-xs btn-accent">Tiny</button>`,
+  <button class="btn btn-xs btn-accent">Tiny</button>`
 };
 
 export default Section;

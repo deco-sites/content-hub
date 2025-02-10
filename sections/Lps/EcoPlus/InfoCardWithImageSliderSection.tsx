@@ -35,13 +35,19 @@ export default function InfoCardWithImageSliderSection({
 
   if (!infoCards?.length) return <></>;
 
-  const { autoplay = {}, slidesPerView = 3, spaceBetween = 10 } = configs ?? {};
+  const { autoplay = {}, slidesPerView = 1, spaceBetween = 10 } = configs ?? {};
 
   const autoplayConfig = autoplay.enabled
     ? {
         delay: autoplay.delay ?? 3000
       }
     : undefined;
+
+  const breakpoints = {
+    1024: {
+      slidesPerView: 3
+    }
+  };
 
   return (
     <Section {...section}>
@@ -51,7 +57,8 @@ export default function InfoCardWithImageSliderSection({
             ...configs,
             slidesPerView,
             spaceBetween,
-            autoplay: autoplayConfig
+            autoplay: autoplayConfig,
+            breakpoints
           }}
           rootId={rootId}
           infoCards={infoCards}

@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import type { ISection } from "site/types/Section.d.ts";
 import type { createElement } from "preact";
 
@@ -17,10 +18,7 @@ export default function Section({
     <div>
       <div class="section-container flex flex-col w-full gap-4">
         {!isEmptyTitle && (
-          <div
-            dangerouslySetInnerHTML={{ __html: title }}
-            class="section-title b-4"
-          />
+          <Text title={title} classes={{ container: "section-title" }} />
         )}
         {children && <div class="flex">{children}</div>}
       </div>

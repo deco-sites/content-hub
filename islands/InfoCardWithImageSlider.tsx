@@ -24,7 +24,9 @@ function Island({ infoCards = [], configs = {}, rootId }: Props) {
         }
 
         .swiper-slide {
-          width: 25% !important;
+         @media screen and (min-width: 1024px){
+              width: 25% !important;
+          }
         }
 
         .swiper-wrapper {

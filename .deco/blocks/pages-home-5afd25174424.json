@@ -7,7 +7,9 @@
       "banners": [
         {
           "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png",
-          "alt": "1"
+          "alt": "1",
+          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/79fcf74d-c740-4913-adba-af72e98fbc9c___28b400f72192596d1e634730d50a080c.png",
+          "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png"
         }
       ],
       "configs": {

@@ -3,36 +3,66 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "Header"
+      "__resolveType": "site/sections/Lps/EcoPlus/BannerSliderSection.tsx",
+      "banners": [
+        {
+          "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png",
+          "alt": "1"
+        }
+      ],
+      "configs": {
+        "loop": true
+      },
+      "section": {
+        "title": "<p></p>"
+      }
     },
     {
-      "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p>Click here to tweak this text however you want.</p>",
-      "cta": [],
-      "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-    },
-    {
-      "__resolveType": "site/sections/Logos.tsx"
-    },
-    {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx"
-    },
-    {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx",
-      "placement": "right"
-    },
-    {
-      "__resolveType": "site/sections/BlogPosts.tsx"
-    },
-    {
-      "__resolveType": "site/sections/Testimonials.tsx",
-      "arrows": true
-    },
-    {
-      "__resolveType": "site/sections/Faq.tsx"
-    },
-    {
-      "__resolveType": "Footer"
+      "__resolveType": "site/sections/Lps/EcoPlus/InfoCardWithImageSliderSection.tsx",
+      "infoCards": [
+        {
+          "image": {
+            "alt": "Entrega com carbono neutro",
+            "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/e0aca396-345d-4b99-aee0-8ff48f38b006___4e0fd265094bea44e3c12c99ffc1b32d.png"
+          },
+          "link": {
+            "href": "/",
+            "text": "Saiba mais",
+            "title": "Saiba mais"
+          },
+          "title": "Entrega com carbono neutro",
+          "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido à energia solar. Vem entender como a gente faz isso funcionar!"
+        },
+        {
+          "image": {
+            "alt": "Máquinas feitas com material reciclado",
+            "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/b836fc06-20de-4fb8-9a7a-10ece2fb9753___c8c6d68ac6b7fe043c92d379935bf279.png"
+          },
+          "link": {
+            "href": "/",
+            "text": "Saiba mais",
+            "title": "Saiba mais"
+          },
+          "title": "Máquinas feitas com material reciclado",
+          "text": "Reduzimos até 700 toneladas de CO2 por ano ao usar plástico reciclado em nossas máquinas de lavar. Que tal saber mais?"
+        },
+        {
+          "image": {
+            "alt": "Mais produtos EcoPlus até 2030",
+            "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/38b28362-721d-49db-b959-4627c1dd1948___a1875007a65fa155bf6e9befcd091cf1.png"
+          },
+          "link": {
+            "href": "/",
+            "text": "Saiba mais",
+            "title": "Saiba mais"
+          },
+          "text": "Estamos estudando formas de deixar nossos produtos cada vez mais sustentáveis. Hoje, já são menos 500 mil toneladas de CO2 nos produtos em funcionamento, acredita?",
+          "title": "Mais produtos EcoPlus até 2030"
+        }
+      ],
+      "section": {
+        "title": "<h2 style=\"text-align: center\">NOSSAS ESCOLHAS PARA VIVER MELHOR</h2><p style=\"text-align: center\">Saiba o que estamos fazendo por um futuro de qualidade</p>"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

@@ -1,3 +1,4 @@
+import Image from "apps/website/components/Image.tsx";
 import Component from "site/components/ui/Slider.tsx";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
@@ -26,7 +27,14 @@ type Props = {
 
 function Island({ banners = [], configs = {}, rootId }: Props) {
   const slides = banners.map(({ src, alt }, idx) => (
-    <img key={`${alt}-${idx}`} src={src} alt={alt} />
+    <Image
+      key={`${alt}-${idx}`}
+      src={src}
+      alt={alt}
+      width={1920}
+      height={440}
+      class="w-full"
+    />
   ));
 
   return <Component configs={configs} slides={slides} rootId={rootId} />;

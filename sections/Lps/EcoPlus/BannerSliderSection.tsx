@@ -1,11 +1,18 @@
 import BannerSlider, { type IBannerSlide } from "site/islands/BannerSlider.tsx";
+import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
-import { ISliderConfigs } from "site/types/Slider.d.ts";
+import type { ISection } from "site/types/Section.d.ts";
+import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
 /**
  * @description Seção com um slider de banners.
  */
 interface Props {
+  /**
+   * @title Configuração da Seção
+   * @description Define título, subtítulo e espaçamento da seção.
+   */
+  section?: ISection;
   /**
    * @title Banners
    */
@@ -18,9 +25,10 @@ interface Props {
 }
 
 export default function BannerSliderSection({
+  section,
   banners,
   configs = {}
-}: Props): React.JSX.Element {
+}: Props) {
   const rootId = useId();
 
   if (!banners?.length) return <></>;
@@ -34,15 +42,17 @@ export default function BannerSliderSection({
     : undefined;
 
   return (
-    <BannerSlider
-      configs={{
-        ...configs,
-        slidesPerView,
-        autoplay: autoplayConfig
-      }}
-      rootId={rootId}
-      banners={banners}
-    />
+    <Section {...section}>
+      <BannerSlider
+        configs={{
+          ...configs,
+          slidesPerView,
+          autoplay: autoplayConfig
+        }}
+        rootId={rootId}
+        banners={banners}
+      />
+    </Section>
   );
 }
 

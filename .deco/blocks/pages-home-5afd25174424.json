@@ -3,44 +3,67 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "__resolveType": "site/sections/Lps/EcoPlus/BannerSliderSection.tsx",
+      "banners": [
+        {
+          "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png",
+          "alt": "1",
+          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/79fcf74d-c740-4913-adba-af72e98fbc9c___28b400f72192596d1e634730d50a080c.png",
+          "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png"
+        }
+      ],
+      "configs": {
+        "loop": true
+      },
       "section": {
-        "__resolveType": "site/sections/TitleSection.tsx",
-        "iconRedirect": "#",
-        "iconAlt": "Geladeira",
-        "iconTitle": "<p>Geladeira</p>",
-        "iconSrc": "https://data.decoassets.com/content-hub/fd1fc150-d987-46a4-ac50-e1cbdb1c2495/SCR-20250204-pkoy.png",
-        "icons": [
-          {
-            "iconTitle": "<p>Geladeira</p>",
-            "iconAlt": "Geladeira",
-            "iconRedirect": "#",
-            "iconSrc": "https://data.decoassets.com/content-hub/fd1fc150-d987-46a4-ac50-e1cbdb1c2495/SCR-20250204-pkoy.png"
-          },
-          {
-            "iconTitle": "<p>Geladeira 2</p>",
-            "iconAlt": "Geladeira 2",
-            "iconRedirect": "#",
-            "iconSrc": "https://data.decoassets.com/content-hub/fd1fc150-d987-46a4-ac50-e1cbdb1c2495/SCR-20250204-pkoy.png"
-          }
-        ]
+        "title": "<p></p>"
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "__resolveType": "site/sections/Lps/EcoPlus/InfoCardWithImageSliderSection.tsx",
+      "infoCards": [
+        {
+          "image": {
+            "alt": "Entrega com carbono neutro",
+            "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/e0aca396-345d-4b99-aee0-8ff48f38b006___4e0fd265094bea44e3c12c99ffc1b32d.png"
+          },
+          "link": {
+            "href": "/",
+            "text": "Saiba mais",
+            "title": "Saiba mais"
+          },
+          "title": "Entrega com carbono neutro",
+          "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido à energia solar. Vem entender como a gente faz isso funcionar!"
+        },
+        {
+          "image": {
+            "alt": "Máquinas feitas com material reciclado",
+            "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/b836fc06-20de-4fb8-9a7a-10ece2fb9753___c8c6d68ac6b7fe043c92d379935bf279.png"
+          },
+          "link": {
+            "href": "/",
+            "text": "Saiba mais",
+            "title": "Saiba mais"
+          },
+          "title": "Máquinas feitas com material reciclado",
+          "text": "Reduzimos até 700 toneladas de CO2 por ano ao usar plástico reciclado em nossas máquinas de lavar. Que tal saber mais?"
+        },
+        {
+          "image": {
+            "alt": "Mais produtos EcoPlus até 2030",
+            "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/38b28362-721d-49db-b959-4627c1dd1948___a1875007a65fa155bf6e9befcd091cf1.png"
+          },
+          "link": {
+            "href": "/",
+            "text": "Saiba mais",
+            "title": "Saiba mais"
+          },
+          "text": "Estamos estudando formas de deixar nossos produtos cada vez mais sustentáveis. Hoje, já são menos 500 mil toneladas de CO2 nos produtos em funcionamento, acredita?",
+          "title": "Mais produtos EcoPlus até 2030"
+        }
+      ],
       "section": {
-        "__resolveType": "site/sections/ThreeeColuns.tsx",
-        "rightText": "<p>Os produtos são selecionados com base na etiquetagem energética e testes rigorosos no alto desempenho em economia de energia e água. Aqueles que apresentam os mais altos índices de eficiência são incluídos no programa Electrolux EcoPlus.</p>",
-        "leftText": "<p>85%* do impacto ambiental de um eletrodoméstico, em todo seu ciclo de vida, acontece durante a fase de uso, na casa dos consumidores, principalmente devido à utilização de energia. Pensando nisso, o Electrolux Ecoplus chega com o objetivo de ajudar os consumidores a fazerem escolhas ainda mais responsáveis, através da seleção dos produtos mais eficientes do portfólio Electrolux.</p><p><span style=\"font-size: 10pt\">*De acordo com estudos realizados pela Electrolux, que avaliam o impacto ambiental dos produtos em seu ciclo de vida, desde extração da matéria prima, manufatura, logística, uso e destino final, conforme ISO 14040-14043.</span></p>",
-        "imageSrc": "https://data.decoassets.com/content-hub/ca9ae9fd-f84e-4595-9fb6-9e63dabe8f2f/maquina.png",
-        "alt": "Máquina de Lavar",
-        "width": "520px",
-        "height": "520px",
-        "rightTextColor": "#ffffff",
-        "leftTextColor": "#ffffff",
-        "rightTextBgColor": "#000000",
-        "rightTextBackGroundColor": "#303f29",
-        "leftTextBackGroundColor": "#617f57"
+        "title": "<h2 style=\"text-align: center\">NOSSAS ESCOLHAS PARA VIVER MELHOR</h2><p style=\"text-align: center\">Saiba o que estamos fazendo por um futuro de qualidade</p>"
       }
     }
   ],

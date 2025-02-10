@@ -1,6 +1,6 @@
 # Landing — deco.cx template 
 
-Welcome to your [deco.cx](https://deco.cx) site!
+Welcome to your [deco.cx](https://deco.cx) site!a
 
 ## Usage
 

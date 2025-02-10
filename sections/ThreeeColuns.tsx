@@ -4,10 +4,10 @@ import type { RichText, ImageWidget, Color } from "apps/admin/widgets.ts";
 interface Props {
   rightText?: RichText;
   rightTextColor?: Color;
-  rightTextBgColor?: Color;
+  rightTextBackGroundColor?: Color;
   leftText?: RichText;
   leftTextColor?: Color;
-  leftTextBgColor?: Color;
+  leftTextBackGroundColor?: Color;
   imageSrc?: ImageWidget;
   alt?: string;
   width?: string;
@@ -22,19 +22,22 @@ export default function ThreeeColunstsx({
   width,
   height,
   rightTextColor,
-  rightTextBgColor,
+  rightTextBackGroundColor,
   leftTextColor,
-  leftTextBgColor,
+  leftTextBackGroundColor,
 }: Props) {
   return (
-    <div class="containerThree flex items-stretch" style="padding: 0 8.5vw;">
+    <div
+      class="containerThree flex items-stretch gap-x-[8px]"
+      style="padding: 0 8.5vw;"
+    >
       <div
-        style={`background-color:${leftTextColor}; color:${leftTextBgColor}`}
-        class="boxThreeLeft w-[28vw]"
+        style={`background-color:${leftTextBackGroundColor}; color:${leftTextColor}`}
+        class="flex boxThreeLeft w-[28vw] pr-[3vw] pl-[3vw] items-center"
       >
         <Text title={leftText} />
       </div>
-      <div class="boxThreeMiddle w-[28vw]">
+      <div class="boxThreeMiddle w-[27vw]">
         <Image
           image={{
             alt: alt,
@@ -45,8 +48,8 @@ export default function ThreeeColunstsx({
         />
       </div>
       <div
-        style={`background-color:${rightTextColor}; color:${rightTextBgColor}`}
-        class="boxThreeRight w-[28vw]"
+        style={`background-color:${rightTextBackGroundColor}; color:${rightTextColor}`}
+        class="flex boxThreeRight w-[28vw] pr-[3vw] pl-[3vw] justify-center items-center"
       >
         <Text title={rightText} />
       </div>

@@ -36,8 +36,11 @@
         "alt": "Máquina de Lavar",
         "width": "520px",
         "height": "520px",
-        "rightTextColor": "#000040",
-        "leftTextColor": "#000040"
+        "rightTextColor": "#ffffff",
+        "leftTextColor": "#ffffff",
+        "rightTextBgColor": "#000000",
+        "rightTextBackGroundColor": "#303f29",
+        "leftTextBackGroundColor": "#617f57"
       }
     }
   ],

@@ -278,35 +278,7 @@ export function Preview(props: Props) {
        */}
       <style>
         {`
-          @font-face {
-            font-family: 'Electrolux Sans';
-            src:
-              url('assets/fonts/ElectroluxSans-Regular.woff2') format('woff2'),
-              url('assets/fonts/ElectroluxSans-Regular.woff') format('woff');
-            font-weight: 400;
-            font-style: normal;
-            font-display: swap;
-          }
-
-          @font-face {
-            font-family: 'Electrolux Sans';
-            src:
-              url('assets/fonts/ElectroluxSans-Bold.woff2') format('woff2'),
-              url('assets/fonts/ElectroluxSans-Bold.woff') format('woff');
-            font-weight: 700;
-            font-style: normal;
-            font-display: swap;
-          }
-
-          @font-face {
-            font-family: 'Electrolux Sans';
-            src:
-              url('assets/fonts/ElectroluxSans-SemiBold.woff2') format('woff2'),
-              url('assets/fonts/ElectroluxSans-SemiBold.woff') format('woff');
-            font-weight: 600;
-            font-style: normal;
-            font-display: swap;
-          }
+          @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;700&display=swap');
 
           :root {
             --admin-color-dark-bg: #0d1717;
@@ -318,7 +290,7 @@ export function Preview(props: Props) {
             --admin-border-hover-color-light: #819292;
             --admin-border-hover-color-dark: #949e9e;
             --admin-hover-bg-color: #fafafa;
-            --admin-font-family: 'Electrolux Sans', sans-serif;
+            --admin-font-family: 'Albert Sans', sans-serif;
           }
 
           .admin-font-family {

@@ -27,7 +27,7 @@
   },
   "font": {
     "family": "Electrolux Sans",
-    "styleSheet": "@font-face {         font-family: 'Electrolux Sans';         src:           url('/fonts/ElectroluxSans-Regular.woff2') format('woff2'),           url('/fonts/ElectroluxSans-Regular.woff') format('woff');         font-weight: 400;         font-style: normal;         font-display: swap;       }        @font-face {         font-family: 'Electrolux Sans';         src:           url('/fonts/ElectroluxSans-Bold.woff2') format('woff2'),           url('/fonts/ElectroluxSans-Bold.woff') format('woff');         font-weight: 700;         font-style: normal;         font-display: swap;       }        @font-face {         font-family: 'Electrolux Sans';         src:           url('/fonts/ElectroluxSans-SemiBold.woff2') format('woff2'),           url('/fonts/ElectroluxSans-SemiBold.woff') format('woff');         font-weight: 600;         font-style: normal;         font-display: swap;       }"
+    "styleSheet": " "
   },
   "mode": "light"
 }

@@ -12,13 +12,26 @@
       "__resolveType": "HeroBanner"
     },
     {
-      "__resolveType": "ArticleCarousel"
+      "__resolveType": "site/sections/BlogPosts.tsx",
+      "title": "teste",
+      "description": "teste",
+      "posts": [
+        {
+          "tags": [],
+          "title": "teste",
+          "excerpt": "teste",
+          "author": "teste",
+          "image": "https://data.decoassets.com/content-hub/377bfc43-51db-4807-a100-a2300c2ce076/image-of-electrolux-washing-machine",
+          "date": "10/10",
+          "readingTime": "1 ano"
+        }
+      ]
     },
     {
       "__resolveType": "HalfBannerWithText"
     },
     {
-      "__resolveType": "site/sections/BlogPosts.tsx"
+      "__resolveType": "ArticleCarousel"
     },
     {
       "__resolveType": "site/sections/ImageWithParagraph.tsx",
@@ -78,7 +91,13 @@
       }
     },
     {
-      "__resolveType": "site/sections/Footer.tsx"
+      "__resolveType": "site/sections/Footer.tsx",
+      "subscribe": {
+        "title": "a",
+        "instructions": "<p>aasdasdsda</p>",
+        "description": "asdads"
+      },
+      "madeWith": {}
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

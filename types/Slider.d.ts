@@ -17,9 +17,24 @@ interface Pagination {
   /**
    * @title Ativar Paginação
    * @description Habilita ou desabilita a paginação no slider.
+   * @hide
    * @default false
    */
   enabled?: boolean;
+
+  /**
+   * @title Ativar Paginação (mobile)
+   * @description Habilita ou desabilita a paginação no slider.
+   * @default false
+   */
+  enabledMobile?: boolean;
+
+  /**
+   * @title Ativar Paginação (desktop)
+   * @description Habilita ou desabilita a paginação no slider.
+   * @default false
+   */
+  enabledDesktop?: boolean;
 
   /**
    * @title Página Clicável

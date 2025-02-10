@@ -9,8 +9,8 @@ interface Props extends ISection {
 export default function Section({
   children,
   title,
-  marginMobile = 16,
-  marginDesktop = 40
+  marginMobile = 32,
+  marginDesktop = 52
 }: Props) {
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 
@@ -29,27 +29,6 @@ export default function Section({
 
           @media screen and (min-width:1024px) {
             margin-bottom: ${marginDesktop}px;
-          }
-        }
-
-        .section-title {
-          h1,h2,h3,h4,h5,h6 {
-            color: #011e41;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 100%;
-            text-transform: uppercase;
-
-            @media screen and (min-width: 1024px) {
-              font-size: 36px;
-              line-height: 43px;
-            }
-          }
-
-          p,span {
-            color: #041e50;
-            font-size: 14px;
-            line-height: 1.5;
           }
         }
       `}

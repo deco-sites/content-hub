@@ -43,9 +43,12 @@ export default function InfoCardWithImageSliderSection({
       }
     : undefined;
 
-  const breakpoints = {
+  const breakpoints: Record<number, ISliderConfigs> = {
     1024: {
-      slidesPerView: 3
+      slidesPerView: 3,
+      pagination: {
+        enabled: configs?.pagination?.enabledDesktop ?? false
+      }
     }
   };
 
@@ -58,7 +61,13 @@ export default function InfoCardWithImageSliderSection({
             slidesPerView,
             spaceBetween,
             autoplay: autoplayConfig,
-            breakpoints
+            breakpoints,
+            pagination: {
+              enabled: configs?.pagination?.enabledMobile ?? false,
+              clickable: configs?.pagination?.clickable ?? false,
+              dynamicBullets: configs?.pagination?.dynamicBullets ?? false,
+              dynamicMainBullets: configs?.pagination?.dynamicMainBullets ?? 0
+            }
           }}
           rootId={rootId}
           infoCards={infoCards}

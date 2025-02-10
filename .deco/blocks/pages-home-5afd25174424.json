@@ -9,11 +9,15 @@
           "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png",
           "alt": "1",
           "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/79fcf74d-c740-4913-adba-af72e98fbc9c___28b400f72192596d1e634730d50a080c.png",
-          "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png"
+          "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png",
+          "link": {
+            "href": "/",
+            "title": "Ecoplus"
+          }
         }
       ],
       "configs": {
-        "loop": true
+        "loop": false
       },
       "section": {
         "title": "<p></p>"
@@ -64,6 +68,21 @@
       ],
       "section": {
         "title": "<h2 style=\"text-align: center\">NOSSAS ESCOLHAS PARA VIVER MELHOR</h2><p style=\"text-align: center\">Saiba o que estamos fazendo por um futuro de qualidade</p>"
+      },
+      "configs": {
+        "pagination": {
+          "enabledMobile": true,
+          "enabledDesktop": true,
+          "clickable": true
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/EcoPlus/ReviewsSliderSection.tsx",
+        "section": {},
+        "background": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/cd5ef138-e3af-4d1e-a687-1a18eb11e28c___21514a71fddd9de83995655d69188c69.png"
       }
     }
   ],

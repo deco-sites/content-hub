@@ -2888,6 +2888,9 @@ input.tab:checked + .tab-content,
 .min-h-\[492px\] {
   min-height: 492px;
 }
+.min-h-\[60px\] {
+  min-height: 60px;
+}
 .min-h-full {
   min-height: 100%;
 }

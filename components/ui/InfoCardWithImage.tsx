@@ -12,7 +12,7 @@ export default function InfoCardWithImage({
   const { href, text: textLink, title: titleLink } = link;
 
   return (
-    <div class="flex">
+    <div class="flex w-full h-full">
       <InfoCard
         richText=""
         left
@@ -30,7 +30,7 @@ export default function InfoCardWithImage({
           <Image src={src} alt={alt} width={344} height={180} class="w-full" />
         </div>
         <div class="flex mb-4">
-          <h3 class="text-[#303f29] text-2xl font-semibold leading-[30px] text-left overflow-hidden text-ellipsis line-clamp-4 max-h-[120px] tracking-[.5px]">
+          <h3 class="text-[#303f29] text-2xl font-semibold leading-[30px] text-left overflow-hidden text-ellipsis line-clamp-4 min-h-[60px] max-h-[120px] tracking-[.5px]">
             {title}
           </h3>
         </div>

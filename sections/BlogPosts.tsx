@@ -32,7 +32,7 @@ export default function BlogPosts({
       image: DEFAULT_IMAGE,
       date: "01 Apr 2024",
       readingTime: "10 min",
-      tags: ["Tag #1", "Tag #2", "Tag #3"],
+      tags: ["Tag #1", "Tag #2", "Tag #3"]
     },
     {
       title: "Title of blogpost #2",
@@ -42,7 +42,7 @@ export default function BlogPosts({
       image: DEFAULT_IMAGE,
       date: "01 Apr 2024",
       readingTime: "10 min",
-      tags: ["Tag #1", "Tag #2", "Tag #3"],
+      tags: ["Tag #1", "Tag #2", "Tag #3"]
     },
     {
       title: "Title of blogpost #3",
@@ -52,28 +52,25 @@ export default function BlogPosts({
       image: DEFAULT_IMAGE,
       date: "01 Apr 2024",
       readingTime: "10 min",
-      tags: ["Tag #1", "Tag #2", "Tag #3"],
-    },
-  ],
+      tags: ["Tag #1", "Tag #2", "Tag #3"]
+    }
+  ]
 }: Props) {
   return (
     <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm py-12 lg:py-28">
       <div class="space-y-16">
         <div class="flex flex-col lg:flex-row gap-4 justify-center">
           <div class="space-y-6 text-center lg:w-1/2">
-            <h2 class="text-4xl leading-snug">
-              {title}
-            </h2>
-            <p class="text-lg">
-              {description}
-            </p>
+            <h2 class="text-4xl leading-snug">{title}</h2>
+            <p class="text-lg">{description}</p>
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {posts?.map((post) => (
+          {posts?.map(post => (
             <div class="border border-secondary rounded-lg overflow-hidden">
               <Image
                 width={640}
+                height={480}
                 class="w-full object-fit z-10"
                 sizes="(max-width: 640px) 100vw, 30vw"
                 src={post.image}
@@ -88,7 +85,7 @@ export default function BlogPosts({
                   <p class="text-base">{post.excerpt}</p>
                 </div>
                 <div class="flex flex-wrap gap-2">
-                  {post.tags?.map((tag) => (
+                  {post.tags?.map(tag => (
                     <div class="badge badge-lg badge-primary text-xs">
                       {tag}
                     </div>

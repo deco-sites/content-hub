@@ -1,22 +1,31 @@
 import { Text } from "@eluxlab/library-components";
 import type { ISection } from "site/types/Section.d.ts";
-import type { createElement } from "preact";
+import type { createElement, JSX } from "preact";
 
 interface Props extends ISection {
   children?: createElement.JSX.Element;
+  classesContainer?: string;
+  stylesContainer?: JSX.AllCSSProperties;
 }
 
 export default function Section({
   children,
   title,
   marginMobile = 32,
-  marginDesktop = 52
+  marginDesktop = 52,
+  classesContainer,
+  stylesContainer = {}
 }: Props) {
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 
   return (
-    <div>
-      <div class="section-container flex flex-col w-full gap-4">
+    <>
+      <div
+        class={`section-container flex flex-col w-full gap-4 lg:gap-6 ${
+          classesContainer ?? ""
+        }`}
+        style={stylesContainer}
+      >
         {!isEmptyTitle && (
           <Text title={title} classes={{ container: "section-title" }} />
         )}
@@ -33,6 +42,6 @@ export default function Section({
         }
       `}
       </style>
-    </div>
+    </>
   );
 }

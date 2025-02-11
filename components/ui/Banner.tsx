@@ -8,7 +8,7 @@ export default function Banner({
   link
 }: IBannerSlide) {
   const BannerComponent = (
-    <picture class="flex w-screen">
+    <picture class="flex w-full">
       <source srcSet={srcMobile} media="(max-width: 1024px)" />
       <Image
         alt={alt}

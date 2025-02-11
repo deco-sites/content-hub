@@ -34,7 +34,8 @@ function TitleSection({
         {icons.map((icon, index) => (
           <div
             key={index}
-            className={`boxInfoIcon bg-[${boxBackgroundColor}] hover:bg-[${boxBackgroundColorHover}]`}
+            style={`background-color:${boxBackgroundColor};`}
+            className="boxInfoIcon"
           >
             <InfoIcon
               title={icon.iconTitle}
@@ -48,6 +49,7 @@ function TitleSection({
           </div>
         ))}
       </div>
+      <style>{`.boxInfoIcon:hover{background-color:${boxBackgroundColorHover}}`}</style>
     </>
   );
 }

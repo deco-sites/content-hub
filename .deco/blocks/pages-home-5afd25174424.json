@@ -78,8 +78,8 @@
             "iconAlt": "Geladeira",
             "iconRedirect": "#",
             "iconSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
-            "boxBackgroundColor": "#000080",
-            "boxBackgroundColorHover": "#c0c0c0"
+            "boxBackgroundColor": "#ff8040",
+            "boxBackgroundColorHover": "#400080"
           }
         ],
         "boxBackgroundColorHover": "#400040"

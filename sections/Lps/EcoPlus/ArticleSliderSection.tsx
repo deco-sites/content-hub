@@ -1,39 +1,41 @@
-import InfoCardWithImageSlider from "site/islands/InfoCardWithImageSlider.tsx";
+import InfoCardWithImageSlider from "../../../islands/ArticleSlider.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
-import type { IInfoCardWithImage } from "site/types/InfoCardWithImage.d.ts";
+import type { IArticle } from "site/types/Article.d.ts";
 
 /**
- * @description Seção com um slider de info cards.
+ * @description Componente de seção contendo um slider de cartões informativos.
  */
 interface Props {
   /**
    * @title Configuração da Seção
-   * @description Define título, subtítulo e espaçamento da seção.
+   * @description Define o título, subtítulo e espaçamento da seção.
    */
   section?: ISection;
 
   /**
-   * @title Info Cards
+   * @title Lista de Artigos
+   * @description Conjunto de artigos a serem exibidos dentro do slider.
    */
-  infoCards?: IInfoCardWithImage[];
+  articles?: IArticle[];
 
   /**
    * @title Configurações do Slider
+   * @description Define os parâmetros de exibição e comportamento do slider.
    */
   configs?: ISliderConfigs;
 }
 
 export default function InfoCardWithImageSliderSection({
   section,
-  infoCards,
+  articles,
   configs = {}
 }: Props) {
   const rootId = useId();
 
-  if (!infoCards?.length) return <></>;
+  if (!articles?.length) return <></>;
 
   const { autoplay = {}, slidesPerView = 1, spaceBetween = 10 } = configs ?? {};
 
@@ -70,7 +72,7 @@ export default function InfoCardWithImageSliderSection({
             }
           }}
           rootId={rootId}
-          infoCards={infoCards}
+          articles={articles}
         />
       </div>
     </Section>

@@ -2953,6 +2953,9 @@ input.tab:checked + .tab-content,
   width: -moz-min-content;
   width: min-content;
 }
+.w-screen {
+  width: 100vw;
+}
 .min-w-\[100px\] {
   min-width: 100px;
 }

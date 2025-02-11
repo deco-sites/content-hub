@@ -287,6 +287,29 @@
           "fakePersonName": "Cinara N."
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/InfoCardComponent.tsx",
+        "description": "<p>teste</p>",
+        "imagem": {
+          "src": "https://data.decoassets.com/content-hub/4d1d338f-7a74-4680-ada2-53924f4a441f/Realistic-image-of-appliances-in-some-room-of-the-house",
+          "alt": "rteste"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ThreeColuns.tsx",
+        "rightText": "<p>teste</p>",
+        "leftText": "<p>teste 1</p>",
+        "imageSrc": "https://data.decoassets.com/content-hub/ca9ae9fd-f84e-4595-9fb6-9e63dabe8f2f/maquina.png",
+        "alt": "teste",
+        "width": "500",
+        "height": "500"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

@@ -50,11 +50,11 @@ function TitleSection({ icons = [], section }: Props) {
                   background-color: ${icon.boxBackgroundColorHover} !important;
                   transition: all .3s;
                 }
-                .${uniqueClass}:hover .info-icon-link {
+                .${uniqueClass}:hover a {
                   filter: brightness(0) invert(1);
                   transition: all .3s;
                 }
-                .${uniqueClass} .info-icon-link {
+                .${uniqueClass} a {
                   transition: all .3s;
                 }
               `}</style>

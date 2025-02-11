@@ -56,14 +56,14 @@ export default defineApp(async (_req, ctx) => {
                 font-style: normal;
                 font-display: swap;
               }
-            `
+            `,
           }}
         />
 
         {/* Enable View Transitions API */}
         <style
           dangerouslySetInnerHTML={{
-            __html: `@view-transition { navigation: auto; }`
+            __html: `@view-transition { navigation: auto; }`,
           }}
         />
 

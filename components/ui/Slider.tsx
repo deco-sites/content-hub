@@ -10,7 +10,7 @@ export type SwiperSliderProps = {
 
 export default function SwiperSlider({
   configs,
-  slides = []
+  slides = [],
 }: SwiperSliderProps) {
   // Fix loop mode warning
   const hasLoop =

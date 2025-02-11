@@ -80,10 +80,16 @@ export default function ImageWithParagraph({
           <p class="text-sm font-semibold">
             {tagline}
           </p>
-          <p class="text-4xl leading-snug" style={`text-align:${titlePlacement}`}>
+          <p
+            class="text-4xl leading-snug"
+            style={`text-align:${titlePlacement}`}
+          >
             {title}
           </p>
-          <p class="leading-normal" style={`text-align:${descriptionPlacement}`}>
+          <p
+            class="leading-normal"
+            style={`text-align:${descriptionPlacement}`}
+          >
             {description}
           </p>
           <div class={`flex gap-3 pt-4 justify-${CTA_PLACEMENT[ctaPlacement]}`}>

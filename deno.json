@@ -84,8 +84,7 @@
   "nodeModulesDir": "none",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "experimentalDecorators": true
+    "jsxImportSource": "preact"
   },
   "lock": false
 }

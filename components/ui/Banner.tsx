@@ -5,10 +5,10 @@ export default function Banner({
   srcMobile,
   srcDesktop,
   alt,
-  link
+  link,
 }: IBannerSlide) {
   const BannerComponent = (
-    <picture class="flex w-full">
+    <picture class="flex w-screen">
       <source srcSet={srcMobile} media="(max-width: 1024px)" />
       <Image
         alt={alt}

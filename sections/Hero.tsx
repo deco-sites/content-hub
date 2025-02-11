@@ -74,9 +74,7 @@ export default function HeroFlats({
               }}
             >
             </div>
-            <p class="text-lg md:text-md leading-[150%]">
-              {description}
-            </p>
+            <p class="text-lg md:text-md leading-[150%]">{description}</p>
             <div class="flex items-center gap-3">
               {cta?.map((item) => (
                 <a

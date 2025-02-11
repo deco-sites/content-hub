@@ -1,6 +1,6 @@
 import Section from "site/components/ui/Section.tsx";
 import Image from "apps/website/components/Image.tsx";
-import { FakeReviewCard } from "http://127.0.0.1:5500/dist/index.js";
+import { FakeReviewCard } from "@eluxlab/library-components";
 import type { ISection } from "site/types/Section.d.ts";
 import type { IFakeReviewCard } from "site/types/FakeReviewCard.d.ts";
 

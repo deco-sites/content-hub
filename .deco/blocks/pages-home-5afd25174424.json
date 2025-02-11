@@ -65,6 +65,25 @@
       "section": {
         "title": "<h2 style=\"text-align: center\">NOSSAS ESCOLHAS PARA VIVER MELHOR</h2><p style=\"text-align: center\">Saiba o que estamos fazendo por um futuro de qualidade</p>"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/TitleSection.tsx",
+        "title": "<h1>QUEM ESCOLHE VIVER NUM MUNDO MELHOR, NÃO JOGA NADA FORA</h1>",
+        "subtitle": "<p>Sabia que você pode reduzir seu impacto ambiental quando escolhe um Electrolux EcoPlus? Isso porque eles representam o melhor da tecnologia Electrolux: economizam água, energia e te ajudam a não jogar nada fora.</p>",
+        "icons": [
+          {
+            "iconTitle": "<p>Geladeira</p>",
+            "iconAlt": "Geladeira",
+            "iconRedirect": "#",
+            "iconSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
+            "boxBackgroundColor": "#000080",
+            "boxBackgroundColorHover": "#c0c0c0"
+          }
+        ],
+        "boxBackgroundColorHover": "#400040"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

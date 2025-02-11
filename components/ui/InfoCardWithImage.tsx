@@ -1,4 +1,4 @@
-import { InfoCard } from "@eluxlab/library-components";
+import { InfoCard } from "http://127.0.0.1:5500/dist/index.js";
 import Image from "apps/website/components/Image.tsx";
 import type { IInfoCardWithImage } from "site/types/InfoCardWithImage.d.ts";
 
@@ -6,7 +6,7 @@ export default function InfoCardWithImage({
   image,
   title,
   text,
-  link
+  link,
 }: IInfoCardWithImage) {
   const { alt, src } = image;
   const { href, text: textLink, title: titleLink } = link;
@@ -18,12 +18,12 @@ export default function InfoCardWithImage({
         left
         styles={{
           container: { flexDirection: "column", width: "auto" },
-          children: { width: "auto", padding: "0", minHeight: "initial" }
+          children: { width: "auto", padding: "0", minHeight: "initial" },
         }}
         classes={{
           container:
             "py-6 px-4 border border-solid border-[#dfe7ea] min-h-[492px]",
-          children: "flex flex-col"
+          children: "flex flex-col",
         }}
       >
         <div class="flex mb-5">

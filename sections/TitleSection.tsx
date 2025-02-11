@@ -1,5 +1,5 @@
 import { Text, InfoIcon } from "http://127.0.0.1:5500/dist/index.js";
-import type { RichText, ImageWidget } from "apps/admin/widgets.ts";
+import type { RichText, ImageWidget, Color } from "apps/admin/widgets.ts";
 
 interface Props {
   title?: RichText;
@@ -13,18 +13,29 @@ interface IconItem {
   iconRedirect?: string;
   iconSrc?: ImageWidget;
   iconTarget?: boolean;
+  boxBackgroundColor?: Color;
+  boxBackgroundColorHover?: Color;
 }
 
-function TitleSection({ title, subtitle, icons = [] }: Props) {
+function TitleSection({
+  title,
+  subtitle,
+  icons = [],
+  boxBackgroundColor,
+  boxBackgroundColorHover,
+}: Props) {
   return (
     <>
-      <div>
+      <div className="sectionTitle">
         <Text title={title} />
         <Text title={subtitle} />
       </div>
-      <div>
+      <div className="sectionInfoIcon flex items-center">
         {icons.map((icon, index) => (
-          <div key={index}>
+          <div
+            key={index}
+            className={`boxInfoIcon bg-[${boxBackgroundColor}] hover:bg-[${boxBackgroundColorHover}]`}
+          >
             <InfoIcon
               title={icon.iconTitle}
               image={{

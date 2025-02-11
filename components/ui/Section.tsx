@@ -1,4 +1,4 @@
-import { Text } from "@eluxlab/library-components";
+import { Text } from "http://127.0.0.1:5500/dist/index.js";
 import type { ISection } from "site/types/Section.d.ts";
 import type { createElement } from "preact";
 
@@ -10,7 +10,7 @@ export default function Section({
   children,
   title,
   marginMobile = 16,
-  marginDesktop = 40
+  marginDesktop = 40,
 }: Props) {
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 

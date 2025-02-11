@@ -1,9 +1,9 @@
 import InfoCardWithImageSlider from "site/islands/InfoCardWithImageSlider.tsx";
-import { useId } from "site/sdk/useId.ts";
-import type { ISliderConfigs } from "site/types/Slider.d.ts";
-import type { ISection } from "site/types/Section.d.ts";
-import type { IInfoCardWithImage } from "site/types/InfoCardWithImage.d.ts";
 import Section from "site/components/ui/Section.tsx";
+import { useId } from "site/sdk/useId.ts";
+import type { ISection } from "site/types/Section.d.ts";
+import type { ISliderConfigs } from "site/types/Slider.d.ts";
+import type { IInfoCardWithImage } from "site/types/InfoCardWithImage.d.ts";
 
 /**
  * @description Seção com um slider de info cards.

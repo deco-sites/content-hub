@@ -1,8 +1,9 @@
-import BannerSlider, { type IBannerSlide } from "site/islands/BannerSlider.tsx";
+import BannerSlider from "site/islands/BannerSlider.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
+import type { IBannerSlide } from "site/types/Banner.d.ts";
 
 /**
  * @description Seção com um slider de banners.

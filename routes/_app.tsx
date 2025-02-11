@@ -1,7 +1,7 @@
 import { asset, Head } from "$fresh/runtime.ts";
 import { defineApp } from "$fresh/server.ts";
-import Theme from "site/sections/Theme/Theme.tsx";
 import { Context } from "@deco/deco";
+import Theme from "site/sections/Theme/Theme.tsx";
 export default defineApp(async (_req, ctx) => {
   const revision = await Context.active().release?.revision();
   return (
@@ -59,6 +59,7 @@ export default defineApp(async (_req, ctx) => {
             `,
           }}
         />
+
         {/* Enable View Transitions API */}
         <style
           dangerouslySetInnerHTML={{
@@ -70,12 +71,20 @@ export default defineApp(async (_req, ctx) => {
           href={asset(`/styles.css?revision=${revision}`)}
           rel="stylesheet"
         />
+
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
+
         {/* Swiper CSS */}
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        {/* Custom CSS */}
+        <link
+          rel="stylesheet"
+          href={asset(`/customStyles/styles.css?revision=${revision}`)}
         />
       </Head>
 

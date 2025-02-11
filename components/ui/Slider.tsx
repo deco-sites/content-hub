@@ -1,4 +1,4 @@
-import { Slider } from "http://127.0.0.1:5500/dist/index.js";
+import { Slider } from "@eluxlab/library-components";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { createElement } from "preact";
 

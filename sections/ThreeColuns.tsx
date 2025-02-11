@@ -1,4 +1,4 @@
-import { Text, Image } from "http://127.0.0.1:5500/dist/index.js";
+import { Text, Image } from "@eluxlab/library-components";
 import type { RichText, ImageWidget, Color } from "apps/admin/widgets.ts";
 
 interface Props {
@@ -14,7 +14,7 @@ interface Props {
   height?: string;
 }
 
-export default function ThreeeColunstsx({
+export default function ThreeColunstsx({
   rightText,
   leftText,
   imageSrc,

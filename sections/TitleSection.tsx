@@ -1,5 +1,5 @@
-import { Text, InfoIcon } from "http://127.0.0.1:5500/dist/index.js";
-import type { RichText, ImageWidget, Color } from "apps/admin/widgets.ts";
+import { Text, InfoIcon } from "@eluxlab/library-components";
+import type { RichText, ImageWidget } from "apps/admin/widgets.ts";
 
 interface Props {
   title?: RichText;

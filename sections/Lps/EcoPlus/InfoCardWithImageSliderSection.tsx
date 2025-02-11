@@ -1,9 +1,9 @@
 import InfoCardWithImageSlider from "site/islands/InfoCardWithImageSlider.tsx";
-import { useId } from "site/sdk/useId.ts";
-import type { ISliderConfigs } from "site/types/Slider.d.ts";
-import type { ISection } from "site/types/Section.d.ts";
-import type { IInfoCardWithImage } from "site/types/InfoCardWithImage.d.ts";
 import Section from "site/components/ui/Section.tsx";
+import { useId } from "site/sdk/useId.ts";
+import type { ISection } from "site/types/Section.d.ts";
+import type { ISliderConfigs } from "site/types/Slider.d.ts";
+import type { IInfoCardWithImage } from "site/types/InfoCardWithImage.d.ts";
 
 /**
  * @description Seção com um slider de info cards.
@@ -43,9 +43,12 @@ export default function InfoCardWithImageSliderSection({
       }
     : undefined;
 
-  const breakpoints = {
+  const breakpoints: Record<number, ISliderConfigs> = {
     1024: {
-      slidesPerView: 3
+      slidesPerView: 3,
+      pagination: {
+        enabled: configs?.pagination?.enabledDesktop ?? false
+      }
     }
   };
 
@@ -58,7 +61,13 @@ export default function InfoCardWithImageSliderSection({
             slidesPerView,
             spaceBetween,
             autoplay: autoplayConfig,
-            breakpoints
+            breakpoints,
+            pagination: {
+              enabled: configs?.pagination?.enabledMobile ?? false,
+              clickable: configs?.pagination?.clickable ?? false,
+              dynamicBullets: configs?.pagination?.dynamicBullets ?? false,
+              dynamicMainBullets: configs?.pagination?.dynamicMainBullets ?? 0
+            }
           }}
           rootId={rootId}
           infoCards={infoCards}

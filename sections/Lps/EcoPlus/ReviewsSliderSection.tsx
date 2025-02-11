@@ -51,7 +51,7 @@ interface Props {
 export default function ReviewsSliderSection({
   section,
   background,
-  fakeReviewCards = []
+  fakeReviewCards = [],
 }: Props) {
   const { srcDesktop, srcMobile, alt } = background ?? {};
 
@@ -88,8 +88,8 @@ export default function ReviewsSliderSection({
                         container:
                           "whitespace-normal min-w-[340px] lg:min-w-[initial]",
                         fakeDescription: "min-h-[60px]",
-                        fakeProductNameAndPersonName: "min-h-[45px]"
-                      }
+                        fakeProductNameAndPersonName: "min-h-[45px]",
+                      },
                     }}
                     key={`${props.fakePersonName}-${idx}`}
                   />

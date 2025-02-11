@@ -1,4 +1,4 @@
-import { Text } from "http://127.0.0.1:5500/dist/index.js";
+import { Text } from "@eluxlab/library-components";
 import type { ISection } from "site/types/Section.d.ts";
 import type { createElement, JSX } from "preact";
 

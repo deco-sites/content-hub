@@ -1,4 +1,4 @@
-import { InfoCard } from "http://127.0.0.1:5500/dist/index.js";
+import { InfoCard } from "@eluxlab/library-components";
 import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Iframe from "site/components/ui/Iframe.tsx";

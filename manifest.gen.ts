@@ -19,9 +19,9 @@ import * as $$$$$$7 from "./sections/Logos.tsx";
 import * as $$$$$$8 from "./sections/Lps/EcoPlus/BannerSliderSection.tsx";
 import * as $$$$$$9 from "./sections/Lps/EcoPlus/InfoCardWithImageSliderSection.tsx";
 import * as $$$$$$10 from "./sections/Lps/EcoPlus/ReviewsSliderSection.tsx";
-import * as $$$$$$11 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$12 from "./sections/ThreeColuns.tsx";
-import * as $$$$$$13 from "./sections/TitleSection.tsx";
+import * as $$$$$$11 from "./sections/Lps/EcoPlus/ThreeColuns.tsx";
+import * as $$$$$$12 from "./sections/Lps/EcoPlus/TitleSection.tsx";
+import * as $$$$$$13 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -39,9 +39,9 @@ const manifest = {
     "site/sections/Lps/EcoPlus/BannerSliderSection.tsx": $$$$$$8,
     "site/sections/Lps/EcoPlus/InfoCardWithImageSliderSection.tsx": $$$$$$9,
     "site/sections/Lps/EcoPlus/ReviewsSliderSection.tsx": $$$$$$10,
-    "site/sections/Theme/Theme.tsx": $$$$$$11,
-    "site/sections/ThreeColuns.tsx": $$$$$$12,
-    "site/sections/TitleSection.tsx": $$$$$$13,
+    "site/sections/Lps/EcoPlus/ThreeColuns.tsx": $$$$$$11,
+    "site/sections/Lps/EcoPlus/TitleSection.tsx": $$$$$$12,
+    "site/sections/Theme/Theme.tsx": $$$$$$13,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

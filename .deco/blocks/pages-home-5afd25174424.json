@@ -4,6 +4,9 @@
   "sections": [
     {
       "__resolveType": "site/sections/Lps/EcoPlus/BannerSliderSection.tsx",
+      "section": {
+        "title": "<p></p>"
+      },
       "banners": [
         {
           "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png",
@@ -18,13 +21,13 @@
       ],
       "configs": {
         "loop": false
-      },
-      "section": {
-        "title": "<p></p>"
       }
     },
     {
       "__resolveType": "site/sections/Lps/EcoPlus/InfoCardWithImageSliderSection.tsx",
+      "section": {
+        "title": "<h2 style=\"text-align: center\">NOSSAS ESCOLHAS PARA VIVER MELHOR</h2><p style=\"text-align: center\">Saiba o que estamos fazendo por um futuro de qualidade</p>"
+      },
       "infoCards": [
         {
           "image": {
@@ -66,9 +69,6 @@
           "title": "Mais produtos EcoPlus até 2030"
         }
       ],
-      "section": {
-        "title": "<h2 style=\"text-align: center\">NOSSAS ESCOLHAS PARA VIVER MELHOR</h2><p style=\"text-align: center\">Saiba o que estamos fazendo por um futuro de qualidade</p>"
-      },
       "configs": {
         "pagination": {
           "enabledMobile": true,
@@ -302,13 +302,10 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/ThreeColuns.tsx",
-        "rightText": "<p>teste</p>",
-        "leftText": "<p>teste 1</p>",
-        "imageSrc": "https://data.decoassets.com/content-hub/ca9ae9fd-f84e-4595-9fb6-9e63dabe8f2f/maquina.png",
-        "alt": "teste",
-        "width": "500",
-        "height": "500"
+        "__resolveType": "site/sections/Lps/EcoPlus/ThreeColuns.tsx",
+        "rightText": "<p>tersrte</p>",
+        "leftText": "<p>teste</p>",
+        "imageSrc": "https://data.decoassets.com/content-hub/ca9ae9fd-f84e-4595-9fb6-9e63dabe8f2f/maquina.png"
       }
     }
   ],

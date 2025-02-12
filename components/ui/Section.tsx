@@ -14,7 +14,7 @@ export default function Section({
   marginMobile = 32,
   marginDesktop = 52,
   classesContainer,
-  stylesContainer = {}
+  stylesContainer = {},
 }: Props) {
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 

@@ -1,5 +1,5 @@
 import Component from "site/components/ui/Slider.tsx";
-import InfoCardWithImage from "../components/ui/Article.tsx";
+import Article from "site/components/ui/Article.tsx";
 import type { IArticle } from "site/types/Article.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
@@ -11,7 +11,7 @@ type Props = {
 
 function Island({ articles = [], configs = {}, rootId }: Props) {
   const slides = articles.map((props, idx) => (
-    <InfoCardWithImage key={`${props.image.alt}-${idx}`} {...props} />
+    <Article key={`${props.image.alt}-${idx}`} {...props} />
   ));
 
   return <Component configs={{ ...configs }} slides={slides} rootId={rootId} />;

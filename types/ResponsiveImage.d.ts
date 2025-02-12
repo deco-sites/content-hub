@@ -1,24 +1,24 @@
 /**
- * @title {{#alt}}{{alt}}{{/alt}}{{^alt}}Banner{{/alt}}
+ * @title {{#alt}}{{alt}}{{/alt}}{{^alt}}Image{{/alt}}
  */
-export interface IBannerSlide {
+export interface IResponsiveImage {
   /**
    * @title Imagem (desktop)
    * @format image-uri
    */
-  srcDesktop: string;
+  srcDesktop?: string;
 
   /**
    * @title Imagem (mobile)
    * @format image-uri
    */
-  srcMobile: string;
+  srcMobile?: string;
 
   /**
    * @title Alt
    * @description Atributo de texto alternativo (SEO)
    */
-  alt: string;
+  alt?: string;
 
   /**
    * @title Link
@@ -29,13 +29,13 @@ export interface IBannerSlide {
      * @title URL do Link
      * @description Endereço para onde o link deve redirecionar.
      */
-    href: string;
+    href?: string;
 
     /**
      * @title Título do Link
      * @description Texto adicional exibido ao passar o mouse sobre o banner (atributo title).
      */
-    title: string;
+    title?: string;
   };
 
   /**

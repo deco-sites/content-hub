@@ -1,4 +1,4 @@
-import Banner from "site/components/ui/Banner.tsx";
+import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import { InfoCard as InfoCardComponent } from "@eluxlab/library-components";
 import type {
   IInfoCard,
@@ -29,7 +29,7 @@ export default function InfoCard(props: IInfoCard): preact.JSX.Element {
               {...(typeOfContent as IInfoCardVideo).iframeProps}
             />
           ) : (
-            <Banner {...typeOfContentImage} maxHeight={500} />
+            <ResponsiveImage {...typeOfContentImage} maxHeight={500} />
           )}
         </>
       ) : (

@@ -51,13 +51,13 @@ export default function InfoCardSection({ section, infoCard }: Props) {
     : typeOfContentImage;
 
   return (
-    <Section {...section} classesContainer="info-card-section">
+    <Section {...section} id={id} classesContainer="info-card-section">
       <div class="flex w-full h-full bg-[#F6F6F6]">
         <InfoCard
           {...infoCard}
           typeOfContent={enrichedTypeOfContent}
           classes={{
-            container: "w-full info-card flex-col lg:flex-row",
+            container: "w-full info-card",
             children: "info-card-children h-full"
           }}
         />
@@ -68,8 +68,8 @@ export default function InfoCardSection({ section, infoCard }: Props) {
 
 export function LoadingFallback() {
   return (
-    <div>
-      <h2>loading...</h2>
+    <div style={{ height: "500px" }} class="flex justify-center items-center">
+      <span class="loading loading-spinner" />
     </div>
   );
 }

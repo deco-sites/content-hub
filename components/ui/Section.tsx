@@ -3,12 +3,14 @@ import type { ISection } from "site/types/Section.d.ts";
 import type { createElement, JSX } from "preact";
 
 interface Props extends ISection {
+  id: string;
   children?: createElement.JSX.Element;
   classesContainer?: string;
   stylesContainer?: JSX.AllCSSProperties;
 }
 
 export default function Section({
+  id,
   children,
   title,
   marginMobile = 32,
@@ -21,6 +23,7 @@ export default function Section({
   return (
     <>
       <div
+        id={`section-${id}`}
         class={`section-container flex flex-col w-full gap-4 lg:gap-6 ${
           classesContainer ?? ""
         }`}
@@ -33,7 +36,7 @@ export default function Section({
       </div>
       <style>
         {`
-        .section-container {
+        #section-${id} {
           margin-bottom: ${marginMobile}px;
 
           @media screen and (min-width:1024px) {

@@ -1,6 +1,7 @@
 import Section from "site/components/ui/Section.tsx";
 import Image from "apps/website/components/Image.tsx";
 import { FakeReviewCard } from "@eluxlab/library-components";
+import { useId } from "preact/hooks";
 import type { ISection } from "site/types/Section.d.ts";
 import type { IFakeReviewCard } from "site/types/FakeReviewCard.d.ts";
 
@@ -48,17 +49,19 @@ interface Props {
   fakeReviewCards?: IFakeReviewCard[];
 }
 
-export default function ReviewsSliderSection({
+export default function FakeReviewSection({
   section,
   background,
   fakeReviewCards = []
 }: Props) {
+  const id = useId();
   const { srcDesktop, srcMobile, alt } = background ?? {};
 
   return (
     <Section
+      id={id}
       {...section}
-      classesContainer="review-cards-section relative h-[350px] lg:h-[500px] bg-black bg-opacity-[0.7] bg-auto bg-blend-darken justify-center lg:gap-[32px]"
+      classesContainer="fake-review-section relative h-[350px] lg:h-[500px] bg-black bg-opacity-[0.7] bg-auto bg-blend-darken justify-center lg:gap-[32px]"
     >
       <>
         {srcDesktop && srcMobile && (
@@ -105,8 +108,8 @@ export default function ReviewsSliderSection({
 
 export function LoadingFallback() {
   return (
-    <div>
-      <h2>loading...</h2>
+    <div style={{ height: "500px" }} class="flex justify-center items-center">
+      <span class="loading loading-spinner" />
     </div>
   );
 }

@@ -24,35 +24,6 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/TitleSection.tsx",
-        "icons": [
-          {
-            "iconTitle": "<p>Geladeira</p>",
-            "iconAlt": "Geladeira",
-            "iconRedirect": "#",
-            "iconSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
-            "boxBackgroundColor": "#000080",
-            "boxBackgroundColorHover": "#000040"
-          },
-          {
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#008000",
-            "iconTitle": "<p>Ar-Condicionados</p>",
-            "iconAlt": "Ar-Condicionados",
-            "iconRedirect": "#",
-            "iconSrc": "https://data.decoassets.com/content-hub/16710286-8cd7-49c0-a10a-52789fde5ae1/ar.svg"
-          }
-        ],
-        "section": {
-          "title": "<h1 style=\"text-align: center\">QUEM ESCOLHE VIVER NUM MUNDO MELHOR, NÃO JOGA NADA FORA</h1><p style=\"text-align: center\">Sabia que você pode reduzir seu impacto ambiental quando escolhe um Electrolux EcoPlus? Isso porque eles representam o melhor da tecnologia Electrolux: economizam água, energia e te ajudam a não jogar nada fora.</p>",
-          "marginMobile": 12,
-          "marginDesktop": 24
-        }
-      }
-    },
-    {
       "__resolveType": "site/sections/Lps/EcoPlus/InfoCardWithImageSliderSection.tsx",
       "section": {
         "title": "<h2 style=\"text-align: center\">NOSSAS ESCOLHAS PARA VIVER MELHOR</h2><p style=\"text-align: center\">Saiba o que estamos fazendo por um futuro de qualidade</p>"
@@ -331,13 +302,10 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/ThreeColuns.tsx",
-        "rightText": "<p>teste</p>",
-        "leftText": "<p>teste 1</p>",
-        "imageSrc": "https://data.decoassets.com/content-hub/ca9ae9fd-f84e-4595-9fb6-9e63dabe8f2f/maquina.png",
-        "alt": "teste",
-        "width": "500",
-        "height": "500"
+        "__resolveType": "site/sections/Lps/EcoPlus/ThreeColuns.tsx",
+        "rightText": "<p>tersrte</p>",
+        "leftText": "<p>teste</p>",
+        "imageSrc": "https://data.decoassets.com/content-hub/ca9ae9fd-f84e-4595-9fb6-9e63dabe8f2f/maquina.png"
       }
     }
   ],

@@ -66,7 +66,6 @@ export default defineApp(async (_req, ctx) => {
             __html: `@view-transition { navigation: auto; }`,
           }}
         />
-
         {/* Tailwind v3 CSS file */}
         <link
           href={asset(`/styles.css?revision=${revision}`)}

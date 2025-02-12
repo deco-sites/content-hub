@@ -476,7 +476,7 @@
       "__resolveType": "HalfBannerWithText"
     },
     {
-      "__resolveType": "site/sections/BlogPosts.tsx"
+      "__resolveType": "ArticleCarousel"
     },
     {
       "__resolveType": "site/sections/ImageWithParagraph.tsx",
@@ -541,7 +541,13 @@
       }
     },
     {
-      "__resolveType": "site/sections/Footer.tsx"
+      "__resolveType": "site/sections/Footer.tsx",
+      "subscribe": {
+        "title": "a",
+        "instructions": "<p>aasdasdsda</p>",
+        "description": "asdads"
+      },
+      "madeWith": {}
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

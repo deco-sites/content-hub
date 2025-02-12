@@ -37,4 +37,34 @@ export interface IBannerSlide {
      */
     title: string;
   };
+
+  /**
+   * @title Full Screen
+   * @hide
+   */
+  fullScreen?: boolean;
+
+  /**
+   * @title Max Width Image
+   * @hide
+   */
+  maxWidth?: number | string;
+
+  /**
+   * @title Max Height Image
+   * @hide
+   */
+  maxHeight?: number | string;
+
+  /**
+   * @title Width Image
+   * @hide
+   */
+  width?: number;
+
+  /**
+   * @title Height Image
+   * @hide
+   */
+  height?: number;
 }

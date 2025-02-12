@@ -10,8 +10,8 @@ export type SwiperSliderProps = {
 
 export default function SwiperSlider({
   configs,
-  slides = [],
-}: SwiperSliderProps) {
+  slides = []
+}: SwiperSliderProps): preact.JSX.Element {
   // Fix loop mode warning
   const hasLoop =
     (configs &&

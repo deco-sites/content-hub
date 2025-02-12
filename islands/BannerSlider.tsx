@@ -11,7 +11,7 @@ type Props = {
 
 function Island({ banners = [], configs = {}, rootId }: Props) {
   const slides = banners.map((props, idx) => {
-    return <Banner {...props} key={`${props.alt}-${idx}`} />;
+    return <Banner {...props} key={`${props.alt}-${idx}`} fullScreen />;
   });
 
   return <Component configs={configs} slides={slides} rootId={rootId} />;

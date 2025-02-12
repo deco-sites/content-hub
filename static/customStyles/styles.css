@@ -85,6 +85,106 @@
   }
 }
 
+/* Info Card Section */
+.info-card-section {
+  .info-card[style*="flex-direction:row-reverse;"] {
+    flex-direction: column-reverse !important;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row-reverse !important;
+    }
+  }
+
+  .info-card[style*="flex-direction:row;"] {
+    flex-direction: column !important;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row !important;
+    }
+  }
+
+  .info-card {
+    .info-card-children {
+      padding: 60px 24px !important;
+      width: 100% !important;
+
+      @media screen and (min-width: 1024px) {
+        padding: 40px !important;
+        width: 50% !important;
+      }
+    }
+
+    .info-card-children:last-child {
+      padding: 0 !important;
+
+      img {
+        @media screen and (max-width: 1023px) {
+          max-height: 250px !important;
+        }
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #303f29;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 100%;
+      margin: 0 0 8px;
+      text-align: left !important;
+      text-overflow: ellipsis;
+      text-transform: initial;
+      width: 100%;
+      word-break: break-word;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 36px;
+        line-height: initial;
+        margin: 0 0 16px;
+        text-align: unset !important;
+        width: 60%;
+      }
+    }
+
+    p {
+      color: #303f29;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left !important;
+      text-overflow: ellipsis;
+      width: 100%;
+      word-break: break-word;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: end;
+        text-align: unset !important;
+        width: 50%;
+      }
+    }
+
+    span {
+      color: #303f29;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+      margin: 0 0 8px;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0 0 16px;
+      }
+    }
+  }
+}
+
 /* Reviews Card Section */
 .review-cards-section {
   .section-title {

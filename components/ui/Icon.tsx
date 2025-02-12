@@ -54,9 +54,14 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   size?: number;
 }
 
-function Icon(
-  { id, strokeWidth = 16, size, width, height, ...otherProps }: Props,
-) {
+function Icon({
+  id,
+  strokeWidth = 16,
+  size,
+  width,
+  height,
+  ...otherProps
+}: Props): preact.JSX.Element {
   return (
     <svg
       {...otherProps}

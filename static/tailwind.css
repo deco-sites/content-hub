@@ -2491,9 +2491,6 @@ input.tab:checked + .tab-content,
 .h-\[3px\] {
   height: 3px;
 }
-.h-auto {
-  height: auto;
-}
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -2588,9 +2585,6 @@ input.tab:checked + .tab-content,
 .w-min {
   width: -moz-min-content;
   width: min-content;
-}
-.w-screen {
-  width: 100vw;
 }
 .min-w-\[100px\] {
   min-width: 100px;
@@ -2905,6 +2899,10 @@ input.tab:checked + .tab-content,
 .bg-\[\#C9CFCF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(201 207 207 / var(--tw-bg-opacity));
+}
+.bg-\[\#F6F6F6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 246 246 / var(--tw-bg-opacity));
 }
 .bg-\[var\(--bg-color\)\] {
   background-color: var(--bg-color);
@@ -3404,6 +3402,10 @@ input.tab:checked + .tab-content,
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:justify-center {

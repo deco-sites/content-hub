@@ -5,10 +5,10 @@
 import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/site.ts";
-import * as $$$$$$0 from "./sections/InfoCardComponent.tsx";
-import * as $$$$$$1 from "./sections/Logos.tsx";
-import * as $$$$$$2 from "./sections/Lps/EcoPlus/ArticleSliderSection.tsx";
-import * as $$$$$$3 from "./sections/Lps/EcoPlus/BannerSliderSection.tsx";
+import * as $$$$$$0 from "./sections/Logos.tsx";
+import * as $$$$$$1 from "./sections/Lps/EcoPlus/ArticleSliderSection.tsx";
+import * as $$$$$$2 from "./sections/Lps/EcoPlus/BannerSliderSection.tsx";
+import * as $$$$$$3 from "./sections/Lps/EcoPlus/InfoCardSection.tsx";
 import * as $$$$$$4 from "./sections/Lps/EcoPlus/ReviewsSliderSection.tsx";
 import * as $$$$$$5 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$6 from "./sections/ThreeColuns.tsx";
@@ -16,10 +16,10 @@ import * as $$$$$$7 from "./sections/TitleSection.tsx";
 
 const manifest = {
   "sections": {
-    "site/sections/InfoCardComponent.tsx": $$$$$$0,
-    "site/sections/Logos.tsx": $$$$$$1,
-    "site/sections/Lps/EcoPlus/ArticleSliderSection.tsx": $$$$$$2,
-    "site/sections/Lps/EcoPlus/BannerSliderSection.tsx": $$$$$$3,
+    "site/sections/Logos.tsx": $$$$$$0,
+    "site/sections/Lps/EcoPlus/ArticleSliderSection.tsx": $$$$$$1,
+    "site/sections/Lps/EcoPlus/BannerSliderSection.tsx": $$$$$$2,
+    "site/sections/Lps/EcoPlus/InfoCardSection.tsx": $$$$$$3,
     "site/sections/Lps/EcoPlus/ReviewsSliderSection.tsx": $$$$$$4,
     "site/sections/Theme/Theme.tsx": $$$$$$5,
     "site/sections/ThreeColuns.tsx": $$$$$$6,

@@ -1,0 +1,22 @@
+{
+  "name": "SEO-2123",
+  "path": "/seo-2123",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
+      "infoCard": {
+        "typeOfContent": {
+          "srcDesktop": "https://placehold.co/500x500?text=Electrolux",
+          "srcMobile": "https://placehold.co/500x500?text=Electrolux",
+          "alt": "Placeholder"
+        },
+        "direction": "left",
+        "richText": "<h2 style=\"text-align: justify\">Nossos produtos mais eficientes</h2><p style=\"text-align: justify\">Conheça a seleção de produtos da Electrolux com impacto ambiental reduzido.</p>"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

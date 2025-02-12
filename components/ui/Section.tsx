@@ -15,7 +15,7 @@ export default function Section({
   marginDesktop = 52,
   classesContainer,
   stylesContainer = {}
-}: Props) {
+}: Props): preact.JSX.Element {
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 
   return (

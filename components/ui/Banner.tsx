@@ -6,16 +6,30 @@ export default function Banner({
   srcDesktop,
   alt,
   link,
-}: IBannerSlide) {
+  fullScreen = false,
+  height = 440,
+  width = 1920,
+  maxWidth = "unset",
+  maxHeight = "unset"
+}: IBannerSlide): preact.JSX.Element {
   const BannerComponent = (
-    <picture class="flex w-screen">
+    <picture
+      class="flex w-full h-full"
+      style={{ width: fullScreen ? "100vw" : "100%" }}
+    >
       <source srcSet={srcMobile} media="(max-width: 1024px)" />
       <Image
         alt={alt}
-        class="w-full"
-        height={440}
+        class="object-cover z-10 w-full h-full"
+        decoding="async"
+        height={height}
+        loading="lazy"
         src={srcDesktop}
-        width={1920}
+        width={width}
+        style={{
+          maxWidth,
+          maxHeight
+        }}
       />
     </picture>
   );

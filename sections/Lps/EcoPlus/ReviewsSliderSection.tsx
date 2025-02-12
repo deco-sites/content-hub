@@ -30,7 +30,7 @@ interface IBackground {
 interface Props {
   /**
    * @title Configuração da Seção
-   * @description Define título, subtítulo e espaçamento da seção.
+   * @description Define o título, subtítulo e espaçamento da seção.
    */
   section?: ISection;
 

@@ -6,7 +6,7 @@
     "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@0.3.4",
     "@deco/durable": "jsr:@deco/durable@0.5.3",
     "@deco/warp": "jsr:@deco/warp@0.3.8",
-    "@eluxlab/library-components": "https://esm.sh/@eluxlab/library-components@0.2.1?external=react,react-dom,react/jsx-runtime&target=es2022",
+    "@eluxlab/library-components": "https://esm.sh/@eluxlab/library-components@0.2.1-alpha.1?external=react,react-dom,react/jsx-runtime&target=es2022",
     "@hono/hono": "jsr:@hono/hono@^4.5.4",
     "@std/assert": "jsr:@std/assert@^1.0.2",
     "@std/async": "jsr:@std/async@^0.224.1",
@@ -41,8 +41,8 @@
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "daisyui": "npm:daisyui@4.4.19",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@1.109.0",
-    "@deco/dev": "jsr:@deco/dev@1.109.0",
+    "@deco/deco": "jsr:@deco/deco@1.109.1",
+    "@deco/dev": "jsr:@deco/dev@1.109.1",
     "update": "npm:update@^0.7.4"
   },
   "tasks": {

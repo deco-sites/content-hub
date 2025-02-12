@@ -2913,6 +2913,9 @@ input.tab:checked + .tab-content,
 .min-h-full {
   min-height: 100%;
 }
+.w-1\/2 {
+  width: 50%;
+}
 .w-12 {
   width: 3rem;
 }

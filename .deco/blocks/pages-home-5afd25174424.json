@@ -4,9 +4,6 @@
   "sections": [
     {
       "__resolveType": "site/sections/Lps/EcoPlus/BannerSliderSection.tsx",
-      "section": {
-        "title": "<p></p>"
-      },
       "banners": [
         {
           "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png",
@@ -302,10 +299,93 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/ThreeColuns.tsx",
-        "rightText": "<p>tersrte</p>",
-        "leftText": "<p>teste</p>",
-        "imageSrc": "https://data.decoassets.com/content-hub/ca9ae9fd-f84e-4595-9fb6-9e63dabe8f2f/maquina.png"
+        "__resolveType": "site/sections/Lps/EcoPlus/BannerMediaSection.tsx",
+        "section": {},
+        "banners": [
+          {
+            "srcDesktop": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png",
+            "srcMobile": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png",
+            "alt": "Image 1"
+          },
+          {
+            "alt": "Image 2",
+            "srcDesktop": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png",
+            "srcMobile": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png"
+          },
+          {
+            "alt": "Image 3",
+            "srcDesktop": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png",
+            "srcMobile": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png"
+          }
+        ],
+        "title": "<h3>Já segue a Electrolux?</h3><p>Nas nossas redes sociais tem sempre uma nova promoção<br>ou dica incrível de sustentabilidade pra você.</p>",
+        "icons": [
+          {
+            "0": "F",
+            "1": "a",
+            "2": "c",
+            "3": "e",
+            "4": "b",
+            "5": "o",
+            "6": "o",
+            "7": "k",
+            "href": "https://www.facebook.com/Electrolux",
+            "id": "Facebook"
+          },
+          {
+            "0": "I",
+            "1": "n",
+            "2": "s",
+            "3": "t",
+            "4": "a",
+            "5": "g",
+            "6": "r",
+            "7": "a",
+            "8": "m",
+            "id": "Instagram",
+            "href": "https://www.instagram.com/electroluxbr"
+          },
+          {
+            "0": "Y",
+            "1": "o",
+            "2": "u",
+            "3": "t",
+            "4": "u",
+            "5": "b",
+            "6": "e",
+            "id": "Youtube",
+            "href": "https://www.youtube.com/@electroluxbr"
+          },
+          {
+            "0": "P",
+            "1": "i",
+            "2": "n",
+            "3": "t",
+            "4": "e",
+            "5": "r",
+            "6": "e",
+            "7": "s",
+            "8": "t",
+            "id": "Pinterest",
+            "href": "https://br.pinterest.com/electroluxbr/"
+          },
+          {
+            "0": "L",
+            "1": "i",
+            "2": "n",
+            "3": "k",
+            "4": "e",
+            "5": "d",
+            "6": "i",
+            "7": "n",
+            "id": "Linkedin",
+            "href": "https://www.linkedin.com/company/electroluxgroup/mycompany/verification/"
+          }
+        ],
+        "href": "#",
+        "configs": {
+          "spaceBetween": 32
+        }
       }
     }
   ],

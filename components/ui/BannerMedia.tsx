@@ -1,14 +1,14 @@
 import Image from "apps/website/components/Image.tsx";
 import type { IBannerSlide } from "site/types/Banner.d.ts";
 
-export default function Banner({
+export default function BannerMedia({
   srcMobile,
   srcDesktop,
   alt,
   link,
 }: IBannerSlide) {
-  const BannerComponent = (
-    <picture class="flex w-screen">
+  const BannerComponentMedia = (
+    <picture class="flex">
       <source srcSet={srcMobile} media="(max-width: 1024px)" />
       <Image
         alt={alt}
@@ -21,7 +21,7 @@ export default function Banner({
   );
 
   if (!link) {
-    return BannerComponent;
+    return BannerComponentMedia;
   }
 
   const { href, title } = link;
@@ -34,7 +34,7 @@ export default function Banner({
       rel="noopener noreferrer"
       class="flex no-underline"
     >
-      {BannerComponent}
+      {BannerComponentMedia}
     </a>
   );
 }

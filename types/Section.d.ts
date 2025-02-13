@@ -19,4 +19,22 @@ export interface ISection {
    * @default 16
    */
   marginMobile?: number;
+
+  /**
+   * @title Children
+   * @hide
+   */
+  children?: preact.createElement.JSX.Element;
+
+  /**
+   * @title Container classes
+   * @hide
+   */
+  classesContainer?: string;
+
+  /**
+   * @title Container styles
+   * @hide
+   */
+  stylesContainer?: preact.JSX.AllCSSProperties;
 }

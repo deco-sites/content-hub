@@ -1,39 +1,41 @@
-import InfoCardWithImageSlider from "site/islands/InfoCardWithImageSlider.tsx";
+import ArticleSlider from "site/islands/ArticleSlider.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
+import type { IArticle } from "site/types/Article.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
-import type { IInfoCardWithImage } from "site/types/InfoCardWithImage.d.ts";
 
 /**
- * @description Seção com um slider de info cards.
+ * @description Componente de seção contendo um slider de cartões informativos.
  */
 interface Props {
   /**
    * @title Configuração da Seção
-   * @description Define título, subtítulo e espaçamento da seção.
+   * @description Define o título, subtítulo e espaçamento da seção.
    */
   section?: ISection;
 
   /**
-   * @title Info Cards
+   * @title Lista de Artigos
+   * @description Conjunto de artigos a serem exibidos dentro do slider.
    */
-  infoCards?: IInfoCardWithImage[];
+  articles?: IArticle[];
 
   /**
    * @title Configurações do Slider
+   * @description Define os parâmetros de exibição e comportamento do slider.
    */
   configs?: ISliderConfigs;
 }
 
-export default function InfoCardWithImageSliderSection({
+export default function ArticleSliderSection({
   section,
-  infoCards,
+  articles,
   configs = {}
 }: Props) {
-  const rootId = useId();
+  const id = useId();
 
-  if (!infoCards?.length) return <></>;
+  if (!articles?.length) return <></>;
 
   const { autoplay = {}, slidesPerView = 1, spaceBetween = 10 } = configs ?? {};
 
@@ -53,9 +55,9 @@ export default function InfoCardWithImageSliderSection({
   };
 
   return (
-    <Section {...section}>
-      <div class="flex w-full mx-auto px-[10px] info-card-with-image-slider">
-        <InfoCardWithImageSlider
+    <Section {...section} id={id} classesContainer="article-slider-section">
+      <div class="flex w-full mx-auto px-[10px]">
+        <ArticleSlider
           configs={{
             ...configs,
             slidesPerView,
@@ -69,8 +71,8 @@ export default function InfoCardWithImageSliderSection({
               dynamicMainBullets: configs?.pagination?.dynamicMainBullets ?? 0
             }
           }}
-          rootId={rootId}
-          infoCards={infoCards}
+          rootId={id}
+          articles={articles}
         />
       </div>
     </Section>
@@ -79,8 +81,8 @@ export default function InfoCardWithImageSliderSection({
 
 export function LoadingFallback() {
   return (
-    <div>
-      <h2>loading...</h2>
+    <div style={{ height: "500px" }} class="flex justify-center items-center">
+      <span class="loading loading-spinner" />
     </div>
   );
 }

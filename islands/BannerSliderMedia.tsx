@@ -1,17 +1,17 @@
 import Component from "site/components/ui/Slider.tsx";
-import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
-import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
+import BannerMedia from "site/components/ui/BannerMedia.tsx";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
+import type { IBannerSlide } from "site/types/Banner.d.ts";
 
 type Props = {
-  banners?: IResponsiveImage[];
+  banners?: IBannerSlide[];
   configs?: ISliderConfigs;
   rootId: string;
 };
 
 function Island({ banners = [], configs = {}, rootId }: Props) {
   const slides = banners.map((props, idx) => {
-    return <ResponsiveImage {...props} key={`${props.alt}-${idx}`} />;
+    return <BannerMedia {...props} key={`${props.alt}-${idx}`} />;
   });
 
   return <Component configs={configs} slides={slides} rootId={rootId} />;

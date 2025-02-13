@@ -1,9 +1,9 @@
 import BannerSlider from "site/islands/BannerSlider.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
+import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
-import type { IBannerSlide } from "site/types/Banner.d.ts";
 
 /**
  * @description Seção com um slider de banners.
@@ -11,13 +11,14 @@ import type { IBannerSlide } from "site/types/Banner.d.ts";
 interface Props {
   /**
    * @title Configuração da Seção
-   * @description Define título, subtítulo e espaçamento da seção.
+   * @description Define o título, subtítulo e espaçamento da seção.
    */
   section?: ISection;
+
   /**
    * @title Banners
    */
-  banners?: IBannerSlide[];
+  banners?: IResponsiveImage[];
 
   /**
    * @title Configurações do Slider
@@ -30,7 +31,7 @@ export default function BannerSliderSection({
   banners,
   configs = {}
 }: Props) {
-  const rootId = useId();
+  const id = useId();
 
   if (!banners?.length) return <></>;
 
@@ -42,16 +43,20 @@ export default function BannerSliderSection({
       }
     : undefined;
 
+  const bannersWithFullScreen = banners.map(banner => {
+    return { ...{ ...banner }, fullScreen: true };
+  });
+
   return (
-    <Section {...section}>
+    <Section {...section} id={id}>
       <BannerSlider
         configs={{
           ...configs,
           slidesPerView,
           autoplay: autoplayConfig
         }}
-        rootId={rootId}
-        banners={banners}
+        rootId={id}
+        banners={bannersWithFullScreen}
       />
     </Section>
   );
@@ -59,8 +64,8 @@ export default function BannerSliderSection({
 
 export function LoadingFallback() {
   return (
-    <div>
-      <h2>loading...</h2>
+    <div style={{ height: "500px" }} class="flex justify-center items-center">
+      <span class="loading loading-spinner" />
     </div>
   );
 }

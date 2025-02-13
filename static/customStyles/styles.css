@@ -185,6 +185,11 @@
       line-height: 43px;
       margin: 0;
     }
+
+    > p,
+    > span {
+      font-size: 16px;
+    }
   }
 
   /* Image With Text Columns Section */

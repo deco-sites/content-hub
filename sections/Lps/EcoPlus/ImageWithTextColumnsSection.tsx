@@ -85,7 +85,7 @@ export default function ImageWithTextColumnsSection({
     >
       <div class="flex flex-col min-h-[520px] xl:flex-row xl:gap-2">
         <div
-          class="flex items-center w-full p-5 md:p-[0_5vw] lg:p-[0_3vw] xl:w-[33.3%] xl:text-right"
+          class="flex items-center w-full p-5 md:p-[1.5vh_5vw] lg:p-[1.5vh_3vw] xl:p-[0_3vw] xl:w-[33.3%] xl:text-right"
           style={{
             backgroundColor: lBackgroundColor,
             color: lTextColor
@@ -94,10 +94,15 @@ export default function ImageWithTextColumnsSection({
           <Text title={lText ?? ""} />
         </div>
         <div class="flex w-full xl:w-[33.3%]">
-          <ResponsiveImage {...image} height={520} width={520} />
+          <ResponsiveImage
+            {...image}
+            height={520}
+            width={520}
+            maxHeight={520}
+          />
         </div>
         <div
-          class="flex items-center w-full p-5 md:p-[0_5vw] lg:p-[0_3vw] xl:w-[33.3%]"
+          class="flex items-center w-full p-5 md:p-[1.5vh_5vw] lg:p-[1.5vh_3vw] xl:p-[0_3vw] xl:w-[33.3%]"
           style={{
             backgroundColor: rBackgroundColor,
             color: rTextColor,

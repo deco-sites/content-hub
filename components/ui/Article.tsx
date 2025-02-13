@@ -1,29 +1,27 @@
-import { InfoCard } from "@eluxlab/library-components";
 import Image from "apps/website/components/Image.tsx";
-import type { IInfoCardWithImage } from "site/types/InfoCardWithImage.d.ts";
+import { InfoCard } from "@eluxlab/library-components";
+import type { IArticle } from "site/types/Article.d.ts";
 
 export default function InfoCardWithImage({
   image,
   title,
   text,
-  link,
-}: IInfoCardWithImage) {
+  link
+}: IArticle): preact.JSX.Element {
   const { alt, src } = image;
   const { href, text: textLink, title: titleLink } = link;
 
   return (
     <div class="flex w-full h-full">
       <InfoCard
-        richText=""
-        left
         styles={{
           container: { flexDirection: "column", width: "auto" },
-          children: { width: "auto", padding: "0", minHeight: "initial" },
+          children: { width: "auto", padding: "0", minHeight: "initial" }
         }}
         classes={{
           container:
             "py-6 px-4 border border-solid border-[#dfe7ea] min-h-[492px]",
-          children: "flex flex-col",
+          children: "flex flex-col"
         }}
       >
         <div class="flex mb-5">

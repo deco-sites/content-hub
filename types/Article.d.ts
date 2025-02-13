@@ -21,7 +21,7 @@ interface Link {
 /**
  * @title {{#title}}{{title}}{{/title}}{{^title}}Info Card{{/title}}
  */
-export interface IInfoCardWithImage {
+export interface IArticle {
   /**
    * @title Imagem
    * @description Imagem exibida no card.

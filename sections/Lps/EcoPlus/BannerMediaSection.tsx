@@ -1,11 +1,12 @@
-import BannerSliderMedia from "site/islands/BannerSliderMedia.tsx";
+import BannerSlider from "site/islands/BannerSlider.tsx";
 import Icon from "site/components/ui/Icon.tsx";
+import Section from "site/components/ui/Section.tsx";
 import { Text } from "@eluxlab/library-components";
-import type { RichText } from "apps/admin/widgets.ts";
 import { useId } from "site/sdk/useId.ts";
-import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { AvailableIcons } from "site/components/ui/Icon.tsx";
-import type { IBannerSlide } from "site/types/Banner.d.ts";
+import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
+import type { ISection } from "site/types/Section.d.ts";
+import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
 /**
  * @title {{#id}}{{id}}{{/id}}{{^id}}Ícone{{/id}}
@@ -14,11 +15,18 @@ interface IconItem {
   id: AvailableIcons;
   href: string;
 }
+
 interface Props {
+  /**
+   * @title Configuração da Seção
+   * @description Define o título, subtítulo e espaçamento da seção.
+   */
+  section?: ISection;
+
   /**
    * @title Banners
    */
-  banners?: IBannerSlide[];
+  banners?: IResponsiveImage[];
 
   /**
    * @title Configurações do Slider
@@ -27,89 +35,107 @@ interface Props {
 
   /**
    * @title Configurações dos textos ao lado
+   * @format rich-text
    */
-  title?: RichText;
+  title?: string;
 
   /**
    * @title Lista de ícones para renderizar
    */
-  icons: IconItem[];
+  icons?: IconItem[];
 }
 
 export default function BannerMediaSliderSection({
+  section,
   banners,
   title,
   configs = {},
-  icons = [],
+  icons
 }: Props) {
-  const rootId = useId();
+  const id = useId();
 
   if (!banners?.length) return <></>;
 
-  const { autoplay = {} } = configs ?? {};
+  const {
+    autoplay = {},
+    slidesPerView = 1.6,
+    spaceBetween = 16,
+    centeredSlides = true
+  } = configs ?? {};
+
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 
   const autoplayConfig = autoplay.enabled
     ? {
-        delay: autoplay.delay ?? 3000,
+        delay: autoplay.delay ?? 3000
       }
     : undefined;
 
   const sliderConfig = {
     ...configs,
-    slidesPerView: 3,
+    slidesPerView,
+    spaceBetween,
+    centeredSlides,
     breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 2.3,
+        spaceBetween: 64,
+        centeredSlides: false
       },
       1024: {
         slidesPerView: 3,
-      },
+        spaceBetween: 64,
+        centeredSlides: false,
+        pagination: {
+          enabled: configs?.pagination?.enabledDesktop ?? false
+        }
+      }
     },
-    autoplay: autoplayConfig,
-  };
+    autoplay: autoplayConfig
+  } as ISliderConfigs;
+
+  const bannersWithSize = banners.map(banner => {
+    return { ...{ ...banner }, width: 185, height: 324 };
+  });
 
   return (
-    <>
-      <div class="section-container flex flex-col w-full gap-4 lg:gap-6">
-        <div class="flex flex-wrap container mx-auto px-[10px] justify-between flex-row items-stretch media-with-text-slider">
-          <div class="flex w-1/2 media-slider">
-            <BannerSliderMedia
+    <Section {...section} id={id} classesContainer="banner-media-section">
+      <div class="flex flex-col w-full max-w-[1536px] mx-auto gap-4 lg:px-4 lg:gap-6 ">
+        <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row lg:gap-0 lg:items-start">
+          <div class="flex w-full lg:w-[65%] xl:w-[55%]">
+            <BannerSlider
               configs={sliderConfig}
-              rootId={rootId}
-              banners={banners}
+              rootId={id}
+              banners={bannersWithSize}
             />
           </div>
-          <div class="flex flex-col max-w-[600px] w-[45%] media-text">
+          <div class="w-full flex flex-col items-center justify-center max-w-[600px] px-4 lg:w-[35%] xl:w-[45%]">
             {!isEmptyTitle && (
-              <Text title={title} classes={{ container: "section-title" }} />
+              <div class="flex text-center lg:text-left">
+                <Text title={title} />
+              </div>
             )}
-            <div
-              style="margin-top: 14px;"
-              className="section-social flex item-center gap-x-[14px]"
-            >
-              {icons.map(({ id, href }) => (
-                <>
+
+            {icons && (
+              <div className="w-full mt-4 flex flex-wrap justify-center item-center gap-x-[24px] lg:justify-start">
+                {icons.map(({ id, href }) => (
                   <a target="_blank" key={id} title={id} href={href}>
-                    <Icon id={id as AvailableIcons} size={32} />
+                    <Icon id={id} size={32} />
                   </a>
-                </>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
-    </>
+    </Section>
   );
 }
 
 export function LoadingFallback() {
   return (
-    <div>
-      <h2>loading...</h2>
+    <div style={{ height: "500px" }} class="flex justify-center items-center">
+      <span class="loading loading-spinner" />
     </div>
   );
 }

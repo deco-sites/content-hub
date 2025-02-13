@@ -12,28 +12,28 @@ export interface IFakeReviewCard {
      * @description A quantidade total de estrelas a serem exibidas.
      * @default 5
      */
-    quantity?: number;
+    quantity: number;
 
     /**
-     * @title Estrela Cheia (opcional)
+     * @title Estrela Cheia
      * @description O caminho da imagem do ícone para uma estrela cheia.
      * @default https://electrolux.vteximg.com.br/arquivos/fakereview-fullstar.svg
      */
-    fullStarSrc?: string;
+    fullStarSrc: string;
 
     /**
-     * @title Estrela Vazia (opcional)
+     * @title Estrela Vazia
      * @description O caminho da imagem do ícone para uma estrela vazia.
      * @default https://electrolux.vteximg.com.br/arquivos/fakereview-emptystar.svg
      */
-    emptyStarSrc?: string;
+    emptyStarSrc: string;
 
     /**
-     * @title Estrela Meio Preenchida (opcional)
+     * @title Estrela Meio Preenchida
      * @description O caminho da imagem do ícone para uma estrela meio preenchida.
      * @default https://electrolux.vteximg.com.br/arquivos/fakereview-halfstar.svg
      */
-    halfStarSrc?: string;
+    halfStarSrc: string;
   };
 
   /**
@@ -68,9 +68,9 @@ export interface IFakeReviewCard {
    * @hide
    */
   styles?: {
-    container?: string;
-    fakeStars?: string;
-    fakeDescription?: string;
-    fakeProductNameAndPersonName?: string;
+    container?: preact.JSX.AllCSSProperties;
+    fakeStars?: preact.JSX.AllCSSProperties;
+    fakeDescription?: preact.JSX.AllCSSProperties;
+    fakeProductNameAndPersonName?: preact.JSX.AllCSSProperties;
   };
 }

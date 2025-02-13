@@ -4,9 +4,6 @@
   "sections": [
     {
       "__resolveType": "site/sections/Lps/EcoPlus/BannerSliderSection.tsx",
-      "section": {
-        "title": "<p></p>"
-      },
       "banners": [
         {
           "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4679fe1b-96bd-4fe4-9175-917b826d97fd___be8d4ace061179fe7a8d2fb73fbed4a4.png",

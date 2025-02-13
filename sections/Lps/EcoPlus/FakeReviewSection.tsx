@@ -1,8 +1,9 @@
-import Section from "site/components/ui/Section.tsx";
 import Image from "apps/website/components/Image.tsx";
+import Section from "site/components/ui/Section.tsx";
 import { FakeReviewCard } from "@eluxlab/library-components";
-import type { ISection } from "site/types/Section.d.ts";
+import { useId } from "preact/hooks";
 import type { IFakeReviewCard } from "site/types/FakeReviewCard.d.ts";
+import type { ISection } from "site/types/Section.d.ts";
 
 interface IBackground {
   /**
@@ -30,7 +31,7 @@ interface IBackground {
 interface Props {
   /**
    * @title Configuração da Seção
-   * @description Define título, subtítulo e espaçamento da seção.
+   * @description Define o título, subtítulo e espaçamento da seção.
    */
   section?: ISection;
 
@@ -48,17 +49,19 @@ interface Props {
   fakeReviewCards?: IFakeReviewCard[];
 }
 
-export default function ReviewsSliderSection({
+export default function FakeReviewSection({
   section,
   background,
-  fakeReviewCards = [],
+  fakeReviewCards = []
 }: Props) {
+  const id = useId();
   const { srcDesktop, srcMobile, alt } = background ?? {};
 
   return (
     <Section
+      id={id}
       {...section}
-      classesContainer="review-cards-section relative h-[350px] lg:h-[500px] bg-black bg-opacity-[0.7] bg-auto bg-blend-darken justify-center lg:gap-[32px]"
+      classesContainer="fake-review-section relative h-[350px] lg:h-[500px] bg-black bg-opacity-[0.7] justify-center lg:gap-[32px]"
     >
       <>
         {srcDesktop && srcMobile && (
@@ -88,8 +91,8 @@ export default function ReviewsSliderSection({
                         container:
                           "whitespace-normal min-w-[340px] lg:min-w-[initial]",
                         fakeDescription: "min-h-[60px]",
-                        fakeProductNameAndPersonName: "min-h-[45px]",
-                      },
+                        fakeProductNameAndPersonName: "min-h-[45px]"
+                      }
                     }}
                     key={`${props.fakePersonName}-${idx}`}
                   />
@@ -105,8 +108,8 @@ export default function ReviewsSliderSection({
 
 export function LoadingFallback() {
   return (
-    <div>
-      <h2>loading...</h2>
+    <div style={{ height: "500px" }} class="flex justify-center items-center">
+      <span class="loading loading-spinner" />
     </div>
   );
 }

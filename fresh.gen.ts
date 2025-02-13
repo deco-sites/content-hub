@@ -3,9 +3,8 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $ArticleSlider from "./islands/ArticleSlider.tsx";
 import * as $BannerSlider from "./islands/BannerSlider.tsx";
-import * as $BannerSliderMedia from "./islands/BannerSliderMedia.tsx";
-import * as $InfoCardWithImageSlider from "./islands/InfoCardWithImageSlider.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -13,9 +12,8 @@ const manifest = {
     "./routes/_app.tsx": $_app,
   },
   islands: {
+    "./islands/ArticleSlider.tsx": $ArticleSlider,
     "./islands/BannerSlider.tsx": $BannerSlider,
-    "./islands/BannerSliderMedia.tsx": $BannerSliderMedia,
-    "./islands/InfoCardWithImageSlider.tsx": $InfoCardWithImageSlider,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

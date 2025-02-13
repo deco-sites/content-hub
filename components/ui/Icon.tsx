@@ -1,5 +1,4 @@
 import { asset } from "$fresh/runtime.ts";
-import type { JSX } from "preact";
 
 export type AvailableIcons =
   | "ArrowLeft"
@@ -46,7 +45,7 @@ export type AvailableIcons =
   | "XMark"
   | "Zoom";
 
-interface Props extends JSX.SVGAttributes<SVGSVGElement> {
+interface Props extends preact.JSX.SVGAttributes<SVGSVGElement> {
   /**
    * Symbol id from element to render. Take a look at `/static/icons.svg`.
    *
@@ -63,7 +62,7 @@ function Icon({
   width,
   height,
   ...otherProps
-}: Props) {
+}: Props): preact.JSX.Element {
   return (
     <svg
       {...otherProps}

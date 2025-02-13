@@ -2,7 +2,7 @@ import { Slider } from "@eluxlab/library-components";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { createElement } from "preact";
 
-export type SwiperSliderProps = {
+export type Props = {
   slides: createElement.JSX.Element[] | [];
   configs?: ISliderConfigs;
   rootId: string;
@@ -10,8 +10,8 @@ export type SwiperSliderProps = {
 
 export default function SwiperSlider({
   configs,
-  slides = [],
-}: SwiperSliderProps) {
+  slides = []
+}: Props): preact.JSX.Element {
   // Fix loop mode warning
   const hasLoop =
     (configs &&

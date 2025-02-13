@@ -75,7 +75,7 @@ export default function BannerMediaSliderSection({
   return (
     <>
       <div class="section-container flex flex-col w-full gap-4 lg:gap-6">
-        <div class="flex container mx-auto px-[10px] justify-between flex-row items-stretch media-with-text-slider">
+        <div class="flex flex-wrap container mx-auto px-[10px] justify-between flex-row items-stretch media-with-text-slider">
           <div class="flex w-1/2 media-slider">
             <BannerSliderMedia
               configs={sliderConfig}
@@ -83,14 +83,14 @@ export default function BannerMediaSliderSection({
               banners={banners}
             />
           </div>
-          <div
-            style="margin-top: 14px;"
-            class="flex flex-col max-w-[600px] media-text"
-          >
+          <div class="flex flex-col max-w-[600px] w-[45%] media-text">
             {!isEmptyTitle && (
               <Text title={title} classes={{ container: "section-title" }} />
             )}
-            <div className="section-social flex item-center gap-x-[14px]">
+            <div
+              style="margin-top: 14px;"
+              className="section-social flex item-center gap-x-[14px]"
+            >
               {icons.map(({ id, href }) => (
                 <>
                   <a target="_blank" key={id} title={id} href={href}>

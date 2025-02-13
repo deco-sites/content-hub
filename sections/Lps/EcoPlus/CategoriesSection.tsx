@@ -76,7 +76,7 @@ export default function CategoriesSection({ icons = [], section }: Props) {
   return (
     <>
       <Section {...section} id={id} classesContainer="px-6">
-        <div className="categories-section flex items-center gap-3 flex-wrap justify-center w-full">
+        <div className="categories-section flex items-center gap-3 flex-wrap justify-center w-full h-full">
           {icons?.map((icon, index) => {
             const {
               boxBackgroundColorHover,
@@ -92,7 +92,7 @@ export default function CategoriesSection({ icons = [], section }: Props) {
               <>
                 <div
                   key={index}
-                  className={`categories-section__container flex items-center text-center flex-col justify-center border border-solid border-[#eaebed] rounded-[2px] transition-all ease-in duration-300 group w-[100px] h-[100px] lg:w-[120px] lg:h-[120px]`}
+                  className={`categories-section__container box-border px-1 flex items-center text-center flex-col justify-center border border-solid border-[#eaebed] rounded-[2px] transition-all ease-in duration-300 group w-[100px] h-[100px] lg:w-[130px] lg:h-[130px]`}
                   style={{
                     background: boxBackgroundColor
                   }}
@@ -106,10 +106,11 @@ export default function CategoriesSection({ icons = [], section }: Props) {
                       target
                     }}
                     classes={{
+                      containerLink: "gap-1",
                       image:
-                        "group-hover:[filter:brightness(0)_invert(1)] transition-all duration-300 ease-in",
+                        "max-sm:w-[24px] max-sm:h-[24px] group-hover:[filter:brightness(0)_invert(1)] transition-all duration-300 ease-in",
                       title:
-                        "text-[#011e41] group-hover:text-[#fff] transition-all duration-300 ease-in"
+                        "text-[#011e41] text-xs leading-[initial] group-hover:text-[#fff] transition-all duration-300 ease-in lg:min-h-[48px] lg:text-base"
                     }}
                   />
                 </div>

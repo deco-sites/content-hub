@@ -1,5 +1,5 @@
-import { InfoCard } from "@eluxlab/library-components";
 import Image from "apps/website/components/Image.tsx";
+import { InfoCard } from "@eluxlab/library-components";
 import type { IArticle } from "site/types/Article.d.ts";
 
 export default function InfoCardWithImage({

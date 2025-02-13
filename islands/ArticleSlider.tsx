@@ -1,5 +1,5 @@
-import Component from "site/components/ui/Slider.tsx";
 import Article from "site/components/ui/Article.tsx";
+import Component from "site/components/ui/Slider.tsx";
 import type { IArticle } from "site/types/Article.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 

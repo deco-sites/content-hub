@@ -1,9 +1,9 @@
-import Section from "site/components/ui/Section.tsx";
 import Image from "apps/website/components/Image.tsx";
+import Section from "site/components/ui/Section.tsx";
 import { FakeReviewCard } from "@eluxlab/library-components";
 import { useId } from "preact/hooks";
-import type { ISection } from "site/types/Section.d.ts";
 import type { IFakeReviewCard } from "site/types/FakeReviewCard.d.ts";
+import type { ISection } from "site/types/Section.d.ts";
 
 interface IBackground {
   /**
@@ -61,7 +61,7 @@ export default function FakeReviewSection({
     <Section
       id={id}
       {...section}
-      classesContainer="fake-review-section relative h-[350px] lg:h-[500px] bg-black bg-opacity-[0.7] bg-auto bg-blend-darken justify-center lg:gap-[32px]"
+      classesContainer="fake-review-section relative h-[350px] lg:h-[500px] bg-black bg-opacity-[0.7] justify-center lg:gap-[32px]"
     >
       <>
         {srcDesktop && srcMobile && (

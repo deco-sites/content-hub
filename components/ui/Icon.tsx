@@ -1,5 +1,4 @@
 import { asset } from "$fresh/runtime.ts";
-import type { JSX } from "preact";
 
 export type AvailableIcons =
   | "ArrowLeft"
@@ -17,10 +16,12 @@ export type AvailableIcons =
   | "Discount"
   | "Elo"
   | "Facebook"
+  | "Youtube"
+  | "Pinterest"
+  | "Linkedin"
   | "FilterList"
   | "Heart"
   | "Instagram"
-  | "Linkedin"
   | "Minus"
   | "MapPin"
   | "MagnifyingGlass"
@@ -44,7 +45,7 @@ export type AvailableIcons =
   | "XMark"
   | "Zoom";
 
-interface Props extends JSX.SVGAttributes<SVGSVGElement> {
+interface Props extends preact.JSX.SVGAttributes<SVGSVGElement> {
   /**
    * Symbol id from element to render. Take a look at `/static/icons.svg`.
    *
@@ -56,7 +57,7 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
 
 function Icon({
   id,
-  strokeWidth = 16,
+  strokeWidth = 1,
   size,
   width,
   height,
@@ -68,6 +69,7 @@ function Icon({
       width={width ?? size}
       height={height ?? size}
       strokeWidth={strokeWidth}
+      style="color:#ADB9C3"
     >
       <use href={asset(`/sprites.svg#${id}`)} />
     </svg>

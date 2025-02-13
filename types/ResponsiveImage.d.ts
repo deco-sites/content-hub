@@ -1,5 +1,5 @@
 /**
- * @title {{#alt}}{{alt}}{{/alt}}{{^alt}}Image{{/alt}}
+ * @title {{#alt}}{{alt}}{{/alt}}{{^alt}}Imagem{{/alt}}
  */
 export interface IResponsiveImage {
   /**

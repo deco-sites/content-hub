@@ -1,11 +1,9 @@
+import BannerSlider from "site/islands/BannerSlider.tsx";
 import Section from "site/components/ui/Section.tsx";
-import { lazy, Suspense } from "preact/compat";
 import { useId } from "site/sdk/useId.ts";
+import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
-import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
-
-const BannerSlider = lazy(() => import("site/islands/BannerSlider.tsx"));
 
 /**
  * @description Seção com um slider de banners.
@@ -45,26 +43,22 @@ export default function BannerSliderSection({
       }
     : undefined;
 
+  const bannersWithFullScreen = banners.map(banner => {
+    return { ...{ ...banner }, fullScreen: true };
+  });
+
   return (
-    <Suspense
-      fallback={
-        <div class="w-screen flex items-center justify-center">
-          <span class="loading loading-ring" />
-        </div>
-      }
-    >
-      <Section {...section} id={id}>
-        <BannerSlider
-          configs={{
-            ...configs,
-            slidesPerView,
-            autoplay: autoplayConfig
-          }}
-          rootId={id}
-          banners={banners}
-        />
-      </Section>
-    </Suspense>
+    <Section {...section} id={id}>
+      <BannerSlider
+        configs={{
+          ...configs,
+          slidesPerView,
+          autoplay: autoplayConfig
+        }}
+        rootId={id}
+        banners={bannersWithFullScreen}
+      />
+    </Section>
   );
 }
 

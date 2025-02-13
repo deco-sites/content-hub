@@ -171,6 +171,38 @@
   }
 }
 
+/* Banner Media Section */
+.banner-media-section {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #011e41;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 0 16px;
+  }
+
+  p {
+    color: #041e50;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .swiper-slide {
+    a {
+      picture,
+      img,
+      source {
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
 /* Responsive */
 @media screen and (min-width: 1024px) {
   /* Section Component */
@@ -276,6 +308,25 @@
         font-size: 36px;
         max-width: unset;
       }
+    }
+  }
+
+  /* Banner Media Section */
+  .banner-media-section {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+
+    .swiper-slide {
+      max-width: 185px;
+      width: 25% !important;
     }
   }
 }

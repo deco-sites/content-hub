@@ -1,12 +1,8 @@
 import { Text } from "@eluxlab/library-components";
 import type { ISection } from "site/types/Section.d.ts";
-import type { createElement, JSX } from "preact";
 
 interface Props extends ISection {
   id: string;
-  children?: createElement.JSX.Element;
-  classesContainer?: string;
-  stylesContainer?: JSX.AllCSSProperties;
 }
 
 export default function Section({

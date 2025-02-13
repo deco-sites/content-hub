@@ -16,7 +16,7 @@ export default function ResponsiveImage({
 
   const ResponsiveImageComponent = (
     <picture
-      class="flex w-full h-full"
+      class="flex items-center justify-center w-full h-full"
       style={{ width: fullScreen ? "100vw" : "100%" }}
     >
       <source srcSet={srcMobile} media="(max-width: 1024px)" />

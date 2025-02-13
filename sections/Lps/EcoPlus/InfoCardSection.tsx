@@ -1,12 +1,12 @@
 import InfoCard from "site/components/ui/InfoCard.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
-import type { ISection } from "site/types/Section.d.ts";
 import type {
   IInfoCard,
   IInfoCardImage,
   IInfoCardVideo
 } from "site/types/InfoCard.d.ts";
+import type { ISection } from "site/types/Section.d.ts";
 
 /**
  * @description Componente de seção contendo um cartão informativo.

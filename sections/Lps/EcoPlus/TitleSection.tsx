@@ -1,4 +1,4 @@
-import { Text, InfoIcon } from "@eluxlab/library-components";
+import { InfoIcon } from "@eluxlab/library-components";
 import type { RichText, ImageWidget, Color } from "apps/admin/widgets.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";

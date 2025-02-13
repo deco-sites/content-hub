@@ -3031,6 +3031,9 @@ input.tab:checked + .tab-content,
 .max-w-\[522px\] {
   max-width: 522px;
 }
+.max-w-\[600px\] {
+  max-width: 600px;
+}
 .max-w-\[80px\] {
   max-width: 80px;
 }
@@ -3176,6 +3179,10 @@ input.tab:checked + .tab-content,
 }
 .gap-\[6px\] {
   gap: 6px;
+}
+.gap-x-\[14px\] {
+  -moz-column-gap: 14px;
+       column-gap: 14px;
 }
 .gap-x-\[8px\] {
   -moz-column-gap: 8px;

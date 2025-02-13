@@ -17,10 +17,12 @@ export type AvailableIcons =
   | "Discount"
   | "Elo"
   | "Facebook"
+  | "Youtube"
+  | "Pinterest"
+  | "Linkedin"
   | "FilterList"
   | "Heart"
   | "Instagram"
-  | "Linkedin"
   | "Minus"
   | "MapPin"
   | "MagnifyingGlass"
@@ -54,15 +56,21 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   size?: number;
 }
 
-function Icon(
-  { id, strokeWidth = 16, size, width, height, ...otherProps }: Props,
-) {
+function Icon({
+  id,
+  strokeWidth = 1,
+  size,
+  width,
+  height,
+  ...otherProps
+}: Props) {
   return (
     <svg
       {...otherProps}
       width={width ?? size}
       height={height ?? size}
       strokeWidth={strokeWidth}
+      style="color:#ADB9C3"
     >
       <use href={asset(`/sprites.svg#${id}`)} />
     </svg>

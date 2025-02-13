@@ -2913,6 +2913,9 @@ input.tab:checked + .tab-content,
 .min-h-full {
   min-height: 100%;
 }
+.w-1\/2 {
+  width: 50%;
+}
 .w-12 {
   width: 3rem;
 }
@@ -2945,6 +2948,9 @@ input.tab:checked + .tab-content,
 }
 .w-\[400px\] {
   width: 400px;
+}
+.w-\[45\%\] {
+  width: 45%;
 }
 .w-\[4px\] {
   width: 4px;
@@ -3027,6 +3033,9 @@ input.tab:checked + .tab-content,
 }
 .max-w-\[522px\] {
   max-width: 522px;
+}
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 .max-w-\[80px\] {
   max-width: 80px;
@@ -3173,6 +3182,10 @@ input.tab:checked + .tab-content,
 }
 .gap-\[6px\] {
   gap: 6px;
+}
+.gap-x-\[14px\] {
+  -moz-column-gap: 14px;
+       column-gap: 14px;
 }
 .gap-x-\[8px\] {
   -moz-column-gap: 8px;

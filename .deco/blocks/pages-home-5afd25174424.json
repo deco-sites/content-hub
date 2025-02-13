@@ -24,35 +24,6 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/TitleSection.tsx",
-        "icons": [
-          {
-            "iconTitle": "<p>Geladeira</p>",
-            "iconAlt": "Geladeira",
-            "iconRedirect": "#",
-            "iconSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
-            "boxBackgroundColor": "#000080",
-            "boxBackgroundColorHover": "#000040"
-          },
-          {
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#008000",
-            "iconTitle": "<p>Ar-Condicionados</p>",
-            "iconAlt": "Ar-Condicionados",
-            "iconRedirect": "#",
-            "iconSrc": "https://data.decoassets.com/content-hub/16710286-8cd7-49c0-a10a-52789fde5ae1/ar.svg"
-          }
-        ],
-        "section": {
-          "title": "<h1 style=\"text-align: center\">QUEM ESCOLHE VIVER NUM MUNDO MELHOR, NÃO JOGA NADA FORA</h1><p style=\"text-align: center\">Sabia que você pode reduzir seu impacto ambiental quando escolhe um Electrolux EcoPlus? Isso porque eles representam o melhor da tecnologia Electrolux: economizam água, energia e te ajudam a não jogar nada fora.</p>",
-          "marginMobile": 12,
-          "marginDesktop": 24
-        }
-      }
-    },
-    {
       "__resolveType": "site/sections/Lps/EcoPlus/InfoCardWithImageSliderSection.tsx",
       "section": {
         "title": "<h2 style=\"text-align: center\">NOSSAS ESCOLHAS PARA VIVER MELHOR</h2><p style=\"text-align: center\">Saiba o que estamos fazendo por um futuro de qualidade</p>"
@@ -331,13 +302,93 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/ThreeColuns.tsx",
-        "rightText": "<p>teste</p>",
-        "leftText": "<p>teste 1</p>",
-        "imageSrc": "https://data.decoassets.com/content-hub/ca9ae9fd-f84e-4595-9fb6-9e63dabe8f2f/maquina.png",
-        "alt": "teste",
-        "width": "500",
-        "height": "500"
+        "__resolveType": "site/sections/Lps/EcoPlus/BannerMediaSection.tsx",
+        "section": {},
+        "banners": [
+          {
+            "srcDesktop": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png",
+            "srcMobile": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png",
+            "alt": "Image 1"
+          },
+          {
+            "alt": "Image 2",
+            "srcDesktop": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png",
+            "srcMobile": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png"
+          },
+          {
+            "alt": "Image 3",
+            "srcDesktop": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png",
+            "srcMobile": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png"
+          }
+        ],
+        "title": "<h3>Já segue a Electrolux?</h3><p>Nas nossas redes sociais tem sempre uma nova promoção<br>ou dica incrível de sustentabilidade pra você.</p>",
+        "icons": [
+          {
+            "0": "F",
+            "1": "a",
+            "2": "c",
+            "3": "e",
+            "4": "b",
+            "5": "o",
+            "6": "o",
+            "7": "k",
+            "href": "https://www.facebook.com/Electrolux",
+            "id": "Facebook"
+          },
+          {
+            "0": "I",
+            "1": "n",
+            "2": "s",
+            "3": "t",
+            "4": "a",
+            "5": "g",
+            "6": "r",
+            "7": "a",
+            "8": "m",
+            "id": "Instagram",
+            "href": "https://www.instagram.com/electroluxbr"
+          },
+          {
+            "0": "Y",
+            "1": "o",
+            "2": "u",
+            "3": "t",
+            "4": "u",
+            "5": "b",
+            "6": "e",
+            "id": "Youtube",
+            "href": "https://www.youtube.com/@electroluxbr"
+          },
+          {
+            "0": "P",
+            "1": "i",
+            "2": "n",
+            "3": "t",
+            "4": "e",
+            "5": "r",
+            "6": "e",
+            "7": "s",
+            "8": "t",
+            "id": "Pinterest",
+            "href": "https://br.pinterest.com/electroluxbr/"
+          },
+          {
+            "0": "L",
+            "1": "i",
+            "2": "n",
+            "3": "k",
+            "4": "e",
+            "5": "d",
+            "6": "i",
+            "7": "n",
+            "id": "Linkedin",
+            "href": "https://www.linkedin.com/company/electroluxgroup/mycompany/verification/"
+          }
+        ],
+        "href": "#",
+        "configs": {
+          "spaceBetween": 32
+        }
       }
     }
   ],

@@ -198,7 +198,8 @@
       "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
       "section": {
         "marginDesktop": 0,
-        "marginMobile": 0
+        "marginMobile": 0,
+        "title": "<p></p>"
       },
       "infoCard": {
         "typeOfContent": {

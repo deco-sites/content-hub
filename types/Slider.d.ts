@@ -58,6 +58,30 @@ interface Pagination {
   dynamicMainBullets?: number;
 }
 
+interface Navigation {
+  /**
+   * @title Ativar Navegação (desktop)
+   * @description Habilita ou desabilita a navegação no slider.
+   * @hide
+   * @default false
+   */
+  enabled?: boolean;
+
+  /**
+   * @title Ativar Navegação (mobile)
+   * @description Habilita ou desabilita a navegação no slider.
+   * @default false
+   */
+  enabledMobile?: boolean;
+
+  /**
+   * @title Ativar Navegação (desktop)
+   * @description Habilita ou desabilita a navegação no slider.
+   * @default false
+   */
+  enabledDesktop?: boolean;
+}
+
 export interface ISliderConfigs {
   /**
    * @title Loop Infinito
@@ -83,9 +107,8 @@ export interface ISliderConfigs {
   /**
    * @title Exibir Navegação
    * @description Habilita botões de navegação (próximo e anterior) no slider.
-   * @default false
    */
-  navigation?: boolean;
+  navigation?: Navigation;
 
   /**
    * @title Paginação

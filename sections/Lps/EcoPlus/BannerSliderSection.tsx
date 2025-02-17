@@ -43,20 +43,41 @@ export default function BannerSliderSection({
       }
     : undefined;
 
-  const bannersWithFullScreen = banners.map(banner => {
-    return { ...{ ...banner }, fullScreen: true };
+  const sliderConfig = {
+    ...configs,
+    autoplay: autoplayConfig,
+    slidesPerView,
+    pagination: {
+      enabled: configs?.pagination?.enabledMobile ?? false
+    },
+    breakpoints: {
+      1024: {
+        pagination: {
+          enabled: configs?.pagination?.enabledDesktop ?? false
+        }
+      }
+    }
+  } as ISliderConfigs;
+
+  const defaultPropsBanners = banners.map(banner => {
+    return {
+      ...{ ...banner },
+      sizes: {
+        ...banner.sizes,
+        fullScreen: true,
+        maxHeight: 420,
+        heightMobile: 420,
+        width: 420
+      }
+    };
   });
 
   return (
     <Section {...section} id={id}>
       <BannerSlider
-        configs={{
-          ...configs,
-          slidesPerView,
-          autoplay: autoplayConfig
-        }}
+        configs={sliderConfig}
         rootId={id}
-        banners={bannersWithFullScreen}
+        banners={defaultPropsBanners}
       />
     </Section>
   );
@@ -64,7 +85,10 @@ export default function BannerSliderSection({
 
 export function LoadingFallback() {
   return (
-    <div style={{ height: "500px" }} class="flex justify-center items-center">
+    <div
+      style={{ height: "500px" }}
+      class="flex justify-center items-center h-[420px] lg:h-[440px]"
+    >
       <span class="loading loading-spinner" />
     </div>
   );

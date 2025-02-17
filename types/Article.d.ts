@@ -1,3 +1,5 @@
+import { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
+
 interface Link {
   /**
    * @title URL do Link
@@ -26,20 +28,7 @@ export interface IArticle {
    * @title Imagem
    * @description Imagem exibida no card.
    */
-  image: {
-    /**
-     * @title URL da imagem
-     * @description Endereço da imagem a ser exibida.
-     * @format image-uri
-     */
-    src: string;
-
-    /**
-     * @title Texto Alternativo (Alt)
-     * @description Atributo de texto alternativo (SEO)
-     */
-    alt: string;
-  };
+  image: IResponsiveImage;
 
   /**
    * @title Título

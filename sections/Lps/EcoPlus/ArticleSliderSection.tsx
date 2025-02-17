@@ -45,34 +45,49 @@ export default function ArticleSliderSection({
       }
     : undefined;
 
-  const breakpoints: Record<number, ISliderConfigs> = {
-    1024: {
-      slidesPerView: 3,
-      pagination: {
-        enabled: configs?.pagination?.enabledDesktop ?? false
+  const sliderConfig = {
+    ...configs,
+    autoplay: autoplayConfig,
+    slidesPerView,
+    spaceBetween,
+    pagination: {
+      enabled: configs?.pagination?.enabledMobile ?? false
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        pagination: {
+          enabled: configs?.pagination?.enabledDesktop ?? false
+        }
       }
     }
-  };
+  } as ISliderConfigs;
+
+  const defaultPropsArticles = articles.map(article => ({
+    ...article,
+    image: {
+      ...article.image,
+      sizes: {
+        ...article.image.sizes,
+        width: 344,
+        height: 180,
+        widthMobile: 344,
+        heightMobile: 180
+      }
+    }
+  }));
 
   return (
-    <Section {...section} id={id} classesContainer="article-slider-section">
+    <Section
+      {...section}
+      id={id}
+      classesContainer="article-slider-section h-full min-h-[630px] lg:min-h-[585px]"
+    >
       <div class="flex w-full mx-auto px-[10px]">
         <ArticleSlider
-          configs={{
-            ...configs,
-            slidesPerView,
-            spaceBetween,
-            autoplay: autoplayConfig,
-            breakpoints,
-            pagination: {
-              enabled: configs?.pagination?.enabledMobile ?? false,
-              clickable: configs?.pagination?.clickable ?? false,
-              dynamicBullets: configs?.pagination?.dynamicBullets ?? false,
-              dynamicMainBullets: configs?.pagination?.dynamicMainBullets ?? 0
-            }
-          }}
+          configs={sliderConfig}
           rootId={id}
-          articles={articles}
+          articles={defaultPropsArticles}
         />
       </div>
     </Section>
@@ -81,7 +96,7 @@ export default function ArticleSliderSection({
 
 export function LoadingFallback() {
   return (
-    <div style={{ height: "500px" }} class="flex justify-center items-center">
+    <div class="flex justify-center items-center h-[662px] lg:h-[637px]">
       <span class="loading loading-spinner" />
     </div>
   );

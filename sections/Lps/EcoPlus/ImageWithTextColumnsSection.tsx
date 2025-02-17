@@ -96,9 +96,7 @@ export default function ImageWithTextColumnsSection({
         <div class="flex w-full xl:w-[33.3%]">
           <ResponsiveImage
             {...image}
-            height={520}
-            width={520}
-            maxHeight={520}
+            sizes={{ height: 520, width: 520, maxHeight: 520 }}
           />
         </div>
         <div
@@ -118,7 +116,7 @@ export default function ImageWithTextColumnsSection({
 
 export function LoadingFallback() {
   return (
-    <div style={{ height: "500px" }} class="flex justify-center items-center">
+    <div class="flex justify-center items-center h-[984px] lg:h-[661px]">
       <span class="loading loading-spinner" />
     </div>
   );

@@ -29,7 +29,14 @@ export default function InfoCard(props: IInfoCard): preact.JSX.Element {
               {...(typeOfContent as IInfoCardVideo).iframeProps}
             />
           ) : (
-            <ResponsiveImage {...typeOfContentImage} maxHeight={500} />
+            <ResponsiveImage
+              alt={typeOfContentImage.alt}
+              src={{
+                desktop: typeOfContentImage.srcDesktop,
+                mobile: typeOfContentImage.srcMobile
+              }}
+              sizes={{ maxHeight: 500 }}
+            />
           )}
         </>
       ) : (

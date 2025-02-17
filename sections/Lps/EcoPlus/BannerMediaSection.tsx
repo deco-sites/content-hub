@@ -76,6 +76,9 @@ export default function BannerMediaSliderSection({
     slidesPerView,
     spaceBetween,
     centeredSlides,
+    pagination: {
+      enabled: configs?.pagination?.enabledMobile ?? false
+    },
     breakpoints: {
       768: {
         slidesPerView: 2.3,
@@ -94,19 +97,32 @@ export default function BannerMediaSliderSection({
     autoplay: autoplayConfig
   } as ISliderConfigs;
 
-  const bannersWithSize = banners.map(banner => {
-    return { ...{ ...banner }, width: 185, height: 324 };
+  const defaultPropBanners = banners.map(banner => {
+    return {
+      ...{ ...banner },
+      sizes: {
+        ...banner.sizes,
+        width: 185,
+        height: 324,
+        widthMobile: 185,
+        heightMobile: 324
+      }
+    };
   });
 
   return (
-    <Section {...section} id={id} classesContainer="banner-media-section">
-      <div class="flex flex-col w-full max-w-[1536px] mx-auto gap-4 lg:px-4 lg:gap-6 ">
+    <Section
+      {...section}
+      id={id}
+      classesContainer="banner-media-section min-h-[650px] lg:min-h-[303px]"
+    >
+      <div class="flex flex-col w-full max-w-[1536px] mx-auto gap-4 lg:px-4 lg:gap-6">
         <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row lg:gap-0 lg:items-start">
           <div class="flex w-full lg:w-[65%] xl:w-[55%]">
             <BannerSlider
               configs={sliderConfig}
               rootId={id}
-              banners={bannersWithSize}
+              banners={defaultPropBanners}
             />
           </div>
           <div class="w-full flex flex-col items-center justify-center max-w-[600px] px-4 lg:w-[35%] xl:w-[45%]">
@@ -117,7 +133,7 @@ export default function BannerMediaSliderSection({
             )}
 
             {icons && (
-              <div className="w-full mt-4 flex flex-wrap justify-center item-center gap-x-[24px] lg:justify-start">
+              <div class="w-full mt-4 flex flex-wrap justify-center item-center gap-x-[24px] lg:justify-start">
                 {icons.map(({ id, href }) => (
                   <a target="_blank" key={id} title={id} href={href}>
                     <Icon id={id} size={32} />
@@ -134,7 +150,7 @@ export default function BannerMediaSliderSection({
 
 export function LoadingFallback() {
   return (
-    <div style={{ height: "500px" }} class="flex justify-center items-center">
+    <div class="flex justify-center items-center h-[682px] lg:h-[335px]">
       <span class="loading loading-spinner" />
     </div>
   );

@@ -1,0 +1,18 @@
+{
+  "__resolveType": "site/apps/deco/vtex.ts",
+  "salesChannel": "1",
+  "defaultSegment": {
+    "channelPrivacy": "public"
+  },
+  "platform": "vtex",
+  "account": "electrolux",
+  "appKey": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "f26817af697a775ef54b8bc9d3a8ef33ce1a4d7937b7730623c713c7c6952059"
+  },
+  "appToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "e5a80f1fe2f16e04e881225d5538a28095b30253f3c4ff4160dc487aab86389055fe8056caed20611f53452ac79c667ec479cca540bfe4cf89d79c5dbe728a93601b9c714f97be58556d69cae2ef17aa795d2dcf367e4a5976861ed76b7fa6f0cb813372ce7b6013976da5c9a32c1d09428bfc591558463ddafb57f578a4a3097d1cc2229e556ad580a88249568df23e"
+  },
+  "publicUrl": "electrolux.myvtex.com"
+}

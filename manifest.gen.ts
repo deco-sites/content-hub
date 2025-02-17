@@ -4,7 +4,8 @@
 
 import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
-import * as $$$$$$$$$$$2 from "./apps/site.ts";
+import * as $$$$$$$$$$$2 from "./apps/deco/vtex.ts";
+import * as $$$$$$$$$$$3 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/Logos.tsx";
 import * as $$$$$$1 from "./sections/Lps/EcoPlus/ArticleSliderSection.tsx";
 import * as $$$$$$2 from "./sections/Lps/EcoPlus/BannerMediaSection.tsx";
@@ -13,7 +14,8 @@ import * as $$$$$$4 from "./sections/Lps/EcoPlus/CategoriesSection.tsx";
 import * as $$$$$$5 from "./sections/Lps/EcoPlus/FakeReviewSection.tsx";
 import * as $$$$$$6 from "./sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx";
 import * as $$$$$$7 from "./sections/Lps/EcoPlus/InfoCardSection.tsx";
-import * as $$$$$$8 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$8 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$9 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -25,12 +27,14 @@ const manifest = {
     "site/sections/Lps/EcoPlus/FakeReviewSection.tsx": $$$$$$5,
     "site/sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx": $$$$$$6,
     "site/sections/Lps/EcoPlus/InfoCardSection.tsx": $$$$$$7,
-    "site/sections/Theme/Theme.tsx": $$$$$$8,
+    "site/sections/Product/ProductShelf.tsx": $$$$$$8,
+    "site/sections/Theme/Theme.tsx": $$$$$$9,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,
     "site/apps/deco/htmx.ts": $$$$$$$$$$$1,
-    "site/apps/site.ts": $$$$$$$$$$$2,
+    "site/apps/deco/vtex.ts": $$$$$$$$$$$2,
+    "site/apps/site.ts": $$$$$$$$$$$3,
   },
   "name": "site",
   "baseUrl": import.meta.url,

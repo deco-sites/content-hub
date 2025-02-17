@@ -788,39 +788,6 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
-              "section": {
-                "title": "<h2 style=\"text-align: center\">RECOMENDADOS PARA VOCÊ</h2><p style=\"text-align: center\">Produtos para deixar a casa bem vivida e muito mais sustentável</p>"
-              },
-              "background": {
-                "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/c99c0bcf-a6b8-4b84-86fb-8c68910c5628___c7d17a918a96d48c7befce1767bba654.png",
-                "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/c99c0bcf-a6b8-4b84-86fb-8c68910c5628___c7d17a918a96d48c7befce1767bba654.png"
-              },
-              "products": {
-                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-                "props": {
-                  "sort": "price:desc",
-                  "collection": "2140",
-                  "count": 10
-                }
-              },
-              "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
-              "link": {
-                "text": "Conheça todos os produtos",
-                "href": "/"
-              },
-              "configs": {
-                "pagination": {
-                  "enabledMobile": true,
-                  "clickable": true
-                },
-                "lazy": true
-              }
-            }
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
               "__resolveType": "site/sections/Lps/EcoPlus/FakeReviewSection.tsx",
               "section": {
                 "title": "<h2 style=\"text-align: center\">Quem escolhe melhor, vive melhor</h2>"

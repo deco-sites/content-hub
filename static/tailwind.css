@@ -3646,7 +3646,6 @@ input.tab:checked + .tab-content,
   .lg\:top-1\/2 {
     top: 50%;
   }
-
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;

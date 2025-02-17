@@ -2887,6 +2887,9 @@ input.tab:checked + .tab-content,
 .flex-row {
   flex-direction: row;
 }
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -3646,6 +3649,7 @@ input.tab:checked + .tab-content,
   .lg\:top-1\/2 {
     top: 50%;
   }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;

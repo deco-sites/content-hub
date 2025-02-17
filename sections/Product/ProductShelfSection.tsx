@@ -106,6 +106,9 @@ export default function ProductShelfSection({
   const sliderConfig = {
     ...configs,
     autoplay: autoplayConfig,
+    navigation: {
+      enabled: configs?.navigation?.enabledMobile ?? false
+    },
     slidesPerView,
     pagination: {
       enabled: configs?.pagination?.enabledMobile ?? false
@@ -113,14 +116,15 @@ export default function ProductShelfSection({
     breakpoints: {
       1024: {
         slidesPerView: 3,
+        navigation: {
+          enabled: configs?.navigation?.enabledDesktop ?? true
+        },
         pagination: {
           enabled: configs?.pagination?.enabledDesktop ?? false
         }
       }
     }
   } as ISliderConfigs;
-
-  console.log({ sliderConfig });
 
   const minimalProducts = products?.map(
     ({ url, isVariantOf, offers, image }) => {
@@ -153,7 +157,7 @@ export default function ProductShelfSection({
                   <div class="flex mx-4">
                     <a
                       href={link.href}
-                      class="cursor-pointer flex items-center justify-center leading-[24px] text-base font-semibold text-center h-[40px] px-6 bg-[#617f57] text-white"
+                      class="cursor-pointer flex items-center justify-center leading-[24px] text-base font-semibold text-center h-[40px] px-6 bg-[#617f57] text-white hover:bg-[#99b293] transition-all ease-in duration-300"
                     >
                       {link.text}
                     </a>

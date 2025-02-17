@@ -785,34 +785,33 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/Product/ProductShelf.tsx",
+              "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
               "section": {
                 "title": "<h2 style=\"text-align: center\">RECOMENDADOS PARA VOCÊ</h2><p style=\"text-align: center\">Produtos para deixar a casa bem vivida e muito mais sustentável</p>"
-              },
-              "products": {
-                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-                "props": {
-                  "sort": "price:asc",
-                  "collection": "2140",
-                  "hideUnavailableItems": false,
-                  "count": 5
-                }
               },
               "background": {
                 "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/c99c0bcf-a6b8-4b84-86fb-8c68910c5628___c7d17a918a96d48c7befce1767bba654.png",
                 "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/c99c0bcf-a6b8-4b84-86fb-8c68910c5628___c7d17a918a96d48c7befce1767bba654.png"
               },
-              "configs": {
-                "pagination": {
-                  "enabledDesktop": false,
-                  "enabledMobile": true
-                },
-                "navigation": true
+              "products": {
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                "props": {
+                  "sort": "price:desc",
+                  "collection": "2140",
+                  "count": 10
+                }
               },
               "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
               "link": {
                 "text": "Conheça todos os produtos",
                 "href": "/"
+              },
+              "configs": {
+                "pagination": {
+                  "enabledMobile": true,
+                  "clickable": true
+                },
+                "lazy": true
               }
             }
           },
@@ -880,6 +879,12 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "site/sections/Lps/EcoPlus/BannerMediaSection.tsx",
+              "configs": {
+                "pagination": {
+                  "enabledMobile": true
+                },
+                "spaceBetween": 48
+              },
               "banners": [
                 {
                   "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.png",
@@ -921,12 +926,6 @@
                   }
                 }
               ],
-              "configs": {
-                "pagination": {
-                  "enabledMobile": true
-                },
-                "spaceBetween": 48
-              },
               "title": "<h3>Já segue a Electrolux?</h3><p>Nas nossas redes sociais tem sempre uma nova promoção ou dica incrível de sustentabilidade pra você.</p>",
               "icons": [
                 {

@@ -1,6 +1,26 @@
 {
   "name": "Bertas",
   "path": "/bertas",
-  "sections": [],
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/EcoPlus/BannerSliderSection.tsx",
+        "section": {},
+        "banners": [
+          {
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/8138055d-472d-4098-bb53-79bdb69e552f/principal.webp",
+              "mobile": "https://data.decoassets.com/content-hub/dfe75dc4-3826-427f-88ea-5d81bb503b50/principal-mobile.webp"
+            }
+          }
+        ]
+      }
+    }
+  ],
   "__resolveType": "website/pages/Page.tsx"
 }

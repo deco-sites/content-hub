@@ -85,7 +85,9 @@
 /* Info Card Section */
 .info-card-section {
   .info-card {
-    flex-direction: column !important;
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
 
     .info-card-children {
       min-height: 320px !important;

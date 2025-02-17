@@ -4,7 +4,7 @@ import { useId } from "site/sdk/useId.ts";
 import type {
   IInfoCard,
   IInfoCardImage,
-  IInfoCardVideo
+  IInfoCardVideo,
 } from "site/types/InfoCard.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 
@@ -45,8 +45,8 @@ export default function InfoCardSection({ section, infoCard }: Props) {
           height: 537,
           style: { border: "none" },
           allow: typeOfContentVideo?.autoplay ? "autoplay" : "",
-          allowFullScreen: true
-        }
+          allowFullScreen: true,
+        },
       }
     : typeOfContentImage;
 
@@ -57,8 +57,10 @@ export default function InfoCardSection({ section, infoCard }: Props) {
           {...infoCard}
           typeOfContent={enrichedTypeOfContent}
           classes={{
-            container: "w-full info-card",
-            children: "info-card-children h-full"
+            container: `w-full info-card ${
+              infoCard?.direction === "left" ? "flex-row" : "flex-row-reverse"
+            }`,
+            children: "info-card-children h-full",
           }}
         />
       </div>

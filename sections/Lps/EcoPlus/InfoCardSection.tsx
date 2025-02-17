@@ -68,7 +68,7 @@ export default function InfoCardSection({ section, infoCard }: Props) {
 
 export function LoadingFallback() {
   return (
-    <div style={{ height: "500px" }} class="flex justify-center items-center">
+    <div class="flex justify-center items-center h-[570px] lg:h-[500px]">
       <span class="loading loading-spinner" />
     </div>
   );

@@ -5,10 +5,10 @@ export type AvailableIcons =
   | "ArrowRight"
   | "ArrowsPointingOut"
   | "Bars3"
+  | "ChevronDown"
   | "ChevronLeft"
   | "ChevronRight"
   | "ChevronUp"
-  | "ChevronDown"
   | "CreditCard"
   | "Deco"
   | "Diners"
@@ -16,18 +16,17 @@ export type AvailableIcons =
   | "Discount"
   | "Elo"
   | "Facebook"
-  | "Youtube"
-  | "Pinterest"
-  | "Linkedin"
   | "FilterList"
   | "Heart"
   | "Instagram"
-  | "Minus"
-  | "MapPin"
+  | "Linkedin"
   | "MagnifyingGlass"
+  | "MapPin"
   | "Mastercard"
   | "Message"
+  | "Minus"
   | "Phone"
+  | "Pinterest"
   | "Pix"
   | "Plus"
   | "QuestionMarkCircle"
@@ -43,6 +42,7 @@ export type AvailableIcons =
   | "Visa"
   | "WhatsApp"
   | "XMark"
+  | "Youtube"
   | "Zoom";
 
 interface Props extends preact.JSX.SVGAttributes<SVGSVGElement> {
@@ -61,6 +61,7 @@ function Icon({
   size,
   width,
   height,
+  style = { color: "#ADB9C3" },
   ...otherProps
 }: Props): preact.JSX.Element {
   return (
@@ -69,7 +70,7 @@ function Icon({
       width={width ?? size}
       height={height ?? size}
       strokeWidth={strokeWidth}
-      style="color:#ADB9C3"
+      style={style}
     >
       <use href={asset(`/sprites.svg#${id}`)} />
     </svg>

@@ -1,14 +1,13 @@
-import Image from "apps/website/components/Image.tsx";
+import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import { InfoCard } from "@eluxlab/library-components";
 import type { IArticle } from "site/types/Article.d.ts";
 
-export default function InfoCardWithImage({
+export default function Article({
   image,
   title,
   text,
   link
 }: IArticle): preact.JSX.Element {
-  const { alt, src } = image;
   const { href, text: textLink, title: titleLink } = link;
 
   return (
@@ -25,7 +24,7 @@ export default function InfoCardWithImage({
         }}
       >
         <div class="flex mb-5">
-          <Image src={src} alt={alt} width={344} height={180} class="w-full" />
+          <ResponsiveImage {...image} />
         </div>
         <div class="flex mb-4">
           <h3 class="text-[#303f29] text-2xl font-semibold leading-[30px] text-left overflow-hidden text-ellipsis line-clamp-4 min-h-[60px] max-h-[120px] tracking-[.5px]">

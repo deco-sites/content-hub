@@ -1,24 +1,103 @@
+interface ISize {
+  /**
+   * @title Full Screen
+   * @description Default: false
+   * @hide
+   */
+  fullScreen?: boolean;
+
+  /**
+   * @title Max Width Image
+   * @description Default: "unset"
+   * @hide
+   */
+  maxWidth?: number | string;
+
+  /**
+   * @title Max Height Image
+   * @description Default: "unset"
+   * @hide
+   */
+  maxHeight?: number | string;
+
+  /**
+   * @title Width Image
+   * @description Default: 1920
+   * @hide
+   */
+  width?: number;
+
+  /**
+   * @title Height Image
+   * @description Default: 440
+   * @hide
+   */
+  height?: number;
+
+  /**
+   * @title Width Image (Mobile)
+   * @description Default: 420
+   * @hide
+   */
+  widthMobile?: number;
+
+  /**
+   * @title Height Image (Mobile)
+   * @description Default: 420
+   * @hide
+   */
+  heightMobile?: number;
+}
+
+interface IImageSource {
+  /**
+   * @title Desktop
+   * @format image-uri
+   */
+  desktop?: string;
+
+  /**
+   * @title Mobile
+   * @format image-uri
+   */
+  mobile?: string;
+}
+
+interface ILoadingOptions {
+  /**
+   * @title Pré-carregamento de Imagem
+   * @description Define se a imagem deve ser carregada antecipadamente para melhorar o tempo de exibição. Default: false
+   */
+  preload?: boolean;
+
+  /**
+   * @title Estratégia de Carregamento
+   * @description Define se a imagem será carregada de forma preguiçosa (lazy) ou imediatamente (eager). Default: "lazy"
+   */
+  loading?: "lazy" | "eager";
+
+  /**
+   * @title Prioridade de Busca
+   * @description Define a prioridade de carregamento da imagem para otimizar o desempenho da página. Default: "low"
+   */
+  fetchPriority?: "high" | "low";
+}
+
 /**
  * @title {{#alt}}{{alt}}{{/alt}}{{^alt}}Imagem{{/alt}}
  */
 export interface IResponsiveImage {
   /**
-   * @title Imagem (desktop)
-   * @format image-uri
-   */
-  srcDesktop?: string;
-
-  /**
-   * @title Imagem (mobile)
-   * @format image-uri
-   */
-  srcMobile?: string;
-
-  /**
    * @title Alt
    * @description Atributo de texto alternativo (SEO)
    */
   alt?: string;
+
+  /**
+   * @title URLs das Imagens
+   * @description Objeto contendo as URLs das imagens para desktop e mobile.
+   */
+  src?: IImageSource;
 
   /**
    * @title Link
@@ -39,32 +118,14 @@ export interface IResponsiveImage {
   };
 
   /**
-   * @title Full Screen
+   * @title Tamanho da Imagem
    * @hide
    */
-  fullScreen?: boolean;
+  sizes?: ISize;
 
   /**
-   * @title Max Width Image
-   * @hide
+   * @title Opções de Carregamento
+   * @description Configurações para controle do carregamento da imagem.
    */
-  maxWidth?: number | string;
-
-  /**
-   * @title Max Height Image
-   * @hide
-   */
-  maxHeight?: number | string;
-
-  /**
-   * @title Width Image
-   * @hide
-   */
-  width?: number;
-
-  /**
-   * @title Height Image
-   * @hide
-   */
-  height?: number;
+  loadingOptions?: ILoadingOptions;
 }

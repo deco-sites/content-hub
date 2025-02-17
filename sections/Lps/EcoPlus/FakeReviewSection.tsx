@@ -108,7 +108,7 @@ export default function FakeReviewSection({
 
 export function LoadingFallback() {
   return (
-    <div style={{ height: "500px" }} class="flex justify-center items-center">
+    <div class="flex justify-center items-center h-[382px] lg:h-[552px]">
       <span class="loading loading-spinner" />
     </div>
   );

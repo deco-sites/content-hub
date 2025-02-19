@@ -84,26 +84,6 @@
           }
         ]
       }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
-        "infoCard": {
-          "richText": "<h2>Nossos produtos mais eficientes</h2><p>Conheça a seleção de produtos da Electrolux com impacto ambiental reduzido.</p>",
-          "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://placehold.co/500x500/011e41/FFF?text=Electrolux",
-            "alt": "Placeholder"
-          },
-          "direction": "left"
-        },
-        "section": {
-          "marginDesktop": 52,
-          "marginMobile": 32,
-          "title": "<p></p>"
-        }
-      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

@@ -115,6 +115,11 @@ export interface IResponsiveImage {
      * @description Texto adicional exibido ao passar o mouse sobre o banner (atributo title).
      */
     title?: string;
+
+    /**
+   * @title Nova Aba?
+   */
+    target?: "blank" | "self";
   };
 
   /**

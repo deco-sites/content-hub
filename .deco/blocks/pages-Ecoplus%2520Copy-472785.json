@@ -779,6 +779,21 @@
           }
         }
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
+        "infoCard": {
+          "richText": "<h2>terste</h2><p>testeste</p>",
+          "typeOfContent": {
+            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+            "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+            "alt": "aasasdasd"
+          },
+          "direction": "right"
+        }
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

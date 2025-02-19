@@ -64,14 +64,14 @@ export default function ResponsiveImage({
     return ResponsiveImageComponent;
   }
 
-  const { href, title } = link ?? {};
+  const { href, title, target } = link ?? {};
 
   return (
     <a
       href={href}
       title={title ?? ""}
-      target="_blank"
-      rel="noopener noreferrer"
+      target={`_${target}`}
+      rel={target === "blank" ? "noopener noreferrer" : ""}
       class="flex no-underline"
     >
       {ResponsiveImageComponent}

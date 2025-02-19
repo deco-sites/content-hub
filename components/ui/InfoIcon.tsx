@@ -24,7 +24,9 @@ export default function InfoIcon({
             alt,
             redirect,
             imageSrc,
-            target
+            target,
+            width: 41,
+            height: 41
           }}
           classes={{
             containerLink: "gap-1",

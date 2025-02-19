@@ -1,6 +1,6 @@
 {
-  "name": "Ecoplus",
-  "path": "/ecoplus",
+  "name": "Ecoplus Copy",
+  "path": "/ecoplus-copy",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -945,5 +945,6 @@
         ]
       }
     }
-  ]
+  ],
+  "__resolveType": "website/pages/Page.tsx"
 }

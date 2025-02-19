@@ -1,0 +1,89 @@
+{
+  "name": "Homepedia",
+  "path": "/homepedia",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/Homepedia/TitleSection.tsx",
+        "section": {
+          "title": "<h1><span>GALERIA</span></h1>"
+        },
+        "subTitle": "<p><span>Conteúdos selecionados de acordo com a sua necessidade</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/Homepedia/TextSection.tsx",
+        "text": "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/Homepedia/BannerSliderHomeSection.tsx",
+        "section": {},
+        "banners": [
+          {
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
+              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
+            },
+            "alt": "#1"
+          },
+          {
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "#2",
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
+              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
+            }
+          },
+          {
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "#3",
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
+              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
+            }
+          }
+        ],
+        "configs": {
+          "spaceBetween": 8
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/Homepedia/TextSection.tsx",
+        "text": "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.</span></p>",
+        "section": {
+          "title": "<h2><span>INTERTITULO</span></h2>"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "products": null
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

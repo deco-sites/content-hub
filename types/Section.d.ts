@@ -37,4 +37,10 @@ export interface ISection {
    * @hide
    */
   stylesContainer?: preact.JSX.AllCSSProperties;
+
+  /**
+   * @title Full Width
+   * @hide
+   */
+  fullWidth?: boolean;
 }

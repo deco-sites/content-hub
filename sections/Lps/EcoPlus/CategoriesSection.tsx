@@ -22,7 +22,7 @@ export default function CategoriesSection({ icons = [], section }: Props) {
   const id = useId();
 
   return (
-    <Section {...section} id={id} classesContainer="px-6">
+    <Section {...section} id={id}>
       <div class="categories-section flex items-center gap-3 flex-wrap justify-center w-full h-full">
         {icons?.map((icon, idx) => {
           return <InfoIcon {...icon} key={`${icon?.title ?? "icon"}-${idx}`} />;

@@ -141,7 +141,7 @@ export default function ProductShelfSection({
     <Section
       {...section}
       id={id}
-      classesContainer="product-shelf-section max-w-[1536px] mx-auto"
+      classesContainer="product-shelf-section mx-auto"
     >
       <div class="flex flex-col relative w-full mx-auto min-h-[850px] lg:min-h-[600px] lg:max-w-[1366px]">
         {(srcDesktop || srcMobile) && (

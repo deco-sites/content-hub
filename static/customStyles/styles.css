@@ -62,8 +62,17 @@
   }
 }
 
+/* Banner Slider Section */
+.banner-slider-section {
+  .swiper {
+    width: 100%;
+  }
+}
+
 /* Image With Text Columns Section */
 .image-with-text-columns-section {
+  padding: 0;
+
   p {
     font-weight: 400;
     font-size: 14px;
@@ -92,7 +101,7 @@
 
     .info-card-children {
       min-height: 320px !important;
-      padding: 60px 24px !important;
+      padding: 60px 16px !important;
       width: 100% !important;
     }
 
@@ -180,6 +189,8 @@
 
 /* Banner Media Section */
 .banner-media-section {
+  padding: 0;
+
   h1,
   h2,
   h3,
@@ -294,20 +305,6 @@
     }
   }
 
-  /* Image With Text Columns Section */
-  .image-with-text-columns-section {
-    p {
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 22px;
-
-      > em {
-        font-size: 14px;
-      }
-    }
-  }
-
-  /* Info Card Section */
   .info-card-section {
     /*  Workaround for style component */
     .info-card[style*="flex-direction: row-reverse;"],
@@ -322,35 +319,14 @@
     /* End Workaround */
 
     .info-card {
-      .info-card-children {
+      .info-card-children:first-child {
+        height: 100%;
         padding: 40px !important;
         width: 50% !important;
       }
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-size: 36px;
-        margin: 0 0 16px;
-        text-align: unset !important;
-        width: 65%;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 24px;
-        text-align: end;
-        text-align: unset !important;
-        width: 50%;
-      }
-
-      p > em {
-        font-size: 16px;
-        line-height: 19px;
-        margin: 0 0 16px;
+      .info-card-children:last-child {
+        width: 50% !important;
       }
     }
   }
@@ -379,6 +355,8 @@
 
   /* Banner Media Section */
   .banner-media-section {
+    padding: 0 16px;
+
     h1,
     h2,
     h3,
@@ -392,7 +370,6 @@
 
     .swiper-slide {
       max-width: 185px;
-      width: 25% !important;
     }
   }
 
@@ -412,6 +389,54 @@
       p {
         font-size: 20px;
         line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  /* Image With Text Columns Section */
+  .image-with-text-columns-section {
+    padding: 0 16px;
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+
+      > em {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /* Info Card Section */
+  .info-card-section {
+    .info-card {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 36px;
+        margin: 0 0 16px;
+        text-align: unset !important;
+        width: 65%;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: end;
+        text-align: unset !important;
+        width: 50%;
+      }
+
+      p > em {
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0 0 16px;
       }
     }
   }

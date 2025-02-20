@@ -577,6 +577,8 @@ html {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 @media (min-width: 640px) {
 
@@ -2687,9 +2689,6 @@ input.tab:checked + .tab-content,
 .min-h-\[630px\] {
   min-height: 630px;
 }
-.min-h-\[650px\] {
-  min-height: 650px;
-}
 .min-h-\[850px\] {
   min-height: 850px;
 }
@@ -2766,12 +2765,6 @@ input.tab:checked + .tab-content,
 }
 .max-w-\[139px\] {
   max-width: 139px;
-}
-.max-w-\[1440px\] {
-  max-width: 1440px;
-}
-.max-w-\[1536px\] {
-  max-width: 1536px;
 }
 .max-w-\[230px\] {
   max-width: 230px;
@@ -3199,10 +3192,6 @@ input.tab:checked + .tab-content,
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.px-\[10px\] {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .px-\[12px\] {
   padding-left: 12px;
   padding-right: 12px;
@@ -3487,6 +3476,8 @@ input.tab:checked + .tab-content,
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   @media (min-width: 640px) {
@@ -3555,16 +3546,6 @@ input.tab:checked + .tab-content,
 .group:disabled .group-disabled\:bg-\[\#0D1717\] {
   --tw-bg-opacity: 1;
   background-color: rgb(13 23 23 / var(--tw-bg-opacity));
-}
-@media not all and (min-width: 640px) {
-
-  .max-sm\:h-\[24px\] {
-    height: 24px;
-  }
-
-  .max-sm\:w-\[24px\] {
-    width: 24px;
-  }
 }
 @media (min-width: 640px) {
 
@@ -3659,16 +3640,16 @@ input.tab:checked + .tab-content,
     display: grid;
   }
 
-  .lg\:h-\[130px\] {
-    height: 130px;
+  .lg\:h-\[122px\] {
+    height: 122px;
+  }
+
+  .lg\:h-\[200px\] {
+    height: 200px;
   }
 
   .lg\:h-\[297px\] {
     height: 297px;
-  }
-
-  .lg\:h-\[335px\] {
-    height: 335px;
   }
 
   .lg\:h-\[440px\] {
@@ -3699,10 +3680,6 @@ input.tab:checked + .tab-content,
     max-height: 600px;
   }
 
-  .lg\:min-h-\[303px\] {
-    min-height: 303px;
-  }
-
   .lg\:min-h-\[40px\] {
     min-height: 40px;
   }
@@ -3719,16 +3696,16 @@ input.tab:checked + .tab-content,
     min-height: 600px;
   }
 
-  .lg\:w-\[130px\] {
-    width: 130px;
-  }
-
-  .lg\:w-\[35\%\] {
-    width: 35%;
+  .lg\:w-\[122px\] {
+    width: 122px;
   }
 
   .lg\:w-\[65\%\] {
     width: 65%;
+  }
+
+  .lg\:w-\[unset\] {
+    width: unset;
   }
 
   .lg\:min-w-\[initial\] {
@@ -3772,20 +3749,12 @@ input.tab:checked + .tab-content,
     justify-content: center;
   }
 
-  .lg\:gap-0 {
-    gap: 0px;
+  .lg\:gap-2 {
+    gap: 0.5rem;
   }
 
   .lg\:gap-6 {
     gap: 1.5rem;
-  }
-
-  .lg\:gap-8 {
-    gap: 2rem;
-  }
-
-  .lg\:gap-\[32px\] {
-    gap: 32px;
   }
 
   .lg\:whitespace-normal {
@@ -3804,11 +3773,6 @@ input.tab:checked + .tab-content,
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .lg\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .lg\:py-14 {
@@ -3869,32 +3833,28 @@ input.tab:checked + .tab-content,
 }
 @media (min-width: 1280px) {
 
+  .xl\:w-\[33\%\] {
+    width: 33%;
+  }
+
   .xl\:w-\[33\.3\%\] {
     width: 33.3%;
   }
 
-  .xl\:w-\[45\%\] {
-    width: 45%;
+  .xl\:gap-8 {
+    gap: 2rem;
   }
 
-  .xl\:w-\[55\%\] {
-    width: 55%;
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-
-  .xl\:gap-2 {
-    gap: 0.5rem;
+  .xl\:gap-\[24px\] {
+    gap: 24px;
   }
 
   .xl\:p-\[0_3vw\] {
     padding: 0 3vw;
   }
 
-  .xl\:p-\[0_8\.5vw\] {
-    padding: 0 8.5vw;
+  .xl\:p-\[1\.5vw_3vw\] {
+    padding: 1.5vw 3vw;
   }
 
   .xl\:text-right {

@@ -81,7 +81,7 @@ export default function FakeReviewSection({
         )}
 
         <div class="flex w-full">
-          <div class="flex w-full mx-auto justify-center items-center lg:px-4">
+          <div class="flex w-full mx-auto justify-center items-center lg:container">
             <div class="flex px-4 gap-2 w-full h-fit overflow-x-auto whitespace-nowrap [scrollbar-width:none] lg:justify-center lg:px-0 xl:gap-8 lg:whitespace-normal">
               {fakeReviewCards?.map((props, idx) => {
                 return (

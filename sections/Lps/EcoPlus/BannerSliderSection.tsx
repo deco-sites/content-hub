@@ -33,7 +33,7 @@ export default function BannerSliderSection({
 }: Props) {
   const id = useId();
 
-  if (!banners?.length) return <></>;
+  if (!banners?.length) return null;
 
   const { autoplay = {}, slidesPerView = 1 } = configs ?? {};
 
@@ -66,8 +66,8 @@ export default function BannerSliderSection({
         ...banner.sizes,
         fullScreen: true,
         maxHeight: 420,
-        heightMobile: 420,
-        width: 420
+        heightMobile: 400,
+        widthMobile: 375
       }
     };
   });

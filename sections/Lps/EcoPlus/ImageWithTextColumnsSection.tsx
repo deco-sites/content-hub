@@ -81,7 +81,7 @@ export default function ImageWithTextColumnsSection({
     <Section
       {...section}
       id={id}
-      classesContainer="image-with-text-columns-section"
+      classesContainer="image-with-text-columns-section p-0 xl:px-4"
     >
       <div class="flex flex-col min-h-[520px] lg:flex-row lg:gap-2">
         <div

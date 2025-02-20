@@ -70,8 +70,6 @@
 
 /* Image With Text Columns Section */
 .image-with-text-columns-section {
-  padding: 0;
-
   p {
     font-weight: 400;
     font-size: 14px;
@@ -188,8 +186,6 @@
 
 /* Banner Media Section */
 .banner-media-section {
-  padding: 0;
-
   h1,
   h2,
   h3,
@@ -260,7 +256,7 @@
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9 18 6-6-6-6' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
 
-  .product-shelf-section__background {
+  .product-shelf-section__text {
     h1,
     h2,
     h3,
@@ -317,27 +313,14 @@
     }
     /* End Workaround */
 
-    .info-card {
-      .info-card-children:first-child {
-        height: 100%;
-        padding: 40px !important;
-        width: 50% !important;
-      }
-
-      .info-card-children:last-child {
-        width: 50% !important;
-      }
-    }
-  }
-
-  /* Article Slider Section */
-  .article-slider-section {
-    .swiper-slide {
-      width: 25% !important;
+    .info-card-children:first-child {
+      height: 100%;
+      padding: 40px !important;
+      width: 50% !important;
     }
 
-    .swiper-wrapper {
-      transform: translate3d(12.5%, 0, 0) !important;
+    .info-card-children:last-child {
+      width: 50% !important;
     }
   }
 
@@ -358,8 +341,6 @@
 
   /* Banner Media Section */
   .banner-media-section {
-    padding: 0 16px;
-
     h1,
     h2,
     h3,
@@ -378,7 +359,7 @@
 
   /* Product Shelf Section */
   .product-shelf-section {
-    .product-shelf-section__background {
+    .product-shelf-section__text {
       h1,
       h2,
       h3,
@@ -400,8 +381,6 @@
 @media screen and (min-width: 1280px) {
   /* Image With Text Columns Section */
   .image-with-text-columns-section {
-    padding: 0 16px;
-
     p {
       font-size: 18px;
       font-weight: 300;

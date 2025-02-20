@@ -14,11 +14,12 @@ import * as $$$$$$4 from "./sections/Lps/EcoPlus/CategoriesSection.tsx";
 import * as $$$$$$5 from "./sections/Lps/EcoPlus/FakeReviewSection.tsx";
 import * as $$$$$$6 from "./sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx";
 import * as $$$$$$7 from "./sections/Lps/EcoPlus/InfoCardSection.tsx";
-import * as $$$$$$8 from "./sections/Lps/Homepedia/BannerSliderHomeSection.tsx";
-import * as $$$$$$9 from "./sections/Lps/Homepedia/TextSection.tsx";
-import * as $$$$$$10 from "./sections/Lps/Homepedia/TitleSection.tsx";
-import * as $$$$$$11 from "./sections/Product/ProductShelfSection.tsx";
-import * as $$$$$$12 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$8 from "./sections/Lps/Homepedia/ArticleSliderHomeSection.tsx";
+import * as $$$$$$9 from "./sections/Lps/Homepedia/BannerSliderHomeSection.tsx";
+import * as $$$$$$10 from "./sections/Lps/Homepedia/TextSection.tsx";
+import * as $$$$$$11 from "./sections/Lps/Homepedia/TitleSection.tsx";
+import * as $$$$$$12 from "./sections/Product/ProductShelfSection.tsx";
+import * as $$$$$$13 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -30,11 +31,12 @@ const manifest = {
     "site/sections/Lps/EcoPlus/FakeReviewSection.tsx": $$$$$$5,
     "site/sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx": $$$$$$6,
     "site/sections/Lps/EcoPlus/InfoCardSection.tsx": $$$$$$7,
-    "site/sections/Lps/Homepedia/BannerSliderHomeSection.tsx": $$$$$$8,
-    "site/sections/Lps/Homepedia/TextSection.tsx": $$$$$$9,
-    "site/sections/Lps/Homepedia/TitleSection.tsx": $$$$$$10,
-    "site/sections/Product/ProductShelfSection.tsx": $$$$$$11,
-    "site/sections/Theme/Theme.tsx": $$$$$$12,
+    "site/sections/Lps/Homepedia/ArticleSliderHomeSection.tsx": $$$$$$8,
+    "site/sections/Lps/Homepedia/BannerSliderHomeSection.tsx": $$$$$$9,
+    "site/sections/Lps/Homepedia/TextSection.tsx": $$$$$$10,
+    "site/sections/Lps/Homepedia/TitleSection.tsx": $$$$$$11,
+    "site/sections/Product/ProductShelfSection.tsx": $$$$$$12,
+    "site/sections/Theme/Theme.tsx": $$$$$$13,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

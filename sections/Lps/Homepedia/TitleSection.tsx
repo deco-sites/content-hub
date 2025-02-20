@@ -1,5 +1,4 @@
 import Section from "site/components/ui/Section.tsx";
-import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
 
@@ -12,25 +11,17 @@ interface Props {
    * @description Define o título, subtítulo e espaçamento da seção.
    */
   section?: ISection;
-
-  /**
-   * @title Sub Título
-   * @description Conteúdo em formato de rich text.
-   * @format rich-text
-   * @default Lorem ipsum
-   */
-  subTitle?: string;
 }
 
-export default function TitleSection({ section, subTitle }: Props) {
+export default function TitleSection({ section }: Props) {
   const id = useId();
 
   return (
-    <Section {...section} id={id} classesContainer="general-text=section">
-      <div class="flex items-center w-full p-5 md:p-[1.5vh_5vw] lg:p-[1.5vh_3vw] xl:p-[0_3vw] xl:w-[33.3%]">
-        <Text title={subTitle ?? ""} />
-      </div>
-    </Section>
+    <Section
+      {...section}
+      id={id}
+      classesContainer="general-text=section"
+    ></Section>
   );
 }
 

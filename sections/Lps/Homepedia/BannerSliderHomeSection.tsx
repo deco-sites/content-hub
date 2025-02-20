@@ -73,7 +73,11 @@ export default function BannerSliderHomeSection({
   });
 
   return (
-    <Section {...section} id={id}>
+    <Section
+      {...section}
+      id={id}
+      classesContainer="tripple-banner-section px-4 xl:p-[0_8.5vw]"
+    >
       <BannerSlider
         configs={sliderConfig}
         rootId={id}

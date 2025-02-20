@@ -26,8 +26,12 @@ export default function TextSection({ section, text }: Props) {
   const id = useId();
 
   return (
-    <Section {...section} id={id} classesContainer="general-text=section">
-      <div class="flex items-center w-full p-5 md:p-[1.5vh_5vw] lg:p-[1.5vh_3vw] xl:p-[0_3vw] xl:w-[33.3%]">
+    <Section
+      {...section}
+      id={id}
+      classesContainer="general-text-section px-4 xl:p-[0_8.5vw]"
+    >
+      <div class="flex items-center w-full">
         <Text title={text ?? ""} />
       </div>
     </Section>

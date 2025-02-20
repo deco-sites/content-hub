@@ -51,6 +51,7 @@
     line-height: 100%;
     margin: 0 0 8px;
     text-transform: uppercase;
+    text-align: center;
   }
 
   > p,
@@ -358,10 +359,6 @@
   .article-slider-section {
     .swiper-slide {
       width: 25% !important;
-    }
-
-    .swiper-wrapper {
-      transform: translate3d(12.5%, 0, 0) !important;
     }
   }
 

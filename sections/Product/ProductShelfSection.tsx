@@ -152,8 +152,6 @@ export default function ProductShelfSection({
     }
   } as ISliderConfigs;
 
-  console.log({ sliderConfig, configs });
-
   const minimalProducts = products?.map(
     ({ url, isVariantOf, offers, image }) => {
       return {

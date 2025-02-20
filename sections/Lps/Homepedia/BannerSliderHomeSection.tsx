@@ -65,19 +65,15 @@ export default function BannerSliderHomeSection({
       sizes: {
         ...banner.sizes,
         fullScreen: true,
-        maxHeight: 420,
-        heightMobile: 420,
-        width: 420,
+        maxHeight: 352,
+        heightMobile: 352,
+        width: 528,
       },
     };
   });
 
   return (
-    <Section
-      {...section}
-      id={id}
-      classesContainer="tripple-banner-section px-4 xl:p-[0_8.5vw]"
-    >
+    <Section {...section} id={id} classesContainer="tripple-banner-section">
       <BannerSlider
         configs={sliderConfig}
         rootId={id}

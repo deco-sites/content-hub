@@ -27,42 +27,54 @@
         "section": {},
         "banners": [
           {
+            "link": {
+              "target": "blank",
+              "href": "#",
+              "title": "#"
+            },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
             },
-            "src": {
-              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
-              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
-            },
-            "alt": "#1"
-          },
-          {
-            "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "high"
-            },
-            "alt": "#2",
+            "alt": "Banner 1",
             "src": {
               "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
               "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
             }
           },
           {
+            "link": {
+              "target": "blank",
+              "href": "#",
+              "title": "#"
+            },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
             },
-            "alt": "#3",
+            "alt": "Banner 2",
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
+              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "#",
+              "title": "#"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Banner 3",
             "src": {
               "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
               "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
             }
           }
-        ],
-        "configs": {
-          "spaceBetween": 8
-        }
+        ]
       }
     },
     {
@@ -78,11 +90,34 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "background": {
+          "srcDesktop": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png",
+          "srcMobile": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png"
+        },
+        "link": {
+          "text": "Conheça todos os produtos",
+          "href": "#"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/Homepedia/TextSection.tsx",
-        "text": "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.</span></p>",
         "section": {
           "title": "<h2><span>INTERTITULO</span></h2>"
-        }
+        },
+        "text": "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.</span></p>"
       }
     },
     {

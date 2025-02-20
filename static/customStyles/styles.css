@@ -284,6 +284,14 @@
   }
 }
 
+/* Tripple Banner Section */
+.tripple-banner-section {
+
+  .swiper-wrapper {
+    gap: 0 8px;
+  }
+}
+
 /* Responsive */
 @media screen and (min-width: 1024px) {
   /* Section Component */
@@ -328,13 +336,6 @@
       .info-card-children:last-child {
         width: 50% !important;
       }
-    }
-  }
-
-  /* Article Slider Section */
-  .article-slider-section {
-    .swiper-slide {
-      width: 25% !important;
     }
   }
 

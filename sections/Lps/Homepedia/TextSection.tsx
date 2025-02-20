@@ -29,7 +29,7 @@ export default function TextSection({ section, text }: Props) {
     <Section
       {...section}
       id={id}
-      classesContainer="general-text-section px-4 xl:p-[0_8.5vw]"
+      classesContainer="general-text-section"
     >
       <div class="flex items-center w-full">
         <Text title={text ?? ""} />

@@ -131,7 +131,7 @@ export default function ProductShelfSection({
           ? { enabled: configs?.pagination?.enabledDesktop }
           : { enabled: false }
       },
-      1024: {
+      1280: {
         slidesPerView: 3,
         navigation: configs?.navigation?.enabledDesktop
           ? { enabled: configs?.navigation?.enabledDesktop }
@@ -140,7 +140,7 @@ export default function ProductShelfSection({
           ? { enabled: configs?.pagination?.enabledDesktop }
           : { enabled: false }
       },
-      1280: {
+      1440: {
         slidesPerView: 4,
         navigation: configs?.navigation?.enabledDesktop
           ? { enabled: configs?.navigation?.enabledDesktop }

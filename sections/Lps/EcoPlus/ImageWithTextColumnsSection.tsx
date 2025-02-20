@@ -81,11 +81,11 @@ export default function ImageWithTextColumnsSection({
     <Section
       {...section}
       id={id}
-      classesContainer="image-with-text-columns-section xl:p-[0_8.5vw]"
+      classesContainer="image-with-text-columns-section"
     >
-      <div class="flex flex-col min-h-[520px] xl:flex-row xl:gap-2">
+      <div class="flex flex-col min-h-[520px] lg:flex-row lg:gap-2">
         <div
-          class="flex items-center w-full p-5 md:p-[1.5vh_5vw] lg:p-[1.5vh_3vw] xl:p-[0_3vw] xl:w-[33.3%] xl:text-right"
+          class="flex items-center w-full p-5 md:p-[1.5vh_5vw] lg:p-[1.5vh_3vw] xl:p-[1.5vw_3vw] xl:w-[33%] xl:text-right"
           style={{
             backgroundColor: lBackgroundColor,
             color: lTextColor

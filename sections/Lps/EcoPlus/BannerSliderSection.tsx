@@ -29,13 +29,13 @@ interface Props {
 export default function BannerSliderSection({
   section,
   banners,
-  configs = {}
+  configs
 }: Props) {
   const id = useId();
 
   if (!banners?.length) return <></>;
 
-  const { autoplay = {}, slidesPerView = "auto" } = configs ?? {};
+  const { autoplay = {}, slidesPerView = 1 } = configs ?? {};
 
   const autoplayConfig = autoplay.enabled
     ? {
@@ -73,7 +73,12 @@ export default function BannerSliderSection({
   });
 
   return (
-    <Section {...section} id={id}>
+    <Section
+      {...section}
+      id={id}
+      fullWidth
+      classesContainer="banner-slider-section"
+    >
       <BannerSlider
         configs={sliderConfig}
         rootId={id}

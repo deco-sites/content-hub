@@ -59,7 +59,7 @@ export default function BannerMediaSliderSection({
   const {
     autoplay = {},
     slidesPerView = 1.6,
-    spaceBetween = 16,
+    spaceBetween = 32,
     centeredSlides = true
   } = configs ?? {};
 
@@ -82,12 +82,12 @@ export default function BannerMediaSliderSection({
     breakpoints: {
       768: {
         slidesPerView: 2.3,
-        spaceBetween: 64,
+        spaceBetween: 32,
         centeredSlides: false
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 64,
+        spaceBetween: 32,
         centeredSlides: false,
         pagination: {
           enabled: configs?.pagination?.enabledDesktop ?? false
@@ -111,21 +111,17 @@ export default function BannerMediaSliderSection({
   });
 
   return (
-    <Section
-      {...section}
-      id={id}
-      classesContainer="banner-media-section min-h-[650px] lg:min-h-[303px]"
-    >
-      <div class="flex flex-col w-full max-w-[1536px] mx-auto gap-4 lg:px-4 lg:gap-6">
-        <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row lg:gap-0 lg:items-start">
-          <div class="flex w-full lg:w-[65%] xl:w-[55%]">
+    <Section {...section} id={id} classesContainer="banner-media-section">
+      <div class="flex flex-col w-full mx-auto gap-4 lg:gap-6">
+        <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row lg:items-start">
+          <div class="flex w-full lg:w-[unset]">
             <BannerSlider
               configs={sliderConfig}
               rootId={id}
               banners={defaultPropBanners}
             />
           </div>
-          <div class="w-full flex flex-col items-center justify-center max-w-[600px] px-4 lg:w-[35%] xl:w-[45%]">
+          <div class="flex flex-col items-center justify-center max-w-[600px] px-4">
             {!isEmptyTitle && (
               <div class="flex text-center lg:text-left">
                 <Text title={title} />
@@ -150,7 +146,7 @@ export default function BannerMediaSliderSection({
 
 export function LoadingFallback() {
   return (
-    <div class="flex justify-center items-center h-[682px] lg:h-[335px]">
+    <div class="flex justify-center items-center h-[682px] lg:h-[200px]">
       <span class="loading loading-spinner" />
     </div>
   );

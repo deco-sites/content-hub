@@ -2484,9 +2484,6 @@ input.tab:checked + .tab-content,
 .mb-5 {
   margin-bottom: 1.25rem;
 }
-.mb-8 {
-  margin-bottom: 2rem;
-}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -3622,10 +3619,6 @@ input.tab:checked + .tab-content,
     position: absolute;
   }
 
-  .lg\:left-0 {
-    left: 0px;
-  }
-
   .lg\:top-1\/2 {
     top: 50%;
   }
@@ -3679,10 +3672,6 @@ input.tab:checked + .tab-content,
     max-height: initial;
   }
 
-  .lg\:min-h-\[40px\] {
-    min-height: 40px;
-  }
-
   .lg\:min-h-\[48px\] {
     min-height: 48px;
   }
@@ -3699,6 +3688,10 @@ input.tab:checked + .tab-content,
     width: 122px;
   }
 
+  .lg\:w-\[calc\(100\%\+32px\)\] {
+    width: calc(100% + 32px);
+  }
+
   .lg\:w-\[unset\] {
     width: unset;
   }
@@ -3711,8 +3704,8 @@ input.tab:checked + .tab-content,
     max-width: 500px;
   }
 
-  .lg\:max-w-\[98\.5rem\] {
-    max-width: 98.5rem;
+  .lg\:max-w-\[calc\(100\.1rem\+32px\)\] {
+    max-width: calc(100.1rem + 32px);
   }
 
   .lg\:max-w-\[calc\(35\%-5px\)\] {
@@ -3781,11 +3774,6 @@ input.tab:checked + .tab-content,
     padding-right: 0px;
   }
 
-  .lg\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .lg\:px-\[50px\] {
     padding-left: 50px;
     padding-right: 50px;
@@ -3833,10 +3821,6 @@ input.tab:checked + .tab-content,
 
   .xl\:w-\[33\.3\%\] {
     width: 33.3%;
-  }
-
-  .xl\:max-w-\[calc\(100\.1rem\+32px\)\] {
-    max-width: calc(100.1rem + 32px);
   }
 
   .xl\:max-w-\[calc\(25\%-5px\)\] {

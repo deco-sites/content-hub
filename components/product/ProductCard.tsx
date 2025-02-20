@@ -75,7 +75,7 @@ export default function ProductCard({
         </div>
 
         <div class="flex flex-col">
-          <div class="flex min-h-[60px] mb-8">
+          <div class="flex min-h-[60px] mb-4">
             <h2
               title={isVariantOf?.name}
               class="text-sm text-left font-semibold leading-[20px] text-[#011e41] text-wrap truncate line-clamp-3 xl:text-base xl:font-bold"
@@ -125,7 +125,7 @@ export default function ProductCard({
               )}
             </div>
 
-            <div class="flex flex-col min-h-[60px] lg:min-h-[40px]">
+            <div class="flex flex-col min-h-[60px]">
               {withoutInterest && (
                 <span class="text-[#5b6a78] text-sm">
                   em até <b>{withoutInterest.billingDuration}x</b> de{" "}

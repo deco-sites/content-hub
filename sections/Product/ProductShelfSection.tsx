@@ -131,8 +131,17 @@ export default function ProductShelfSection({
           ? { enabled: configs?.pagination?.enabledDesktop }
           : { enabled: false }
       },
-      1280: {
+      1024: {
         slidesPerView: 3,
+        navigation: configs?.navigation?.enabledDesktop
+          ? { enabled: configs?.navigation?.enabledDesktop }
+          : { enabled: true },
+        pagination: configs?.pagination?.enabledDesktop
+          ? { enabled: configs?.pagination?.enabledDesktop }
+          : { enabled: false }
+      },
+      1280: {
+        slidesPerView: 4,
         navigation: configs?.navigation?.enabledDesktop
           ? { enabled: configs?.navigation?.enabledDesktop }
           : { enabled: true },
@@ -160,10 +169,10 @@ export default function ProductShelfSection({
     <Section
       {...section}
       id={id}
-      classesContainer="product-shelf-section mx-auto lg:px-4 lg:max-w-[98.5rem] xl:max-w-[calc(100.1rem+32px)]"
+      classesContainer="product-shelf-section mx-auto"
       fullWidth
     >
-      <div class="flex flex-col items-center justify-center relative w-full">
+      <div class="flex flex-col items-center justify-center relative w-full lg:w-[calc(100%+32px)]">
         {(srcDesktop || srcMobile) && (
           <div
             class={`flex w-full top-0 left-0 absolute -z-[1] max-h-[475px] lg:[position:initial] lg:max-h-[initial] ${
@@ -193,7 +202,7 @@ export default function ProductShelfSection({
         )}
 
         <div
-          class={`flex w-full items-center justify-center flex-col-reverse lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-2/4 gap-[50px] lg:gap-[10px] ${
+          class={`flex w-full items-center justify-center flex-col-reverse lg:absolute lg:top-1/2 lg:-translate-y-2/4 gap-[50px] lg:max-w-[calc(100.1rem+32px)] lg:gap-[10px] lg:mx-auto ${
             !reverse ? "lg:flex-row" : "lg:flex-row-reverse"
           }`}
         >

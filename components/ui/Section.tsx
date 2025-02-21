@@ -12,7 +12,8 @@ export default function Section({
   marginMobile = 32,
   marginDesktop = 52,
   classesContainer,
-  stylesContainer = {}
+  stylesContainer = {},
+  fullWidth = false
 }: Props): preact.JSX.Element {
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 
@@ -22,7 +23,7 @@ export default function Section({
         id={`section-${id}`}
         class={`section-container flex flex-col w-full gap-4 lg:gap-6 ${
           classesContainer ?? ""
-        }`}
+        } ${!fullWidth ? "container" : ""}`}
         style={stylesContainer}
       >
         {!isEmptyTitle && (

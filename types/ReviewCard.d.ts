@@ -1,12 +1,12 @@
 /**
- * @title {{#fakeProductName}}{{fakeProductName}} | {{fakePersonName}}{{/fakeProductName}}{{^fakeProductName}}Fake Review{{/fakeProductName}}
+ * @title {{#reviewProductName}}{{reviewProductName}} | {{reviewPersonName}}{{/reviewProductName}}{{^reviewProductName}}Review{{/reviewProductName}}
  */
-export interface IFakeReviewCard {
+export interface IReviewCard {
   /**
    * @title Estrelas da Avaliação
    * @description Define a quantidade e os ícones das estrelas (cheia, vazia e meio preenchida).
    */
-  fakeStars: {
+  reviewStars: {
     /**
      * @title Quantidade de Estrelas (Default: 5)
      * @description A quantidade total de estrelas a serem exibidas.
@@ -17,21 +17,24 @@ export interface IFakeReviewCard {
     /**
      * @title Estrela Cheia
      * @description O caminho da imagem do ícone para uma estrela cheia.
-     * @default https://electrolux.vteximg.com.br/arquivos/fakereview-fullstar.svg
+     * @format image-uri
+     * @default https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg
      */
     fullStarSrc: string;
 
     /**
      * @title Estrela Vazia
      * @description O caminho da imagem do ícone para uma estrela vazia.
-     * @default https://electrolux.vteximg.com.br/arquivos/fakereview-emptystar.svg
+     * @format image-uri
+     * @default https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg
      */
     emptyStarSrc: string;
 
     /**
      * @title Estrela Meio Preenchida
      * @description O caminho da imagem do ícone para uma estrela meio preenchida.
-     * @default https://electrolux.vteximg.com.br/arquivos/fakereview-halfstar.svg
+     * @format image-uri
+     * @default https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg
      */
     halfStarSrc: string;
   };
@@ -40,28 +43,28 @@ export interface IFakeReviewCard {
    * @title Descrição da Avaliação
    * @description Texto fictício da avaliação exibida no card.
    */
-  fakeDescription: string;
+  reviewDescription: string;
 
   /**
    * @title Nome do Produto
    * @description Nome do produto associado à avaliação falsa.
    */
-  fakeProductName: string;
+  reviewProductName: string;
 
   /**
    * @title Nome do Avaliador
    * @description Nome fictício da pessoa que escreveu a avaliação.
    */
-  fakePersonName: string;
+  reviewPersonName: string;
 
   /**
    * @hide
    */
   classes?: {
     container?: string;
-    fakeStars?: string;
-    fakeDescription?: string;
-    fakeProductNameAndPersonName?: string;
+    reviewStars?: string;
+    reviewDescription?: string;
+    reviewProductNameAndPersonName?: string;
   };
 
   /**
@@ -69,8 +72,8 @@ export interface IFakeReviewCard {
    */
   styles?: {
     container?: preact.JSX.AllCSSProperties;
-    fakeStars?: preact.JSX.AllCSSProperties;
-    fakeDescription?: preact.JSX.AllCSSProperties;
-    fakeProductNameAndPersonName?: preact.JSX.AllCSSProperties;
+    reviewStars?: preact.JSX.AllCSSProperties;
+    reviewDescription?: preact.JSX.AllCSSProperties;
+    reviewProductNameAndPersonName?: preact.JSX.AllCSSProperties;
   };
 }

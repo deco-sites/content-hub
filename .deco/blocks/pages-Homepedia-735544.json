@@ -1,0 +1,232 @@
+{
+  "name": "Homepedia",
+  "path": "/homepedia",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/Homepedia/TitleSection.tsx",
+        "section": {
+          "title": "<h1 style=\"text-align: center\">GALERIA</h1><p style=\"text-align: center\"><span>Conteúdos selecionados de acordo com a sua necessidade</span></p>",
+          "marginDesktop": 48
+        },
+        "subTitle": "<p style=\"text-align: center\">Conteúdos selecionados de acordo com a sua necessidade</p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/Homepedia/TextSection.tsx",
+        "text": "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/Homepedia/BannerSliderHomeSection.tsx",
+        "section": {},
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "#",
+              "title": "#"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Banner 1",
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
+              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "#",
+              "title": "#"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Banner 2",
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
+              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "#",
+              "title": "#"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Banner 3",
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
+              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/Homepedia/TextSection.tsx",
+        "text": "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.</span></p>",
+        "section": {
+          "title": "<h2><span>INTERTITULO</span></h2>"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "background": {
+          "srcDesktop": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png",
+          "srcMobile": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png"
+        },
+        "link": {
+          "text": "Conheça todos os produtos",
+          "href": "#"
+        },
+        "section": {},
+        "reverse": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/Homepedia/TextSection.tsx",
+        "section": {
+          "title": "<h2><span>INTERTITULO</span></h2>"
+        },
+        "text": "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/Homepedia/ArticleSliderHomeSection.tsx",
+        "section": {
+          "title": "<h2 style=\"text-align: center\">artigos relacionados</h2><p style=\"text-align: center\"></p><p style=\"text-align: center\">Conteúdos selecionados de acordo com a sua necessidade</p>"
+        },
+        "articles": [
+          {
+            "image": {
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png",
+                "mobile": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png"
+              },
+              "alt": "Entrega com carbono neutro"
+            },
+            "link": {
+              "href": "#",
+              "text": "Saiba mais",
+              "title": "Saiba mais"
+            },
+            "title": "Entrega com carbono neutro",
+            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
+          },
+          {
+            "image": {
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Entrega com carbono neutro",
+              "src": {
+                "desktop": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png",
+                "mobile": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png"
+              },
+              "link": {
+                "href": "#",
+                "title": "#"
+              }
+            },
+            "link": {
+              "href": "#",
+              "text": "Saiba mais",
+              "title": "Entrega com carbono neutro"
+            },
+            "title": "Entrega com carbono neutro",
+            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
+          },
+          {
+            "image": {
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Entrega com carbono neutro",
+              "src": {
+                "desktop": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png",
+                "mobile": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png"
+              },
+              "link": {
+                "href": "#",
+                "title": "#"
+              }
+            },
+            "link": {
+              "href": "#",
+              "text": "Saiba mais",
+              "title": "Saiba mais"
+            },
+            "title": "Entrega com carbono neutro",
+            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
+          },
+          {
+            "image": {
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Entrega com carbono neutro",
+              "src": {
+                "desktop": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png",
+                "mobile": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png"
+              }
+            },
+            "link": {
+              "href": "#",
+              "text": "Saiba mais",
+              "title": "Saiba mais"
+            },
+            "title": "Entrega com carbono neutro",
+            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
+          }
+        ],
+        "configs": {
+          "spaceBetween": 8
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

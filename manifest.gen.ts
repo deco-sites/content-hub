@@ -11,7 +11,7 @@ import * as $$$$$$1 from "./sections/Lps/EcoPlus/ArticleSliderSection.tsx";
 import * as $$$$$$2 from "./sections/Lps/EcoPlus/BannerMediaSection.tsx";
 import * as $$$$$$3 from "./sections/Lps/EcoPlus/BannerSliderSection.tsx";
 import * as $$$$$$4 from "./sections/Lps/EcoPlus/CategoriesSection.tsx";
-import * as $$$$$$5 from "./sections/Lps/EcoPlus/FakeReviewSection.tsx";
+import * as $$$$$$5 from "./sections/Lps/EcoPlus/ReviewsSliderSection.tsx";
 import * as $$$$$$6 from "./sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx";
 import * as $$$$$$7 from "./sections/Lps/EcoPlus/InfoCardSection.tsx";
 import * as $$$$$$8 from "./sections/Lps/Homepedia/ArticleSliderHomeSection.tsx";

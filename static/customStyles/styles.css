@@ -166,8 +166,8 @@
   }
 }
 
-/* Fake Review Section */
-.fake-review-section {
+/* Review Section */
+.review-section {
   .section-title {
     h1,
     h2,
@@ -337,8 +337,8 @@
     }
   }
 
-  /* Fake Review Section */
-  .fake-review-section {
+  /* Review Section */
+  .review-section {
     .section-title {
       h1,
       h2,

@@ -64,7 +64,7 @@ export default function ResponsiveImage({
     return ResponsiveImageComponent;
   }
 
-  const { href, title, target } = link ?? {};
+  const { href, title, target = "blank" } = link ?? {};
 
   return (
     <a
@@ -72,7 +72,7 @@ export default function ResponsiveImage({
       title={title ?? ""}
       target={`_${target}`}
       rel={target === "blank" ? "noopener noreferrer" : ""}
-      class="flex no-underline"
+      class="flex no-underline w-full"
     >
       {ResponsiveImageComponent}
     </a>

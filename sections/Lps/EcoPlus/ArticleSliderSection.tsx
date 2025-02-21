@@ -37,7 +37,7 @@ export default function ArticleSliderSection({
 
   if (!articles?.length) return <></>;
 
-  const { autoplay = {}, slidesPerView = 1, spaceBetween = 10 } = configs ?? {};
+  const { autoplay = {}, slidesPerView = 1, spaceBetween = 8 } = configs ?? {};
 
   const autoplayConfig = autoplay.enabled
     ? {
@@ -83,7 +83,7 @@ export default function ArticleSliderSection({
       id={id}
       classesContainer="article-slider-section h-full min-h-[630px] lg:min-h-[585px]"
     >
-      <div class="flex w-full mx-auto px-[10px]">
+      <div class="flex w-full mx-auto">
         <ArticleSlider
           configs={sliderConfig}
           rootId={id}

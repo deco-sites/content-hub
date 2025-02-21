@@ -25,7 +25,7 @@ export default function ProductCard({
   } = useOffer(offers);
 
   return (
-    <div class="flex border-[1px] border-solid border-[#dee7ea] bg-white rounded box-border min-h-[540px] mx-2 group lg:transition-all lg:ease-in-out lg:duration-200">
+    <div class="flex border-[1px] border-solid border-[#dee7ea] bg-white rounded box-border min-h-[540px] mx-2 group md:min-h-[480px] lg:min-h-[520px] xl:transition-all xl:ease-in-out xl:duration-200">
       <div class="flex flex-col gap-2 w-full h-full p-4">
         <div class="flex relative w-full items-center justify-center">
           <div class="flex absolute left-0 top-0 cursor-pointer z-[5]">
@@ -64,7 +64,7 @@ export default function ProductCard({
                   alt={back?.alternateName ?? front.alternateName}
                   width={WIDTH}
                   height={HEIGHT}
-                  class="bg-base-100 col-span-full row-span-full transition-opacity rounded w-full opacity-0 lg:group-hover:opacity-100"
+                  class="bg-base-100 col-span-full row-span-full transition-opacity rounded w-full opacity-0 xl:group-hover:opacity-100"
                   sizes="(max-width: 640px) 50vw, 20vw"
                   loading="lazy"
                   decoding="async"
@@ -75,10 +75,10 @@ export default function ProductCard({
         </div>
 
         <div class="flex flex-col">
-          <div class="flex min-h-[60px] mb-8">
+          <div class="flex min-h-[60px] mb-4">
             <h2
               title={isVariantOf?.name}
-              class="text-sm text-left font-semibold leading-[20px] text-[#011e41] text-wrap truncate line-clamp-3 lg:text-base lg:font-bold"
+              class="text-sm text-left font-semibold leading-[20px] text-[#011e41] text-wrap truncate line-clamp-3 xl:text-base xl:font-bold"
             >
               {isVariantOf?.name}
             </h2>
@@ -125,7 +125,7 @@ export default function ProductCard({
               )}
             </div>
 
-            <div class="flex flex-col min-h-[60px] lg:min-h-[40px]">
+            <div class="flex flex-col min-h-[60px]">
               {withoutInterest && (
                 <span class="text-[#5b6a78] text-sm">
                   em até <b>{withoutInterest.billingDuration}x</b> de{" "}
@@ -148,7 +148,7 @@ export default function ProductCard({
             </div>
           </div>
 
-          <div class="flex items-center w-full lg:transition-all lg:ease-in-out lg:duration-200 lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+          <div class="flex items-center w-full xl:transition-all xl:ease-in-out xl:duration-200 xl:invisible xl:opacity-0 xl:group-hover:visible xl:group-hover:opacity-100">
             <a
               title="Ver detalhes"
               class="flex w-full rounded cursor-pointer no-underline items-center justify-center h-[40px] font-semibold text-white bg-[#617f57] transition-all ease-in duration-300 hover:bg-[#99b293]"

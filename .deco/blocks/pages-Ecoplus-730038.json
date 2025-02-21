@@ -805,8 +805,14 @@
             "enabledMobile": true,
             "clickable": true
           },
-          "lazy": true
-        }
+          "lazy": true,
+          "navigation": {
+            "enabledMobile": false,
+            "enabledDesktop": true
+          }
+        },
+        "direction": "left",
+        "reverse": false
       }
     },
     {

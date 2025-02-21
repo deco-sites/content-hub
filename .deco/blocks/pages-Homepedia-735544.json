@@ -107,7 +107,9 @@
         "link": {
           "text": "Conheça todos os produtos",
           "href": "#"
-        }
+        },
+        "section": {},
+        "reverse": true
       }
     },
     {

@@ -3185,6 +3185,10 @@ input.tab:checked + .tab-content,
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .px-\[12px\] {
   padding-left: 12px;
   padding-right: 12px;
@@ -3690,10 +3694,6 @@ input.tab:checked + .tab-content,
 
   .lg\:w-\[calc\(100\%\+32px\)\] {
     width: calc(100% + 32px);
-  }
-
-  .lg\:w-\[unset\] {
-    width: unset;
   }
 
   .lg\:w-\[unset\] {

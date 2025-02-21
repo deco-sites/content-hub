@@ -31,17 +31,17 @@ interface Props {
 export default function ArticleSliderSection({
   section,
   articles,
-  configs = {}
+  configs = {},
 }: Props) {
   const id = useId();
 
-  if (!articles?.length) return <></>;
+  if (!articles?.length) return null;
 
-  const { autoplay = {}, slidesPerView = 1, spaceBetween = 8 } = configs ?? {};
+  const { autoplay = {}, slidesPerView = 1, spaceBetween = 10 } = configs ?? {};
 
   const autoplayConfig = autoplay.enabled
     ? {
-        delay: autoplay.delay ?? 3000
+        delay: autoplay.delay ?? 3000,
       }
     : undefined;
 
@@ -51,19 +51,19 @@ export default function ArticleSliderSection({
     slidesPerView,
     spaceBetween,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false
+      enabled: configs?.pagination?.enabledMobile ?? false,
     },
     breakpoints: {
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false
-        }
-      }
-    }
+          enabled: configs?.pagination?.enabledDesktop ?? false,
+        },
+      },
+    },
   } as ISliderConfigs;
 
-  const defaultPropsArticles = articles.map(article => ({
+  const defaultPropsArticles = articles.map((article) => ({
     ...article,
     image: {
       ...article.image,
@@ -72,9 +72,9 @@ export default function ArticleSliderSection({
         width: 344,
         height: 180,
         widthMobile: 344,
-        heightMobile: 180
-      }
-    }
+        heightMobile: 180,
+      },
+    },
   }));
 
   return (
@@ -83,7 +83,7 @@ export default function ArticleSliderSection({
       id={id}
       classesContainer="article-slider-section h-full min-h-[630px] lg:min-h-[585px]"
     >
-      <div class="flex w-full mx-auto">
+      <div class="flex w-full mx-auto px-[10px]">
         <ArticleSlider
           configs={sliderConfig}
           rootId={id}

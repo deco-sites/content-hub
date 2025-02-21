@@ -123,13 +123,6 @@ export interface ISliderConfigs {
   autoplay?: Partial<Autoplay>;
 
   /**
-   * @title Espaçamento entre slides
-   * @description Define a distância entre os slides, em pixels. Pode ser um número ou uma string com unidade.
-   * @default 0
-   */
-  spaceBetween?: number;
-
-  /**
    * @title Velocidade da transição
    * @description Define a duração da animação ao trocar de slide, em milissegundos.
    * @default 300
@@ -137,10 +130,17 @@ export interface ISliderConfigs {
   speed?: number;
 
   /**
+   * @title Espaçamento entre slides
+   * @hide
+   * @default 0
+   */
+  spaceBetween?: number;
+
+  /**
    * @title Slides visíveis por vez
    * @hide
    */
-  slidesPerView?: number | "auto";
+  slidesPerView?: number;
 
   /**
    * @title Breakpoints
@@ -151,74 +151,4 @@ export interface ISliderConfigs {
     [width: number]: ISliderConfigs;
     [ratio: string]: ISliderConfigs;
   };
-
-  /**
-   * @description The beginning of the modifier CSS class that can be added to swiper container depending on different parameters
-   * @default 'swiper-'
-   * @hide
-   */
-  containerModifierClass?: string;
-
-  /**
-   * @description CSS class name of slide
-   * @default 'swiper-slide'
-   * @hide
-   */
-  slideClass?: string;
-
-  /**
-   * @description CSS class name of currently active slide
-   * @default 'swiper-slide-active'
-   * @hide
-   */
-  slideActiveClass?: string;
-
-  /**
-   * @description CSS class name of currently/partially visible slide
-   * @default 'swiper-slide-visible'
-   * @hide
-   */
-  slideVisibleClass?: string;
-
-  /**
-   * @description CSS class name of fully (when whole slide is in the viewport) visible slide
-   * @default 'swiper-slide-fully-visible'
-   * @hide
-   */
-  slideFullyVisibleClass?: string;
-
-  /**
-   * @description CSS class name of the blank slide added by the loop mode (when `loopAddBlankSlides` is enabled)
-   * @default 'swiper-slide-blank'
-   * @hide
-   */
-  slideBlankClass?: string;
-
-  /**
-   * @description CSS class name of slide which is right after currently active slide
-   * @default 'swiper-slide-next'
-   * @hide
-   */
-  slideNextClass?: string;
-
-  /**
-   * @description CSS class name of slide which is right before currently active slide
-   * @default 'swiper-slide-prev'
-   * @hide
-   */
-  slidePrevClass?: string;
-
-  /**
-   * @description CSS class name of slides' wrapper
-   * @default 'swiper-wrapper'
-   * @hide
-   */
-  wrapperClass?: string;
-
-  /**
-   * @description CSS class name of lazy preloader
-   * @default 'swiper-lazy-preloader'
-   * @hide
-   */
-  lazyPreloaderClass?: string;
 }

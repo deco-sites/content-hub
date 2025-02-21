@@ -51,6 +51,7 @@
     line-height: 100%;
     margin: 0 0 8px;
     text-transform: uppercase;
+    text-align: center;
   }
 
   > p,
@@ -61,8 +62,17 @@
   }
 }
 
+/* Banner Slider Section */
+.banner-slider-section {
+  .swiper {
+    width: 100%;
+  }
+}
+
 /* Image With Text Columns Section */
 .image-with-text-columns-section {
+  padding: 0;
+
   p {
     font-weight: 400;
     font-size: 14px;
@@ -91,7 +101,7 @@
 
     .info-card-children {
       min-height: 320px !important;
-      padding: 60px 24px !important;
+      padding: 60px 16px !important;
       width: 100% !important;
     }
 
@@ -156,8 +166,8 @@
   }
 }
 
-/* Fake Review Section */
-.fake-review-section {
+/* Review Section */
+.review-section {
   .section-title {
     h1,
     h2,
@@ -179,6 +189,8 @@
 
 /* Banner Media Section */
 .banner-media-section {
+  padding: 0;
+
   h1,
   h2,
   h3,
@@ -249,7 +261,7 @@
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9 18 6-6-6-6' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
 
-  .product-shelf-section__background {
+  .product-shelf-section__text {
     h1,
     h2,
     h3,
@@ -269,6 +281,14 @@
       font-weight: 600;
       line-height: 14px;
     }
+  }
+}
+
+/* Tripple Banner Section */
+.tripple-banner-section {
+
+  .swiper-wrapper {
+    gap: 0 8px;
   }
 }
 
@@ -293,20 +313,6 @@
     }
   }
 
-  /* Image With Text Columns Section */
-  .image-with-text-columns-section {
-    p {
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 22px;
-
-      > em {
-        font-size: 14px;
-      }
-    }
-  }
-
-  /* Info Card Section */
   .info-card-section {
     /*  Workaround for style component */
     .info-card[style*="flex-direction: row-reverse;"],
@@ -320,53 +326,19 @@
     }
     /* End Workaround */
 
-    .info-card {
-      .info-card-children {
-        padding: 40px !important;
-        width: 50% !important;
-      }
+    .info-card-children:first-child {
+      height: 100%;
+      padding: 40px !important;
+      width: 50% !important;
+    }
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-size: 36px;
-        margin: 0 0 16px;
-        text-align: unset !important;
-        width: 65%;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 24px;
-        text-align: end;
-        text-align: unset !important;
-        width: 50%;
-      }
-
-      p > em {
-        font-size: 16px;
-        line-height: 19px;
-        margin: 0 0 16px;
-      }
+    .info-card-children:last-child {
+      width: 50% !important;
     }
   }
 
-  /* Article Slider Section */
-  .article-slider-section {
-    .swiper-slide {
-      width: 25% !important;
-    }
-
-    .swiper-wrapper {
-      transform: translate3d(12.5%, 0, 0) !important;
-    }
-  }
-
-  /* Fake Review Section */
-  .fake-review-section {
+  /* Review Section */
+  .review-section {
     .section-title {
       h1,
       h2,
@@ -395,13 +367,12 @@
 
     .swiper-slide {
       max-width: 185px;
-      width: 25% !important;
     }
   }
 
   /* Product Shelf Section */
   .product-shelf-section {
-    .product-shelf-section__background {
+    .product-shelf-section__text {
       h1,
       h2,
       h3,
@@ -415,6 +386,52 @@
       p {
         font-size: 20px;
         line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  /* Image With Text Columns Section */
+  .image-with-text-columns-section {
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+
+      > em {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /* Info Card Section */
+  .info-card-section {
+    .info-card {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 36px;
+        margin: 0 0 16px;
+        text-align: unset !important;
+        width: 65%;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: end;
+        text-align: unset !important;
+        width: 50%;
+      }
+
+      p > em {
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0 0 16px;
       }
     }
   }

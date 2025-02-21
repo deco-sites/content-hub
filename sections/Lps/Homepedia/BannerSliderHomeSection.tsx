@@ -26,20 +26,20 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
-export default function BannerSliderSection({
+export default function BannerSliderHomeSection({
   section,
   banners,
-  configs
+  configs = {},
 }: Props) {
   const id = useId();
 
-  if (!banners?.length) return null;
+  if (!banners?.length) return <></>;
 
-  const { autoplay = {}, slidesPerView = 1 } = configs ?? {};
+  const { autoplay = {}, slidesPerView = "3" } = configs ?? {};
 
   const autoplayConfig = autoplay.enabled
     ? {
-        delay: autoplay.delay ?? 3000
+        delay: autoplay.delay ?? 3000,
       }
     : undefined;
 
@@ -48,37 +48,32 @@ export default function BannerSliderSection({
     autoplay: autoplayConfig,
     slidesPerView,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false
+      enabled: configs?.pagination?.enabledMobile ?? false,
     },
     breakpoints: {
       1024: {
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false
-        }
-      }
-    }
+          enabled: configs?.pagination?.enabledDesktop ?? false,
+        },
+      },
+    },
   } as ISliderConfigs;
 
-  const defaultPropsBanners = banners.map(banner => {
+  const defaultPropsBanners = banners.map((banner) => {
     return {
       ...{ ...banner },
       sizes: {
         ...banner.sizes,
         fullScreen: true,
-        maxHeight: 420,
-        heightMobile: 400,
-        widthMobile: 375
-      }
+        maxHeight: 352,
+        heightMobile: 352,
+        width: 528,
+      },
     };
   });
 
   return (
-    <Section
-      {...section}
-      id={id}
-      fullWidth
-      classesContainer="banner-slider-section"
-    >
+    <Section {...section} id={id} classesContainer="tripple-banner-section">
       <BannerSlider
         configs={sliderConfig}
         rootId={id}

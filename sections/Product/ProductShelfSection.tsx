@@ -38,6 +38,13 @@ interface Props {
   section?: ISection;
 
   /**
+   * @title Direção do Conteúdo
+   * @description Define a disposição do conteúdo dentro da seção.
+   * @default false
+   */
+  reverse?: boolean;
+
+  /**
    * @title Imagem de Fundo
    * @description Define a imagem de fundo na seção da prateleira de produtos.
    * @format image-uri
@@ -88,42 +95,61 @@ export default function ProductShelfSection({
   products,
   background,
   text,
-  link
+  link,
+  reverse = false,
 }: Props) {
   const id = useId();
   const hasProducts = !!products?.length;
 
   const { srcDesktop, srcMobile, alt } = background ?? {};
 
-  const { autoplay = {}, slidesPerView = 1.5 } = configs ?? {};
+  const { autoplay = {} } = configs ?? {};
 
   const autoplayConfig = autoplay.enabled
     ? {
-        delay: autoplay.delay ?? 3000
+        delay: autoplay.delay ?? 3000,
       }
     : undefined;
 
-  const sliderConfig = {
+  const sliderConfig: ISliderConfigs = {
     ...configs,
     autoplay: autoplayConfig,
-    navigation: {
-      enabled: configs?.navigation?.enabledMobile ?? false
-    },
-    slidesPerView,
-    pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false
-    },
+    slidesPerView: configs?.slidesPerView ?? 1.5,
+    navigation: configs?.navigation?.enabledMobile
+      ? { enabled: configs?.navigation?.enabledMobile }
+      : { enabled: false },
+    pagination: configs?.pagination?.enabledMobile
+      ? { enabled: configs?.pagination?.enabledMobile }
+      : { enabled: true },
     breakpoints: {
-      1024: {
+      768: {
+        slidesPerView: 2,
+        navigation: configs?.navigation?.enabledDesktop
+          ? { enabled: configs?.navigation?.enabledDesktop }
+          : { enabled: true },
+        pagination: configs?.pagination?.enabledDesktop
+          ? { enabled: configs?.pagination?.enabledDesktop }
+          : { enabled: false },
+      },
+      1280: {
         slidesPerView: 3,
-        navigation: {
-          enabled: configs?.navigation?.enabledDesktop ?? true
-        },
-        pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false
-        }
-      }
-    }
+        navigation: configs?.navigation?.enabledDesktop
+          ? { enabled: configs?.navigation?.enabledDesktop }
+          : { enabled: true },
+        pagination: configs?.pagination?.enabledDesktop
+          ? { enabled: configs?.pagination?.enabledDesktop }
+          : { enabled: false },
+      },
+      1440: {
+        slidesPerView: 4,
+        navigation: configs?.navigation?.enabledDesktop
+          ? { enabled: configs?.navigation?.enabledDesktop }
+          : { enabled: true },
+        pagination: configs?.pagination?.enabledDesktop
+          ? { enabled: configs?.pagination?.enabledDesktop }
+          : { enabled: false },
+      },
+    },
   } as ISliderConfigs;
 
   const minimalProducts = products?.map(
@@ -132,7 +158,7 @@ export default function ProductShelfSection({
         url,
         isVariantOf,
         offers,
-        image
+        image,
       };
     }
   );
@@ -141,20 +167,66 @@ export default function ProductShelfSection({
     <Section
       {...section}
       id={id}
-      classesContainer="product-shelf-section max-w-[1536px] mx-auto"
+      classesContainer="product-shelf-section mx-auto"
+      fullWidth
     >
-      <div class="flex flex-col relative w-full mx-auto min-h-[850px] lg:min-h-[600px] lg:max-w-[1366px]">
+      <div class="flex flex-col items-center justify-center relative w-full lg:w-[calc(100%+32px)]">
         {(srcDesktop || srcMobile) && (
-          <div class="flex h-full product-shelf-section__background lg:absolute lg:right-0 lg:h-[600px]">
+          <div
+            class={`flex w-full top-0 left-0 absolute -z-[1] max-h-[475px] lg:[position:initial] lg:max-h-[initial] ${
+              !reverse ? "justify-end" : "justify-start"
+            }`}
+          >
+            <Picture class="flex w-full max-w-[1094px]" preload={false}>
+              {srcMobile && (
+                <Source
+                  srcSet={srcMobile}
+                  media="(max-width: 1023px)"
+                  height={441}
+                  src={srcMobile}
+                  width={375}
+                />
+              )}
+
+              {srcDesktop && (
+                <img
+                  alt={alt}
+                  class="w-full object-cover lg:flex-row-reverse"
+                  src={srcDesktop}
+                />
+              )}
+            </Picture>
+          </div>
+        )}
+
+        <div
+          class={`flex w-full items-center justify-center flex-col-reverse lg:absolute lg:top-1/2 lg:-translate-y-2/4 gap-[50px] lg:max-w-[calc(100.1rem+32px)] lg:gap-[10px] lg:mx-auto ${
+            !reverse ? "lg:flex-row" : "lg:flex-row-reverse"
+          }`}
+        >
+          <div class="flex w-full lg:max-w-[calc(65%-5px)] lg:px-[50px] xl:max-w-[calc(75%-5px)] ">
+            {hasProducts && (
+              <ProductShelf
+                products={minimalProducts}
+                rootId={id}
+                configs={sliderConfig}
+              />
+            )}
+          </div>
+          <div
+            class={`product-shelf-section__text flex w-full h-full pt-[84px] px-4 lg:px-0 lg:pt-0 lg:max-w-[calc(35%-5px)] xl:max-w-[calc(25%-5px)] ${
+              !reverse ? "lg:pr-4" : "lg:pl-4"
+            }`}
+          >
             {(text || link) && (
-              <div class="flex gap-4 flex-col top-14 absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 lg:max-w-[370px]">
+              <div class="flex gap-4 flex-col">
                 {text && (
-                  <div class="flex mx-4">
+                  <div class="flex">
                     <Text title={text} />
                   </div>
                 )}
                 {link && link.text && (
-                  <div class="flex mx-4">
+                  <div class="flex">
                     <a
                       href={link.href}
                       class="cursor-pointer flex items-center justify-center leading-[24px] text-base font-semibold text-center h-[40px] px-6 bg-[#617f57] text-white hover:bg-[#99b293] transition-all ease-in duration-300"
@@ -165,33 +237,7 @@ export default function ProductShelfSection({
                 )}
               </div>
             )}
-
-            <Picture class="flex w-full h-[475px] lg:h-[600px]" preload={false}>
-              {srcMobile && (
-                <Source
-                  srcSet={srcMobile}
-                  media="(max-width: 1023px)"
-                  height={475}
-                  src={srcMobile}
-                  width={1000}
-                />
-              )}
-
-              {srcDesktop && (
-                <img alt={alt} class="w-full object-cover" src={srcDesktop} />
-              )}
-            </Picture>
           </div>
-        )}
-
-        <div class="flex gap-6 w-full overflow-hidden absolute top-[250px] left-1/2 -translate-x-1/2 lg:[position:initial] lg:[transform:unset] lg:w-[65%] lg:pt-5">
-          {hasProducts && (
-            <ProductShelf
-              products={minimalProducts}
-              rootId={id}
-              configs={sliderConfig}
-            />
-          )}
         </div>
       </div>
     </Section>

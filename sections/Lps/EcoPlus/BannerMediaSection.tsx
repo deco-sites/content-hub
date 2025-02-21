@@ -50,7 +50,7 @@ export default function BannerMediaSliderSection({
   banners,
   title,
   configs = {},
-  icons
+  icons,
 }: Props) {
   const id = useId();
 
@@ -59,15 +59,15 @@ export default function BannerMediaSliderSection({
   const {
     autoplay = {},
     slidesPerView = 1.6,
-    spaceBetween = 16,
-    centeredSlides = true
+    spaceBetween = 32,
+    centeredSlides = true,
   } = configs ?? {};
 
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 
   const autoplayConfig = autoplay.enabled
     ? {
-        delay: autoplay.delay ?? 3000
+        delay: autoplay.delay ?? 3000,
       }
     : undefined;
 
@@ -77,27 +77,27 @@ export default function BannerMediaSliderSection({
     spaceBetween,
     centeredSlides,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false
+      enabled: configs?.pagination?.enabledMobile ?? false,
     },
     breakpoints: {
       768: {
         slidesPerView: 2.3,
-        spaceBetween: 64,
-        centeredSlides: false
+        spaceBetween: 32,
+        centeredSlides: false,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 64,
+        spaceBetween: 32,
         centeredSlides: false,
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false
-        }
-      }
+          enabled: configs?.pagination?.enabledDesktop ?? false,
+        },
+      },
     },
-    autoplay: autoplayConfig
+    autoplay: autoplayConfig,
   } as ISliderConfigs;
 
-  const defaultPropBanners = banners.map(banner => {
+  const defaultPropBanners = banners.map((banner) => {
     return {
       ...{ ...banner },
       sizes: {
@@ -105,8 +105,8 @@ export default function BannerMediaSliderSection({
         width: 185,
         height: 324,
         widthMobile: 185,
-        heightMobile: 324
-      }
+        heightMobile: 324,
+      },
     };
   });
 
@@ -114,32 +114,31 @@ export default function BannerMediaSliderSection({
     <Section
       {...section}
       id={id}
-      classesContainer="banner-media-section min-h-[650px] lg:min-h-[303px]"
+      classesContainer="banner-media-section p-0 xl:px-4"
     >
-      <div class="flex flex-col w-full max-w-[1536px] mx-auto gap-4 lg:px-4 lg:gap-6">
-        <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row lg:gap-0 lg:items-start">
-          <div class="flex w-full lg:w-[65%] xl:w-[55%]">
+      <div class="flex flex-col w-full mx-auto gap-4 lg:gap-6">
+        <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row">
+          <div class="flex w-full lg:w-[unset] lg:max-w-[500px] xl:max-w-none">
             <BannerSlider
               configs={sliderConfig}
               rootId={id}
               banners={defaultPropBanners}
             />
           </div>
-          <div class="w-full flex flex-col items-center justify-center max-w-[600px] px-4 lg:w-[35%] xl:w-[45%]">
+          <div class="flex flex-col items-center justify-center max-w-[600px]">
             {!isEmptyTitle && (
-              <div class="flex text-center lg:text-left">
-                <Text title={title} />
-              </div>
-            )}
-
-            {icons && (
-              <div class="w-full mt-4 flex flex-wrap justify-center item-center gap-x-[24px] lg:justify-start">
-                {icons.map(({ id, href }) => (
-                  <a target="_blank" key={id} title={id} href={href}>
-                    <Icon id={id} size={32} />
-                  </a>
-                ))}
-              </div>
+              <>
+                <div class="flex text-center lg:text-left">
+                  <Text content={title} />
+                </div>
+                <div class="w-full mt-4 flex flex-wrap justify-center items-center gap-x-[24px] lg:justify-start">
+                  {icons?.map(({ id, href }) => (
+                    <a target="_blank" key={id} title={id} href={href}>
+                      <Icon id={id} size={32} />
+                    </a>
+                  ))}
+                </div>
+              </>
             )}
           </div>
         </div>
@@ -150,7 +149,7 @@ export default function BannerMediaSliderSection({
 
 export function LoadingFallback() {
   return (
-    <div class="flex justify-center items-center h-[682px] lg:h-[335px]">
+    <div class="flex justify-center items-center h-[682px] lg:h-[200px]">
       <span class="loading loading-spinner" />
     </div>
   );

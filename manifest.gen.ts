@@ -11,9 +11,9 @@ import * as $$$$$$1 from "./sections/Lps/EcoPlus/ArticleSliderSection.tsx";
 import * as $$$$$$2 from "./sections/Lps/EcoPlus/BannerMediaSection.tsx";
 import * as $$$$$$3 from "./sections/Lps/EcoPlus/BannerSliderSection.tsx";
 import * as $$$$$$4 from "./sections/Lps/EcoPlus/CategoriesSection.tsx";
-import * as $$$$$$5 from "./sections/Lps/EcoPlus/ReviewsSliderSection.tsx";
-import * as $$$$$$6 from "./sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx";
-import * as $$$$$$7 from "./sections/Lps/EcoPlus/InfoCardSection.tsx";
+import * as $$$$$$5 from "./sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx";
+import * as $$$$$$6 from "./sections/Lps/EcoPlus/InfoCardSection.tsx";
+import * as $$$$$$7 from "./sections/Lps/EcoPlus/ReviewsSliderSection.tsx";
 import * as $$$$$$8 from "./sections/Lps/Homepedia/ArticleSliderHomeSection.tsx";
 import * as $$$$$$9 from "./sections/Lps/Homepedia/BannerSliderHomeSection.tsx";
 import * as $$$$$$10 from "./sections/Lps/Homepedia/TextSection.tsx";
@@ -28,9 +28,9 @@ const manifest = {
     "site/sections/Lps/EcoPlus/BannerMediaSection.tsx": $$$$$$2,
     "site/sections/Lps/EcoPlus/BannerSliderSection.tsx": $$$$$$3,
     "site/sections/Lps/EcoPlus/CategoriesSection.tsx": $$$$$$4,
-    "site/sections/Lps/EcoPlus/FakeReviewSection.tsx": $$$$$$5,
-    "site/sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx": $$$$$$6,
-    "site/sections/Lps/EcoPlus/InfoCardSection.tsx": $$$$$$7,
+    "site/sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx": $$$$$$5,
+    "site/sections/Lps/EcoPlus/InfoCardSection.tsx": $$$$$$6,
+    "site/sections/Lps/EcoPlus/ReviewsSliderSection.tsx": $$$$$$7,
     "site/sections/Lps/Homepedia/ArticleSliderHomeSection.tsx": $$$$$$8,
     "site/sections/Lps/Homepedia/BannerSliderHomeSection.tsx": $$$$$$9,
     "site/sections/Lps/Homepedia/TextSection.tsx": $$$$$$10,

@@ -818,59 +818,59 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/FakeReviewSection.tsx",
+        "__resolveType": "site/sections/Lps/EcoPlus/ReviewsSliderSection.tsx",
         "section": {
-          "title": "<h2 style=\"text-align: center\">Quem escolhe melhor, vive melhor</h2>"
+          "title": "<h2 style=\"text-align: center\"><strong>Quem escolhe melhor, vive melhor</strong></h2>"
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/b94e45b8-183a-4c71-9bd2-a0722c14a20f/reviews-bg.webp",
           "srcMobile": "https://data.decoassets.com/content-hub/77f86953-4525-4934-85d2-417074080bcf/reviews-bg-mobile.webp",
-          "alt": "Backgd"
+          "alt": "Background Reviews"
         },
-        "fakeReviewCards": [
+        "sectionReviewCards": [
           {
-            "fakeStars": {
+            "reviewStars": {
               "quantity": 5,
-              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-fullstar.svg",
-              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-emptystar.svg",
-              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-halfstar.svg"
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg"
             },
-            "fakeDescription": "Excelente produto com designer bonito e a quantidade de litros excelente.",
-            "fakeProductName": "Geladeiras",
-            "fakePersonName": "Ricardo L."
+            "reviewDescription": "Excelente produto com designer bonito e a quantidade de litros excelente.",
+            "reviewProductName": "Geladeiras",
+            "reviewPersonName": "Ricardo L."
           },
           {
-            "fakeStars": {
+            "reviewStars": {
               "quantity": 5,
-              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-fullstar.svg",
-              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-emptystar.svg",
-              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-halfstar.svg"
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg"
             },
-            "fakeDescription": "Gostei muito do produto.",
-            "fakeProductName": "Ar condicionando",
-            "fakePersonName": "Mauricio V."
+            "reviewDescription": "Gostei muito do produto.",
+            "reviewPersonName": "Mauricio V.",
+            "reviewProductName": "Ar condicionando"
           },
           {
-            "fakeStars": {
+            "reviewStars": {
               "quantity": 5,
-              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-fullstar.svg",
-              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-emptystar.svg",
-              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-halfstar.svg"
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg"
             },
-            "fakeDescription": "Ótimo produto. Lava muito bem, é silenciosa, tem ótimas funções e é linda. Eu amei.",
-            "fakeProductName": "Máquina de lavar",
-            "fakePersonName": "Cleber O."
+            "reviewDescription": "Ótimo produto. Lava muito bem, é silenciosa, tem ótimas funções e é linda. Eu amei.",
+            "reviewProductName": "Máquina de lavar",
+            "reviewPersonName": "Cleber O."
           },
           {
-            "fakeStars": {
+            "reviewStars": {
               "quantity": 5,
-              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-fullstar.svg",
-              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-emptystar.svg",
-              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/fakereview-halfstar.svg"
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg"
             },
-            "fakeDescription": "Lindo, eficiente. Cumpre tudo que promete. Instalação fácil.",
-            "fakeProductName": "Cooktop",
-            "fakePersonName": "Cinara N."
+            "reviewDescription": "Lindo, eficiente. Cumpre tudo que promete. Instalação fácil.",
+            "reviewProductName": "Cooktop",
+            "reviewPersonName": "Cinara N."
           }
         ]
       }

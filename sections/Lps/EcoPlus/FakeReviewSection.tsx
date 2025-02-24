@@ -61,10 +61,10 @@ export default function FakeReviewSection({
     <Section
       id={id}
       {...section}
-      classesContainer="fake-review-section relative h-[350px] lg:h-[500px] bg-black bg-opacity-[0.7] justify-center xl:gap-[24px]"
+      classesContainer="fake-review-section relative h-[350px] lg:h-[500px] bg-black bg-opacity-[0.7] w-full justify-center xl:gap-[24px]"
       fullWidth
     >
-      <>
+      <div class="flex flex-col">
         {srcDesktop && srcMobile && (
           <div class="flex absolute h-full top-0 left-0 -z-[1]">
             <picture class="flex w-full">
@@ -102,7 +102,7 @@ export default function FakeReviewSection({
             </div>
           </div>
         </div>
-      </>
+      </div>
     </Section>
   );
 }

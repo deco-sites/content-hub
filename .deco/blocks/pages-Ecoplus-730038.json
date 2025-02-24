@@ -824,7 +824,7 @@
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/b94e45b8-183a-4c71-9bd2-a0722c14a20f/reviews-bg.webp",
-          "srcMobile": "https://data.decoassets.com/content-hub/77f86953-4525-4934-85d2-417074080bcf/reviews-bg-mobile.webp",
+          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/243097d7-da7b-4a52-aea7-1e5d5e4b6b9a___98314a9a95d25587a2f6655195e8f8a5.png",
           "alt": "Background Reviews"
         },
         "sectionReviewCards": [

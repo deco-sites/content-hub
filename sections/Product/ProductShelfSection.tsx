@@ -88,6 +88,13 @@ interface Props {
    * @description Define os parâmetros de exibição e comportamento do slider.
    */
   configs?: ISliderConfigs;
+
+  /**
+   * @title Largura Completa
+   * @description Define se a seção ocupará a largura total da tela. Quando ativado, o conteúdo se estende por toda a largura disponível.
+   * @default false
+   */
+  fullWidth?: boolean;
 }
 
 export default function ProductShelfSection({

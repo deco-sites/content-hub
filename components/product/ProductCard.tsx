@@ -1,9 +1,10 @@
 import Icon from "site/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
+import ProductSpecificationComparator from "site/components/product/ProductSpecificationComparator.tsx";
 import { formatPrice } from "site/sdk/format.ts";
 import { relative } from "site/sdk/url.ts";
 import { useOffer } from "site/sdk/useOffer.ts";
-import type { Product } from "apps/commerce/types.ts";
+import type { ProductWithComparator } from "site/types/Product.d.ts";
 
 const WIDTH = 230;
 const HEIGHT = 230;
@@ -12,8 +13,9 @@ export default function ProductCard({
   url,
   isVariantOf,
   offers,
-  image: images
-}: Partial<Product>): preact.JSX.Element {
+  image: images,
+  productSpecsComparator
+}: Partial<ProductWithComparator>): preact.JSX.Element {
   const [front, back] = images ?? [];
   const {
     listPrice,
@@ -38,7 +40,7 @@ export default function ProductCard({
             />
           </div>
 
-          <div class="flex w-full h-full justify-center max-w-[230px] max-h-[230px]">
+          <div class="flex w-full h-full justify-center max-w-[230px] max-h-[230px] lg:w-[230px] lg:h-[230px]">
             <figure
               class="relative overflow-hidden"
               style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
@@ -75,7 +77,7 @@ export default function ProductCard({
         </div>
 
         <div class="flex flex-col">
-          <div class="flex min-h-[60px] mb-4">
+          <div class="flex min-h-[60px] lg:min-h-[72px] mb-4">
             <h2
               title={isVariantOf?.name}
               class="text-sm text-left font-semibold leading-[20px] text-[#011e41] text-wrap truncate line-clamp-3 xl:text-base xl:font-bold"
@@ -156,6 +158,14 @@ export default function ProductCard({
               Ver Detalhes
             </a>
           </div>
+          {productSpecsComparator?.length && (
+            <div class="flex">
+              <ProductSpecificationComparator
+                productSpecsComparator={productSpecsComparator}
+                specs={isVariantOf?.additionalProperty}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

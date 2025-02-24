@@ -15,7 +15,8 @@ import * as $$$$$$5 from "./sections/Lps/EcoPlus/FakeReviewSection.tsx";
 import * as $$$$$$6 from "./sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx";
 import * as $$$$$$7 from "./sections/Lps/EcoPlus/InfoCardSection.tsx";
 import * as $$$$$$8 from "./sections/Product/ProductShelfSection.tsx";
-import * as $$$$$$9 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$9 from "./sections/Product/ProductShelfSectionWithComparator.tsx";
+import * as $$$$$$10 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -28,7 +29,8 @@ const manifest = {
     "site/sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx": $$$$$$6,
     "site/sections/Lps/EcoPlus/InfoCardSection.tsx": $$$$$$7,
     "site/sections/Product/ProductShelfSection.tsx": $$$$$$8,
-    "site/sections/Theme/Theme.tsx": $$$$$$9,
+    "site/sections/Product/ProductShelfSectionWithComparator.tsx": $$$$$$9,
+    "site/sections/Theme/Theme.tsx": $$$$$$10,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

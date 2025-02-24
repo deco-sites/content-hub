@@ -13,7 +13,7 @@ export default function ProductShelf({
   products = [],
   configs = {},
   rootId
-}: Props) {
+}: Props): preact.JSX.Element {
   const slides = products.map(props => (
     <ProductCard key={props.productID} {...props} />
   ));

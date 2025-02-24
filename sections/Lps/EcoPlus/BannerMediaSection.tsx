@@ -114,7 +114,7 @@ export default function BannerMediaSliderSection({
     <Section
       {...section}
       id={id}
-      classesContainer="banner-media-section p-0 xl:px-4"
+      classesContainer="banner-media-section p-0 lg:px-4"
     >
       <div class="flex flex-col w-full mx-auto gap-4 lg:gap-6">
         <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row">

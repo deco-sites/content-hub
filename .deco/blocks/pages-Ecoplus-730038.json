@@ -950,6 +950,45 @@
           }
         ]
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSectionWithComparator.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "1955",
+            "count": 5
+          }
+        },
+        "productSpecsComparator": [
+          {
+            "name": "Painel touch",
+            "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+          },
+          {
+            "name": "Grafismo na mesa",
+            "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+          },
+          {
+            "name": "Espeto giratório",
+            "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+          }
+        ],
+        "section": {},
+        "configs": {
+          "navigation": {
+            "enabledMobile": false,
+            "enabledDesktop": true
+          },
+          "pagination": {
+            "enabledMobile": true,
+            "clickable": true
+          }
+        }
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

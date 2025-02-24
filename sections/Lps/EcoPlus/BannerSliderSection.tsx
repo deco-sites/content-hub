@@ -35,25 +35,16 @@ export default function BannerSliderSection({
 
   if (!banners?.length) return null;
 
-  const { autoplay = {}, slidesPerView = 1 } = configs ?? {};
-
-  const autoplayConfig = autoplay.enabled
-    ? {
-        delay: autoplay.delay ?? 3000
-      }
-    : undefined;
-
   const sliderConfig = {
     ...configs,
-    autoplay: autoplayConfig,
-    slidesPerView,
+    slidesPerView: 1,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false
+      enabled: configs?.pagination?.enabledMobile
     },
     breakpoints: {
       1024: {
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false
+          enabled: configs?.pagination?.enabledDesktop
         }
       }
     }

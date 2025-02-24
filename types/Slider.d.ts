@@ -37,13 +37,6 @@ interface Pagination {
   enabledDesktop?: boolean;
 
   /**
-   * @title Página Clicável
-   * @description Permite que os usuários cliquem nos indicadores de paginação para navegar entre os slides.
-   * @default false
-   */
-  clickable?: boolean;
-
-  /**
    * @title Bullets Dinâmicos
    * @description Se ativado, os bullets da paginação serão reduzidos quando houver muitos slides, exibindo apenas alguns próximos ao ativo.
    * @default false
@@ -56,6 +49,14 @@ interface Pagination {
    * @default 1
    */
   dynamicMainBullets?: number;
+
+  /**
+   * @title Página Clicável
+   * @description Permite que os usuários cliquem nos indicadores de paginação para navegar entre os slides.
+   * @hide
+   * @default true
+   */
+  clickable?: boolean;
 }
 
 interface Navigation {
@@ -146,7 +147,6 @@ export interface ISliderConfigs {
    * @title Breakpoints
    * @hide
    */
-
   breakpoints?: {
     [width: number]: ISliderConfigs;
     [ratio: string]: ISliderConfigs;

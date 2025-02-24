@@ -3,6 +3,7 @@ import Section from "site/components/ui/Section.tsx";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
+import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { Product } from "apps/commerce/types.ts";
@@ -103,51 +104,26 @@ export default function ProductShelfSection({
 
   const { srcDesktop, srcMobile, alt } = background ?? {};
 
-  const { autoplay = {} } = configs ?? {};
-
-  const autoplayConfig = autoplay.enabled
-    ? {
-        delay: autoplay.delay ?? 3000
-      }
-    : undefined;
-
   const sliderConfig: ISliderConfigs = {
     ...configs,
-    autoplay: autoplayConfig,
-    slidesPerView: configs?.slidesPerView ?? 1.5,
-    navigation: configs?.navigation?.enabledMobile
-      ? { enabled: configs?.navigation?.enabledMobile }
-      : { enabled: false },
-    pagination: configs?.pagination?.enabledMobile
-      ? { enabled: configs?.pagination?.enabledMobile }
-      : { enabled: true },
+    slidesPerView: 1.5,
+    navigation: { enabled: configs?.navigation?.enabledMobile },
+    pagination: { enabled: configs?.pagination?.enabledMobile },
     breakpoints: {
       768: {
         slidesPerView: 2,
-        navigation: configs?.navigation?.enabledDesktop
-          ? { enabled: configs?.navigation?.enabledDesktop }
-          : { enabled: true },
-        pagination: configs?.pagination?.enabledDesktop
-          ? { enabled: configs?.pagination?.enabledDesktop }
-          : { enabled: false }
+        navigation: { enabled: configs?.navigation?.enabledDesktop },
+        pagination: { enabled: configs?.pagination?.enabledDesktop }
       },
       1280: {
         slidesPerView: 3,
-        navigation: configs?.navigation?.enabledDesktop
-          ? { enabled: configs?.navigation?.enabledDesktop }
-          : { enabled: true },
-        pagination: configs?.pagination?.enabledDesktop
-          ? { enabled: configs?.pagination?.enabledDesktop }
-          : { enabled: false }
+        navigation: { enabled: configs?.navigation?.enabledDesktop },
+        pagination: { enabled: configs?.pagination?.enabledDesktop }
       },
       1440: {
         slidesPerView: 4,
-        navigation: configs?.navigation?.enabledDesktop
-          ? { enabled: configs?.navigation?.enabledDesktop }
-          : { enabled: true },
-        pagination: configs?.pagination?.enabledDesktop
-          ? { enabled: configs?.pagination?.enabledDesktop }
-          : { enabled: false }
+        navigation: { enabled: configs?.navigation?.enabledDesktop },
+        pagination: { enabled: configs?.pagination?.enabledDesktop }
       }
     }
   } as ISliderConfigs;
@@ -163,15 +139,22 @@ export default function ProductShelfSection({
     }
   );
 
+  const isCustomShelf = !isEmptyText(text) || !isEmptyText(link?.text);
+  const hasBackground = !!srcDesktop || !!srcMobile;
+
   return (
     <Section
       {...section}
       id={id}
       classesContainer="product-shelf-section mx-auto"
-      fullWidth
+      fullWidth={isCustomShelf}
     >
-      <div class="flex flex-col items-center justify-center relative w-full lg:w-[calc(100%+32px)]">
-        {(srcDesktop || srcMobile) && (
+      <div
+        class={`flex flex-col items-center justify-center relative w-full ${
+          isCustomShelf ? "lg:w-full" : ""
+        }`}
+      >
+        {hasBackground && (
           <div
             class={`flex w-full top-0 left-0 absolute -z-[1] max-h-[475px] lg:[position:initial] lg:max-h-[initial] ${
               !reverse ? "justify-end" : "justify-start"
@@ -200,11 +183,24 @@ export default function ProductShelfSection({
         )}
 
         <div
-          class={`flex w-full items-center justify-center flex-col-reverse lg:absolute lg:top-1/2 lg:-translate-y-2/4 gap-[50px] lg:max-w-[calc(100.1rem+32px)] lg:gap-[10px] lg:mx-auto ${
-            !reverse ? "lg:flex-row" : "lg:flex-row-reverse"
-          }`}
+          class={`flex w-full items-center justify-center ${
+            isCustomShelf
+              ? "flex-col-reverse gap-[50px] lg:max-w-[calc(100.1rem+32px)] lg:gap-[10px] lg:mx-auto"
+              : ""
+          } ${hasBackground ? "lg:absolute lg:top-1/2 lg:-translate-y-2/4" : ""}
+              ${
+                !reverse && isCustomShelf
+                  ? "lg:flex-row"
+                  : "lg:flex-row-reverse"
+              }`}
         >
-          <div class="flex w-full lg:max-w-[calc(65%-5px)] lg:px-[50px] xl:max-w-[calc(75%-5px)] ">
+          <div
+            class={`flex w-full ${
+              isCustomShelf
+                ? "lg:max-w-[calc(65%-5px)] lg:px-[50px] xl:max-w-[calc(75%-5px)]"
+                : ""
+            }`}
+          >
             {hasProducts && (
               <ProductShelf
                 products={minimalProducts}
@@ -213,22 +209,23 @@ export default function ProductShelfSection({
               />
             )}
           </div>
-          <div
-            class={`product-shelf-section__text flex w-full h-full pt-[84px] px-4 lg:px-0 lg:pt-0 lg:max-w-[calc(35%-5px)] xl:max-w-[calc(25%-5px)] ${
-              !reverse ? "lg:pr-4" : "lg:pl-4"
-            }`}
-          >
-            {(text || link) && (
+
+          {isCustomShelf && (
+            <div
+              class={`product-shelf-section__text items-center flex w-full h-full pt-[84px] px-4 lg:px-0 lg:pt-0 lg:max-w-[calc(35%-5px)] xl:max-w-[calc(25%-5px)] ${
+                !reverse ? "lg:pr-4" : "lg:pl-4"
+              }`}
+            >
               <div class="flex gap-4 flex-col">
                 {text && (
                   <div class="flex">
                     <Text title={text} />
                   </div>
                 )}
-                {link && link.text && (
+                {link?.text && (
                   <div class="flex">
                     <a
-                      href={link.href}
+                      href={link.href ?? "/"}
                       class="cursor-pointer flex items-center justify-center leading-[24px] text-base font-semibold text-center h-[40px] px-6 bg-[#617f57] text-white hover:bg-[#99b293] transition-all ease-in duration-300"
                     >
                       {link.text}
@@ -236,8 +233,8 @@ export default function ProductShelfSection({
                   </div>
                 )}
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </Section>

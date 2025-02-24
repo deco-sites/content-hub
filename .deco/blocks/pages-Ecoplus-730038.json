@@ -785,7 +785,7 @@
         },
         "background": {
           "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/c99c0bcf-a6b8-4b84-86fb-8c68910c5628___c7d17a918a96d48c7befce1767bba654.png",
-          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/c99c0bcf-a6b8-4b84-86fb-8c68910c5628___c7d17a918a96d48c7befce1767bba654.png"
+          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/243097d7-da7b-4a52-aea7-1e5d5e4b6b9a___98314a9a95d25587a2f6655195e8f8a5.png"
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -824,7 +824,7 @@
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/b94e45b8-183a-4c71-9bd2-a0722c14a20f/reviews-bg.webp",
-          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/243097d7-da7b-4a52-aea7-1e5d5e4b6b9a___98314a9a95d25587a2f6655195e8f8a5.png",
+          "srcMobile": "https://data.decoassets.com/content-hub/77f86953-4525-4934-85d2-417074080bcf/reviews-bg-mobile.webp",
           "alt": "Background Reviews"
         },
         "sectionReviewCards": [

@@ -10,7 +10,7 @@
         "banners": [
           {
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high",
               "preload": true
             },

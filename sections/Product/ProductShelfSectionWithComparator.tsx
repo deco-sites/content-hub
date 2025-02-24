@@ -59,6 +59,7 @@ export default function ProductShelfSectionWithComparator({
   const sliderConfig: ISliderConfigs = {
     ...configs,
     slidesPerView: 1.5,
+    spaceBetween: 8,
     pagination: {
       enabled: configs?.pagination?.enabledMobile
     },

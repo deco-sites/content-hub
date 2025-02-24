@@ -27,7 +27,7 @@ export default function ProductCard({
   } = useOffer(offers);
 
   return (
-    <div class="flex border-[1px] border-solid border-[#dee7ea] bg-white rounded box-border min-h-[540px] mx-2 group md:min-h-[480px] lg:min-h-[520px] xl:transition-all xl:ease-in-out xl:duration-200">
+    <div class="flex border-[1px] border-solid border-[#dee7ea] bg-white rounded box-border min-h-[540px] group md:min-h-[480px] lg:min-h-[520px] xl:transition-all xl:ease-in-out xl:duration-200">
       <div class="flex flex-col gap-2 w-full h-full p-4">
         <div class="flex relative w-full items-center justify-center">
           <div class="flex absolute left-0 top-0 cursor-pointer z-[5]">
@@ -40,7 +40,7 @@ export default function ProductCard({
             />
           </div>
 
-          <div class="flex w-full h-full justify-center max-w-[230px] max-h-[230px] lg:w-[230px] lg:h-[230px]">
+          <div class="flex w-full h-full justify-center max-w-[230px] max-h-[230px]">
             <figure
               class="relative overflow-hidden"
               style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
@@ -127,7 +127,7 @@ export default function ProductCard({
               )}
             </div>
 
-            <div class="flex flex-col min-h-[60px]">
+            <div class="flex flex-col min-h-[60px] lg:min-h-[80px]">
               {withoutInterest && (
                 <span class="text-[#5b6a78] text-sm">
                   em até <b>{withoutInterest.billingDuration}x</b> de{" "}

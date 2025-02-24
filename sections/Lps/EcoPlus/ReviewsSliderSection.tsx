@@ -86,6 +86,11 @@ export default function ReviewsSliderSection({
                     <ReviewCards
                       {...{
                         ...props,
+                        styles: {
+                          container: {
+                            maxWidth: "initial"
+                          }
+                        },
                         classes: {
                           container:
                             "whitespace-normal min-w-[340px] lg:min-w-[initial]",

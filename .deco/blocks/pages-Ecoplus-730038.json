@@ -798,7 +798,8 @@
         "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
         "link": {
           "text": "Conheça todos os produtos",
-          "href": "/"
+          "href": "/",
+          "bgColor": "#617f57"
         },
         "configs": {
           "pagination": {
@@ -977,7 +978,9 @@
             "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
           }
         ],
-        "section": {},
+        "section": {
+          "title": "<h2 style=\"text-align: center\">Comparativo de modelos</h2><p style=\"text-align: center\"><u>Fornos</u>    |    <u>Fogões</u></p>"
+        },
         "configs": {
           "navigation": {
             "enabledMobile": false,

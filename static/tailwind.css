@@ -2456,10 +2456,6 @@ input.tab:checked + .tab-content,
 .m-8 {
   margin: 2rem;
 }
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -3547,9 +3543,64 @@ input.tab:checked + .tab-content,
     }
   }
 }
+.before\:pointer-events-none::before {
+  content: var(--tw-content);
+  pointer-events: none;
+}
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+.before\:bottom-0::before {
+  content: var(--tw-content);
+  bottom: 0px;
+}
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+.before\:right-0::before {
+  content: var(--tw-content);
+  right: 0px;
+}
+.before\:top-0::before {
+  content: var(--tw-content);
+  top: 0px;
+}
+.before\:bg-white::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.before\:bg-opacity-20::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 0.2;
+}
+.before\:opacity-0::before {
+  content: var(--tw-content);
+  opacity: 0;
+}
+.before\:transition-all::before {
+  content: var(--tw-content);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.before\:duration-300::before {
+  content: var(--tw-content);
+  transition-duration: 300ms;
+}
+.before\:ease-in::before {
+  content: var(--tw-content);
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
 .hover\:bg-\[\#99b293\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(153 178 147 / var(--tw-bg-opacity));
+}
+.hover\:before\:opacity-100:hover::before {
+  content: var(--tw-content);
+  opacity: 1;
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
@@ -3680,10 +3731,6 @@ input.tab:checked + .tab-content,
     height: 200px;
   }
 
-  .lg\:h-\[230px\] {
-    height: 230px;
-  }
-
   .lg\:h-\[297px\] {
     height: 297px;
   }
@@ -3732,12 +3779,12 @@ input.tab:checked + .tab-content,
     min-height: 72px;
   }
 
-  .lg\:w-\[122px\] {
-    width: 122px;
+  .lg\:min-h-\[80px\] {
+    min-height: 80px;
   }
 
-  .lg\:w-\[230px\] {
-    width: 230px;
+  .lg\:w-\[122px\] {
+    width: 122px;
   }
 
   .lg\:w-\[unset\] {

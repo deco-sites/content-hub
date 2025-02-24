@@ -109,8 +109,6 @@
 
 /* Image With Text Columns Section */
 .image-with-text-columns-section {
-  padding: 0;
-
   p {
     font-weight: 400;
     font-size: 14px;
@@ -227,8 +225,6 @@
 
 /* Banner Media Section */
 .banner-media-section {
-  padding: 0;
-
   h1,
   h2,
   h3,
@@ -286,7 +282,6 @@
 
 /* Tripple Banner Section */
 .tripple-banner-section {
-
   .swiper-wrapper {
     gap: 0 8px;
   }

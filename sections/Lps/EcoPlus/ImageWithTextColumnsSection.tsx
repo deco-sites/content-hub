@@ -61,20 +61,20 @@ export default function ImageWithTextColumnsSection({
   section,
   left,
   image = {},
-  right
+  right,
 }: Props) {
   const id = useId();
 
   const {
     text: lText,
     textColor: lTextColor,
-    backgroundColor: lBackgroundColor
+    backgroundColor: lBackgroundColor,
   } = left ?? {};
 
   const {
     text: rText,
     textColor: rTextColor,
-    backgroundColor: rBackgroundColor
+    backgroundColor: rBackgroundColor,
   } = right ?? {};
 
   return (
@@ -88,7 +88,7 @@ export default function ImageWithTextColumnsSection({
           class="flex items-center w-full p-5 md:p-[1.5vh_5vw] lg:p-[1.5vh_3vw] xl:p-[1.5vw_3vw] xl:w-[33%] xl:text-right"
           style={{
             backgroundColor: lBackgroundColor,
-            color: lTextColor
+            color: lTextColor,
           }}
         >
           <Text title={lText ?? ""} />
@@ -104,7 +104,7 @@ export default function ImageWithTextColumnsSection({
           style={{
             backgroundColor: rBackgroundColor,
             color: rTextColor,
-            textAlign: "left"
+            textAlign: "left",
           }}
         >
           <Text title={rText ?? ""} />

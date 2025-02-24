@@ -65,7 +65,9 @@ export default function InfoCardSection({ section, infoCard }: Props) {
             container: `w-full info-card ${
               infoCard?.direction === "left" ? "flex-row" : "flex-row-reverse"
             }`,
-            children: "info-card-children h-full"
+            children: `info-card-children h-full flex ${
+              infoCard?.direction === "left" ? "justify-end" : "justify-start"
+            }`
           }}
         />
       </div>

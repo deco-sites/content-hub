@@ -89,6 +89,7 @@
     line-height: 100%;
     margin: 0 0 8px;
     text-transform: uppercase;
+    text-align: center;
   }
 
   > p,
@@ -108,6 +109,8 @@
 
 /* Image With Text Columns Section */
 .image-with-text-columns-section {
+  padding: 0;
+
   p {
     font-weight: 400;
     font-size: 14px;
@@ -201,8 +204,8 @@
   }
 }
 
-/* Fake Review Section */
-.fake-review-section {
+/* Review Section */
+.review-section {
   .section-title {
     h1,
     h2,
@@ -224,6 +227,8 @@
 
 /* Banner Media Section */
 .banner-media-section {
+  padding: 0;
+
   h1,
   h2,
   h3,
@@ -279,6 +284,14 @@
   }
 }
 
+/* Tripple Banner Section */
+.tripple-banner-section {
+
+  .swiper-wrapper {
+    gap: 0 8px;
+  }
+}
+
 /* Responsive */
 @media screen and (min-width: 1024px) {
   /* Section Component */
@@ -324,8 +337,8 @@
     }
   }
 
-  /* Fake Review Section */
-  .fake-review-section {
+  /* Review Section */
+  .review-section {
     .section-title {
       h1,
       h2,

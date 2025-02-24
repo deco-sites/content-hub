@@ -50,7 +50,7 @@ export default function BannerMediaSliderSection({
   banners,
   title,
   configs = {},
-  icons
+  icons,
 }: Props) {
   const id = useId();
 
@@ -60,14 +60,14 @@ export default function BannerMediaSliderSection({
     autoplay = {},
     slidesPerView = 1.6,
     spaceBetween = 32,
-    centeredSlides = true
+    centeredSlides = true,
   } = configs ?? {};
 
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 
   const autoplayConfig = autoplay.enabled
     ? {
-        delay: autoplay.delay ?? 3000
+        delay: autoplay.delay ?? 3000,
       }
     : undefined;
 
@@ -77,27 +77,27 @@ export default function BannerMediaSliderSection({
     spaceBetween,
     centeredSlides,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false
+      enabled: configs?.pagination?.enabledMobile ?? false,
     },
     breakpoints: {
       768: {
         slidesPerView: 2.3,
         spaceBetween: 32,
-        centeredSlides: false
+        centeredSlides: false,
       },
       1024: {
         slidesPerView: 3,
         spaceBetween: 32,
         centeredSlides: false,
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false
-        }
-      }
+          enabled: configs?.pagination?.enabledDesktop ?? false,
+        },
+      },
     },
-    autoplay: autoplayConfig
+    autoplay: autoplayConfig,
   } as ISliderConfigs;
 
-  const defaultPropBanners = banners.map(banner => {
+  const defaultPropBanners = banners.map((banner) => {
     return {
       ...{ ...banner },
       sizes: {
@@ -105,8 +105,8 @@ export default function BannerMediaSliderSection({
         width: 185,
         height: 324,
         widthMobile: 185,
-        heightMobile: 324
-      }
+        heightMobile: 324,
+      },
     };
   });
 
@@ -127,19 +127,18 @@ export default function BannerMediaSliderSection({
           </div>
           <div class="flex flex-col items-center justify-center max-w-[600px]">
             {!isEmptyTitle && (
-              <div class="flex text-center lg:text-left">
-                <Text title={title} />
-              </div>
-            )}
-
-            {icons && (
-              <div class="w-full mt-4 flex flex-wrap justify-center item-center gap-x-[24px] lg:justify-start">
-                {icons.map(({ id, href }) => (
-                  <a target="_blank" key={id} title={id} href={href}>
-                    <Icon id={id} size={32} />
-                  </a>
-                ))}
-              </div>
+              <>
+                <div class="flex text-center lg:text-left">
+                  <Text content={title} />
+                </div>
+                <div class="w-full mt-4 flex flex-wrap justify-center items-center gap-x-[24px] lg:justify-start">
+                  {icons?.map(({ id, href }) => (
+                    <a target="_blank" key={id} title={id} href={href}>
+                      <Icon id={id} size={32} />
+                    </a>
+                  ))}
+                </div>
+              </>
             )}
           </div>
         </div>

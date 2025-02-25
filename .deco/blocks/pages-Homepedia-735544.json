@@ -74,6 +74,9 @@
             "desktop": 3,
             "tablet": 3,
             "mobile": 1
+          },
+          "pagination": {
+            "enabledMobile": true
           }
         }
       }
@@ -106,7 +109,7 @@
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png",
-          "srcMobile": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png"
+          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/243097d7-da7b-4a52-aea7-1e5d5e4b6b9a___98314a9a95d25587a2f6655195e8f8a5.png"
         },
         "link": {
           "text": "Conheça todos os produtos",

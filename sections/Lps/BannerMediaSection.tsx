@@ -57,44 +57,41 @@ export default function BannerMediaSliderSection({
   if (!banners?.length) return null;
 
   const {
-    autoplay = {},
-    slidesPerView = 1.6,
+    slidesPerViewResponsive = {
+      mobile: 1.6,
+      tablet: 2.3,
+      desktop: 3
+    },
     spaceBetween = 32,
-    centeredSlides = true
+    centeredSlides = true,
+    pagination
   } = configs ?? {};
 
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 
-  const autoplayConfig = autoplay.enabled
-    ? {
-        delay: autoplay.delay ?? 3000
-      }
-    : undefined;
-
   const sliderConfig = {
     ...configs,
-    slidesPerView,
+    slidesPerView: slidesPerViewResponsive.mobile,
     spaceBetween,
     centeredSlides,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false
+      enabled: pagination?.enabledMobile ?? false
     },
     breakpoints: {
       768: {
-        slidesPerView: 2.3,
+        slidesPerView: slidesPerViewResponsive.tablet,
         spaceBetween: 32,
         centeredSlides: false
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: slidesPerViewResponsive.desktop,
         spaceBetween: 32,
         centeredSlides: false,
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false
+          enabled: pagination?.enabledDesktop ?? false
         }
       }
-    },
-    autoplay: autoplayConfig
+    }
   } as ISliderConfigs;
 
   const defaultPropBanners = banners.map(banner => {

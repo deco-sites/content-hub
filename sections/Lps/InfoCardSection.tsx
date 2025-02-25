@@ -28,6 +28,7 @@ interface Props {
 export default function InfoCardSection({ section, infoCard }: Props) {
   const id = useId();
 
+  const { fullWidth = true } = section ?? {};
   const { typeOfContent } = infoCard ?? {};
 
   const typeOfContentVideo = typeOfContent as IInfoCardVideo;
@@ -42,8 +43,6 @@ export default function InfoCardSection({ section, infoCard }: Props) {
           className: infoCard?.classes?.children,
           id: `iframe-${id}`,
           width: "100%",
-          height: 537,
-          style: { border: "none" },
           allow: typeOfContentVideo?.autoplay ? "autoplay" : "",
           allowFullScreen: true
         }
@@ -55,7 +54,7 @@ export default function InfoCardSection({ section, infoCard }: Props) {
       {...section}
       id={id}
       classesContainer="info-card-section"
-      fullWidth
+      fullWidth={fullWidth}
     >
       <div class="flex w-full h-full bg-[#F6F6F6]">
         <InfoCard

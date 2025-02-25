@@ -141,6 +141,10 @@
       min-height: 320px !important;
       padding: 60px 16px !important;
       width: 100% !important;
+
+      iframe {
+        height: 250px;
+      }
     }
 
     .info-card-children:last-child {
@@ -227,8 +231,6 @@
 
 /* Banner Media Section */
 .banner-media-section {
-  padding: 0;
-
   h1,
   h2,
   h3,
@@ -331,6 +333,14 @@
       flex-direction: row !important;
     }
     /* End Workaround */
+
+    .info-card {
+      .info-card-children {
+        iframe {
+          height: 500px;
+        }
+      }
+    }
 
     .info-card-children:first-child {
       height: 100%;

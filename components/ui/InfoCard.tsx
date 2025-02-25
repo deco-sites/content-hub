@@ -26,6 +26,8 @@ export default function InfoCard(props: IInfoCard): preact.JSX.Element {
             <iframe
               src={(typeOfContent as IInfoCardVideo).src}
               title={(typeOfContent as IInfoCardVideo).title}
+              height="100%"
+              style={{ border: "none" }}
               {...(typeOfContent as IInfoCardVideo).iframeProps}
             />
           ) : (
@@ -39,9 +41,7 @@ export default function InfoCard(props: IInfoCard): preact.JSX.Element {
             />
           )}
         </>
-      ) : (
-        <></>
-      )}
+      ) : null}
     </InfoCardComponent>
   );
 }

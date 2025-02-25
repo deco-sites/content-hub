@@ -83,6 +83,29 @@ interface Navigation {
   enabledDesktop?: boolean;
 }
 
+interface SlidesPerView {
+  /**
+   * @title Mobile
+   * @description até 768px.
+   * @default 1
+   */
+  mobile?: number;
+
+  /**
+   * @title Tablet
+   * @description até 1024px.
+   * @default 1
+   */
+  tablet?: number;
+
+  /**
+   * @title Desktop
+   * @description acima de 1024px.
+   * @default 3
+   */
+  desktop?: number;
+}
+
 export interface ISliderConfigs {
   /**
    * @title Loop Infinito
@@ -104,6 +127,18 @@ export interface ISliderConfigs {
    * @default false
    */
   centeredSlides?: boolean;
+
+  /**
+   * @title Slides visíveis por vez
+   * @description Define quantos slides serão exibidos simultaneamente quando não houver breakpoints específicos.
+   */
+  slidesPerViewResponsive?: SlidesPerView;
+
+  /**
+   * @title Slides visíveis
+   * @hide
+   */
+  slidesPerView?: number;
 
   /**
    * @title Exibir Navegação
@@ -132,16 +167,10 @@ export interface ISliderConfigs {
 
   /**
    * @title Espaçamento entre slides
-   * @hide
+   * @description Define o espaçamento em pixels entre os slides.
    * @default 0
    */
   spaceBetween?: number;
-
-  /**
-   * @title Slides visíveis por vez
-   * @hide
-   */
-  slidesPerView?: number;
 
   /**
    * @title Breakpoints

@@ -3,8 +3,28 @@ import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
-import type { Product } from "apps/commerce/types.ts";
 import type { ProductSpecsComparator } from "site/types/Product.d.ts";
+import type {
+  ProductById,
+  NullReturn
+} from "site/loaders/customVTEX/productById.ts";
+
+/**
+ * @title {{#product}}ID: {{productId}}{{/product}}{{^product}}Product{{/product}}
+ */
+interface Products {
+  /**
+   * @title Produto
+   * @description Informações detalhadas do produto a ser exibido, incluindo nome, preço e imagem.
+   */
+  product?: ProductById | NullReturn;
+
+  /**
+   * @title Atributos para Comparação
+   * @description Lista de especificações utilizadas para comparar os produtos.
+   */
+  specs: ProductSpecsComparator[];
+}
 
 /**
  * @description Componente de seção contendo um slider de produtos.
@@ -17,16 +37,10 @@ interface Props {
   section?: ISection;
 
   /**
-   * @title Lista de Produtos
-   * @description Conjunto de produtos a serem exibidos dentro do slider.
+   * @title Produtos para Exibição
+   * @description Lista de produtos que serão renderizados no slider da seção.
    */
-  products?: Product[] | null;
-
-  /**
-   * @title Especificações para Comparação de Produtos
-   * @description Lista de atributos usados para comparar produtos no slider.
-   */
-  productSpecsComparator?: ProductSpecsComparator[];
+  products?: Products[];
 
   /**
    * @title Configurações do Slider
@@ -35,26 +49,25 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
-export default function ProductShelfSectionWithComparator({
+export default function ProductShelfWithComparatorSection({
   configs,
   section,
-  products,
-  productSpecsComparator
+  products
 }: Props): preact.JSX.Element {
   const id = useId();
   const hasProducts = !!products?.length;
 
-  const minimalProducts = products?.map(
-    ({ url, isVariantOf, offers, image }) => {
-      return {
-        url,
-        isVariantOf,
-        offers,
-        image,
-        productSpecsComparator
-      };
-    }
-  );
+  const minimalProducts = products?.map(({ product, specs }) => {
+    const { url, isVariantOf, offers, image } = product ?? {};
+
+    return {
+      url,
+      isVariantOf,
+      offers,
+      image,
+      productSpecsComparator: specs
+    };
+  });
 
   const sliderConfig: ISliderConfigs = {
     ...configs,
@@ -95,7 +108,11 @@ export default function ProductShelfSectionWithComparator({
   } as ISliderConfigs;
 
   return (
-    <Section {...section} id={id} classesContainer="pr-0 md:pr-4">
+    <Section
+      {...section}
+      id={id}
+      classesContainer="product-shelf-with-comparator-section pr-0 md:pr-4"
+    >
       <div class="flex w-full">
         {hasProducts && (
           <ProductShelf

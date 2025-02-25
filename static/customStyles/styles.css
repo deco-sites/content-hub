@@ -280,10 +280,17 @@
   }
 }
 
-/* Tripple Banner Section */
-.tripple-banner-section {
+/* Triple Banner Section */
+.triple-banner-section {
   .swiper-wrapper {
     gap: 0 8px;
+  }
+}
+
+/* Product Shelf With Comparator Section */
+.product-shelf-with-comparator-section {
+  .swiper {
+    width: 100%;
   }
 }
 

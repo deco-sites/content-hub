@@ -6,6 +6,7 @@ import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/deco/vtex.ts";
 import * as $$$$$$$$$$$3 from "./apps/site.ts";
+import * as $$$0 from "./loaders/customVTEX/productById.ts";
 import * as $$$$$$0 from "./sections/Logos.tsx";
 import * as $$$$$$1 from "./sections/Lps/EcoPlus/ArticleSliderSection.tsx";
 import * as $$$$$$2 from "./sections/Lps/EcoPlus/BannerMediaSection.tsx";
@@ -17,12 +18,14 @@ import * as $$$$$$7 from "./sections/Lps/EcoPlus/ReviewsSliderSection.tsx";
 import * as $$$$$$8 from "./sections/Lps/Homepedia/ArticleSliderHomeSection.tsx";
 import * as $$$$$$9 from "./sections/Lps/Homepedia/BannerSliderHomeSection.tsx";
 import * as $$$$$$10 from "./sections/Lps/Homepedia/TextSection.tsx";
-import * as $$$$$$11 from "./sections/Lps/Homepedia/TitleSection.tsx";
-import * as $$$$$$12 from "./sections/Product/ProductShelfSection.tsx";
-import * as $$$$$$13 from "./sections/Product/ProductShelfSectionWithComparator.tsx";
-import * as $$$$$$14 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$11 from "./sections/Product/ProductShelfSection.tsx";
+import * as $$$$$$12 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
+import * as $$$$$$13 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
+  "loaders": {
+    "site/loaders/customVTEX/productById.ts": $$$0,
+  },
   "sections": {
     "site/sections/Logos.tsx": $$$$$$0,
     "site/sections/Lps/EcoPlus/ArticleSliderSection.tsx": $$$$$$1,
@@ -35,10 +38,9 @@ const manifest = {
     "site/sections/Lps/Homepedia/ArticleSliderHomeSection.tsx": $$$$$$8,
     "site/sections/Lps/Homepedia/BannerSliderHomeSection.tsx": $$$$$$9,
     "site/sections/Lps/Homepedia/TextSection.tsx": $$$$$$10,
-    "site/sections/Lps/Homepedia/TitleSection.tsx": $$$$$$11,
-    "site/sections/Product/ProductShelfSection.tsx": $$$$$$12,
-    "site/sections/Product/ProductShelfSectionWithComparator.tsx": $$$$$$13,
-    "site/sections/Theme/Theme.tsx": $$$$$$14,
+    "site/sections/Product/ProductShelfSection.tsx": $$$$$$11,
+    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$12,
+    "site/sections/Theme/Theme.tsx": $$$$$$13,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

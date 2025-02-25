@@ -9,13 +9,17 @@ import type { ProductWithComparator } from "site/types/Product.d.ts";
 const WIDTH = 230;
 const HEIGHT = 230;
 
-export default function ProductCard({
-  url,
-  isVariantOf,
-  offers,
-  image: images,
-  productSpecsComparator
-}: Partial<ProductWithComparator>): preact.JSX.Element {
+export default function ProductCard(
+  props: Partial<ProductWithComparator>
+): preact.JSX.Element | null {
+  const {
+    url,
+    isVariantOf,
+    offers,
+    image: images,
+    productSpecsComparator
+  } = props ?? {};
+
   const [front, back] = images ?? [];
   const {
     listPrice,
@@ -25,6 +29,8 @@ export default function ProductCard({
     salePrice,
     installments: { withInterest, withoutInterest }
   } = useOffer(offers);
+
+  if (!url) return null;
 
   return (
     <div class="flex border-[1px] border-solid border-[#dee7ea] bg-white rounded box-border min-h-[540px] group md:min-h-[480px] lg:min-h-[520px] xl:transition-all xl:ease-in-out xl:duration-200">
@@ -51,8 +57,8 @@ export default function ProductCard({
                 class="grid grid-cols-1 grid-rows-1 w-full group"
               >
                 <Image
-                  src={front.url!}
-                  alt={front.alternateName}
+                  src={front?.url!}
+                  alt={front?.alternateName}
                   width={WIDTH}
                   height={HEIGHT}
                   class="bg-base-100 col-span-full row-span-full rounded w-full"
@@ -62,8 +68,8 @@ export default function ProductCard({
                   decoding="async"
                 />
                 <Image
-                  src={back?.url ?? front.url!}
-                  alt={back?.alternateName ?? front.alternateName}
+                  src={back?.url ?? front?.url!}
+                  alt={back?.alternateName ?? front?.alternateName}
                   width={WIDTH}
                   height={HEIGHT}
                   class="bg-base-100 col-span-full row-span-full transition-opacity rounded w-full opacity-0 xl:group-hover:opacity-100"
@@ -122,7 +128,7 @@ export default function ProductCard({
               )}
               {priceIsPix && discount !== 0 && (
                 <span class="flex items-center justify-center h-[22px] bg-[#bc8817] font-semibold text-white rounded leading-[initial] text-xs min-w-[48px] w-fit">
-                  {discount}%
+                  -{discount}%
                 </span>
               )}
             </div>
@@ -158,11 +164,10 @@ export default function ProductCard({
               Ver Detalhes
             </a>
           </div>
-          {productSpecsComparator?.length && (
+          {!!productSpecsComparator?.length && (
             <div class="flex">
               <ProductSpecificationComparator
                 productSpecsComparator={productSpecsComparator}
-                specs={isVariantOf?.additionalProperty}
               />
             </div>
           )}

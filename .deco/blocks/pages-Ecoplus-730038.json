@@ -10,12 +10,13 @@
         "banners": [
           {
             "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "high"
+              "loading": "eager",
+              "fetchPriority": "high",
+              "preload": true
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/8138055d-472d-4098-bb53-79bdb69e552f/principal.webp",
-              "mobile": "https://data.decoassets.com/content-hub/dfe75dc4-3826-427f-88ea-5d81bb503b50/principal-mobile.webp"
+              "desktop": "https://data.decoassets.com/content-hub/096f588e-623a-42eb-92da-6c076997671c/principal_11zon.webp",
+              "mobile": "https://data.decoassets.com/content-hub/fce93308-fcae-40bc-9ba8-1ff8cb3cc972/principal-mobile_11zon.webp"
             }
           }
         ]
@@ -92,9 +93,10 @@
         },
         "infoCard": {
           "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://placehold.co/500x500/011e41/FFF?text=Electrolux",
-            "alt": "Placeholder"
+            "autoplay": true,
+            "iframeProps": {},
+            "src": "https://www.youtube.com/embed/LDqsD4CGXbM?si=a6jNow5KMedLc29K",
+            "title": "Teste"
           },
           "direction": "left",
           "richText": "<h2 style=\"text-align: justify\">Nossos produtos mais eficientes</h2><p style=\"text-align: justify\">Conheça a seleção de produtos da Electrolux com impacto ambiental reduzido.</p>"
@@ -142,9 +144,10 @@
         },
         "infoCard": {
           "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "alt": "Placeholder"
+            "autoplay": true,
+            "iframeProps": {},
+            "src": "https://www.youtube.com/embed/LDqsD4CGXbM?si=a6jNow5KMedLc29K",
+            "title": "teste"
           },
           "direction": "left",
           "richText": "<p><em>Geladeiras</em></p><h2>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h2><p style=\"text-align: justify\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
@@ -785,7 +788,7 @@
         },
         "background": {
           "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/c99c0bcf-a6b8-4b84-86fb-8c68910c5628___c7d17a918a96d48c7befce1767bba654.png",
-          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/c99c0bcf-a6b8-4b84-86fb-8c68910c5628___c7d17a918a96d48c7befce1767bba654.png"
+          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/243097d7-da7b-4a52-aea7-1e5d5e4b6b9a___98314a9a95d25587a2f6655195e8f8a5.png"
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -825,7 +828,7 @@
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/b94e45b8-183a-4c71-9bd2-a0722c14a20f/reviews-bg.webp",
-          "srcMobile": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png",
+          "srcMobile": "https://data.decoassets.com/content-hub/77f86953-4525-4934-85d2-417074080bcf/reviews-bg-mobile.webp",
           "alt": "Background Reviews"
         },
         "sectionReviewCards": [

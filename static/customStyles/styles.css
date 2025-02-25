@@ -109,6 +109,8 @@
 
 /* Image With Text Columns Section */
 .image-with-text-columns-section {
+  padding: 0;
+
   p {
     font-weight: 400;
     font-size: 14px;
@@ -225,6 +227,8 @@
 
 /* Banner Media Section */
 .banner-media-section {
+  padding: 0;
+
   h1,
   h2,
   h3,

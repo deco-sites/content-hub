@@ -71,7 +71,9 @@
         ],
         "configs": {
           "slidesPerViewResponsive": {
-            "desktop": 3
+            "desktop": 3,
+            "tablet": 3,
+            "mobile": 1
           }
         }
       }
@@ -90,7 +92,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
-        "section": {},
+        "section": {
+          "fullWidth": true
+        },
         "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -241,7 +245,17 @@
             "title": "Entrega com carbono neutro",
             "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
           }
-        ]
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "tablet": 3,
+            "mobile": 1
+          },
+          "pagination": {
+            "enabledMobile": true
+          }
+        }
       }
     }
   ],

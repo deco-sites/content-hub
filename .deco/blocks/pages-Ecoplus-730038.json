@@ -93,9 +93,10 @@
         },
         "infoCard": {
           "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://placehold.co/500x500/011e41/FFF?text=Electrolux",
-            "alt": "Placeholder"
+            "autoplay": true,
+            "iframeProps": {},
+            "src": "https://www.youtube.com/embed/LDqsD4CGXbM?si=a6jNow5KMedLc29K",
+            "title": "Teste"
           },
           "direction": "left",
           "richText": "<h2 style=\"text-align: justify\">Nossos produtos mais eficientes</h2><p style=\"text-align: justify\">Conheça a seleção de produtos da Electrolux com impacto ambiental reduzido.</p>"
@@ -143,9 +144,10 @@
         },
         "infoCard": {
           "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "alt": "Placeholder"
+            "autoplay": true,
+            "iframeProps": {},
+            "src": "https://www.youtube.com/embed/LDqsD4CGXbM?si=a6jNow5KMedLc29K",
+            "title": "teste"
           },
           "direction": "left",
           "richText": "<p><em>Geladeiras</em></p><h2>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h2><p style=\"text-align: justify\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"

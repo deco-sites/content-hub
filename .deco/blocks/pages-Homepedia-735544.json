@@ -158,7 +158,19 @@
           "text": "Conheça todos os produtos",
           "href": "#"
         },
-        "reverse": true
+        "reverse": true,
+        "configs": {
+          "pagination": {
+            "enabledDesktop": true,
+            "clickable": false,
+            "enabledMobile": true
+          },
+          "navigation": {
+            "enabledMobile": false,
+            "enabledDesktop": true
+          },
+          "centeredSlides": false
+        }
       }
     },
     {

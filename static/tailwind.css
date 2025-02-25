@@ -2456,10 +2456,6 @@ input.tab:checked + .tab-content,
 .m-8 {
   margin: 2rem;
 }
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -2549,6 +2545,9 @@ input.tab:checked + .tab-content,
 }
 .aspect-\[156\/87\] {
   aspect-ratio: 156/87;
+}
+.h-10 {
+  height: 2.5rem;
 }
 .h-11 {
   height: 2.75rem;
@@ -2677,6 +2676,12 @@ input.tab:checked + .tab-content,
 .min-h-\[630px\] {
   min-height: 630px;
 }
+.min-h-\[88px\] {
+  min-height: 88px;
+}
+.w-10 {
+  width: 2.5rem;
+}
 .w-12 {
   width: 3rem;
 }
@@ -2706,6 +2711,9 @@ input.tab:checked + .tab-content,
 }
 .w-\[522px\] {
   width: 522px;
+}
+.w-\[calc\(100\%-56px\)\] {
+  width: calc(100% - 56px);
 }
 .w-fit {
   width: -moz-fit-content;
@@ -3047,8 +3055,15 @@ input.tab:checked + .tab-content,
 .border-\[1px\] {
   border-width: 1px;
 }
+.border-b {
+  border-bottom-width: 1px;
+}
 .border-solid {
   border-style: solid;
+}
+.border-\[\#E1E8EB\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(225 232 235 / var(--tw-border-opacity));
 }
 .border-\[\#dee7ea\] {
   --tw-border-opacity: 1;
@@ -3221,6 +3236,9 @@ input.tab:checked + .tab-content,
 .pl-3 {
   padding-left: 0.75rem;
 }
+.pr-0 {
+  padding-right: 0px;
+}
 .pr-2 {
   padding-right: 0.5rem;
 }
@@ -3358,6 +3376,10 @@ input.tab:checked + .tab-content,
   --tw-text-opacity: 1;
   color: rgb(1 30 65 / var(--tw-text-opacity));
 }
+.text-\[\#03183F\] {
+  --tw-text-opacity: 1;
+  color: rgb(3 24 63 / var(--tw-text-opacity));
+}
 .text-\[\#057EB5\] {
   --tw-text-opacity: 1;
   color: rgb(5 126 181 / var(--tw-text-opacity));
@@ -3415,6 +3437,12 @@ input.tab:checked + .tab-content,
 }
 .opacity-0 {
   opacity: 0;
+}
+.opacity-100 {
+  opacity: 1;
+}
+.opacity-70 {
+  opacity: 0.7;
 }
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -3515,9 +3543,64 @@ input.tab:checked + .tab-content,
     }
   }
 }
+.before\:pointer-events-none::before {
+  content: var(--tw-content);
+  pointer-events: none;
+}
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+.before\:bottom-0::before {
+  content: var(--tw-content);
+  bottom: 0px;
+}
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+.before\:right-0::before {
+  content: var(--tw-content);
+  right: 0px;
+}
+.before\:top-0::before {
+  content: var(--tw-content);
+  top: 0px;
+}
+.before\:bg-white::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.before\:bg-opacity-20::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 0.2;
+}
+.before\:opacity-0::before {
+  content: var(--tw-content);
+  opacity: 0;
+}
+.before\:transition-all::before {
+  content: var(--tw-content);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.before\:duration-300::before {
+  content: var(--tw-content);
+  transition-duration: 300ms;
+}
+.before\:ease-in::before {
+  content: var(--tw-content);
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
 .hover\:bg-\[\#99b293\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(153 178 147 / var(--tw-bg-opacity));
+}
+.hover\:before\:opacity-100:hover::before {
+  content: var(--tw-content);
+  opacity: 1;
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
@@ -3607,6 +3690,10 @@ input.tab:checked + .tab-content,
     padding: 1.5vh 5vw;
   }
 
+  .md\:pr-4 {
+    padding-right: 1rem;
+  }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -3688,16 +3775,24 @@ input.tab:checked + .tab-content,
     min-height: 585px;
   }
 
+  .lg\:min-h-\[72px\] {
+    min-height: 72px;
+  }
+
+  .lg\:min-h-\[80px\] {
+    min-height: 80px;
+  }
+
   .lg\:w-\[122px\] {
     width: 122px;
   }
 
-  .lg\:w-\[calc\(100\%\+32px\)\] {
-    width: calc(100% + 32px);
-  }
-
   .lg\:w-\[unset\] {
     width: unset;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:min-w-\[initial\] {
@@ -3772,6 +3867,11 @@ input.tab:checked + .tab-content,
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:px-\[50px\] {

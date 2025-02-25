@@ -50,24 +50,24 @@ export default function BannerMediaSliderSection({
   banners,
   title,
   configs = {},
-  icons,
+  icons
 }: Props) {
   const id = useId();
 
-  if (!banners?.length) return <></>;
+  if (!banners?.length) return null;
 
   const {
     autoplay = {},
     slidesPerView = 1.6,
     spaceBetween = 32,
-    centeredSlides = true,
+    centeredSlides = true
   } = configs ?? {};
 
   const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 
   const autoplayConfig = autoplay.enabled
     ? {
-        delay: autoplay.delay ?? 3000,
+        delay: autoplay.delay ?? 3000
       }
     : undefined;
 
@@ -77,27 +77,27 @@ export default function BannerMediaSliderSection({
     spaceBetween,
     centeredSlides,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false,
+      enabled: configs?.pagination?.enabledMobile ?? false
     },
     breakpoints: {
       768: {
         slidesPerView: 2.3,
         spaceBetween: 32,
-        centeredSlides: false,
+        centeredSlides: false
       },
       1024: {
         slidesPerView: 3,
         spaceBetween: 32,
         centeredSlides: false,
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false,
-        },
-      },
+          enabled: configs?.pagination?.enabledDesktop ?? false
+        }
+      }
     },
-    autoplay: autoplayConfig,
+    autoplay: autoplayConfig
   } as ISliderConfigs;
 
-  const defaultPropBanners = banners.map((banner) => {
+  const defaultPropBanners = banners.map(banner => {
     return {
       ...{ ...banner },
       sizes: {
@@ -105,8 +105,8 @@ export default function BannerMediaSliderSection({
         width: 185,
         height: 324,
         widthMobile: 185,
-        heightMobile: 324,
-      },
+        heightMobile: 324
+      }
     };
   });
 
@@ -114,7 +114,7 @@ export default function BannerMediaSliderSection({
     <Section
       {...section}
       id={id}
-      classesContainer="banner-media-section p-0 xl:px-4"
+      classesContainer="banner-media-section p-0 lg:px-4"
     >
       <div class="flex flex-col w-full mx-auto gap-4 lg:gap-6">
         <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row">
@@ -129,7 +129,7 @@ export default function BannerMediaSliderSection({
             {!isEmptyTitle && (
               <>
                 <div class="flex text-center lg:text-left">
-                  <Text content={title} />
+                  <Text title={title} />
                 </div>
                 <div class="w-full mt-4 flex flex-wrap justify-center items-center gap-x-[24px] lg:justify-start">
                   {icons?.map(({ id, href }) => (

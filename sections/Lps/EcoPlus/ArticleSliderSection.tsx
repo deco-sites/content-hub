@@ -51,13 +51,19 @@ export default function ArticleSliderSection({
     slidesPerView,
     spaceBetween,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false
+      enabled: configs?.pagination?.enabledMobile
+    },
+    navigation: {
+      enabled: configs?.navigation?.enabledMobile
     },
     breakpoints: {
       1024: {
         slidesPerView: 3,
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false
+          enabled: configs?.pagination?.enabledDesktop
+        },
+        navigation: {
+          enabled: configs?.navigation?.enabledDesktop
         }
       }
     }

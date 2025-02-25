@@ -29,17 +29,17 @@ interface Props {
 export default function BannerSliderHomeSection({
   section,
   banners,
-  configs = {},
+  configs = {}
 }: Props) {
   const id = useId();
 
-  if (!banners?.length) return <></>;
+  if (!banners?.length) return null;
 
   const { autoplay = {}, slidesPerView = "3" } = configs ?? {};
 
   const autoplayConfig = autoplay.enabled
     ? {
-        delay: autoplay.delay ?? 3000,
+        delay: autoplay.delay ?? 3000
       }
     : undefined;
 
@@ -48,18 +48,18 @@ export default function BannerSliderHomeSection({
     autoplay: autoplayConfig,
     slidesPerView,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false,
+      enabled: configs?.pagination?.enabledMobile ?? false
     },
     breakpoints: {
       1024: {
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false,
-        },
-      },
-    },
+          enabled: configs?.pagination?.enabledDesktop ?? false
+        }
+      }
+    }
   } as ISliderConfigs;
 
-  const defaultPropsBanners = banners.map((banner) => {
+  const defaultPropsBanners = banners.map(banner => {
     return {
       ...{ ...banner },
       sizes: {
@@ -67,13 +67,13 @@ export default function BannerSliderHomeSection({
         fullScreen: true,
         maxHeight: 352,
         heightMobile: 352,
-        width: 528,
-      },
+        width: 528
+      }
     };
   });
 
   return (
-    <Section {...section} id={id} classesContainer="tripple-banner-section">
+    <Section {...section} id={id} classesContainer="triple-banner-section">
       <BannerSlider
         configs={sliderConfig}
         rootId={id}

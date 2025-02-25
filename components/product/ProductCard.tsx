@@ -1,19 +1,25 @@
 import Icon from "site/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
+import ProductSpecificationComparator from "site/components/product/ProductSpecificationComparator.tsx";
 import { formatPrice } from "site/sdk/format.ts";
 import { relative } from "site/sdk/url.ts";
 import { useOffer } from "site/sdk/useOffer.ts";
-import type { Product } from "apps/commerce/types.ts";
+import type { ProductWithComparator } from "site/types/Product.d.ts";
 
 const WIDTH = 230;
 const HEIGHT = 230;
 
-export default function ProductCard({
-  url,
-  isVariantOf,
-  offers,
-  image: images
-}: Partial<Product>): preact.JSX.Element {
+export default function ProductCard(
+  props: Partial<ProductWithComparator>
+): preact.JSX.Element | null {
+  const {
+    url,
+    isVariantOf,
+    offers,
+    image: images,
+    productSpecsComparator
+  } = props ?? {};
+
   const [front, back] = images ?? [];
   const {
     listPrice,
@@ -24,8 +30,10 @@ export default function ProductCard({
     installments: { withInterest, withoutInterest }
   } = useOffer(offers);
 
+  if (!url) return null;
+
   return (
-    <div class="flex border-[1px] border-solid border-[#dee7ea] bg-white rounded box-border min-h-[540px] mx-2 group md:min-h-[480px] lg:min-h-[520px] xl:transition-all xl:ease-in-out xl:duration-200">
+    <div class="flex border-[1px] border-solid border-[#dee7ea] bg-white rounded box-border min-h-[540px] group md:min-h-[480px] lg:min-h-[520px] xl:transition-all xl:ease-in-out xl:duration-200">
       <div class="flex flex-col gap-2 w-full h-full p-4">
         <div class="flex relative w-full items-center justify-center">
           <div class="flex absolute left-0 top-0 cursor-pointer z-[5]">
@@ -49,8 +57,8 @@ export default function ProductCard({
                 class="grid grid-cols-1 grid-rows-1 w-full group"
               >
                 <Image
-                  src={front.url!}
-                  alt={front.alternateName}
+                  src={front?.url!}
+                  alt={front?.alternateName}
                   width={WIDTH}
                   height={HEIGHT}
                   class="bg-base-100 col-span-full row-span-full rounded w-full"
@@ -60,8 +68,8 @@ export default function ProductCard({
                   decoding="async"
                 />
                 <Image
-                  src={back?.url ?? front.url!}
-                  alt={back?.alternateName ?? front.alternateName}
+                  src={back?.url ?? front?.url!}
+                  alt={back?.alternateName ?? front?.alternateName}
                   width={WIDTH}
                   height={HEIGHT}
                   class="bg-base-100 col-span-full row-span-full transition-opacity rounded w-full opacity-0 xl:group-hover:opacity-100"
@@ -75,7 +83,7 @@ export default function ProductCard({
         </div>
 
         <div class="flex flex-col">
-          <div class="flex min-h-[60px] mb-4">
+          <div class="flex min-h-[60px] lg:min-h-[72px] mb-4">
             <h2
               title={isVariantOf?.name}
               class="text-sm text-left font-semibold leading-[20px] text-[#011e41] text-wrap truncate line-clamp-3 xl:text-base xl:font-bold"
@@ -120,12 +128,12 @@ export default function ProductCard({
               )}
               {priceIsPix && discount !== 0 && (
                 <span class="flex items-center justify-center h-[22px] bg-[#bc8817] font-semibold text-white rounded leading-[initial] text-xs min-w-[48px] w-fit">
-                  {discount}%
+                  -{discount}%
                 </span>
               )}
             </div>
 
-            <div class="flex flex-col min-h-[60px]">
+            <div class="flex flex-col min-h-[60px] lg:min-h-[80px]">
               {withoutInterest && (
                 <span class="text-[#5b6a78] text-sm">
                   em até <b>{withoutInterest.billingDuration}x</b> de{" "}
@@ -156,6 +164,13 @@ export default function ProductCard({
               Ver Detalhes
             </a>
           </div>
+          {!!productSpecsComparator?.length && (
+            <div class="flex">
+              <ProductSpecificationComparator
+                productSpecsComparator={productSpecsComparator}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

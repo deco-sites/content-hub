@@ -26,54 +26,57 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
-export default function BannerSliderHomeSection({
+export default function BannerSliderSection({
   section,
   banners,
-  configs = {},
+  configs
 }: Props) {
   const id = useId();
+  const { fullWidth = true } = section ?? {};
 
-  if (!banners?.length) return <></>;
+  if (!banners?.length) return null;
 
-  const { autoplay = {}, slidesPerView = "3" } = configs ?? {};
-
-  const autoplayConfig = autoplay.enabled
-    ? {
-        delay: autoplay.delay ?? 3000,
-      }
-    : undefined;
+  const { pagination, slidesPerViewResponsive } = configs ?? {};
 
   const sliderConfig = {
     ...configs,
-    autoplay: autoplayConfig,
-    slidesPerView,
+    slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false,
+      enabled: pagination?.enabledMobile
     },
     breakpoints: {
-      1024: {
-        pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false,
-        },
+      768: {
+        slidesPerView: slidesPerViewResponsive?.tablet ?? 1
       },
-    },
+      1024: {
+        slidesPerView: slidesPerViewResponsive?.desktop ?? 1,
+        pagination: {
+          enabled: pagination?.enabledDesktop
+        }
+      }
+    }
   } as ISliderConfigs;
 
-  const defaultPropsBanners = banners.map((banner) => {
+  const defaultPropsBanners = banners.map(banner => {
     return {
       ...{ ...banner },
       sizes: {
         ...banner.sizes,
         fullScreen: true,
-        maxHeight: 352,
-        heightMobile: 352,
-        width: 528,
-      },
+        maxHeight: 420,
+        heightMobile: 400,
+        widthMobile: 375
+      }
     };
   });
 
   return (
-    <Section {...section} id={id} classesContainer="tripple-banner-section">
+    <Section
+      {...section}
+      id={id}
+      fullWidth={fullWidth}
+      classesContainer="banner-slider-section"
+    >
       <BannerSlider
         configs={sliderConfig}
         rootId={id}

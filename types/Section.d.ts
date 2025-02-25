@@ -21,6 +21,13 @@ export interface ISection {
   marginMobile?: number;
 
   /**
+   * @title Ocupar Toda a Largura?
+   * @description Define se o componente deve ocupar toda a largura disponível.
+   * @default false
+   */
+  fullWidth?: boolean;
+
+  /**
    * @title Children
    * @hide
    */
@@ -37,10 +44,4 @@ export interface ISection {
    * @hide
    */
   stylesContainer?: preact.JSX.AllCSSProperties;
-
-  /**
-   * @title Full Width
-   * @hide
-   */
-  fullWidth?: boolean;
 }

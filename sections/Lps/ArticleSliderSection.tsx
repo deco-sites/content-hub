@@ -35,29 +35,40 @@ export default function ArticleSliderSection({
 }: Props) {
   const id = useId();
 
-  if (!articles?.length) return <></>;
+  if (!articles?.length) return null;
 
-  const { autoplay = {}, slidesPerView = 1, spaceBetween = 8 } = configs ?? {};
-
-  const autoplayConfig = autoplay.enabled
-    ? {
-        delay: autoplay.delay ?? 3000
-      }
-    : undefined;
+  const {
+    spaceBetween = 8,
+    slidesPerViewResponsive = {
+      mobile: 1,
+      tablet: 1,
+      desktop: 3
+    },
+    pagination,
+    navigation
+  } = configs ?? {};
 
   const sliderConfig = {
     ...configs,
-    autoplay: autoplayConfig,
-    slidesPerView,
+    slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
     spaceBetween,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile ?? false
+      enabled: pagination?.enabledMobile
+    },
+    navigation: {
+      enabled: navigation?.enabledMobile
     },
     breakpoints: {
+      768: {
+        slidesPerView: slidesPerViewResponsive?.tablet ?? 1
+      },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: slidesPerViewResponsive?.desktop ?? 3,
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop ?? false
+          enabled: pagination?.enabledDesktop
+        },
+        navigation: {
+          enabled: navigation?.enabledDesktop
         }
       }
     }

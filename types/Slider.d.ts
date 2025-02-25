@@ -37,13 +37,6 @@ interface Pagination {
   enabledDesktop?: boolean;
 
   /**
-   * @title Página Clicável
-   * @description Permite que os usuários cliquem nos indicadores de paginação para navegar entre os slides.
-   * @default false
-   */
-  clickable?: boolean;
-
-  /**
    * @title Bullets Dinâmicos
    * @description Se ativado, os bullets da paginação serão reduzidos quando houver muitos slides, exibindo apenas alguns próximos ao ativo.
    * @default false
@@ -56,6 +49,14 @@ interface Pagination {
    * @default 1
    */
   dynamicMainBullets?: number;
+
+  /**
+   * @title Página Clicável
+   * @description Permite que os usuários cliquem nos indicadores de paginação para navegar entre os slides.
+   * @hide
+   * @default true
+   */
+  clickable?: boolean;
 }
 
 interface Navigation {
@@ -82,6 +83,29 @@ interface Navigation {
   enabledDesktop?: boolean;
 }
 
+interface SlidesPerView {
+  /**
+   * @title Mobile
+   * @description até 768px.
+   * @default 1
+   */
+  mobile?: number;
+
+  /**
+   * @title Tablet
+   * @description até 1024px.
+   * @default 1
+   */
+  tablet?: number;
+
+  /**
+   * @title Desktop
+   * @description acima de 1024px.
+   * @default 3
+   */
+  desktop?: number;
+}
+
 export interface ISliderConfigs {
   /**
    * @title Loop Infinito
@@ -103,6 +127,18 @@ export interface ISliderConfigs {
    * @default false
    */
   centeredSlides?: boolean;
+
+  /**
+   * @title Slides visíveis por vez
+   * @description Define quantos slides serão exibidos simultaneamente quando não houver breakpoints específicos.
+   */
+  slidesPerViewResponsive?: SlidesPerView;
+
+  /**
+   * @title Slides visíveis
+   * @hide
+   */
+  slidesPerView?: number;
 
   /**
    * @title Exibir Navegação
@@ -131,22 +167,15 @@ export interface ISliderConfigs {
 
   /**
    * @title Espaçamento entre slides
-   * @hide
+   * @description Define o espaçamento em pixels entre os slides.
    * @default 0
    */
   spaceBetween?: number;
 
   /**
-   * @title Slides visíveis por vez
-   * @hide
-   */
-  slidesPerView?: number;
-
-  /**
    * @title Breakpoints
    * @hide
    */
-
   breakpoints?: {
     [width: number]: ISliderConfigs;
     [ratio: string]: ISliderConfigs;

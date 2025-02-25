@@ -7,7 +7,7 @@ export default function ResponsiveImage({
   link,
   sizes,
   loadingOptions
-}: IResponsiveImage): preact.JSX.Element {
+}: IResponsiveImage): preact.JSX.Element | null {
   const {
     fullScreen = false,
     height = 440,
@@ -26,7 +26,7 @@ export default function ResponsiveImage({
 
   const { desktop, mobile } = src ?? {};
 
-  if (!desktop && !mobile) return <></>;
+  if (!desktop && !mobile) return null;
 
   const ResponsiveImageComponent = (
     <Picture

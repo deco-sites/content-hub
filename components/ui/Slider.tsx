@@ -14,6 +14,7 @@ export default function SwiperSlider({
 }: Props): preact.JSX.Element {
   const {
     slidesPerView,
+    slidesPerViewResponsive,
     loop,
     pagination,
     navigation,
@@ -47,8 +48,8 @@ export default function SwiperSlider({
     lazy,
     centeredSlides,
     autoplay: autoplayConfig,
-    spaceBetween,
-    slidesPerView,
+    spaceBetween: spaceBetween ?? 8,
+    slidesPerView: slidesPerView ?? slidesPerViewResponsive?.mobile ?? 1,
     loop: hasLoop,
     ...{
       ...(pagination?.enabled === true

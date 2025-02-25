@@ -32,19 +32,26 @@ export default function BannerSliderSection({
   configs
 }: Props) {
   const id = useId();
+  const { fullWidth = true } = section ?? {};
 
   if (!banners?.length) return null;
 
+  const { pagination, slidesPerViewResponsive } = configs ?? {};
+
   const sliderConfig = {
     ...configs,
-    slidesPerView: 1,
+    slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
     pagination: {
-      enabled: configs?.pagination?.enabledMobile
+      enabled: pagination?.enabledMobile
     },
     breakpoints: {
+      768: {
+        slidesPerView: slidesPerViewResponsive?.tablet ?? 1
+      },
       1024: {
+        slidesPerView: slidesPerViewResponsive?.desktop ?? 1,
         pagination: {
-          enabled: configs?.pagination?.enabledDesktop
+          enabled: pagination?.enabledDesktop
         }
       }
     }
@@ -67,7 +74,7 @@ export default function BannerSliderSection({
     <Section
       {...section}
       id={id}
-      fullWidth
+      fullWidth={fullWidth}
       classesContainer="banner-slider-section"
     >
       <BannerSlider

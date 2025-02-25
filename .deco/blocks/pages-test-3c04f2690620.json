@@ -5,7 +5,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/BannerSliderSection.tsx",
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {},
         "banners": [
           {
@@ -22,7 +22,7 @@
       }
     },
     {
-      "__resolveType": "site/sections/Lps/EcoPlus/CategoriesSection.tsx",
+      "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
       "section": {
         "title": "<h1 style=\"text-align: center\">QUEM ESCOLHE VIVER NUM MUNDO MELHOR, NÃO JOGA NADA FORA</h1><p style=\"text-align: center\">Sabia que você pode reduzir seu impacto ambiental quando escolhe um Electrolux EcoPlus? Isso porque eles representam o melhor da tecnologia Electrolux: economizam água, energia e te ajudam a não jogar nada fora.</p>"
       },
@@ -85,7 +85,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "marginDesktop": 52,
           "marginMobile": 32
@@ -104,7 +104,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/ImageWithTextColumnsSection.tsx",
+        "__resolveType": "site/sections/Lps/ImageWithTextColumnsSection.tsx",
         "section": {
           "title": "<h2 style=\"text-align: center\">CRITÉRIOS DE SELEÇÃO</h2><p style=\"text-align: center\">Produtos com máxima eficiência energética e economia de água</p>"
         },
@@ -135,7 +135,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "marginDesktop": 0,
           "marginMobile": 0
@@ -154,7 +154,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "marginDesktop": 0,
           "marginMobile": 0
@@ -173,7 +173,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "marginDesktop": 0,
           "marginMobile": 0
@@ -192,7 +192,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "marginDesktop": 0,
           "marginMobile": 0
@@ -211,7 +211,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "marginDesktop": 0,
           "marginMobile": 0
@@ -230,7 +230,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "marginDesktop": 0,
           "marginMobile": 0
@@ -249,7 +249,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/InfoCardSection.tsx",
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "marginDesktop": 32,
           "marginMobile": 54
@@ -268,7 +268,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/ArticleSliderSection.tsx",
+        "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
         "section": {
           "title": "<h2 style=\"text-align: center\">NOSSAS ESCOLHAS PARA VIVER MELHOR</h2><p style=\"text-align: center\">Saiba o que estamos fazendo por um futuro de qualidade</p>"
         },
@@ -812,7 +812,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/FakeReviewSection.tsx",
+        "__resolveType": "site/sections/Lps/FakeReviewSection.tsx",
         "section": {
           "title": "<h2 style=\"text-align: center\">Quem escolhe melhor, vive melhor</h2>"
         },
@@ -872,7 +872,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/BannerMediaSection.tsx",
+        "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
         "configs": {
           "pagination": {
             "enabledMobile": true

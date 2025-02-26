@@ -56,14 +56,12 @@ export default function ReviewsSliderSection({
 }: Props) {
   const id = useId();
   const { srcDesktop, srcMobile, alt } = background ?? {};
-  const { fullWidth = true } = section ?? {};
 
   return (
     <>
       <Section
         id={id}
         {...section}
-        fullWidth={fullWidth}
         classesContainer="review-section w-full relative h-[350px] lg:h-[500px] bg-black bg-opacity-[0.7] justify-center xl:gap-[24px]"
       >
         <div className="w-full">

@@ -9,8 +9,10 @@ export default function Section({
   id,
   children,
   title,
-  marginMobile = 32,
-  marginDesktop = 52,
+  marginBottomMobile = 32,
+  marginBottomDesktop = 52,
+  marginTopMobile = 0,
+  marginTopDesktop = 0,
   classesContainer,
   stylesContainer = {},
   fullWidth = false
@@ -34,10 +36,12 @@ export default function Section({
       <style>
         {`
         #section-${id} {
-          margin-bottom: ${marginMobile}px;
+          margin-top: ${marginTopMobile}px;
+          margin-bottom: ${marginBottomMobile}px;
 
           @media screen and (min-width:1024px) {
-            margin-bottom: ${marginDesktop}px;
+            margin-top: ${marginTopDesktop}px;
+            margin-bottom: ${marginBottomDesktop}px;
           }
         }
       `}

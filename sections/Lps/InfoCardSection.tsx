@@ -1,12 +1,9 @@
-import InfoCard from "site/components/ui/InfoCard.tsx";
+import InfoCardSlider from "site/islands/InfoCardSlider.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
-import type {
-  IInfoCard,
-  IInfoCardImage,
-  IInfoCardVideo
-} from "site/types/InfoCard.d.ts";
+import type { IInfoCard } from "site/types/InfoCard.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
+import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
 /**
  * @description Componente de seção contendo um cartão informativo.
@@ -19,57 +16,54 @@ interface Props {
   section?: ISection;
 
   /**
-   * @title Cartão Informativo
-   * @description Define o conteúdo e as configurações do cartão informativo exibido na seção.
+   * @title Cartões Informativos
+   * @description Conjunto de cartões informativos a serem exibidos dentro do slider.
    */
-  infoCard?: IInfoCard;
+  infoCards?: IInfoCard[];
+
+  /**
+   * @title Configurações do Slider
+   */
+  configs?: ISliderConfigs;
 }
 
-export default function InfoCardSection({ section, infoCard }: Props) {
+export default function InfoCardSection({
+  section,
+  infoCards,
+  configs
+}: Props) {
   const id = useId();
 
-  const { fullWidth = true } = section ?? {};
-  const { typeOfContent } = infoCard ?? {};
+  if (!infoCards?.length) return null;
 
-  const typeOfContentVideo = typeOfContent as IInfoCardVideo;
-  const typeOfContentImage = typeOfContent as IInfoCardImage;
-  const isVideo = !!typeOfContentVideo?.src;
+  const { pagination, slidesPerViewResponsive } = configs ?? {};
 
-  const enrichedTypeOfContent = isVideo
-    ? {
-        ...typeOfContentVideo,
-        iframeProps: {
-          ...typeOfContentVideo?.iframeProps,
-          className: infoCard?.classes?.children,
-          id: `iframe-${id}`,
-          width: "100%",
-          allow: typeOfContentVideo?.autoplay ? "autoplay" : "",
-          allowFullScreen: true
+  const sliderConfig = {
+    ...configs,
+    slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
+    pagination: {
+      enabled: pagination?.enabledMobile ?? true
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: slidesPerViewResponsive?.tablet ?? 1
+      },
+      1024: {
+        slidesPerView: slidesPerViewResponsive?.desktop ?? 1,
+        pagination: {
+          enabled: pagination?.enabledDesktop ?? true
         }
       }
-    : typeOfContentImage;
+    }
+  } as ISliderConfigs;
 
   return (
-    <Section
-      {...section}
-      id={id}
-      classesContainer="info-card-section"
-      fullWidth={fullWidth}
-    >
-      <div class="flex w-full h-full bg-[#F6F6F6]">
-        <InfoCard
-          {...infoCard}
-          typeOfContent={enrichedTypeOfContent}
-          classes={{
-            container: `w-full info-card ${
-              infoCard?.direction === "left" ? "flex-row" : "flex-row-reverse"
-            }`,
-            children: `info-card-children h-full flex ${
-              infoCard?.direction === "left" ? "justify-end" : "justify-start"
-            }`
-          }}
-        />
-      </div>
+    <Section {...section} id={id} classesContainer="info-card-section">
+      <InfoCardSlider
+        rootId={id}
+        configs={sliderConfig}
+        infoCards={infoCards}
+      />
     </Section>
   );
 }

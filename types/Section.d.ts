@@ -7,18 +7,32 @@ export interface ISection {
   title?: string;
 
   /**
-   * @title Margem Inferior (desktop)
-   * @description Espaçamento inferior da seção, em pixels.
-   * @default 40
+   * @title Margem Superior (desktop). Default: 0
+   * @description Espaçamento superior da seção, em pixels.
+   * @default 0
    */
-  marginDesktop?: number;
+  marginTopDesktop?: number;
 
   /**
-   * @title Margem Inferior (mobile)
-   * @description Espaçamento inferior da seção, em pixels.
-   * @default 16
+   * @title Margem Superior (mobile). Default: 0
+   * @description Espaçamento superior da seção, em pixels.
+   * @default 0
    */
-  marginMobile?: number;
+  marginTopMobile?: number;
+
+  /**
+   * @title Margem Inferior (desktop). Default: 52
+   * @description Espaçamento inferior da seção, em pixels.
+   * @default 52
+   */
+  marginBottomDesktop?: number;
+
+  /**
+   * @title Margem Inferior (mobile). Default: 32
+   * @description Espaçamento inferior da seção, em pixels.
+   * @default 32
+   */
+  marginBottomMobile?: number;
 
   /**
    * @title Ocupar Toda a Largura?

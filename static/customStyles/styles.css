@@ -44,6 +44,7 @@
 
   .swiper-pagination {
     align-items: center;
+    background: #ffffff;
     border-radius: 50px;
     border: 1px solid #dfe7ea;
     box-sizing: border-box;
@@ -166,7 +167,6 @@
     h4,
     h5,
     h6 {
-      color: #303f29;
       font-size: 24px;
       font-weight: 600;
       line-height: 110%;
@@ -179,7 +179,6 @@
     }
 
     p {
-      color: #303f29;
       font-size: 12px;
       font-weight: 400;
       line-height: 18px;
@@ -190,13 +189,24 @@
     }
 
     p > em {
-      color: #303f29;
       display: block;
       font-size: 14px;
       font-style: normal;
       font-weight: 600;
       line-height: 17px;
       margin: 0 0 8px;
+    }
+  }
+
+  .swiper {
+    padding: 0 0 12px;
+    position: relative;
+
+    .swiper-pagination {
+      bottom: 0;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
     }
   }
 }

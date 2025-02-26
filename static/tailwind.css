@@ -2504,6 +2504,9 @@ input.tab:checked + .tab-content,
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mt-8 {
+  margin-top: 2rem;
+}
 .mt-\[5px\] {
   margin-top: 5px;
 }
@@ -2599,6 +2602,9 @@ input.tab:checked + .tab-content,
 }
 .h-\[984px\] {
   height: 984px;
+}
+.h-auto {
+  height: auto;
 }
 .h-fit {
   height: -moz-fit-content;
@@ -3834,6 +3840,10 @@ input.tab:checked + .tab-content,
 
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+
+  .lg\:justify-end {
+    justify-content: flex-end;
   }
 
   .lg\:justify-center {

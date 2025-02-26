@@ -21,30 +21,30 @@ interface Link {
 }
 
 /**
- * @title {{#title}}{{title}}{{/title}}{{^title}}Info Card{{/title}}
+ * @title {{#title}}{{title}}{{/title}}{{^title}}Artigo{{/title}}
  */
 export interface IArticle {
   /**
    * @title Imagem
-   * @description Imagem exibida no card.
+   * @description Imagem exibida no artigo.
    */
   image: IResponsiveImage;
 
   /**
    * @title Título
-   * @description Texto principal do card.
+   * @description Texto principal do artigo.
    */
   title: string;
 
   /**
    * @title Descrição
-   * @description Texto complementar do card.
+   * @description Texto complementar do artigo.
    */
   text: string;
 
   /**
    * @title Link
-   * @description Objeto contendo informações do link do card.
+   * @description Objeto contendo informações do link do artigo.
    */
   link: Link;
 }

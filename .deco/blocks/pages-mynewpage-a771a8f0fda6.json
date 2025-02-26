@@ -6,7 +6,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
-        "section": {},
+        "section": {
+          "fullWidth": true
+        },
         "banners": [
           {
             "loadingOptions": {
@@ -14,8 +16,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/8138055d-472d-4098-bb53-79bdb69e552f/principal.webp",
-              "mobile": "https://data.decoassets.com/content-hub/dfe75dc4-3826-427f-88ea-5d81bb503b50/principal-mobile.webp"
+              "desktop": "https://data.decoassets.com/content-hub/5c76496f-b05b-40dd-9769-a4312b989bb0/Image.png",
+              "mobile": "https://data.decoassets.com/content-hub/5c76496f-b05b-40dd-9769-a4312b989bb0/Image.png"
             }
           }
         ]
@@ -24,65 +26,522 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
-        "section": {
-          "title": "<h1 style=\"text-align: center\">QUEM ESCOLHE VIVER NUM MUNDO MELHOR, NÃO JOGA NADA FORA</h1><p style=\"text-align: center\">Sabia que você pode reduzir seu impacto ambiental quando escolhe um Electrolux EcoPlus? Isso porque eles representam o melhor da tecnologia Electrolux: economizam água, energia e te ajudam a não jogar nada fora.</p>"
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 6
+          }
         },
-        "icons": [
+        "section": {
+          "title": "<h2 style=\"text-align: center\">frase de efeito</h2><p style=\"text-align: center\"><u>frase de efeito</u></p>",
+          "fullWidth": true
+        },
+        "reverse": false,
+        "background": {
+          "srcDesktop": "https://data.decoassets.com/content-hub/bfbf3715-e2df-4f38-b08f-52d27152fd82/imagem.png",
+          "srcMobile": "https://data.decoassets.com/content-hub/02f5200b-c47c-46b1-91d9-de8e7a7879f6/Rita-Lobo-v3.png"
+        },
+        "text": "<h3>Para todos os gostos</h3><p>Tecnologia, design e cuidado para a sua cozinha</p>",
+        "fullWidth": true,
+        "link": {
+          "text": "Ver todos",
+          "href": "/",
+          "bgColor": "#011E41"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "infoCards": [
           {
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#617f57",
-            "imageSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
-            "redirect": "/",
-            "title": "Geladeira",
-            "alt": "Geladeira Alt"
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/1e956eaa-5c9a-4f8f-9c7c-39cca48f1a7b/5_cavidade-1.png",
+              "srcMobile": "https://data.decoassets.com/content-hub/1e956eaa-5c9a-4f8f-9c7c-39cca48f1a7b/5_cavidade-1.png",
+              "alt": "Info Card 1"
+            },
+            "richText": "<p style=\"text-align: right\"><span style=\"color: #412a2a\">PerfectCoock360</span></p><h3 style=\"text-align: right\"><span style=\"color: #412a2a\">Convecção e cavidade selada</span></h3><p style=\"text-align: right\"><span style=\"color: #412a2a\">Assa o alimento por igual, até 30% mais rápido que o forno convencional e um pouco mais de texto que traga mais clareza sobre a função</span></p>",
+            "direction": "left",
+            "link": {
+              "text": "Saiba mais",
+              "href": "/",
+              "color": "#412a2a"
+            }
+          }
+        ],
+        "section": {
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "infoCards": [
+          {
+            "richText": "<p><span style=\"color: #412a2a\">Design</span></p><h3><span style=\"color: #412a2a\">Detalhes que fazem a diferença</span></h3><p><span style=\"color: #412a2a\">Paragraph, recommended 250 limit characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu erat et tortor venenatis interdum nec ac dui. Quisque non imperdiet leo, in an.</span></p>",
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/21f0341d-2fff-41c7-a70a-ec7e399eb068/comparativo_vapor_bake-1.png",
+              "srcMobile": "https://data.decoassets.com/content-hub/21f0341d-2fff-41c7-a70a-ec7e399eb068/comparativo_vapor_bake-1.png",
+              "alt": "Info Card 2"
+            },
+            "direction": "right",
+            "link": {
+              "color": "#412a2a",
+              "text": "Saiba mais",
+              "href": "/"
+            }
+          }
+        ],
+        "section": {
+          "fullWidth": true
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "infoCards": [
+          {
+            "richText": "<p><span style=\"color: #412a2a\">Design</span></p><h3><span style=\"color: #412a2a\">Detalhes que fazem a diferença</span></h3><p><span style=\"color: #412a2a\">Paragraph, recommended 250 limit characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu erat et tortor venenatis interdum nec ac dui. Quisque non imperdiet leo, in an.</span></p>",
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/0fc7eada-9e04-4073-9f72-e95737c0d941/Oven_OE9XB_Front_Electrolux_Portuguese-2.png",
+              "srcMobile": "https://data.decoassets.com/content-hub/0fc7eada-9e04-4073-9f72-e95737c0d941/Oven_OE9XB_Front_Electrolux_Portuguese-2.png",
+              "alt": "Info Card 3"
+            },
+            "direction": "right"
           },
           {
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#617f57",
-            "target": false,
-            "title": "Frigobares",
-            "alt": "Frigobares Alt",
-            "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/39fe3c49-bea5-4efd-b840-4c94034655f2___c297eb37aca7757089a4be4238975e3a.svg",
-            "redirect": "/"
+            "richText": "<p><span style=\"color: #412a2a\">Design</span></p><h3><span style=\"color: #412a2a\">Detalhes que fazem a diferença</span></h3><p><span style=\"color: #412a2a\">Paragraph, recommended 250 limit characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu erat et tortor venenatis interdum nec ac dui. Quisque non imperdiet leo, in an.</span></p>",
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/0fc7eada-9e04-4073-9f72-e95737c0d941/Oven_OE9XB_Front_Electrolux_Portuguese-2.png",
+              "srcMobile": "https://data.decoassets.com/content-hub/0fc7eada-9e04-4073-9f72-e95737c0d941/Oven_OE9XB_Front_Electrolux_Portuguese-2.png",
+              "alt": "Info Card 3"
+            },
+            "direction": "right"
+          }
+        ],
+        "section": {
+          "fullWidth": true
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfWithComparatorSection.tsx",
+        "section": {
+          "title": "<h2 style=\"text-align: center\">Comparativo de modelos</h2><p style=\"text-align: center\"> <u>Fornos</u>    |    <u>Fogões</u></p>"
+        },
+        "products": [
+          {
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/7da6b777-ad4e-4044-9c56-f926056ca858/iconContainer.png",
+                "name": "Vaporbake",
+                "value": "sim"
+              },
+              {
+                "hasSpec": true,
+                "name": "Conectividade",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003481"
+            }
           },
           {
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#617f57",
-            "target": false,
-            "title": "Lavadora",
-            "alt": "Lavadora Alt",
-            "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/dbe0383c-ccd4-4d3c-9cfb-0f9b77bce279___7f2866be984ef103d8668ff611421f61.svg",
-            "redirect": "/"
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": false,
+                "icon": "https://data.decoassets.com/content-hub/7da6b777-ad4e-4044-9c56-f926056ca858/iconContainer.png",
+                "name": "Vaporbake",
+                "value": "não"
+              },
+              {
+                "hasSpec": false,
+                "name": "Conectividade",
+                "value": "não",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": false,
+                "name": "Food Sensor",
+                "value": "não",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003635"
+            }
           },
           {
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#617f57",
-            "target": false,
-            "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/d93949d5-a4d8-44a3-bffa-6e231c3ce0aa___f705e273fa0f839201c0f3d6fde1e151.svg",
-            "alt": "Lava-louças Alt",
-            "title": "Lava-louças",
-            "redirect": "/"
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": false,
+                "icon": "https://data.decoassets.com/content-hub/7da6b777-ad4e-4044-9c56-f926056ca858/iconContainer.png",
+                "name": "Vaporbake",
+                "value": "não"
+              },
+              {
+                "hasSpec": false,
+                "name": "Conectividade",
+                "value": "não",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003479"
+            }
           },
           {
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#617f57",
-            "target": false,
-            "redirect": "/",
-            "alt": "Ares-condicionados Alt",
-            "title": "Ares-condicionados",
-            "imageSrc": "https://data.decoassets.com/content-hub/16710286-8cd7-49c0-a10a-52789fde5ae1/ar.svg"
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/7da6b777-ad4e-4044-9c56-f926056ca858/iconContainer.png",
+                "name": "Vaporbake",
+                "value": "sim"
+              },
+              {
+                "hasSpec": true,
+                "name": "Conectividade",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003476"
+            }
           },
           {
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#617f57",
-            "target": false,
-            "alt": "Purificadores de água Alt",
-            "title": "Purificadores de água",
-            "redirect": "/",
-            "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/3893cd54-8e6f-4aab-ba7c-597a513b7674___5bf5e85f87e62ef4497432a621dc76f8.svg"
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/7da6b777-ad4e-4044-9c56-f926056ca858/iconContainer.png",
+                "name": "Vaporbake",
+                "value": "sim"
+              },
+              {
+                "hasSpec": true,
+                "name": "Conectividade",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003480"
+            }
+          },
+          {
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Conectividade",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003477"
+            }
+          },
+          {
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "name": "Vaporbake",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Conectividade",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2004215"
+            }
           }
         ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "marginBottomMobile": 0,
+          "marginBottomDesktop": 0,
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "richText": "<p style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Cozinhas electrolux</span></p><h3 style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Tudo bem fresquinho, bem gostoso</span></h3><p style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Numa casa bem vivida, o pãozinho do café é bem crocante, a carne do almoço é bem no ponto e o jantar bem colorido.</span></p>",
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/6652f5ee-eb29-4272-8d81-b75c80f02a47/5_cavidade-1-(1).png",
+              "srcMobile": "https://data.decoassets.com/content-hub/6652f5ee-eb29-4272-8d81-b75c80f02a47/5_cavidade-1-(1).png",
+              "alt": "Info Card 4"
+            },
+            "direction": "left"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ReviewsSliderSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "background": {
+          "srcDesktop": "https://data.decoassets.com/content-hub/351d4180-ee61-4a01-a0d8-3b53ec61069c/Oven_OE8GH_Kitchen_Electrolux_Portuguese-1.png",
+          "srcMobile": "https://data.decoassets.com/content-hub/351d4180-ee61-4a01-a0d8-3b53ec61069c/Oven_OE8GH_Kitchen_Electrolux_Portuguese-1.png",
+          "alt": "Reviews"
+        },
+        "sectionReviewCards": [
+          {
+            "reviewStars": {
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg",
+              "quantity": 5
+            },
+            "reviewDescription": "Além de lindo, o forno é muito eficiente!",
+            "reviewPersonName": "Fernanda Moreira Julio De Siqueira",
+            "reviewProductName": "Forno"
+          },
+          {
+            "reviewStars": {
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg",
+              "quantity": 5
+            },
+            "reviewDescription": "O forno é muito bom recomendo o produto",
+            "reviewPersonName": "Fernanda Moreira Julio De Siqueira",
+            "reviewProductName": "Forno"
+          },
+          {
+            "reviewStars": {
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg",
+              "quantity": 5
+            },
+            "reviewDescription": "O forno é bonito, de fácil instalação e funcionamento bom, recomendo.",
+            "reviewPersonName": "Fernanda Moreira Julio De Siqueira",
+            "reviewProductName": "Forno"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "section": {
+          "marginBottomMobile": 32,
+          "marginBottomDesktop": 52
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/",
+              "title": "Img 1"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/606ca98e-f632-486a-9814-189089f41cc0/Intersect.png",
+              "mobile": "https://data.decoassets.com/content-hub/606ca98e-f632-486a-9814-189089f41cc0/Intersect.png"
+            },
+            "alt": "Img 1"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/",
+              "title": "Img 2"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/a28b51a1-c8fa-4cc3-9b08-56db34e0d767/Rectangle-24512.png",
+              "mobile": "https://data.decoassets.com/content-hub/a28b51a1-c8fa-4cc3-9b08-56db34e0d767/Rectangle-24512.png"
+            },
+            "alt": "Img 2"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/",
+              "title": "Img 3"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/bd0edfb7-6251-4631-9b41-f0d65dddf26f/Rectangle-24513.png",
+              "mobile": "https://data.decoassets.com/content-hub/bd0edfb7-6251-4631-9b41-f0d65dddf26f/Rectangle-24513.png"
+            },
+            "alt": "Img 3"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/",
+              "title": "Img 4"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "low"
+            },
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/6463a1da-f2c3-4d0e-a13d-d64fd47d3c03/Rectangle-24514.png",
+              "mobile": "https://data.decoassets.com/content-hub/6463a1da-f2c3-4d0e-a13d-d64fd47d3c03/Rectangle-24514.png"
+            },
+            "alt": "Img 4"
+          }
+        ],
+        "title": "<h3>Aproveite nossas redes sociais</h3><p>Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</p>",
+        "icons": [
+          {
+            "id": "Facebook",
+            "href": "/"
+          },
+          {
+            "id": "Instagram",
+            "href": "/"
+          },
+          {
+            "id": "Youtube",
+            "href": "/"
+          },
+          {
+            "id": "Pinterest",
+            "href": "/"
+          },
+          {
+            "id": "Linkedin",
+            "href": "/"
+          }
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "mobile": 1.5,
+            "tablet": 2.5
+          },
+          "centeredSlides": true,
+          "pagination": {
+            "enabledMobile": true
+          }
+        }
       }
     }
   ],

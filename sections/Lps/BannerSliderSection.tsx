@@ -32,7 +32,6 @@ export default function BannerSliderSection({
   configs
 }: Props) {
   const id = useId();
-  const { fullWidth = true } = section ?? {};
 
   if (!banners?.length) return null;
 
@@ -74,7 +73,6 @@ export default function BannerSliderSection({
     <Section
       {...section}
       id={id}
-      fullWidth={fullWidth}
       classesContainer="banner-slider-section"
     >
       <BannerSlider

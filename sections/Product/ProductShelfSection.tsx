@@ -1,4 +1,5 @@
 import ProductShelf from "site/islands/ProductShelf.tsx";
+import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
@@ -6,7 +7,6 @@ import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { Product } from "apps/commerce/types.ts";
-import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 
 interface IBackground {
   /**

@@ -1,8 +1,0 @@
-{
-  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-  "props": {
-    "sort": "price:desc",
-    "collection": "2140",
-    "count": 10
-  }
-}

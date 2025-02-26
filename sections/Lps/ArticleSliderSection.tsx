@@ -16,6 +16,13 @@ interface Props {
   section?: ISection;
 
   /**
+   * @title Estilo do Artigo
+   * @description Define o estilo do artigo.
+   * @default "Type 1"
+   */
+  styleArticleOption?: "Type 1" | "Type 2";
+
+  /**
    * @title Lista de Artigos
    * @description Conjunto de artigos a serem exibidos dentro do slider.
    */
@@ -30,6 +37,7 @@ interface Props {
 
 export default function ArticleSliderSection({
   section,
+  styleArticleOption = "Type 1",
   articles,
   configs = {}
 }: Props) {
@@ -81,9 +89,9 @@ export default function ArticleSliderSection({
       sizes: {
         ...article.image.sizes,
         width: 344,
-        height: 180,
+        height: styleArticleOption === "Type 1" ? 180 : 200,
         widthMobile: 344,
-        heightMobile: 180
+        heightMobile: styleArticleOption === "Type 1" ? 180 : 200
       }
     }
   }));
@@ -92,7 +100,9 @@ export default function ArticleSliderSection({
     <Section
       {...section}
       id={id}
-      classesContainer="article-slider-section h-full min-h-[630px] lg:min-h-[585px]"
+      classesContainer={`article-slider-section article-slider-section__${styleArticleOption
+        .toLowerCase()
+        .replace(" ", "-")} h-full`}
     >
       <div class="flex w-full mx-auto">
         <ArticleSlider

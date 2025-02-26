@@ -3,6 +3,7 @@ import Icon from "site/components/ui/Icon.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
+import { isEmptyText } from "site/utils/text.ts";
 import type { AvailableIcons } from "site/components/ui/Icon.tsx";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
@@ -48,7 +49,7 @@ interface Props {
 export default function BannerMediaSliderSection({
   section,
   banners,
-  title,
+  title = "",
   configs = {},
   icons
 }: Props) {
@@ -66,8 +67,6 @@ export default function BannerMediaSliderSection({
     centeredSlides = true,
     pagination
   } = configs ?? {};
-
-  const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
 
   const sliderConfig = {
     ...configs,
@@ -123,7 +122,7 @@ export default function BannerMediaSliderSection({
             />
           </div>
           <div class="flex flex-col items-center justify-center max-w-[600px]">
-            {!isEmptyTitle && (
+            {!isEmptyText(title) && (
               <>
                 <div class="flex text-center lg:text-left">
                   <Text title={title} />

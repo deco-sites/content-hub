@@ -74,5 +74,9 @@ export default function SwiperSlider({
     breakpoints: validBreakpoints
   };
 
+  if (slides?.length === 1) {
+    return slides?.[0];
+  }
+
   return <Slider slides={slides} configs={mappedConfigs} />;
 }

@@ -7,7 +7,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
-          "title": "<h1 style=\"text-align: center\">GALERIA</h1><p style=\"text-align: center\"><span style=\"color: rgb(4, 30, 80); font-size: 16px\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
+          "title": "<h1 style=\"text-align: center\">GALERIA</h1><p style=\"text-align: center\"><span style=\"color: rgb(4, 30, 80); font-size: 16px\">Conteúdos selecionados de acordo com a sua necessidade</span></p>",
+          "marginTopDesktop": 52,
+          "marginTopMobile": 32
         },
         "text": "<p><span style=\"color: oklch(0.31 0 0); font-size: medium\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu arcu non felis consequat varius eget sit amet diam. Aenean ullamcorper interdum tortor, in mollis orci malesuada in.</span></p>"
       }
@@ -168,10 +170,10 @@
             "link": {
               "href": "/",
               "text": "Saiba Mais",
-              "title": "Saiba Mais"
+              "title": "Saiba Mais",
+              "color": "#5B6A78"
             },
-            "title": "Entrega com carbono neutro",
-            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
+            "text": "<h3><span style=\"color: #041e50\">Entrega com carbono neutro</span></h3><p><span style=\"color: #5b6a78\">Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres</span></p>"
           },
           {
             "image": {
@@ -193,10 +195,10 @@
             "link": {
               "href": "/",
               "text": "Saiba Mais",
-              "title": "Saiba Mais"
+              "title": "Saiba Mais",
+              "color": "#5B6A78"
             },
-            "title": "Entrega com carbono neutro",
-            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
+            "text": "<h3><span style=\"color: rgb(4, 30, 80)\">Entrega com carbono neutro</span></h3><p><span style=\"color: rgb(91, 106, 120)\">Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres</span></p>"
           },
           {
             "image": {
@@ -218,10 +220,10 @@
             "link": {
               "href": "/",
               "text": "Saiba Mais",
-              "title": "Saiba Mais"
+              "title": "Saiba Mais",
+              "color": "#5B6A78"
             },
-            "title": "Entrega com carbono neutro",
-            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
+            "text": "<h3><span style=\"color: rgb(4, 30, 80)\">Entrega com carbono neutro</span></h3><p><span style=\"color: rgb(91, 106, 120)\">Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres</span></p>"
           },
           {
             "image": {
@@ -243,10 +245,10 @@
             "link": {
               "href": "/",
               "text": "Saiba Mais",
-              "title": "Saiba Mais"
+              "title": "Saiba Mais",
+              "color": "#5B6A78"
             },
-            "title": "Entrega com carbono neutro",
-            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
+            "text": "<h3><span style=\"color: rgb(4, 30, 80)\">Entrega com carbono neutro</span></h3><p><span style=\"color: rgb(91, 106, 120)\">Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres</span></p>"
           }
         ],
         "configs": {

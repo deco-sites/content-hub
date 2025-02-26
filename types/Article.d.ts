@@ -18,33 +18,36 @@ interface Link {
    * @description Texto adicional exibido ao passar o mouse sobre o link (atributo title).
    */
   title: string;
+
+  /**
+   * @title Cor
+   * @format color-input
+   * @description Cor do link.
+   * @default #000000
+   */
+  color?: string;
 }
 
 /**
- * @title {{#title}}{{title}}{{/title}}{{^title}}Info Card{{/title}}
+ * @title {{#image}}{{alt}}{{/image}}{{^image}}Artigo{{/image}}
  */
 export interface IArticle {
   /**
    * @title Imagem
-   * @description Imagem exibida no card.
+   * @description Imagem exibida no artigo.
    */
   image: IResponsiveImage;
 
   /**
-   * @title Título
-   * @description Texto principal do card.
+   * @title Texto
+   * @format rich-text
+   * @description Texto do artigo.
    */
-  title: string;
-
-  /**
-   * @title Descrição
-   * @description Texto complementar do card.
-   */
-  text: string;
+  text?: string;
 
   /**
    * @title Link
-   * @description Objeto contendo informações do link do card.
+   * @description Objeto contendo informações do link do artigo.
    */
-  link: Link;
+  link?: Link;
 }

@@ -18,8 +18,40 @@ export default function InfoCard(props: IInfoCard): preact.JSX.Element {
     isVideo ||
     Boolean(typeOfContentImage?.srcDesktop && typeOfContentImage?.srcMobile);
 
+  const linkComponent = (link: IInfoCard["link"]) => {
+    const { href, text, color = "#000" } = link ?? {};
+
+    if (!text) return null;
+
+    return (
+      <>
+        <a
+          href={href ?? "/"}
+          title={text}
+          class="info-card__link cursor-pointer flex items-center justify-center border border-solid h-12 px-4 rounded-lg text-base leading-[initial] font-semibold transition-all ease-in duration-300"
+          style={{
+            border: `1px solid ${color}`,
+            color: `${color}`
+          }}
+        >
+          {text}
+        </a>
+        <style>
+          {`
+          .info-card__link:hover {
+            background: ${color};
+            color: #fff !important;
+          }
+        `}
+        </style>
+      </>
+    );
+  };
+
   return (
-    <InfoCardComponent {...props}>
+    <InfoCardComponent
+      {...{ ...props, buttonChildren: linkComponent(props?.link) }}
+    >
       {hasVideoOrImage ? (
         <>
           {isVideo ? (
@@ -37,7 +69,7 @@ export default function InfoCard(props: IInfoCard): preact.JSX.Element {
                 desktop: typeOfContentImage.srcDesktop,
                 mobile: typeOfContentImage.srcMobile
               }}
-              sizes={{ maxHeight: 500 }}
+              sizes={{ maxHeight: 500, heightMobile: 250 }}
             />
           )}
         </>

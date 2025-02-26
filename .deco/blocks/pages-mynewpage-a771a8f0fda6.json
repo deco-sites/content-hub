@@ -5,7 +5,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/BannerSliderSection.tsx",
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {},
         "banners": [
           {
@@ -24,7 +24,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/CategoriesSection.tsx",
+        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
         "section": {
           "title": "<h1 style=\"text-align: center\">QUEM ESCOLHE VIVER NUM MUNDO MELHOR, NÃO JOGA NADA FORA</h1><p style=\"text-align: center\">Sabia que você pode reduzir seu impacto ambiental quando escolhe um Electrolux EcoPlus? Isso porque eles representam o melhor da tecnologia Electrolux: economizam água, energia e te ajudam a não jogar nada fora.</p>"
         },

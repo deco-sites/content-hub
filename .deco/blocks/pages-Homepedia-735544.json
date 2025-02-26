@@ -5,7 +5,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/Homepedia/TextSection.tsx",
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
           "title": "<h1 style=\"text-align: center\">GALERIA</h1><p style=\"text-align: center\"><span style=\"color: rgb(4, 30, 80); font-size: 16px\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
         },
@@ -15,65 +15,10 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/Homepedia/BannerSliderHomeSection.tsx",
-        "section": {},
-        "banners": [
-          {
-            "link": {
-              "target": "blank",
-              "href": "#",
-              "title": "#"
-            },
-            "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "high"
-            },
-            "alt": "Banner 1",
-            "src": {
-              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
-              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
-            }
-          },
-          {
-            "link": {
-              "target": "blank",
-              "href": "#",
-              "title": "#"
-            },
-            "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "high"
-            },
-            "alt": "Banner 2",
-            "src": {
-              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
-              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
-            }
-          },
-          {
-            "link": {
-              "target": "blank",
-              "href": "#",
-              "title": "#"
-            },
-            "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "high"
-            },
-            "alt": "Banner 3",
-            "src": {
-              "desktop": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png",
-              "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/BannerSliderSection.tsx",
-        "section": {},
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "fullWidth": false
+        },
         "banners": [
           {
             "link": {
@@ -123,13 +68,23 @@
               "mobile": "https://data.decoassets.com/content-hub/0db28124-3431-4b2d-bfba-f1b3241f82de/mediaratios.png"
             }
           }
-        ]
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 3,
+            "tablet": 3,
+            "mobile": 1
+          },
+          "pagination": {
+            "enabledMobile": true
+          }
+        }
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/Homepedia/TextSection.tsx",
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
           "title": "<h2><span>INTERTITULO</span></h2>"
         },
@@ -140,7 +95,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
-        "section": {},
+        "section": {
+          "fullWidth": true
+        },
         "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -152,7 +109,7 @@
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png",
-          "srcMobile": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png"
+          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/243097d7-da7b-4a52-aea7-1e5d5e4b6b9a___98314a9a95d25587a2f6655195e8f8a5.png"
         },
         "link": {
           "text": "Conheça todos os produtos",
@@ -176,7 +133,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/Homepedia/TextSection.tsx",
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
           "title": "<h2><span>INTERTITULO</span></h2>"
         },
@@ -186,109 +143,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/Homepedia/ArticleSliderHomeSection.tsx",
-        "section": {
-          "title": "<h2 style=\"text-align: center\">artigos relacionados</h2><p style=\"text-align: center\"></p><p style=\"text-align: center\">Conteúdos selecionados de acordo com a sua necessidade</p>"
-        },
-        "articles": [
-          {
-            "image": {
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png",
-                "mobile": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png"
-              },
-              "alt": "Entrega com carbono neutro"
-            },
-            "link": {
-              "href": "#",
-              "text": "Saiba mais",
-              "title": "Saiba mais"
-            },
-            "title": "Entrega com carbono neutro",
-            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
-          },
-          {
-            "image": {
-              "link": {
-                "href": "#",
-                "title": "#"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png",
-                "mobile": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png"
-              },
-              "alt": "Entrega com carbono neutro"
-            },
-            "link": {
-              "href": "#",
-              "text": "Saiba mais",
-              "title": "Entrega com carbono neutro"
-            },
-            "title": "Entrega com carbono neutro",
-            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
-          },
-          {
-            "image": {
-              "link": {
-                "href": "#",
-                "title": "#"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png",
-                "mobile": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png"
-              },
-              "alt": "Entrega com carbono neutro"
-            },
-            "link": {
-              "href": "#",
-              "text": "Saiba mais",
-              "title": "Saiba mais"
-            },
-            "title": "Entrega com carbono neutro",
-            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
-          },
-          {
-            "image": {
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png",
-                "mobile": "https://data.decoassets.com/content-hub/8b8cc7cb-6744-43b0-b1a2-d94120ab1955/articles.png"
-              },
-              "alt": "Entrega com carbono neutro"
-            },
-            "link": {
-              "href": "#",
-              "text": "Saiba mais",
-              "title": "Saiba mais"
-            },
-            "title": "Entrega com carbono neutro",
-            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
-          }
-        ],
-        "configs": {
-          "spaceBetween": 8
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/EcoPlus/ArticleSliderSection.tsx",
+        "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
         "section": {
           "title": "<h2 style=\"text-align: center\">artigos relacionados</h2><p style=\"text-align: center\"><span style=\"color: rgb(4, 30, 80); font-size: 16px\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
         },
@@ -393,7 +248,17 @@
             "title": "Entrega com carbono neutro",
             "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empres"
           }
-        ]
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "tablet": 3,
+            "mobile": 1
+          },
+          "pagination": {
+            "enabledMobile": true
+          }
+        }
       }
     }
   ],

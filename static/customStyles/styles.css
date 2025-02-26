@@ -208,6 +208,45 @@
   }
 }
 
+.article-slider-section.receitas {
+  .container-inner {
+    padding: 0;
+    min-height: 394px;
+  }
+  
+  .container-title,
+  .container-desc,
+  .container-link {
+    padding: 0 16px;
+  }
+
+  .container-link {
+    margin-bottom: 20px;
+  }
+
+  .container-link a {
+    color: #011E41;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+  .container-link a:after {
+    content: '';
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDE1IDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik03LjI2Njg1IDguMjE2NzZMMC4xNTg1MDggMS4xMDg0M0wxLjA0MTg0IDAuMjI1MDk4TDcuMjY2ODUgNi40NTAwOUwxMy40OTE4IDAuMjI1MDk4TDE0LjM3NTEgMS4xMDg0M0w3LjI2Njg1IDguMjE2NzZaIiBmaWxsPSIjMDExRTQxIi8+Cjwvc3ZnPgo=");
+    width: 15px;
+    height: 9px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin-left: 10px;
+  }
+
+  .container-desc p {
+    min-height: 72px;
+  }
+}
+
 /* Review Section */
 .review-section {
   .section-title {

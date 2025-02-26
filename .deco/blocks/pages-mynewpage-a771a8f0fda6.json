@@ -360,7 +360,16 @@
               "productId": "2004215"
             }
           }
-        ]
+        ],
+        "styleOption": "receitas",
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "tablet": 2,
+            "mobile": 1.5
+          },
+          "spaceBetween": 24
+        }
       }
     },
     {

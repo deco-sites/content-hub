@@ -1,4 +1,5 @@
 import { Text } from "@eluxlab/library-components";
+import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 
 interface Props extends ISection {
@@ -8,15 +9,15 @@ interface Props extends ISection {
 export default function Section({
   id,
   children,
-  title,
-  marginMobile = 32,
-  marginDesktop = 52,
+  title = "",
+  marginBottomMobile = 32,
+  marginBottomDesktop = 52,
+  marginTopMobile = 0,
+  marginTopDesktop = 0,
   classesContainer,
   stylesContainer = {},
   fullWidth = false
 }: Props): preact.JSX.Element {
-  const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
-
   return (
     <>
       <div
@@ -26,7 +27,7 @@ export default function Section({
         } ${!fullWidth ? "container" : ""}`}
         style={stylesContainer}
       >
-        {!isEmptyTitle && (
+        {!isEmptyText(title) && (
           <Text title={title} classes={{ container: "section-title" }} />
         )}
         {children && <div class="flex">{children}</div>}
@@ -34,10 +35,12 @@ export default function Section({
       <style>
         {`
         #section-${id} {
-          margin-bottom: ${marginMobile}px;
+          margin-top: ${marginTopMobile}px;
+          margin-bottom: ${marginBottomMobile}px;
 
           @media screen and (min-width:1024px) {
-            margin-bottom: ${marginDesktop}px;
+            margin-top: ${marginTopDesktop}px;
+            margin-bottom: ${marginBottomDesktop}px;
           }
         }
       `}

@@ -26,7 +26,7 @@ export interface IReviewCard {
      * @title Estrela Vazia
      * @description O caminho da imagem do ícone para uma estrela vazia.
      * @format image-uri
-     * @default https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg
+     * @default https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg
      */
     emptyStarSrc: string;
 
@@ -34,7 +34,7 @@ export interface IReviewCard {
      * @title Estrela Meio Preenchida
      * @description O caminho da imagem do ícone para uma estrela meio preenchida.
      * @format image-uri
-     * @default https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg
+     * @default https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfStarSrc.svg
      */
     halfStarSrc: string;
   };

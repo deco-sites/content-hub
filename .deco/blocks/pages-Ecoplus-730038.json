@@ -6,7 +6,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
-        "section": {},
+        "section": {
+          "fullWidth": true
+        },
         "banners": [
           {
             "loadingOptions": {
@@ -88,19 +90,22 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "marginDesktop": 52,
-          "marginMobile": 32
+          "marginBottomDesktop": 52,
+          "marginBottomMobile": 32,
+          "fullWidth": true
         },
-        "infoCard": {
-          "typeOfContent": {
-            "autoplay": true,
-            "iframeProps": {},
-            "src": "https://www.youtube.com/embed/LDqsD4CGXbM?si=a6jNow5KMedLc29K",
-            "title": "Teste"
-          },
-          "direction": "left",
-          "richText": "<h2 style=\"text-align: justify\">Nossos produtos mais eficientes</h2><p style=\"text-align: justify\">Conheça a seleção de produtos da Electrolux com impacto ambiental reduzido.</p>"
-        }
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "autoplay": true,
+              "iframeProps": {},
+              "src": "https://www.youtube.com/embed/LDqsD4CGXbM?si=a6jNow5KMedLc29K",
+              "title": "Teste"
+            },
+            "direction": "left",
+            "richText": "<h2 style=\"text-align: justify\"><span style=\"color: #303f29\">Nossos produtos mais eficientes</span></h2><p style=\"text-align: justify\"><span style=\"color: #303f29\">Conheça a seleção de produtos da Electrolux com impacto ambiental reduzido.</span></p>"
+          }
+        ]
       }
     },
     {
@@ -139,19 +144,22 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "marginDesktop": 0,
-          "marginMobile": 0
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
         },
-        "infoCard": {
-          "typeOfContent": {
-            "autoplay": true,
-            "iframeProps": {},
-            "src": "https://www.youtube.com/embed/LDqsD4CGXbM?si=a6jNow5KMedLc29K",
-            "title": "teste"
-          },
-          "direction": "left",
-          "richText": "<p><em>Geladeiras</em></p><h2>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h2><p style=\"text-align: justify\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
-        }
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "autoplay": true,
+              "iframeProps": {},
+              "src": "https://www.youtube.com/embed/LDqsD4CGXbM?si=a6jNow5KMedLc29K",
+              "title": "teste"
+            },
+            "direction": "left",
+            "richText": "<p><em><span style=\"color: #303f29\">Geladeiras</span></em></p><h2><span style=\"color: #303f29\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></h2><p style=\"text-align: justify\"><span style=\"color: #303f29\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\"><span style=\"color: #303f29\">electrolux.com</span></a><span style=\"color: #303f29\">.</span></p>"
+          }
+        ]
       }
     },
     {
@@ -159,18 +167,21 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "marginDesktop": 0,
-          "marginMobile": 0
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
         },
-        "infoCard": {
-          "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "alt": "Placeholder"
-          },
-          "direction": "right",
-          "richText": "<p><em>Frigobares</em></p><h3>Economizam até 30%* de energia e possuem tecnologia para máxima eficiência</h3><p style=\"text-align: justify\">*Economia obtida considerando o segmento de frigobares com volume interno de 46,5L a 120L, conforme tabela de eficiência energética de 31/01/2023 PBE (Programa Brasileiro de Etiquetagem), nos modelos EM50 127V e220V, EM120 220V. Para outros modelos, consulte o site.</p>"
-        }
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "alt": "Placeholder"
+            },
+            "direction": "right",
+            "richText": "<p><em><span style=\"color: #303f29\">Frigobares</span></em></p><h3><span style=\"color: #303f29\">Economizam até 30%* de energia e possuem tecnologia para máxima eficiência</span></h3><p style=\"text-align: justify\"><span style=\"color: #303f29\">*Economia obtida considerando o segmento de frigobares com volume interno de 46,5L a 120L, conforme tabela de eficiência energética de 31/01/2023 PBE (Programa Brasileiro de Etiquetagem), nos modelos EM50 127V e220V, EM120 220V. Para outros modelos, consulte o site.</span></p>"
+          }
+        ]
       }
     },
     {
@@ -178,18 +189,21 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "marginDesktop": 0,
-          "marginMobile": 0
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
         },
-        "infoCard": {
-          "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "alt": "Placeholder"
-          },
-          "direction": "left",
-          "richText": "<p><em>Lavadoras</em></p><h3>As lavadoras lava e seca mais econômicas em consumo de água da categoria*</h3><p style=\"text-align: justify\">*Em comparação com o consumo da água de lavadoras lava e seca de mesma capacidade (11Kg), segundo divulgação do PBE (Programa Brasileiro de Etiquetagem) disponível no site: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://inmetro.gov.br\">https://inmetro.gov.br</a>.</p>"
-        }
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "alt": "Placeholder"
+            },
+            "direction": "left",
+            "richText": "<p><em><span style=\"color: #303f29\">Lavadoras</span></em></p><h3><span style=\"color: #303f29\">As lavadoras lava e seca mais econômicas em consumo de água da categoria*</span></h3><p style=\"text-align: justify\"><span style=\"color: #303f29\">*Em comparação com o consumo da água de lavadoras lava e seca de mesma capacidade (11Kg), segundo divulgação do PBE (Programa Brasileiro de Etiquetagem) disponível no site: </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://inmetro.gov.br\"><span style=\"color: #303f29\">https://inmetro.gov.br</span></a><span style=\"color: #303f29\">.</span></p>"
+          }
+        ]
       }
     },
     {
@@ -197,18 +211,21 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "marginDesktop": 0,
-          "marginMobile": 0
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
         },
-        "infoCard": {
-          "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "alt": "Placeholder"
-          },
-          "direction": "right",
-          "richText": "<p><em>Lava-louças</em></p><h3>Economizam até 90% de água por ciclo*</h3><p style=\"text-align: justify\">*15 min de torneira por dia lavando a pia ou 117 litros/ 15min = 7,8 litros ou 0,13 litros/s, segundo a SABESP. Enquanto 1 ciclo por dia, no programa Dia a Dia, da Lava-louças 14 serviços, equivale a 12 litros.</p>"
-        }
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "alt": "Placeholder"
+            },
+            "direction": "right",
+            "richText": "<p><em><span style=\"color: #303f29\">Lava-louças</span></em></p><h3><span style=\"color: #303f29\">Economizam até 90% de água por ciclo*</span></h3><p style=\"text-align: justify\"><span style=\"color: #303f29\">*15 min de torneira por dia lavando a pia ou 117 litros/ 15min = 7,8 litros ou 0,13 litros/s, segundo a SABESP. Enquanto 1 ciclo por dia, no programa Dia a Dia, da Lava-louças 14 serviços, equivale a 12 litros.</span></p>"
+          }
+        ]
       }
     },
     {
@@ -216,18 +233,21 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "marginDesktop": 0,
-          "marginMobile": 0
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
         },
-        "infoCard": {
-          "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "alt": "Placeholder"
-          },
-          "direction": "left",
-          "richText": "<p><em>Ares-condicionados</em></p><h3>Possuem até 80% mais eficiência em energia elétrica*</h3><p style=\"text-align: justify\">*Resultados obtidos comparando o modelo Electrolux 18000 BTUs com o modelo convencional on/off conforme portaria INMETRO nº269/2021. Para outros modelos, consulte o site.</p>"
-        }
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "alt": "Placeholder"
+            },
+            "direction": "left",
+            "richText": "<p><em><span style=\"color: #303f29\">Ares-condicionados</span></em></p><h3><span style=\"color: #303f29\">Possuem até 80% mais eficiência em energia elétrica*</span></h3><p style=\"text-align: justify\"><span style=\"color: #303f29\">*Resultados obtidos comparando o modelo Electrolux 18000 BTUs com o modelo convencional on/off conforme portaria INMETRO nº269/2021. Para outros modelos, consulte o site.</span></p>"
+          }
+        ]
       }
     },
     {
@@ -235,18 +255,21 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "marginDesktop": 0,
-          "marginMobile": 0
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
         },
-        "infoCard": {
-          "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "alt": "Placeholder"
-          },
-          "direction": "right",
-          "richText": "<p><em>Purificadores</em></p><h3>Economizam até 5x mais energia elétrica*</h3><p style=\"text-align: justify\">*Resultados obtidos pela comparação dos purificadores eletrônicos (PE11/PE12), que consomem 0,25 kWh para gelar 1L de água, com os purificadores com compressor (PC01B/PC01X), que consomem apenas 0,05 kWh para gelar a mesma quantidade de água.</p>"
-        }
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "alt": "Placeholder"
+            },
+            "direction": "right",
+            "richText": "<p><em><span style=\"color: #303f29\">Purificadores</span></em></p><h3><span style=\"color: #303f29\">Economizam até 5x mais energia elétrica*</span></h3><p style=\"text-align: justify\"><span style=\"color: #303f29\">*Resultados obtidos pela comparação dos purificadores eletrônicos (PE11/PE12), que consomem 0,25 kWh para gelar 1L de água, com os purificadores com compressor (PC01B/PC01X), que consomem apenas 0,05 kWh para gelar a mesma quantidade de água.</span></p>"
+          }
+        ]
       }
     },
     {
@@ -254,18 +277,21 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "marginDesktop": 32,
-          "marginMobile": 54
+          "marginBottomDesktop": 32,
+          "marginBottomMobile": 54,
+          "fullWidth": true
         },
-        "infoCard": {
-          "typeOfContent": {
-            "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
-            "alt": "Placeholder"
-          },
-          "direction": "left",
-          "richText": "<h3>Coleta e descarte consciente sem custo</h3><p style=\"text-align: justify\">Na compra de um novo produto Electrolux, você conta com uma coleta na sua casa para descarte consciente do seu eletrodoméstico que está sendo substituído. E o melhor: sem pagar nada a mais por isso.</p>"
-        }
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "srcMobile": "https://data.decoassets.com/content-hub/87366f31-3f83-45a0-9609-9943ac7f6538/FFF.svg",
+              "alt": "Placeholder"
+            },
+            "direction": "left",
+            "richText": "<h3><span style=\"color: #303f29\">Coleta e descarte consciente sem custo</span></h3><p style=\"text-align: justify\"><span style=\"color: #303f29\">Na compra de um novo produto Electrolux, você conta com uma coleta na sua casa para descarte consciente do seu eletrodoméstico que está sendo substituído. E o melhor: sem pagar nada a mais por isso.</span></p>"
+          }
+        ]
       }
     },
     {
@@ -436,10 +462,10 @@
             "link": {
               "href": "/",
               "text": "Saiba mais",
-              "title": "Saiba mais"
+              "title": "Saiba mais",
+              "color": "#617F57"
             },
-            "title": "Entrega com carbono neutro",
-            "text": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido à energia solar. Vem entender como a gente faz isso funcionar!"
+            "text": "<h2><span style=\"color: rgb(48, 63, 41)\">Entrega com carbono neutro</span></h2><p><span style=\"color: #707070\">Estamos estudando formas de deixar nossos produtos cada vez mais sustentáveis. Hoje, já são menos 500 mil toneladas de CO2 nos produtos em funcionamento, acredita?</span></p>"
           },
           {
             "image": {
@@ -601,10 +627,10 @@
             "link": {
               "href": "/",
               "text": "Saiba mais",
-              "title": "Saiba mais"
+              "title": "Saiba mais",
+              "color": "#617F57"
             },
-            "text": "Reduzimos até 700 toneladas de CO2 por ano ao usar plástico reciclado em nossas máquinas de lavar. Que tal saber mais?",
-            "title": "Máquinas feitas com material reciclado"
+            "text": "<h2><span style=\"color: rgb(48, 63, 41)\">Máquinas feitas com material reciclado</span></h2><p><span style=\"color: rgb(112, 112, 112)\">Estamos estudando formas de deixar nossos produtos cada vez mais sustentáveis. Hoje, já são menos 500 mil toneladas de CO2 nos produtos em funcionamento, acredita?</span></p>"
           },
           {
             "image": {
@@ -766,10 +792,175 @@
             "link": {
               "href": "/",
               "text": "Saiba mais",
-              "title": "Saiba mais"
+              "title": "Saiba mais",
+              "color": "#617F57"
             },
-            "title": "Mais produtos EcoPlus até 2030",
-            "text": " Estamos estudando formas de deixar nossos produtos cada vez mais sustentáveis. Hoje, já são menos 500 mil toneladas de CO2 nos produtos em funcionamento, acredita?"
+            "text": "<h2><span style=\"color: rgb(48, 63, 41)\">Mais produtos EcoPlus até 2030</span></h2><p><span style=\"color: rgb(112, 112, 112)\">Estamos estudando formas de deixar nossos produtos cada vez mais sustentáveis. Hoje, já são menos 500 mil toneladas de CO2 nos produtos em funcionamento, acredita?</span></p>"
+          },
+          {
+            "image": {
+              "src": {
+                "0": "h",
+                "1": "t",
+                "2": "t",
+                "3": "p",
+                "4": "s",
+                "5": ":",
+                "6": "/",
+                "7": "/",
+                "8": "e",
+                "9": "l",
+                "10": "e",
+                "11": "c",
+                "12": "t",
+                "13": "r",
+                "14": "o",
+                "15": "l",
+                "16": "u",
+                "17": "x",
+                "18": ".",
+                "19": "v",
+                "20": "t",
+                "21": "e",
+                "22": "x",
+                "23": "a",
+                "24": "s",
+                "25": "s",
+                "26": "e",
+                "27": "t",
+                "28": "s",
+                "29": ".",
+                "30": "c",
+                "31": "o",
+                "32": "m",
+                "33": "/",
+                "34": "a",
+                "35": "s",
+                "36": "s",
+                "37": "e",
+                "38": "t",
+                "39": "s",
+                "40": "/",
+                "41": "v",
+                "42": "t",
+                "43": "e",
+                "44": "x",
+                "45": ".",
+                "46": "f",
+                "47": "i",
+                "48": "l",
+                "49": "e",
+                "50": "-",
+                "51": "m",
+                "52": "a",
+                "53": "n",
+                "54": "a",
+                "55": "g",
+                "56": "e",
+                "57": "r",
+                "58": "-",
+                "59": "g",
+                "60": "r",
+                "61": "a",
+                "62": "p",
+                "63": "h",
+                "64": "q",
+                "65": "l",
+                "66": "/",
+                "67": "i",
+                "68": "m",
+                "69": "a",
+                "70": "g",
+                "71": "e",
+                "72": "s",
+                "73": "/",
+                "74": "2",
+                "75": "9",
+                "76": "4",
+                "77": "6",
+                "78": "7",
+                "79": "e",
+                "80": "6",
+                "81": "0",
+                "82": "-",
+                "83": "2",
+                "84": "4",
+                "85": "4",
+                "86": "3",
+                "87": "-",
+                "88": "4",
+                "89": "8",
+                "90": "0",
+                "91": "1",
+                "92": "-",
+                "93": "b",
+                "94": "5",
+                "95": "5",
+                "96": "f",
+                "97": "-",
+                "98": "f",
+                "99": "9",
+                "100": "9",
+                "101": "5",
+                "102": "e",
+                "103": "e",
+                "104": "3",
+                "105": "4",
+                "106": "b",
+                "107": "1",
+                "108": "8",
+                "109": "6",
+                "110": "_",
+                "111": "_",
+                "112": "_",
+                "113": "a",
+                "114": "1",
+                "115": "8",
+                "116": "7",
+                "117": "5",
+                "118": "0",
+                "119": "0",
+                "120": "7",
+                "121": "a",
+                "122": "6",
+                "123": "5",
+                "124": "f",
+                "125": "a",
+                "126": "1",
+                "127": "5",
+                "128": "5",
+                "129": "b",
+                "130": "f",
+                "131": "6",
+                "132": "e",
+                "133": "9",
+                "134": "b",
+                "135": "e",
+                "136": "f",
+                "137": "c",
+                "138": "d",
+                "139": "0",
+                "140": "9",
+                "141": "1",
+                "142": "c",
+                "143": "f",
+                "144": "1",
+                "145": ".",
+                "146": "p",
+                "147": "n",
+                "148": "g",
+                "desktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/29467e60-2443-4801-b55f-f995ee34b186___a1875007a65fa155bf6e9befcd091cf1.png",
+                "mobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/29467e60-2443-4801-b55f-f995ee34b186___a1875007a65fa155bf6e9befcd091cf1.png"
+              },
+              "alt": "4"
+            },
+            "link": {
+              "href": "/",
+              "text": "Saiba mais",
+              "title": "Saiba mais",
+              "color": "#617F57"
+            },
+            "text": "<h2><span style=\"color: rgb(48, 63, 41)\">Entrega com carbono neutro</span></h2><p><span style=\"color: rgb(112, 112, 112)\">Estamos estudando formas de deixar nossos produtos cada vez mais sustentáveis. Hoje, já são menos 500 mil toneladas de CO2 nos produtos em funcionamento, acredita?</span></p>"
           }
         ],
         "configs": {
@@ -778,8 +969,8 @@
           },
           "slidesPerViewResponsive": {
             "mobile": 1,
-            "tablet": 1,
-            "desktop": 3
+            "tablet": 2,
+            "desktop": 4
           }
         }
       }
@@ -829,7 +1020,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ReviewsSliderSection.tsx",
         "section": {
-          "title": "<h2 style=\"text-align: center\"><strong>Quem escolhe melhor, vive melhor</strong></h2>"
+          "title": "<h2 style=\"text-align: center\"><strong>Quem escolhe melhor, vive melhor</strong></h2>",
+          "fullWidth": true
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/b94e45b8-183a-4c71-9bd2-a0722c14a20f/reviews-bg.webp",

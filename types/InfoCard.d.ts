@@ -54,13 +54,48 @@ export interface IInfoCardVideo {
   iframeProps?: preact.JSX.IntrinsicElements["iframe"];
 }
 
+/**
+ * @title {{#title}}{{title}}{{/title}}{{^title}}Info Card{{/title}}
+ */
 export interface IInfoCard {
+  /**
+   * @title Título do Info Card
+   * @description Utilizado para identificar o info card no CMS.
+   */
+  titleCMS?: string;
+
   /**
    * @title Texto Descritivo
    * @description Texto descritivo formatado para exibição no cartão.
    * @format rich-text
    */
   richText?: string;
+
+  /**
+   * @title Link
+   * @description Link para onde o usuário sera redirecionado ao clicar no botão.
+   */
+  link?: {
+    /**
+     * @title Texto do Botão
+     * @description Define o texto exibido dentro do botão de ação.
+     */
+    text?: string;
+
+    /**
+     * @title URL de Destino
+     * @description Endereço para onde o usuário será redirecionado ao clicar no botão.
+     */
+    href?: string;
+
+    /**
+     * @title Cor do botão e do texto
+     * @description Define a cor do botão e do texto.
+     * @format color-input
+     * @default #000000
+     */
+    color?: string;
+  };
 
   /**
    * @title Tipo de Conteúdo
@@ -81,6 +116,8 @@ export interface IInfoCard {
   classes?: {
     container?: string;
     children?: string;
+    childrenTextContent?: string;
+    button?: string;
   };
 
   /**
@@ -90,5 +127,18 @@ export interface IInfoCard {
   styles?: {
     container?: preact.JSX.AllCSSProperties;
     children?: preact.JSX.AllCSSProperties;
+    button?: preact.JSX.AllCSSProperties;
   };
+
+  /**
+   * @title Button Children
+   * @hide
+   */
+  buttonChildren?: preact.JSX.Element;
+
+  /**
+   * @title Aplica Classe para Todos os Elementos
+   * @hide
+   */
+  applyClassToAllElements?: boolean;
 }

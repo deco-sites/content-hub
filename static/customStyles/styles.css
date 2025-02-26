@@ -44,6 +44,7 @@
 
   .swiper-pagination {
     align-items: center;
+    background: #ffffff;
     border-radius: 50px;
     border: 1px solid #dfe7ea;
     box-sizing: border-box;
@@ -166,7 +167,6 @@
     h4,
     h5,
     h6 {
-      color: #303f29;
       font-size: 24px;
       font-weight: 600;
       line-height: 110%;
@@ -179,7 +179,6 @@
     }
 
     p {
-      color: #303f29;
       font-size: 12px;
       font-weight: 400;
       line-height: 18px;
@@ -190,13 +189,28 @@
     }
 
     p > em {
-      color: #303f29;
       display: block;
       font-size: 14px;
       font-style: normal;
       font-weight: 600;
       line-height: 17px;
       margin: 0 0 8px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .swiper {
+    padding: 0 0 12px;
+    position: relative;
+
+    .swiper-pagination {
+      bottom: 0;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
     }
   }
 }
@@ -205,6 +219,84 @@
 .article-slider-section {
   .swiper {
     width: 100%;
+  }
+
+  .article__content-text {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      line-height: 30px;
+      margin: 0 0 16px;
+      max-height: 120px;
+      min-height: 60px;
+      overflow: hidden;
+      text-align: left;
+      text-overflow: ellipsis;
+    }
+
+    p {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 6;
+      display: -webkit-box;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0;
+      min-height: 120px;
+      overflow: hidden;
+      text-align: left;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.article-slider-section__type-2 {
+  .article__container {
+    border: 0;
+    min-height: 400px;
+    padding: 0;
+
+    .article__image {
+      margin: 0;
+    }
+
+    .article__content {
+      gap: 8px;
+      border: 1px solid #dfe7ea;
+      padding: 24px 16px;
+
+      .article__content-link {
+        a {
+          gap: 8px;
+          text-decoration: none;
+        }
+
+        a::after {
+          content: "";
+          background: url("https://electrolux.vteximg.com.br/arquivos/article-leia-mais-deco.svg")
+            no-repeat center;
+          display: block;
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+
+    .article__content-text {
+      p {
+        -webkit-line-clamp: 3;
+        min-height: 72px;
+      }
+    }
   }
 }
 

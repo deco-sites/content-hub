@@ -69,7 +69,7 @@ export default function InfoCard(props: IInfoCard): preact.JSX.Element {
                 desktop: typeOfContentImage.srcDesktop,
                 mobile: typeOfContentImage.srcMobile
               }}
-              sizes={{ maxHeight: 500 }}
+              sizes={{ maxHeight: 500, heightMobile: 250 }}
             />
           )}
         </>

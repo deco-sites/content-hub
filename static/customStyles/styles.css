@@ -186,6 +186,10 @@
       text-overflow: ellipsis;
       width: 100%;
       word-break: break-word;
+
+      a {
+        text-decoration: underline;
+      }
     }
 
     p > em {
@@ -195,10 +199,6 @@
       font-weight: 600;
       line-height: 17px;
       margin: 0 0 8px;
-    }
-
-    a {
-      text-decoration: underline;
     }
   }
 

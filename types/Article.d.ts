@@ -18,10 +18,18 @@ interface Link {
    * @description Texto adicional exibido ao passar o mouse sobre o link (atributo title).
    */
   title: string;
+
+  /**
+   * @title Cor
+   * @format color-input
+   * @description Cor do link.
+   * @default #000000
+   */
+  color?: string;
 }
 
 /**
- * @title {{#title}}{{title}}{{/title}}{{^title}}Artigo{{/title}}
+ * @title {{#image}}{{alt}}{{/image}}{{^image}}Artigo{{/image}}
  */
 export interface IArticle {
   /**
@@ -31,20 +39,15 @@ export interface IArticle {
   image: IResponsiveImage;
 
   /**
-   * @title Título
-   * @description Texto principal do artigo.
+   * @title Texto
+   * @format rich-text
+   * @description Texto do artigo.
    */
-  title: string;
-
-  /**
-   * @title Descrição
-   * @description Texto complementar do artigo.
-   */
-  text: string;
+  text?: string;
 
   /**
    * @title Link
    * @description Objeto contendo informações do link do artigo.
    */
-  link: Link;
+  link?: Link;
 }

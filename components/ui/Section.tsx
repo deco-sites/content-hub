@@ -1,4 +1,5 @@
 import { Text } from "@eluxlab/library-components";
+import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 
 interface Props extends ISection {
@@ -8,7 +9,7 @@ interface Props extends ISection {
 export default function Section({
   id,
   children,
-  title,
+  title = "",
   marginBottomMobile = 32,
   marginBottomDesktop = 52,
   marginTopMobile = 0,
@@ -17,8 +18,6 @@ export default function Section({
   stylesContainer = {},
   fullWidth = false
 }: Props): preact.JSX.Element {
-  const isEmptyTitle = !!title?.trim().match(/^<\w+>\s*<\/\w+>$/) || !title;
-
   return (
     <>
       <div
@@ -28,7 +27,7 @@ export default function Section({
         } ${!fullWidth ? "container" : ""}`}
         style={stylesContainer}
       >
-        {!isEmptyTitle && (
+        {!isEmptyText(title) && (
           <Text title={title} classes={{ container: "section-title" }} />
         )}
         {children && <div class="flex">{children}</div>}

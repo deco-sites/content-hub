@@ -806,8 +806,8 @@
           {
             "richText": "<p><span style=\"color: #412a2a\">Design</span></p><h3><span style=\"color: #412a2a\">Detalhes que fazem a diferença</span></h3><p><span style=\"color: #412a2a\">Paragraph, recommended 250 limit characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu erat et tortor venenatis interdum nec ac dui. Quisque non imperdiet leo, in an.</span></p>",
             "typeOfContent": {
-              "srcDesktop": "https://data.decoassets.com/content-hub/0fc7eada-9e04-4073-9f72-e95737c0d941/Oven_OE9XB_Front_Electrolux_Portuguese-2.png",
-              "srcMobile": "https://data.decoassets.com/content-hub/9bfa91ed-bf10-47ba-ba4e-102c389f4b6f/Oven_OE9XB_Front_Electrolux_Portuguese-3.png",
+              "srcDesktop": "https://data.decoassets.com/content-hub/835e43e3-c5df-49f1-baa9-fe92b59b2bd7/Oven_OE9XB_Front_Electrolux_Portuguese-2.jpg",
+              "srcMobile": "https://data.decoassets.com/content-hub/3d26b5e0-0528-4a98-a54f-7af4759e5b19/Group-1000003854-mob.jpg",
               "alt": "Info Card 3"
             },
             "direction": "right"
@@ -815,8 +815,8 @@
           {
             "richText": "<p><span style=\"color: #412a2a\">Design</span></p><h3><span style=\"color: #412a2a\">Detalhes que fazem a diferença</span></h3><p><span style=\"color: #412a2a\">Paragraph, recommended 250 limit characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu erat et tortor venenatis interdum nec ac dui. Quisque non imperdiet leo, in an.</span></p>",
             "typeOfContent": {
-              "srcDesktop": "https://data.decoassets.com/content-hub/0fc7eada-9e04-4073-9f72-e95737c0d941/Oven_OE9XB_Front_Electrolux_Portuguese-2.png",
-              "srcMobile": "https://data.decoassets.com/content-hub/9bfa91ed-bf10-47ba-ba4e-102c389f4b6f/Oven_OE9XB_Front_Electrolux_Portuguese-3.png",
+              "srcDesktop": "https://data.decoassets.com/content-hub/190b5eb0-020a-4eb7-92af-91c83a6e82a8/Oven_OE9XB_Front_Electrolux_Portuguese-2.jpg",
+              "srcMobile": "https://data.decoassets.com/content-hub/b0c980b0-de5b-45a5-aeab-cf55f4c0e073/Group-1000003854-mob.jpg",
               "alt": "Info Card 3"
             },
             "direction": "right"
@@ -1074,8 +1074,8 @@
           {
             "richText": "<p style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Cozinhas electrolux</span></p><h3 style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Tudo bem fresquinho, bem gostoso</span></h3><p style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Numa casa bem vivida, o pãozinho do café é bem crocante, a carne do almoço é bem no ponto e o jantar bem colorido.</span></p>",
             "typeOfContent": {
-              "srcDesktop": "https://data.decoassets.com/content-hub/6652f5ee-eb29-4272-8d81-b75c80f02a47/5_cavidade-1-(1).png",
-              "srcMobile": "https://data.decoassets.com/content-hub/6652f5ee-eb29-4272-8d81-b75c80f02a47/5_cavidade-1-(1).png",
+              "srcDesktop": "https://data.decoassets.com/content-hub/cc579caf-0182-4c5c-8c1d-3c33c33d017c/5_cavidade-1-(1).jpg",
+              "srcMobile": "https://data.decoassets.com/content-hub/f7914e66-6b25-4ae3-ae62-ccba6086dda3/5_cavidade-1-mob.jpg",
               "alt": "Info Card 4"
             },
             "direction": "left",
@@ -1099,8 +1099,8 @@
           "fullWidth": true
         },
         "background": {
-          "srcDesktop": "https://data.decoassets.com/content-hub/351d4180-ee61-4a01-a0d8-3b53ec61069c/Oven_OE8GH_Kitchen_Electrolux_Portuguese-1.png",
-          "srcMobile": "https://data.decoassets.com/content-hub/351d4180-ee61-4a01-a0d8-3b53ec61069c/Oven_OE8GH_Kitchen_Electrolux_Portuguese-1.png",
+          "srcDesktop": "https://data.decoassets.com/content-hub/a9f834a3-92f4-4440-a782-2e871a2a3392/Oven_OE8GH_Kitchen_Electrolux_Portuguese-1.jpg",
+          "srcMobile": "https://data.decoassets.com/content-hub/f0e34442-22cf-41a7-8413-db68a3ed15b6/Oven_OE9XB_Front_Electrolux_Portuguese-2-mob.jpg",
           "alt": "Reviews"
         },
         "sectionReviewCards": [

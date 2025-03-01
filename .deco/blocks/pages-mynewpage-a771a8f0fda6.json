@@ -1057,7 +1057,13 @@
             "tablet": 2,
             "mobile": 1.5
           },
-          "spaceBetween": 24
+          "spaceBetween": 24,
+          "pagination": {
+            "enabledMobile": true
+          },
+          "navigation": {
+            "enabledDesktop": true
+          }
         }
       }
     },

@@ -3,7 +3,7 @@ import InfoIcon from "site/components/ui/InfoIcon.tsx";
 import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { IInfoIcon } from "site/types/InfoIcon.d.ts";
-
+import { DefaultCategoriesSection } from "site/configs/CategoriesSection.ts";
 interface Props {
   /**
    * @title Seção
@@ -18,7 +18,10 @@ interface Props {
   icons?: IInfoIcon[];
 }
 
-export default function CategoriesSection({ icons = [], section }: Props) {
+export default function CategoriesSection({
+  icons = DefaultCategoriesSection.icons,
+  section,
+}: Props) {
   const id = useId();
 
   return (

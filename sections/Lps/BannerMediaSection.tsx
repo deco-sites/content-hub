@@ -8,6 +8,7 @@ import type { AvailableIcons } from "site/components/ui/Icon.tsx";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
+import { DefaultBannerMedia } from "site/configs/BannerMediaSection.ts";
 
 /**
  * @title {{#id}}{{id}}{{/id}}{{^id}}Ícone{{/id}}
@@ -48,10 +49,10 @@ interface Props {
 
 export default function BannerMediaSliderSection({
   section,
-  banners,
-  title = "",
-  configs = {},
-  icons
+  banners = DefaultBannerMedia.banners,
+  title = DefaultBannerMedia.title,
+  configs = DefaultBannerMedia.configs,
+  icons = DefaultBannerMedia.icons
 }: Props) {
   const id = useId();
 

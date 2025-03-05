@@ -4,7 +4,7 @@ import { useId } from "site/sdk/useId.ts";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
-
+import { DefaultBannerSection } from "site/configs/BannerSliderSection.ts";
 /**
  * @description Seção com um slider de banners.
  */
@@ -28,7 +28,7 @@ interface Props {
 
 export default function BannerSliderSection({
   section,
-  banners,
+  banners = DefaultBannerSection.banners,
   configs
 }: Props) {
   const id = useId();

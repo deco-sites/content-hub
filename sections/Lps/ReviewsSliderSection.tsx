@@ -4,7 +4,7 @@ import { ReviewCards } from "@eluxlab/library-components";
 import { useId } from "preact/hooks";
 import type { IReviewCard } from "site/types/ReviewCard.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
-
+import { DefaultReviews } from "site/configs/ReviewsSliderSection.ts";
 interface IBackground {
   /**
    * @title Imagem (desktop)
@@ -51,8 +51,8 @@ interface Props {
 
 export default function ReviewsSliderSection({
   section,
-  background,
-  sectionReviewCards = []
+  background = DefaultReviews.background,
+  sectionReviewCards = DefaultReviews.sectionReviewCards
 }: Props) {
   const id = useId();
   const { srcDesktop, srcMobile, alt } = background ?? {};

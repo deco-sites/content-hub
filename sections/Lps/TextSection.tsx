@@ -2,7 +2,7 @@ import Section from "site/components/ui/Section.tsx";
 import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
-
+import { DefaultTextSection } from "site/configs/TextSection.ts";
 /**
  * @description Componente de seção contendo um slider de cartões informativos.
  */
@@ -22,15 +22,14 @@ interface Props {
   text?: string;
 }
 
-export default function TextSection({ section, text }: Props) {
+export default function TextSection({
+  section,
+  text = DefaultTextSection.text,
+}: Props) {
   const id = useId();
 
   return (
-    <Section
-      {...section}
-      id={id}
-      classesContainer="general-text-section"
-    >
+    <Section {...section} id={id} classesContainer="general-text-section">
       <div class="flex items-center w-full">
         <Text title={text ?? ""} />
       </div>

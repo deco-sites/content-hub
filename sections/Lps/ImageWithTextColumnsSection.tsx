@@ -4,7 +4,7 @@ import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
-
+import { DefaultImageWithTextColumns } from "site/configs/ImageWithTextColumnsSection.ts";
 interface IBlockText {
   /**
    * @title Texto
@@ -59,9 +59,9 @@ interface Props {
 
 export default function ImageWithTextColumnsSection({
   section,
-  left,
-  image = {},
-  right,
+  left = DefaultImageWithTextColumns.left,
+  image = DefaultImageWithTextColumns.image,
+  right = DefaultImageWithTextColumns.right,
 }: Props) {
   const id = useId();
 

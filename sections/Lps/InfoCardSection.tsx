@@ -4,7 +4,7 @@ import { useId } from "site/sdk/useId.ts";
 import type { IInfoCard } from "site/types/InfoCard.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
-
+import { DefaultInfoCardSection } from "site/configs/InfoCardSection.ts";
 /**
  * @description Componente de seção contendo um cartão informativo.
  */
@@ -29,8 +29,8 @@ interface Props {
 
 export default function InfoCardSection({
   section,
-  infoCards,
-  configs
+  infoCards = DefaultInfoCardSection.infoCards,
+  configs,
 }: Props) {
   const id = useId();
 
@@ -42,19 +42,19 @@ export default function InfoCardSection({
     ...configs,
     slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
     pagination: {
-      enabled: pagination?.enabledMobile ?? true
+      enabled: pagination?.enabledMobile ?? true,
     },
     breakpoints: {
       768: {
-        slidesPerView: slidesPerViewResponsive?.tablet ?? 1
+        slidesPerView: slidesPerViewResponsive?.tablet ?? 1,
       },
       1024: {
         slidesPerView: slidesPerViewResponsive?.desktop ?? 1,
         pagination: {
-          enabled: pagination?.enabledDesktop ?? true
-        }
-      }
-    }
+          enabled: pagination?.enabledDesktop ?? true,
+        },
+      },
+    },
   } as ISliderConfigs;
 
   return (

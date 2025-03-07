@@ -63,6 +63,34 @@
           }
         }
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "section": {
+          "title": "<h2 style=\"text-align: center\">teste</h2><p style=\"text-align: center\">subteste</p>",
+          "fullWidth": true
+        },
+        "background": {
+          "srcDesktop": "https://data.decoassets.com/content-hub/e2e270bb-21ab-4048-993e-682b4b68cc34/BG-(1).jpg",
+          "srcMobile": "https://data.decoassets.com/content-hub/2a983e0b-7c94-442e-a1cc-6f7cb107545a/5_cavidade-1-(1).jpg",
+          "alt": "Frase de Efeito"
+        },
+        "text": "<p>teste</p>",
+        "link": {
+          "text": "Ver todos",
+          "href": "/",
+          "bgColor": "#e60a0a"
+        }
+      }
     }
   ],
   "seo": {

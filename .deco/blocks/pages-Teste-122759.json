@@ -1,0 +1,72 @@
+{
+  "name": "Teste",
+  "path": "/teste",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "title": "<p></p>",
+          "fullWidth": true
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/",
+              "title": "Teste"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high",
+              "preload": true
+            },
+            "alt": "Banner Principal",
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/a9f834a3-92f4-4440-a782-2e871a2a3392/Oven_OE8GH_Kitchen_Electrolux_Portuguese-1.jpg",
+              "mobile": "https://data.decoassets.com/content-hub/3807730d-9bff-4541-9da5-821a45cdc0ca/CalloutSection-(1).jpg"
+            }
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/",
+              "title": "Teste"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high",
+              "preload": true
+            },
+            "alt": "Banner Principal",
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/a9f834a3-92f4-4440-a782-2e871a2a3392/Oven_OE8GH_Kitchen_Electrolux_Portuguese-1.jpg",
+              "mobile": "https://data.decoassets.com/content-hub/3807730d-9bff-4541-9da5-821a45cdc0ca/CalloutSection-(1).jpg"
+            }
+          }
+        ],
+        "configs": {
+          "loop": true,
+          "slidesPerViewResponsive": {
+            "desktop": 1,
+            "tablet": 1,
+            "mobile": 1
+          },
+          "pagination": {
+            "enabledDesktop": true,
+            "enabledMobile": true
+          },
+          "navigation": {
+            "enabledDesktop": true,
+            "enabledMobile": true
+          }
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

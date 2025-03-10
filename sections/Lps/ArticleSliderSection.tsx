@@ -5,6 +5,8 @@ import type { IArticle } from "site/types/Article.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultArticles } from "site/configs/ArticlesSliderSection.ts";
+import { useDevice } from "@deco/deco/hooks";
+
 /**
  * @description Componente de seção contendo um slider de cartões informativos.
  */
@@ -42,6 +44,7 @@ export default function ArticleSliderSection({
   configs = DefaultArticles.configs,
 }: Props) {
   const id = useId();
+  const device = useDevice();
 
   if (!articles?.length) return null;
 
@@ -61,10 +64,10 @@ export default function ArticleSliderSection({
     slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
     spaceBetween,
     pagination: {
-      enabled: pagination?.enabledMobile,
+      enabled: device === "desktop" ? pagination?.enabledDesktop : pagination?.enabledMobile
     },
     navigation: {
-      enabled: navigation?.enabledMobile,
+      enabled: device === "desktop" ? navigation?.enabledDesktop : navigation?.enabledMobile
     },
     breakpoints: {
       768: {

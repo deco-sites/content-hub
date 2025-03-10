@@ -7,6 +7,7 @@ import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { Product } from "apps/commerce/types.ts";
+import { useDevice } from "@deco/deco/hooks";
 
 interface IBackground {
   /**
@@ -115,6 +116,8 @@ export default function ProductShelfSection({
   reverse = false
 }: Props) {
   const id = useId();
+  const device = useDevice();
+
   const hasProducts = !!products?.length;
 
   const { srcDesktop, srcMobile, alt } = background ?? {};
@@ -123,23 +126,21 @@ export default function ProductShelfSection({
     ...configs,
     spaceBetween: 8,
     slidesPerView: 1.5,
-    navigation: { enabled: configs?.navigation?.enabledMobile },
-    pagination: { enabled: configs?.pagination?.enabledMobile },
+    pagination: {
+      enabled: device === "desktop" ? configs?.pagination?.enabledDesktop : configs?.pagination?.enabledMobile
+    },
+    navigation: {
+      enabled: device === "desktop" ? configs?.navigation?.enabledDesktop : configs?.navigation?.enabledMobile
+    },
     breakpoints: {
       768: {
-        slidesPerView: 2,
-        navigation: { enabled: configs?.navigation?.enabledDesktop },
-        pagination: { enabled: configs?.pagination?.enabledDesktop }
+        slidesPerView: 2
       },
       1280: {
-        slidesPerView: 3,
-        navigation: { enabled: configs?.navigation?.enabledDesktop },
-        pagination: { enabled: configs?.pagination?.enabledDesktop }
+        slidesPerView: 3
       },
       1440: {
-        slidesPerView: 4,
-        navigation: { enabled: configs?.navigation?.enabledDesktop },
-        pagination: { enabled: configs?.pagination?.enabledDesktop }
+        slidesPerView: 4
       }
     }
   } as ISliderConfigs;

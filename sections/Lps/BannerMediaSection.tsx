@@ -9,6 +9,7 @@ import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultBannerMedia } from "site/configs/BannerMediaSection.ts";
+import { useDevice } from "@deco/deco/hooks";
 
 /**
  * @title {{#id}}{{id}}{{/id}}{{^id}}Ícone{{/id}}
@@ -55,6 +56,7 @@ export default function BannerMediaSliderSection({
   icons = DefaultBannerMedia.icons
 }: Props) {
   const id = useId();
+  const device = useDevice();
 
   if (!banners?.length) return null;
 
@@ -66,7 +68,8 @@ export default function BannerMediaSliderSection({
     },
     spaceBetween = 32,
     centeredSlides = true,
-    pagination
+    pagination,
+    navigation
   } = configs ?? {};
 
   const sliderConfig = {
@@ -75,7 +78,10 @@ export default function BannerMediaSliderSection({
     spaceBetween,
     centeredSlides,
     pagination: {
-      enabled: pagination?.enabledMobile ?? false
+      enabled: device === "desktop" ? pagination?.enabledDesktop : pagination?.enabledMobile
+    },
+    navigation: {
+      enabled: device === "desktop" ? navigation?.enabledDesktop : navigation?.enabledMobile
     },
     breakpoints: {
       768: {

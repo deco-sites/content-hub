@@ -89,6 +89,16 @@
           "text": "Ver todos",
           "href": "/",
           "bgColor": "#e60a0a"
+        },
+        "configs": {
+          "navigation": {
+            "enabledDesktop": true,
+            "enabledMobile": false
+          },
+          "pagination": {
+            "enabledMobile": false,
+            "enabledDesktop": false
+          }
         }
       }
     }

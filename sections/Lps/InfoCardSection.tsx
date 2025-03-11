@@ -5,6 +5,8 @@ import type { IInfoCard } from "site/types/InfoCard.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultInfoCardSection } from "site/configs/InfoCardSection.ts";
+import { useDevice } from "@deco/deco/hooks";
+
 /**
  * @description Componente de seção contendo um cartão informativo.
  */
@@ -33,16 +35,20 @@ export default function InfoCardSection({
   configs,
 }: Props) {
   const id = useId();
+  const device = useDevice();
 
   if (!infoCards?.length) return null;
 
-  const { pagination, slidesPerViewResponsive } = configs ?? {};
+  const { pagination, navigation, slidesPerViewResponsive } = configs ?? {};
 
   const sliderConfig = {
     ...configs,
     slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
     pagination: {
-      enabled: pagination?.enabledMobile ?? true,
+      enabled: device === "desktop" ? pagination?.enabledDesktop : pagination?.enabledMobile
+    },
+    navigation: {
+      enabled: device === "desktop" ? navigation?.enabledDesktop : navigation?.enabledMobile
     },
     breakpoints: {
       768: {

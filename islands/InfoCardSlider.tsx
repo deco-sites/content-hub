@@ -44,9 +44,7 @@ function Island({ infoCards = [], configs = {}, rootId }: Props) {
             container: `w-full info-card ${
               props?.direction === "left" ? "flex-row" : "flex-row-reverse"
             }`,
-            children: `info-card-children w-full h-full flex flex-col items-center ${
-              props?.direction === "left" ? "justify-end" : "justify-start"
-            }`,
+            children: `info-card-children w-full h-full flex flex-col justify-center`,
             button: `flex mt-8 w-full ${
               props?.direction === "left"
                 ? "justify-start lg:justify-end"

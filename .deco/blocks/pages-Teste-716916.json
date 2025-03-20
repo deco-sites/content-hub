@@ -1,0 +1,207 @@
+{
+  "name": "Teste",
+  "path": "/teste1",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "title": "<p></p>",
+          "fullWidth": true
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high",
+              "preload": false
+            },
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/8201d5fb-4cb4-4e21-8650-823cf5530a54/Image.png",
+              "mobile": "https://data.decoassets.com/content-hub/71843d75-4551-47d8-97c7-6af5a7e38b2c/image-(15).png"
+            },
+            "alt": "banner ecoplus"
+          }
+        ],
+        "configs": {
+          "navigation": {
+            "enabledMobile": false,
+            "enabledDesktop": false
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+        "section": {
+          "title": "<h1 style=\"text-align: center\"><span style=\"font-size: 24pt\">Programa EcoPlus: sua casa bem vivida com mais economia e sustentabilidade</span><span style=\"color: rgb(0, 0, 0); font-size: 20pt\">&nbsp;</span></h1><p style=\"text-align: center\"></p><p style=\"text-align: center\">Os produtos Electrolux <span style=\"color: var(--clrSquiggleHighlightTextColor,#000000)\">EcoPlus</span> oferecem alta eficiência energética para proporcionar maior economia de água e energia, evitar o desperdício e reduzir o impacto ambiental.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p><p></p>",
+          "fullWidth": true
+        },
+        "icons": [
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "imageSrc": "https://data.decoassets.com/content-hub/ec154f88-87b6-478e-99db-88b377d36d70/Vector-(2).png",
+            "alt": "categoria 1",
+            "title": "categoria 1"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "imageSrc": "https://data.decoassets.com/content-hub/268cc044-9994-4445-b0ac-051e01beb3b5/Vector-(2).png",
+            "alt": "categoria 2",
+            "title": "categoria 2"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "imageSrc": "https://data.decoassets.com/content-hub/ddea1a22-dc17-4718-8b77-c261ef49f5f2/Vector-(2).png",
+            "alt": "categoria 3",
+            "title": "categoria 3"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "imageSrc": "https://data.decoassets.com/content-hub/05d457e5-a703-46f5-a9e2-047f2c74432d/Vector-(2).png",
+            "alt": "categoria 4",
+            "title": "categoria 4"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "imageSrc": "https://data.decoassets.com/content-hub/7bc042f1-f755-4ec1-a3d7-8d15658ddd3e/Vector-(2).png",
+            "alt": "categoria 5",
+            "title": "categoria 5"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "left",
+            "typeOfContent": {
+              "srcDesktop": "https://data.decoassets.com/content-hub/991768b2-e2f1-444b-9410-d19af9158130/5_cavidade-2.png",
+              "srcMobile": "https://data.decoassets.com/content-hub/25a24769-674b-4df1-9caa-b8b607953e3e/5_cavidade-2-(1).png",
+              "alt": "cavidade"
+            },
+            "richText": "<h2 style=\"text-align: right\"><span style=\"font-size: 18pt\">Linha de produtos com EcoPlus</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></h2><p style=\"text-align: right\"><span style=\"font-size: 15pt\">Conheça os produtos Electrolux EcoPlus, desenvolvidos com máxima eficiência energética para reduzir o impacto ambiental e promover a sustentabilidade.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageWithTextColumnsSection.tsx",
+        "right": {
+          "text": "<p><span style=\"font-size: 14pt\">O programa EcoPlus seleciona os produtos Electrolux com base na etiquetagem energética do Inmetro, além de rigorosos testes que atestam o desempenho em economia de energia e água de cada modelo. Os produtos com os maiores índices de eficiência, isto é, com maior redução no consumo de água e energia e menor impacto ambiental, são selecionados para o programa EcoPlus e identificados com o selo no site da Electrolux.</span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>",
+          "backgroundColor": "#303F29",
+          "textColor": "#FFFFFF"
+        },
+        "section": {
+          "title": "<h2><span style=\"color: rgb(0, 0, 0); font-size: 22pt\">Critério de seleção e impacto real dos produtos Ecoplus</span></h2><p style=\"text-align: center\">Entenda como os produtos Electrolux EcoPlus são selecionados e de que maneira reduzem o impacto ambiental e proporcionam economia na sua casa.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p>",
+          "fullWidth": true
+        },
+        "left": {
+          "text": "<p><span style=\"font-size: 14pt\">Os produtos Electrolux EcoPlus oferecem alta eficiência energética, com mais economia na sua rotina e impacto ambiental reduzido. As geladeiras proporcionam economia de água de até 47%, enquanto os ares-condicionados são até 80% mais eficientes, por exemplo. Já o consumo de água é reduzido em até 90% a cada ciclo nas lava-louças, enquanto as lava e seca estão entre as mais econômicas do mercado no Brasil.</span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>",
+          "backgroundColor": "#617F57",
+          "textColor": "#FFFFFF"
+        },
+        "image": {
+          "src": {
+            "desktop": "https://data.decoassets.com/content-hub/83b8d52a-e442-4c50-a077-50f128773d16/Image.png",
+            "mobile": "https://data.decoassets.com/content-hub/3bef3f22-56ed-4bf5-9cbd-4dadf7626935/comparativo_vapor_bake-1.png"
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "right",
+            "titleCMS": "Geladeiras",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f71d6495-6998-4370-89c7-8393f36b1ff8/Aspect-Ratio.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/fb8d248d-9693-4649-8d30-07d656a056d4/Aspect-Ratio.png",
+              "alt": "geladeira"
+            },
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Geladeiras</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 18pt\">As geladeiras Electrolux EcoPlus são equipadas com tecnologia Inverter, que apresenta as condições ideais para preservar os alimentos. Os modelos promovem economia de até 47% em energia e estão entre os mais econômicos do mercado.</span><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">&nbsp;</span></p><p></p><p><span style=\"font-size: 14pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site da Electrolux.</span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+          },
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "right",
+            "titleCMS": "Frigobar",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f71d6495-6998-4370-89c7-8393f36b1ff8/Aspect-Ratio.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/fb8d248d-9693-4649-8d30-07d656a056d4/Aspect-Ratio.png",
+              "alt": "geladeira"
+            },
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Frigobares</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 18pt\">Os frigobares Electrolux EcoPlus oferecem tecnologias que reduzem o consumo de energia em até 30%*, oferecendo alta eficiência energética para promover economia de eletricidade e reduzir o impacto ambiental do produto.</span><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">&nbsp;</span></p><p></p><p><span style=\"font-size: 14pt\">*Economia obtida considerando o segmento de frigobares com volume interno de 46,5 a 120 litros, conforme tabela de eficiência energética de 31/01/2023 do Programa Brasileiro de Etiquetagem, nos modelos EM50 127V e 220V, EM120 220V. Para outros modelos, consulte o site.</span></p>"
+          },
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "right",
+            "titleCMS": "Geladeiras",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f71d6495-6998-4370-89c7-8393f36b1ff8/Aspect-Ratio.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/fb8d248d-9693-4649-8d30-07d656a056d4/Aspect-Ratio.png",
+              "alt": "geladeira"
+            },
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Geladeiras</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 18pt\">As geladeiras Electrolux EcoPlus são equipadas com tecnologia Inverter, que apresenta as condições ideais para preservar os alimentos. Os modelos promovem economia de até 47% em energia e estão entre os mais econômicos do mercado.</span><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">&nbsp;</span></p><p></p><p><span style=\"font-size: 16pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site da Electrolux.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p>"
+          },
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "right",
+            "titleCMS": "Geladeiras",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f71d6495-6998-4370-89c7-8393f36b1ff8/Aspect-Ratio.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/fb8d248d-9693-4649-8d30-07d656a056d4/Aspect-Ratio.png",
+              "alt": "geladeira"
+            },
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Geladeiras</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 18pt\">As geladeiras Electrolux EcoPlus são equipadas com tecnologia Inverter, que apresenta as condições ideais para preservar os alimentos. Os modelos promovem economia de até 47% em energia e estão entre os mais econômicos do mercado.</span><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">&nbsp;</span></p><p></p><p><span style=\"font-size: 16pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site da Electrolux.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p>"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

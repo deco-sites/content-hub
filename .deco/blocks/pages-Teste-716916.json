@@ -103,11 +103,19 @@
             "typeOfContent": {
               "srcDesktop": "https://data.decoassets.com/content-hub/991768b2-e2f1-444b-9410-d19af9158130/5_cavidade-2.png",
               "srcMobile": "https://data.decoassets.com/content-hub/25a24769-674b-4df1-9caa-b8b607953e3e/5_cavidade-2-(1).png",
-              "alt": "cavidade"
+              "alt": "geladeira ecoplus"
             },
-            "richText": "<h2 style=\"text-align: right\"><span style=\"font-size: 18pt\">Linha de produtos com EcoPlus</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></h2><p style=\"text-align: right\"><span style=\"font-size: 15pt\">Conheça os produtos Electrolux EcoPlus, desenvolvidos com máxima eficiência energética para reduzir o impacto ambiental e promover a sustentabilidade.</span></p>"
+            "richText": "<h2 style=\"text-align: right\"><span style=\"font-size: 18pt\">Linha de produtos com EcoPlus</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></h2><p style=\"text-align: right\"><span style=\"font-size: 15pt\">Conheça os produtos Electrolux EcoPlus, desenvolvidos com máxima eficiência energética para reduzir o impacto ambiental e promover a sustentabilidade.</span></p>",
+            "titleCMS": "Linha de produtos"
           }
-        ]
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 1
+          }
+        }
       }
     },
     {
@@ -132,6 +140,11 @@
           "src": {
             "desktop": "https://data.decoassets.com/content-hub/83b8d52a-e442-4c50-a077-50f128773d16/Image.png",
             "mobile": "https://data.decoassets.com/content-hub/3bef3f22-56ed-4bf5-9cbd-4dadf7626935/comparativo_vapor_bake-1.png"
+          },
+          "alt": "eco plus",
+          "loadingOptions": {
+            "preload": true,
+            "fetchPriority": "high"
           }
         }
       }
@@ -155,46 +168,79 @@
               "srcMobile": "https://assets.decocache.com/content-hub/fb8d248d-9693-4649-8d30-07d656a056d4/Aspect-Ratio.png",
               "alt": "geladeira"
             },
-            "richText": "<h2><strong><span style=\"font-size: 14pt\">Geladeiras</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 18pt\">As geladeiras Electrolux EcoPlus são equipadas com tecnologia Inverter, que apresenta as condições ideais para preservar os alimentos. Os modelos promovem economia de até 47% em energia e estão entre os mais econômicos do mercado.</span><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">&nbsp;</span></p><p></p><p><span style=\"font-size: 14pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site da Electrolux.</span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
-          },
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Geladeiras</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">As geladeiras Electrolux EcoPlus são equipadas com tecnologia Inverter, que apresenta as condições ideais para preservar os alimentos. Os modelos promovem economia de até 47%* em energia e estão entre os mais econômicos do mercado.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site da Electrolux.</span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "infoCards": [
           {
             "link": {
               "color": "#000000"
             },
-            "direction": "right",
+            "direction": "left",
             "titleCMS": "Frigobar",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/f71d6495-6998-4370-89c7-8393f36b1ff8/Aspect-Ratio.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/fb8d248d-9693-4649-8d30-07d656a056d4/Aspect-Ratio.png",
+              "srcDesktop": "https://assets.decocache.com/content-hub/73fe4996-dd37-4c70-b96e-c5eaf02eb208/Oven_OE9XB_Front_Electrolux_Portuguese-2.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/9080aed3-4b33-41d8-b24c-ef101a532460/Oven_OE9XB_Front_Electrolux_Portuguese-2.png",
               "alt": "geladeira"
             },
-            "richText": "<h2><strong><span style=\"font-size: 14pt\">Frigobares</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 18pt\">Os frigobares Electrolux EcoPlus oferecem tecnologias que reduzem o consumo de energia em até 30%*, oferecendo alta eficiência energética para promover economia de eletricidade e reduzir o impacto ambiental do produto.</span><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">&nbsp;</span></p><p></p><p><span style=\"font-size: 14pt\">*Economia obtida considerando o segmento de frigobares com volume interno de 46,5 a 120 litros, conforme tabela de eficiência energética de 31/01/2023 do Programa Brasileiro de Etiquetagem, nos modelos EM50 127V e 220V, EM120 220V. Para outros modelos, consulte o site.</span></p>"
-          },
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Frigobares</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Os frigobares Electrolux EcoPlus oferecem tecnologias que reduzem o consumo de energia em até 30%*, oferecendo alta eficiência energética para promover economia de eletricidade e reduzir o impacto ambiental do produto.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Economia obtida considerando o segmento de frigobares com volume interno de 46,5 a 120 litros, conforme tabela de eficiência energética de 31/01/2023 do Programa Brasileiro de Etiquetagem, nos modelos EM50 127V e 220V, EM120 220V. Para outros modelos, consulte o site.</span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "infoCards": [
           {
             "link": {
               "color": "#000000"
             },
             "direction": "right",
-            "titleCMS": "Geladeiras",
+            "titleCMS": "Lavadoras",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/f71d6495-6998-4370-89c7-8393f36b1ff8/Aspect-Ratio.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/fb8d248d-9693-4649-8d30-07d656a056d4/Aspect-Ratio.png",
-              "alt": "geladeira"
+              "srcDesktop": "https://assets.decocache.com/content-hub/c9477f51-5df9-4f91-8172-879ed8fcd45a/5_cavidade-1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/f4da5c65-f289-4e27-94b4-26ebd9956e20/5_cavidade-1.png",
+              "alt": "lava e seca"
             },
-            "richText": "<h2><strong><span style=\"font-size: 14pt\">Geladeiras</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 18pt\">As geladeiras Electrolux EcoPlus são equipadas com tecnologia Inverter, que apresenta as condições ideais para preservar os alimentos. Os modelos promovem economia de até 47% em energia e estão entre os mais econômicos do mercado.</span><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">&nbsp;</span></p><p></p><p><span style=\"font-size: 16pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site da Electrolux.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p>"
-          },
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Lava e Seca</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">A lava e seca Electrolux EcoPlus é equipada com tecnologia que ajusta o tempo e o consumo de água e de energia, evitando o desperdício. Os modelos estão entre os mais econômicos em relação ao consumo de água da categoria*.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Em comparação com o consumo de água de lavadoras lava e seca de mesma capacidade (11 kg), segundo divulgação do Programa Brasileiro de Etiquetagem disponível no site do Inmetro. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "infoCards": [
           {
             "link": {
               "color": "#000000"
             },
             "direction": "right",
-            "titleCMS": "Geladeiras",
+            "titleCMS": "Lavadoras",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/f71d6495-6998-4370-89c7-8393f36b1ff8/Aspect-Ratio.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/fb8d248d-9693-4649-8d30-07d656a056d4/Aspect-Ratio.png",
-              "alt": "geladeira"
+              "srcDesktop": "https://assets.decocache.com/content-hub/c9477f51-5df9-4f91-8172-879ed8fcd45a/5_cavidade-1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/f4da5c65-f289-4e27-94b4-26ebd9956e20/5_cavidade-1.png",
+              "alt": "lava e seca"
             },
-            "richText": "<h2><strong><span style=\"font-size: 14pt\">Geladeiras</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 18pt\">As geladeiras Electrolux EcoPlus são equipadas com tecnologia Inverter, que apresenta as condições ideais para preservar os alimentos. Os modelos promovem economia de até 47% em energia e estão entre os mais econômicos do mercado.</span><span style=\"color: rgb(0, 0, 0); font-size: 18pt\">&nbsp;</span></p><p></p><p><span style=\"font-size: 16pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site da Electrolux.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p>"
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Lava e Seca</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">A lava e seca Electrolux EcoPlus é equipada com tecnologia que ajusta o tempo e o consumo de água e de energia, evitando o desperdício. Os modelos estão entre os mais econômicos em relação ao consumo de água da categoria*.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Em comparação com o consumo de água de lavadoras lava e seca de mesma capacidade (11 kg), segundo divulgação do Programa Brasileiro de Etiquetagem disponível no site do Inmetro. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
           }
         ]
       }

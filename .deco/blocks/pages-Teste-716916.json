@@ -97,7 +97,7 @@
         "infoCards": [
           {
             "link": {
-              "color": "#000000"
+              "color": ""
             },
             "direction": "left",
             "typeOfContent": {
@@ -122,14 +122,14 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/ImageWithTextColumnsSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "title": "<h2><span style=\"color: rgb(0, 0, 0); font-size: 22pt\">Critério de seleção e impacto real dos produtos Ecoplus</span></h2><p style=\"text-align: center\">Entenda como os produtos Electrolux EcoPlus são selecionados e de que maneira reduzem o impacto ambiental e proporcionam economia na sua casa.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p>"
+        },
         "right": {
           "text": "<p><span style=\"font-size: 14pt\">O programa EcoPlus seleciona os produtos Electrolux com base na etiquetagem energética do Inmetro, além de rigorosos testes que atestam o desempenho em economia de energia e água de cada modelo. Os produtos com os maiores índices de eficiência, isto é, com maior redução no consumo de água e energia e menor impacto ambiental, são selecionados para o programa EcoPlus e identificados com o selo no site da Electrolux.</span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>",
           "backgroundColor": "#303F29",
           "textColor": "#FFFFFF"
-        },
-        "section": {
-          "title": "<h2><span style=\"color: rgb(0, 0, 0); font-size: 22pt\">Critério de seleção e impacto real dos produtos Ecoplus</span></h2><p style=\"text-align: center\">Entenda como os produtos Electrolux EcoPlus são selecionados e de que maneira reduzem o impacto ambiental e proporcionam economia na sua casa.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p>",
-          "fullWidth": true
         },
         "left": {
           "text": "<p><span style=\"font-size: 14pt\">Os produtos Electrolux EcoPlus oferecem alta eficiência energética, com mais economia na sua rotina e impacto ambiental reduzido. As geladeiras proporcionam economia de água de até 47%, enquanto os ares-condicionados são até 80% mais eficientes, por exemplo. Já o consumo de água é reduzido em até 90% a cada ciclo nas lava-louças, enquanto as lava e seca estão entre as mais econômicas do mercado no Brasil.</span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>",
@@ -144,7 +144,8 @@
           "alt": "eco plus",
           "loadingOptions": {
             "preload": true,
-            "fetchPriority": "high"
+            "fetchPriority": "high",
+            "loading": "eager"
           }
         }
       }
@@ -154,12 +155,16 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "marginTopDesktop": 0,
+          "marginTopMobile": 0,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
         },
         "infoCards": [
           {
             "link": {
-              "color": "#000000"
+              "color": ""
             },
             "direction": "right",
             "titleCMS": "Geladeiras",
@@ -178,12 +183,14 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
         },
         "infoCards": [
           {
             "link": {
-              "color": "#000000"
+              "color": ""
             },
             "direction": "left",
             "titleCMS": "Frigobar",
@@ -202,12 +209,14 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
         },
         "infoCards": [
           {
             "link": {
-              "color": "#000000"
+              "color": ""
             },
             "direction": "right",
             "titleCMS": "Lavadoras",
@@ -226,21 +235,268 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
+          "fullWidth": true,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": ""
+            },
+            "direction": "left",
+            "titleCMS": "Lavadoras",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/c721c5fd-d670-4ffa-b91f-31a77daeebb4/Aspect-Ratio-(2).png",
+              "srcMobile": "https://assets.decocache.com/content-hub/c5e5703b-b413-4fda-9f7a-1ec24412de26/Aspect-Ratio-(2).png",
+              "alt": "ar condicionado"
+            },
+            "richText": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Ares-condicionados</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Os ares-condicionados Electrolux EcoPlus são equipados com a tecnologia Inverter, que evita as oscilações de energia e proporciona mais eficiência energética. Os modelos são até 80% mais eficientes em energia elétrica*.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Resultados obtidos comparando o modelo Electrolux 18.000 BTUs com o modelo convencional on/off, conforme portaria INMETRO nº269/2021. Para outros modelos, consulte o site. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
           "fullWidth": true
         },
         "infoCards": [
           {
             "link": {
-              "color": "#000000"
+              "color": ""
             },
             "direction": "right",
             "titleCMS": "Lavadoras",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/c9477f51-5df9-4f91-8172-879ed8fcd45a/5_cavidade-1.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/f4da5c65-f289-4e27-94b4-26ebd9956e20/5_cavidade-1.png",
-              "alt": "lava e seca"
+              "srcMobile": "https://assets.decocache.com/content-hub/555a927a-c7c1-412d-8af3-26f2932fb21b/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png",
+              "srcDesktop": "https://assets.decocache.com/content-hub/fd87d071-6b0b-4230-93b6-5fb26827a13f/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png",
+              "alt": "Purificador de água"
             },
-            "richText": "<h2><strong><span style=\"font-size: 14pt\">Lava e Seca</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">A lava e seca Electrolux EcoPlus é equipada com tecnologia que ajusta o tempo e o consumo de água e de energia, evitando o desperdício. Os modelos estão entre os mais econômicos em relação ao consumo de água da categoria*.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Em comparação com o consumo de água de lavadoras lava e seca de mesma capacidade (11 kg), segundo divulgação do Programa Brasileiro de Etiquetagem disponível no site do Inmetro. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+            "richText": "<h2><strong><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Purificadores de água</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></strong></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Os purificadores de água do programa EcoPlus economizam até cinco vezes mais energia elétrica*. Além disso, contam com compressor ecológico que reduz o impacto ambiental.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Resultados obtidos pela comparação dos purificadores eletrônicos (PE11/PE12), que consomem 0,25 kWh para gelar 1 litro de água, com os purificadores com compressor (PC01B/PC01X), que consomem apenas 0,05 kWh para gelar a mesma quantidade de água. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
+        "section": {},
+        "styleArticleOption": "Type 1",
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f77b2728-af87-4e89-aead-c01b76d2f9cf/Aspect-Ratio.png",
+                "mobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "text": "Saiba mais",
+              "title": "Saiba mais",
+              "href": "xx"
+            },
+            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">O que é a tecnologia Ecoplus?</span></h2><p>O programa Ecoplus abrange os eletrodomésticos Electrolux com alta eficiência energética. São produtos que consomem menos energia e água, evitam o desperdício e proporcionam redução no impacto ambiental durante o uso. Todos são identificados com o selo EcoPlus.</p>"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/31023b83-92dd-4769-b8b2-da176540a9bf/5_cavidade-1.png",
+                "mobile": "https://assets.decocache.com/content-hub/c03e4c15-46fc-4e20-9644-fc91adcea4bc/5_cavidade-1.png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "text": "Saiba mais",
+              "title": "Saiba mais",
+              "href": "xx"
+            },
+            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Benefícios do Ecoplus</span></h2><p>Ao selecionar e identificar produtos com maior eficiência energética, o programa EcoPlus contribui para que o consumidor faça uma escolha consciente, que promove mais economia no consumo de água e energia e promove a sustentabilidade.</p>"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7aa14835-c207-406e-b02e-b6063584a767/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/1ace70ae-c468-4eaf-9b5c-91fe162fc471/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "text": "Saiba mais",
+              "title": "Saiba mais",
+              "href": "xx"
+            },
+            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Como a tecnologia funciona?</span></h2><p>Todos os produtos são avaliados com base na etiquetagem energética e passam por testes para análise do desempenho. Com base nisso, os modelos mais eficientes em energia e consumo de água são selecionados e identificados com o selo EcoPlus.</p>"
+          }
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "desktop": 4
+          },
+          "navigation": {
+            "enabledMobile": true
+          },
+          "pagination": {
+            "enabledMobile": true
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "section": {
+          "title": "<h2><span style=\"font-size: 20pt\">RECOMENDADOS PARA VOCÊ</span></h2>",
+          "fullWidth": true
+        },
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2690",
+            "count": 10,
+            "hideUnavailableItems": true
+          }
+        },
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/02906636-7525-4180-a052-8d02b145d730/Rita-Lobo-v3.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/84dcd53e-b58b-4216-b521-c68a29e42670/Rita-Lobo-v3.png"
+        },
+        "text": "<p><span style=\"font-size: 16pt\">O melhor da tecnologia Electrolux&nbsp;</span></p>",
+        "link": {
+          "text": "Conheça todos os produtos",
+          "bgColor": "#617F57"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": ""
+            },
+            "direction": "right",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/a3085aca-016a-4b75-bad7-a95fd7bd8b97/Oven_OE9XB_Front_Electrolux_Portuguese-2-(2).png",
+              "srcMobile": "https://assets.decocache.com/content-hub/d48b0bb5-b4af-467c-99b8-ceaf533b6195/Oven_OE9XB_Front_Electrolux_Portuguese-2-(2).png",
+              "alt": "coleta e descarte"
+            },
+            "richText": "<h2 style=\"text-align: justify\"><span style=\"font-size: 18pt\">Coleta e descarte consciente sem custo </span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 15pt\">Ao comprar um novo eletrodoméstico Electrolux, você pode solicitar a coleta do seu produto antigo, que está sendo substituído, para que ele seja descartado corretamente. Além de não ter custos com a coleta, você contribui para o descarte consciente do produto. </span></p>",
+            "titleCMS": "coleta e descarte"
+          }
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 1
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ReviewsSliderSection.tsx",
+        "section": {
+          "title": "<p><span style=\"font-size: 18pt\">Quem escolhe melhor, vive melhor</span></p>"
+        },
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/350e32dc-cf43-41af-910a-780ed4a478ab/0a8b32d1738e4e6342812aadb023aa47.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/03825185-de44-4b4f-94be-bc9e4e3a1a64/0a8b32d1738e4e6342812aadb023aa47.png",
+          "alt": "avaliações"
+        },
+        "sectionReviewCards": [
+          {
+            "reviewStars": {
+              "quantity": 5,
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfStarSrc.svg"
+            },
+            "reviewDescription": "loremipsusloremipsusloremipsusloremipsusloremipsusloremipsus",
+            "reviewProductName": "Geladeira",
+            "reviewPersonName": "João"
+          },
+          {
+            "reviewStars": {
+              "quantity": 5,
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfStarSrc.svg"
+            },
+            "reviewDescription": "loremipsusloremipsusloremipsusloremipsusloremipsusloremipsus",
+            "reviewProductName": "Geladeira",
+            "reviewPersonName": "João"
+          },
+          {
+            "reviewStars": {
+              "quantity": 5,
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfStarSrc.svg"
+            },
+            "reviewDescription": "loremipsusloremipsusloremipsusloremipsusloremipsusloremipsus",
+            "reviewProductName": "Geladeira",
+            "reviewPersonName": "João"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "title": "<p><span style=\"font-size: 16pt\">Já segue a Electrolux?</span></p><p><span>Nas nossas redes sociais tem sempre uma nova promoção <br>ou dica incrível de sustentabilidade pra você.</span></p>",
+        "icons": [
+          {
+            "id": "Twitter",
+            "href": "/"
+          },
+          {
+            "id": "Facebook",
+            "href": "/"
+          },
+          {
+            "id": "Instagram",
+            "href": "/"
+          },
+          {
+            "id": "Pinterest",
+            "href": "/"
           }
         ]
       }

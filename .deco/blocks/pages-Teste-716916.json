@@ -210,9 +210,10 @@
             "direction": "left",
             "titleCMS": "Frigobar",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/73fe4996-dd37-4c70-b96e-c5eaf02eb208/Oven_OE9XB_Front_Electrolux_Portuguese-2.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/9080aed3-4b33-41d8-b24c-ef101a532460/Oven_OE9XB_Front_Electrolux_Portuguese-2.png",
-              "alt": "geladeira"
+              "autoplay": true,
+              "iframeProps": {},
+              "src": "https://youtu.be/UZRA-FPjE4s?si=cE4vTlZGS8L-F0-m",
+              "title": "Conheça os Frigobares Electrolux EcoPlus"
             },
             "richText": "<h2><strong><span style=\"font-size: 14pt\">Frigobares</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Os frigobares Electrolux EcoPlus oferecem tecnologias que reduzem o consumo de energia em até 30%*, oferecendo alta eficiência energética para promover economia de eletricidade e reduzir o impacto ambiental do produto.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Economia obtida considerando o segmento de frigobares com volume interno de 46,5 a 120 litros, conforme tabela de eficiência energética de 31/01/2023 do Programa Brasileiro de Etiquetagem, nos modelos EM50 127V e 220V, EM120 220V. Para outros modelos, consulte o site.</span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
           }
@@ -236,9 +237,37 @@
             "direction": "right",
             "titleCMS": "Lavadoras",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/c9477f51-5df9-4f91-8172-879ed8fcd45a/5_cavidade-1.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/f4da5c65-f289-4e27-94b4-26ebd9956e20/5_cavidade-1.png",
-              "alt": "lava e seca"
+              "autoplay": true,
+              "iframeProps": {},
+              "src": "https://youtu.be/m4rA8DGLuKY?si=Zcrr79vVEr_3r67u",
+              "title": "Conheça as Lavadoras Electrolux EcoPlus"
+            },
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Lava e Seca</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">A lava e seca Electrolux EcoPlus é equipada com tecnologia que ajusta o tempo e o consumo de água e de energia, evitando o desperdício. Os modelos estão entre os mais econômicos em relação ao consumo de água da categoria*.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Em comparação com o consumo de água de lavadoras lava e seca de mesma capacidade (11 kg), segundo divulgação do Programa Brasileiro de Etiquetagem disponível no site do Inmetro. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": ""
+            },
+            "direction": "right",
+            "titleCMS": "Lavadoras",
+            "typeOfContent": {
+              "autoplay": true,
+              "iframeProps": {},
+              "src": "https://youtu.be/m4rA8DGLuKY?si=Zcrr79vVEr_3r67u",
+              "title": "Conheça as Lavadoras Electrolux EcoPlus"
             },
             "richText": "<h2><strong><span style=\"font-size: 14pt\">Lava e Seca</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">A lava e seca Electrolux EcoPlus é equipada com tecnologia que ajusta o tempo e o consumo de água e de energia, evitando o desperdício. Os modelos estão entre os mais econômicos em relação ao consumo de água da categoria*.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Em comparação com o consumo de água de lavadoras lava e seca de mesma capacidade (11 kg), segundo divulgação do Programa Brasileiro de Etiquetagem disponível no site do Inmetro. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
           }
@@ -262,9 +291,10 @@
             "direction": "left",
             "titleCMS": "Lavadoras",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/c721c5fd-d670-4ffa-b91f-31a77daeebb4/Aspect-Ratio-(2).png",
-              "srcMobile": "https://assets.decocache.com/content-hub/c5e5703b-b413-4fda-9f7a-1ec24412de26/Aspect-Ratio-(2).png",
-              "alt": "ar condicionado"
+              "autoplay": true,
+              "iframeProps": {},
+              "src": "https://youtu.be/UEVsNzqS0IA?si=wBaVKBYLJz-vnxRt",
+              "title": "Conheça os Ares-Condicionados Electrolux EcoPlus"
             },
             "richText": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Ares-condicionados</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Os ares-condicionados Electrolux EcoPlus são equipados com a tecnologia Inverter, que evita as oscilações de energia e proporciona mais eficiência energética. Os modelos são até 80% mais eficientes em energia elétrica*.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Resultados obtidos comparando o modelo Electrolux 18.000 BTUs com o modelo convencional on/off, conforme portaria INMETRO nº269/2021. Para outros modelos, consulte o site. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
           }
@@ -286,11 +316,12 @@
             "direction": "right",
             "titleCMS": "Lavadoras",
             "typeOfContent": {
-              "srcMobile": "https://assets.decocache.com/content-hub/555a927a-c7c1-412d-8af3-26f2932fb21b/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png",
-              "srcDesktop": "https://assets.decocache.com/content-hub/fd87d071-6b0b-4230-93b6-5fb26827a13f/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png",
-              "alt": "Purificador de água"
+              "src": "https://youtu.be/UmPc5t_4S88?si=NRb-ocLK_b9547zt",
+              "autoplay": true,
+              "iframeProps": {},
+              "title": "Conheça os Purificadores de Água Electrolux EcoPlus"
             },
-            "richText": "<h2><strong><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Purificadores de água</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></strong></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Os purificadores de água do programa EcoPlus economizam até cinco vezes mais energia elétrica*. Além disso, contam com compressor ecológico que reduz o impacto ambiental.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Resultados obtidos pela comparação dos purificadores eletrônicos (PE11/PE12), que consomem 0,25 kWh para gelar 1 litro de água, com os purificadores com compressor (PC01B/PC01X), que consomem apenas 0,05 kWh para gelar a mesma quantidade de água. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+            "richText": "<h2><strong><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Lava-louças</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></strong></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">As lava-louças do programa EcoPlus oferecem economia de até 90% de água a cada ciclo, o que corresponde a 117 litros por dia, em comparação com a lavagem manual da mesma quantidade de louça.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*15 minutos de torneira por dia lavando a pia ou 117 litros/ 15min = 7,8 litros ou 0,13 litros/s, segundo a Sabesp. Enquanto um ciclo por dia, no programa Dia a Dia da Lava-louças 14 serviços, equivale a 12 litros.  </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
           }
         ]
       }
@@ -388,14 +419,14 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
         "section": {
-          "title": "<h2><span style=\"font-size: 22pt\">RECOMENDADOS PARA VOCÊ</span></h2>",
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<h2><span style=\"font-size: 22pt\">RECOMENDADOS PARA VOCÊ</span></h2>"
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "2690",
+            "collection": "26140",
             "count": 10,
             "hideUnavailableItems": true
           }
@@ -404,7 +435,7 @@
           "srcDesktop": "https://assets.decocache.com/content-hub/02906636-7525-4180-a052-8d02b145d730/Rita-Lobo-v3.png",
           "srcMobile": "https://assets.decocache.com/content-hub/84dcd53e-b58b-4216-b521-c68a29e42670/Rita-Lobo-v3.png"
         },
-        "text": "<p><span style=\"color: #ffffff; font-size: 20pt\">O melhor da tecnologia Electrolux&nbsp;</span></p><p><span style=\"font-size: 16pt\">com a máxima eficiência EcoPlus</span></p>",
+        "text": "<p><strong><span style=\"color: rgb(255, 255, 255); font-size: 22pt\">O melhor da tecnologia Electrolux&nbsp;</span></strong></p><p><span style=\"font-size: 16pt\">com a máxima eficiência EcoPlus</span></p>",
         "link": {
           "text": "Conheça todos os produtos",
           "bgColor": "#617F57",
@@ -449,7 +480,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/ReviewsSliderSection.tsx",
         "section": {
-          "title": "<p><span style=\"color: #fafafa; font-size: 18pt\">Quem escolhe melhor, vive melhor</span></p>",
+          "title": "<h2><span style=\"color: rgb(250, 250, 250); font-size: 22pt\">Quem escolhe melhor, vive melhor</span></h2>",
           "fullWidth": true
         },
         "background": {
@@ -509,23 +540,71 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
-        "title": "<p><span style=\"font-size: 16pt\">Já segue a Electrolux?</span></p><p><span>Nas nossas redes sociais tem sempre uma nova promoção <br>ou dica incrível de sustentabilidade pra você.</span></p>",
+        "title": "<p><span style=\"font-size: 16pt\">Já segue a Electrolux?</span></p><p></p><p>Nas nossas redes sociais tem sempre uma nova promoção <br>ou dica incrível de sustentabilidade pra você.</p>",
         "icons": [
           {
-            "id": "Twitter",
-            "href": "/"
-          },
-          {
             "id": "Facebook",
-            "href": "/"
+            "href": "https://www.facebook.com/Electrolux"
           },
           {
             "id": "Instagram",
-            "href": "/"
+            "href": "https://www.instagram.com/electroluxbr"
+          },
+          {
+            "id": "Linkedin",
+            "href": "https://www.linkedin.com/company/electroluxgroup/mycompany/verification/"
+          },
+          {
+            "id": "Youtube",
+            "href": "https://www.youtube.com/@electroluxbr"
           },
           {
             "id": "Pinterest",
-            "href": "/"
+            "href": "https://br.pinterest.com/electroluxbr/"
+          }
+        ],
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "https://www.instagram.com/reel/C9ch7vSo3u4/"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/ca3b6db9-b673-48e8-b1e4-1c5ddf47a6e1/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.webp",
+              "mobile": "https://assets.decocache.com/content-hub/ca3b6db9-b673-48e8-b1e4-1c5ddf47a6e1/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.webp"
+            }
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "https://www.instagram.com/reel/C8uw36Eh8kI/"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/bebf2c16-7abd-4af8-9f77-d183bf67658b/774008a1-8869-4acc-9127-455982d1f5f0___99c87f87172b937f963939641724fbbb.webp",
+              "mobile": "https://assets.decocache.com/content-hub/bebf2c16-7abd-4af8-9f77-d183bf67658b/774008a1-8869-4acc-9127-455982d1f5f0___99c87f87172b937f963939641724fbbb.webp"
+            }
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "https://www.instagram.com/p/C8IGm1jONRi/"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/5d9e02d3-f785-4d40-97ea-25e7e57a1e6f/163e2a49-8bec-4e5a-b95d-51f688a1fb29___c02fa75228c0208c60c33acdcfaca0f4.webp",
+              "mobile": "https://assets.decocache.com/content-hub/5d9e02d3-f785-4d40-97ea-25e7e57a1e6f/163e2a49-8bec-4e5a-b95d-51f688a1fb29___c02fa75228c0208c60c33acdcfaca0f4.webp"
+            }
           }
         ]
       }

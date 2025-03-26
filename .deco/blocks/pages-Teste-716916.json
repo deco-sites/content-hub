@@ -488,8 +488,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ReviewsSliderSection.tsx",
         "section": {
-          "title": "<h2><span style=\"color: rgb(250, 250, 250); font-size: 22pt\">Quem escolhe melhor, vive melhor</span></h2>",
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<h2><span style=\"color: rgb(250, 250, 250); font-size: 22pt\">Quem escolhe melhor, vive melhor</span></h2>"
         },
         "background": {
           "srcDesktop": "https://assets.decocache.com/content-hub/350e32dc-cf43-41af-910a-780ed4a478ab/0a8b32d1738e4e6342812aadb023aa47.png",
@@ -542,6 +542,96 @@
             "reviewPersonName": "Cinara N."
           }
         ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
+        "section": {
+          "title": "<h2><span>Iniciativas da Electrolux para um mundo mais sustentável</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></h2><p><span style=\"font-size: 15pt\">Entenda o que fazemos para promover um futuro mais verde</span><span style=\"color: rgb(0, 0, 0); font-size: 15pt\">&nbsp;</span></p>"
+        },
+        "styleArticleOption": "Type 1",
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f77b2728-af87-4e89-aead-c01b76d2f9cf/Aspect-Ratio.png",
+                "mobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png"
+              }
+            },
+            "link": {
+              "color": "#617f57",
+              "text": "Saiba mais",
+              "title": "Saiba mais",
+              "href": "https://loja.electrolux.com.br/ecoplus/frete-neutro"
+            },
+            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">Entrega com carbono neutro </span></h2><p><span style=\"font-size: 13pt\">Somos a primeira empresa de eletrodomésticos a incluir um caminhão movido à energia solar nas entregas. Entenda como isso funciona!</span></p>"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/31023b83-92dd-4769-b8b2-da176540a9bf/5_cavidade-1.png",
+                "mobile": "https://assets.decocache.com/content-hub/c03e4c15-46fc-4e20-9644-fc91adcea4bc/5_cavidade-1.png"
+              }
+            },
+            "link": {
+              "color": "#617f57",
+              "text": "Saiba mais",
+              "title": "Saiba mais",
+              "href": "/ecoplus/plastico-reciclado"
+            },
+            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">Produção com material reciclado</span></h2><p><span style=\"font-size: 13pt\">Reduzimos até 700 toneladas de gás carbônico por ano ao usar plástico reciclado em nossas máquinas de lavar. Saiba mais! </span></p>"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+                "mobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png"
+              }
+            },
+            "link": {
+              "color": "#617f57",
+              "text": "Saiba mais",
+              "href": "/ecoplus/reducao-co2",
+              "title": "Saiba mais"
+            },
+            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">Redução de gás carbônico </span></h2><p><span style=\"font-size: 13pt\">Vamos reduzir 500 mil toneladas de gás carbônico nos produtos em funcionamento na América Latina até 2030. Confira! </span></p>"
+          }
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "desktop": 4
+          },
+          "navigation": {
+            "enabledMobile": true
+          },
+          "pagination": {
+            "enabledMobile": true
+          }
+        }
       }
     },
     {
@@ -614,7 +704,10 @@
               "mobile": "https://assets.decocache.com/content-hub/8fa37a4a-8098-4bb8-bf48-4d5ae275d031/Screenshot-2025-03-26-160229.png"
             }
           }
-        ]
+        ],
+        "section": {
+          "title": "<p></p>"
+        }
       }
     }
   ],

@@ -200,7 +200,9 @@
         "section": {
           "fullWidth": true,
           "marginBottomDesktop": 0,
-          "marginBottomMobile": 0
+          "marginBottomMobile": 0,
+          "marginTopDesktop": 0,
+          "marginTopMobile": 0
         },
         "infoCards": [
           {
@@ -227,7 +229,9 @@
         "section": {
           "fullWidth": true,
           "marginBottomDesktop": 0,
-          "marginBottomMobile": 0
+          "marginBottomMobile": 0,
+          "marginTopDesktop": 0,
+          "marginTopMobile": 0
         },
         "infoCards": [
           {
@@ -283,7 +287,9 @@
         "section": {
           "fullWidth": true,
           "marginBottomDesktop": 0,
-          "marginBottomMobile": 0
+          "marginBottomMobile": 0,
+          "marginTopDesktop": 0,
+          "marginTopMobile": 0
         },
         "infoCards": [
           {
@@ -308,9 +314,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true,
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0
+          "fullWidth": true
         },
         "infoCards": [
           {

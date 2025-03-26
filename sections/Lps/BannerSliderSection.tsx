@@ -7,6 +7,11 @@ import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultBannerSection } from "site/configs/BannerSliderSection.ts";
 import { useDevice } from "@deco/deco/hooks";
 
+
+import Component from "site/components/ui/Slider.tsx";
+import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
+import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
+import type { ISliderConfigs } from "site/types/Slider.d.ts";
 /**
  * @description Seção com um slider de banners.
  */
@@ -26,6 +31,20 @@ interface Props {
    * @title Configurações do Slider
    */
   configs?: ISliderConfigs;
+}
+
+type TesteProps = {
+  banners?: IResponsiveImage[];
+  configs?: ISliderConfigs;
+  rootId: string;
+};
+
+function Teste({ banners = [], configs = {}, rootId }: TesteProps) {
+  const slides = banners.map((props, idx) => {
+    return <ResponsiveImage {...props} key={`${props.alt}-${idx}`} />;
+  });
+
+  return <Component configs={configs} slides={slides} rootId={rootId} />;
 }
 
 export default function BannerSliderSection({
@@ -81,7 +100,7 @@ export default function BannerSliderSection({
       id={id}
       classesContainer="banner-slider-section"
     >
-      <BannerSlider
+      <Teste
         configs={sliderConfig}
         rootId={id}
         banners={defaultPropsBanners}

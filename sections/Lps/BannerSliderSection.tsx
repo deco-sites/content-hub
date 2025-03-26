@@ -6,7 +6,6 @@ import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultBannerSection } from "site/configs/BannerSliderSection.ts";
 import { useDevice } from "@deco/deco/hooks";
 
-
 import Component from "site/components/ui/Slider.tsx";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 /**

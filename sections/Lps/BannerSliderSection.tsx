@@ -1,4 +1,3 @@
-import BannerSlider from "site/islands/BannerSlider.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
@@ -10,8 +9,6 @@ import { useDevice } from "@deco/deco/hooks";
 
 import Component from "site/components/ui/Slider.tsx";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
-import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
-import type { ISliderConfigs } from "site/types/Slider.d.ts";
 /**
  * @description Seção com um slider de banners.
  */

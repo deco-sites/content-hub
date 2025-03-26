@@ -1,7 +1,10 @@
-import Component from "site/components/ui/Slider.tsx";
+import { lazy, Suspense } from "preact/compat";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
+
+// Lazy load do Slider
+const LazySlider = lazy(() => import("site/components/ui/Slider.tsx"));
 
 type Props = {
   banners?: IResponsiveImage[];
@@ -14,7 +17,11 @@ function Island({ banners = [], configs = {}, rootId }: Props) {
     return <ResponsiveImage {...props} key={`${props.alt}-${idx}`} />;
   });
 
-  return <Component configs={configs} slides={slides} rootId={rootId} />;
+  return (
+    <Suspense fallback={<div>Carregando slider...</div>}>
+      <LazySlider configs={configs} slides={slides} rootId={rootId} />
+    </Suspense>
+  );
 }
 
 export default Island;

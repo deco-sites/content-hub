@@ -78,9 +78,5 @@ export default function SwiperSlider({
     return slides?.[0];
   }
 
-  if (typeof window === "undefined") {
-    return <></>;
-  }
-
   return <Slider slides={slides} configs={mappedConfigs} />;
 }

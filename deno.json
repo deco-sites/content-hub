@@ -35,14 +35,14 @@
     "simple-git": "npm:simple-git@^3.25.0",
     "std/": "https://deno.land/std@0.190.0/",
     "site/": "./",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.109.1/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.64.26/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.111.4/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.64.51/",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "daisyui": "npm:daisyui@4.4.19",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@1.109.1",
-    "@deco/dev": "jsr:@deco/dev@1.109.1",
+    "@deco/deco": "jsr:@deco/deco@1.111.4",
+    "@deco/dev": "jsr:@deco/dev@1.111.4",
     "update": "npm:update@^0.7.4"
   },
   "tasks": {
@@ -81,7 +81,7 @@
       ]
     }
   },
-  "nodeModulesDir": false,
+  "nodeModulesDir": "none",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"

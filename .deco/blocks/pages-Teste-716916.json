@@ -252,6 +252,31 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": ""
+            },
+            "direction": "right",
+            "titleCMS": "Lavadoras",
+            "typeOfContent": {
+              "autoplay": true,
+              "iframeProps": {},
+              "src": "https://youtu.be/UmPc5t_4S88?si=NRb-ocLK_b9547zt",
+              "title": "Conheça os Purificadores de Água Electrolux EcoPlus"
+            },
+            "richText": "<h2><strong><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Lava-louças</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></strong></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">As lava-louças do programa EcoPlus oferecem economia de até 90% de água a cada ciclo, o que corresponde a 117 litros por dia, em comparação com a lavagem manual da mesma quantidade de louça.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*15 minutos de torneira por dia lavando a pia ou 117 litros/ 15min = 7,8 litros ou 0,13 litros/s, segundo a Sabesp. Enquanto um ciclo por dia, no programa Dia a Dia da Lava-louças 14 serviços, equivale a 12 litros.  </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
           "fullWidth": true,
           "marginBottomDesktop": 0,
           "marginBottomMobile": 0
@@ -269,7 +294,7 @@
               "src": "https://youtu.be/m4rA8DGLuKY?si=Zcrr79vVEr_3r67u",
               "title": "Conheça as Lavadoras Electrolux EcoPlus"
             },
-            "richText": "<h2><strong><span style=\"font-size: 14pt\">Lava e Seca</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">A lava e seca Electrolux EcoPlus é equipada com tecnologia que ajusta o tempo e o consumo de água e de energia, evitando o desperdício. Os modelos estão entre os mais econômicos em relação ao consumo de água da categoria*.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Em comparação com o consumo de água de lavadoras lava e seca de mesma capacidade (11 kg), segundo divulgação do Programa Brasileiro de Etiquetagem disponível no site do Inmetro. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Purificadores de água </span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Os purificadores de água do programa EcoPlus economizam até cinco vezes mais energia elétrica&amp;. Além disso, contam com compressor ecológico que reduz o impacto ambiental.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Resultados obtidos pela comparação dos purificadores eletrônicos (PE11/PE12), que consomem 0,25 kWh para gelar 1 litro de água, com os purificadores com compressor (PC01B/PC01X), que consomem apenas 0,05 kWh para gelar a mesma quantidade de água. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
           }
         ]
       }
@@ -291,37 +316,12 @@
             "direction": "left",
             "titleCMS": "Lavadoras",
             "typeOfContent": {
+              "src": "https://youtu.be/UEVsNzqS0IA?si=wBaVKBYLJz-vnxRt",
               "autoplay": true,
               "iframeProps": {},
-              "src": "https://youtu.be/UEVsNzqS0IA?si=wBaVKBYLJz-vnxRt",
               "title": "Conheça os Ares-Condicionados Electrolux EcoPlus"
             },
             "richText": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Ares-condicionados</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Os ares-condicionados Electrolux EcoPlus são equipados com a tecnologia Inverter, que evita as oscilações de energia e proporciona mais eficiência energética. Os modelos são até 80% mais eficientes em energia elétrica*.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Resultados obtidos comparando o modelo Electrolux 18.000 BTUs com o modelo convencional on/off, conforme portaria INMETRO nº269/2021. Para outros modelos, consulte o site. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
-        "section": {
-          "fullWidth": true
-        },
-        "infoCards": [
-          {
-            "link": {
-              "color": ""
-            },
-            "direction": "right",
-            "titleCMS": "Lavadoras",
-            "typeOfContent": {
-              "src": "https://youtu.be/UmPc5t_4S88?si=NRb-ocLK_b9547zt",
-              "autoplay": true,
-              "iframeProps": {},
-              "title": "Conheça os Purificadores de Água Electrolux EcoPlus"
-            },
-            "richText": "<h2><strong><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Lava-louças</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></strong></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">As lava-louças do programa EcoPlus oferecem economia de até 90% de água a cada ciclo, o que corresponde a 117 litros por dia, em comparação com a lavagem manual da mesma quantidade de louça.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*15 minutos de torneira por dia lavando a pia ou 117 litros/ 15min = 7,8 litros ou 0,13 litros/s, segundo a Sabesp. Enquanto um ciclo por dia, no programa Dia a Dia da Lava-louças 14 serviços, equivale a 12 litros.  </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
           }
         ]
       }

@@ -11,7 +11,7 @@ export type Props = {
 export default function SwiperSlider({
   configs = {},
   slides = []
-}: Props): preact.JSX.Element {
+}: Props): preact.JSX.Element {  
   const {
     slidesPerView,
     slidesPerViewResponsive,
@@ -76,6 +76,10 @@ export default function SwiperSlider({
 
   if (slides?.length === 1) {
     return slides?.[0];
+  }
+
+  if (typeof window === "undefined") {
+    return <></>;
   }
 
   return <Slider slides={slides} configs={mappedConfigs} />;

@@ -48,41 +48,55 @@
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#617f57",
             "target": false,
-            "imageSrc": "https://data.decoassets.com/content-hub/ec154f88-87b6-478e-99db-88b377d36d70/Vector-(2).png",
-            "alt": "categoria 1",
-            "title": "categoria 1"
+            "imageSrc": "https://assets.decocache.com/content-hub/0ebab892-de44-458f-8a6a-d33009b1990e/Vector-(5).svg",
+            "title": "Geladeira",
+            "alt": "Geladeira",
+            "redirect": "/2142?map=productClusterIds"
           },
           {
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#617f57",
             "target": false,
-            "imageSrc": "https://data.decoassets.com/content-hub/268cc044-9994-4445-b0ac-051e01beb3b5/Vector-(2).png",
-            "alt": "categoria 2",
-            "title": "categoria 2"
+            "imageSrc": "https://assets.decocache.com/content-hub/72824920-f4ed-4875-bf06-cd09929a5f96/Vector-(4).svg",
+            "alt": "Frigobar",
+            "title": "Frigobar",
+            "redirect": "/2143?map=productClusterIds"
           },
           {
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#617f57",
             "target": false,
-            "imageSrc": "https://data.decoassets.com/content-hub/ddea1a22-dc17-4718-8b77-c261ef49f5f2/Vector-(2).png",
-            "alt": "categoria 3",
-            "title": "categoria 3"
+            "imageSrc": "https://assets.decocache.com/content-hub/069c03c2-3ecd-40cf-b581-8475a5ef9d9f/Vector-(2).svg",
+            "alt": "Máquina de Lavar",
+            "title": "Máquina de Lavar",
+            "redirect": "/2144?map=productClusterIds"
           },
           {
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#617f57",
             "target": false,
-            "imageSrc": "https://data.decoassets.com/content-hub/05d457e5-a703-46f5-a9e2-047f2c74432d/Vector-(2).png",
-            "alt": "categoria 4",
-            "title": "categoria 4"
+            "imageSrc": "https://assets.decocache.com/content-hub/7b7363f5-27b7-4105-b646-219f0122df83/Vector-(8).svg",
+            "alt": "Lava-louças",
+            "title": "Lava-louças",
+            "redirect": "/2145?map=productClusterIds"
           },
           {
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#617f57",
             "target": false,
-            "imageSrc": "https://data.decoassets.com/content-hub/7bc042f1-f755-4ec1-a3d7-8d15658ddd3e/Vector-(2).png",
-            "alt": "categoria 5",
-            "title": "categoria 5"
+            "imageSrc": "https://assets.decocache.com/content-hub/0eea28ac-c603-4d74-899e-295f8441ddb4/Vector-(7).svg",
+            "alt": "Ar-condicionado",
+            "title": "Ar-condicionado",
+            "redirect": "/2146?map=productClusterIds"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "imageSrc": "https://assets.decocache.com/content-hub/8846b91e-9037-4aab-85de-b776cb87ab61/Vector-(3).svg",
+            "alt": "Purificador de Água",
+            "title": "Purificador de Água",
+            "redirect": "/2147?map=productClusterIds"
           }
         ]
       }
@@ -169,9 +183,10 @@
             "direction": "right",
             "titleCMS": "Geladeiras",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/f71d6495-6998-4370-89c7-8393f36b1ff8/Aspect-Ratio.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/fb8d248d-9693-4649-8d30-07d656a056d4/Aspect-Ratio.png",
-              "alt": "geladeira"
+              "autoplay": true,
+              "iframeProps": {},
+              "src": "https://youtu.be/Z1Gxbmto5lw?si=9uB8GjEQ2ZQYsGWT",
+              "title": "Conheça as Geladeiras Electrolux EcoPlus"
             },
             "richText": "<h2><strong><span style=\"font-size: 14pt\">Geladeiras</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">As geladeiras Electrolux EcoPlus são equipadas com tecnologia Inverter, que apresenta as condições ideais para preservar os alimentos. Os modelos promovem economia de até 47%* em energia e estão entre os mais econômicos do mercado.</span><span style=\"color: rgb(0, 0, 0); font-size: 16pt\">&nbsp;</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site da Electrolux.</span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
           }
@@ -307,7 +322,7 @@
               "title": "Saiba mais",
               "href": "xx"
             },
-            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">O que é a tecnologia Ecoplus?</span></h2><p>O programa Ecoplus abrange os eletrodomésticos Electrolux com alta eficiência energética. São produtos que consomem menos energia e água, evitam o desperdício e proporcionam redução no impacto ambiental durante o uso. Todos são identificados com o selo EcoPlus.</p>"
+            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">O que é a tecnologia Ecoplus?</span></h2><p><span style=\"font-size: 13pt\">O programa Ecoplus abrange os eletrodomésticos Electrolux com alta eficiência energética. São produtos que consomem menos energia e água, evitam o desperdício e proporcionam redução no impacto ambiental durante o uso. Todos são identificados com o selo EcoPlus.</span></p>"
           },
           {
             "image": {
@@ -329,7 +344,7 @@
               "title": "Saiba mais",
               "href": "xx"
             },
-            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Benefícios do Ecoplus</span></h2><p>Ao selecionar e identificar produtos com maior eficiência energética, o programa EcoPlus contribui para que o consumidor faça uma escolha consciente, que promove mais economia no consumo de água e energia e promove a sustentabilidade.</p>"
+            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">Benefícios do Ecoplus</span></h2><p><span style=\"font-size: 13pt\">Ao selecionar e identificar produtos com maior eficiência energética, o programa EcoPlus contribui para que o consumidor faça uma escolha consciente, que promove mais economia no consumo de água e energia e promove a sustentabilidade.</span></p>"
           },
           {
             "image": {
@@ -341,17 +356,17 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/7aa14835-c207-406e-b02e-b6063584a767/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png",
-                "mobile": "https://assets.decocache.com/content-hub/1ace70ae-c468-4eaf-9b5c-91fe162fc471/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png"
+                "desktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+                "mobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png"
               }
             },
             "link": {
               "color": "#000000",
               "text": "Saiba mais",
-              "title": "Saiba mais",
-              "href": "xx"
+              "href": "xx",
+              "title": "Saiba mais"
             },
-            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 18.6667px\">Como a tecnologia funciona?</span></h2><p>Todos os produtos são avaliados com base na etiquetagem energética e passam por testes para análise do desempenho. Com base nisso, os modelos mais eficientes em energia e consumo de água são selecionados e identificados com o selo EcoPlus.</p>"
+            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">Como a tecnologia funciona?</span></h2><p><span style=\"font-size: 13pt\">Todos os produtos são avaliados com base na etiquetagem energética e passam por testes para análise do desempenho. Com base nisso, os modelos mais eficientes em energia e consumo de água são selecionados e identificados com o selo EcoPlus.</span></p>"
           }
         ],
         "configs": {
@@ -373,7 +388,7 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
         "section": {
-          "title": "<h2><span style=\"font-size: 20pt\">RECOMENDADOS PARA VOCÊ</span></h2>",
+          "title": "<h2><span style=\"font-size: 22pt\">RECOMENDADOS PARA VOCÊ</span></h2>",
           "fullWidth": true
         },
         "products": {
@@ -389,11 +404,13 @@
           "srcDesktop": "https://assets.decocache.com/content-hub/02906636-7525-4180-a052-8d02b145d730/Rita-Lobo-v3.png",
           "srcMobile": "https://assets.decocache.com/content-hub/84dcd53e-b58b-4216-b521-c68a29e42670/Rita-Lobo-v3.png"
         },
-        "text": "<p><span style=\"font-size: 16pt\">O melhor da tecnologia Electrolux&nbsp;</span></p>",
+        "text": "<p><span style=\"color: #ffffff; font-size: 20pt\">O melhor da tecnologia Electrolux&nbsp;</span></p><p><span style=\"font-size: 16pt\">com a máxima eficiência EcoPlus</span></p>",
         "link": {
           "text": "Conheça todos os produtos",
-          "bgColor": "#617F57"
-        }
+          "bgColor": "#617F57",
+          "href": "/2140?map=productClusterIds"
+        },
+        "fullWidth": true
       }
     },
     {
@@ -432,7 +449,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ReviewsSliderSection.tsx",
         "section": {
-          "title": "<p><span style=\"font-size: 18pt\">Quem escolhe melhor, vive melhor</span></p>"
+          "title": "<p><span style=\"color: #fafafa; font-size: 18pt\">Quem escolhe melhor, vive melhor</span></p>",
+          "fullWidth": true
         },
         "background": {
           "srcDesktop": "https://assets.decocache.com/content-hub/350e32dc-cf43-41af-910a-780ed4a478ab/0a8b32d1738e4e6342812aadb023aa47.png",
@@ -447,9 +465,9 @@
               "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg",
               "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfStarSrc.svg"
             },
-            "reviewDescription": "loremipsusloremipsusloremipsusloremipsusloremipsusloremipsus",
+            "reviewDescription": "Excelente produto com designer bonito e a quantidade de litros excelente.",
             "reviewProductName": "Geladeira",
-            "reviewPersonName": "João"
+            "reviewPersonName": "Ricardo L."
           },
           {
             "reviewStars": {
@@ -458,9 +476,9 @@
               "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg",
               "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfStarSrc.svg"
             },
-            "reviewDescription": "loremipsusloremipsusloremipsusloremipsusloremipsusloremipsus",
-            "reviewProductName": "Geladeira",
-            "reviewPersonName": "João"
+            "reviewDescription": "Gostei muito do produto.",
+            "reviewProductName": "Ar-condicionado",
+            "reviewPersonName": "Mauricio V."
           },
           {
             "reviewStars": {
@@ -469,9 +487,20 @@
               "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg",
               "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfStarSrc.svg"
             },
-            "reviewDescription": "loremipsusloremipsusloremipsusloremipsusloremipsusloremipsus",
-            "reviewProductName": "Geladeira",
-            "reviewPersonName": "João"
+            "reviewDescription": "Ótimo produto. Lava muito bem, é silenciosa, tem ótimas funções e é linda. Eu amei.",
+            "reviewProductName": "Máquina de Lavar",
+            "reviewPersonName": "Cleber O."
+          },
+          {
+            "reviewStars": {
+              "quantity": 5,
+              "fullStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-fullstar.svg",
+              "emptyStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-emptystar.svg",
+              "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfStarSrc.svg"
+            },
+            "reviewDescription": "Lindo, eficiente. Cumpre tudo que promete. Instalação fácil.",
+            "reviewProductName": "Cooktop",
+            "reviewPersonName": "Cinara N."
           }
         ]
       }

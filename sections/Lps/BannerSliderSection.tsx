@@ -1,13 +1,11 @@
+import BannerSlider from "site/islands/BannerSlider.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultBannerSection } from "site/configs/BannerSliderSection.ts";
-import { useDevice } from "@deco/deco/hooks";
 
-import Component from "site/components/ui/Slider.tsx";
-import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 /**
  * @description Seção com um slider de banners.
  */
@@ -29,27 +27,12 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
-type TesteProps = {
-  banners?: IResponsiveImage[];
-  configs?: ISliderConfigs;
-  rootId: string;
-};
-
-function Teste({ banners = [], configs = {}, rootId }: TesteProps) {
-  const slides = banners.map((props, idx) => {
-    return <ResponsiveImage {...props} key={`${props.alt}-${idx}`} />;
-  });
-
-  return <Component configs={configs} slides={slides} rootId={rootId} />;
-}
-
 export default function BannerSliderSection({
   section,
   banners = DefaultBannerSection.banners,
   configs
 }: Props) {
   const id = useId();
-  const device = useDevice();
   
   if (!banners?.length) return null;
 
@@ -59,10 +42,10 @@ export default function BannerSliderSection({
     ...configs,
     slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
     pagination: {
-      enabled: device === "desktop" ? pagination?.enabledDesktop : pagination?.enabledMobile
+      enabled: pagination?.enabledDesktop
     },
     navigation: {
-      enabled: device === "desktop" ? navigation?.enabledDesktop : navigation?.enabledMobile
+      enabled: navigation?.enabledDesktop
     },
     breakpoints: {
       768: {
@@ -96,7 +79,7 @@ export default function BannerSliderSection({
       id={id}
       classesContainer="banner-slider-section"
     >
-      <Teste
+      <BannerSlider
         configs={sliderConfig}
         rootId={id}
         banners={defaultPropsBanners}

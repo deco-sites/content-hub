@@ -130,7 +130,8 @@
           "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/44fc5216-7ae9-4af4-9310-15f053432a8d___c97bd8dff9731ef5783abb0e05144e22.png",
           "alt": "Image",
           "link": {
-            "href": "/"
+            "href": "/",
+            "title": "Imagem"
           },
           "src": {
             "desktop": "https://data.decoassets.com/content-hub/ca9ae9fd-f84e-4595-9fb6-9e63dabe8f2f/maquina.png",

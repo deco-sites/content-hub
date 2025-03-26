@@ -36,30 +36,6 @@ export default function BannerSliderSection({
   
   if (!banners?.length) return null;
 
-  const { pagination, navigation, slidesPerViewResponsive } = configs ?? {};
-
-  const sliderConfig = {
-    ...configs,
-    slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
-    pagination: {
-      enabled: pagination?.enabledDesktop
-    },
-    navigation: {
-      enabled: navigation?.enabledDesktop
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: slidesPerViewResponsive?.tablet ?? 1
-      },
-      1024: {
-        slidesPerView: slidesPerViewResponsive?.desktop ?? 1,
-        pagination: {
-          enabled: pagination?.enabledDesktop
-        }
-      }
-    }
-  } as ISliderConfigs;
-
   const defaultPropsBanners = banners.map(banner => {
     return {
       ...{ ...banner },
@@ -80,7 +56,7 @@ export default function BannerSliderSection({
       classesContainer="banner-slider-section"
     >
       <BannerSlider
-        configs={sliderConfig}
+        configs={configs}
         rootId={id}
         banners={defaultPropsBanners}
       />

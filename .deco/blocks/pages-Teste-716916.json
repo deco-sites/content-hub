@@ -252,14 +252,18 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "marginTopDesktop": 0,
+          "marginTopMobile": 0,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
         },
         "infoCards": [
           {
             "link": {
               "color": ""
             },
-            "direction": "right",
+            "direction": "left",
             "titleCMS": "Lavadoras",
             "typeOfContent": {
               "autoplay": true,

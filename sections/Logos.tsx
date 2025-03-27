@@ -1,6 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-
+import { useDevice } from "@deco/deco/hooks";
 export interface Logo {
   src?: ImageWidget;
   /** @description text alternative */
@@ -23,6 +23,7 @@ export default function Logos({
   title = "Edit this heading however you want",
   logos = IMG_PLACEHOLDER
 }: Props) {
+  const device = useDevice();
   const slideContent = (
     <div class="flex items-center gap-20">
       {logos?.map(logo => {
@@ -39,6 +40,7 @@ export default function Logos({
   );
   return (
     <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 py-6 lg:py-14">
+      {device === "desktop" ? "desktop" : "mobile"}
       <div class="flex flex-col gap-12">
         <p class="text-center text-lg">{title}</p>
         <div class="relative w-full overflow-hidden h-11">

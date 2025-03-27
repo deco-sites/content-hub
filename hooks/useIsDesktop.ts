@@ -5,7 +5,7 @@ export function useIsDesktop() {
   const isDesktop = useSignal(false);
 
   useEffect(() => {
-    if (typeof globalThis === "undefined") return;
+    if (typeof globalThis === "undefined") return; 
 
     const checkIfDesktop = () => {
       isDesktop.value = globalThis.innerWidth >= 1024;

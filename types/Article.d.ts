@@ -26,6 +26,13 @@ interface Link {
    * @default #000000
    */
   color?: string;
+
+  /**
+   * @title Ocultar texto do link?
+   * @description Oculta o texto do link.
+   * @default false
+   */
+  hideLink?: boolean;
 }
 
 /**

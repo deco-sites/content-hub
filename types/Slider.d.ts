@@ -144,13 +144,13 @@ export interface ISliderConfigs {
    * @title Exibir Navegação
    * @description Habilita botões de navegação (próximo e anterior) no slider.
    */
-  navigation?: Navigation;
+  customNavigation?: Navigation;
 
   /**
    * @title Paginação
    * @description Adiciona indicadores de paginação ao slider, como bullets ou números.
    */
-  pagination?: Pagination;
+  customPagination?: Pagination;
 
   /**
    * @title Autoplay

@@ -1,7 +1,6 @@
 import ProductShelf from "site/islands/ProductShelf.tsx";
 import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
-import { useDevice } from "@deco/deco/hooks";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { ProductSpecsComparator } from "site/types/Product.d.ts";
@@ -56,7 +55,6 @@ export default function ProductShelfWithComparatorSection({
   products
 }: Props): preact.JSX.Element {
   const id = useId();
-  const device = useDevice();
 
   const hasProducts = !!products?.length;
 
@@ -76,36 +74,18 @@ export default function ProductShelfWithComparatorSection({
     ...configs,
     slidesPerView: 1.5,
     spaceBetween: 8,
-    pagination: {
-      enabled: device === "desktop" ? configs?.pagination?.enabledDesktop : configs?.pagination?.enabledMobile
-    },
-    navigation: {
-      enabled: device === "desktop" ? configs?.navigation?.enabledDesktop : configs?.navigation?.enabledMobile
-    },
     breakpoints: {
       768: {
-        slidesPerView: 2,
-        navigation: {
-          enabled: true
-        }
+        slidesPerView: 2
       },
       1024: {
-        slidesPerView: 2,
-        navigation: {
-          enabled: true
-        }
+        slidesPerView: 2
       },
       1280: {
-        slidesPerView: 3,
-        navigation: {
-          enabled: true
-        }
+        slidesPerView: 3
       },
       1440: {
-        slidesPerView: 5,
-        navigation: {
-          enabled: true
-        }
+        slidesPerView: 5
       }
     }
   } as ISliderConfigs;

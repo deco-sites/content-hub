@@ -28,6 +28,10 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "section": {
+          "fullWidth": false,
+          "title": "<h2 style=\"text-align: center\">frase de efeito</h2><p style=\"text-align: center\"><u>frase de efeito</u></p>"
+        },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
@@ -35,10 +39,6 @@
             "collection": "2140",
             "count": 6
           }
-        },
-        "section": {
-          "title": "<h2 style=\"text-align: center\">frase de efeito</h2><p style=\"text-align: center\"><u>frase de efeito</u></p>",
-          "fullWidth": false
         },
         "reverse": false,
         "background": {
@@ -67,27 +67,27 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
+        },
         "infoCards": [
           {
+            "richText": "<p style=\"text-align: right\"><span style=\"color: #412a2a\">PerfectCoock360</span></p><h3 style=\"text-align: right\"><span style=\"color: #412a2a\">Convecção e cavidade selada</span></h3><p style=\"text-align: right\"><span style=\"color: #412a2a\">Assa o alimento por igual, até 30% mais rápido que o forno convencional e um pouco mais de texto que traga mais clareza sobre a função</span></p>",
             "typeOfContent": {
               "srcDesktop": "https://data.decoassets.com/content-hub/2a983e0b-7c94-442e-a1cc-6f7cb107545a/5_cavidade-1-(1).jpg",
               "srcMobile": "https://data.decoassets.com/content-hub/261c2d3c-7e39-450d-9c14-e6dff8a927e0/5_cavidade-1.jpg",
               "alt": "Info Card 1"
             },
-            "richText": "<p style=\"text-align: right\"><span style=\"color: #412a2a\">PerfectCoock360</span></p><h3 style=\"text-align: right\"><span style=\"color: #412a2a\">Convecção e cavidade selada</span></h3><p style=\"text-align: right\"><span style=\"color: #412a2a\">Assa o alimento por igual, até 30% mais rápido que o forno convencional e um pouco mais de texto que traga mais clareza sobre a função</span></p>",
             "direction": "left",
             "link": {
+              "color": "#412a2a",
               "text": "Saiba mais",
-              "href": "/",
-              "color": "#412a2a"
+              "href": "/"
             }
           }
-        ],
-        "section": {
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0,
-          "fullWidth": true
-        }
+        ]
       }
     },
     {
@@ -821,7 +821,16 @@
             },
             "direction": "right"
           }
-        ]
+        ],
+        "configs": {
+          "navigation": {
+            "enabledDesktop": false
+          },
+          "pagination": {
+            "enabledMobile": false,
+            "enabledDesktop": true
+          }
+        }
       }
     },
     {
@@ -830,6 +839,20 @@
         "__resolveType": "site/sections/Product/ProductShelfWithComparatorSection.tsx",
         "section": {
           "title": "<h2 style=\"text-align: center\">Comparativo de modelos</h2><p style=\"text-align: center\"> <u>Fornos</u>    |    <u>Fogões</u></p>"
+        },
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 5,
+            "tablet": 2,
+            "mobile": 1.5
+          },
+          "spaceBetween": 24,
+          "pagination": {
+            "enabledMobile": true
+          },
+          "navigation": {
+            "enabledDesktop": true
+          }
         },
         "products": [
           {
@@ -1050,21 +1073,7 @@
               "productId": "2004215"
             }
           }
-        ],
-        "configs": {
-          "slidesPerViewResponsive": {
-            "desktop": 5,
-            "tablet": 2,
-            "mobile": 1.5
-          },
-          "spaceBetween": 24,
-          "pagination": {
-            "enabledMobile": true
-          },
-          "navigation": {
-            "enabledDesktop": true
-          }
-        }
+        ]
       }
     },
     {
@@ -1075,6 +1084,9 @@
           "fullWidth": true,
           "marginBottomMobile": 0,
           "marginBottomDesktop": 0
+        },
+        "configs": {
+          "loop": false
         },
         "infoCards": [
           {
@@ -1091,10 +1103,7 @@
               "color": "#412A2A"
             }
           }
-        ],
-        "configs": {
-          "loop": false
-        }
+        ]
       }
     },
     {
@@ -1154,6 +1163,7 @@
           "marginBottomMobile": 32,
           "marginBottomDesktop": 52
         },
+        "title": "<h3>Aproveite nossas redes sociais</h3><p>Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</p>",
         "banners": [
           {
             "link": {
@@ -1220,7 +1230,6 @@
             "alt": "Img 4"
           }
         ],
-        "title": "<h3>Aproveite nossas redes sociais</h3><p>Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</p>",
         "icons": [
           {
             "id": "Facebook",

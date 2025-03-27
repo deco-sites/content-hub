@@ -7,7 +7,6 @@ import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { Product } from "apps/commerce/types.ts";
-import { useIsDesktop } from "site/hooks/useIsDesktop.ts";
 
 interface IBackground {
   /**
@@ -114,9 +113,8 @@ export default function ProductShelfSection({
   text,
   link,
   reverse = false
-}: Props) {
+}: Props): preact.JSX.Element {
   const id = useId();
-  const isDesktop = useIsDesktop();
   const hasProducts = !!products?.length;
   const { srcDesktop, srcMobile, alt } = background ?? {};
 
@@ -124,12 +122,6 @@ export default function ProductShelfSection({
     ...configs,
     spaceBetween: 8,
     slidesPerView: 1.5,
-    pagination: {
-      enabled: isDesktop.value ? configs?.pagination?.enabledDesktop : configs?.pagination?.enabledMobile
-    },
-    navigation: {
-      enabled: isDesktop.value ? configs?.navigation?.enabledDesktop : configs?.navigation?.enabledMobile
-    },
     breakpoints: {
       768: {
         slidesPerView: 2

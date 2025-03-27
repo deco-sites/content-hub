@@ -7,6 +7,7 @@ import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { Product } from "apps/commerce/types.ts";
+import { loader } from "site/loaders/loaderDevice.ts";
 import { useDevice } from "@deco/deco/hooks";
 
 interface IBackground {
@@ -106,6 +107,8 @@ interface Props {
   fullWidth?: boolean;
 }
 
+type Device = ReturnType<typeof loader>;
+
 export default function ProductShelfSection({
   section,
   configs,
@@ -113,22 +116,25 @@ export default function ProductShelfSection({
   background,
   text,
   link,
-  reverse = false
-}: Props) {
+  reverse = false,
+  device
+}: Props & Device): preact.JSX.Element {
   const id = useId();
-  const device = useDevice();
   const hasProducts = !!products?.length;
   const { srcDesktop, srcMobile, alt } = background ?? {};
+  const teste = useDevice();
+  console.log("teste", teste);
+  console.log("device", device);
 
   const sliderConfig: ISliderConfigs = {
     ...configs,
     spaceBetween: 8,
     slidesPerView: 1.5,
     pagination: {
-      enabled: device === "desktop" ? configs?.pagination?.enabledDesktop : configs?.pagination?.enabledMobile
+      enabled: configs?.pagination?.enabledDesktop
     },
     navigation: {
-      enabled: device === "desktop" ? configs?.navigation?.enabledDesktop : configs?.navigation?.enabledMobile
+      enabled: configs?.navigation?.enabledDesktop
     },
     breakpoints: {
       768: {
@@ -185,6 +191,8 @@ export default function ProductShelfSection({
             </div>
           </div>
         )}
+
+        {teste === "desktop" ? "desktop" : "mobile"}
 
         <div
           class={`flex w-full items-center justify-center ${

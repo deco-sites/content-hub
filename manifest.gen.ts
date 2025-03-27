@@ -7,6 +7,7 @@ import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/deco/vtex.ts";
 import * as $$$$$$$$$$$3 from "./apps/site.ts";
 import * as $$$0 from "./loaders/customVTEX/productById.ts";
+import * as $$$1 from "./loaders/loaderDevice.ts";
 import * as $$$$$$0 from "./sections/Logos.tsx";
 import * as $$$$$$1 from "./sections/Lps/ArticleSliderSection.tsx";
 import * as $$$$$$2 from "./sections/Lps/BannerMediaSection.tsx";
@@ -23,6 +24,7 @@ import * as $$$$$$11 from "./sections/Theme/Theme.tsx";
 const manifest = {
   "loaders": {
     "site/loaders/customVTEX/productById.ts": $$$0,
+    "site/loaders/loaderDevice.ts": $$$1,
   },
   "sections": {
     "site/sections/Logos.tsx": $$$$$$0,

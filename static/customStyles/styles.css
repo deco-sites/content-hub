@@ -396,6 +396,29 @@
   }
 }
 
+/* Text Section */
+.text-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  p {
+    color: #041e50;
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  ul, ol {
+    list-style-type: disc;
+    margin: 1em 0;
+    padding-left: 20px;
+  }
+
+  li + li {
+    margin-top: 8px;
+  }
+}
+
 /* Responsive */
 @media screen and (min-width: 1024px) {
   /* Section Component */

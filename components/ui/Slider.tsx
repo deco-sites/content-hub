@@ -17,8 +17,8 @@ export default function SwiperSlider({
     slidesPerView,
     slidesPerViewResponsive,
     loop,
-    pagination,
-    navigation,
+    customPagination,
+    customNavigation,
     breakpoints = {},
     autoplay,
     spaceBetween,
@@ -52,8 +52,8 @@ export default function SwiperSlider({
     spaceBetween: spaceBetween ?? 8,
     slidesPerView: slidesPerView ?? slidesPerViewResponsive?.mobile ?? 1,
     loop: hasLoop,
-    customPagination: pagination,
-    customNavigation: navigation,
+    customPagination,
+    customNavigation,
     breakpoints: validBreakpoints
   };
 

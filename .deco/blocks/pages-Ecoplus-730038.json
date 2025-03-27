@@ -11,36 +11,45 @@
         },
         "banners": [
           {
+            "link": {
+              "target": "blank"
+            },
             "loadingOptions": {
-              "loading": "eager",
+              "loading": "lazy",
               "fetchPriority": "high",
               "preload": true
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/096f588e-623a-42eb-92da-6c076997671c/principal_11zon.webp",
-              "mobile": "https://data.decoassets.com/content-hub/fce93308-fcae-40bc-9ba8-1ff8cb3cc972/principal-mobile_11zon.webp"
+              "desktop": "https://data.decoassets.com/content-hub/8201d5fb-4cb4-4e21-8650-823cf5530a54/Image.png",
+              "mobile": "https://data.decoassets.com/content-hub/71843d75-4551-47d8-97c7-6af5a7e38b2c/image-(15).png"
             }
           },
           {
+            "link": {
+              "target": "blank"
+            },
             "loadingOptions": {
-              "loading": "eager",
+              "loading": "lazy",
               "fetchPriority": "high",
               "preload": true
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/096f588e-623a-42eb-92da-6c076997671c/principal_11zon.webp",
-              "mobile": "https://data.decoassets.com/content-hub/fce93308-fcae-40bc-9ba8-1ff8cb3cc972/principal-mobile_11zon.webp"
+              "desktop": "https://data.decoassets.com/content-hub/8201d5fb-4cb4-4e21-8650-823cf5530a54/Image.png",
+              "mobile": "https://data.decoassets.com/content-hub/71843d75-4551-47d8-97c7-6af5a7e38b2c/image-(15).png"
             }
           }
         ],
         "configs": {
-          "pagination": {
-            "enabledMobile": true,
-            "enabledDesktop": true
+          "customNavigation": {
+            "enabledDesktop": false
           },
-          "navigation": {
-            "enabledDesktop": true,
-            "enabledMobile": true
+          "customPagination": {
+            "enabledDesktop": false
+          },
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 1
           }
         }
       }
@@ -322,6 +331,16 @@
         "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
         "section": {
           "title": "<h2 style=\"text-align: center\">NOSSAS ESCOLHAS PARA VIVER MELHOR</h2><p style=\"text-align: center\">Saiba o que estamos fazendo por um futuro de qualidade</p>"
+        },
+        "configs": {
+          "pagination": {
+            "enabledMobile": true
+          },
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 2,
+            "desktop": 4
+          }
         },
         "articles": [
           {
@@ -984,17 +1003,7 @@
             },
             "text": "<h2><span style=\"color: rgb(48, 63, 41)\">Entrega com carbono neutro</span></h2><p><span style=\"color: rgb(112, 112, 112)\">Estamos estudando formas de deixar nossos produtos cada vez mais sustentáveis. Hoje, já são menos 500 mil toneladas de CO2 nos produtos em funcionamento, acredita?</span></p>"
           }
-        ],
-        "configs": {
-          "pagination": {
-            "enabledMobile": true
-          },
-          "slidesPerViewResponsive": {
-            "mobile": 1,
-            "tablet": 2,
-            "desktop": 4
-          }
-        }
+        ]
       }
     },
     {
@@ -1032,6 +1041,12 @@
           "navigation": {
             "enabledMobile": false,
             "enabledDesktop": true
+          },
+          "customPagination": {
+            "enabledDesktop": false
+          },
+          "customNavigation": {
+            "enabledDesktop": true
           }
         },
         "direction": "left",
@@ -1043,8 +1058,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ReviewsSliderSection.tsx",
         "section": {
-          "title": "<h2 style=\"text-align: center\"><strong>Quem escolhe melhor, vive melhor</strong></h2>",
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<h2 style=\"text-align: center\"><strong>Quem escolhe melhor, vive melhor</strong></h2>"
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/b94e45b8-183a-4c71-9bd2-a0722c14a20f/reviews-bg.webp",
@@ -1103,44 +1118,32 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
-        "configs": {
-          "pagination": {
-            "enabledMobile": true
-          },
-          "spaceBetween": 48,
-          "slidesPerViewResponsive": {
-            "mobile": 1.5,
-            "desktop": 3,
-            "tablet": 2.3
-          },
-          "centeredSlides": true
-        },
         "banners": [
           {
-            "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.png",
             "link": {
               "href": "/",
               "title": "Instagram"
             },
-            "alt": "1",
-            "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.png",
             "src": {
               "desktop": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png",
               "mobile": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png"
-            }
+            },
+            "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.png",
+            "alt": "1",
+            "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.png"
           },
           {
-            "alt": "2",
             "link": {
               "href": "/",
               "title": "Instagram"
             },
-            "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.png",
-            "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.png",
             "src": {
               "desktop": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png",
               "mobile": "https://data.decoassets.com/content-hub/bd2a8a31-cad6-4ba3-805a-2551406f1b92/media1.png"
-            }
+            },
+            "alt": "2",
+            "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.png",
+            "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/86e568f8-2327-4898-ba8c-614305e6a8f3___c27c38ec26c9531cc9dc8af9f78e9e9e.png"
           },
           {
             "alt": "3",
@@ -1156,6 +1159,18 @@
             }
           }
         ],
+        "configs": {
+          "pagination": {
+            "enabledMobile": true
+          },
+          "spaceBetween": 48,
+          "slidesPerViewResponsive": {
+            "mobile": 1.5,
+            "desktop": 3,
+            "tablet": 2.3
+          },
+          "centeredSlides": true
+        },
         "title": "<h3>Já segue a Electrolux?</h3><p>Nas nossas redes sociais tem sempre uma nova promoção ou dica incrível de sustentabilidade pra você.</p>",
         "icons": [
           {

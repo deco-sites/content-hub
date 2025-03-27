@@ -359,9 +359,11 @@
               "color": "#000000",
               "text": "Saiba mais",
               "title": "Saiba mais",
-              "href": "xx"
+              "href": "xx",
+              "hideLink": false
             },
-            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">O que é a tecnologia Ecoplus?</span></h2><p><span style=\"font-size: 13pt\">O programa Ecoplus abrange os eletrodomésticos Electrolux com alta eficiência energética. São produtos que consomem menos energia e água, evitam o desperdício e proporcionam redução no impacto ambiental durante o uso. Todos são identificados com o selo EcoPlus.</span></p>"
+            "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">O que é a tecnologia Ecoplus?</span></h2><p><span style=\"font-size: 13pt\">O programa Ecoplus abrange os eletrodomésticos Electrolux com alta eficiência energética. São produtos que consomem menos energia e água, evitam o desperdício e proporcionam redução no impacto ambiental durante o uso. Todos são identificados com o selo EcoPlus.</span></p>",
+            "hideLink": false
           },
           {
             "image": {

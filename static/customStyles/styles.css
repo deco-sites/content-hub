@@ -221,6 +221,10 @@
     width: 100%;
   }
 
+  .swiper-wrapper {
+    justify-content: center;
+  }
+
   .article__content-text {
     h1,
     h2,

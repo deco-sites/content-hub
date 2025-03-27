@@ -41,11 +41,11 @@
         ],
         "configs": {
           "customNavigation": {
-            "enabledDesktop": false,
+            "enabledDesktop": true,
             "enabledMobile": true
           },
           "customPagination": {
-            "enabledDesktop": false,
+            "enabledDesktop": true,
             "enabledMobile": true
           },
           "slidesPerViewResponsive": {

@@ -9,7 +9,6 @@ import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultBannerMedia } from "site/configs/BannerMediaSection.ts";
-import { useIsDesktop } from "site/hooks/useIsDesktop.ts";
 
 /**
  * @title {{#id}}{{id}}{{/id}}{{^id}}Ícone{{/id}}
@@ -56,7 +55,6 @@ export default function BannerMediaSliderSection({
   icons = DefaultBannerMedia.icons
 }: Props) {
   const id = useId();
-  const isDesktop = useIsDesktop();
 
   if (!banners?.length) return null;
 
@@ -68,8 +66,6 @@ export default function BannerMediaSliderSection({
     },
     spaceBetween = 32,
     centeredSlides = true,
-    pagination,
-    navigation
   } = configs ?? {};
 
   const sliderConfig = {
@@ -77,12 +73,6 @@ export default function BannerMediaSliderSection({
     slidesPerView: slidesPerViewResponsive.mobile,
     spaceBetween,
     centeredSlides,
-    pagination: {
-      enabled: isDesktop.value ? pagination?.enabledDesktop : pagination?.enabledMobile
-    },
-    navigation: {
-      enabled: isDesktop.value ? navigation?.enabledDesktop : navigation?.enabledMobile
-    },
     breakpoints: {
       768: {
         slidesPerView: slidesPerViewResponsive.tablet,
@@ -93,9 +83,6 @@ export default function BannerMediaSliderSection({
         slidesPerView: slidesPerViewResponsive.desktop,
         spaceBetween: 32,
         centeredSlides: false,
-        pagination: {
-          enabled: pagination?.enabledDesktop ?? false
-        }
       }
     }
   } as ISliderConfigs;

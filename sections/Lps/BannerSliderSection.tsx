@@ -5,7 +5,6 @@ import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultBannerSection } from "site/configs/BannerSliderSection.ts";
-import { useIsDesktop } from "site/hooks/useIsDesktop.ts";
 
 /**
  * @description Seção com um slider de banners.
@@ -34,28 +33,18 @@ export default function BannerSliderSection({
   configs
 }: Props) {
   const id = useId(); 
-  const isDesktop = useIsDesktop();
 
-  const { pagination, navigation, slidesPerViewResponsive } = configs ?? {};
+  const { slidesPerViewResponsive } = configs ?? {};
 
   const sliderConfig = {
     ...configs,
     slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
-    pagination: {
-      enabled: isDesktop.value ? pagination?.enabledDesktop : pagination?.enabledMobile,
-    },
-    navigation: {
-      enabled: isDesktop.value ? navigation?.enabledDesktop : navigation?.enabledMobile,
-    },
     breakpoints: {
       768: {
         slidesPerView: slidesPerViewResponsive?.tablet ?? 1
       },
       1024: {
         slidesPerView: slidesPerViewResponsive?.desktop ?? 1,
-        pagination: {
-          enabled: pagination?.enabledDesktop
-        }
       }
     }
   } as ISliderConfigs;

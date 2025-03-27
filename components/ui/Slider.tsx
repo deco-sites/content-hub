@@ -1,6 +1,7 @@
 import { Slider } from "@eluxlab/library-components";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { createElement } from "preact";
+import { Pagination } from "apps/workflows/deps.ts";
 
 export type Props = {
   slides: createElement.JSX.Element[] | [];
@@ -51,26 +52,8 @@ export default function SwiperSlider({
     spaceBetween: spaceBetween ?? 8,
     slidesPerView: slidesPerView ?? slidesPerViewResponsive?.mobile ?? 1,
     loop: hasLoop,
-    ...{
-      ...(pagination?.enabled === true
-        ? {
-            pagination: {
-              ...pagination,
-              enabled: true,
-              clickable: true
-            }
-          }
-        : null)
-    },
-    ...{
-      ...(navigation?.enabled === true
-        ? {
-            navigation: {
-              enabled: true
-            }
-          }
-        : null)
-    },
+    customPagination: pagination,
+    customNavigation: navigation,
     breakpoints: validBreakpoints
   };
 

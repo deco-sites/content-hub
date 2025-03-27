@@ -113,7 +113,7 @@ export default function ProductShelfSection({
   text,
   link,
   reverse = false
-}: Props & Device): preact.JSX.Element {
+}: Props): preact.JSX.Element {
   const id = useId();
   const hasProducts = !!products?.length;
   const { srcDesktop, srcMobile, alt } = background ?? {};
@@ -122,12 +122,6 @@ export default function ProductShelfSection({
     ...configs,
     spaceBetween: 8,
     slidesPerView: 1.5,
-    pagination: {
-      enabled: configs?.pagination?.enabledDesktop
-    },
-    navigation: {
-      enabled: configs?.navigation?.enabledDesktop
-    },
     breakpoints: {
       768: {
         slidesPerView: 2

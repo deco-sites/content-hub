@@ -7,7 +7,7 @@ import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { Product } from "apps/commerce/types.ts";
-import { useDevice } from "@deco/deco/hooks";
+import { useIsDesktop } from "site/hooks/useIsDesktop.ts";
 
 interface IBackground {
   /**
@@ -116,10 +116,8 @@ export default function ProductShelfSection({
   reverse = false
 }: Props) {
   const id = useId();
-  const device = useDevice();
-
+  const isDesktop = useIsDesktop();
   const hasProducts = !!products?.length;
-
   const { srcDesktop, srcMobile, alt } = background ?? {};
 
   const sliderConfig: ISliderConfigs = {
@@ -127,10 +125,10 @@ export default function ProductShelfSection({
     spaceBetween: 8,
     slidesPerView: 1.5,
     pagination: {
-      enabled: device === "desktop" ? configs?.pagination?.enabledDesktop : configs?.pagination?.enabledMobile
+      enabled: isDesktop.value ? configs?.pagination?.enabledDesktop : configs?.pagination?.enabledMobile
     },
     navigation: {
-      enabled: device === "desktop" ? configs?.navigation?.enabledDesktop : configs?.navigation?.enabledMobile
+      enabled: isDesktop.value ? configs?.navigation?.enabledDesktop : configs?.navigation?.enabledMobile
     },
     breakpoints: {
       768: {

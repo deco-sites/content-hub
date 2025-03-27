@@ -59,6 +59,12 @@
           },
           "navigation": {
             "enabledDesktop": true
+          },
+          "customNavigation": {
+            "enabledDesktop": true
+          },
+          "customPagination": {
+            "enabledMobile": true
           }
         }
       }
@@ -829,6 +835,10 @@
           "pagination": {
             "enabledMobile": false,
             "enabledDesktop": true
+          },
+          "customPagination": {
+            "enabledMobile": true,
+            "enabledDesktop": true
           }
         }
       }
@@ -851,6 +861,12 @@
             "enabledMobile": true
           },
           "navigation": {
+            "enabledDesktop": true
+          },
+          "customPagination": {
+            "enabledMobile": true
+          },
+          "customNavigation": {
             "enabledDesktop": true
           }
         },

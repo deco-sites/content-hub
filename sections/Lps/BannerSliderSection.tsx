@@ -5,7 +5,7 @@ import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultBannerSection } from "site/configs/BannerSliderSection.ts";
-import { useDevice } from "@deco/deco/hooks";
+import { useIsDesktop } from "site/hooks/useIsDesktop.ts";
 
 /**
  * @description Seção com um slider de banners.
@@ -33,10 +33,8 @@ export default function BannerSliderSection({
   banners = DefaultBannerSection.banners,
   configs
 }: Props) {
-  const id = useId();
-  const device = useDevice();
-  
-  if (!banners?.length) return null;
+  const id = useId(); 
+  const isDesktop = useIsDesktop();
 
   const { pagination, navigation, slidesPerViewResponsive } = configs ?? {};
 
@@ -44,10 +42,10 @@ export default function BannerSliderSection({
     ...configs,
     slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
     pagination: {
-      enabled: device === "desktop" ? pagination?.enabledDesktop : pagination?.enabledMobile
+      enabled: isDesktop.value ? pagination?.enabledDesktop : pagination?.enabledMobile,
     },
     navigation: {
-      enabled: device === "desktop" ? navigation?.enabledDesktop : navigation?.enabledMobile
+      enabled: isDesktop.value ? navigation?.enabledDesktop : navigation?.enabledMobile,
     },
     breakpoints: {
       768: {
@@ -61,6 +59,8 @@ export default function BannerSliderSection({
       }
     }
   } as ISliderConfigs;
+
+  if (!banners?.length) return null;
 
   const defaultPropsBanners = banners.map(banner => {
     return {

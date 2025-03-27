@@ -32,8 +32,9 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "2140",
-            "count": 6
+            "collection": "2041",
+            "count": 6,
+            "hideUnavailableItems": true
           }
         },
         "section": {
@@ -78,8 +79,6 @@
             "richText": "<h3 style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Nova linha de fornos e fogões </span></h3><p style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Os fornos e fogões Electrolux unem inovação e sofisticação para tornar sua rotina mais prática e funcional, garantindo resultados impecáveis no preparo de qualquer receita. O design moderno e os materiais de alta qualidade oferecem durabilidade, elegância e facilidade na limpeza.&nbsp;</span></p><p style=\"text-align: right\"></p><p style=\"text-align: right\">Descubra como a nova linha pode transformar sua experiência na cozinha!</p>",
             "direction": "left",
             "link": {
-              "text": "Saiba mais",
-              "href": "/",
               "color": "#412a2a"
             }
           }
@@ -747,7 +746,7 @@
             ],
             "product": {
               "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003481"
+              "productId": "2004175"
             }
           },
           {
@@ -779,7 +778,7 @@
             ],
             "product": {
               "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003635"
+              "productId": "2004174"
             }
           },
           {
@@ -811,7 +810,7 @@
             ],
             "product": {
               "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003479"
+              "productId": "2003248"
             }
           },
           {
@@ -843,97 +842,7 @@
             ],
             "product": {
               "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003476"
-            }
-          },
-          {
-            "specs": [
-              {
-                "name": "Convecção",
-                "value": "sim",
-                "hasSpec": true,
-                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "icon": "https://data.decoassets.com/content-hub/7da6b777-ad4e-4044-9c56-f926056ca858/iconContainer.png",
-                "name": "Vaporbake",
-                "value": "sim"
-              },
-              {
-                "hasSpec": true,
-                "name": "Conectividade",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "name": "Food Sensor",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
-              }
-            ],
-            "product": {
-              "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003480"
-            }
-          },
-          {
-            "specs": [
-              {
-                "name": "Convecção",
-                "value": "sim",
-                "hasSpec": true,
-                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "name": "Conectividade",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "name": "Food Sensor",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
-              }
-            ],
-            "product": {
-              "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003477"
-            }
-          },
-          {
-            "specs": [
-              {
-                "name": "Convecção",
-                "value": "sim",
-                "hasSpec": true,
-                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
-              },
-              {
-                "name": "Vaporbake",
-                "value": "sim",
-                "hasSpec": true,
-                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "name": "Conectividade",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "name": "Food Sensor",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
-              }
-            ],
-            "product": {
-              "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2004215"
+              "productId": "2004190"
             }
           }
         ],
@@ -958,7 +867,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ReviewsSliderSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<h2><span style=\"color: #ffffff\">Os fornos e fogões que todo mundo ama</span></h2>"
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/a9f834a3-92f4-4440-a782-2e871a2a3392/Oven_OE8GH_Kitchen_Electrolux_Portuguese-1.jpg",

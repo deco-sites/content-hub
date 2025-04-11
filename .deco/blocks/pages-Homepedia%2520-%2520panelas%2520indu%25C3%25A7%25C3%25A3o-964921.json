@@ -145,7 +145,7 @@
         },
         "link": {
           "text": "Conheça todos os produtos",
-          "href": "#",
+          "href": "/2768?map=productClusterIds",
           "bgColor": "#617F57"
         },
         "reverse": true,

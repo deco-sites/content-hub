@@ -360,7 +360,7 @@
               "text": "Saiba mais",
               "title": "Saiba mais",
               "href": "xx",
-              "hideLink": false
+              "hideLink": true
             },
             "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">O que é a tecnologia Ecoplus?</span></h2><p><span style=\"font-size: 13pt\">O programa Ecoplus abrange os eletrodomésticos Electrolux com alta eficiência energética. São produtos que consomem menos energia e água, evitam o desperdício e proporcionam redução no impacto ambiental durante o uso. Todos são identificados com o selo EcoPlus.</span></p>",
             "hideLink": false
@@ -383,7 +383,8 @@
               "color": "#000000",
               "text": "Saiba mais",
               "title": "Saiba mais",
-              "href": "xx"
+              "href": "xx",
+              "hideLink": true
             },
             "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">Benefícios do Ecoplus</span></h2><p><span style=\"font-size: 13pt\">Ao selecionar e identificar produtos com maior eficiência energética, o programa EcoPlus contribui para que o consumidor faça uma escolha consciente, que promove mais economia no consumo de água e energia e promove a sustentabilidade.</span></p>"
           },
@@ -405,7 +406,8 @@
               "color": "#000000",
               "text": "Saiba mais",
               "href": "xx",
-              "title": "Saiba mais"
+              "title": "Saiba mais",
+              "hideLink": true
             },
             "text": "<h2><span style=\"color: rgb(67, 67, 67); font-size: 20pt\">Como a tecnologia funciona?</span></h2><p><span style=\"font-size: 13pt\">Todos os produtos são avaliados com base na etiquetagem energética e passam por testes para análise do desempenho. Com base nisso, os modelos mais eficientes em energia e consumo de água são selecionados e identificados com o selo EcoPlus.</span></p>"
           }
@@ -640,7 +642,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
-        "title": "<p><span style=\"font-size: 16pt\">Já segue a Electrolux?</span></p><p></p><p>Nas nossas redes sociais tem sempre uma nova promoção <br>ou dica incrível de sustentabilidade pra você.</p>",
+        "title": "<p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Já segue a Electrolux?</span></p><p style=\"text-align: justify\"></p><p style=\"text-align: justify\">Nas nossas redes sociais tem sempre uma nova promoção <br>ou dica incrível de sustentabilidade pra você.</p>",
         "icons": [
           {
             "id": "Facebook",
@@ -708,7 +710,8 @@
           }
         ],
         "section": {
-          "title": "<p></p>"
+          "title": "<p></p>",
+          "fullWidth": false
         }
       }
     }

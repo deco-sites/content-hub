@@ -9,9 +9,10 @@
         "section": {
           "title": "<h1 style=\"text-align: center\">Qual o tipo de panela usar para fogão de indução?</h1>",
           "marginTopDesktop": 52,
-          "marginTopMobile": 32
+          "marginTopMobile": 32,
+          "fullWidth": false
         },
-        "text": "<p>Se você está pensando em comprar um fogão de indução ou já possui um, é importante saber que nem toda panela é compatível com esse tipo de eletrodoméstico. Escolher a panela para fogão de indução certa faz toda a diferença para obter os melhores resultados na cozinha.</p><p>Neste conteúdo, vamos explicar tudo o que você precisa saber sobre o assunto, desde os materiais ideais até os benefícios de usar as panelas corretas.</p>"
+        "text": "<p style=\"text-align: justify\">Se você está pensando em comprar um fogão de indução ou já possui um, é importante saber que nem toda panela é compatível com esse tipo de eletrodoméstico. Escolher a panela para fogão de indução certa faz toda a diferença para obter os melhores resultados na cozinha.</p><p style=\"text-align: justify\">Neste conteúdo, vamos explicar tudo o que você precisa saber sobre o assunto, desde os materiais ideais até os benefícios de usar as panelas corretas.</p>"
       }
     },
     {
@@ -84,10 +85,16 @@
         "configs": {
           "slidesPerViewResponsive": {
             "desktop": 3,
-            "tablet": 3,
-            "mobile": 3
+            "tablet": 2,
+            "mobile": 1
           },
           "pagination": {
+            "enabledMobile": true
+          },
+          "customNavigation": {
+            "enabledMobile": true
+          },
+          "customPagination": {
             "enabledMobile": true
           }
         }
@@ -126,10 +133,9 @@
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
-            "query": "panela frigideira inox",
             "sort": "price:desc",
-            "fuzzy": "automatic",
             "count": 10,
+            "collection": "2768",
             "hideUnavailableItems": true
           }
         },
@@ -139,7 +145,8 @@
         },
         "link": {
           "text": "Conheça todos os produtos",
-          "href": "#"
+          "href": "#",
+          "bgColor": "#617F57"
         },
         "reverse": true,
         "configs": {
@@ -215,7 +222,7 @@
               "text": "Saiba Mais",
               "title": "Saiba Mais",
               "color": "#5B6A78",
-              "hideLink": true
+              "hideLink": false
             },
             "text": "<h3><span style=\"color: rgb(4, 30, 80)\">Fogão de indução gasta muita energia?</span></h3><p><span style=\"color: rgb(91, 106, 120)\">Entenda se o fogão de indução gasta muita energia e conheça todas as vantagens de usar esse eletrodoméstico sofisticado e sustentável na sua cozinha!</span></p>"
           },

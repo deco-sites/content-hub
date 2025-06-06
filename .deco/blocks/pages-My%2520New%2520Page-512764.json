@@ -1,5 +1,5 @@
 {
-  "name": "My New Page",
+  "name": "Berta",
   "path": "/teste-berta",
   "sections": [
     {
@@ -51,7 +51,7 @@
         "fullWidth": true,
         "link": {
           "text": "Ver todos",
-          "href": "/",
+          "href": "/2041?map=productClusterIds&page",
           "bgColor": "#011E41"
         },
         "configs": {
@@ -336,8 +336,8 @@
                 "146": "p",
                 "147": "n",
                 "148": "g",
-                "desktop": "https://assets.decocache.com/content-hub/2de7a460-ea95-4262-99de-7b30b8c0322b/comparativo_vapor_bake-1-(1).png",
-                "mobile": "https://assets.decocache.com/content-hub/2de7a460-ea95-4262-99de-7b30b8c0322b/comparativo_vapor_bake-1-(1).png"
+                "desktop": "https://assets.decocache.com/content-hub/e86a9c62-2c86-43a5-ad8c-3fdee3126160/_6-500x500.2.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/e86a9c62-2c86-43a5-ad8c-3fdee3126160/_6-500x500.2.jpg"
               },
               "alt": "1"
             },
@@ -347,7 +347,7 @@
               "title": "Leia mais",
               "color": "#011E41"
             },
-            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Fogões com VaporBake®: Asse pães com perfeição</span></h3><p><span style=\"color: rgb(112, 112, 112)\">Conheça a tecnologia exclusiva VaporBake® nos fogões e fornos Electrolux e descubra uma experiência culinária com mais crocância, textura e sabor!</span></p>"
+            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Tecnologia VaporBake® para receitas até 2x mais crocantes</span></h3><p><span style=\"color: rgb(112, 112, 112)\">Receitas mais crocantes e aproveitando ainda ao máximo os alimentos, reaquecendo-os sem ressecar.</span></p>"
           },
           {
             "image": {
@@ -501,8 +501,8 @@
                 "146": "p",
                 "147": "n",
                 "148": "g",
-                "desktop": "https://assets.decocache.com/content-hub/73c2e53e-43d4-49ad-a577-a467adfbf668/5_cavidade-1-(4).png",
-                "mobile": "https://assets.decocache.com/content-hub/73c2e53e-43d4-49ad-a577-a467adfbf668/5_cavidade-1-(4).png"
+                "desktop": "https://assets.decocache.com/content-hub/abc6f504-5d12-4164-a6e4-3dfc719696cf/7909569424773_5-500x500.1.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/abc6f504-5d12-4164-a6e4-3dfc719696cf/7909569424773_5-500x500.1.jpg"
               },
               "alt": "1"
             },
@@ -512,7 +512,7 @@
               "title": "Leia mais",
               "color": "#011E41"
             },
-            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">PerfectCook360: receitas rápidas e cocção uniforme</span></h3><p><span style=\"color: rgb(112, 112, 112)\">Conheça a exclusiva tecnologia PerfectCook360 de fornos e fogões Electrolux: a união da cavidade selada e convecção elevará suas experiências culinárias!</span></p>"
+            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Preparos ainda mais rápidos com a tecnologia PerfectCook360</span></h3><p><span style=\"color: rgb(112, 112, 112)\">A vantagem de preparar suas receitas mais rápido e com o resultado perfeito: dourado por fora e macio por dentro.</span></p>"
           },
           {
             "image": {
@@ -666,8 +666,8 @@
                 "146": "p",
                 "147": "n",
                 "148": "g",
-                "desktop": "https://assets.decocache.com/content-hub/6fcb0c8c-a802-4140-83eb-e180aa55d6ac/5_cavidade-1-(5).png",
-                "mobile": "https://assets.decocache.com/content-hub/6fcb0c8c-a802-4140-83eb-e180aa55d6ac/5_cavidade-1-(5).png"
+                "desktop": "https://assets.decocache.com/content-hub/3d68e7cc-99e2-45c3-a18c-6416937f612c/5_cavidade-1-(5).png",
+                "mobile": "https://assets.decocache.com/content-hub/3d68e7cc-99e2-45c3-a18c-6416937f612c/5_cavidade-1-(5).png"
               },
               "alt": "1"
             },
@@ -677,7 +677,7 @@
               "title": "Leia mais",
               "color": "#011E41"
             },
-            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">1º fogão com Airfry do Brasil</span></h3><p><span style=\"color: rgb(112, 112, 112)\">A Electrolux inovou mais uma vez e desenvolveu um fogão 3 em 1: é fogão, é forno eletrico e é Airfry. </span></p>"
+            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Novidade: o 1º fogão com Airfry do Brasil </span></h3><p><span style=\"color: rgb(112, 112, 112)\">Inovação da Electrolux, o fogão 3 em 1 é fogão, forno elétrico e Airfry no mesmo produto. Aproveite receitas saborosas e saudáveis!</span></p>"
           }
         ],
         "styleArticleOption": "Type 2"
@@ -924,47 +924,47 @@
           {
             "link": {
               "target": "blank",
-              "href": "/",
-              "title": "Img 1"
+              "title": "Img 1",
+              "href": "https://www.instagram.com/reel/CxiXzFwsXaK/?igsh=b3p6amwzcmhvbHRq"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "low"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/606ca98e-f632-486a-9814-189089f41cc0/Intersect.png",
-              "mobile": "https://data.decoassets.com/content-hub/606ca98e-f632-486a-9814-189089f41cc0/Intersect.png"
+              "desktop": "https://assets.decocache.com/content-hub/30fe592f-dedc-49be-b3ca-14b0dcab0740/33e6c06d-2bf2-4159-8dda-14cb01e9c532___0b8a95706e04d078001d9b4b4a3ea013.webp",
+              "mobile": "https://assets.decocache.com/content-hub/30fe592f-dedc-49be-b3ca-14b0dcab0740/33e6c06d-2bf2-4159-8dda-14cb01e9c532___0b8a95706e04d078001d9b4b4a3ea013.webp"
             },
             "alt": "Img 1"
           },
           {
             "link": {
               "target": "blank",
-              "href": "/",
-              "title": "Img 2"
+              "title": "Img 2",
+              "href": "https://www.instagram.com/reel/CyYvJ8Arttp/?igsh=enVieWdpbjh1ZGtr"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "low"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/a28b51a1-c8fa-4cc3-9b08-56db34e0d767/Rectangle-24512.png",
-              "mobile": "https://data.decoassets.com/content-hub/a28b51a1-c8fa-4cc3-9b08-56db34e0d767/Rectangle-24512.png"
+              "desktop": "https://assets.decocache.com/content-hub/de5ca2a8-33d8-4dc5-9f95-58ad07241748/8d1852ff-fa3c-4fd5-a6cd-74ad6adbebe4___37c80f252c327c89919c4bec372f5370.webp",
+              "mobile": "https://assets.decocache.com/content-hub/de5ca2a8-33d8-4dc5-9f95-58ad07241748/8d1852ff-fa3c-4fd5-a6cd-74ad6adbebe4___37c80f252c327c89919c4bec372f5370.webp"
             },
             "alt": "Img 2"
           },
           {
             "link": {
               "target": "blank",
-              "href": "/",
-              "title": "Img 3"
+              "title": "Img 3",
+              "href": "https://www.instagram.com/reel/ChVSXrtvTnD/?igsh=NzV0cmNhdzJjYnFz"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "low"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/bd0edfb7-6251-4631-9b41-f0d65dddf26f/Rectangle-24513.png",
+              "desktop": "https://assets.decocache.com/content-hub/c2401f7d-5b34-468b-8bfa-d4ab7d40f8e0/cb31a765-626f-479c-9da8-b6017797e864___2d8abf69a38d5145158027578e3ef209.webp",
               "mobile": "https://data.decoassets.com/content-hub/bd0edfb7-6251-4631-9b41-f0d65dddf26f/Rectangle-24513.png"
             },
             "alt": "Img 3"
@@ -972,16 +972,15 @@
           {
             "link": {
               "target": "blank",
-              "href": "/",
-              "title": "Img 4"
+              "href": "https://www.instagram.com/reel/CxLTsiduZQQ/"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "low"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/6463a1da-f2c3-4d0e-a13d-d64fd47d3c03/Rectangle-24514.png",
-              "mobile": "https://data.decoassets.com/content-hub/6463a1da-f2c3-4d0e-a13d-d64fd47d3c03/Rectangle-24514.png"
+              "desktop": "https://assets.decocache.com/content-hub/36f2dac3-fc7b-41ed-889a-6298a6dd547c/629ca478-038d-4eb4-a145-f8074b93d485___bf748226d432d347b5bcca8cfb4d6020.webp",
+              "mobile": "https://assets.decocache.com/content-hub/36f2dac3-fc7b-41ed-889a-6298a6dd547c/629ca478-038d-4eb4-a145-f8074b93d485___bf748226d432d347b5bcca8cfb4d6020.webp"
             },
             "alt": "Img 4"
           }
@@ -990,23 +989,23 @@
         "icons": [
           {
             "id": "Facebook",
-            "href": "/"
+            "href": "https://www.facebook.com/electroluxbr"
           },
           {
             "id": "Instagram",
-            "href": "/"
+            "href": "https://www.instagram.com/electroluxbr"
           },
           {
             "id": "Youtube",
-            "href": "/"
+            "href": "https://www.youtube.com/channel/UCsUD8rknRwxGEKJcWIPYoxA"
           },
           {
             "id": "Pinterest",
-            "href": "/"
+            "href": "https://br.pinterest.com/electroluxbr"
           },
           {
             "id": "Linkedin",
-            "href": "/"
+            "href": "https://br.linkedin.com/company/electroluxgroup"
           }
         ],
         "configs": {

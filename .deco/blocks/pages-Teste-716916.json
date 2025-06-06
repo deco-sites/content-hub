@@ -16,9 +16,9 @@
               "target": "blank"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high",
-              "preload": false
+              "preload": true
             },
             "src": {
               "desktop": "https://data.decoassets.com/content-hub/8201d5fb-4cb4-4e21-8650-823cf5530a54/Image.png",
@@ -183,7 +183,7 @@
             "direction": "right",
             "titleCMS": "Geladeiras",
             "typeOfContent": {
-              "autoplay": true,
+              "autoplay": false,
               "iframeProps": {},
               "src": "https://youtu.be/Z1Gxbmto5lw?si=9uB8GjEQ2ZQYsGWT",
               "title": "Conheça as Geladeiras Electrolux EcoPlus"
@@ -212,7 +212,7 @@
             "direction": "left",
             "titleCMS": "Frigobar",
             "typeOfContent": {
-              "autoplay": true,
+              "autoplay": false,
               "iframeProps": {},
               "src": "https://youtu.be/UZRA-FPjE4s?si=cE4vTlZGS8L-F0-m",
               "title": "Conheça os Frigobares Electrolux EcoPlus"
@@ -241,7 +241,7 @@
             "direction": "right",
             "titleCMS": "Lavadoras",
             "typeOfContent": {
-              "autoplay": true,
+              "autoplay": false,
               "iframeProps": {},
               "src": "https://youtu.be/m4rA8DGLuKY?si=Zcrr79vVEr_3r67u",
               "title": "Conheça as Lavadoras Electrolux EcoPlus"
@@ -270,7 +270,7 @@
             "direction": "left",
             "titleCMS": "Lavadoras",
             "typeOfContent": {
-              "autoplay": true,
+              "autoplay": false,
               "iframeProps": {},
               "src": "https://youtu.be/UmPc5t_4S88?si=NRb-ocLK_b9547zt",
               "title": "Conheça os Purificadores de Água Electrolux EcoPlus"
@@ -299,12 +299,12 @@
             "direction": "right",
             "titleCMS": "Lavadoras",
             "typeOfContent": {
-              "autoplay": true,
+              "autoplay": false,
               "iframeProps": {},
-              "src": "https://youtu.be/m4rA8DGLuKY?si=Zcrr79vVEr_3r67u",
-              "title": "Conheça as Lavadoras Electrolux EcoPlus"
+              "src": "https://www.youtube.com/watch?v=MqJpdRACIsI&list=TLGGzjwvpXYRg9MwNjA2MjAyNQ",
+              "title": "Conheça os Purificadores Electrolux EcoPlus"
             },
-            "richText": "<h2><strong><span style=\"font-size: 14pt\">Purificadores de água </span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Os purificadores de água do programa EcoPlus economizam até cinco vezes mais energia elétrica&amp;. Além disso, contam com compressor ecológico que reduz o impacto ambiental.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Resultados obtidos pela comparação dos purificadores eletrônicos (PE11/PE12), que consomem 0,25 kWh para gelar 1 litro de água, com os purificadores com compressor (PC01B/PC01X), que consomem apenas 0,05 kWh para gelar a mesma quantidade de água. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
+            "richText": "<h2><strong><span style=\"font-size: 14pt\">Purificadores de água </span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 16pt\">Os purificadores de água do programa EcoPlus economizam até cinco vezes mais energia elétrica. Além disso, contam com compressor ecológico que reduz o impacto ambiental.</span></p><p style=\"text-align: justify\"></p><p><span style=\"font-size: 10pt\">*Resultados obtidos pela comparação dos purificadores eletrônicos (PE11/PE12), que consomem 0,25 kWh para gelar 1 litro de água, com os purificadores com compressor (PC01B/PC01X), que consomem apenas 0,05 kWh para gelar a mesma quantidade de água. </span><span style=\"color: rgb(0, 0, 0); font-size: 14pt\">&nbsp;</span></p>"
           }
         ]
       }
@@ -325,7 +325,7 @@
             "titleCMS": "Lavadoras",
             "typeOfContent": {
               "src": "https://youtu.be/UEVsNzqS0IA?si=wBaVKBYLJz-vnxRt",
-              "autoplay": true,
+              "autoplay": false,
               "iframeProps": {},
               "title": "Conheça os Ares-Condicionados Electrolux EcoPlus"
             },
@@ -351,8 +351,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f77b2728-af87-4e89-aead-c01b76d2f9cf/Aspect-Ratio.png",
-                "mobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png"
+                "desktop": "https://assets.decocache.com/content-hub/619b9535-94fa-4321-a865-2da28a15e0f9/Screenshot-2025-06-06-110857.png",
+                "mobile": "https://assets.decocache.com/content-hub/619b9535-94fa-4321-a865-2da28a15e0f9/Screenshot-2025-06-06-110857.png"
               }
             },
             "link": {
@@ -375,8 +375,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/31023b83-92dd-4769-b8b2-da176540a9bf/5_cavidade-1.png",
-                "mobile": "https://assets.decocache.com/content-hub/c03e4c15-46fc-4e20-9644-fc91adcea4bc/5_cavidade-1.png"
+                "desktop": "https://assets.decocache.com/content-hub/4351bc08-3c54-4eaf-aad8-b1e209d1f3f2/Screenshot-2025-06-06-110840.png",
+                "mobile": "https://assets.decocache.com/content-hub/4351bc08-3c54-4eaf-aad8-b1e209d1f3f2/Screenshot-2025-06-06-110840.png"
               }
             },
             "link": {
@@ -398,8 +398,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
-                "mobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png"
+                "desktop": "https://assets.decocache.com/content-hub/b9877461-597a-4800-95ad-0f37cf40e3d6/Screenshot-2025-06-06-110824.png",
+                "mobile": "https://assets.decocache.com/content-hub/b9877461-597a-4800-95ad-0f37cf40e3d6/Screenshot-2025-06-06-110824.png"
               }
             },
             "link": {
@@ -567,8 +567,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f77b2728-af87-4e89-aead-c01b76d2f9cf/Aspect-Ratio.png",
-                "mobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png"
+                "desktop": "https://assets.decocache.com/content-hub/90584996-5a67-4f58-89ac-a62272646a1b/Screenshot-2025-06-06-111312.png",
+                "mobile": "https://assets.decocache.com/content-hub/90584996-5a67-4f58-89ac-a62272646a1b/Screenshot-2025-06-06-111312.png"
               }
             },
             "link": {
@@ -589,8 +589,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/31023b83-92dd-4769-b8b2-da176540a9bf/5_cavidade-1.png",
-                "mobile": "https://assets.decocache.com/content-hub/c03e4c15-46fc-4e20-9644-fc91adcea4bc/5_cavidade-1.png"
+                "desktop": "https://assets.decocache.com/content-hub/c8815ee4-2e41-41cd-b43f-7afc1ccca4c8/Screenshot-2025-06-06-111438.png",
+                "mobile": "https://assets.decocache.com/content-hub/c8815ee4-2e41-41cd-b43f-7afc1ccca4c8/Screenshot-2025-06-06-111438.png"
               }
             },
             "link": {
@@ -611,8 +611,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
-                "mobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png"
+                "desktop": "https://assets.decocache.com/content-hub/2a85f68a-5a9a-42ab-8e54-309e57492037/Screenshot-2025-06-06-111325.png",
+                "mobile": "https://assets.decocache.com/content-hub/2a85f68a-5a9a-42ab-8e54-309e57492037/Screenshot-2025-06-06-111325.png"
               }
             },
             "link": {

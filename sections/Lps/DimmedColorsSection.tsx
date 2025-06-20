@@ -4,11 +4,16 @@ import type { IResponsiveImage } from "site/types/Article.d.ts";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import Section from "site/components/ui/Section.tsx";
 
+type DimmedColors = {
+  mobile: string;
+  desktop: string;
+}
+
 type DimmedColorsData = {
   title: string;
   text: string;
   link: string;
-  color: string;
+  color: DimmedColors;
   image: IResponsiveImage;
 };
 
@@ -45,9 +50,17 @@ export default function DimmedColorsSection(
                   >
                     <ResponsiveImage {...item.image} />
                     <div
-                      id="dimmed-colors-item"
+                      id="dimmed-colors-item__mobile"
                       class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
-                      style={{ backgroundColor: `${item.color}` }}
+                      style={{ backgroundColor: `${item.color.mobile}` }}
+                    >
+                      <h3 class="font-semibold">{item.title}</h3>
+                      <p>{item.text}</p>
+                    </div>
+                    <div
+                      id="dimmed-colors-item__desktop"
+                      class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
+                      style={{ backgroundColor: `${item.color.desktop}` }}
                     >
                       <h3 class="font-semibold">{item.title}</h3>
                       <p>{item.text}</p>
@@ -65,9 +78,12 @@ export default function DimmedColorsSection(
             justify-content: center;
           }
 
-          #dimmed-colors-item {
-            background-color: rgba(${}, 0.7);
-            opacity: 0.7;
+          #dimmed-colors-item__mobile {
+            display: flex;
+          }
+
+          #dimmed-colors-item__desktop {
+            display: none;
           }
 
           @media screen and (min-width:1024px) {
@@ -76,14 +92,18 @@ export default function DimmedColorsSection(
               gap: 0.25rem;
             }
 
-            #dimmed-colors-item {
+            #dimmed-colors-item__mobile {
+              display: none;
+            }
+
+            #dimmed-colors-item__desktop {
+              display:flex;
               top: 50%;
               height: 50%;
-              opacity: 1;
             }
           }
         `}
       </style>
-    </Section>
+    </Section >
   );
 }

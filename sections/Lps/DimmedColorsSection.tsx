@@ -97,7 +97,7 @@ export default function DimmedColorsSection(
             }
 
             #dimmed-colors-item__desktop {
-              display:flex;
+              display: flex;
               top: 50%;
               height: 50%;
             }

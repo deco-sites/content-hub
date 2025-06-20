@@ -42,7 +42,28 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx"
+        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+        "text": "Lorem ipsum dolor sit amet ver todos",
+        "title": "Cozinha",
+        "data": {
+          "image": {
+            "alt": "lavadora",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "link": {
+              "href": "/#",
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "low"
+            }
+          },
+          "title": "para preservar",
+          "text": "lorem ipsum dolor sit amet"
+        }
       }
     },
     {

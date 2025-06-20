@@ -31,17 +31,6 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
-        "section": {
-          "fullWidth": true,
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "text": "Lorem ipsum dolor sit amet ver todos",
         "title": "Cozinha",
@@ -113,6 +102,17 @@
             "color": "rgba(107, 78, 78)"
           }
         ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
+        }
       }
     },
     {

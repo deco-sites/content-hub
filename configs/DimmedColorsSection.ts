@@ -7,7 +7,7 @@ export const dimmedColorsSectionData = {
       title: "Para preservar",
       text: "Lorem Ipsum dolor sit amet",
       link: "/#",
-      color: "rgba(52, 73, 94)",
+      color: "rgba(52, 73, 94, 0.7)",
       image: {
         src: {
           desktop:
@@ -21,7 +21,7 @@ export const dimmedColorsSectionData = {
       title: "Para preparar",
       text: "Lorem Ipsum dolor sit amet",
       link: "/#",
-      color: "rgba(90, 106, 90)",
+      color: "rgba(90, 106, 90, 0.7)",
       image: {
         src: {
           desktop:
@@ -35,7 +35,7 @@ export const dimmedColorsSectionData = {
       title: "Acessórios e utilidades",
       text: "Lorem Ipsum dolor sit amet",
       link: "/#",
-      color: "rgba(107, 78, 78)",
+      color: "rgba(107, 78, 78, 0.7)",
       image: {
         src: {
           desktop:
@@ -51,7 +51,7 @@ export const dimmedColorsSectionData = {
       title: "Para preservar",
       text: "Lorem Ipsum dolor sit amet",
       link: "/#",
-      color: "rgba(52, 73, 94)",
+      color: "rgba(52, 73, 94, 0.7)",
       image: {
         src: {
           desktop:
@@ -65,7 +65,7 @@ export const dimmedColorsSectionData = {
       title: "Para preparar",
       text: "Lorem Ipsum dolor sit amet",
       link: "/#",
-      color: "rgba(90, 106, 90)",
+      color: "rgba(90, 106, 90, 0.7)",
       image: {
         src: {
           desktop:
@@ -79,7 +79,7 @@ export const dimmedColorsSectionData = {
       title: "Acessórios e utilidades",
       text: "Lorem Ipsum dolor sit amet",
       link: "/#",
-      color: "rgba(107, 78, 78)",
+      color: "rgba(107, 78, 78, 0.7)",
       image: {
         src: {
           desktop:
@@ -93,7 +93,7 @@ export const dimmedColorsSectionData = {
       title: "Cozinha",
       text: "Lorem Ipsum dolor sit amet",
       link: "/#",
-      color: "rgba(94, 74, 74)",
+      color: "rgba(94, 74, 74, 0.7)",
       image: {
         src: {
           desktop:

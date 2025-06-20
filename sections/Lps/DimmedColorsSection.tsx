@@ -66,6 +66,7 @@ export default function DimmedColorsSection(
           }
 
           #dimmed-colors-item {
+            background-color: rgba(${}, 0.7);
             opacity: 0.7;
           }
 

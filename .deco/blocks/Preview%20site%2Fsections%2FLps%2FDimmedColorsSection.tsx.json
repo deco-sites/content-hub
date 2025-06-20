@@ -1,3 +1,14 @@
 {
-  "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx"
+  "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+  "data": {
+    "image": {
+      "link": {
+        "target": "blank"
+      },
+      "loadingOptions": {
+        "loading": "lazy",
+        "fetchPriority": "high"
+      }
+    }
+  }
 }

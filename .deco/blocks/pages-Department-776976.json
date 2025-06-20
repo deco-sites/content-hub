@@ -42,11 +42,17 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
         "section": {
+          "fullWidth": true,
           "marginBottomDesktop": 0,
-          "marginBottomMobile": 0,
-          "fullWidth": true
+          "marginBottomMobile": 0
         },
         "styleArticleOption": "Type 2",
         "configs": {
@@ -184,9 +190,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
         "section": {
-          "fullWidth": true,
           "marginBottomDesktop": 0,
-          "marginBottomMobile": 0
+          "marginBottomMobile": 0,
+          "fullWidth": true
         },
         "styleArticleOption": "Type 2",
         "configs": {

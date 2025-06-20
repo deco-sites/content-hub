@@ -7,13 +7,15 @@ import Section from "site/components/ui/Section.tsx";
 type DimmedColorsData = {
   title: string;
   text: string;
+  link: string;
+  color: string;
   image: IResponsiveImage;
 };
 
 interface DimmedColorsSection {
   title: string;
   text: string;
-  data: DimmedColorsData;
+  data: DimmedColorsData[];
 }
 
 export default function DimmedColorsSection(

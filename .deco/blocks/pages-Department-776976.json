@@ -45,25 +45,74 @@
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "text": "Lorem ipsum dolor sit amet ver todos",
         "title": "Cozinha",
-        "data": {
-          "image": {
-            "alt": "lavadora",
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-              "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+        "data": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
             },
-            "link": {
-              "href": "/#",
-              "target": "blank"
-            },
-            "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "low"
-            }
+            "title": "Para preservar",
+            "text": "lorem ipsum dolor sit amet ver todos",
+            "link": "/#",
+            "color": "rgba(52, 73, 94)"
           },
-          "title": "para preservar",
-          "text": "lorem ipsum dolor sit amet"
-        }
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preparar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preparar",
+            "text": "lorem ipsum dolor sit amet ver todos",
+            "link": "/#",
+            "color": "rgba(90, 106, 90)"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Acessórios e utilidades"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Acessórios e utilidades",
+            "text": "lorem ipsum dolor sit amet ver todos",
+            "link": "/#",
+            "color": "rgba(107, 78, 78)"
+          }
+        ]
       }
     },
     {

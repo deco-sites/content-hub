@@ -43,7 +43,7 @@ export default function DimmedColorsSection(
           {data.map(
             (item, index) => {
               return (
-                <a href={item.link} key={index}>
+                <a href={item.link}>
                   <div
                     id="dimmed-colors-item__container"
                     class="relative flex flex-col overflow-hidden"
@@ -52,7 +52,7 @@ export default function DimmedColorsSection(
                     <div
                       id="dimmed-colors-item__mobile"
                       class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
-                      style={{ backgroundColor: `${item.color.mobile}` }}
+                      style={{ backgroundColor: item.color.mobile }}
                     >
                       <h3 class="font-semibold">{item.title}</h3>
                       <p>{item.text}</p>
@@ -60,7 +60,7 @@ export default function DimmedColorsSection(
                     <div
                       id="dimmed-colors-item__desktop"
                       class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
-                      style={{ backgroundColor: `${item.color.desktop}` }}
+                      style={{ backgroundColor: item.color.desktop }}
                     >
                       <h3 class="font-semibold">{item.title}</h3>
                       <p>{item.text}</p>
@@ -71,7 +71,7 @@ export default function DimmedColorsSection(
             },
           )}
         </div>
-      </div>
+      </div >
       <style>
         {`
           #section-dimmed-colors > div {

@@ -5,8 +5,8 @@ import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { ProductSpecsComparator } from "site/types/Product.d.ts";
 import type {
+  NullReturn,
   ProductById,
-  NullReturn
 } from "site/loaders/customVTEX/productById.ts";
 
 /**
@@ -52,7 +52,7 @@ interface Props {
 export default function ProductShelfWithComparatorSection({
   configs,
   section,
-  products
+  products,
 }: Props): preact.JSX.Element {
   const id = useId();
 
@@ -66,7 +66,7 @@ export default function ProductShelfWithComparatorSection({
       isVariantOf,
       offers,
       image,
-      productSpecsComparator: specs
+      productSpecsComparator: specs,
     };
   });
 
@@ -76,18 +76,18 @@ export default function ProductShelfWithComparatorSection({
     spaceBetween: 8,
     breakpoints: {
       768: {
-        slidesPerView: 2
+        slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 2
+        slidesPerView: 2,
       },
       1280: {
-        slidesPerView: 3
+        slidesPerView: 3,
       },
       1440: {
-        slidesPerView: 5
-      }
-    }
+        slidesPerView: 5,
+      },
+    },
   } as ISliderConfigs;
 
   return (

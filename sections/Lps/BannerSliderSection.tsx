@@ -30,9 +30,9 @@ interface Props {
 export default function BannerSliderSection({
   section,
   banners = DefaultBannerSection.banners,
-  configs
+  configs,
 }: Props) {
-  const id = useId(); 
+  const id = useId();
 
   const { slidesPerViewResponsive } = configs ?? {};
 
@@ -41,17 +41,17 @@ export default function BannerSliderSection({
     slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
     breakpoints: {
       768: {
-        slidesPerView: slidesPerViewResponsive?.tablet ?? 1
+        slidesPerView: slidesPerViewResponsive?.tablet ?? 1,
       },
       1024: {
         slidesPerView: slidesPerViewResponsive?.desktop ?? 1,
-      }
-    }
+      },
+    },
   } as ISliderConfigs;
 
   if (!banners?.length) return null;
 
-  const defaultPropsBanners = banners.map(banner => {
+  const defaultPropsBanners = banners.map((banner) => {
     return {
       ...{ ...banner },
       sizes: {
@@ -59,8 +59,8 @@ export default function BannerSliderSection({
         fullScreen: true,
         maxHeight: 420,
         heightMobile: 400,
-        widthMobile: 375
-      }
+        widthMobile: 375,
+      },
     };
   });
 

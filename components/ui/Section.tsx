@@ -16,7 +16,7 @@ export default function Section({
   marginTopDesktop = 0,
   classesContainer,
   stylesContainer = {},
-  fullWidth = false
+  fullWidth = false,
 }: Props): preact.JSX.Element {
   return (
     <>

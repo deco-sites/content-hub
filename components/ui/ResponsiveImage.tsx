@@ -6,7 +6,7 @@ export default function ResponsiveImage({
   alt,
   link,
   sizes,
-  loadingOptions
+  loadingOptions,
 }: IResponsiveImage): preact.JSX.Element | null {
   const {
     fullScreen = false,
@@ -15,13 +15,13 @@ export default function ResponsiveImage({
     heightMobile = 420,
     widthMobile = 420,
     maxWidth = "unset",
-    maxHeight = "unset"
+    maxHeight = "unset",
   } = sizes ?? {};
 
   const {
     preload = false,
     loading = "lazy",
-    fetchPriority = "low"
+    fetchPriority = "low",
   } = loadingOptions ?? {};
 
   const { desktop, mobile } = src ?? {};
@@ -51,7 +51,7 @@ export default function ResponsiveImage({
           src={desktop}
           style={{
             maxWidth,
-            maxHeight
+            maxHeight,
           }}
           width={width}
           {...{ fetchPriority }}

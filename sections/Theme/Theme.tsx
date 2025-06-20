@@ -185,7 +185,7 @@ const toVariables = (t: Theme & Required<ThemeColors>): [string, string][] => {
     "--erc": t["error-content"] ?? contrasted(t["error"]),
 
     "--in": t["info"],
-    "--inc": t["info-content"] ?? contrasted(t["info"])
+    "--inc": t["info-content"] ?? contrasted(t["info"]),
   }).map(([key, color]) => [key, toValue(color)] as [string, string]);
 
   const miscellaneousVariables = Object.entries({
@@ -197,7 +197,7 @@ const toVariables = (t: Theme & Required<ThemeColors>): [string, string][] => {
     "--btn-focus-scale": t["--btn-focus-scale"],
     "--border-btn": t["--border-btn"],
     "--tab-border": t["--tab-border"],
-    "--tab-radius": t["--tab-radius"]
+    "--tab-radius": t["--tab-radius"],
   });
 
   return [...colorVariables, ...miscellaneousVariables];
@@ -222,7 +222,7 @@ const defaultTheme = {
   "--btn-focus-scale": "0.95" as const, // scale transform of button when you focus on it
   "--border-btn": "1px" as const, // border width of buttons
   "--tab-border": "1px", // border width of tabs
-  "--tab-radius": "0.5rem" // border radius of tabs
+  "--tab-radius": "0.5rem", // border radius of tabs
 };
 
 /**
@@ -240,14 +240,14 @@ function Section({
   buttonStyle,
   otherStyles,
   font,
-  colorScheme
+  colorScheme,
 }: Props) {
   const theme = {
     ...defaultTheme,
     ...complementaryColors,
     ...mainColors,
     ...buttonStyle,
-    ...otherStyles
+    ...otherStyles,
   };
 
   const variables = [
@@ -255,8 +255,8 @@ function Section({
     [
       "--font-family",
       font?.family ||
-        "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif"
-    ]
+      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+    ],
   ].map(([name, value]) => ({ name, value }));
 
   return (
@@ -272,10 +272,12 @@ export function Preview(props: Props) {
   const adminColorMode = props.mode === "dark" ? "dark" : "light";
   return (
     <>
-      {/* This stylesheet is used to simulate the colors from the admin's color schema (admin's light or dark mode), which are not accessible in the site's color schema.
+      {
+        /* This stylesheet is used to simulate the colors from the admin's color schema (admin's light or dark mode), which are not accessible in the site's color schema.
        * This is a temporary solution until the admin's color schema is accessible.
        * TODO(@carol): Change this temporary solution / discuss with designers a doable approach
-       */}
+       */
+      }
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;700&display=swap');
@@ -405,7 +407,7 @@ const ButtonSizesPreview = () => {
     lg: "Large",
     md: "Normal",
     sm: "Small",
-    xs: "Tiny"
+    xs: "Tiny",
   };
 
   const buttonStyles = ["", "primary", "secondary", "accent"];
@@ -426,7 +428,7 @@ const ButtonSizesPreview = () => {
 
   return (
     <div className="bg-base-100 overflow-x-auto rounded-lg flex flex-col p-2 gap-2">
-      {buttonStyles.map(style => renderButtonRow(style))}
+      {buttonStyles.map((style) => renderButtonRow(style))}
     </div>
   );
 };
@@ -437,7 +439,7 @@ const ButtonColorsPreview = () => {
     { class: "", label: "Button" },
     { class: "btn-primary", label: "Primary" },
     { class: "btn-secondary", label: "Secondary" },
-    { class: "btn-accent", label: "Accent" }
+    { class: "btn-accent", label: "Accent" },
   ];
 
   const renderButtonRow = (type: string) => (
@@ -456,7 +458,7 @@ const ButtonColorsPreview = () => {
 
   return (
     <div className="bg-base-100 overflow-x-auto rounded-lg flex flex-col p-2 gap-2">
-      {buttonTypesClasses.map(type => renderButtonRow(type))}
+      {buttonTypesClasses.map((type) => renderButtonRow(type))}
     </div>
   );
 };
@@ -466,12 +468,12 @@ const ButtonStylesPreview = () => {
     { class: "btn", label: "Button" },
     { class: "btn-outline", label: "Outline" },
     { class: "btn-ghost text-[initial]", label: "Ghost" },
-    { class: "btn-link", label: "Link" }
+    { class: "btn-link", label: "Link" },
   ];
 
   return (
     <div className="bg-base-100 overflow-x-auto rounded-lg flex flex-row p-2 gap-2">
-      {buttons.map(button => (
+      {buttons.map((button) => (
         <button className={`btn btn-xs md:btn-sm capitalize ${button.class}`}>
           {button.label}
         </button>
@@ -485,7 +487,7 @@ const TextColorsPreview = () => {
     "text-[initial]",
     "text-primary",
     "text-secondary",
-    "text-accent"
+    "text-accent",
   ];
 
   return (
@@ -503,17 +505,19 @@ const PreviewContainer = ({
   mode,
   title,
   children,
-  codeString
+  codeString,
 }: {
   mode: string;
   title: string;
   children: ComponentChildren;
   codeString: string;
 }) => {
-  const borderClass =
-    mode === "dark" ? "border-color-dark" : "border-color-light";
-  const btnOutlineClass =
-    mode === "dark" ? "btn-outline-dark" : "btn-outline-light";
+  const borderClass = mode === "dark"
+    ? "border-color-dark"
+    : "border-color-light";
+  const btnOutlineClass = mode === "dark"
+    ? "btn-outline-dark"
+    : "btn-outline-light";
   const checkboxId = `show-code-${title.replace(/\s+/g, "-").toLowerCase()}`;
   const codeBlockId = `code-block-${title.replace(/\s+/g, "-").toLowerCase()}`;
 
@@ -533,15 +537,15 @@ const PreviewContainer = ({
     }
     #${checkboxId}:checked ~ .hide-label {
       background-color: ${
-        mode === "dark"
-          ? "var(--admin-hover-bg-color)"
-          : "var(--admin-text-color-light)"
-      };
+    mode === "dark"
+      ? "var(--admin-hover-bg-color)"
+      : "var(--admin-text-color-light)"
+  };
       color: ${
-        mode === "dark"
-          ? "var(--admin-text-color-light)"
-          : "var(--admin-hover-bg-color)"
-      };
+    mode === "dark"
+      ? "var(--admin-text-color-light)"
+      : "var(--admin-hover-bg-color)"
+  };
     }
   `;
 
@@ -644,7 +648,7 @@ const snippets = {
   <button class="btn btn-lg btn-accent">Large</button>
   <button class="btn btn-md btn-accent">Normal</button>
   <button class="btn btn-sm btn-accent">Small</button>
-  <button class="btn btn-xs btn-accent">Tiny</button>`
+  <button class="btn btn-xs btn-accent">Tiny</button>`,
 };
 
 export default Section;

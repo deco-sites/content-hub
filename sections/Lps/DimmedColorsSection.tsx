@@ -51,16 +51,16 @@ export default function DimmedColorsSection(
                     <ResponsiveImage {...item.image} />
                     <div
                       id="dimmed-colors-item__mobile"
-                      class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
                       style={{ backgroundColor: item.color.mobile }}
+                      class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
                     >
                       <h3 class="font-semibold">{item.title}</h3>
                       <p>{item.text}</p>
                     </div>
                     <div
                       id="dimmed-colors-item__desktop"
-                      class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
                       style={{ backgroundColor: item.color.desktop }}
+                      class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
                     >
                       <h3 class="font-semibold">{item.title}</h3>
                       <p>{item.text}</p>

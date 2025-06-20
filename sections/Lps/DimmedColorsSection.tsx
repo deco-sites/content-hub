@@ -38,7 +38,7 @@ export default function DimmedColorsSection(
           {data.map(
             (item, index) => {
               return (
-                <a href={item.link}>
+                <a href={item.link} key={index}>
                   <div
                     id="dimmed-colors-item__container"
                     class="relative flex flex-col overflow-hidden"

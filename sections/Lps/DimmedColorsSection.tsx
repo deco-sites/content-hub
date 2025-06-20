@@ -5,22 +5,22 @@ import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import Section from "site/components/ui/Section.tsx";
 
 type DimmedColors = {
-  mobile: string;
-  desktop: string;
+  mobile?: string;
+  desktop?: string;
 }
 
 type DimmedColorsData = {
-  title: string;
-  text: string;
-  link: string;
-  color: DimmedColors;
-  image: IResponsiveImage;
+  title?: string;
+  text?: string;
+  link?: string;
+  color?: DimmedColors;
+  image?: IResponsiveImage;
 };
 
 interface DimmedColorsSection {
   title: string;
   text: string;
-  data: DimmedColorsData[];
+  data?: DimmedColorsData[];
 }
 
 export default function DimmedColorsSection(

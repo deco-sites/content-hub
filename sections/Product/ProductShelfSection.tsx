@@ -7,7 +7,6 @@ import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { Product } from "apps/commerce/types.ts";
-import { useDevice } from "@deco/deco/hooks";
 
 interface IBackground {
   /**
@@ -113,36 +112,27 @@ export default function ProductShelfSection({
   background,
   text,
   link,
-  reverse = false
-}: Props) {
+  reverse = false,
+}: Props): preact.JSX.Element {
   const id = useId();
-  const device = useDevice();
-
   const hasProducts = !!products?.length;
-
   const { srcDesktop, srcMobile, alt } = background ?? {};
 
   const sliderConfig: ISliderConfigs = {
     ...configs,
     spaceBetween: 8,
     slidesPerView: 1.5,
-    pagination: {
-      enabled: device === "desktop" ? configs?.pagination?.enabledDesktop : configs?.pagination?.enabledMobile
-    },
-    navigation: {
-      enabled: device === "desktop" ? configs?.navigation?.enabledDesktop : configs?.navigation?.enabledMobile
-    },
     breakpoints: {
       768: {
-        slidesPerView: 2
+        slidesPerView: 2,
       },
       1280: {
-        slidesPerView: 3
+        slidesPerView: 3,
       },
       1440: {
-        slidesPerView: 4
-      }
-    }
+        slidesPerView: 4,
+      },
+    },
   } as ISliderConfigs;
 
   const minimalProducts = products?.map(
@@ -151,9 +141,9 @@ export default function ProductShelfSection({
         url,
         isVariantOf,
         offers,
-        image
+        image,
       };
-    }
+    },
   );
 
   const isCustomShelf = !isEmptyText(text) || !isEmptyText(link?.text);
@@ -195,10 +185,8 @@ export default function ProductShelfSection({
               : ""
           } ${hasBackground ? "lg:absolute lg:top-1/2 lg:-translate-y-2/4" : ""}
               ${
-                !reverse && isCustomShelf
-                  ? "lg:flex-row"
-                  : "lg:flex-row-reverse"
-              }`}
+            !reverse && isCustomShelf ? "lg:flex-row" : "lg:flex-row-reverse"
+          }`}
         >
           <div
             class={`flex w-full ${

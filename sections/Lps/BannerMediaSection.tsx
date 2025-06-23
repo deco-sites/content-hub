@@ -9,7 +9,6 @@ import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultBannerMedia } from "site/configs/BannerMediaSection.ts";
-import { useDevice } from "@deco/deco/hooks";
 
 /**
  * @title {{#id}}{{id}}{{/id}}{{^id}}Ícone{{/id}}
@@ -53,10 +52,9 @@ export default function BannerMediaSliderSection({
   banners = DefaultBannerMedia.banners,
   title = DefaultBannerMedia.title,
   configs = DefaultBannerMedia.configs,
-  icons = DefaultBannerMedia.icons
+  icons = DefaultBannerMedia.icons,
 }: Props) {
   const id = useId();
-  const device = useDevice();
 
   if (!banners?.length) return null;
 
@@ -64,12 +62,10 @@ export default function BannerMediaSliderSection({
     slidesPerViewResponsive = {
       mobile: 1.6,
       tablet: 2.3,
-      desktop: 3
+      desktop: 3,
     },
     spaceBetween = 32,
     centeredSlides = true,
-    pagination,
-    navigation
   } = configs ?? {};
 
   const sliderConfig = {
@@ -77,30 +73,21 @@ export default function BannerMediaSliderSection({
     slidesPerView: slidesPerViewResponsive.mobile,
     spaceBetween,
     centeredSlides,
-    pagination: {
-      enabled: device === "desktop" ? pagination?.enabledDesktop : pagination?.enabledMobile
-    },
-    navigation: {
-      enabled: device === "desktop" ? navigation?.enabledDesktop : navigation?.enabledMobile
-    },
     breakpoints: {
       768: {
         slidesPerView: slidesPerViewResponsive.tablet,
         spaceBetween: 32,
-        centeredSlides: false
+        centeredSlides: false,
       },
       1024: {
         slidesPerView: slidesPerViewResponsive.desktop,
         spaceBetween: 32,
         centeredSlides: false,
-        pagination: {
-          enabled: pagination?.enabledDesktop ?? false
-        }
-      }
-    }
+      },
+    },
   } as ISliderConfigs;
 
-  const defaultPropBanners = banners.map(banner => {
+  const defaultPropBanners = banners.map((banner) => {
     return {
       ...{ ...banner },
       sizes: {
@@ -108,8 +95,8 @@ export default function BannerMediaSliderSection({
         width: 185,
         height: 324,
         widthMobile: 185,
-        heightMobile: 324
-      }
+        heightMobile: 324,
+      },
     };
   });
 

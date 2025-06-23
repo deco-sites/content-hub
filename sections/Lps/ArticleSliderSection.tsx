@@ -5,7 +5,6 @@ import type { IArticle } from "site/types/Article.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultArticles } from "site/configs/ArticlesSliderSection.ts";
-import { useDevice } from "@deco/deco/hooks";
 
 /**
  * @description Componente de seção contendo um slider de cartões informativos.
@@ -44,7 +43,6 @@ export default function ArticleSliderSection({
   configs = DefaultArticles.configs,
 }: Props) {
   const id = useId();
-  const device = useDevice();
 
   if (!articles?.length) return null;
 
@@ -55,32 +53,18 @@ export default function ArticleSliderSection({
       tablet: 1,
       desktop: 3,
     },
-    pagination,
-    navigation,
   } = configs ?? {};
 
   const sliderConfig = {
     ...configs,
     slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
     spaceBetween,
-    pagination: {
-      enabled: device === "desktop" ? pagination?.enabledDesktop : pagination?.enabledMobile
-    },
-    navigation: {
-      enabled: device === "desktop" ? navigation?.enabledDesktop : navigation?.enabledMobile
-    },
     breakpoints: {
       768: {
         slidesPerView: slidesPerViewResponsive?.tablet ?? 1,
       },
       1024: {
         slidesPerView: slidesPerViewResponsive?.desktop ?? 3,
-        pagination: {
-          enabled: pagination?.enabledDesktop,
-        },
-        navigation: {
-          enabled: navigation?.enabledDesktop,
-        },
       },
     },
   } as ISliderConfigs;
@@ -103,9 +87,11 @@ export default function ArticleSliderSection({
     <Section
       {...section}
       id={id}
-      classesContainer={`article-slider-section article-slider-section__${styleArticleOption
-        .toLowerCase()
-        .replace(" ", "-")} h-full`}
+      classesContainer={`article-slider-section article-slider-section__${
+        styleArticleOption
+          .toLowerCase()
+          .replace(" ", "-")
+      } h-full`}
     >
       <div class="flex w-full mx-auto">
         <ArticleSlider

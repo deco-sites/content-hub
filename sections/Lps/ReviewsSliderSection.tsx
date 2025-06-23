@@ -52,7 +52,7 @@ interface Props {
 export default function ReviewsSliderSection({
   section,
   background = DefaultReviews.background,
-  sectionReviewCards = DefaultReviews.sectionReviewCards
+  sectionReviewCards = DefaultReviews.sectionReviewCards,
 }: Props) {
   const id = useId();
   const { srcDesktop, srcMobile, alt } = background ?? {};
@@ -71,7 +71,7 @@ export default function ReviewsSliderSection({
                 src={{ desktop: srcDesktop, mobile: srcMobile }}
                 alt={alt}
                 sizes={{
-                  heightMobile: 350
+                  heightMobile: 350,
                 }}
               />
             </div>
@@ -87,15 +87,15 @@ export default function ReviewsSliderSection({
                         ...props,
                         styles: {
                           container: {
-                            maxWidth: "initial"
-                          }
+                            maxWidth: "initial",
+                          },
                         },
                         classes: {
                           container:
                             "whitespace-normal min-w-[340px] lg:min-w-[initial]",
                           reviewDescription: "min-h-[60px]",
-                          reviewProductNameAndPersonName: "min-h-[45px]"
-                        }
+                          reviewProductNameAndPersonName: "min-h-[45px]",
+                        },
                       }}
                       key={`${props.reviewPersonName}-${idx}`}
                     />

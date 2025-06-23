@@ -1,0 +1,297 @@
+{
+  "name": "Homepedia - panelas indução",
+  "path": "/teste-homepedia",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "title": "<h1 style=\"text-align: center\">Qual o tipo de panela usar para fogão de indução?</h1>",
+          "marginTopDesktop": 52,
+          "marginTopMobile": 32,
+          "fullWidth": false
+        },
+        "text": "<p style=\"text-align: justify\">Se você está pensando em comprar um fogão de indução ou já possui um, é importante saber que nem toda panela é compatível com esse tipo de eletrodoméstico. Escolher a panela para fogão de indução certa faz toda a diferença para obter os melhores resultados na cozinha.</p><p style=\"text-align: justify\">Neste conteúdo, vamos explicar tudo o que você precisa saber sobre o assunto, desde os materiais ideais até os benefícios de usar as panelas corretas.</p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "title": "<h2><span style=\"font-size: 18pt\">Por que é importante escolher a panela certa para fogão de indução?</span></h2>"
+        },
+        "text": "<p>O fogão de indução, ou cooktop de indução, funciona por meio de um campo magnético que aquece diretamente a panela e não a superfície do fogão. Por isso, é fundamental que a panela para fogão de indução seja feita de materiais magnéticos, como o aço inox ou ferro fundido. Panelas de vidro, alumínio ou cerâmica, por exemplo, não funcionam nesse tipo de fogão, a menos que tenham uma base magnética específica. </p><p>Ou seja, escolher a panela adequada assegura o funcionamento correto do fogão e contribui para uma cocção mais uniforme, economia de energia e maior durabilidade dos seus utensílios de cozinha.  </p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "fullWidth": false
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "self",
+              "href": "/",
+              "title": "Banner"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Banners",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/3d5d16e7-add3-4b72-82e2-748a2673cdce/Screenshot-2025-03-27-091911.png",
+              "mobile": "https://assets.decocache.com/content-hub/3d5d16e7-add3-4b72-82e2-748a2673cdce/Screenshot-2025-03-27-091911.png"
+            }
+          },
+          {
+            "link": {
+              "target": "self",
+              "href": "/",
+              "title": "Banner"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Banners",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/8bdcafcd-062b-40a2-b10c-306b8d316efa/Screenshot-2025-03-27-091837.png",
+              "mobile": "https://assets.decocache.com/content-hub/8bdcafcd-062b-40a2-b10c-306b8d316efa/Screenshot-2025-03-27-091837.png"
+            }
+          },
+          {
+            "link": {
+              "target": "self",
+              "href": "/",
+              "title": "Banner"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Banners",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/c8aba1e4-a045-4f93-b56f-7b576d605968/Screenshot-2025-03-27-091856.png",
+              "mobile": "https://assets.decocache.com/content-hub/c8aba1e4-a045-4f93-b56f-7b576d605968/Screenshot-2025-03-27-091856.png"
+            }
+          }
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 3,
+            "tablet": 2,
+            "mobile": 1
+          },
+          "pagination": {
+            "enabledMobile": true
+          },
+          "customNavigation": {
+            "enabledMobile": true
+          },
+          "customPagination": {
+            "enabledMobile": true
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "title": "<h2><span style=\"font-size: 18pt\">Qual tipo de panela usar para fogão de indução?</span></h2>",
+          "fullWidth": false
+        },
+        "text": "<p>Se você está em dúvida sobre qual panela escolher, é importante conhecer os materiais mais indicados. A seguir, confira as opções que melhor se adaptam ao seu eletrodoméstico de indução:</p><h3><strong><span style=\"font-size: 14pt\">1. Panela de aço inox para cooktop de indução</span></strong></h3><p>As panelas de aço inox são uma das melhores opções. Elas são duráveis, resistentes à corrosão e fáceis de limpar. Além disso, o aço inox distribui o calor de forma uniforme, ajudando para que os seus alimentos sejam cozidos de maneira perfeita.</p><h3><strong><span style=\"font-size: 14pt\">2. Panela de ferro fundido</span></strong></h3><p>O ferro fundido é outro material altamente compatível com fogões de indução. Essas panelas são conhecidas por sua capacidade de reter calor por mais tempo, sendo indicadas para preparações que exigem cozimento lento, como ensopados e grelhados.</p><h3><strong><span style=\"font-size: 14pt\">3. Panelas com base magnética</span></strong></h3><p>Se você já possui panelas de alumínio ou cerâmica, é possível adaptá-las ao fogão de indução desde que tenham uma base magnética. Essa camada adicional permite que o campo magnético do fogão aqueça a panela corretamente.</p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "fullWidth": false,
+          "title": "<h2><span style=\"font-size: 18pt\">Benefícios de usar a panela certa para fogão de indução</span></h2>"
+        },
+        "text": "<p>Agora que você já conhece quais opções são compatíveis com o fogão ou <a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW122685663 BCX0\" href=\"https://loja.electrolux.com.br/eletrodomesticos/cooktops\">cooktop</a> de indução, que tal aprender mais sobre a série de vantagens que investir nos utensílios certos pode trazer para a sua rotina na cozinha?&nbsp;<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p><h3><strong><span style=\"font-size: 14pt\">Eficiência energética</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h3><p>As panelas compatíveis com indução aquecem mais rápido, reduzindo o tempo de preparo e o consumo de energia, o que resulta em economia na conta de luz.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p><h3><strong><span style=\"font-size: 14pt\">Segurança</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h3><p style=\"text-align: justify\">Como o calor é gerado apenas na panela, a superfície do fogão permanece fria, evitando queimaduras acidentais e proporcionando mais tranquilidade na cozinha.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p><h3><strong><span style=\"font-size: 14pt\">Cozimento uniforme</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></strong></h3><p style=\"text-align: justify\">Materiais como o aço inox e o ferro fundido distribuem o calor de maneira homogênea, facilitando o cozimento dos seus alimentos, sem pontos quentes ou frios.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p><h3><strong><span style=\"font-size: 14pt\">Durabilidade</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h3><p style=\"text-align: justify\">Panelas feitas para indução são projetadas para resistir ao uso intensivo, oferecendo maior vida útil e mantendo a sua qualidade por muito mais tempo.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "text": "<h2>As panelas de indução da Electrolux </h2>",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "count": 10,
+            "collection": "2768",
+            "hideUnavailableItems": true
+          }
+        },
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/f96384bb-39cb-4e9b-b535-1418f3e32b68/Screenshot-2025-04-11-165549.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/f96384bb-39cb-4e9b-b535-1418f3e32b68/Screenshot-2025-04-11-165549.png"
+        },
+        "link": {
+          "text": "Conheça todos os produtos",
+          "href": "/2768?map=productClusterIds",
+          "bgColor": "#011e41"
+        },
+        "reverse": true,
+        "configs": {
+          "pagination": {
+            "enabledDesktop": true,
+            "clickable": false,
+            "enabledMobile": true
+          },
+          "navigation": {
+            "enabledMobile": false,
+            "enabledDesktop": true
+          },
+          "centeredSlides": false
+        },
+        "fullWidth": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "title": "<h2><span style=\"font-size: 18pt\">Dicas para escolher a melhor panela de indução </span></h2>"
+        },
+        "text": "<p>Descubra abaixo algumas orientações rápidas para acertar na escolha das suas panelas para fogão e <a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW10590096 BCX0\" href=\"https://loja.electrolux.com.br/eletrodomesticos/cooktops/cooktop-inducao\">cooktop de indução</a> e, assim, aproveitar ao máximo o seu produto:<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p><ul><li><p style=\"text-align: justify\">Verifique a compatibilidade: procure pelo símbolo de indução no fundo da panela ou confirme se um ímã gruda na base;<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p></li><li><p style=\"text-align: justify\">Prefira materiais de qualidade: dê preferência por panela aço inox para fogão de indução ou ferro fundido, que oferecem melhor desempenho e durabilidade. Também podem ser panelas de cerâmica contanto que a base seja magnética, pois bases de alumínio não funcionam;<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p></li><li><p style=\"text-align: justify\">Invista em um jogo de panelas: um jogo de panela para fogão de indução com diferentes tamanhos e formatos é o indicado para atender a todas as suas necessidades na cozinha;<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p></li><li><p style=\"text-align: justify\">Considere o design e a agilidade: panelas com alças ergonômicas e tampas bem vedadas facilitam o manuseio e o cozimento.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p></li></ul>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "title": "<h2><span style=\"font-size: 18pt\">Panelas Electrolux: a escolha certa para o seu fogão de indução</span></h2>"
+        },
+        "text": "<p>Escolher a panela de indução certa é essencial para aproveitar ao máximo os benefícios desse tipo de eletrodoméstico. Materiais como o aço inox e o ferro fundido são ideais para entregar eficiência, durabilidade e resultados incríveis na cozinha.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p><p style=\"text-align: justify\">Se você está em busca de opções de alta qualidade, explore a linha de panelas compatíveis com fogão de indução da Electrolux. Com design moderno e tecnologia avançada, as panelas são perfeitas para quem busca conforto e excelência no preparo de alimentos. Descubra agora o jogo de <a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW254087776 BCX0\" href=\"https://loja.electrolux.com.br/utilidades-domesticas/panela/panela-de-inducao\">panela de indução</a> perfeito para a sua cozinha!<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "title": "<h2><span style=\"font-size: 18pt\">Perguntas frequentes sobre panelas de indução</span></h2>"
+        },
+        "text": "<h3><strong><span style=\"font-size: 14pt\">Qual a melhor panela para fogão de indução?</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h3><p style=\"text-align: justify\">A melhor panela de indução é aquela feita de materiais magnéticos, como aço inox ou ferro fundido. Esses materiais asseguram o aquecimento rápido e uniforme, além de serem duráveis e fáceis de limpar.</p><h3><strong><span style=\"font-size: 14pt\">Posso usar panelas comuns em fogão de indução?</span></strong><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></h3><p style=\"text-align: justify\">Não, a menos que elas tenham uma base magnética. Panelas de alumínio, vidro ou cerâmica não funcionam em fogões de indução sem essa adaptação.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p><h3><strong><span style=\"font-size: 14pt\">Qual tipo de panela para fogão de indução é mais fácil de limpar?</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></strong></h3><p style=\"text-align: justify\">As panelas de aço inox são as mais fáceis de limpar, já que são resistentes a manchas e não retém odores. Além disso, muitas são compatíveis com lava-louças.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p><h3><strong><span style=\"font-size: 14pt\">Vale a pena investir em um jogo de panela para fogão de indução?</span><span style=\"color: rgb(67, 67, 67); font-size: 14pt\">&nbsp;</span></strong></h3><p style=\"text-align: justify\">Sim! Um jogo de panela para fogão de indução oferece variedade de tamanhos e formatos, atendendo a diferentes tipos de preparo. Ou seja, investir em um conjunto de qualidade proporciona maior durabilidade e resultados superiores.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\">&nbsp;</span></p><p><span style=\"font-size: 12pt\">&nbsp;</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
+        "section": {
+          "title": "<h2 style=\"text-align: center\">artigos relacionados</h2><p style=\"text-align: center\"><span style=\"color: rgb(4, 30, 80); font-size: 16px\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
+        },
+        "articles": [
+          {
+            "image": {
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f692836a-be22-40ec-aafc-2118bd280acd/Screenshot-2025-03-27-150954.png",
+                "mobile": "https://assets.decocache.com/content-hub/f692836a-be22-40ec-aafc-2118bd280acd/Screenshot-2025-03-27-150954.png"
+              },
+              "alt": "Fogão de indução gasta muita energia?",
+              "link": {
+                "target": "self"
+              }
+            },
+            "link": {
+              "href": "/homepedia/ambientes/cozinha/fogao-de-inducao-gasta-muita-energia",
+              "text": "Saiba Mais",
+              "title": "Saiba Mais",
+              "color": "#5B6A78",
+              "hideLink": false
+            },
+            "text": "<h3><span style=\"color: rgb(4, 30, 80)\">Fogão de indução gasta muita energia?</span></h3><p><span style=\"color: rgb(91, 106, 120)\">Entenda se o fogão de indução gasta muita energia e conheça todas as vantagens de usar esse eletrodoméstico sofisticado e sustentável na sua cozinha!</span></p>"
+          },
+          {
+            "image": {
+              "link": {
+                "href": "/",
+                "title": "Saiba Mais",
+                "target": "self"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7688a00d-0c55-48a1-8693-fcebafdf46d8/Screenshot-2025-03-27-150912.png",
+                "mobile": "https://assets.decocache.com/content-hub/7688a00d-0c55-48a1-8693-fcebafdf46d8/Screenshot-2025-03-27-150912.png"
+              },
+              "alt": "Tipos de fogão"
+            },
+            "link": {
+              "href": "/homepedia/ambientes/cozinha-tipos-de-fogao",
+              "text": "Saiba Mais",
+              "title": "Saiba Mais",
+              "color": "#5B6A78"
+            },
+            "text": "<h3><span style=\"color: rgb(4, 30, 80)\">Tipos de fogão: conheça os diferentes modelos</span></h3><p><span style=\"color: rgb(91, 106, 120)\">Um bom fogão é essencial para deixar a sua cozinha completa. Conheça os tipos de fogão e as vantagens de cada um para escolher o modelo ideal!</span></p>"
+          },
+          {
+            "image": {
+              "link": {
+                "href": "/",
+                "title": "Saiba Mais",
+                "target": "self"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/3cc93f23-c347-4ba4-b705-f9a9dcc37055/Screenshot-2025-03-27-150812.png",
+                "mobile": "https://assets.decocache.com/content-hub/3cc93f23-c347-4ba4-b705-f9a9dcc37055/Screenshot-2025-03-27-150812.png"
+              },
+              "alt": "O que é fogão de indução"
+            },
+            "link": {
+              "text": "Saiba Mais",
+              "title": "Saiba Mais",
+              "color": "#5B6A78",
+              "href": "/homepedia/ambientes/cozinha/o-que-e-cooktop-de-inducao"
+            },
+            "text": "<h3><span style=\"color: rgb(4, 30, 80)\">O que é cooktop de indução e por que escolher um?</span></h3><p><span style=\"color: rgb(91, 106, 120)\">Descubra o que é cooktop de indução, como funciona e as opções Electrolux disponíveis para você escolher.</span></p>"
+          }
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "tablet": 3,
+            "mobile": 1
+          },
+          "pagination": {
+            "enabledMobile": true
+          }
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

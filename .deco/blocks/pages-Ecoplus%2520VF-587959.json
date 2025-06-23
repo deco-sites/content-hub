@@ -1,6 +1,6 @@
 {
-  "name": "EcolPlus V1",
-  "path": "/teste1",
+  "name": "Ecoplus VF",
+  "path": "/linha-ecoplus",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

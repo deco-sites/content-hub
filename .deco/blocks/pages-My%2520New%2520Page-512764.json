@@ -1,6 +1,6 @@
 {
-  "name": "Bertas",
-  "path": "/bertas",
+  "name": "Berta",
+  "path": "/teste-berta",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -16,8 +16,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/71fcf7c2-3c91-4996-a2a2-71b5fb32d213/Image.jpg",
-              "mobile": "https://data.decoassets.com/content-hub/9c73d20a-8940-4ea3-a537-3a31a6b5b429/CalloutSection-(1).jpg"
+              "desktop": "https://assets.decocache.com/content-hub/878d662a-faa2-4a66-b83f-f93d1bdc3880/image-placeholder-familia.png",
+              "mobile": "https://assets.decocache.com/content-hub/14a2ddb2-1e45-482c-b97e-aff5d010db8d/image-(16).png"
             },
             "alt": "Banner Principal"
           }
@@ -32,12 +32,13 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "2140",
-            "count": 6
+            "collection": "2041",
+            "count": 6,
+            "hideUnavailableItems": true
           }
         },
         "section": {
-          "title": "<h2 style=\"text-align: center\">frase de efeito</h2><p style=\"text-align: center\"><u>frase de efeito</u></p>",
+          "title": "<h2 style=\"text-align: center\">Mais sabor e eficiência para a sua cozinha</h2><p style=\"text-align: center\"><u>Fornos e fogões modernos e com tecnologias inovadoras para receitas mais saborosas </u></p>",
           "fullWidth": false
         },
         "reverse": false,
@@ -50,7 +51,7 @@
         "fullWidth": true,
         "link": {
           "text": "Ver todos",
-          "href": "/",
+          "href": "/2041?map=productClusterIds&page",
           "bgColor": "#011E41"
         },
         "configs": {
@@ -70,15 +71,14 @@
         "infoCards": [
           {
             "typeOfContent": {
-              "srcDesktop": "https://data.decoassets.com/content-hub/2a983e0b-7c94-442e-a1cc-6f7cb107545a/5_cavidade-1-(1).jpg",
-              "srcMobile": "https://data.decoassets.com/content-hub/261c2d3c-7e39-450d-9c14-e6dff8a927e0/5_cavidade-1.jpg",
-              "alt": "Info Card 1"
+              "autoplay": true,
+              "iframeProps": {},
+              "src": "https://youtu.be/E0GBah4ZoZY?si=s9NpWq4ze0B04H83",
+              "title": "Novos fornos e fogões"
             },
-            "richText": "<p style=\"text-align: right\"><span style=\"color: #412a2a\">PerfectCoock360</span></p><h3 style=\"text-align: right\"><span style=\"color: #412a2a\">Convecção e cavidade selada</span></h3><p style=\"text-align: right\"><span style=\"color: #412a2a\">Assa o alimento por igual, até 30% mais rápido que o forno convencional e um pouco mais de texto que traga mais clareza sobre a função</span></p>",
+            "richText": "<h3 style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Nova linha de fornos e fogões </span></h3><p style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Os fornos e fogões Electrolux unem inovação e sofisticação para tornar sua rotina mais prática e funcional, garantindo resultados impecáveis no preparo de qualquer receita. O design moderno e os materiais de alta qualidade oferecem durabilidade, elegância e facilidade na limpeza.&nbsp;</span></p><p style=\"text-align: right\"></p><p style=\"text-align: right\">Descubra como a nova linha pode transformar sua experiência na cozinha!</p>",
             "direction": "left",
             "link": {
-              "text": "Saiba mais",
-              "href": "/",
               "color": "#412a2a"
             }
           }
@@ -96,23 +96,71 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "infoCards": [
           {
-            "richText": "<p><span style=\"color: #412a2a\">Design</span></p><h3><span style=\"color: #412a2a\">Detalhes que fazem a diferença</span></h3><p><span style=\"color: #412a2a\">Paragraph, recommended 250 limit characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu erat et tortor venenatis interdum nec ac dui. Quisque non imperdiet leo, in an.</span></p>",
+            "richText": "<p><span style=\"color: rgb(65, 42, 42)\">Tecnologia VaporBake® </span></p><h3><span style=\"color: rgb(65, 42, 42)\">Renove o frescor e a textura dos alimentos</span></h3><p><span style=\"color: rgb(65, 42, 42)\">A tecnologia VaporBake® utiliza vapor para revitalizar pães e massas, deixando-os sempre crocantes por fora e macios por dentro. Uma inovação que preserva o sabor e a textura dos alimentos, proporcionando uma experiência gastronômica ainda mais especial. </span></p>",
             "typeOfContent": {
-              "srcDesktop": "https://data.decoassets.com/content-hub/ad9f8103-361f-4a0d-b575-6afc5a72f933/comparativo_vapor_bake-1.jpg",
-              "srcMobile": "https://data.decoassets.com/content-hub/1044f0be-bf5c-498b-87ae-7c0d77d5756e/info-card-mobile-2.jpg",
+              "srcDesktop": "https://assets.decocache.com/content-hub/2de7a460-ea95-4262-99de-7b30b8c0322b/comparativo_vapor_bake-1-(1).png",
+              "srcMobile": "https://assets.decocache.com/content-hub/2de7a460-ea95-4262-99de-7b30b8c0322b/comparativo_vapor_bake-1-(1).png",
               "alt": "Info Card 2"
             },
             "direction": "right",
             "link": {
-              "color": "#412a2a",
-              "text": "Saiba mais",
-              "href": "/"
+              "color": "#412a2a"
             }
           }
         ],
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
         }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
+        },
+        "infoCards": [
+          {
+            "richText": "<p style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">AirFry integrada</span></p><h3 style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Mais sabor e saúde em um só forno</span></h3><p style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">A função AirFry permite preparar alimentos crocantes e dourados sem a necessidade de óleo, garantindo receitas mais saudáveis e sustentáveis. Além disso, a alta capacidade do forno possibilita o preparo de porções maiores, tornando cada refeição mais prática e equilibrada.</span></p>",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/6fcb0c8c-a802-4140-83eb-e180aa55d6ac/5_cavidade-1-(5).png",
+              "srcMobile": "https://assets.decocache.com/content-hub/6fcb0c8c-a802-4140-83eb-e180aa55d6ac/5_cavidade-1-(5).png",
+              "alt": "Info Card 3"
+            },
+            "direction": "left"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "configs": {
+          "loop": false
+        },
+        "infoCards": [
+          {
+            "richText": "<p style=\"text-align: justify\"><span style=\"color: rgb(65, 42, 42)\">Tecnologia PerfectCook360 </span></p><h3 style=\"text-align: justify\"><span style=\"color: rgb(65, 42, 42)\">Cozimento uniforme e preciso para receitas impecáveis.</span></h3><p style=\"text-align: justify\"><span style=\"color: rgb(65, 42, 42)\">Com melhor retenção e distribuição de calor, a tecnologia PerfectCook360 garante assados mais homogêneos e rápidos. Ideal para quem busca excelência na cozinha, seja no preparo de carnes suculentas, bolos fofinhos ou massas perfeitamente assadas. </span></p>",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/73c2e53e-43d4-49ad-a577-a467adfbf668/5_cavidade-1-(4).png",
+              "srcMobile": "https://assets.decocache.com/content-hub/73c2e53e-43d4-49ad-a577-a467adfbf668/5_cavidade-1-(4).png",
+              "alt": "Info Card 4"
+            },
+            "direction": "right",
+            "link": {
+              "color": "#412A2A"
+            }
+          }
+        ]
       }
     },
     {
@@ -120,7 +168,20 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
         "section": {
-          "title": "<h2 style=\"text-align: center\">Artigos</h2><p style=\"text-align: center\"><u>Conteúdo relacionado a forno e suas funções</u></p>"
+          "title": "<h2 style=\"text-align: center\">CONHEÇA MAIS SOBRE A NOVA LINHA</h2><p style=\"text-align: center\"></p>"
+        },
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "mobile": 1.5,
+            "tablet": 2.5
+          },
+          "pagination": {
+            "enabledMobile": true
+          },
+          "navigation": {
+            "enabledMobile": true
+          }
         },
         "articles": [
           {
@@ -275,18 +336,18 @@
                 "146": "p",
                 "147": "n",
                 "148": "g",
-                "desktop": "https://data.decoassets.com/content-hub/b850bbe7-1214-4a57-81ed-9fcbef538b66/medalhao.png",
-                "mobile": "https://data.decoassets.com/content-hub/b850bbe7-1214-4a57-81ed-9fcbef538b66/medalhao.png"
+                "desktop": "https://assets.decocache.com/content-hub/e86a9c62-2c86-43a5-ad8c-3fdee3126160/_6-500x500.2.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/e86a9c62-2c86-43a5-ad8c-3fdee3126160/_6-500x500.2.jpg"
               },
               "alt": "1"
             },
             "link": {
-              "href": "/",
+              "href": "/novos-fornos-fogoes/vaporbake",
               "text": "Leia mais",
               "title": "Leia mais",
               "color": "#011E41"
             },
-            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Medalhão de berinjela com pesto</span></h3><p><span style=\"color: rgb(112, 112, 112)\">Paragraph, recommended 200 limit characters. Lorem ipsum dolor sit amet...</span></p>"
+            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Tecnologia VaporBake® para receitas até 2x mais crocantes</span></h3><p><span style=\"color: rgb(112, 112, 112)\">Receitas mais crocantes e aproveitando ainda ao máximo os alimentos, reaquecendo-os sem ressecar.</span></p>"
           },
           {
             "image": {
@@ -440,18 +501,18 @@
                 "146": "p",
                 "147": "n",
                 "148": "g",
-                "desktop": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png",
-                "mobile": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png"
+                "desktop": "https://assets.decocache.com/content-hub/abc6f504-5d12-4164-a6e4-3dfc719696cf/7909569424773_5-500x500.1.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/abc6f504-5d12-4164-a6e4-3dfc719696cf/7909569424773_5-500x500.1.jpg"
               },
               "alt": "1"
             },
             "link": {
-              "href": "/",
+              "href": "/novos-fornos-fogoes/perfectcook360",
               "text": "Leia mais",
               "title": "Leia mais",
               "color": "#011E41"
             },
-            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Medalhão de berinjela com pesto</span></h3><p><span style=\"color: rgb(112, 112, 112)\">Paragraph, recommended 200 limit characters. Lorem ipsum dolor sit amet...</span></p>"
+            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Preparos ainda mais rápidos com a tecnologia PerfectCook360</span></h3><p><span style=\"color: rgb(112, 112, 112)\">A vantagem de preparar suas receitas mais rápido e com o resultado perfeito: dourado por fora e macio por dentro.</span></p>"
           },
           {
             "image": {
@@ -605,193 +666,20 @@
                 "146": "p",
                 "147": "n",
                 "148": "g",
-                "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
-                "mobile": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png"
+                "desktop": "https://assets.decocache.com/content-hub/3d68e7cc-99e2-45c3-a18c-6416937f612c/5_cavidade-1-(5).png",
+                "mobile": "https://assets.decocache.com/content-hub/3d68e7cc-99e2-45c3-a18c-6416937f612c/5_cavidade-1-(5).png"
               },
               "alt": "1"
             },
             "link": {
-              "href": "/",
+              "href": "/novos-fornos-fogoes/fogao-com-air-fryer",
               "text": "Leia mais",
               "title": "Leia mais",
               "color": "#011E41"
             },
-            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Medalhão de berinjela com pesto</span></h3><p><span style=\"color: rgb(112, 112, 112)\">Paragraph, recommended 200 limit characters. Lorem ipsum dolor sit amet...</span></p>"
-          },
-          {
-            "image": {
-              "src": {
-                "0": "h",
-                "1": "t",
-                "2": "t",
-                "3": "p",
-                "4": "s",
-                "5": ":",
-                "6": "/",
-                "7": "/",
-                "8": "e",
-                "9": "l",
-                "10": "e",
-                "11": "c",
-                "12": "t",
-                "13": "r",
-                "14": "o",
-                "15": "l",
-                "16": "u",
-                "17": "x",
-                "18": ".",
-                "19": "v",
-                "20": "t",
-                "21": "e",
-                "22": "x",
-                "23": "a",
-                "24": "s",
-                "25": "s",
-                "26": "e",
-                "27": "t",
-                "28": "s",
-                "29": ".",
-                "30": "c",
-                "31": "o",
-                "32": "m",
-                "33": "/",
-                "34": "a",
-                "35": "s",
-                "36": "s",
-                "37": "e",
-                "38": "t",
-                "39": "s",
-                "40": "/",
-                "41": "v",
-                "42": "t",
-                "43": "e",
-                "44": "x",
-                "45": ".",
-                "46": "f",
-                "47": "i",
-                "48": "l",
-                "49": "e",
-                "50": "-",
-                "51": "m",
-                "52": "a",
-                "53": "n",
-                "54": "a",
-                "55": "g",
-                "56": "e",
-                "57": "r",
-                "58": "-",
-                "59": "g",
-                "60": "r",
-                "61": "a",
-                "62": "p",
-                "63": "h",
-                "64": "q",
-                "65": "l",
-                "66": "/",
-                "67": "i",
-                "68": "m",
-                "69": "a",
-                "70": "g",
-                "71": "e",
-                "72": "s",
-                "73": "/",
-                "74": "e",
-                "75": "0",
-                "76": "a",
-                "77": "c",
-                "78": "a",
-                "79": "3",
-                "80": "9",
-                "81": "6",
-                "82": "-",
-                "83": "3",
-                "84": "4",
-                "85": "5",
-                "86": "d",
-                "87": "-",
-                "88": "4",
-                "89": "b",
-                "90": "9",
-                "91": "9",
-                "92": "-",
-                "93": "a",
-                "94": "e",
-                "95": "e",
-                "96": "0",
-                "97": "-",
-                "98": "8",
-                "99": "f",
-                "100": "f",
-                "101": "4",
-                "102": "8",
-                "103": "f",
-                "104": "3",
-                "105": "8",
-                "106": "b",
-                "107": "0",
-                "108": "0",
-                "109": "6",
-                "110": "_",
-                "111": "_",
-                "112": "_",
-                "113": "4",
-                "114": "e",
-                "115": "0",
-                "116": "f",
-                "117": "d",
-                "118": "2",
-                "119": "6",
-                "120": "5",
-                "121": "0",
-                "122": "9",
-                "123": "4",
-                "124": "b",
-                "125": "e",
-                "126": "a",
-                "127": "4",
-                "128": "4",
-                "129": "e",
-                "130": "3",
-                "131": "c",
-                "132": "1",
-                "133": "2",
-                "134": "c",
-                "135": "9",
-                "136": "9",
-                "137": "f",
-                "138": "f",
-                "139": "c",
-                "140": "1",
-                "141": "b",
-                "142": "3",
-                "143": "2",
-                "144": "d",
-                "145": ".",
-                "146": "p",
-                "147": "n",
-                "148": "g",
-                "desktop": "https://data.decoassets.com/content-hub/29439908-7b56-4989-a7dc-83565d00aea5/bife.png",
-                "mobile": "https://data.decoassets.com/content-hub/29439908-7b56-4989-a7dc-83565d00aea5/bife.png"
-              },
-              "alt": "1",
-              "link": {}
-            },
-            "link": {
-              "href": "/",
-              "text": "Leia mais",
-              "title": "Leia mais",
-              "color": "#011E41"
-            },
-            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Medalhão de berinjela com pesto</span></h3><p><span style=\"color: rgb(112, 112, 112)\">Paragraph, recommended 200 limit characters. Lorem ipsum dolor sit amet...</span></p>"
+            "text": "<h3><span style=\"color: rgb(1, 30, 65)\">Novidade: o 1º fogão com Airfry do Brasil </span></h3><p><span style=\"color: rgb(112, 112, 112)\">Inovação da Electrolux, o fogão 3 em 1 é fogão, forno elétrico e Airfry no mesmo produto. Aproveite receitas saborosas e saudáveis!</span></p>"
           }
         ],
-        "configs": {
-          "slidesPerViewResponsive": {
-            "desktop": 4,
-            "mobile": 1.5,
-            "tablet": 2.5
-          }
-        },
         "styleArticleOption": "Type 2"
       }
     },
@@ -802,24 +690,21 @@
         "section": {
           "fullWidth": true
         },
+        "configs": {
+          "loop": false
+        },
         "infoCards": [
           {
-            "richText": "<p><span style=\"color: #412a2a\">Design</span></p><h3><span style=\"color: #412a2a\">Detalhes que fazem a diferença</span></h3><p><span style=\"color: #412a2a\">Paragraph, recommended 250 limit characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu erat et tortor venenatis interdum nec ac dui. Quisque non imperdiet leo, in an.</span></p>",
+            "richText": "<p style=\"text-align: justify\"><span style=\"color: rgb(65, 42, 42)\">Design elegante e funcional </span></p><h3 style=\"text-align: justify\"><span style=\"color: rgb(65, 42, 42)\">Fornos e fogões sofisticados e eficientes </span></h3><p style=\"text-align: justify\"><span style=\"color: rgb(65, 42, 42)\">Disponíveis em diversos modelos e cores, os fornos e fogões Electrolux combinam estética e praticidade. Com chamas potentes, esmaltação FastClean e vidros removíveis, eles garantem um cozimento uniforme e facilitam a limpeza, proporcionando mais conforto e praticidade no seu dia a dia.</span></p>",
             "typeOfContent": {
-              "srcDesktop": "https://data.decoassets.com/content-hub/835e43e3-c5df-49f1-baa9-fe92b59b2bd7/Oven_OE9XB_Front_Electrolux_Portuguese-2.jpg",
-              "srcMobile": "https://data.decoassets.com/content-hub/3d26b5e0-0528-4a98-a54f-7af4759e5b19/Group-1000003854-mob.jpg",
-              "alt": "Info Card 3"
+              "srcDesktop": "https://assets.decocache.com/content-hub/49f302bb-789c-4411-8900-f06965f0ff75/5_cavidade-1-(3).png",
+              "srcMobile": "https://assets.decocache.com/content-hub/49f302bb-789c-4411-8900-f06965f0ff75/5_cavidade-1-(3).png",
+              "alt": "Info Card 4"
             },
-            "direction": "right"
-          },
-          {
-            "richText": "<p><span style=\"color: #412a2a\">Design</span></p><h3><span style=\"color: #412a2a\">Detalhes que fazem a diferença</span></h3><p><span style=\"color: #412a2a\">Paragraph, recommended 250 limit characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu erat et tortor venenatis interdum nec ac dui. Quisque non imperdiet leo, in an.</span></p>",
-            "typeOfContent": {
-              "srcDesktop": "https://data.decoassets.com/content-hub/190b5eb0-020a-4eb7-92af-91c83a6e82a8/Oven_OE9XB_Front_Electrolux_Portuguese-2.jpg",
-              "srcMobile": "https://data.decoassets.com/content-hub/b0c980b0-de5b-45a5-aeab-cf55f4c0e073/Group-1000003854-mob.jpg",
-              "alt": "Info Card 3"
-            },
-            "direction": "right"
+            "direction": "right",
+            "link": {
+              "color": "#412A2A"
+            }
           }
         ]
       }
@@ -861,7 +746,7 @@
             ],
             "product": {
               "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003481"
+              "productId": "2004175"
             }
           },
           {
@@ -893,7 +778,7 @@
             ],
             "product": {
               "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003635"
+              "productId": "2004174"
             }
           },
           {
@@ -925,7 +810,7 @@
             ],
             "product": {
               "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003479"
+              "productId": "2003248"
             }
           },
           {
@@ -957,97 +842,7 @@
             ],
             "product": {
               "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003476"
-            }
-          },
-          {
-            "specs": [
-              {
-                "name": "Convecção",
-                "value": "sim",
-                "hasSpec": true,
-                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "icon": "https://data.decoassets.com/content-hub/7da6b777-ad4e-4044-9c56-f926056ca858/iconContainer.png",
-                "name": "Vaporbake",
-                "value": "sim"
-              },
-              {
-                "hasSpec": true,
-                "name": "Conectividade",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "name": "Food Sensor",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
-              }
-            ],
-            "product": {
-              "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003480"
-            }
-          },
-          {
-            "specs": [
-              {
-                "name": "Convecção",
-                "value": "sim",
-                "hasSpec": true,
-                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "name": "Conectividade",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "name": "Food Sensor",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
-              }
-            ],
-            "product": {
-              "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2003477"
-            }
-          },
-          {
-            "specs": [
-              {
-                "name": "Convecção",
-                "value": "sim",
-                "hasSpec": true,
-                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
-              },
-              {
-                "name": "Vaporbake",
-                "value": "sim",
-                "hasSpec": true,
-                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "name": "Conectividade",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
-              },
-              {
-                "hasSpec": true,
-                "name": "Food Sensor",
-                "value": "sim",
-                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
-              }
-            ],
-            "product": {
-              "__resolveType": "site/loaders/customVTEX/productById.ts",
-              "productId": "2004215"
+              "productId": "2004190"
             }
           }
         ],
@@ -1070,39 +865,10 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
-        "section": {
-          "fullWidth": true,
-          "marginBottomMobile": 0,
-          "marginBottomDesktop": 0
-        },
-        "infoCards": [
-          {
-            "richText": "<p style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Cozinhas electrolux</span></p><h3 style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Tudo bem fresquinho, bem gostoso</span></h3><p style=\"text-align: right\"><span style=\"color: rgb(65, 42, 42)\">Numa casa bem vivida, o pãozinho do café é bem crocante, a carne do almoço é bem no ponto e o jantar bem colorido.</span></p>",
-            "typeOfContent": {
-              "srcDesktop": "https://data.decoassets.com/content-hub/cc579caf-0182-4c5c-8c1d-3c33c33d017c/5_cavidade-1-(1).jpg",
-              "srcMobile": "https://data.decoassets.com/content-hub/f7914e66-6b25-4ae3-ae62-ccba6086dda3/5_cavidade-1-mob.jpg",
-              "alt": "Info Card 4"
-            },
-            "direction": "left",
-            "link": {
-              "text": "Veja a linha",
-              "href": "/",
-              "color": "#412A2A"
-            }
-          }
-        ],
-        "configs": {
-          "loop": false
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Lps/ReviewsSliderSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<h2><span style=\"color: #ffffff\">Os fornos e fogões que todo mundo ama</span></h2>"
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/a9f834a3-92f4-4440-a782-2e871a2a3392/Oven_OE8GH_Kitchen_Electrolux_Portuguese-1.jpg",
@@ -1117,8 +883,8 @@
               "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg",
               "quantity": 5
             },
-            "reviewDescription": "Além de lindo, o forno é muito eficiente!",
-            "reviewPersonName": "Fernanda Moreira Julio De Siqueira",
+            "reviewDescription": "Produto de ótima qualidade, cumpre fielmente o que está descrito nas especificações. O forno impõe presença na cozinha por seu desing e robustez.",
+            "reviewPersonName": "Gabriel",
             "reviewProductName": "Forno"
           },
           {
@@ -1128,9 +894,9 @@
               "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg",
               "quantity": 5
             },
-            "reviewDescription": "O forno é muito bom recomendo o produto",
-            "reviewPersonName": "Fernanda Moreira Julio De Siqueira",
-            "reviewProductName": "Forno"
+            "reviewDescription": "Fogão e Forno são perfeitos. Fácil uso e ótimo desempenho. Vale o preço que pagamos, pois atende às necessidades que buscamos em outras marcas e não aconteceu. Super indico.",
+            "reviewPersonName": "Julia A",
+            "reviewProductName": "Fogão e Forno"
           },
           {
             "reviewStars": {
@@ -1139,9 +905,9 @@
               "halfStarSrc": "https://electrolux.vteximg.com.br/arquivos/reviewrcard-halfstar.svg",
               "quantity": 5
             },
-            "reviewDescription": "O forno é bonito, de fácil instalação e funcionamento bom, recomendo.",
-            "reviewPersonName": "Fernanda Moreira Julio De Siqueira",
-            "reviewProductName": "Forno"
+            "reviewDescription": "Adorei, deu um toque moderno na minha cozinha. Sem contar a qualidade do produto, não preciso mais me “sacrificar” para limpar o fogão. Super fácil de limpar e fica sempre com aparência de novo. Amei!",
+            "reviewPersonName": "Fernanda A",
+            "reviewProductName": "Fogão"
           }
         ]
       }
@@ -1158,47 +924,47 @@
           {
             "link": {
               "target": "blank",
-              "href": "/",
-              "title": "Img 1"
+              "title": "Img 1",
+              "href": "https://www.instagram.com/reel/CxiXzFwsXaK/?igsh=b3p6amwzcmhvbHRq"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "low"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/606ca98e-f632-486a-9814-189089f41cc0/Intersect.png",
-              "mobile": "https://data.decoassets.com/content-hub/606ca98e-f632-486a-9814-189089f41cc0/Intersect.png"
+              "desktop": "https://assets.decocache.com/content-hub/30fe592f-dedc-49be-b3ca-14b0dcab0740/33e6c06d-2bf2-4159-8dda-14cb01e9c532___0b8a95706e04d078001d9b4b4a3ea013.webp",
+              "mobile": "https://assets.decocache.com/content-hub/30fe592f-dedc-49be-b3ca-14b0dcab0740/33e6c06d-2bf2-4159-8dda-14cb01e9c532___0b8a95706e04d078001d9b4b4a3ea013.webp"
             },
             "alt": "Img 1"
           },
           {
             "link": {
               "target": "blank",
-              "href": "/",
-              "title": "Img 2"
+              "title": "Img 2",
+              "href": "https://www.instagram.com/reel/CyYvJ8Arttp/?igsh=enVieWdpbjh1ZGtr"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "low"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/a28b51a1-c8fa-4cc3-9b08-56db34e0d767/Rectangle-24512.png",
-              "mobile": "https://data.decoassets.com/content-hub/a28b51a1-c8fa-4cc3-9b08-56db34e0d767/Rectangle-24512.png"
+              "desktop": "https://assets.decocache.com/content-hub/de5ca2a8-33d8-4dc5-9f95-58ad07241748/8d1852ff-fa3c-4fd5-a6cd-74ad6adbebe4___37c80f252c327c89919c4bec372f5370.webp",
+              "mobile": "https://assets.decocache.com/content-hub/de5ca2a8-33d8-4dc5-9f95-58ad07241748/8d1852ff-fa3c-4fd5-a6cd-74ad6adbebe4___37c80f252c327c89919c4bec372f5370.webp"
             },
             "alt": "Img 2"
           },
           {
             "link": {
               "target": "blank",
-              "href": "/",
-              "title": "Img 3"
+              "title": "Img 3",
+              "href": "https://www.instagram.com/reel/ChVSXrtvTnD/?igsh=NzV0cmNhdzJjYnFz"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "low"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/bd0edfb7-6251-4631-9b41-f0d65dddf26f/Rectangle-24513.png",
+              "desktop": "https://assets.decocache.com/content-hub/c2401f7d-5b34-468b-8bfa-d4ab7d40f8e0/cb31a765-626f-479c-9da8-b6017797e864___2d8abf69a38d5145158027578e3ef209.webp",
               "mobile": "https://data.decoassets.com/content-hub/bd0edfb7-6251-4631-9b41-f0d65dddf26f/Rectangle-24513.png"
             },
             "alt": "Img 3"
@@ -1206,16 +972,15 @@
           {
             "link": {
               "target": "blank",
-              "href": "/",
-              "title": "Img 4"
+              "href": "https://www.instagram.com/reel/CxLTsiduZQQ/"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "low"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/6463a1da-f2c3-4d0e-a13d-d64fd47d3c03/Rectangle-24514.png",
-              "mobile": "https://data.decoassets.com/content-hub/6463a1da-f2c3-4d0e-a13d-d64fd47d3c03/Rectangle-24514.png"
+              "desktop": "https://assets.decocache.com/content-hub/36f2dac3-fc7b-41ed-889a-6298a6dd547c/629ca478-038d-4eb4-a145-f8074b93d485___bf748226d432d347b5bcca8cfb4d6020.webp",
+              "mobile": "https://assets.decocache.com/content-hub/36f2dac3-fc7b-41ed-889a-6298a6dd547c/629ca478-038d-4eb4-a145-f8074b93d485___bf748226d432d347b5bcca8cfb4d6020.webp"
             },
             "alt": "Img 4"
           }
@@ -1224,23 +989,23 @@
         "icons": [
           {
             "id": "Facebook",
-            "href": "/"
+            "href": "https://www.facebook.com/electroluxbr"
           },
           {
             "id": "Instagram",
-            "href": "/"
+            "href": "https://www.instagram.com/electroluxbr"
           },
           {
             "id": "Youtube",
-            "href": "/"
+            "href": "https://www.youtube.com/channel/UCsUD8rknRwxGEKJcWIPYoxA"
           },
           {
             "id": "Pinterest",
-            "href": "/"
+            "href": "https://br.pinterest.com/electroluxbr"
           },
           {
             "id": "Linkedin",
-            "href": "/"
+            "href": "https://br.linkedin.com/company/electroluxgroup"
           }
         ],
         "configs": {
@@ -1258,5 +1023,8 @@
       }
     }
   ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
   "__resolveType": "website/pages/Page.tsx"
 }

@@ -1,6 +1,7 @@
 import { Slider } from "@eluxlab/library-components";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { createElement } from "preact";
+import { Pagination } from "apps/workflows/deps.ts";
 
 export type Props = {
   slides: createElement.JSX.Element[] | [];
@@ -10,38 +11,37 @@ export type Props = {
 
 export default function SwiperSlider({
   configs = {},
-  slides = []
+  slides = [],
 }: Props): preact.JSX.Element {
   const {
     slidesPerView,
     slidesPerViewResponsive,
     loop,
-    pagination,
-    navigation,
+    customPagination,
+    customNavigation,
     breakpoints = {},
     autoplay,
     spaceBetween,
     centeredSlides,
-    lazy
+    lazy,
   } = configs ?? {};
 
   // Fix loop mode warning
-  const hasLoop =
-    (loop &&
-      typeof slidesPerView === "number" &&
-      slides.length > slidesPerView) ??
+  const hasLoop = (loop &&
+    typeof slidesPerView === "number" &&
+    slides.length > slidesPerView) ??
     false;
 
   const validBreakpoints = Object.fromEntries(
     Object.entries(breakpoints).filter(
-      ([, value]) => value !== undefined && value !== null
-    )
+      ([, value]) => value !== undefined && value !== null,
+    ),
   );
 
   const autoplayConfig = autoplay?.enabled
     ? {
-        delay: autoplay.delay ?? 3000
-      }
+      delay: autoplay.delay ?? 3000,
+    }
     : undefined;
 
   const mappedConfigs: ISliderConfigs = {
@@ -51,27 +51,9 @@ export default function SwiperSlider({
     spaceBetween: spaceBetween ?? 8,
     slidesPerView: slidesPerView ?? slidesPerViewResponsive?.mobile ?? 1,
     loop: hasLoop,
-    ...{
-      ...(pagination?.enabled === true
-        ? {
-            pagination: {
-              ...pagination,
-              enabled: true,
-              clickable: true
-            }
-          }
-        : null)
-    },
-    ...{
-      ...(navigation?.enabled === true
-        ? {
-            navigation: {
-              enabled: true
-            }
-          }
-        : null)
-    },
-    breakpoints: validBreakpoints
+    customPagination,
+    customNavigation,
+    breakpoints: validBreakpoints,
   };
 
   if (slides?.length === 1) {

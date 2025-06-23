@@ -10,14 +10,14 @@ const WIDTH = 230;
 const HEIGHT = 230;
 
 export default function ProductCard(
-  props: Partial<ProductWithComparator>
+  props: Partial<ProductWithComparator>,
 ): preact.JSX.Element | null {
   const {
     url,
     isVariantOf,
     offers,
     image: images,
-    productSpecsComparator
+    productSpecsComparator,
   } = props ?? {};
 
   const [front, back] = images ?? [];
@@ -27,7 +27,7 @@ export default function ProductCard(
     discount,
     priceIsPix,
     salePrice,
-    installments: { withInterest, withoutInterest }
+    installments: { withInterest, withoutInterest },
   } = useOffer(offers);
 
   if (!url) return null;
@@ -138,7 +138,8 @@ export default function ProductCard(
                 <span class="text-[#5b6a78] text-sm">
                   em até <b>{withoutInterest.billingDuration}x</b> de{" "}
                   <b>
-                    {formatPrice(withoutInterest.price, offers!.priceCurrency!)}{" "}
+                    {formatPrice(withoutInterest.price, offers!.priceCurrency!)}
+                    {" "}
                   </b>
                   sem juros
                 </span>
@@ -148,7 +149,8 @@ export default function ProductCard(
                   {withoutInterest ? "ou" : "em até"}{" "}
                   <b>{withInterest.billingDuration}x</b> de{" "}
                   <b>
-                    {formatPrice(withInterest.price, offers!.priceCurrency!)}{" "}
+                    {formatPrice(withInterest.price, offers!.priceCurrency!)}
+                    {" "}
                   </b>
                   com juros
                 </span>

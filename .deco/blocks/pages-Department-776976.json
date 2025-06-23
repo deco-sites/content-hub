@@ -166,23 +166,24 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<p></p>"
         },
         "infoCards": [
           {
             "link": {
               "color": "#000000",
-              "text": "lorem ipsum",
-              "href": "/#"
+              "href": "/#",
+              "text": "saiba mais"
             },
             "direction": "right",
-            "titleCMS": "Lorem ipsum dolor",
-            "richText": "<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "richText": "<p>osectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
             "typeOfContent": {
               "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4cb54555-a9de-4851-8058-667aca94a4de___4205311188f6f9ccb88d6162947fbeac.webp",
               "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/ccb56152-c5cd-4e48-9f0f-161cf736afe4___9cbc90cc4136126b0170946eeead14e8.webp",
               "alt": "geladeira"
-            }
+            },
+            "titleCMS": "Economizam até 47%* de energia e estão entre mais econômicas do Brasil"
           }
         ]
       }
@@ -310,9 +311,8 @@
               "text": "lorem ipsum",
               "href": "/#"
             },
-            "direction": "right",
-            "titleCMS": "Lorem ipsum dolor",
-            "richText": "<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "direction": "left",
+            "richText": "<p>consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
             "typeOfContent": {
               "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4cb54555-a9de-4851-8058-667aca94a4de___4205311188f6f9ccb88d6162947fbeac.webp",
               "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/ccb56152-c5cd-4e48-9f0f-161cf736afe4___9cbc90cc4136126b0170946eeead14e8.webp",
@@ -443,13 +443,13 @@
               "text": "saiba mais",
               "href": "/#"
             },
-            "direction": "left",
+            "direction": "right",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/02906636-7525-4180-a052-8d02b145d730/Rita-Lobo-v3.png",
               "srcMobile": "https://assets.decocache.com/content-hub/84dcd53e-b58b-4216-b521-c68a29e42670/Rita-Lobo-v3.png",
               "alt": "cozinha"
             },
-            "richText": "<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "richText": "<p>consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
             "titleCMS": "Título da seção"
           }
         ]

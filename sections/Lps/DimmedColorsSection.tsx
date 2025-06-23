@@ -7,7 +7,7 @@ import Section from "site/components/ui/Section.tsx";
 type DimmedColors = {
   mobile?: string;
   desktop?: string;
-}
+};
 
 type DimmedColorsData = {
   title?: string;
@@ -32,7 +32,7 @@ export default function DimmedColorsSection(
 ) {
   return (
     <Section id="dimmed-colors" title="">
-      <div class="flex flex-col text-center">
+      <div class="flex flex-col text-center pt-[1rem]">
         <Text
           title={title}
           classes={{ container: "section-title" }}
@@ -43,7 +43,7 @@ export default function DimmedColorsSection(
           {data.map(
             (item, index) => {
               return (
-                <a href={item.link}>
+                <a href={item.link} key={index}>
                   <div
                     id="dimmed-colors-item__container"
                     class="relative flex flex-col overflow-hidden"
@@ -71,7 +71,7 @@ export default function DimmedColorsSection(
             },
           )}
         </div>
-      </div >
+      </div>
       <style>
         {`
           #section-dimmed-colors > div {
@@ -98,12 +98,14 @@ export default function DimmedColorsSection(
 
             #dimmed-colors-item__desktop {
               display: flex;
-              top: 50%;
-              height: 50%;
+              justify-content: flex-start;
+              padding-top: 2vh;
+              position: static;
+              height: 12vh;
             }
           }
         `}
       </style>
-    </Section >
+    </Section>
   );
 }

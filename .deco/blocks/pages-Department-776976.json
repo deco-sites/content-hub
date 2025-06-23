@@ -71,7 +71,9 @@
               "12": " ",
               "13": "9",
               "14": "4",
-              "15": ")"
+              "15": ")",
+              "mobile": "rgba(52, 73, 94, 0.7)",
+              "desktop": "rgba(52, 73, 94, 1)"
             }
           },
           {
@@ -111,7 +113,8 @@
               "13": "9",
               "14": "4",
               "15": ")",
-              "mobile": " "
+              "mobile": " rgba(90, 106, 90, 0.7)",
+              "desktop": "rgba(90, 106, 90, 1)"
             }
           },
           {
@@ -151,48 +154,8 @@
               "13": "9",
               "14": "4",
               "15": ")",
-              "mobile": " "
-            }
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Para preparar"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "lavadora",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "title": "Para preparar",
-            "text": "lorem ipsum dolor sit amet ver todos",
-            "link": "/#",
-            "color": {
-              "0": "r",
-              "1": "g",
-              "2": "b",
-              "3": "a",
-              "4": "(",
-              "5": "9",
-              "6": "0",
-              "7": ",",
-              "8": " ",
-              "9": "1",
-              "10": "0",
-              "11": "6",
-              "12": ",",
-              "13": " ",
-              "14": "9",
-              "15": "0",
-              "16": ")",
-              "mobile": " "
+              "mobile": " rgba(107, 78, 78, 0.7)",
+              "desktop": "rgba(107, 78, 78, 1)"
             }
           }
         ]
@@ -203,10 +166,25 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true,
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0
-        }
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000",
+              "text": "lorem ipsum",
+              "href": "/#"
+            },
+            "direction": "right",
+            "titleCMS": "Lorem ipsum dolor",
+            "richText": "<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "typeOfContent": {
+              "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4cb54555-a9de-4851-8058-667aca94a4de___4205311188f6f9ccb88d6162947fbeac.webp",
+              "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/ccb56152-c5cd-4e48-9f0f-161cf736afe4___9cbc90cc4136126b0170946eeead14e8.webp",
+              "alt": "geladeira"
+            }
+          }
+        ]
       }
     },
     {
@@ -215,18 +193,15 @@
         "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
         "section": {
           "fullWidth": true,
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0
+          "title": "<p>article slider 1</p>"
         },
-        "styleArticleOption": "Type 2",
+        "styleArticleOption": "Type 1",
         "configs": {
-          "customPagination": {
-            "dynamicMainBullets": 0
-          },
-          "slidesPerViewResponsive": {
-            "mobile": 1,
-            "tablet": 1,
-            "desktop": 1
+          "customPagination": {},
+          "slidesPerViewResponsive": {},
+          "customNavigation": {
+            "enabledMobile": true,
+            "enabledDesktop": false
           }
         },
         "articles": [
@@ -326,9 +301,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true,
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0
+          "fullWidth": true
         },
         "infoCards": [
           {
@@ -354,21 +327,15 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
         "section": {
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0,
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<p>article slider 2</p>"
         },
-        "styleArticleOption": "Type 2",
+        "styleArticleOption": "Type 1",
         "configs": {
           "customPagination": {
             "dynamicMainBullets": 0
           },
-          "slidesPerViewResponsive": {
-            "mobile": 4,
-            "desktop": 4,
-            "tablet": 4
-          },
-          "spaceBetween": 0
+          "slidesPerViewResponsive": {}
         },
         "articles": [
           {
@@ -467,8 +434,6 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0,
           "fullWidth": true
         },
         "infoCards": [
@@ -478,14 +443,44 @@
               "text": "saiba mais",
               "href": "/#"
             },
-            "direction": "right",
+            "direction": "left",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/02906636-7525-4180-a052-8d02b145d730/Rita-Lobo-v3.png",
               "srcMobile": "https://assets.decocache.com/content-hub/84dcd53e-b58b-4216-b521-c68a29e42670/Rita-Lobo-v3.png",
               "alt": "cozinha"
-            }
+            },
+            "richText": "<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "titleCMS": "Título da seção"
           }
         ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "products": null,
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png"
+        },
+        "configs": {
+          "slidesPerViewResponsive": {},
+          "customNavigation": {
+            "enabledMobile": true,
+            "enabledDesktop": false
+          },
+          "loop": true
+        },
+        "section": {
+          "fullWidth": true
+        },
+        "reverse": true,
+        "link": {
+          "text": "saiba mais",
+          "href": "/#"
+        },
+        "fullWidth": true
       }
     }
   ],

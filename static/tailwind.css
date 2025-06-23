@@ -3208,6 +3208,9 @@ input.tab:checked + .tab-content,
 .pt-4 {
   padding-top: 1rem;
 }
+.pt-\[1rem\] {
+  padding-top: 1rem;
+}
 .pt-\[84px\] {
   padding-top: 84px;
 }

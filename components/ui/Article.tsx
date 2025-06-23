@@ -8,7 +8,8 @@ export default function Article({
   text = "",
   link,
 }: IArticle): preact.JSX.Element {
-  const { href, text: textLink, title: titleLink, color, hideLink = false } = link ?? {};
+  const { href, text: textLink, title: titleLink, color, hideLink = false } =
+    link ?? {};
 
   return (
     <div class="article flex w-full h-full">

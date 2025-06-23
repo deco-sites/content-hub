@@ -112,7 +112,7 @@ export default function ProductShelfSection({
   background,
   text,
   link,
-  reverse = false
+  reverse = false,
 }: Props): preact.JSX.Element {
   const id = useId();
   const hasProducts = !!products?.length;
@@ -124,15 +124,15 @@ export default function ProductShelfSection({
     slidesPerView: 1.5,
     breakpoints: {
       768: {
-        slidesPerView: 2
+        slidesPerView: 2,
       },
       1280: {
-        slidesPerView: 3
+        slidesPerView: 3,
       },
       1440: {
-        slidesPerView: 4
-      }
-    }
+        slidesPerView: 4,
+      },
+    },
   } as ISliderConfigs;
 
   const minimalProducts = products?.map(
@@ -141,9 +141,9 @@ export default function ProductShelfSection({
         url,
         isVariantOf,
         offers,
-        image
+        image,
       };
-    }
+    },
   );
 
   const isCustomShelf = !isEmptyText(text) || !isEmptyText(link?.text);
@@ -185,10 +185,8 @@ export default function ProductShelfSection({
               : ""
           } ${hasBackground ? "lg:absolute lg:top-1/2 lg:-translate-y-2/4" : ""}
               ${
-                !reverse && isCustomShelf
-                  ? "lg:flex-row"
-                  : "lg:flex-row-reverse"
-              }`}
+            !reverse && isCustomShelf ? "lg:flex-row" : "lg:flex-row-reverse"
+          }`}
         >
           <div
             class={`flex w-full ${

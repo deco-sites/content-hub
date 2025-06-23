@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default function ProductSpecificationComparator({
-  productSpecsComparator = []
+  productSpecsComparator = [],
 }: Props): preact.JSX.Element {
   return (
     <div class="flex w-full mt-4">
@@ -47,7 +47,7 @@ export default function ProductSpecificationComparator({
                 </div>
               </div>
             );
-          }
+          },
         )}
       </div>
     </div>

@@ -52,7 +52,7 @@ export default function BannerMediaSliderSection({
   banners = DefaultBannerMedia.banners,
   title = DefaultBannerMedia.title,
   configs = DefaultBannerMedia.configs,
-  icons = DefaultBannerMedia.icons
+  icons = DefaultBannerMedia.icons,
 }: Props) {
   const id = useId();
 
@@ -62,7 +62,7 @@ export default function BannerMediaSliderSection({
     slidesPerViewResponsive = {
       mobile: 1.6,
       tablet: 2.3,
-      desktop: 3
+      desktop: 3,
     },
     spaceBetween = 32,
     centeredSlides = true,
@@ -77,17 +77,17 @@ export default function BannerMediaSliderSection({
       768: {
         slidesPerView: slidesPerViewResponsive.tablet,
         spaceBetween: 32,
-        centeredSlides: false
+        centeredSlides: false,
       },
       1024: {
         slidesPerView: slidesPerViewResponsive.desktop,
         spaceBetween: 32,
         centeredSlides: false,
-      }
-    }
+      },
+    },
   } as ISliderConfigs;
 
-  const defaultPropBanners = banners.map(banner => {
+  const defaultPropBanners = banners.map((banner) => {
     return {
       ...{ ...banner },
       sizes: {
@@ -95,8 +95,8 @@ export default function BannerMediaSliderSection({
         width: 185,
         height: 324,
         widthMobile: 185,
-        heightMobile: 324
-      }
+        heightMobile: 324,
+      },
     };
   });
 

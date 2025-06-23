@@ -3,7 +3,7 @@ import InfoCard from "site/components/ui/InfoCard.tsx";
 import type {
   IInfoCard,
   IInfoCardImage,
-  IInfoCardVideo
+  IInfoCardVideo,
 } from "site/types/InfoCard.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
@@ -14,7 +14,7 @@ type Props = {
 };
 
 function Island({ infoCards = [], configs = {}, rootId }: Props) {
-  const slides = infoCards.map(props => {
+  const slides = infoCards.map((props) => {
     const { typeOfContent } = props ?? {};
 
     const typeOfContentVideo = typeOfContent as IInfoCardVideo;
@@ -23,16 +23,16 @@ function Island({ infoCards = [], configs = {}, rootId }: Props) {
 
     const enrichedTypeOfContent = isVideo
       ? {
-          ...typeOfContentVideo,
-          iframeProps: {
-            ...typeOfContentVideo?.iframeProps,
-            className: props?.classes?.children,
-            id: `iframe-${rootId}`,
-            width: "100%",
-            allow: typeOfContentVideo?.autoplay ? "autoplay" : "",
-            allowFullScreen: true
-          }
-        }
+        ...typeOfContentVideo,
+        iframeProps: {
+          ...typeOfContentVideo?.iframeProps,
+          className: props?.classes?.children,
+          id: `iframe-${rootId}`,
+          width: "100%",
+          allow: typeOfContentVideo?.autoplay ? "autoplay" : "",
+          allowFullScreen: true,
+        },
+      }
       : typeOfContentImage;
 
     return (
@@ -44,7 +44,8 @@ function Island({ infoCards = [], configs = {}, rootId }: Props) {
             container: `w-full info-card ${
               props?.direction === "left" ? "flex-row" : "flex-row-reverse"
             }`,
-            children: `info-card-children w-full h-full flex flex-col justify-center`,
+            children:
+              `info-card-children w-full h-full flex flex-col justify-center`,
             button: `flex mt-8 w-full ${
               props?.direction === "left"
                 ? "justify-start lg:justify-end"
@@ -52,7 +53,7 @@ function Island({ infoCards = [], configs = {}, rootId }: Props) {
             }`,
             childrenTextContent: `w-full ${
               props?.link?.text ? "h-auto" : "h-full"
-            }`
+            }`,
           }}
         />
       </div>

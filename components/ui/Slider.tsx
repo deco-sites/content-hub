@@ -11,8 +11,8 @@ export type Props = {
 
 export default function SwiperSlider({
   configs = {},
-  slides = []
-}: Props): preact.JSX.Element {  
+  slides = [],
+}: Props): preact.JSX.Element {
   const {
     slidesPerView,
     slidesPerViewResponsive,
@@ -23,26 +23,25 @@ export default function SwiperSlider({
     autoplay,
     spaceBetween,
     centeredSlides,
-    lazy
+    lazy,
   } = configs ?? {};
 
   // Fix loop mode warning
-  const hasLoop =
-    (loop &&
-      typeof slidesPerView === "number" &&
-      slides.length > slidesPerView) ??
+  const hasLoop = (loop &&
+    typeof slidesPerView === "number" &&
+    slides.length > slidesPerView) ??
     false;
 
   const validBreakpoints = Object.fromEntries(
     Object.entries(breakpoints).filter(
-      ([, value]) => value !== undefined && value !== null
-    )
+      ([, value]) => value !== undefined && value !== null,
+    ),
   );
 
   const autoplayConfig = autoplay?.enabled
     ? {
-        delay: autoplay.delay ?? 3000
-      }
+      delay: autoplay.delay ?? 3000,
+    }
     : undefined;
 
   const mappedConfigs: ISliderConfigs = {
@@ -54,7 +53,7 @@ export default function SwiperSlider({
     loop: hasLoop,
     customPagination,
     customNavigation,
-    breakpoints: validBreakpoints
+    breakpoints: validBreakpoints,
   };
 
   if (slides?.length === 1) {

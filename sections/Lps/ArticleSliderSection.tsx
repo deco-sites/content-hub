@@ -87,9 +87,11 @@ export default function ArticleSliderSection({
     <Section
       {...section}
       id={id}
-      classesContainer={`article-slider-section article-slider-section__${styleArticleOption
-        .toLowerCase()
-        .replace(" ", "-")} h-full`}
+      classesContainer={`article-slider-section article-slider-section__${
+        styleArticleOption
+          .toLowerCase()
+          .replace(" ", "-")
+      } h-full`}
     >
       <div class="flex w-full mx-auto">
         <ArticleSlider

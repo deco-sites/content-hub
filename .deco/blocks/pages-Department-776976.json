@@ -1,0 +1,494 @@
+{
+  "name": "Department",
+  "path": "/department",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/22497ce8-8f73-4b91-8fa2-9d74dd8c8b2e___a7f5015ec4b887616195018dc0ddf577.png",
+              "mobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/9c8f7bac-e7fb-4ba9-8888-a09e3f7c6c39___f2daadaab8135c6d26267637b7cf22d7.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+        "text": "Lorem ipsum dolor sit amet ver todos",
+        "title": "Cozinha",
+        "data": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "lorem ipsum dolor sit amet ver todos",
+            "link": "/#",
+            "color": {
+              "0": "r",
+              "1": "g",
+              "2": "b",
+              "3": "a",
+              "4": "(",
+              "5": "5",
+              "6": "2",
+              "7": ",",
+              "8": " ",
+              "9": "7",
+              "10": "3",
+              "11": ",",
+              "12": " ",
+              "13": "9",
+              "14": "4",
+              "15": ")",
+              "mobile": "rgba(52, 73, 94, 0.7)",
+              "desktop": "rgba(52, 73, 94, 1)"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "lorem ipsum dolor sit amet ver todos",
+            "link": "/#",
+            "color": {
+              "0": "r",
+              "1": "g",
+              "2": "b",
+              "3": "a",
+              "4": "(",
+              "5": "5",
+              "6": "2",
+              "7": ",",
+              "8": " ",
+              "9": "7",
+              "10": "3",
+              "11": ",",
+              "12": " ",
+              "13": "9",
+              "14": "4",
+              "15": ")",
+              "mobile": " rgba(90, 106, 90, 0.7)",
+              "desktop": "rgba(90, 106, 90, 1)"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "lorem ipsum dolor sit amet ver todos",
+            "link": "/#",
+            "color": {
+              "0": "r",
+              "1": "g",
+              "2": "b",
+              "3": "a",
+              "4": "(",
+              "5": "5",
+              "6": "2",
+              "7": ",",
+              "8": " ",
+              "9": "7",
+              "10": "3",
+              "11": ",",
+              "12": " ",
+              "13": "9",
+              "14": "4",
+              "15": ")",
+              "mobile": " rgba(107, 78, 78, 0.7)",
+              "desktop": "rgba(107, 78, 78, 1)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "title": "<p>Título da seção de Infocard 1</p>"
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000",
+              "href": "/#",
+              "text": "saiba mais"
+            },
+            "direction": "right",
+            "richText": "<p>osectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+              "alt": "geladeira"
+            },
+            "titleCMS": "Economizam até 47%* de energia e estão entre mais econômicas do Brasil"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "title": "<p>article slider 1</p>"
+        },
+        "styleArticleOption": "Type 1",
+        "configs": {
+          "customPagination": {},
+          "slidesPerViewResponsive": {},
+          "customNavigation": {
+            "enabledMobile": true,
+            "enabledDesktop": false
+          }
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "hideLink": false,
+              "href": "/#",
+              "title": "lavadora",
+              "text": "saiba mais"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "hideLink": false,
+              "href": "/#",
+              "text": "saiba mais",
+              "title": "lavadora"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "hideLink": false,
+              "href": "/#",
+              "text": "saiba mais",
+              "title": "lavadora"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "hideLink": false,
+              "href": "/#",
+              "text": "saiba mais",
+              "title": "lavadora"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "title": "<p>Título da seção de Infocard 2</p>"
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000",
+              "href": "/#",
+              "text": "saiba mais"
+            },
+            "direction": "left",
+            "richText": "<p>consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+              "alt": "geladeira"
+            },
+            "titleCMS": "Título da Seção"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "title": "<p>article slider 2</p>"
+        },
+        "styleArticleOption": "Type 1",
+        "configs": {
+          "customPagination": {
+            "dynamicMainBullets": 0
+          },
+          "slidesPerViewResponsive": {}
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "hideLink": false,
+              "href": "/#",
+              "text": "saiba mais",
+              "title": "lavadora"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "hideLink": false,
+              "href": "/#",
+              "text": "saiba mais",
+              "title": "lavadora"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "hideLink": false,
+              "href": "/#",
+              "text": "saiba mais",
+              "title": "lavadora"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "link": {
+              "color": "#000000",
+              "hideLink": false,
+              "href": "/#",
+              "text": "saiba mais",
+              "title": "lavadora"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "title": "<p>Título da seção de Infocard 3</p>"
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000",
+              "text": "saiba mais",
+              "href": "/#"
+            },
+            "direction": "right",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+              "alt": "cozinha"
+            },
+            "richText": "<p>consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "titleCMS": "Título da seção"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "products": null,
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png"
+        },
+        "configs": {
+          "slidesPerViewResponsive": {},
+          "customNavigation": {
+            "enabledMobile": true,
+            "enabledDesktop": false
+          },
+          "loop": true
+        },
+        "section": {
+          "fullWidth": true
+        },
+        "reverse": true,
+        "link": {
+          "text": "saiba mais",
+          "href": "/#"
+        },
+        "fullWidth": true
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

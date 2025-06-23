@@ -179,8 +179,8 @@
             "direction": "right",
             "richText": "<p>osectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
             "typeOfContent": {
-              "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4cb54555-a9de-4851-8058-667aca94a4de___4205311188f6f9ccb88d6162947fbeac.webp",
-              "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/ccb56152-c5cd-4e48-9f0f-161cf736afe4___9cbc90cc4136126b0170946eeead14e8.webp",
+              "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "alt": "geladeira"
             },
             "titleCMS": "Economizam até 47%* de energia e estão entre mais econômicas do Brasil"
@@ -308,16 +308,17 @@
           {
             "link": {
               "color": "#000000",
-              "text": "lorem ipsum",
-              "href": "/#"
+              "href": "/#",
+              "text": "saiba mais"
             },
             "direction": "left",
             "richText": "<p>consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
             "typeOfContent": {
-              "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/4cb54555-a9de-4851-8058-667aca94a4de___4205311188f6f9ccb88d6162947fbeac.webp",
-              "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/ccb56152-c5cd-4e48-9f0f-161cf736afe4___9cbc90cc4136126b0170946eeead14e8.webp",
+              "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "alt": "geladeira"
-            }
+            },
+            "titleCMS": "Título da Seção"
           }
         ]
       }
@@ -445,8 +446,8 @@
             },
             "direction": "right",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/02906636-7525-4180-a052-8d02b145d730/Rita-Lobo-v3.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/84dcd53e-b58b-4216-b521-c68a29e42670/Rita-Lobo-v3.png",
+              "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "alt": "cozinha"
             },
             "richText": "<p>consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",

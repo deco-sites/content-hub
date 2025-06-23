@@ -167,7 +167,7 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "fullWidth": true,
-          "title": "<p></p>"
+          "title": "<p>Título da seção de Infocard 1</p>"
         },
         "infoCards": [
           {
@@ -302,7 +302,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<p>Título da seção de Infocard 2</p>"
         },
         "infoCards": [
           {
@@ -435,7 +436,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<p>Título da seção de Infocard 3</p>"
         },
         "infoCards": [
           {

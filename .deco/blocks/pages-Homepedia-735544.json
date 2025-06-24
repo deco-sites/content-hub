@@ -128,7 +128,10 @@
             "enabledMobile": false,
             "enabledDesktop": true
           },
-          "centeredSlides": false
+          "centeredSlides": false,
+          "customNavigation": {
+            "enabledDesktop": true
+          }
         }
       }
     },

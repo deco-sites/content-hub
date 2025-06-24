@@ -100,7 +100,7 @@
         "section": {
           "fullWidth": true
         },
-        "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
+        "text": "<h2>\\</h2>",
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {

@@ -1,0 +1,270 @@
+{
+  "name": "Agregadoras Padrão",
+  "path": "/default-aggregators",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Hero Banner"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/60969699-a762-4b14-9a10-059b142a38f7/banner-inspirese.png",
+              "mobile": "https://assets.decocache.com/content-hub/65e061a3-f00e-4c8d-bc89-a3fa65ea87d1/banner-inspirese-mobile.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "title": "<h1 style=\"text-align: center\">Título do InfoCard</h1><p style=\"text-align: center\">Intertítulo</p>",
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000",
+              "text": "saiba mais",
+              "href": "/#"
+            },
+            "direction": "right",
+            "richText": "<h1>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h1><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f39dec55-1f01-468a-b848-eeb2dc53d215/infocard-inspire.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
+              "alt": "Geladeira"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "fullWidth": false
+        },
+        "articles": [
+          {
+            "image": {
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Alecrim"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
+              "mobile": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png"
+            },
+            "alt": "alecrim"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Brownie"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "brownie",
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png",
+              "mobile": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Rita Lobo"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "rita lobo",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+              "mobile": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "reverse": true,
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png"
+        },
+        "configs": {
+          "customNavigation": {
+            "enabledDesktop": false
+          },
+          "customPagination": {
+            "dynamicBullets": true,
+            "dynamicMainBullets": 3
+          }
+        },
+        "fullWidth": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {},
+        "articles": [
+          {
+            "image": {
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "reverse": true,
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png"
+        },
+        "configs": {
+          "customNavigation": {
+            "enabledDesktop": true
+          }
+        },
+        "fullWidth": true
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

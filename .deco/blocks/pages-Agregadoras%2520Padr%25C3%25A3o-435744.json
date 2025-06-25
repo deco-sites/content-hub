@@ -179,14 +179,19 @@
         },
         "configs": {
           "customNavigation": {
-            "enabledDesktop": false
+            "enabledDesktop": true
           },
           "customPagination": {
-            "dynamicBullets": true,
+            "dynamicBullets": false,
             "dynamicMainBullets": 3
           }
         },
-        "fullWidth": true
+        "fullWidth": true,
+        "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
+        "link": {
+          "text": "Conheça todos os produtos",
+          "href": "/#"
+        }
       }
     },
     {
@@ -259,7 +264,12 @@
             "enabledDesktop": true
           }
         },
-        "fullWidth": true
+        "fullWidth": true,
+        "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
+        "link": {
+          "text": "Conheça todos os produtos",
+          "href": "/#"
+        }
       }
     }
   ],

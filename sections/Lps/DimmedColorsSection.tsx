@@ -75,18 +75,9 @@ export default function DimmedColorsSection(
             align-items: center;
           }
 
-          #section-dimmed-colors > .section-title {
-            text-align: center;
-            font-size: 36px;
-            font-weight: 600;
-            color: #041E50;
-            padding-bottom: 0.75rem; 
-          }
-
           #dimmed-colors__title {
             text-align: center;
             font-size: 36px;
-            font-weight: 600;
             color: #041E50;
             padding-bottom: 0.75rem; 
           }

@@ -32,8 +32,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
-        "text": "Lorem ipsum dolor sit amet ver todos",
-        "title": "Cozinha",
         "data": [
           {
             "image": {
@@ -158,7 +156,9 @@
               "desktop": "rgba(107, 78, 78, 1)"
             }
           }
-        ]
+        ],
+        "text": "Intertítulo",
+        "title": "Cozinha"
       }
     },
     {
@@ -167,7 +167,7 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "fullWidth": true,
-          "title": "<p>Título da seção de Infocard 1</p>"
+          "title": "<h1 style=\"text-align: center\">Título do InfoCard</h1><p style=\"text-align: center\">Intertítulo</p>"
         },
         "infoCards": [
           {
@@ -177,13 +177,12 @@
               "text": "saiba mais"
             },
             "direction": "right",
-            "richText": "<p>osectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "richText": "<h1>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h1><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "alt": "geladeira"
-            },
-            "titleCMS": "Economizam até 47%* de energia e estão entre mais econômicas do Brasil"
+            }
           }
         ]
       }
@@ -191,108 +190,136 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
-        "section": {
-          "fullWidth": true,
-          "title": "<p>article slider 1</p>"
-        },
-        "styleArticleOption": "Type 1",
-        "configs": {
-          "customPagination": {},
-          "slidesPerViewResponsive": {},
-          "customNavigation": {
-            "enabledMobile": true,
-            "enabledDesktop": false
-          }
-        },
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {},
         "articles": [
           {
             "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
-            "link": {
-              "color": "#000000",
-              "hideLink": false,
-              "href": "/#",
-              "title": "lavadora",
-              "text": "saiba mais"
-            }
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
           },
           {
             "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
-            "link": {
-              "color": "#000000",
-              "hideLink": false,
-              "href": "/#",
-              "text": "saiba mais",
-              "title": "lavadora"
-            }
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
           },
           {
             "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
-            "link": {
-              "color": "#000000",
-              "hideLink": false,
-              "href": "/#",
-              "text": "saiba mais",
-              "title": "lavadora"
-            }
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
           },
           {
             "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "configs": {
+          "slidesPerViewResponsive": {},
+          "customNavigation": {
+            "enabledMobile": false,
+            "enabledDesktop": true
+          },
+          "loop": false
+        },
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png"
+        },
+        "reverse": true,
+        "link": {
+          "text": "Conheça todos os produtos",
+          "href": "/#"
+        },
+        "fullWidth": false,
+        "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "banners": [
+          {
             "link": {
-              "color": "#000000",
-              "hideLink": false,
+              "target": "blank",
               "href": "/#",
-              "text": "saiba mais",
-              "title": "lavadora"
-            }
+              "title": "Alecrim"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
+              "mobile": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png"
+            },
+            "alt": "alecrim"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Brownie"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png",
+              "mobile": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png"
+            },
+            "alt": "brownie"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Rita Lobo"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/30fe592f-dedc-49be-b3ca-14b0dcab0740/33e6c06d-2bf2-4159-8dda-14cb01e9c532___0b8a95706e04d078001d9b4b4a3ea013.webp",
+              "mobile": "https://assets.decocache.com/content-hub/30fe592f-dedc-49be-b3ca-14b0dcab0740/33e6c06d-2bf2-4159-8dda-14cb01e9c532___0b8a95706e04d078001d9b4b4a3ea013.webp"
+            },
+            "alt": "rita lobo"
           }
         ]
       }
@@ -303,7 +330,7 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "fullWidth": true,
-          "title": "<p>Título da seção de Infocard 2</p>"
+          "title": "<h1 style=\"text-align: center\">Título do InfoCard</h1><p style=\"text-align: center\">Intertítulo</p>"
         },
         "infoCards": [
           {
@@ -313,7 +340,7 @@
               "text": "saiba mais"
             },
             "direction": "left",
-            "richText": "<p>consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "richText": "<h1>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h1><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
@@ -327,106 +354,44 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
-        "section": {
-          "fullWidth": true,
-          "title": "<p>article slider 2</p>"
-        },
-        "styleArticleOption": "Type 1",
-        "configs": {
-          "customPagination": {
-            "dynamicMainBullets": 0
-          },
-          "slidesPerViewResponsive": {}
-        },
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {},
         "articles": [
           {
             "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
-            "link": {
-              "color": "#000000",
-              "hideLink": false,
-              "href": "/#",
-              "text": "saiba mais",
-              "title": "lavadora"
-            }
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
           },
           {
             "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
-            "link": {
-              "color": "#000000",
-              "hideLink": false,
-              "href": "/#",
-              "text": "saiba mais",
-              "title": "lavadora"
-            }
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
           },
           {
             "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
-            "link": {
-              "color": "#000000",
-              "hideLink": false,
-              "href": "/#",
-              "text": "saiba mais",
-              "title": "lavadora"
-            }
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
           },
           {
             "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
+              "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
-            "link": {
-              "color": "#000000",
-              "hideLink": false,
-              "href": "/#",
-              "text": "saiba mais",
-              "title": "lavadora"
-            }
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "href": "/#",
+            "cta": "saiba mais"
           }
         ]
       }
@@ -437,7 +402,7 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "fullWidth": true,
-          "title": "<p>Título da seção de Infocard 3</p>"
+          "title": "<h1 style=\"text-align: center\">Título do InfoCard</h1><p style=\"text-align: center\">Intertítulo</p>"
         },
         "infoCards": [
           {
@@ -452,38 +417,10 @@
               "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "alt": "cozinha"
             },
-            "richText": "<p>consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>",
+            "richText": "<h1>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h1><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
             "titleCMS": "Título da seção"
           }
         ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
-        "products": null,
-        "background": {
-          "srcDesktop": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png",
-          "srcMobile": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png"
-        },
-        "configs": {
-          "slidesPerViewResponsive": {},
-          "customNavigation": {
-            "enabledMobile": true,
-            "enabledDesktop": false
-          },
-          "loop": true
-        },
-        "section": {
-          "fullWidth": true
-        },
-        "reverse": true,
-        "link": {
-          "text": "saiba mais",
-          "href": "/#"
-        },
-        "fullWidth": true
       }
     }
   ],

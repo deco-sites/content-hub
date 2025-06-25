@@ -31,14 +31,10 @@ export default function DimmedColorsSection(
   }: DimmedColorsSection,
 ) {
   return (
-    <Section id="dimmed-colors" title="">
+    <Section id="dimmed-colors" title={''}>
       <div class="flex flex-col text-center pt-[1rem]">
-        <Text
-          title={title}
-          classes={{ container: "section-title" }}
-          class="pb-3"
-        />
-        <p class="px-3 pb-3">{text}</p>
+        <h1 id="dimmed-colors__title">{title}</h1>
+        <p id="dimmed-colors__text" class="px-3 pb-3 text-center">{text}</p>
         <div id="dimmed-colors-items__container" class="flex flex-col">
           {data.map(
             (item, index) => {
@@ -74,8 +70,23 @@ export default function DimmedColorsSection(
       </div>
       <style>
         {`
-          #section-dimmed-colors > div {
-            justify-content: center;
+          #section-dimmed-colors {
+            justify-content: center; 
+            align-items: center;
+          }
+
+          #dimmed-colors__title {
+            text-align: center;
+            font-size: 36px;
+            color: #041E50;
+            padding-bottom: 0.75rem; 
+          }
+
+          #dimmed-colors__text {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 400;
+            color: #041E50;
           }
 
           #dimmed-colors-item__mobile {

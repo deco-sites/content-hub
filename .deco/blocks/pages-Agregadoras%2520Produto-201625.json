@@ -57,6 +57,17 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "products": null,
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/1d40424e-7a65-4938-8a88-774383d1677d/MultiBanner2-desktop.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/04741de6-00de-4e78-b89c-dbb39bccae44/MultiBanner2-mobile.png"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "fullWidth": false
@@ -105,6 +116,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "section": {
+          "fullWidth": false
+        },
         "banners": [
           {
             "link": {
@@ -154,10 +168,7 @@
               "mobile": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png"
             }
           }
-        ],
-        "section": {
-          "fullWidth": false
-        }
+        ]
       }
     },
     {
@@ -209,9 +220,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
-        "section": {
-          "fullWidth": true
-        },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
@@ -220,11 +228,14 @@
             "count": 10
           }
         },
-        "reverse": true,
         "background": {
           "srcDesktop": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png",
           "srcMobile": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png"
         },
+        "section": {
+          "fullWidth": true
+        },
+        "reverse": true,
         "configs": {
           "customNavigation": {
             "enabledDesktop": true

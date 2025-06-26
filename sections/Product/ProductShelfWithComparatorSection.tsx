@@ -49,26 +49,36 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
-export default function ProductShelfWithComparatorSection({
-  configs,
-  section,
-  products,
-}: Props): preact.JSX.Element {
+export default function ProductShelfWithComparatorSection(
+  {
+    configs,
+    section,
+    products,
+  }: Props,
+): preact.JSX.Element {
   const id = useId();
 
-  const hasProducts = !!products?.length;
+  const hasProducts = !!products
+    ?.length;
 
-  const minimalProducts = products?.map(({ product, specs }) => {
-    const { url, isVariantOf, offers, image } = product ?? {};
+  const minimalProducts = products?.map(
+    ({ product, specs }) => {
+      const {
+        url,
+        isVariantOf,
+        offers,
+        image,
+      } = product ?? {};
 
-    return {
-      url,
-      isVariantOf,
-      offers,
-      image,
-      productSpecsComparator: specs,
-    };
-  });
+      return {
+        url,
+        isVariantOf,
+        offers,
+        image,
+        productSpecsComparator: specs,
+      };
+    },
+  );
 
   const sliderConfig: ISliderConfigs = {
     ...configs,
@@ -111,7 +121,10 @@ export default function ProductShelfWithComparatorSection({
 
 export function LoadingFallback() {
   return (
-    <div style={{ height: "500px" }} class="flex justify-center items-center">
+    <div
+      style={{ height: "500px" }}
+      class="flex justify-center items-center"
+    >
       <span class="loading loading-spinner" />
     </div>
   );

@@ -28,9 +28,18 @@ export default function Section({
         style={stylesContainer}
       >
         {!isEmptyText(title) && (
-          <Text title={title} classes={{ container: "section-title" }} />
+          <Text
+            title={title}
+            classes={{
+              container: "section-title",
+            }}
+          />
         )}
-        {children && <div class="flex">{children}</div>}
+        {children && (
+          <div class="flex">
+            {children}
+          </div>
+        )}
       </div>
       <style>
         {`

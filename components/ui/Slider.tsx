@@ -4,7 +4,9 @@ import type { createElement } from "preact";
 import { Pagination } from "apps/workflows/deps.ts";
 
 export type Props = {
-  slides: createElement.JSX.Element[] | [];
+  slides:
+    | createElement.JSX.Element[]
+    | [];
   configs?: ISliderConfigs;
   rootId: string;
 };
@@ -32,11 +34,15 @@ export default function SwiperSlider({
     slides.length > slidesPerView) ??
     false;
 
-  const validBreakpoints = Object.fromEntries(
-    Object.entries(breakpoints).filter(
-      ([, value]) => value !== undefined && value !== null,
-    ),
-  );
+  const validBreakpoints = Object
+    .fromEntries(
+      Object.entries(breakpoints)
+        .filter(
+          ([, value]) =>
+            value !== undefined &&
+            value !== null,
+        ),
+    );
 
   const autoplayConfig = autoplay?.enabled
     ? {
@@ -49,7 +55,10 @@ export default function SwiperSlider({
     centeredSlides,
     autoplay: autoplayConfig,
     spaceBetween: spaceBetween ?? 8,
-    slidesPerView: slidesPerView ?? slidesPerViewResponsive?.mobile ?? 1,
+    slidesPerView: slidesPerView ??
+      slidesPerViewResponsive
+        ?.mobile ??
+      1,
     loop: hasLoop,
     customPagination,
     customNavigation,
@@ -60,5 +69,10 @@ export default function SwiperSlider({
     return slides?.[0];
   }
 
-  return <Slider slides={slides} configs={mappedConfigs} />;
+  return (
+    <Slider
+      slides={slides}
+      configs={mappedConfigs}
+    />
+  );
 }

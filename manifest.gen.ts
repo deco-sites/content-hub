@@ -19,9 +19,10 @@ import * as $$$$$$8 from "./sections/Lps/ImageWithTextColumnsSection.tsx";
 import * as $$$$$$9 from "./sections/Lps/InfoCardSection.tsx";
 import * as $$$$$$10 from "./sections/Lps/ReviewsSliderSection.tsx";
 import * as $$$$$$11 from "./sections/Lps/TextSection.tsx";
-import * as $$$$$$12 from "./sections/Product/ProductShelfSection.tsx";
-import * as $$$$$$13 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
-import * as $$$$$$14 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$12 from "./sections/Product/ProductMediaSection.tsx";
+import * as $$$$$$13 from "./sections/Product/ProductShelfSection.tsx";
+import * as $$$$$$14 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
+import * as $$$$$$15 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -40,9 +41,10 @@ const manifest = {
     "site/sections/Lps/InfoCardSection.tsx": $$$$$$9,
     "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$10,
     "site/sections/Lps/TextSection.tsx": $$$$$$11,
-    "site/sections/Product/ProductShelfSection.tsx": $$$$$$12,
-    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$13,
-    "site/sections/Theme/Theme.tsx": $$$$$$14,
+    "site/sections/Product/ProductMediaSection.tsx": $$$$$$12,
+    "site/sections/Product/ProductShelfSection.tsx": $$$$$$13,
+    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$14,
+    "site/sections/Theme/Theme.tsx": $$$$$$15,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

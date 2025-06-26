@@ -1,0 +1,977 @@
+{
+  "name": "Logística Reversa",
+  "path": "/logistica-reversa",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high",
+              "preload": true
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/0ea1e8c4-4996-4805-a6d5-435dee93f2be/image-placeholder.png",
+              "mobile": "https://assets.decocache.com/content-hub/cfc1de8b-2c26-4ec2-8c5e-6a995d07eaa6/Group-1.png"
+            }
+          }
+        ],
+        "configs": {
+          "customNavigation": {
+            "enabledDesktop": true,
+            "enabledMobile": true
+          },
+          "customPagination": {
+            "enabledDesktop": true,
+            "enabledMobile": true
+          },
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 1
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "marginBottomDesktop": 52,
+          "marginBottomMobile": 32,
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/1eac9e25-0a53-45d7-b425-aca9773d610d/00045-Electrolux_Coleta.JPG",
+              "srcMobile": "https://assets.decocache.com/content-hub/1eac9e25-0a53-45d7-b425-aca9773d610d/00045-Electrolux_Coleta.JPG"
+            },
+            "direction": "left",
+            "richText": "<h2 style=\"text-align: justify\"><span style=\"color: rgb(48, 63, 41)\">Logística Reversa</span></h2><p style=\"text-align: justify\"><span style=\"font-size: 14pt\">Você sabe como descartar seus eletrodomésticos e eletroeletrônicos de forma consciente? A gente te ajuda! A logística reversa promove o descarte consciente e a reciclagem, minimizando impactos ambientais, reduzindo o desperdício e incentivando a sustentabilidade.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageWithTextColumnsSection.tsx",
+        "section": {
+          "title": "<h2 style=\"text-align: center\">O QUE É A LOGÍSTICA REVERSA</h2><p style=\"text-align: center\"></p>"
+        },
+        "left": {
+          "text": "<p><span style=\"font-size: 14pt\">A logística reversa garante que produtos, embalagens e resíduos voltem para o ciclo produtivo de maneira responsável. Esse sistema permite a coleta, reciclagem ou descarte correto, reduzindo os impactos ambientais e incentivando a economia circular. Empresas como a Electrolux garantem um destino sustentável para seus produtos após o uso.</span></p>",
+          "backgroundColor": "#5B6A78",
+          "textColor": "#f6f6f6"
+        },
+        "right": {
+          "text": "<p><span style=\"font-size: 14pt\">A Electrolux participa do sistema coletivo da Fundação OpenCE, que operacionaliza a logística reversa com qualidade, eficiência e transparência inédita no Brasil, garantindo máxima qualidade em todas as etapas do ciclo de vida dos produtos. Conheça mais sobre o Sistema de Logística Reversa da Fundação OpenCE.</span><br><br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://opence.org/b9e642c6-c36d-40dc-8a8c-9276ba9dc0ac\"><u><span style=\"font-size: 14pt\">Conheça</span></u></a></p><p></p>",
+          "backgroundColor": "#5B6A78",
+          "textColor": "#f6f6f6"
+        },
+        "image": {
+          "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/44fc5216-7ae9-4af4-9310-15f053432a8d___c97bd8dff9731ef5783abb0e05144e22.png",
+          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/44fc5216-7ae9-4af4-9310-15f053432a8d___c97bd8dff9731ef5783abb0e05144e22.png",
+          "alt": "Image",
+          "link": {
+            "href": "/",
+            "title": "Imagem"
+          },
+          "src": {
+            "desktop": "https://assets.decocache.com/content-hub/1a098e63-b6dd-4214-9e6a-3918512755c4/geladeira-desmontada_desktop.jpg",
+            "mobile": "https://assets.decocache.com/content-hub/9cc4a09d-0da5-4916-bc9a-e68786b46b6d/image-(1).jpg"
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
+            },
+            "direction": "left",
+            "richText": "<p><strong><span style=\"color: rgb(48, 63, 41)\">Descarte</span></strong><br></p><h2><span style=\"color: rgb(48, 63, 41)\">Quero descartar um produto</span></h2><p style=\"text-align: justify\">Encontre um operador de coleta parceiro da Electrolux e garanta o descarte correto dos seus produtos, contribuindo para um futuro mais sustentável. <br><br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://opence.org/aa9e29a9-b8f0-4eb2-b00e-303606d18de3?empresa=SISEC\">Encontre Pontos e Canais de Coleta Parceiros</a></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/d8b25ba9-9b5a-4ce4-942d-a3c7d65588dc/imageContainer.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/d8b25ba9-9b5a-4ce4-942d-a3c7d65588dc/imageContainer.png",
+              "alt": "Placeholder"
+            },
+            "direction": "right",
+            "richText": "<p><strong><span style=\"color: rgb(48, 63, 41)\">Coleta</span></strong></p><h3><span style=\"color: rgb(48, 63, 41)\">Adquira uma coleta dedicada</span></h3><p style=\"text-align: justify\"><span>Tem produtos acima de 30 kg ou vários itens para descartar? Agende uma coleta dedicada com um de nossos operadores credenciados e adquira o serviço de descarte de forma prática e responsável. </span><br><span><br></span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://opence.org/aa9e29a9-b8f0-4eb2-b00e-303606d18de3?empresa=SISEC\"><span>Saiba mais</span></a></p>",
+            "link": {
+              "color": "#011E41"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/e673e3c4-5c7b-4c28-a4b5-51ef08afae81/imageContainer-(1).png",
+              "srcMobile": "https://assets.decocache.com/content-hub/e673e3c4-5c7b-4c28-a4b5-51ef08afae81/imageContainer-(1).png",
+              "alt": "Placeholder"
+            },
+            "direction": "left",
+            "richText": "<p><strong><span style=\"color: rgb(48, 63, 41)\">Coleta</span></strong><br></p><h3><span style=\"color: rgb(48, 63, 41)\">Vai comprar um produto novo?</span></h3><p style=\"text-align: justify\"><span>Oferecemos a coleta de lavadoras, geladeiras e fogões na compra de um novo produto Electrolux. Solicita o serviço de Coleta e Descarte Consciente no carrinho ao adquirir novos produtos.</span><br><span><br></span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://loja.electrolux.com.br/coleta-descarte-consciente\"><span>Saiba mais</span></a></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0,
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/7f04357e-91e1-4c68-ae61-d59a9011d7f3/Media-Ratios.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/7f04357e-91e1-4c68-ae61-d59a9011d7f3/Media-Ratios.png",
+              "alt": "Placeholder"
+            },
+            "direction": "right",
+            "richText": "<h3><span>Como funciona a reciclagem de produtos?</span></h3><p></p><p><span>A Electrolux em conjunto com a OpenCE, garantem que todo o processo de reciclagem siga as melhores metodologias de destinação, e contam com diversos outros parceiros que asseguram o cumprimento de todas as exigências legais e ambientais, garantindo que os produtos tenham um destino sustentável, promovendo a economia circular e minimizando o desperdício de recursos.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
+        "section": {
+          "title": "<h2 style=\"text-align: center\">Veja Como Funciona</h2>",
+          "marginTopMobile": 0,
+          "marginBottomDesktop": 32,
+          "marginBottomMobile": 32,
+          "fullWidth": false,
+          "marginTopDesktop": 32
+        },
+        "configs": {
+          "pagination": {
+            "enabledMobile": true
+          },
+          "lazy": false,
+          "customPagination": {
+            "enabledDesktop": false,
+            "enabled": false,
+            "enabledMobile": false,
+            "dynamicBullets": false,
+            "dynamicMainBullets": 1,
+            "clickable": true
+          },
+          "customNavigation": {
+            "enabledDesktop": false,
+            "enabled": false,
+            "enabledMobile": false
+          },
+          "loop": false,
+          "centeredSlides": false,
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 2,
+            "desktop": 4
+          },
+          "autoplay": {
+            "enabled": false
+          },
+          "speed": 300,
+          "spaceBetween": 0
+        },
+        "styleArticleOption": "\"Type 1\"",
+        "articles": [
+          {
+            "image": {
+              "alt": "1. ENTREGA OU COLETA",
+              "src": {
+                "0": "h",
+                "1": "t",
+                "2": "t",
+                "3": "p",
+                "4": "s",
+                "5": ":",
+                "6": "/",
+                "7": "/",
+                "8": "e",
+                "9": "l",
+                "10": "e",
+                "11": "c",
+                "12": "t",
+                "13": "r",
+                "14": "o",
+                "15": "l",
+                "16": "u",
+                "17": "x",
+                "18": ".",
+                "19": "v",
+                "20": "t",
+                "21": "e",
+                "22": "x",
+                "23": "a",
+                "24": "s",
+                "25": "s",
+                "26": "e",
+                "27": "t",
+                "28": "s",
+                "29": ".",
+                "30": "c",
+                "31": "o",
+                "32": "m",
+                "33": "/",
+                "34": "a",
+                "35": "s",
+                "36": "s",
+                "37": "e",
+                "38": "t",
+                "39": "s",
+                "40": "/",
+                "41": "v",
+                "42": "t",
+                "43": "e",
+                "44": "x",
+                "45": ".",
+                "46": "f",
+                "47": "i",
+                "48": "l",
+                "49": "e",
+                "50": "-",
+                "51": "m",
+                "52": "a",
+                "53": "n",
+                "54": "a",
+                "55": "g",
+                "56": "e",
+                "57": "r",
+                "58": "-",
+                "59": "g",
+                "60": "r",
+                "61": "a",
+                "62": "p",
+                "63": "h",
+                "64": "q",
+                "65": "l",
+                "66": "/",
+                "67": "i",
+                "68": "m",
+                "69": "a",
+                "70": "g",
+                "71": "e",
+                "72": "s",
+                "73": "/",
+                "74": "e",
+                "75": "0",
+                "76": "a",
+                "77": "c",
+                "78": "a",
+                "79": "3",
+                "80": "9",
+                "81": "6",
+                "82": "-",
+                "83": "3",
+                "84": "4",
+                "85": "5",
+                "86": "d",
+                "87": "-",
+                "88": "4",
+                "89": "b",
+                "90": "9",
+                "91": "9",
+                "92": "-",
+                "93": "a",
+                "94": "e",
+                "95": "e",
+                "96": "0",
+                "97": "-",
+                "98": "8",
+                "99": "f",
+                "100": "f",
+                "101": "4",
+                "102": "8",
+                "103": "f",
+                "104": "3",
+                "105": "8",
+                "106": "b",
+                "107": "0",
+                "108": "0",
+                "109": "6",
+                "110": "_",
+                "111": "_",
+                "112": "_",
+                "113": "4",
+                "114": "e",
+                "115": "0",
+                "116": "f",
+                "117": "d",
+                "118": "2",
+                "119": "6",
+                "120": "5",
+                "121": "0",
+                "122": "9",
+                "123": "4",
+                "124": "b",
+                "125": "e",
+                "126": "a",
+                "127": "4",
+                "128": "4",
+                "129": "e",
+                "130": "3",
+                "131": "c",
+                "132": "1",
+                "133": "2",
+                "134": "c",
+                "135": "9",
+                "136": "9",
+                "137": "f",
+                "138": "f",
+                "139": "c",
+                "140": "1",
+                "141": "b",
+                "142": "3",
+                "143": "2",
+                "144": "d",
+                "145": ".",
+                "146": "p",
+                "147": "n",
+                "148": "g",
+                "desktop": "https://assets.decocache.com/content-hub/c5897190-c19b-439e-a53a-7dc32a86e23e/I-want-an-image-of-delivery-or-collection"
+              },
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "text": "<h2><span style=\"color: rgb(22, 51, 85)\">1. ENTREGA OU COLETA</span></h2><p>Você pode levar seu produto usado a um Operador de Coleta parceiro ou adquirir uma coleta dedicada como serviço - <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://opence.org/aa9e29a9-b8f0-4eb2-b00e-303606d18de3?empresa=SISEC\"><strong><u><span style=\"color: #163355\">consulte aqui</span></u></strong></a><u><span style=\"color: #163355\">.</span></u> O operador armazena os itens até o momento do envio para reciclagem.</p>",
+            "link": {
+              "text": "Saiba mais",
+              "title": "Saiba mais",
+              "color": "#173456",
+              "hideLink": true,
+              "href": "https://opence.org/aa9e29a9-b8f0-4eb2-b00e-303606d18de3?empresa=SISEC"
+            }
+          },
+          {
+            "image": {
+              "alt": "2. TRANSPORTE ESPECIALIZADO",
+              "src": {
+                "0": "h",
+                "1": "t",
+                "2": "t",
+                "3": "p",
+                "4": "s",
+                "5": ":",
+                "6": "/",
+                "7": "/",
+                "8": "e",
+                "9": "l",
+                "10": "e",
+                "11": "c",
+                "12": "t",
+                "13": "r",
+                "14": "o",
+                "15": "l",
+                "16": "u",
+                "17": "x",
+                "18": ".",
+                "19": "v",
+                "20": "t",
+                "21": "e",
+                "22": "x",
+                "23": "a",
+                "24": "s",
+                "25": "s",
+                "26": "e",
+                "27": "t",
+                "28": "s",
+                "29": ".",
+                "30": "c",
+                "31": "o",
+                "32": "m",
+                "33": "/",
+                "34": "a",
+                "35": "s",
+                "36": "s",
+                "37": "e",
+                "38": "t",
+                "39": "s",
+                "40": "/",
+                "41": "v",
+                "42": "t",
+                "43": "e",
+                "44": "x",
+                "45": ".",
+                "46": "f",
+                "47": "i",
+                "48": "l",
+                "49": "e",
+                "50": "-",
+                "51": "m",
+                "52": "a",
+                "53": "n",
+                "54": "a",
+                "55": "g",
+                "56": "e",
+                "57": "r",
+                "58": "-",
+                "59": "g",
+                "60": "r",
+                "61": "a",
+                "62": "p",
+                "63": "h",
+                "64": "q",
+                "65": "l",
+                "66": "/",
+                "67": "i",
+                "68": "m",
+                "69": "a",
+                "70": "g",
+                "71": "e",
+                "72": "s",
+                "73": "/",
+                "74": "b",
+                "75": "a",
+                "76": "3",
+                "77": "c",
+                "78": "b",
+                "79": "5",
+                "80": "f",
+                "81": "4",
+                "82": "-",
+                "83": "b",
+                "84": "3",
+                "85": "7",
+                "86": "c",
+                "87": "-",
+                "88": "4",
+                "89": "4",
+                "90": "f",
+                "91": "5",
+                "92": "-",
+                "93": "8",
+                "94": "c",
+                "95": "6",
+                "96": "a",
+                "97": "-",
+                "98": "c",
+                "99": "e",
+                "100": "8",
+                "101": "7",
+                "102": "3",
+                "103": "7",
+                "104": "6",
+                "105": "2",
+                "106": "a",
+                "107": "0",
+                "108": "b",
+                "109": "6",
+                "110": "_",
+                "111": "_",
+                "112": "_",
+                "113": "c",
+                "114": "8",
+                "115": "c",
+                "116": "6",
+                "117": "d",
+                "118": "6",
+                "119": "8",
+                "120": "a",
+                "121": "c",
+                "122": "6",
+                "123": "b",
+                "124": "7",
+                "125": "f",
+                "126": "e",
+                "127": "0",
+                "128": "4",
+                "129": "3",
+                "130": "c",
+                "131": "9",
+                "132": "2",
+                "133": "d",
+                "134": "3",
+                "135": "7",
+                "136": "9",
+                "137": "9",
+                "138": "3",
+                "139": "5",
+                "140": "b",
+                "141": "f",
+                "142": "2",
+                "143": "7",
+                "144": "9",
+                "145": ".",
+                "146": "p",
+                "147": "n",
+                "148": "g"
+              },
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "text": "<h2><span style=\"color: #163355\">2. TRANSPORTE ESPECIALIZADO</span></h2><p><span style=\"color: rgb(112, 112, 112)\">Um transportador certificado coleta os produtos e os encaminha com segurança até um centro de consolidação, seguindo normas ambientais e garantindo total rastreabilidade do processo.</span></p>",
+            "link": {
+              "href": "/",
+              "text": "Saiba mais",
+              "title": "Saiba mais",
+              "color": "#617F57",
+              "hideLink": true
+            }
+          },
+          {
+            "image": {
+              "alt": "3. CLASSIFICAÇÃO",
+              "src": {
+                "0": "h",
+                "1": "t",
+                "2": "t",
+                "3": "p",
+                "4": "s",
+                "5": ":",
+                "6": "/",
+                "7": "/",
+                "8": "e",
+                "9": "l",
+                "10": "e",
+                "11": "c",
+                "12": "t",
+                "13": "r",
+                "14": "o",
+                "15": "l",
+                "16": "u",
+                "17": "x",
+                "18": ".",
+                "19": "v",
+                "20": "t",
+                "21": "e",
+                "22": "x",
+                "23": "a",
+                "24": "s",
+                "25": "s",
+                "26": "e",
+                "27": "t",
+                "28": "s",
+                "29": ".",
+                "30": "c",
+                "31": "o",
+                "32": "m",
+                "33": "/",
+                "34": "a",
+                "35": "s",
+                "36": "s",
+                "37": "e",
+                "38": "t",
+                "39": "s",
+                "40": "/",
+                "41": "v",
+                "42": "t",
+                "43": "e",
+                "44": "x",
+                "45": ".",
+                "46": "f",
+                "47": "i",
+                "48": "l",
+                "49": "e",
+                "50": "-",
+                "51": "m",
+                "52": "a",
+                "53": "n",
+                "54": "a",
+                "55": "g",
+                "56": "e",
+                "57": "r",
+                "58": "-",
+                "59": "g",
+                "60": "r",
+                "61": "a",
+                "62": "p",
+                "63": "h",
+                "64": "q",
+                "65": "l",
+                "66": "/",
+                "67": "i",
+                "68": "m",
+                "69": "a",
+                "70": "g",
+                "71": "e",
+                "72": "s",
+                "73": "/",
+                "74": "2",
+                "75": "9",
+                "76": "4",
+                "77": "6",
+                "78": "7",
+                "79": "e",
+                "80": "6",
+                "81": "0",
+                "82": "-",
+                "83": "2",
+                "84": "4",
+                "85": "4",
+                "86": "3",
+                "87": "-",
+                "88": "4",
+                "89": "8",
+                "90": "0",
+                "91": "1",
+                "92": "-",
+                "93": "b",
+                "94": "5",
+                "95": "5",
+                "96": "f",
+                "97": "-",
+                "98": "f",
+                "99": "9",
+                "100": "9",
+                "101": "5",
+                "102": "e",
+                "103": "e",
+                "104": "3",
+                "105": "4",
+                "106": "b",
+                "107": "1",
+                "108": "8",
+                "109": "6",
+                "110": "_",
+                "111": "_",
+                "112": "_",
+                "113": "a",
+                "114": "1",
+                "115": "8",
+                "116": "7",
+                "117": "5",
+                "118": "0",
+                "119": "0",
+                "120": "7",
+                "121": "a",
+                "122": "6",
+                "123": "5",
+                "124": "f",
+                "125": "a",
+                "126": "1",
+                "127": "5",
+                "128": "5",
+                "129": "b",
+                "130": "f",
+                "131": "6",
+                "132": "e",
+                "133": "9",
+                "134": "b",
+                "135": "e",
+                "136": "f",
+                "137": "c",
+                "138": "d",
+                "139": "0",
+                "140": "9",
+                "141": "1",
+                "142": "c",
+                "143": "f",
+                "144": "1",
+                "145": ".",
+                "146": "p",
+                "147": "n",
+                "148": "g"
+              },
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "text": "<h2><span style=\"color: #163355\">3. CLASSIFICAÇÃO</span></h2><p><span style=\"color: rgb(112, 112, 112)\">No centro de consolidação, os produtos são classificados por categoria, separando materiais que precisam de tratamento especial e os reutilizáveis, garantindo a destinação correta e diminuindo os impactos ambientais.</span></p>",
+            "link": {
+              "href": "/",
+              "text": "Saiba mais",
+              "title": "Saiba mais",
+              "color": "#617F57",
+              "hideLink": true
+            }
+          },
+          {
+            "image": {
+              "alt": "4. RECICLAGEM E DESTINAÇÃO ",
+              "src": {
+                "0": "h",
+                "1": "t",
+                "2": "t",
+                "3": "p",
+                "4": "s",
+                "5": ":",
+                "6": "/",
+                "7": "/",
+                "8": "e",
+                "9": "l",
+                "10": "e",
+                "11": "c",
+                "12": "t",
+                "13": "r",
+                "14": "o",
+                "15": "l",
+                "16": "u",
+                "17": "x",
+                "18": ".",
+                "19": "v",
+                "20": "t",
+                "21": "e",
+                "22": "x",
+                "23": "a",
+                "24": "s",
+                "25": "s",
+                "26": "e",
+                "27": "t",
+                "28": "s",
+                "29": ".",
+                "30": "c",
+                "31": "o",
+                "32": "m",
+                "33": "/",
+                "34": "a",
+                "35": "s",
+                "36": "s",
+                "37": "e",
+                "38": "t",
+                "39": "s",
+                "40": "/",
+                "41": "v",
+                "42": "t",
+                "43": "e",
+                "44": "x",
+                "45": ".",
+                "46": "f",
+                "47": "i",
+                "48": "l",
+                "49": "e",
+                "50": "-",
+                "51": "m",
+                "52": "a",
+                "53": "n",
+                "54": "a",
+                "55": "g",
+                "56": "e",
+                "57": "r",
+                "58": "-",
+                "59": "g",
+                "60": "r",
+                "61": "a",
+                "62": "p",
+                "63": "h",
+                "64": "q",
+                "65": "l",
+                "66": "/",
+                "67": "i",
+                "68": "m",
+                "69": "a",
+                "70": "g",
+                "71": "e",
+                "72": "s",
+                "73": "/",
+                "74": "2",
+                "75": "9",
+                "76": "4",
+                "77": "6",
+                "78": "7",
+                "79": "e",
+                "80": "6",
+                "81": "0",
+                "82": "-",
+                "83": "2",
+                "84": "4",
+                "85": "4",
+                "86": "3",
+                "87": "-",
+                "88": "4",
+                "89": "8",
+                "90": "0",
+                "91": "1",
+                "92": "-",
+                "93": "b",
+                "94": "5",
+                "95": "5",
+                "96": "f",
+                "97": "-",
+                "98": "f",
+                "99": "9",
+                "100": "9",
+                "101": "5",
+                "102": "e",
+                "103": "e",
+                "104": "3",
+                "105": "4",
+                "106": "b",
+                "107": "1",
+                "108": "8",
+                "109": "6",
+                "110": "_",
+                "111": "_",
+                "112": "_",
+                "113": "a",
+                "114": "1",
+                "115": "8",
+                "116": "7",
+                "117": "5",
+                "118": "0",
+                "119": "0",
+                "120": "7",
+                "121": "a",
+                "122": "6",
+                "123": "5",
+                "124": "f",
+                "125": "a",
+                "126": "1",
+                "127": "5",
+                "128": "5",
+                "129": "b",
+                "130": "f",
+                "131": "6",
+                "132": "e",
+                "133": "9",
+                "134": "b",
+                "135": "e",
+                "136": "f",
+                "137": "c",
+                "138": "d",
+                "139": "0",
+                "140": "9",
+                "141": "1",
+                "142": "c",
+                "143": "f",
+                "144": "1",
+                "145": ".",
+                "146": "p",
+                "147": "n",
+                "148": "g"
+              },
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "text": "<h2><span style=\"color: #153254\">4. RECICLAGEM E DESTINAÇÃO</span><span style=\"color: rgb(48, 63, 41)\"> </span></h2><p><span style=\"color: rgb(112, 112, 112)\">O Produtor Reverso desmonta os itens para reciclagem, tratando gases CFC e óleos adequadamente, e separando metais e plásticos para reaproveitamento ou descarte correto.</span></p>",
+            "link": {
+              "href": "/",
+              "text": "Saiba mais",
+              "title": "Saiba mais",
+              "color": "#617F57",
+              "hideLink": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "section": {
+          "title": "<h2 style=\"text-align: center\">RECOMENDADOS PARA VOCÊ</h2><p style=\"text-align: center\">Produtos para deixar a casa bem vivida e muito mais sustentável</p>"
+        },
+        "configs": {
+          "lazy": true,
+          "customNavigation": {
+            "enabledDesktop": true
+          },
+          "customPagination": {
+            "enabledDesktop": false
+          },
+          "pagination": {
+            "enabledMobile": true,
+            "clickable": true,
+            "enabledDesktop": false
+          },
+          "navigation": {
+            "enabledMobile": false,
+            "enabledDesktop": true
+          }
+        },
+        "background": {
+          "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/c99c0bcf-a6b8-4b84-86fb-8c68910c5628___c7d17a918a96d48c7befce1767bba654.png",
+          "srcMobile": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/243097d7-da7b-4a52-aea7-1e5d5e4b6b9a___98314a9a95d25587a2f6655195e8f8a5.png"
+        },
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
+        "link": {
+          "text": "Conheça todos os produtos",
+          "href": "https://loja.electrolux.com.br/2140?map=productClusterIds",
+          "bgColor": "#617f57"
+        },
+        "direction": "left",
+        "reverse": false
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "products": null
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

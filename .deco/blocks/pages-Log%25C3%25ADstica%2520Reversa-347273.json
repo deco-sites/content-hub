@@ -191,11 +191,11 @@
         "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
         "section": {
           "title": "<h2 style=\"text-align: center\">Veja Como Funciona</h2>",
-          "marginTopMobile": 0,
           "marginBottomDesktop": 32,
           "marginBottomMobile": 32,
           "fullWidth": false,
-          "marginTopDesktop": 32
+          "marginTopDesktop": 40,
+          "marginTopMobile": 30
         },
         "configs": {
           "pagination": {

@@ -1,6 +1,6 @@
 {
   "name": "Agregadoras Padrão",
-  "path": "/default-aggregators",
+  "path": "/content-hub-default-aggregators",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

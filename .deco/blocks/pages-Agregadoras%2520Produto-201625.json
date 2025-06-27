@@ -1,6 +1,6 @@
 {
   "name": "Agregadoras Produto",
-  "path": "/product-aggregators",
+  "path": "/content-hub-product-aggregators",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

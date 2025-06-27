@@ -2,8 +2,12 @@ export const DefaultBannerSection = {
   "banners": [
     {
       loadingOptions: {
-        loading: "eager" as "eager" | "lazy",
-        fetchPriority: "high" as "high" | "low",
+        loading: "eager" as
+          | "eager"
+          | "lazy",
+        fetchPriority: "high" as
+          | "high"
+          | "low",
         preload: true,
       },
       "src": {

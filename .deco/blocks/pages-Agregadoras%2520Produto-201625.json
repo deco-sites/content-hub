@@ -1,6 +1,6 @@
 {
   "name": "Agregadoras Produto",
-  "path": "/product-aggregators",
+  "path": "/content-hub-product-aggregators",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -57,6 +57,17 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "products": null,
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/1d40424e-7a65-4938-8a88-774383d1677d/MultiBanner2-desktop.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/04741de6-00de-4e78-b89c-dbb39bccae44/MultiBanner2-mobile.png"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "fullWidth": false
@@ -105,6 +116,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "section": {
+          "fullWidth": false
+        },
         "banners": [
           {
             "link": {
@@ -117,8 +131,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
-              "mobile": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png"
+              "desktop": "https://assets.decocache.com/content-hub/e5fe6232-1618-4f04-b34f-564b3862fa05/alecrim.png",
+              "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
             },
             "alt": "alecrim"
           },
@@ -134,8 +148,8 @@
             },
             "alt": "brownie",
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png",
-              "mobile": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png"
+              "desktop": "https://assets.decocache.com/content-hub/59dc675d-6336-48b0-a490-e6718d6c417a/MultiBanner1.png",
+              "mobile": "https://assets.decocache.com/content-hub/6f4e5330-ad61-4ed9-9730-bdb5b0c355d8/MultiBanner1-mobile.png"
             }
           },
           {
@@ -151,13 +165,10 @@
             "alt": "rita lobo",
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-              "mobile": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png"
+              "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
             }
           }
-        ],
-        "section": {
-          "fullWidth": false
-        }
+        ]
       }
     },
     {
@@ -209,9 +220,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
-        "section": {
-          "fullWidth": true
-        },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
@@ -220,11 +228,14 @@
             "count": 10
           }
         },
-        "reverse": true,
         "background": {
           "srcDesktop": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png",
           "srcMobile": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png"
         },
+        "section": {
+          "fullWidth": true
+        },
+        "reverse": true,
         "configs": {
           "customNavigation": {
             "enabledDesktop": true

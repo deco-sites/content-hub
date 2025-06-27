@@ -35,15 +35,16 @@
     "simple-git": "npm:simple-git@^3.25.0",
     "std/": "https://deno.land/std@0.190.0/",
     "site/": "./",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.118.9/",
+    "deco/": "https:\\cdn.jsdelivr.net\\gh\\deco/",
     "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.107.0/",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "daisyui": "npm:daisyui@4.4.19",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@1.118.9",
-    "@deco/dev": "jsr:@deco/dev@1.118.9",
-    "update": "npm:update@^0.7.4"
+    "@deco/deco": "jsr:@deco/deco@1.119.0",
+    "@deco/dev": "jsr:@deco/dev@1.119.0",
+    "update": "npm:update@^0.7.4",
+    "content-hub/": "https:\\cdn.jsdelivr.net\\gh\\content-hub/"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
@@ -60,7 +61,8 @@
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
     "dev": "deno run -A --env --unstable-kv --unstable-hmr dev.ts",
-    "reload": "deno cache -r https://deco.cx/run"
+    "reload": "deno cache -r https://deco.cx/run",
+    "format": "deno fmt"
   },
   "githooks": {
     "pre-commit": "check"
@@ -80,6 +82,13 @@
         "recommended"
       ]
     }
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": false
   },
   "nodeModulesDir": false,
   "compilerOptions": {

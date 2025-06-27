@@ -13,12 +13,14 @@ export interface Props {
   image3: string;
 }
 
-export default function ImageGridSection({
-  section,
-  image1,
-  image2,
-  image3,
-}: Props) {
+export default function ImageGridSection(
+  {
+    section,
+    image1,
+    image2,
+    image3,
+  }: Props,
+) {
   const id = useId();
 
   return (

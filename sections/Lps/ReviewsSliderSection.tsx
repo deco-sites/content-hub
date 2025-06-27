@@ -49,11 +49,13 @@ interface Props {
   sectionReviewCards?: IReviewCard[];
 }
 
-export default function ReviewsSliderSection({
-  section,
-  background = DefaultReviews.background,
-  sectionReviewCards = DefaultReviews.sectionReviewCards,
-}: Props) {
+export default function ReviewsSliderSection(
+  {
+    section,
+    background = DefaultReviews.background,
+    sectionReviewCards = DefaultReviews.sectionReviewCards,
+  }: Props,
+) {
   const id = useId();
   const { srcDesktop, srcMobile, alt } = background ?? {};
 
@@ -68,7 +70,10 @@ export default function ReviewsSliderSection({
           {srcDesktop && srcMobile && (
             <div class="flex absolute h-full top-0 left-0 -z-[1]">
               <ResponsiveImage
-                src={{ desktop: srcDesktop, mobile: srcMobile }}
+                src={{
+                  desktop: srcDesktop,
+                  mobile: srcMobile,
+                }}
                 alt={alt}
                 sizes={{
                   heightMobile: 350,
@@ -80,27 +85,30 @@ export default function ReviewsSliderSection({
           <div class="flex w-full">
             <div class="flex w-full mx-auto justify-center items-center lg:container">
               <div class="flex px-4 gap-2 w-full h-fit overflow-x-auto whitespace-nowrap [scrollbar-width:none] lg:justify-center lg:px-0 xl:gap-8 lg:whitespace-normal">
-                {sectionReviewCards?.map((props, idx) => {
-                  return (
-                    <ReviewCards
-                      {...{
-                        ...props,
-                        styles: {
-                          container: {
-                            maxWidth: "initial",
-                          },
-                        },
-                        classes: {
-                          container:
-                            "whitespace-normal min-w-[340px] lg:min-w-[initial]",
-                          reviewDescription: "min-h-[60px]",
-                          reviewProductNameAndPersonName: "min-h-[45px]",
-                        },
-                      }}
-                      key={`${props.reviewPersonName}-${idx}`}
-                    />
-                  );
-                })}
+                {sectionReviewCards
+                  ?.map(
+                    (props, idx) => {
+                      return (
+                        <ReviewCards
+                          {...{
+                            ...props,
+                            styles: {
+                              container: {
+                                maxWidth: "initial",
+                              },
+                            },
+                            classes: {
+                              container:
+                                "whitespace-normal min-w-[340px] lg:min-w-[initial]",
+                              reviewDescription: "min-h-[60px]",
+                              reviewProductNameAndPersonName: "min-h-[45px]",
+                            },
+                          }}
+                          key={`${props.reviewPersonName}-${idx}`}
+                        />
+                      );
+                    },
+                  )}
               </div>
             </div>
           </div>

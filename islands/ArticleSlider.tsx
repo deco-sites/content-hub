@@ -9,12 +9,30 @@ type Props = {
   rootId: string;
 };
 
-function Island({ articles = [], configs = {}, rootId }: Props) {
-  const slides = articles.map((props, idx) => (
-    <Article key={`${props.image.alt}-${idx}`} {...props} />
+function Island(
+  {
+    articles = [],
+    configs = {},
+    rootId,
+  }: Props,
+) {
+  const slides = articles.map((
+    props,
+    idx,
+  ) => (
+    <Article
+      key={`${props.image.alt}-${idx}`}
+      {...props}
+    />
   ));
 
-  return <Component configs={{ ...configs }} slides={slides} rootId={rootId} />;
+  return (
+    <Component
+      configs={{ ...configs }}
+      slides={slides}
+      rootId={rootId}
+    />
+  );
 }
 
 export default Island;

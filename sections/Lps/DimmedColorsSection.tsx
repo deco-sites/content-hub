@@ -27,38 +27,67 @@ export default function DimmedColorsSection(
   {
     title = dimmedColorsSectionData.title,
     text = dimmedColorsSectionData.text,
-    data = dimmedColorsSectionData.threeItemsData,
+    data = dimmedColorsSectionData
+      .threeItemsData,
   }: DimmedColorsSection,
 ) {
   return (
-    <Section id="dimmed-colors" title={''}>
+    <Section
+      id="dimmed-colors"
+      title={""}
+    >
       <div class="flex flex-col text-center pt-[1rem]">
-        <h1 id="dimmed-colors__title">{title}</h1>
-        <p id="dimmed-colors__text" class="px-3 pb-3 text-center">{text}</p>
-        <div id="dimmed-colors-items__container" class="flex flex-col">
+        <h1 id="dimmed-colors__title">
+          {title}
+        </h1>
+        <p
+          id="dimmed-colors__text"
+          class="px-3 pb-3 text-center"
+        >
+          {text}
+        </p>
+        <div
+          id="dimmed-colors-items__container"
+          class="flex flex-col"
+        >
           {data.map(
             (item, index) => {
               return (
-                <a href={item.link} key={index}>
+                <a
+                  href={item.link}
+                  key={index}
+                >
                   <div
                     id="dimmed-colors-item__container"
                     class="relative flex flex-col overflow-hidden"
                   >
-                    <ResponsiveImage {...item.image} />
+                    <ResponsiveImage
+                      {...item.image}
+                    />
                     <div
                       id="dimmed-colors-item__mobile"
-                      style={{ backgroundColor: item.color.mobile }}
+                      style={{
+                        backgroundColor: item.color
+                          .mobile,
+                      }}
                       class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
                     >
-                      <h3 class="font-semibold">{item.title}</h3>
+                      <h3 class="font-semibold">
+                        {item.title}
+                      </h3>
                       <p>{item.text}</p>
                     </div>
                     <div
                       id="dimmed-colors-item__desktop"
-                      style={{ backgroundColor: item.color.desktop }}
+                      style={{
+                        backgroundColor: item.color
+                          .desktop,
+                      }}
                       class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
                     >
-                      <h3 class="font-semibold">{item.title}</h3>
+                      <h3 class="font-semibold">
+                        {item.title}
+                      </h3>
                       <p>{item.text}</p>
                     </div>
                   </div>

@@ -57,12 +57,14 @@ interface Props {
   image?: IResponsiveImage;
 }
 
-export default function ImageWithTextColumnsSection({
-  section,
-  left = DefaultImageWithTextColumns.left,
-  image = DefaultImageWithTextColumns.image,
-  right = DefaultImageWithTextColumns.right,
-}: Props) {
+export default function ImageWithTextColumnsSection(
+  {
+    section,
+    left = DefaultImageWithTextColumns.left,
+    image = DefaultImageWithTextColumns.image,
+    right = DefaultImageWithTextColumns.right,
+  }: Props,
+) {
   const id = useId();
 
   const {
@@ -96,7 +98,11 @@ export default function ImageWithTextColumnsSection({
         <div class="flex w-full xl:w-[33.3%]">
           <ResponsiveImage
             {...image}
-            sizes={{ height: 520, width: 520, maxHeight: 520 }}
+            sizes={{
+              height: 520,
+              width: 520,
+              maxHeight: 520,
+            }}
           />
         </div>
         <div

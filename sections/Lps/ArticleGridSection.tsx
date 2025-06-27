@@ -28,32 +28,39 @@ export interface Props {
   articles?: ArticleItem[];
 }
 
-export default function ArticleGridSection({
-  section,
-  articles = [],
-}: Props) {
+export default function ArticleGridSection(
+  {
+    section,
+    articles = [],
+  }: Props,
+) {
   const id = useId();
 
   if (!articles?.length) return null;
 
-  const processedArticles = articles.map((article) => ({
-    ...article,
-    image: {
-      ...article.image,
-      sizes: {
-        ...(article.image?.sizes ?? {}),
-        width: 344,
-        height: 180,
-        widthMobile: 344,
-        heightMobile: 180,
+  const processedArticles = articles
+    .map((article) => ({
+      ...article,
+      image: {
+        ...article.image,
+        sizes: {
+          ...(article.image?.sizes ??
+            {}),
+          width: 344,
+          height: 180,
+          widthMobile: 344,
+          heightMobile: 180,
+        },
       },
-    },
-  }));
+    }));
 
   return (
     <Section {...section} id={id}>
       <div class="w-full max-w-[1500px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4">
-        {processedArticles.map((article, index) => (
+        {processedArticles.map((
+          article,
+          index,
+        ) => (
           <a
             key={index}
             href={article.href ?? "#"}
@@ -62,22 +69,31 @@ export default function ArticleGridSection({
             {article.image?.src && (
               <div class="w-full mb-4">
                 <img
-                  src={article.image.src}
-                  alt={article.image.alt ?? "Imagem do artigo"}
+                  src={article.image
+                    .src}
+                  alt={article.image
+                    .alt ??
+                    "Imagem do artigo"}
                   class="w-full h-auto object-cover"
-                  width={article.image.sizes?.width ?? 344}
-                  height={article.image.sizes?.height ?? 180}
+                  width={article.image
+                    .sizes?.width ??
+                    344}
+                  height={article.image
+                    .sizes?.height ??
+                    180}
                 />
               </div>
             )}
             <h3
               class="text-xl font-semibold text-[#041E50] mb-2"
               dangerouslySetInnerHTML={{
-                __html: article.title ?? "Título do artigo",
+                __html: article.title ??
+                  "Título do artigo",
               }}
             />
             <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux">
-              {article.description ?? "Descrição do artigo..."}
+              {article.description ??
+                "Descrição do artigo..."}
             </p>
             {article.cta && (
               <span class="mt-4 text-sm font-semibold leading-[140%] text-[#5B6A78]">

@@ -1,0 +1,340 @@
+{
+  "name": "Inspire-se",
+  "path": "/inspire-se",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/60969699-a762-4b14-9a10-059b142a38f7/banner-inspirese.png",
+              "mobile": "https://assets.decocache.com/content-hub/65e061a3-f00e-4c8d-bc89-a3fa65ea87d1/banner-inspirese-mobile.png"
+            },
+            "alt": "Banner Inspire-se"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/AmbassadorsSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"color: #041e50; font-size: 36pt\">Embaixadores</span></strong><br><span style=\"color: #041e50; font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
+          "fullWidth": true
+        },
+        "ambassadors": [
+          {
+            "name": "Rita Lobo",
+            "image": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+            "description": "Lorem Ipsum",
+            "imageDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+            "imageMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+          },
+          {
+            "image": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+            "name": "Rita Lobo",
+            "description": "Lorem Ipsum",
+            "imageDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+            "imageMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+          },
+          {
+            "image": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+            "name": "Rita Lobo",
+            "description": "Lorem Ipsum",
+            "imageDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+            "imageMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"color: #041e50; font-size: 36pt\">Categorias</span></strong><br><span style=\"color: #041e50\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span><br></p>"
+        },
+        "icons": [
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "imageSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
+            "redirect": "/",
+            "title": "Geladeira",
+            "alt": "geladeira alt"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "alt": "maquina de lavar alt",
+            "imageSrc": "https://assets.decocache.com/content-hub/3aade863-235c-4fc5-92e3-5001b79bda21/maquina-de-lavar.svg",
+            "title": "Maquina de lavar",
+            "redirect": "/"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "alt": "fogoes alt",
+            "imageSrc": "https://assets.decocache.com/content-hub/fe5dc78b-8efd-43a9-9b11-aeeda9424772/fogoes.svg",
+            "redirect": "/",
+            "title": "Fogões"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "alt": "purificadores alt",
+            "imageSrc": "https://assets.decocache.com/content-hub/2bde46f4-041d-4806-87dc-d4bb9f2c80f9/purificadores.svg",
+            "redirect": "/",
+            "title": "Purificadores"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "alt": "aspiradores de pó",
+            "imageSrc": "https://assets.decocache.com/content-hub/880542d8-7d5b-417a-be28-cfef26ccb642/aspiradores-de-po.svg",
+            "redirect": "/",
+            "title": "Aspiradores de pó"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "alt": "air fryer alt",
+            "redirect": "/",
+            "imageSrc": "https://assets.decocache.com/content-hub/e962c54d-3bb2-46a8-b79c-014c14c77c03/ayrfryer.svg",
+            "title": "Air Fryer"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "alt": "ares-condicionados alt",
+            "imageSrc": "https://assets.decocache.com/content-hub/b2562661-7cb4-4c0b-9a8a-c25846618772/ares-condicionados.svg",
+            "redirect": "/",
+            "title": "Ares-condiconados"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "alt": "utilidades domesticas alt",
+            "imageSrc": "https://assets.decocache.com/content-hub/047d6e36-b328-4ae3-9ed5-9fda6c16983b/utilidades-domesticas.svg",
+            "redirect": "/",
+            "title": "Utilidades domésticas"
+          },
+          {
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "target": false,
+            "alt": "frigobar alt",
+            "imageSrc": "https://assets.decocache.com/content-hub/3c206556-9091-4baa-ac4e-3d8d7c6c4360/frigobar.svg",
+            "redirect": "/",
+            "title": "Frigobar"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Tendências</span></strong><br><span style=\"font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
+          "fullWidth": true,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "right",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f39dec55-1f01-468a-b848-eeb2dc53d215/infocard-inspire.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
+              "alt": "geladeira"
+            },
+            "richText": "<h5 style=\"text-align: justify\"><strong><span style=\"color: #041e50\">Geladeira</span></strong></h5><p style=\"text-align: justify\"><strong><span style=\"color: #041e50\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p style=\"text-align: justify\"></p><p style=\"text-align: justify\"><span style=\"color: #2b2936\">Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site electrolux.com</span><span style=\"color: #000004\"><br><br></span><u><span style=\"color: #041e50\">Ver mais</span></u></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"color: #041e50; font-size: 36pt\">Sua Casa Bem Vivida</span></strong><br><span style=\"color: #041e50; font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>",
+          "marginTopDesktop": 48
+        },
+        "articles": [
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageGridSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"color: #041e50; font-size: 36pt\">Galeria</span></strong><br><span style=\"font-size: 16pt\">Conteudos selecionados de acordo com a sua necessidade</span></p>"
+        },
+        "image1": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
+        "image2": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
+        "image3": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageTextCardGridSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(4, 30, 80); font-size: 36pt\">Especiais</span></strong><br><span style=\"color: rgb(4, 30, 80); font-size: 16pt\">Conteudos selecionados de acordo com a sua necessidade</span></p>"
+        },
+        "cards": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Banner Especiais 1",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/64305e48-14ec-4283-821d-bceb1d712473/BannerEspeciais.png",
+                "mobile": "https://assets.decocache.com/content-hub/6cdf1cf5-2d50-4780-9390-b393aa4c7643/BannerEspeciais-mobile.png"
+              }
+            },
+            "tag": "Tag",
+            "title": "Especiais",
+            "description": "Lorem Ipsum",
+            "linkText": "Conheça",
+            "linkUrl": "/"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Banner Especiais 2",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/64305e48-14ec-4283-821d-bceb1d712473/BannerEspeciais.png",
+                "mobile": "https://assets.decocache.com/content-hub/6cdf1cf5-2d50-4780-9390-b393aa4c7643/BannerEspeciais-mobile.png"
+              }
+            },
+            "tag": "Tag",
+            "title": "Especiais",
+            "description": "Lorem Ipsum",
+            "linkText": "Conheça",
+            "linkUrl": "/"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Banner Especiais 3",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/64305e48-14ec-4283-821d-bceb1d712473/BannerEspeciais.png",
+                "mobile": "https://assets.decocache.com/content-hub/6cdf1cf5-2d50-4780-9390-b393aa4c7643/BannerEspeciais-mobile.png"
+              }
+            },
+            "tag": "Tag",
+            "title": "Especiais",
+            "description": "Lorem Ipsum",
+            "linkText": "Conheça",
+            "linkUrl": "/"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -2,23 +2,29 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
-import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
-import * as $$$$$$$$$$$2 from "./apps/deco/vtex.ts";
-import * as $$$$$$$$$$$3 from "./apps/site.ts";
+import * as $$$$$$$$$$$0 from "./apps/content-hub.ts";
+import * as $$$$$$$$$$$1 from "./apps/deco.ts";
+import * as $$$$$$$$$$$2 from "./apps/deco/blog.ts";
+import * as $$$$$$$$$$$3 from "./apps/deco/htmx.ts";
+import * as $$$$$$$$$$$4 from "./apps/deco/vtex.ts";
+import * as $$$$$$$$$$$5 from "./apps/site.ts";
 import * as $$$0 from "./loaders/customVTEX/productById.ts";
 import * as $$$$$$0 from "./sections/Logos.tsx";
-import * as $$$$$$1 from "./sections/Lps/ArticleSliderSection.tsx";
-import * as $$$$$$2 from "./sections/Lps/BannerMediaSection.tsx";
-import * as $$$$$$3 from "./sections/Lps/BannerSliderSection.tsx";
-import * as $$$$$$4 from "./sections/Lps/CategoriesSection.tsx";
-import * as $$$$$$5 from "./sections/Lps/ImageWithTextColumnsSection.tsx";
-import * as $$$$$$6 from "./sections/Lps/InfoCardSection.tsx";
-import * as $$$$$$7 from "./sections/Lps/ReviewsSliderSection.tsx";
-import * as $$$$$$8 from "./sections/Lps/TextSection.tsx";
-import * as $$$$$$9 from "./sections/Product/ProductShelfSection.tsx";
-import * as $$$$$$10 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
-import * as $$$$$$11 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$1 from "./sections/Lps/ArticleGridSection.tsx";
+import * as $$$$$$2 from "./sections/Lps/ArticleSliderSection.tsx";
+import * as $$$$$$3 from "./sections/Lps/BannerMediaSection.tsx";
+import * as $$$$$$4 from "./sections/Lps/BannerSliderSection.tsx";
+import * as $$$$$$5 from "./sections/Lps/CategoriesSection.tsx";
+import * as $$$$$$6 from "./sections/Lps/DimmedColorsSection.tsx";
+import * as $$$$$$7 from "./sections/Lps/ImageGridSection.tsx";
+import * as $$$$$$8 from "./sections/Lps/ImageWithTextColumnsSection.tsx";
+import * as $$$$$$9 from "./sections/Lps/InfoCardSection.tsx";
+import * as $$$$$$10 from "./sections/Lps/ReviewsSliderSection.tsx";
+import * as $$$$$$11 from "./sections/Lps/TextSection.tsx";
+import * as $$$$$$12 from "./sections/Product/ProductMediaSection.tsx";
+import * as $$$$$$13 from "./sections/Product/ProductShelfSection.tsx";
+import * as $$$$$$14 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
+import * as $$$$$$15 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -26,23 +32,29 @@ const manifest = {
   },
   "sections": {
     "site/sections/Logos.tsx": $$$$$$0,
-    "site/sections/Lps/ArticleSliderSection.tsx": $$$$$$1,
-    "site/sections/Lps/BannerMediaSection.tsx": $$$$$$2,
-    "site/sections/Lps/BannerSliderSection.tsx": $$$$$$3,
-    "site/sections/Lps/CategoriesSection.tsx": $$$$$$4,
-    "site/sections/Lps/ImageWithTextColumnsSection.tsx": $$$$$$5,
-    "site/sections/Lps/InfoCardSection.tsx": $$$$$$6,
-    "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$7,
-    "site/sections/Lps/TextSection.tsx": $$$$$$8,
-    "site/sections/Product/ProductShelfSection.tsx": $$$$$$9,
-    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$10,
-    "site/sections/Theme/Theme.tsx": $$$$$$11,
+    "site/sections/Lps/ArticleGridSection.tsx": $$$$$$1,
+    "site/sections/Lps/ArticleSliderSection.tsx": $$$$$$2,
+    "site/sections/Lps/BannerMediaSection.tsx": $$$$$$3,
+    "site/sections/Lps/BannerSliderSection.tsx": $$$$$$4,
+    "site/sections/Lps/CategoriesSection.tsx": $$$$$$5,
+    "site/sections/Lps/DimmedColorsSection.tsx": $$$$$$6,
+    "site/sections/Lps/ImageGridSection.tsx": $$$$$$7,
+    "site/sections/Lps/ImageWithTextColumnsSection.tsx": $$$$$$8,
+    "site/sections/Lps/InfoCardSection.tsx": $$$$$$9,
+    "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$10,
+    "site/sections/Lps/TextSection.tsx": $$$$$$11,
+    "site/sections/Product/ProductMediaSection.tsx": $$$$$$12,
+    "site/sections/Product/ProductShelfSection.tsx": $$$$$$13,
+    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$14,
+    "site/sections/Theme/Theme.tsx": $$$$$$15,
   },
   "apps": {
-    "site/apps/deco/blog.ts": $$$$$$$$$$$0,
-    "site/apps/deco/htmx.ts": $$$$$$$$$$$1,
-    "site/apps/deco/vtex.ts": $$$$$$$$$$$2,
-    "site/apps/site.ts": $$$$$$$$$$$3,
+    "site/apps/content-hub.ts": $$$$$$$$$$$0,
+    "site/apps/deco.ts": $$$$$$$$$$$1,
+    "site/apps/deco/blog.ts": $$$$$$$$$$$2,
+    "site/apps/deco/htmx.ts": $$$$$$$$$$$3,
+    "site/apps/deco/vtex.ts": $$$$$$$$$$$4,
+    "site/apps/site.ts": $$$$$$$$$$$5,
   },
   "name": "site",
   "baseUrl": import.meta.url,

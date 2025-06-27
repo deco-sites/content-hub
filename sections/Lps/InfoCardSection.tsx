@@ -28,11 +28,13 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
-export default function InfoCardSection({
-  section,
-  infoCards = DefaultInfoCardSection.infoCards,
-  configs,
-}: Props) {
+export default function InfoCardSection(
+  {
+    section,
+    infoCards = DefaultInfoCardSection.infoCards,
+    configs,
+  }: Props,
+) {
   const id = useId();
 
   if (!infoCards?.length) return null;
@@ -41,19 +43,26 @@ export default function InfoCardSection({
 
   const sliderConfig = {
     ...configs,
-    slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
+    slidesPerView: slidesPerViewResponsive?.mobile ??
+      1,
     breakpoints: {
       768: {
-        slidesPerView: slidesPerViewResponsive?.tablet ?? 1,
+        slidesPerView: slidesPerViewResponsive
+          ?.tablet ?? 1,
       },
       1024: {
-        slidesPerView: slidesPerViewResponsive?.desktop ?? 1,
+        slidesPerView: slidesPerViewResponsive
+          ?.desktop ?? 1,
       },
     },
   } as ISliderConfigs;
 
   return (
-    <Section {...section} id={id} classesContainer="info-card-section">
+    <Section
+      {...section}
+      id={id}
+      classesContainer="info-card-section"
+    >
       <InfoCardSlider
         rootId={id}
         configs={sliderConfig}

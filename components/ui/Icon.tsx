@@ -45,7 +45,10 @@ export type AvailableIcons =
   | "Youtube"
   | "Zoom";
 
-interface Props extends preact.JSX.SVGAttributes<SVGSVGElement> {
+interface Props extends
+  preact.JSX.SVGAttributes<
+    SVGSVGElement
+  > {
   /**
    * Symbol id from element to render. Take a look at `/static/icons.svg`.
    *
@@ -72,7 +75,11 @@ function Icon({
       strokeWidth={strokeWidth}
       style={style}
     >
-      <use href={asset(`/sprites.svg#${id}`)} />
+      <use
+        href={asset(
+          `/sprites.svg#${id}`,
+        )}
+      />
     </svg>
   );
 }

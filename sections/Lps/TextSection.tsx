@@ -29,9 +29,18 @@ export default function TextSection({
   const id = useId();
 
   return (
-    <Section {...section} id={id} classesContainer="general-text-section">
+    <Section
+      {...section}
+      id={id}
+      classesContainer="general-text-section"
+    >
       <div class="flex items-center w-full">
-        <Text title={text ?? ""} classes={{ container: "text-section-container" }}/>
+        <Text
+          title={text ?? ""}
+          classes={{
+            container: "text-section-container",
+          }}
+        />
       </div>
     </Section>
   );

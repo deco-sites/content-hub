@@ -105,17 +105,20 @@ interface Props {
   fullWidth?: boolean;
 }
 
-export default function ProductShelfSection({
-  section,
-  configs,
-  products,
-  background,
-  text,
-  link,
-  reverse = false
-}: Props): preact.JSX.Element {
+export default function ProductShelfSection(
+  {
+    section,
+    configs,
+    products,
+    background,
+    text,
+    link,
+    reverse = false,
+  }: Props,
+): preact.JSX.Element {
   const id = useId();
-  const hasProducts = !!products?.length;
+  const hasProducts = !!products
+    ?.length;
   const { srcDesktop, srcMobile, alt } = background ?? {};
 
   const sliderConfig: ISliderConfigs = {
@@ -124,30 +127,39 @@ export default function ProductShelfSection({
     slidesPerView: 1.5,
     breakpoints: {
       768: {
-        slidesPerView: 2
+        slidesPerView: 2,
       },
       1280: {
-        slidesPerView: 3
+        slidesPerView: 3,
       },
       1440: {
-        slidesPerView: 4
-      }
-    }
+        slidesPerView: 4,
+      },
+    },
   } as ISliderConfigs;
 
   const minimalProducts = products?.map(
-    ({ url, isVariantOf, offers, image }) => {
+    (
+      {
+        url,
+        isVariantOf,
+        offers,
+        image,
+      },
+    ) => {
       return {
         url,
         isVariantOf,
         offers,
-        image
+        image,
       };
-    }
+    },
   );
 
-  const isCustomShelf = !isEmptyText(text) || !isEmptyText(link?.text);
-  const hasBackground = !!srcDesktop || !!srcMobile;
+  const isCustomShelf = !isEmptyText(text) ||
+    !isEmptyText(link?.text);
+  const hasBackground = !!srcDesktop ||
+    !!srcMobile;
 
   return (
     <Section
@@ -169,9 +181,17 @@ export default function ProductShelfSection({
           >
             <div class="flex w-full max-w-[1094px]">
               <ResponsiveImage
-                src={{ desktop: srcDesktop, mobile: srcMobile }}
-                sizes={{ widthMobile: 375, heightMobile: 441 }}
-                loadingOptions={{ preload: false }}
+                src={{
+                  desktop: srcDesktop,
+                  mobile: srcMobile,
+                }}
+                sizes={{
+                  widthMobile: 375,
+                  heightMobile: 441,
+                }}
+                loadingOptions={{
+                  preload: false,
+                }}
                 alt={alt}
               />
             </div>
@@ -185,10 +205,8 @@ export default function ProductShelfSection({
               : ""
           } ${hasBackground ? "lg:absolute lg:top-1/2 lg:-translate-y-2/4" : ""}
               ${
-                !reverse && isCustomShelf
-                  ? "lg:flex-row"
-                  : "lg:flex-row-reverse"
-              }`}
+            !reverse && isCustomShelf ? "lg:flex-row" : "lg:flex-row-reverse"
+          }`}
         >
           <div
             class={`flex w-full ${
@@ -215,17 +233,26 @@ export default function ProductShelfSection({
               <div class="flex gap-4 flex-col">
                 {text && (
                   <div class="flex">
-                    <Text title={text} />
+                    <Text
+                      title={text}
+                    />
                   </div>
                 )}
                 {link?.text && (
                   <div class="flex">
                     <a
-                      href={link.href ?? "/"}
+                      href={link.href ??
+                        "/"}
                       class="relative overflow-hidden cursor-pointer flex items-center justify-center leading-[24px] text-base font-semibold text-center h-[40px] px-6 text-white before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:pointer-events-none before:bg-white before:bg-opacity-20 before:opacity-0 before:transition-all before:ease-in before:duration-300 hover:before:opacity-100"
-                      style={{ background: link.bgColor ?? "#000000" }}
+                      style={{
+                        background: link
+                          .bgColor ??
+                          "#000000",
+                      }}
                     >
-                      <span>{link.text}</span>
+                      <span>
+                        {link.text}
+                      </span>
                     </a>
                   </div>
                 )}
@@ -240,7 +267,10 @@ export default function ProductShelfSection({
 
 export function LoadingFallback() {
   return (
-    <div style={{ height: "500px" }} class="flex justify-center items-center">
+    <div
+      style={{ height: "500px" }}
+      class="flex justify-center items-center"
+    >
       <span class="loading loading-spinner" />
     </div>
   );

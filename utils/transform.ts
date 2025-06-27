@@ -30,7 +30,10 @@ const getProductURL = (
   const canonicalUrl = getProductGroupURL(origin, product);
 
   if (skuId) {
-    canonicalUrl.searchParams.set("skuId", skuId);
+    canonicalUrl.searchParams.set(
+      "skuId",
+      skuId,
+    );
   }
 
   return canonicalUrl;
@@ -38,7 +41,10 @@ const getProductURL = (
 
 const nonEmptyArray = <T>(
   array: T[] | null | undefined,
-) => (Array.isArray(array) && array.length > 0 ? array : null);
+) => (Array.isArray(array) &&
+    array.length > 0
+  ? array
+  : null);
 
 interface ProductOptions {
   baseUrl: string;
@@ -47,24 +53,38 @@ interface ProductOptions {
   includeOriginalAttributes?: string[];
 }
 
-const getFirstItemAvailable = (item: SkuVTEX) => {
-  return !!item?.sellers?.find((s) => s.commertialOffer?.AvailableQuantity > 0);
+const getFirstItemAvailable = (
+  item: SkuVTEX,
+) => {
+  return !!item?.sellers?.find((s) =>
+    s.commertialOffer
+      ?.AvailableQuantity > 0
+  );
 };
 
 export const preferredSKU = (
-  { items, productId }: { items: SkuVTEX[]; productId: string },
+  { items, productId }: {
+    items: SkuVTEX[];
+    productId: string;
+  },
 ) => {
   if (productId) {
     return items?.find((item) => item.itemId === productId) ?? items?.[0];
   }
 
-  return items?.find(getFirstItemAvailable) ?? items?.[0];
+  return items?.find(
+    getFirstItemAvailable,
+  ) ?? items?.[0];
 };
 
 export const inStock = (offer: Offer) =>
-  offer.availability === "https://schema.org/InStock";
+  offer.availability ===
+    "https://schema.org/InStock";
 
-export const bestOfferFirst = (a: Offer, b: Offer) => {
+export const bestOfferFirst = (
+  a: Offer,
+  b: Offer,
+) => {
   if (inStock(a) && !inStock(b)) {
     return -1;
   }
@@ -76,14 +96,24 @@ export const bestOfferFirst = (a: Offer, b: Offer) => {
   return a.price - b.price;
 };
 
-const getHighPriceIndex = (offers: Offer[]) => {
+const getHighPriceIndex = (
+  offers: Offer[],
+) => {
   let it = offers.length - 1;
-  for (; it > 0 && !inStock(offers[it]); it--);
+  for (
+    ;
+    it > 0 && !inStock(offers[it]);
+    it--
+  );
   return it;
 };
 
-const splitCategory = (firstCategory: string) =>
-  firstCategory.split("/").filter(Boolean);
+const splitCategory = (
+  firstCategory: string,
+) =>
+  firstCategory.split("/").filter(
+    Boolean,
+  );
 
 export const toAdditionalPropertyCategory = ({
   propertyID,
@@ -99,7 +129,10 @@ export const toAdditionalPropertyCategory = ({
 });
 
 export const toAdditionalPropertyCluster = (
-  { propertyID, value }: { propertyID: string; value: string },
+  { propertyID, value }: {
+    propertyID: string;
+    value: string;
+  },
   highlights?: Set<string>,
 ): PropertyValue => ({
   "@type": "PropertyValue",
@@ -130,7 +163,9 @@ export const aggregateOffers = (
   offers: Offer[],
   priceCurrency?: string,
 ): AggregateOffer | undefined => {
-  const sorted = offers.sort(bestOfferFirst);
+  const sorted = offers.sort(
+    bestOfferFirst,
+  );
 
   if (sorted.length === 0) return;
 
@@ -140,8 +175,10 @@ export const aggregateOffers = (
   return {
     "@type": "AggregateOffer",
     priceCurrency,
-    highPrice: sorted[highPriceIndex]?.price ?? null,
-    lowPrice: sorted[lowPriceIndex]?.price ?? null,
+    highPrice: sorted[highPriceIndex]?.price ??
+      null,
+    lowPrice: sorted[lowPriceIndex]?.price ??
+      null,
     offerCount: sorted.length,
     offers: sorted,
   };
@@ -155,17 +192,22 @@ const toOriginalAttributesAdditionalProperties = (
     return [];
   }
 
-  const attributes =
-    pick(originalAttributes as Array<keyof typeof product>, product) ?? {};
+  const attributes = pick(
+    originalAttributes as Array<
+      keyof typeof product
+    >,
+    product,
+  ) ?? {};
 
-  return Object.entries(attributes)?.map(([name, value]) =>
-    ({
-      "@type": "PropertyValue",
-      name,
-      value,
-      valueReference: "ORIGINAL_PROPERTY" as string,
-    }) as const
-  ) as unknown as PropertyValue[];
+  return Object.entries(attributes)
+    ?.map(([name, value]) =>
+      ({
+        "@type": "PropertyValue",
+        name,
+        value,
+        valueReference: "ORIGINAL_PROPERTY" as string,
+      }) as const
+    ) as unknown as PropertyValue[];
 };
 
 const toOffer = ({
@@ -180,7 +222,9 @@ const toOffer = ({
   seller: sellerId,
   sellerName,
   priceValidUntil: offer.PriceValidUntil,
-  inventoryLevel: { value: offer.AvailableQuantity },
+  inventoryLevel: {
+    value: offer.AvailableQuantity,
+  },
   priceSpecification: [
     {
       "@type": "UnitPriceSpecification",
@@ -198,15 +242,19 @@ const toOffer = ({
       price: offer.PriceWithoutDiscount,
     },
     ...offer.Installments?.map(
-      (installment): UnitPriceSpecification => ({
+      (
+        installment,
+      ): UnitPriceSpecification => ({
         "@type": "UnitPriceSpecification",
         priceType: "https://schema.org/SalePrice",
         priceComponentType: "https://schema.org/Installment",
         name: installment.PaymentSystemName,
         description: installment.Name,
-        billingDuration: installment.NumberOfInstallments,
+        billingDuration: installment
+          .NumberOfInstallments,
         billingIncrement: installment.Value,
-        price: installment.TotalValuePlusInterestRate,
+        price: installment
+          .TotalValuePlusInterestRate,
       }),
     ),
   ],
@@ -215,7 +263,9 @@ const toOffer = ({
     : "https://schema.org/OutOfStock",
 });
 
-export const toProduct = <P extends ProductVTEX>(
+export const toProduct = <
+  P extends ProductVTEX,
+>(
   product: P,
   sku: P["items"][number],
   level = 0, // prevent infinite loop while self referencing the product
@@ -242,12 +292,18 @@ export const toProduct = <P extends ProductVTEX>(
     videos,
   } = sku ?? {};
 
-  const nonEmptyVideos = nonEmptyArray(videos);
+  const nonEmptyVideos = nonEmptyArray(
+    videos,
+  );
   const imagesByKey = options.imagesByKey ??
     items
       ?.flatMap((i) => i?.images)
       ?.reduce((map, img) => {
-        img?.imageUrl && map.set(getImageKey(img.imageUrl), img.imageUrl);
+        img?.imageUrl &&
+          map.set(
+            getImageKey(img.imageUrl),
+            img.imageUrl,
+          );
         return map;
       }, new Map<string, string>());
 
@@ -257,14 +313,22 @@ export const toProduct = <P extends ProductVTEX>(
       product,
     );
 
-  const images = nonEmptyArray(sku?.images);
-  const offers = (sku?.sellers ?? [])?.map(
-    toOffer,
+  const images = nonEmptyArray(
+    sku?.images,
   );
+  const offers = (sku?.sellers ?? [])
+    ?.map(
+      toOffer,
+    );
 
   const hasVariant = level < 1
     ? items?.map((sku) =>
-      toProduct(product, sku, level + 1, { ...options, imagesByKey })
+      toProduct(
+        product,
+        sku,
+        level + 1,
+        { ...options, imagesByKey },
+      )
     )
     : [];
 
@@ -273,7 +337,10 @@ export const toProduct = <P extends ProductVTEX>(
       "@type": "ProductGroup",
       productGroupID: productId,
       hasVariant,
-      url: getProductGroupURL(baseUrl, product).href,
+      url: getProductGroupURL(
+        baseUrl,
+        product,
+      ).href,
       name: productName,
       additionalProperty: [
         ...originalAttributesAdditionalProperties,
@@ -282,34 +349,46 @@ export const toProduct = <P extends ProductVTEX>(
     } satisfies ProductGroup)
     : undefined;
 
-  const finalImages = images?.map(({ imageUrl, imageText, imageLabel }) => {
-    const url = imagesByKey.get(getImageKey(imageUrl)) ?? imageUrl;
-    const alternateName = imageText ?? imageLabel ?? "";
-    const name = imageLabel ?? "";
-    const encodingFormat = "image";
+  const finalImages = images?.map(
+    (
+      {
+        imageUrl,
+        imageText,
+        imageLabel,
+      },
+    ) => {
+      const url = imagesByKey.get(
+        getImageKey(imageUrl),
+      ) ?? imageUrl;
+      const alternateName = imageText ??
+        imageLabel ?? "";
+      const name = imageLabel ?? "";
+      const encodingFormat = "image";
 
-    return {
-      "@type": "ImageObject" as const,
-      alternateName,
-      url,
-      name,
-      encodingFormat,
-    };
-  }) ?? [DEFAULT_IMAGE];
+      return {
+        "@type": "ImageObject" as const,
+        alternateName,
+        url,
+        name,
+        encodingFormat,
+      };
+    },
+  ) ?? [DEFAULT_IMAGE];
 
-  const finalVideos = nonEmptyVideos?.map((video) => {
-    const url = video;
-    const alternateName = "Product video";
-    const name = "Product video";
-    const encodingFormat = "video";
-    return {
-      "@type": "VideoObject" as const,
-      alternateName,
-      contentUrl: url,
-      name,
-      encodingFormat,
-    };
-  });
+  const finalVideos = nonEmptyVideos
+    ?.map((video) => {
+      const url = video;
+      const alternateName = "Product video";
+      const name = "Product video";
+      const encodingFormat = "video";
+      return {
+        "@type": "VideoObject" as const,
+        alternateName,
+        contentUrl: url,
+        name,
+        encodingFormat,
+      };
+    });
 
   const categoriesString = splitCategory(categories[0]).join(
     DEFAULT_CATEGORY_SEPARATOR,
@@ -319,7 +398,11 @@ export const toProduct = <P extends ProductVTEX>(
     "@type": "Product",
     category: categoriesString,
     productID: skuId,
-    url: getProductURL(baseUrl, product, sku?.itemId ?? "").href,
+    url: getProductURL(
+      baseUrl,
+      product,
+      sku?.itemId ?? "",
+    ).href,
     name,
     alternateName: sku?.complementName ?? "",
     description,
@@ -335,6 +418,9 @@ export const toProduct = <P extends ProductVTEX>(
     isVariantOf,
     image: finalImages,
     video: finalVideos,
-    offers: aggregateOffers(offers, priceCurrency),
+    offers: aggregateOffers(
+      offers,
+      priceCurrency,
+    ),
   };
 };

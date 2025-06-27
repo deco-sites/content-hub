@@ -21,7 +21,9 @@ interface Props {
    * @description Define o estilo do artigo.
    * @default "Type 1"
    */
-  styleArticleOption?: "Type 1" | "Type 2";
+  styleArticleOption?:
+    | "Type 1"
+    | "Type 2";
 
   /**
    * @title Lista de Artigos
@@ -36,12 +38,14 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
-export default function ArticleSliderSection({
-  section,
-  styleArticleOption = "Type 1",
-  articles = DefaultArticles.articles,
-  configs = DefaultArticles.configs,
-}: Props) {
+export default function ArticleSliderSection(
+  {
+    section,
+    styleArticleOption = "Type 1",
+    articles = DefaultArticles.articles,
+    configs = DefaultArticles.configs,
+  }: Props,
+) {
   const id = useId();
 
   if (!articles?.length) return null;
@@ -57,39 +61,51 @@ export default function ArticleSliderSection({
 
   const sliderConfig = {
     ...configs,
-    slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
+    slidesPerView: slidesPerViewResponsive?.mobile ??
+      1,
     spaceBetween,
     breakpoints: {
       768: {
-        slidesPerView: slidesPerViewResponsive?.tablet ?? 1,
+        slidesPerView: slidesPerViewResponsive
+          ?.tablet ?? 1,
       },
       1024: {
-        slidesPerView: slidesPerViewResponsive?.desktop ?? 3,
+        slidesPerView: slidesPerViewResponsive
+          ?.desktop ?? 3,
       },
     },
   } as ISliderConfigs;
 
-  const defaultPropsArticles = articles.map((article) => ({
-    ...article,
-    image: {
-      ...article.image,
-      sizes: {
-        ...article.image.sizes,
-        width: 344,
-        height: styleArticleOption === "Type 1" ? 180 : 200,
-        widthMobile: 344,
-        heightMobile: styleArticleOption === "Type 1" ? 180 : 200,
+  const defaultPropsArticles = articles
+    .map((article) => ({
+      ...article,
+      image: {
+        ...article.image,
+        sizes: {
+          ...article.image.sizes,
+          width: 344,
+          height: styleArticleOption ===
+              "Type 1"
+            ? 180
+            : 200,
+          widthMobile: 344,
+          heightMobile: styleArticleOption ===
+              "Type 1"
+            ? 180
+            : 200,
+        },
       },
-    },
-  }));
+    }));
 
   return (
     <Section
       {...section}
       id={id}
-      classesContainer={`article-slider-section article-slider-section__${styleArticleOption
-        .toLowerCase()
-        .replace(" ", "-")} h-full`}
+      classesContainer={`article-slider-section article-slider-section__${
+        styleArticleOption
+          .toLowerCase()
+          .replace(" ", "-")
+      } h-full`}
     >
       <div class="flex w-full mx-auto">
         <ArticleSlider

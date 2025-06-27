@@ -99,10 +99,15 @@ async function loader(
   _req: Request,
   ctx: AppContext,
 ): Promise<ProductById | NullReturn> {
-  const { invoke: { vtex }, defaultSegment } = ctx;
-  const { io } = await vtex.loaders.config();
+  const {
+    invoke: { vtex },
+    defaultSegment,
+  } = ctx;
+  const { io } = await vtex.loaders
+    .config();
 
-  const priceCurrency = defaultSegment?.currencyCode ?? "BRL";
+  const priceCurrency = defaultSegment?.currencyCode ??
+    "BRL";
 
   try {
     const { product } = await io.query<
@@ -110,7 +115,12 @@ async function loader(
       ProductQueryVariable
     >({
       operationName: "product",
-      variables: { identifier: { field: "id", value: productId } },
+      variables: {
+        identifier: {
+          field: "id",
+          value: productId,
+        },
+      },
       query: PRODUCT_QUERY,
     }) as ProductQueryResponse;
 
@@ -120,7 +130,10 @@ async function loader(
 
     const mappedProduct = toProduct(
       product,
-      preferredSKU({ items: product.items, productId }),
+      preferredSKU({
+        items: product.items,
+        productId,
+      }),
       0,
       {
         baseUrl: "https://loja.electrolux.com.br/",

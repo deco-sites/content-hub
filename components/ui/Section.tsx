@@ -16,7 +16,7 @@ export default function Section({
   marginTopDesktop = 0,
   classesContainer,
   stylesContainer = {},
-  fullWidth = false
+  fullWidth = false,
 }: Props): preact.JSX.Element {
   return (
     <>
@@ -28,9 +28,18 @@ export default function Section({
         style={stylesContainer}
       >
         {!isEmptyText(title) && (
-          <Text title={title} classes={{ container: "section-title" }} />
+          <Text
+            title={title}
+            classes={{
+              container: "section-title",
+            }}
+          />
         )}
-        {children && <div class="flex">{children}</div>}
+        {children && (
+          <div class="flex">
+            {children}
+          </div>
+        )}
       </div>
       <style>
         {`

@@ -117,8 +117,8 @@ export interface IResponsiveImage {
     title?: string;
 
     /**
-   * @title Nova Aba?
-   */
+     * @title Nova Aba?
+     */
     target?: "blank" | "self";
   };
 

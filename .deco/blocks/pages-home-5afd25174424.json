@@ -1,0 +1,203 @@
+{
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfWithComparatorSection.tsx",
+        "section": {
+          "title": "<p></p>"
+        },
+        "products": [
+          {
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Conectividade",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003481"
+            }
+          },
+          {
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": false,
+                "name": "Conectividade",
+                "value": "não",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": false,
+                "name": "Food Sensor",
+                "value": "não",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003635"
+            }
+          },
+          {
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": false,
+                "name": "Conectividade",
+                "value": "não",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003479"
+            }
+          },
+          {
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Conectividade",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003476"
+            }
+          },
+          {
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Conectividade",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003480"
+            }
+          },
+          {
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Conectividade",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2003477"
+            }
+          },
+          {
+            "specs": [
+              {
+                "name": "Convecção",
+                "value": "sim",
+                "hasSpec": true,
+                "icon": "https://data.decoassets.com/content-hub/c5cf22c8-63ce-401d-bae9-363777801de8/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Conectividade",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/f15cd565-1488-4e9d-877b-4680337f232a/iconContainer.svg"
+              },
+              {
+                "hasSpec": true,
+                "name": "Food Sensor",
+                "value": "sim",
+                "icon": "https://data.decoassets.com/content-hub/c9843ff2-83bb-4a96-a184-a227099e7e40/iconContainer.svg"
+              }
+            ],
+            "product": {
+              "__resolveType": "site/loaders/customVTEX/productById.ts",
+              "productId": "2004215"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  }
+}

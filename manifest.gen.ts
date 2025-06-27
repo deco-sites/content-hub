@@ -2,10 +2,12 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
-import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
-import * as $$$$$$$$$$$2 from "./apps/deco/vtex.ts";
-import * as $$$$$$$$$$$3 from "./apps/site.ts";
+import * as $$$$$$$$$$$0 from "./apps/content-hub.ts";
+import * as $$$$$$$$$$$1 from "./apps/deco.ts";
+import * as $$$$$$$$$$$2 from "./apps/deco/blog.ts";
+import * as $$$$$$$$$$$3 from "./apps/deco/htmx.ts";
+import * as $$$$$$$$$$$4 from "./apps/deco/vtex.ts";
+import * as $$$$$$$$$$$5 from "./apps/site.ts";
 import * as $$$0 from "./loaders/customVTEX/productById.ts";
 import * as $$$$$$0 from "./sections/Logos.tsx";
 import * as $$$$$$1 from "./sections/Lps/ArticleGridSection.tsx";
@@ -47,10 +49,12 @@ const manifest = {
     "site/sections/Theme/Theme.tsx": $$$$$$15,
   },
   "apps": {
-    "site/apps/deco/blog.ts": $$$$$$$$$$$0,
-    "site/apps/deco/htmx.ts": $$$$$$$$$$$1,
-    "site/apps/deco/vtex.ts": $$$$$$$$$$$2,
-    "site/apps/site.ts": $$$$$$$$$$$3,
+    "site/apps/content-hub.ts": $$$$$$$$$$$0,
+    "site/apps/deco.ts": $$$$$$$$$$$1,
+    "site/apps/deco/blog.ts": $$$$$$$$$$$2,
+    "site/apps/deco/htmx.ts": $$$$$$$$$$$3,
+    "site/apps/deco/vtex.ts": $$$$$$$$$$$4,
+    "site/apps/site.ts": $$$$$$$$$$$5,
   },
   "name": "site",
   "baseUrl": import.meta.url,

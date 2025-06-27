@@ -84,9 +84,8 @@ export default function ProductMediaSection(
         class={`flex flex-col items-center justify-center relative w-full`}
       >
         <div
-          class={`flex w-full top-0 left-0 absolute -z-[1] max-h-[475px] lg:[position:initial] lg:max-h-[initial] ${
-            !reverse ? "justify-end" : "justify-start"
-          }`}
+          class={`flex w-full top-0 left-0 absolute -z-[1] max-h-[475px] lg:[position:initial] lg:max-h-[initial] ${!reverse ? "justify-end" : "justify-start"
+            }`}
         >
           <div class="flex w-full max-w-[1094px]">
             <ResponsiveImage
@@ -107,9 +106,8 @@ export default function ProductMediaSection(
         </div>
 
         <div
-          class={`flex w-full items-center justify-center ${
-            !reverse ? "lg:flex-row" : "lg:flex-row-reverse"
-          }`}
+          class={`flex w-full items-center justify-center ${!reverse ? "lg:flex-row" : "lg:flex-row-reverse"
+            }`}
         >
           <div
             class={`flex w-full`}

@@ -9,12 +9,31 @@ type Props = {
   rootId: string;
 };
 
-function Island({ banners = [], configs = {}, rootId }: Props) {
-  const slides = banners.map((props, idx) => {
-    return <ResponsiveImage {...props} key={`${props.alt}-${idx}`} />;
-  });
+function Island(
+  {
+    banners = [],
+    configs = {},
+    rootId,
+  }: Props,
+) {
+  const slides = banners.map(
+    (props, idx) => {
+      return (
+        <ResponsiveImage
+          {...props}
+          key={`${props.alt}-${idx}`}
+        />
+      );
+    },
+  );
 
-  return <Component configs={configs} slides={slides} rootId={rootId} />;
+  return (
+    <Component
+      configs={configs}
+      slides={slides}
+      rootId={rootId}
+    />
+  );
 }
 
 export default Island;

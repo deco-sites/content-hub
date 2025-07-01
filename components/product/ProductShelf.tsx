@@ -14,9 +14,20 @@ export default function ProductShelf({
   configs = {},
   rootId,
 }: Props): preact.JSX.Element {
-  const slides = products.map((props) => (
-    <ProductCard key={props.productID} {...props} />
+  const slides = products.map((
+    props,
+  ) => (
+    <ProductCard
+      key={props.productID}
+      {...props}
+    />
   ));
 
-  return <Slider configs={{ ...configs }} slides={slides} rootId={rootId} />;
+  return (
+    <Slider
+      configs={{ ...configs }}
+      slides={slides}
+      rootId={rootId}
+    />
+  );
 }

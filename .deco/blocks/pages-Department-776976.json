@@ -1,6 +1,6 @@
 {
   "name": "Departmento",
-  "path": "/department",
+  "path": "/content-hub-department",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

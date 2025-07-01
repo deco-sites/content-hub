@@ -47,13 +47,15 @@ interface Props {
   icons?: IconItem[];
 }
 
-export default function BannerMediaSliderSection({
-  section,
-  banners = DefaultBannerMedia.banners,
-  title = DefaultBannerMedia.title,
-  configs = DefaultBannerMedia.configs,
-  icons = DefaultBannerMedia.icons
-}: Props) {
+export default function BannerMediaSliderSection(
+  {
+    section,
+    banners = DefaultBannerMedia.banners,
+    title = DefaultBannerMedia.title,
+    configs = DefaultBannerMedia.configs,
+    icons = DefaultBannerMedia.icons,
+  }: Props,
+) {
   const id = useId();
 
   if (!banners?.length) return null;
@@ -62,7 +64,7 @@ export default function BannerMediaSliderSection({
     slidesPerViewResponsive = {
       mobile: 1.6,
       tablet: 2.3,
-      desktop: 3
+      desktop: 3,
     },
     spaceBetween = 32,
     centeredSlides = true,
@@ -75,30 +77,33 @@ export default function BannerMediaSliderSection({
     centeredSlides,
     breakpoints: {
       768: {
-        slidesPerView: slidesPerViewResponsive.tablet,
-        spaceBetween: 32,
-        centeredSlides: false
-      },
-      1024: {
-        slidesPerView: slidesPerViewResponsive.desktop,
+        slidesPerView: slidesPerViewResponsive
+          .tablet,
         spaceBetween: 32,
         centeredSlides: false,
-      }
-    }
+      },
+      1024: {
+        slidesPerView: slidesPerViewResponsive
+          .desktop,
+        spaceBetween: 32,
+        centeredSlides: false,
+      },
+    },
   } as ISliderConfigs;
 
-  const defaultPropBanners = banners.map(banner => {
-    return {
-      ...{ ...banner },
-      sizes: {
-        ...banner.sizes,
-        width: 185,
-        height: 324,
-        widthMobile: 185,
-        heightMobile: 324
-      }
-    };
-  });
+  const defaultPropBanners = banners
+    .map((banner) => {
+      return {
+        ...{ ...banner },
+        sizes: {
+          ...banner.sizes,
+          width: 185,
+          height: 324,
+          widthMobile: 185,
+          heightMobile: 324,
+        },
+      };
+    });
 
   return (
     <Section
@@ -122,9 +127,19 @@ export default function BannerMediaSliderSection({
                   <Text title={title} />
                 </div>
                 <div class="w-full mt-4 flex flex-wrap justify-center items-center gap-x-[24px] lg:justify-start">
-                  {icons?.map(({ id, href }) => (
-                    <a target="_blank" key={id} title={id} href={href}>
-                      <Icon id={id} size={32} />
+                  {icons?.map((
+                    { id, href },
+                  ) => (
+                    <a
+                      target="_blank"
+                      key={id}
+                      title={id}
+                      href={href}
+                    >
+                      <Icon
+                        id={id}
+                        size={32}
+                      />
                     </a>
                   ))}
                 </div>

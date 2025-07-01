@@ -5,8 +5,8 @@ import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { ProductSpecsComparator } from "site/types/Product.d.ts";
 import type {
+  NullReturn,
   ProductById,
-  NullReturn
 } from "site/loaders/customVTEX/productById.ts";
 
 /**
@@ -49,26 +49,36 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
-export default function ProductShelfWithComparatorSection({
-  configs,
-  section,
-  products
-}: Props): preact.JSX.Element {
+export default function ProductShelfWithComparatorSection(
+  {
+    configs,
+    section,
+    products,
+  }: Props,
+): preact.JSX.Element {
   const id = useId();
 
-  const hasProducts = !!products?.length;
+  const hasProducts = !!products
+    ?.length;
 
-  const minimalProducts = products?.map(({ product, specs }) => {
-    const { url, isVariantOf, offers, image } = product ?? {};
+  const minimalProducts = products?.map(
+    ({ product, specs }) => {
+      const {
+        url,
+        isVariantOf,
+        offers,
+        image,
+      } = product ?? {};
 
-    return {
-      url,
-      isVariantOf,
-      offers,
-      image,
-      productSpecsComparator: specs
-    };
-  });
+      return {
+        url,
+        isVariantOf,
+        offers,
+        image,
+        productSpecsComparator: specs,
+      };
+    },
+  );
 
   const sliderConfig: ISliderConfigs = {
     ...configs,
@@ -76,18 +86,18 @@ export default function ProductShelfWithComparatorSection({
     spaceBetween: 8,
     breakpoints: {
       768: {
-        slidesPerView: 2
+        slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 2
+        slidesPerView: 2,
       },
       1280: {
-        slidesPerView: 3
+        slidesPerView: 3,
       },
       1440: {
-        slidesPerView: 5
-      }
-    }
+        slidesPerView: 5,
+      },
+    },
   } as ISliderConfigs;
 
   return (
@@ -111,7 +121,10 @@ export default function ProductShelfWithComparatorSection({
 
 export function LoadingFallback() {
   return (
-    <div style={{ height: "500px" }} class="flex justify-center items-center">
+    <div
+      style={{ height: "500px" }}
+      class="flex justify-center items-center"
+    >
       <span class="loading loading-spinner" />
     </div>
   );

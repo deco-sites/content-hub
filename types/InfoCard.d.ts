@@ -51,7 +51,9 @@ export interface IInfoCardVideo {
    * @title Iframe Props
    * @hide
    */
-  iframeProps?: preact.JSX.IntrinsicElements["iframe"];
+  iframeProps?: preact.JSX.IntrinsicElements[
+    "iframe"
+  ];
 }
 
 /**
@@ -101,7 +103,9 @@ export interface IInfoCard {
    * @title Tipo de Conteúdo
    * @description Define se o cartão exibe uma imagem ou um vídeo.
    */
-  typeOfContent?: IInfoCardImage | IInfoCardVideo;
+  typeOfContent?:
+    | IInfoCardImage
+    | IInfoCardVideo;
 
   /**
    * @title Alinhamento do Conteúdo

@@ -5,18 +5,30 @@ interface Props {
   productSpecsComparator?: ProductSpecsComparator[];
 }
 
-export default function ProductSpecificationComparator({
-  productSpecsComparator = []
-}: Props): preact.JSX.Element {
+export default function ProductSpecificationComparator(
+  {
+    productSpecsComparator = [],
+  }: Props,
+): preact.JSX.Element {
   return (
     <div class="flex w-full mt-4">
       <div class="flex w-full flex-col">
         {productSpecsComparator.map(
-          ({ name, value, icon, hasSpec = false }, idx) => {
+          (
+            {
+              name,
+              value,
+              icon,
+              hasSpec = false,
+            },
+            idx,
+          ) => {
             return (
               <div
                 class={`flex w-full items-center justify-between gap-2 min-h-[88px] ${
-                  idx < productSpecsComparator?.length - 1
+                  idx <
+                      productSpecsComparator
+                          ?.length - 1
                     ? "border-b border-[#E1E8EB]"
                     : ""
                 } ${!hasSpec ? "opacity-70" : "opacity-100"}`}
@@ -47,7 +59,7 @@ export default function ProductSpecificationComparator({
                 </div>
               </div>
             );
-          }
+          },
         )}
       </div>
     </div>

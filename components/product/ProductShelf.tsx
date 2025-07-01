@@ -12,11 +12,22 @@ export type Props = {
 export default function ProductShelf({
   products = [],
   configs = {},
-  rootId
+  rootId,
 }: Props): preact.JSX.Element {
-  const slides = products.map(props => (
-    <ProductCard key={props.productID} {...props} />
+  const slides = products.map((
+    props,
+  ) => (
+    <ProductCard
+      key={props.productID}
+      {...props}
+    />
   ));
 
-  return <Slider configs={{ ...configs }} slides={slides} rootId={rootId} />;
+  return (
+    <Slider
+      configs={{ ...configs }}
+      slides={slides}
+      rootId={rootId}
+    />
+  );
 }

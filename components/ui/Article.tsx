@@ -8,14 +8,27 @@ export default function Article({
   text = "",
   link,
 }: IArticle): preact.JSX.Element {
-  const { href, text: textLink, title: titleLink, color, hideLink = false } = link ?? {};
+  const {
+    href,
+    text: textLink,
+    title: titleLink,
+    color,
+    hideLink = false,
+  } = link ?? {};
 
   return (
     <div class="article flex w-full h-full">
       <InfoCard
         styles={{
-          container: { flexDirection: "column", width: "auto" },
-          children: { width: "auto", padding: "0", minHeight: "initial" },
+          container: {
+            flexDirection: "column",
+            width: "auto",
+          },
+          children: {
+            width: "auto",
+            padding: "0",
+            minHeight: "initial",
+          },
         }}
         classes={{
           container:
@@ -30,7 +43,9 @@ export default function Article({
           {!isEmptyText(text) && (
             <Text
               title={text}
-              classes={{ container: "article__content-text" }}
+              classes={{
+                container: "article__content-text",
+              }}
             />
           )}
           {!hideLink && (
@@ -39,7 +54,9 @@ export default function Article({
                 href={href}
                 title={titleLink}
                 class="flex items-center text-base font-semibold leading-[20px] underline"
-                style={{ color: `${color}` }}
+                style={{
+                  color: `${color}`,
+                }}
               >
                 {textLink}
               </a>

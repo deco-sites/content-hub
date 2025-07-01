@@ -49,16 +49,26 @@ export interface ProductVTEX {
   linkText: string;
   productReference: string;
   categoryId: string;
-  clusterHighlights: { id: string; name: string }[];
-  productClusters: { id: string; name: string }[];
+  clusterHighlights: {
+    id: string;
+    name: string;
+  }[];
+  productClusters: {
+    id: string;
+    name: string;
+  }[];
   categories: string[];
   link: string;
   description: string;
   skuSpecifications?: SkuSpecification[];
   priceRange: PriceRange;
   specificationGroups: SpecificationGroup[];
-  properties: Array<{ name: string; values: string[] }>;
-  selectedProperties: Array<{ key: string; value: string }>;
+  properties: Array<
+    { name: string; values: string[] }
+  >;
+  selectedProperties: Array<
+    { key: string; value: string }
+  >;
   releaseDate: string;
   items: Item[];
 }

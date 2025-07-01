@@ -27,42 +27,48 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
-export default function BannerSliderSection({
-  section,
-  banners = DefaultBannerSection.banners,
-  configs
-}: Props) {
-  const id = useId(); 
+export default function BannerSliderSection(
+  {
+    section,
+    banners = DefaultBannerSection.banners,
+    configs,
+  }: Props,
+) {
+  const id = useId();
 
   const { slidesPerViewResponsive } = configs ?? {};
 
   const sliderConfig = {
     ...configs,
-    slidesPerView: slidesPerViewResponsive?.mobile ?? 1,
+    slidesPerView: slidesPerViewResponsive?.mobile ??
+      1,
     breakpoints: {
       768: {
-        slidesPerView: slidesPerViewResponsive?.tablet ?? 1
+        slidesPerView: slidesPerViewResponsive
+          ?.tablet ?? 1,
       },
       1024: {
-        slidesPerView: slidesPerViewResponsive?.desktop ?? 1,
-      }
-    }
+        slidesPerView: slidesPerViewResponsive
+          ?.desktop ?? 1,
+      },
+    },
   } as ISliderConfigs;
 
   if (!banners?.length) return null;
 
-  const defaultPropsBanners = banners.map(banner => {
-    return {
-      ...{ ...banner },
-      sizes: {
-        ...banner.sizes,
-        fullScreen: true,
-        maxHeight: 420,
-        heightMobile: 400,
-        widthMobile: 375
-      }
-    };
-  });
+  const defaultPropsBanners = banners
+    .map((banner) => {
+      return {
+        ...{ ...banner },
+        sizes: {
+          ...banner.sizes,
+          fullScreen: true,
+          maxHeight: 420,
+          heightMobile: 400,
+          widthMobile: 375,
+        },
+      };
+    });
 
   return (
     <Section

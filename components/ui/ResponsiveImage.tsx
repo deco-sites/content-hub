@@ -1,13 +1,15 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 
-export default function ResponsiveImage({
-  src,
-  alt,
-  link,
-  sizes,
-  loadingOptions
-}: IResponsiveImage): preact.JSX.Element | null {
+export default function ResponsiveImage(
+  {
+    src,
+    alt,
+    link,
+    sizes,
+    loadingOptions,
+  }: IResponsiveImage,
+): preact.JSX.Element | null {
   const {
     fullScreen = false,
     height = 440,
@@ -15,13 +17,13 @@ export default function ResponsiveImage({
     heightMobile = 420,
     widthMobile = 420,
     maxWidth = "unset",
-    maxHeight = "unset"
+    maxHeight = "unset",
   } = sizes ?? {};
 
   const {
     preload = false,
     loading = "lazy",
-    fetchPriority = "low"
+    fetchPriority = "low",
   } = loadingOptions ?? {};
 
   const { desktop, mobile } = src ?? {};
@@ -31,7 +33,9 @@ export default function ResponsiveImage({
   const ResponsiveImageComponent = (
     <Picture
       class="flex items-center justify-center w-full h-full"
-      style={{ width: fullScreen ? "100vw" : "100%" }}
+      style={{
+        width: fullScreen ? "100vw" : "100%",
+      }}
       preload={preload}
     >
       {mobile && (
@@ -51,7 +55,7 @@ export default function ResponsiveImage({
           src={desktop}
           style={{
             maxWidth,
-            maxHeight
+            maxHeight,
           }}
           width={width}
           {...{ fetchPriority }}
@@ -64,7 +68,11 @@ export default function ResponsiveImage({
     return ResponsiveImageComponent;
   }
 
-  const { href, title, target = "blank" } = link ?? {};
+  const {
+    href,
+    title,
+    target = "blank",
+  } = link ?? {};
 
   return (
     <a

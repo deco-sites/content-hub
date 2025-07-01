@@ -59,7 +59,7 @@ export default function DimmedColorsSection(
                 >
                   <div
                     id="dimmed-colors-item__container"
-                    class="relative flex flex-col overflow-hidden"
+                    class="relative flex flex-col overflow-hidden w-full"
                   >
                     <ResponsiveImage
                       {...item.image}

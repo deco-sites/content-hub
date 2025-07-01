@@ -46,30 +46,14 @@
               },
               "alt": "lavadora",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/c9477f51-5df9-4f91-8172-879ed8fcd45a/5_cavidade-1.png",
+                "mobile": "https://assets.decocache.com/content-hub/c9477f51-5df9-4f91-8172-879ed8fcd45a/5_cavidade-1.png"
               }
             },
             "title": "Para preservar",
-            "text": "lorem ipsum dolor sit amet ver todos",
+            "text": "lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "0": "r",
-              "1": "g",
-              "2": "b",
-              "3": "a",
-              "4": "(",
-              "5": "5",
-              "6": "2",
-              "7": ",",
-              "8": " ",
-              "9": "7",
-              "10": "3",
-              "11": ",",
-              "12": " ",
-              "13": "9",
-              "14": "4",
-              "15": ")",
               "mobile": "rgba(52, 73, 94, 0.7)",
               "desktop": "rgba(52, 73, 94, 1)"
             }
@@ -79,7 +63,7 @@
               "link": {
                 "target": "blank",
                 "href": "/#",
-                "title": "Para preservar"
+                "title": "Para preparar"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -87,32 +71,16 @@
               },
               "alt": "lavadora",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/c9477f51-5df9-4f91-8172-879ed8fcd45a/5_cavidade-1.png",
+                "mobile": "https://assets.decocache.com/content-hub/c9477f51-5df9-4f91-8172-879ed8fcd45a/5_cavidade-1.png"
               }
             },
-            "title": "Para preservar",
-            "text": "lorem ipsum dolor sit amet ver todos",
+            "title": "Para preparar",
+            "text": "lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "0": "r",
-              "1": "g",
-              "2": "b",
-              "3": "a",
-              "4": "(",
-              "5": "5",
-              "6": "2",
-              "7": ",",
-              "8": " ",
-              "9": "7",
-              "10": "3",
-              "11": ",",
-              "12": " ",
-              "13": "9",
-              "14": "4",
-              "15": ")",
-              "mobile": " rgba(90, 106, 90, 0.7)",
-              "desktop": "rgba(90, 106, 90, 1)"
+              "desktop": "rgba(90, 106, 90, 1)",
+              "mobile": "rgba(90, 106, 90, 0.7)"
             }
           },
           {
@@ -120,7 +88,7 @@
               "link": {
                 "target": "blank",
                 "href": "/#",
-                "title": "Para preservar"
+                "title": "Acessórios e utilidades"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -128,33 +96,17 @@
               },
               "alt": "lavadora",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/c9477f51-5df9-4f91-8172-879ed8fcd45a/5_cavidade-1.png",
+                "mobile": "https://assets.decocache.com/content-hub/c9477f51-5df9-4f91-8172-879ed8fcd45a/5_cavidade-1.png"
               }
             },
-            "title": "Para preservar",
-            "text": "lorem ipsum dolor sit amet ver todos",
+            "text": "lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "0": "r",
-              "1": "g",
-              "2": "b",
-              "3": "a",
-              "4": "(",
-              "5": "5",
-              "6": "2",
-              "7": ",",
-              "8": " ",
-              "9": "7",
-              "10": "3",
-              "11": ",",
-              "12": " ",
-              "13": "9",
-              "14": "4",
-              "15": ")",
-              "mobile": " rgba(107, 78, 78, 0.7)",
+              "mobile": "rgba(107, 78, 78, 0.7)",
               "desktop": "rgba(107, 78, 78, 1)"
-            }
+            },
+            "title": "Acessórios e utilidades"
           }
         ],
         "text": "Intertítulo",

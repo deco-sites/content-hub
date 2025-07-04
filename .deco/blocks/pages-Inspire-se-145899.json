@@ -1,6 +1,6 @@
 {
   "name": "Inspire-se",
-  "path": "/inspire-se",
+  "path": "/content-hub-inspire-yourself",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

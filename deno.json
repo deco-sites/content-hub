@@ -3,12 +3,6 @@
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
     "@cliffy/prompt": "jsr:@cliffy/prompt@^1.0.0-rc.5",
     "@core/asyncutil": "jsr:@core/asyncutil@^1.0.2",
-    "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@0.3.4",
-    "@deco/deco": "jsr:@deco/deco@1.120.0",
-    "@deco/deno-ast-wasm": "jsr:@deco/deno-ast-wasm@^0.5.5",
-    "@deco/dev": "jsr:@deco/dev@1.120.0",
-    "@deco/durable": "jsr:@deco/durable@0.5.3",
-    "@deco/warp": "jsr:@deco/warp@0.3.8",
     "@eluxlab/library-components": "https://esm.sh/@eluxlab/library-components@0.3.7?external=react,react-dom,react/jsx-runtime&target=es2022",
     "@hono/hono": "jsr:@hono/hono@^4.5.4",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
@@ -31,9 +25,7 @@
     "@std/streams": "jsr:@std/streams@^1.0.0",
     "@std/testing": "jsr:@std/testing@^1.0.0",
     "@zaubrik/djwt": "jsr:@zaubrik/djwt@^3.0.2",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.108.1/",
     "daisyui": "npm:daisyui@4.4.19",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.120.0/",
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
     "partytown/": "https://deno.land/x/partytown@0.4.8/",
@@ -44,7 +36,15 @@
     "simple-git": "npm:simple-git@^3.25.0",
     "site/": "./",
     "std/": "https://deno.land/std@0.190.0/",
-    "update": "npm:update@^0.7.4"
+    "update": "npm:update@^0.7.4",
+    "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@0.3.4",
+    "@deco/deco": "jsr:@deco/deco@1.120.4",
+    "@deco/deno-ast-wasm": "jsr:@deco/deno-ast-wasm@^0.5.5",
+    "@deco/dev": "jsr:@deco/dev@1.120.4",
+    "@deco/durable": "jsr:@deco/durable@0.5.3",
+    "@deco/warp": "jsr:@deco/warp@0.3.8",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.110.2/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.120.4/"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
@@ -77,7 +77,10 @@
   ],
   "lint": {
     "rules": {
-      "tags": ["fresh", "recommended"]
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
     }
   },
   "fmt": {

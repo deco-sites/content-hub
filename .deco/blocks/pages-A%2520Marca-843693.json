@@ -1,0 +1,154 @@
+{
+  "name": "A Marca",
+  "path": "/brand",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/60969699-a762-4b14-9a10-059b142a38f7/banner-inspirese.png",
+              "mobile": "https://assets.decocache.com/content-hub/65e061a3-f00e-4c8d-bc89-a3fa65ea87d1/banner-inspirese-mobile.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Eletrolux no Brasil</span></strong><br><span style=\"font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "right",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f39dec55-1f01-468a-b848-eeb2dc53d215/infocard-inspire.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
+              "alt": "Geladeira"
+            },
+            "richText": "<p><span style=\"color: rgb(4, 30, 80); font-size: 14pt\">Geladeira</span><span style=\"color: rgb(4, 30, 80)\"><br><br></span><strong><span style=\"color: rgb(4, 30, 80); font-size: 16pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong><br><br><span style=\"color: rgb(43, 41, 54)\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site electrolux.com.</span></p><p><br></p><p><u><span style=\"color: rgb(4, 30, 80)\">Ver mais</span></u></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/AmbassadorsSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "ambassadors": [
+          {
+            "imageDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+            "imageMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png",
+            "name": "Rita Lobo",
+            "description": "Lorem Ipsum"
+          },
+          {
+            "imageDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+            "imageMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png",
+            "name": "Rita Lobo",
+            "description": "Lorem Ipsum"
+          },
+          {
+            "imageDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+            "imageMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png",
+            "name": "Rita Lobo",
+            "description": "Lorem Ipsum"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Tendências</span></strong><br><span style=\"font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "left",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f39dec55-1f01-468a-b848-eeb2dc53d215/infocard-inspire.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
+              "alt": "Geladeira"
+            },
+            "richText": "<p><span style=\"color: rgb(4, 30, 80); font-size: 14pt\">Geladeira</span><span style=\"color: rgb(4, 30, 80)\"><br><br></span><strong><span style=\"color: rgb(4, 30, 80); font-size: 16pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong><br><br><span style=\"color: rgb(43, 41, 54)\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\"><span style=\"color: rgb(43, 41, 54)\">electrolux.com</span></a><span style=\"color: rgb(43, 41, 54)\">.</span></p><p><br></p><p><u><span style=\"color: rgb(4, 30, 80)\">Ver mais</span></u></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Sua Casa Bem Vivida</span></strong><br><span style=\"font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
+        },
+        "articles": [
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

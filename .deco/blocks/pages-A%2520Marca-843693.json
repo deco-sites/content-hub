@@ -55,7 +55,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/AmbassadorsSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Embaixadores</span></strong><br><span style=\"font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>"
         },
         "ambassadors": [
           {

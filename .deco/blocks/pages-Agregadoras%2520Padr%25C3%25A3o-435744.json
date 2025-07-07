@@ -67,7 +67,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -76,7 +76,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -85,7 +85,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -94,7 +94,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           }
@@ -117,8 +117,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
-              "mobile": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png"
+              "desktop": "https://assets.decocache.com/content-hub/e5fe6232-1618-4f04-b34f-564b3862fa05/alecrim.png",
+              "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
             },
             "alt": "alecrim"
           },
@@ -134,8 +134,8 @@
             },
             "alt": "brownie",
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png",
-              "mobile": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png"
+              "desktop": "https://assets.decocache.com/content-hub/d3b4e7f4-ffa2-4b02-a47a-7defd2817883/brownie.png",
+              "mobile": "https://assets.decocache.com/content-hub/a96bff7e-f62a-4657-afba-6e3e3f13e044/brownie-mobile.png"
             }
           },
           {
@@ -151,8 +151,31 @@
             "alt": "rita lobo",
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-              "mobile": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png"
+              "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
             }
+          }
+        ],
+        "title": "<h1><span>Aproveite nossas redes sociais</span></h1><p style=\"text-align: justify\"><span>Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</span></p>",
+        "icons": [
+          {
+            "id": "Facebook",
+            "href": "/#"
+          },
+          {
+            "id": "Instagram",
+            "href": "/#"
+          },
+          {
+            "id": "Pinterest",
+            "href": "/#"
+          },
+          {
+            "id": "Youtube",
+            "href": "/#"
+          },
+          {
+            "id": "Linkedin",
+            "href": "/#"
           }
         ]
       }
@@ -198,14 +221,16 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
-        "section": {},
+        "section": {
+          "fullWidth": false
+        },
         "articles": [
           {
             "image": {
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -214,7 +239,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -223,7 +248,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -232,7 +257,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           }

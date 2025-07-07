@@ -67,7 +67,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -76,7 +76,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -85,7 +85,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -94,7 +94,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           }
@@ -154,6 +154,29 @@
               "mobile": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png"
             }
           }
+        ],
+        "title": "<h1><span>Aproveite nossas redes sociais</span></h1><p style=\"text-align: justify\"><span>Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</span></p>",
+        "icons": [
+          {
+            "id": "Facebook",
+            "href": "/#"
+          },
+          {
+            "id": "Instagram",
+            "href": "/#"
+          },
+          {
+            "id": "Pinterest",
+            "href": "/#"
+          },
+          {
+            "id": "Youtube",
+            "href": "/#"
+          },
+          {
+            "id": "Linkedin",
+            "href": "/#"
+          }
         ]
       }
     },
@@ -198,14 +221,16 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
-        "section": {},
+        "section": {
+          "fullWidth": false
+        },
         "articles": [
           {
             "image": {
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -214,7 +239,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -223,7 +248,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           },
@@ -232,7 +257,7 @@
               "src": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/341f8949-8915-4853-b5b6-0e5fe7a9c735___1ab3bedfee0f280d70bf2af3168fd307.png"
             },
             "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movido...",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "saiba mais"
           }

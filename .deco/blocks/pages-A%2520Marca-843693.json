@@ -1,6 +1,6 @@
 {
   "name": "A Marca",
-  "path": "/brand",
+  "path": "/content-hub-branch",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

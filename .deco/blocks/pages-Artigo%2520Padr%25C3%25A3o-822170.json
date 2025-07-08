@@ -8,7 +8,8 @@
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {
           "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Galeria</span></strong><br><span style=\"font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>",
-          "fullWidth": true
+          "fullWidth": true,
+          "marginTopMobile": 32
         },
         "banners": [
           {

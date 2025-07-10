@@ -1,0 +1,27 @@
+{
+  "name": "Embaixadores - Rita Lobo",
+  "path": "/content-hub-rita-lobo",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "title": "<h1 style=\"text-align: center\">Rita Lobo</h1><p style=\"text-align: center\">Subtítulo</p>"
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "left"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

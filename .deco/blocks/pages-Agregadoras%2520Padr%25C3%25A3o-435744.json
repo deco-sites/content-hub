@@ -222,7 +222,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "fullWidth": false
+          "fullWidth": false,
+          "title": "<h1 style=\"text-align: center\"><span>artigos relacionados</span></h1><p style=\"text-align: center\"><span>Conteúdos selecionados de acordo com a sua necessidade</span></p>"
         },
         "articles": [
           {

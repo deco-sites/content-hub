@@ -1,0 +1,16 @@
+{
+  "__resolveType": "site/sections/Product/ProductMediaBannerSection.tsx",
+  "fullWidth": false,
+  "section": {
+    "marginTopDesktop": 0,
+    "marginTopMobile": 0,
+    "marginBottomDesktop": 52,
+    "marginBottomMobile": 32,
+    "fullWidth": false
+  },
+  "reverse": false,
+  "link": {
+    "bgColor": "#000000"
+  },
+  "products": null
+}

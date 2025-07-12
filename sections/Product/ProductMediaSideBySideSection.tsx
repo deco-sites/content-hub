@@ -137,13 +137,7 @@ export default function ProductMediaBannerSection(
             gap: 10px;
             width: 100%;
           }
-          .productMediaSideBySideProductContainer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .productMediaSideBySideMediaContainer {}
-          
+       
           @media screen and (min-width:1024px) {
             .productMediaSideBySideContainer {
               flex-direction: ${reverse ? `row-reverse` : `row`};

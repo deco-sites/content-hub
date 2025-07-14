@@ -2898,6 +2898,9 @@ input.tab:checked + .tab-content,
 .gap-2 {
   gap: 0.5rem;
 }
+.gap-2\.5 {
+  gap: 0.625rem;
+}
 .gap-20 {
   gap: 5rem;
 }

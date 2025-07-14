@@ -114,21 +114,12 @@ export default function ProductMediaBannerSection(
     },
   );
 
-  const productMediaSideBySideContainerTailwind = `
-    flex 
-    ${reverse ? 'flex-col-reverse' : 'flex-col'} 
-    justify-center 
-    items-center 
-    gap-2.5 
-    w-full
-  `;
-
   return (
     <Section
       {...section}
       id={id}
     >
-      <div class={`productMediaSideBySideContainer ${productMediaSideBySideContainerTailwind}`}>
+      <div class="productMediaSideBySideContainer flex justify-center items-center gap-2.5 w-full">
         <div class="productMediaSideBySideProductContainer">
           {products.length ? <ProductShelf products={minimalProducts} configs={configs} rootId={id} /> : null}
         </div>
@@ -138,6 +129,10 @@ export default function ProductMediaBannerSection(
       </div>
       <style>
         {`
+          .productMediaSideBySideContainer {
+            flex-direction: ${reverse ? `column-reverse` : `column`};
+          }
+
           @media screen and (min-width:1024px) {
             .productMediaSideBySideContainer {
               flex-direction: ${reverse ? `row-reverse` : `row`};

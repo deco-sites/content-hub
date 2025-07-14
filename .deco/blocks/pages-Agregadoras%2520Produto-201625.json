@@ -57,16 +57,24 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "__resolveType": "site/sections/Product/ProductMediaSideBySideSection.tsx",
+        "section": {},
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
             "collection": "2140",
             "count": 1,
-            "simulationBehavior": "default"
+            "similars": false
           }
-        }
+        },
+        "image": {
+          "src": {
+            "desktop": "https://data.decoassets.com/content-hub/cc579caf-0182-4c5c-8c1d-3c33c33d017c/5_cavidade-1-(1).jpg",
+            "mobile": "https://data.decoassets.com/content-hub/f7914e66-6b25-4ae3-ae62-ccba6086dda3/5_cavidade-1-mob.jpg"
+          }
+        },
+        "reverse": false
       }
     },
     {
@@ -228,6 +236,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
@@ -236,14 +247,11 @@
             "count": 10
           }
         },
+        "reverse": true,
         "background": {
           "srcDesktop": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png",
           "srcMobile": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png"
         },
-        "section": {
-          "fullWidth": true
-        },
-        "reverse": true,
         "configs": {
           "customNavigation": {
             "enabledDesktop": true

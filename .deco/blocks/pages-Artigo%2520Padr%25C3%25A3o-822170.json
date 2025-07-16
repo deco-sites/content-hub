@@ -7,9 +7,10 @@
       "section": {
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Galeria</span></strong><br><span style=\"font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>",
           "fullWidth": true,
-          "marginTopMobile": 32
+          "title": "<h1 style=\"text-align: center\"><strong><span style=\"font-size: 24pt\">Galeria</span></strong></h1><p style=\"text-align: center\"><span style=\"font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>",
+          "marginTopMobile": 32,
+          "marginTopDesktop": 52
         },
         "banners": [
           {
@@ -20,11 +21,11 @@
               "loading": "lazy",
               "fetchPriority": "high"
             },
-            "alt": "banner principal alt",
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/817b1097-d4eb-4d26-941e-8e75bd91aa89/cooktop.png",
-              "mobile": "https://assets.decocache.com/content-hub/d3c1fa71-c96c-43bf-a8b7-98be1e0d86a5/cooktop-mobile.png"
-            }
+              "mobile": "https://assets.decocache.com/content-hub/d3c1fa71-c96c-43bf-a8b7-98be1e0d86a5/cooktop-mobile.png",
+              "desktop": "https://assets.decocache.com/content-hub/817b1097-d4eb-4d26-941e-8e75bd91aa89/cooktop.png"
+            },
+            "alt": "banner principal alt"
           }
         ]
       }

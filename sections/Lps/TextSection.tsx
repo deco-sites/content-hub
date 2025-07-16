@@ -42,6 +42,15 @@ export default function TextSection({
           }}
         />
       </div>
+      <style>
+        {`
+          @media screen and (min-width: 1280px) {
+            .text-section-container {
+              padding: 0px 2rem;
+            }
+          }
+        `}
+      </style>
     </Section>
   );
 }

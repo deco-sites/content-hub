@@ -33,14 +33,14 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "<h1 style=\"text-align: center\">Título do InfoCard</h1><p style=\"text-align: center\">Intertítulo</p>",
+          "title": "<h1 style=\"text-align: center\">Arquitetura E Decoração</h1><p style=\"text-align: center\">Intertítulo</p>",
           "fullWidth": true
         },
         "infoCards": [
           {
             "link": {
               "color": "#000000",
-              "text": "saiba mais",
+              "text": "ver mais",
               "href": "/#"
             },
             "direction": "right",

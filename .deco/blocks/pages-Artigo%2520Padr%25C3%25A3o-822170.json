@@ -205,7 +205,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Artigos Relacionados</span></strong><br><span style=\"font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
+          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Artigos Relacionados</span></strong></p><p style=\"text-align: center\"><br><span style=\"font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
         },
         "articles": [
           {

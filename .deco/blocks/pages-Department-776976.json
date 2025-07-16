@@ -172,7 +172,7 @@
             "link": {
               "color": "#000000",
               "href": "/#",
-              "text": "saiba mais"
+              "text": "ver mais"
             },
             "direction": "right",
             "richText": "<h1>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h1><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
@@ -361,7 +361,7 @@
             "link": {
               "color": "#000000",
               "href": "/#",
-              "text": "saiba mais"
+              "text": "ver mais"
             },
             "direction": "left",
             "richText": "<h1>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h1><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
@@ -432,7 +432,7 @@
           {
             "link": {
               "color": "#000000",
-              "text": "saiba mais",
+              "text": "ver mais",
               "href": "/#"
             },
             "direction": "right",

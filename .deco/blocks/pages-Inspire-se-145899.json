@@ -32,7 +32,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/AmbassadorsSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"color: #041e50; font-size: 36pt\">Embaixadores</span></strong><br><span style=\"color: #041e50; font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
+          "title": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(4, 30, 80); font-size: 36pt\">Embaixadores</span></strong><br><span style=\"color: rgb(4, 30, 80); font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
           "fullWidth": true
         },
         "ambassadors": [
@@ -65,7 +65,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"color: #041e50; font-size: 36pt\">Categorias</span></strong><br><span style=\"color: #041e50\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span><br></p>"
+          "title": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(4, 30, 80); font-size: 36pt\">Categorias</span></strong><br><span style=\"color: rgb(4, 30, 80)\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span><br></p>"
         },
         "icons": [
           {
@@ -157,7 +157,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Tendências</span></strong><br><span style=\"font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
+          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Tendências</span></strong></p><p style=\"text-align: center\"><br><span style=\"font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
           "fullWidth": true,
           "marginBottomDesktop": 0,
           "marginBottomMobile": 0

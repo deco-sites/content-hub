@@ -22,9 +22,8 @@ export default function Section({
     <>
       <div
         id={`section-${id}`}
-        class={`section-container flex flex-col w-full gap-4 lg:gap-6 ${
-          classesContainer ?? ""
-        } ${!fullWidth ? "container" : ""}`}
+        class={`section-container flex flex-col w-full gap-4 lg:gap-6 ${classesContainer ?? ""
+          } ${!fullWidth ? "container" : ""}`}
         style={stylesContainer}
       >
         {!isEmptyText(title) && (
@@ -43,13 +42,13 @@ export default function Section({
       </div>
       <style>
         {`
-        #section-${id} {
-          margin-top: ${marginTopMobile}px;
-          margin-bottom: ${marginBottomMobile}px;
+          #section-${id} {
+            margin-top: ${marginTopMobile}px;
+            margin-bottom: ${marginBottomMobile}px;
 
-          @media screen and (min-width:1024px) {
-            margin-top: ${marginTopDesktop}px;
-            margin-bottom: ${marginBottomDesktop}px;
+            @media screen and (min-width: 1024px) {
+              margin-top: ${marginTopDesktop}px;
+              margin-bottom: ${marginBottomDesktop}px;
           }
         }
       `}

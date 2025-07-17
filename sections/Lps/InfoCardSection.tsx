@@ -9,7 +9,7 @@ import { DefaultInfoCardSection } from "site/configs/InfoCardSection.ts";
 /**
  * @description Componente de seção contendo um cartão informativo.
  */
-interface Props {
+interface InfoCardSectionProps {
   /**
    * @title Configuração da Seção
    * @description Define o título, subtítulo e espaçamento da seção.
@@ -33,7 +33,7 @@ export default function InfoCardSection(
     section,
     infoCards = DefaultInfoCardSection.infoCards,
     configs,
-  }: Props,
+  }: InfoCardSectionProps,
 ) {
   const id = useId();
 

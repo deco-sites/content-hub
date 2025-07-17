@@ -46,7 +46,7 @@
             },
             "direction": "left",
             "titleCMS": "Rita Lobo",
-            "richText": "<p><span>Embaixadores</span></p><h1>Rita Lobo</h1><p><span>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\"><span>electrolux.com</span></a><span>.</span></p>",
+            "richText": "<p style=\"text-align: justify\">Embaixadores</p><h1 style=\"text-align: justify\">Rita Lobo</h1><p style=\"text-align: justify\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
             "typeOfContent": {
               "alt": "Rita Lobo - Embaixadores",
               "srcDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",

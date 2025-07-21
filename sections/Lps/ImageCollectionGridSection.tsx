@@ -6,13 +6,13 @@ import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 
 /**
  * @title Section com uma coleção de imagens responsivas em grid.
- * @description Exibe 3 imagens alinhadas horizontalmente no desktop e verticalmente no mobile, sem quebra no desktop.
+ * @description Exibe de 1 a 3 imagens alinhadas horizontalmente no desktop e verticalmente no mobile.
  */
 export interface ImageCollectionGridSectionProps {
   section?: ISection;
   /**
   * @title Coleção de Imagens
-  * @description Aqui, são colocadas todas as imagens da seção.
+  * @description Todas as imagens da seção devem ser colocadas aqui em sequência.
   */
   imageCollection?: IResponsiveImage[];
 }

@@ -2,7 +2,7 @@ import { Text } from "@eluxlab/library-components";
 import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 
-interface Props extends ISection {
+interface SectionProps extends ISection {
   id: string;
 }
 
@@ -17,7 +17,7 @@ export default function Section({
   classesContainer,
   stylesContainer = {},
   fullWidth = false,
-}: Props): preact.JSX.Element {
+}: SectionProps) {
   return (
     <>
       <div
@@ -30,7 +30,7 @@ export default function Section({
           <Text
             title={title}
             classes={{
-              container: "section-title",
+              container: "section-title flex flex-col gap-y-[8px]",
             }}
           />
         )}
@@ -42,14 +42,28 @@ export default function Section({
       </div>
       <style>
         {`
+          .section-title > h1 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #041E50;
+            text-transform: none;
+          }
+
           #section-${id} {
             margin-top: ${marginTopMobile}px;
             margin-bottom: ${marginBottomMobile}px;
 
-            @media screen and (min-width: 1024px) {
+          }
+
+          @media screen and (min-width: 1280px) {
+            .section-title > h1 {
+              font-size: 36px;
+            }
+
+            #section-${id} {
               margin-top: ${marginTopDesktop}px;
               margin-bottom: ${marginBottomDesktop}px;
-          }
+            }
         }
       `}
       </style>

@@ -6,7 +6,7 @@ import { DefaultTextSection } from "site/configs/TextSection.ts";
 /**
  * @description Componente de seção contendo um slider de cartões informativos.
  */
-interface Props {
+interface TextSectionProps {
   /**
    * @title Configuração da Seção
    * @description Define o título, subtítulo e espaçamento da seção.
@@ -25,7 +25,7 @@ interface Props {
 export default function TextSection({
   section,
   text = DefaultTextSection.text,
-}: Props) {
+}: TextSectionProps) {
   const id = useId();
 
   return (
@@ -42,15 +42,6 @@ export default function TextSection({
           }}
         />
       </div>
-      <style>
-        {`
-          @media screen and (min-width: 1280px) {
-            .text-section-container {
-              padding: 0px 2rem;
-            }
-          }
-        `}
-      </style>
     </Section>
   );
 }

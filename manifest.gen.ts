@@ -15,18 +15,19 @@ import * as $$$$$$4 from "./sections/Lps/BannerMediaSection.tsx";
 import * as $$$$$$5 from "./sections/Lps/BannerSliderSection.tsx";
 import * as $$$$$$6 from "./sections/Lps/CategoriesSection.tsx";
 import * as $$$$$$7 from "./sections/Lps/DimmedColorsSection.tsx";
-import * as $$$$$$8 from "./sections/Lps/ImageGridSection.tsx";
-import * as $$$$$$9 from "./sections/Lps/ImageTextCardGridSection.tsx";
-import * as $$$$$$10 from "./sections/Lps/ImageWithTextColumnsSection.tsx";
-import * as $$$$$$11 from "./sections/Lps/InfoCardSection.tsx";
-import * as $$$$$$12 from "./sections/Lps/MultiImageBannerSection.tsx";
-import * as $$$$$$13 from "./sections/Lps/ReviewsSliderSection.tsx";
-import * as $$$$$$14 from "./sections/Lps/TextSection.tsx";
-import * as $$$$$$15 from "./sections/Product/ProductMediaSection.tsx";
-import * as $$$$$$16 from "./sections/Product/ProductMediaSideBySideSection.tsx";
-import * as $$$$$$17 from "./sections/Product/ProductShelfSection.tsx";
-import * as $$$$$$18 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
-import * as $$$$$$19 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$8 from "./sections/Lps/ImageCollectionGridSection.tsx";
+import * as $$$$$$9 from "./sections/Lps/ImageGridSection.tsx";
+import * as $$$$$$10 from "./sections/Lps/ImageTextCardGridSection.tsx";
+import * as $$$$$$11 from "./sections/Lps/ImageWithTextColumnsSection.tsx";
+import * as $$$$$$12 from "./sections/Lps/InfoCardSection.tsx";
+import * as $$$$$$13 from "./sections/Lps/MultiImageBannerSection.tsx";
+import * as $$$$$$14 from "./sections/Lps/ReviewsSliderSection.tsx";
+import * as $$$$$$15 from "./sections/Lps/TextSection.tsx";
+import * as $$$$$$16 from "./sections/Product/ProductMediaSection.tsx";
+import * as $$$$$$17 from "./sections/Product/ProductMediaSideBySideSection.tsx";
+import * as $$$$$$18 from "./sections/Product/ProductShelfSection.tsx";
+import * as $$$$$$19 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
+import * as $$$$$$20 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -41,18 +42,19 @@ const manifest = {
     "site/sections/Lps/BannerSliderSection.tsx": $$$$$$5,
     "site/sections/Lps/CategoriesSection.tsx": $$$$$$6,
     "site/sections/Lps/DimmedColorsSection.tsx": $$$$$$7,
-    "site/sections/Lps/ImageGridSection.tsx": $$$$$$8,
-    "site/sections/Lps/ImageTextCardGridSection.tsx": $$$$$$9,
-    "site/sections/Lps/ImageWithTextColumnsSection.tsx": $$$$$$10,
-    "site/sections/Lps/InfoCardSection.tsx": $$$$$$11,
-    "site/sections/Lps/MultiImageBannerSection.tsx": $$$$$$12,
-    "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$13,
-    "site/sections/Lps/TextSection.tsx": $$$$$$14,
-    "site/sections/Product/ProductMediaSection.tsx": $$$$$$15,
-    "site/sections/Product/ProductMediaSideBySideSection.tsx": $$$$$$16,
-    "site/sections/Product/ProductShelfSection.tsx": $$$$$$17,
-    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$18,
-    "site/sections/Theme/Theme.tsx": $$$$$$19,
+    "site/sections/Lps/ImageCollectionGridSection.tsx": $$$$$$8,
+    "site/sections/Lps/ImageGridSection.tsx": $$$$$$9,
+    "site/sections/Lps/ImageTextCardGridSection.tsx": $$$$$$10,
+    "site/sections/Lps/ImageWithTextColumnsSection.tsx": $$$$$$11,
+    "site/sections/Lps/InfoCardSection.tsx": $$$$$$12,
+    "site/sections/Lps/MultiImageBannerSection.tsx": $$$$$$13,
+    "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$14,
+    "site/sections/Lps/TextSection.tsx": $$$$$$15,
+    "site/sections/Product/ProductMediaSection.tsx": $$$$$$16,
+    "site/sections/Product/ProductMediaSideBySideSection.tsx": $$$$$$17,
+    "site/sections/Product/ProductShelfSection.tsx": $$$$$$18,
+    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$19,
+    "site/sections/Theme/Theme.tsx": $$$$$$20,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

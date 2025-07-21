@@ -6,20 +6,21 @@ import type { ISection } from "site/types/Section.d.ts";
  * @title Section de Grid de Imagens Responsiva
  * @description Exibe 3 imagens alinhadas horizontalmente no desktop e verticalmente no mobile, sem quebra no desktop.
  */
-export interface Props {
+export interface ImageGridSectionProps {
   section?: ISection;
-  image1: string;
-  image2: string;
-  image3: string;
+  image1?: string;
+  image2?: string;
+  image3?: string;
 }
 
 export default function ImageGridSection(
   {
     section,
+    imageCollection,
     image1,
     image2,
     image3,
-  }: Props,
+  }: ImageGridSectionProps,
 ) {
   const id = useId();
 

@@ -251,11 +251,68 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageGridSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"color: #041e50; font-size: 36pt\">Galeria</span></strong><br><span style=\"font-size: 16pt\">Conteudos selecionados de acordo com a sua necessidade</span></p>"
+          "title": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(4, 30, 80); font-size: 36pt\">Galeria</span></strong><br><span style=\"font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
         },
         "image1": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
         "image2": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
         "image3": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageGridSection.tsx",
+        "section": {},
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Lavadora Premium"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
+              "mobile": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
+            },
+            "alt": "Lavadora Premium"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Lavadora Premium"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
+              "mobile": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
+            },
+            "alt": "Lavadora Premium"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Lavadora Premium"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
+              "mobile": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
+            },
+            "alt": "Lavadora Premium"
+          }
+        ]
       }
     },
     {

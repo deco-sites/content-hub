@@ -5,10 +5,10 @@ import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 
 /**
- * @title Section de Grid de Imagens Responsiva
+ * @title Section com uma coleção de imagens responsivas em grid.
  * @description Exibe 3 imagens alinhadas horizontalmente no desktop e verticalmente no mobile, sem quebra no desktop.
  */
-export interface ImageGridSectionProps {
+export interface ImageCollectionGridSectionProps {
   section?: ISection;
   /**
   * @title Coleção de Imagens
@@ -17,11 +17,11 @@ export interface ImageGridSectionProps {
   imageCollection?: IResponsiveImage[];
 }
 
-export default function ImageGridSection(
+export default function ImageCollectionGridSection(
   {
     section,
     imageCollection,
-  }: ImageGridSectionProps,
+  }: ImageCollectionGridSectionProps,
 ) {
   const id = useId();
 

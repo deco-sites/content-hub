@@ -23,8 +23,8 @@
             },
             "alt": "Cook-top Indução",
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/2e65a243-5f21-4ed1-a2fc-1d2977123b34/9e9bf0fbfb2c8db49c2c221a78b4c59faf4a8372.png",
-              "mobile": "https://assets.decocache.com/content-hub/2e65a243-5f21-4ed1-a2fc-1d2977123b34/9e9bf0fbfb2c8db49c2c221a78b4c59faf4a8372.png"
+              "desktop": "https://assets.decocache.com/content-hub/f6ffddcf-a583-484c-9aea-b620f205251b/cooktop-inducao-banner-v2.png",
+              "mobile": "https://assets.decocache.com/content-hub/f6ffddcf-a583-484c-9aea-b620f205251b/cooktop-inducao-banner-v2.png"
             }
           }
         ]
@@ -213,7 +213,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Artigos Relacionados</span></strong><br><span style=\"font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
+          "title": "<p></p><p></p><p></p><h1 style=\"text-align: center\"><span style=\"font-size: 27pt\">Artigos Relacionados</span></h1><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
         },
         "articles": [
           {

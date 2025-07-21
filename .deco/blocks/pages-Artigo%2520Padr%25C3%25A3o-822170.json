@@ -168,7 +168,7 @@
         "section": {
           "fullWidth": true
         },
-        "text": "<h2>O melhor da tecnologia <br>Electrolux</h2><p>com a máxima eficiência Ecoplus<br></p>",
+        "text": "<h2 style=\"text-align: center\">O melhor da tecnologia <br>Electrolux</h2><p style=\"text-align: center\">com a máxima eficiência Ecoplus<br></p>",
         "configs": {
           "customNavigation": {
             "enabledDesktop": true

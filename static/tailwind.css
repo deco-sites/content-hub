@@ -2443,6 +2443,9 @@ input.tab:checked + .tab-content,
 .mb-5 {
   margin-bottom: 1.25rem;
 }
+.mb-\[16px\] {
+  margin-bottom: 16px;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -2469,6 +2472,9 @@ input.tab:checked + .tab-content,
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mt-\[24px\] {
+  margin-top: 24px;
 }
 .mt-\[5px\] {
   margin-top: 5px;
@@ -2514,6 +2520,9 @@ input.tab:checked + .tab-content,
 }
 .h-\[10px\] {
   height: 10px;
+}
+.h-\[171px\] {
+  height: 171px;
 }
 .h-\[174px\] {
   height: 174px;
@@ -3187,10 +3196,6 @@ input.tab:checked + .tab-content,
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -3227,9 +3232,6 @@ input.tab:checked + .tab-content,
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -3264,9 +3266,6 @@ input.tab:checked + .tab-content,
   padding-top: 9rem;
 }
 .pt-4 {
-  padding-top: 1rem;
-}
-.pt-\[1rem\] {
   padding-top: 1rem;
 }
 .pt-\[84px\] {

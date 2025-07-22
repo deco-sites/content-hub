@@ -22,7 +22,7 @@ export default function Section({
     <>
       <div
         id={`section-${id}`}
-        class={`section-container flex flex-col w-full gap-4 lg:gap-6 ${classesContainer ?? ""
+        class={`section-container flex flex-col w-full ${classesContainer ?? ""
           } ${!fullWidth ? "container" : ""}`}
         style={stylesContainer}
       >
@@ -30,7 +30,7 @@ export default function Section({
           <Text
             title={title}
             classes={{
-              container: "section-title flex flex-col gap-y-[8px]",
+              container: "section-title flex flex-col gap-y-[8px] mb-[16px] mt-[24px]",
             }}
           />
         )}
@@ -52,7 +52,6 @@ export default function Section({
           #section-${id} {
             margin-top: ${marginTopMobile}px;
             margin-bottom: ${marginBottomMobile}px;
-
           }
 
           @media screen and (min-width: 1280px) {

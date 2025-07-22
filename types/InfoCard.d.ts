@@ -61,8 +61,8 @@ export interface IInfoCardVideo {
  */
 export interface IInfoCard {
   /**
-   * @title Título do Info Card
-   * @description Utilizado para identificar o info card no CMS.
+   * @title Título do InfoCard
+   * @description Utilizado para identificar o infoCard no CMS.
    */
   titleCMS?: string;
 

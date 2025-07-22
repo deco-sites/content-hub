@@ -169,17 +169,17 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "fullWidth": true,
-          "title": "<h1 style=\"text-align: center\">Título do InfoCard</h1><p style=\"text-align: center\">Intertítulo</p>"
+          "title": "<h1 style=\"text-align: center\"><span style=\"font-size: 19pt\">Título do Infocard</span></h1><p style=\"text-align: center\"><span style=\"font-size: 12pt\">Intertítulo</span></p>"
         },
         "infoCards": [
           {
             "link": {
               "color": "#000000",
               "href": "/#",
-              "text": "ver mais"
+              "text": "Ver mais"
             },
             "direction": "right",
-            "richText": "<h1>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h1><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
+            "richText": "<p><strong>Geladeira</strong></p><h1><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></h1><p><span style=\"font-size: 12pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\"><span style=\"font-size: 12pt\">electrolux.com</span></a><span style=\"font-size: 12pt\">.</span></p>",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
@@ -274,6 +274,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "section": {
+          "title": "<p></p>"
+        },
         "banners": [
           {
             "link": {
@@ -324,10 +327,7 @@
             "alt": "rita lobo"
           }
         ],
-        "section": {
-          "title": "<p></p>"
-        },
-        "title": "<h1><span>Aproveite nossas redes sociais</span></h1><p style=\"text-align: justify\"><span>Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</span></p>",
+        "title": "<h1 style=\"text-align: justify\"><span style=\"font-size: 15pt\">Aproveite nossas redes sociais</span></h1><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</span></p>",
         "icons": [
           {
             "id": "Facebook",
@@ -357,24 +357,23 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true,
-          "title": "<h1 style=\"text-align: center\">Título do InfoCard</h1><p style=\"text-align: center\">Intertítulo</p>"
+          "title": "<h1 style=\"text-align: center\"><span style=\"font-size: 19pt\">Título do Infocard</span></h1><p style=\"text-align: center\"><span style=\"font-size: 12pt\">Intertítulo</span></p>",
+          "fullWidth": true
         },
         "infoCards": [
           {
             "link": {
               "color": "#000000",
               "href": "/#",
-              "text": "ver mais"
+              "text": "Ver mais"
             },
-            "direction": "left",
-            "richText": "<h1>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h1><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
+            "direction": "right",
+            "richText": "<p><strong>Geladeira</strong></p><h1><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></h1><p><span style=\"font-size: 12pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\"><span style=\"font-size: 12pt\">electrolux.com</span></a><span style=\"font-size: 12pt\">.</span></p>",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "alt": "geladeira"
-            },
-            "titleCMS": "Título da Seção"
+            }
           }
         ]
       }
@@ -430,23 +429,22 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "fullWidth": true,
-          "title": "<h1 style=\"text-align: center\">Título do InfoCard</h1><p style=\"text-align: center\">Intertítulo</p>"
+          "title": "<h1 style=\"text-align: center\"><span style=\"font-size: 19pt\">Título do Infocard</span></h1><p style=\"text-align: center\"><span style=\"font-size: 12pt\">Intertítulo</span></p>"
         },
         "infoCards": [
           {
             "link": {
               "color": "#000000",
-              "text": "ver mais",
-              "href": "/#"
+              "href": "/#",
+              "text": "Ver mais"
             },
             "direction": "right",
+            "richText": "<p><strong>Geladeira</strong></p><h1><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></h1><p><span style=\"font-size: 12pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\"><span style=\"font-size: 12pt\">electrolux.com</span></a><span style=\"font-size: 12pt\">.</span></p>",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
-              "alt": "cozinha"
-            },
-            "richText": "<h1>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h1><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
-            "titleCMS": "Título da seção"
+              "alt": "geladeira"
+            }
           }
         ]
       }

@@ -131,7 +131,11 @@ export default function DimmedColorsSection(
           @media screen and (min-width:1280px) {
             #dimmed-colors-items__container {
               flex-direction: row;
-              gap: 0.25rem;
+              gap: 8px;
+            }
+            
+            #dimmed-colors-item__container {
+              height: 100%;
             }
 
             #dimmed-colors-item__mobile {
@@ -143,7 +147,7 @@ export default function DimmedColorsSection(
               justify-content: flex-start;
               padding-top: 2vh;
               position: static;
-              height: 12vh;
+              height: 15vh;
             }
           }
         `}

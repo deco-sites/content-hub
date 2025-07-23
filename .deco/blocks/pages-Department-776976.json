@@ -162,7 +162,7 @@
         "section": {
           "fullWidth": true,
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-          "title": "Cozinha"
+          "title": "<h1>Cozinha</h1>"
         }
       }
     },

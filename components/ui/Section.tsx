@@ -51,13 +51,28 @@ export default function Section({
       </div>
       <style>
         {`
-          .section-title {
+          .section-title,
+          .section-title h1,
+          .section-title h2,
+          .section-title h3,
+          .section-title h4,
+          .section-title h5,
+          .section-title h6 
+          {
             font-size: 26px;
             font-weight: 600;
             color: #041E50;
+            text-transform: none;
           }
 
-          .section-subtitle {
+          .section-subtitle,
+          .section-subtitle h1, 
+          .section-subtitle h2, 
+          .section-subtitle h3, 
+          .section-subtitle h4, 
+          .section-subtitle h5, 
+          .section-subtitle h6 
+          {
             font-size: 16px;
             font-weight: 400;
             color: #041e50;
@@ -69,11 +84,23 @@ export default function Section({
           }
 
           @media screen and (min-width: 1280px) {
-            .section-title {
+            .section-title,
+            .section-title h1,
+            .section-title h2,
+            .section-title h3,
+            .section-title h4,
+            .section-title h5,
+            .section-title h6 {
               font-size: 36px;
             }
 
-            .section-subtitle {
+            .section-subtitle,
+            .section-subtitle h1, 
+            .section-subtitle h2, 
+            .section-subtitle h3, 
+            .section-subtitle h4, 
+            .section-subtitle h5, 
+            .section-subtitle h6 {
               font-size: 22px;
             }
 

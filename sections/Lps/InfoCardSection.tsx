@@ -10,22 +10,13 @@ import { DefaultInfoCardSection } from "site/configs/InfoCardSection.ts";
  * @description Componente de seção contendo um cartão informativo.
  */
 interface InfoCardSectionProps {
-  /**
-   * @title Configuração da Seção
-   * @description Define o título, subtítulo e espaçamento da seção.
-   */
   section?: ISection;
-
+  configs?: ISliderConfigs;
   /**
    * @title Cartões Informativos
    * @description Conjunto de cartões informativos a serem exibidos dentro do slider.
    */
   infoCards?: IInfoCard[];
-
-  /**
-   * @title Configurações do Slider
-   */
-  configs?: ISliderConfigs;
 }
 
 export default function InfoCardSection(

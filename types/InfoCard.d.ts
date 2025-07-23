@@ -1,3 +1,4 @@
+import { TextArea } from "apps/admin/widgets.ts";
 /**
  * @title Imagem
  */
@@ -57,21 +58,25 @@ export interface IInfoCardVideo {
 }
 
 /**
- * @title {{#title}}{{title}}{{/title}}{{^title}}Info Card{{/title}}
+ * @title {{#title}}{{title}}{{/title}}{{^title}}InfoCard{{/title}}
  */
 export interface IInfoCard {
   /**
-   * @title Título do InfoCard
-   * @description Utilizado para identificar o infoCard no CMS.
+   * @title Título
    */
-  titleCMS?: string;
-
+  title?: string;
+  
   /**
-   * @title Texto Descritivo
-   * @description Texto descritivo formatado para exibição no cartão.
-   * @format rich-text
+   * @title Texto
+   * @widget text-area
    */
-  richText?: string;
+  text?: TextArea;
+  
+  /**
+   * @title Tag
+   * @description Tag em texto que aparece sobre o título do InfoCard.
+   */
+  smallTag?: string;
 
   /**
    * @title Link

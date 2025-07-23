@@ -3341,6 +3341,9 @@ input.tab:checked + .tab-content,
 .capitalize {
   text-transform: capitalize;
 }
+.normal-case {
+  text-transform: none;
+}
 .leading-4 {
   line-height: 1rem;
 }

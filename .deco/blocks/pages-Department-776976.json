@@ -159,7 +159,8 @@
         "title": "Cozinha",
         "section": {
           "fullWidth": true,
-          "title": "<h1 style=\"text-align: center\"><span style=\"font-size: 19pt\">Cozinha</span></h1><p style=\"text-align: center\"><span style=\"font-size: 12pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>"
+          "title": "Cozinha",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         }
       }
     },
@@ -169,7 +170,8 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "fullWidth": true,
-          "title": "<h1 style=\"text-align: center\"><span style=\"font-size: 19pt\">Título do Infocard</span></h1><p style=\"text-align: center\"><span style=\"font-size: 12pt\">Intertítulo</span></p>"
+          "title": "Funções exclusivas",
+          "subtitle": "Subtext"
         },
         "infoCards": [
           {
@@ -274,9 +276,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
-        "section": {
-          "title": "<p></p>"
-        },
+        "section": {},
         "banners": [
           {
             "link": {
@@ -357,8 +357,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "<h1 style=\"text-align: center\"><span style=\"font-size: 19pt\">Título do Infocard</span></h1><p style=\"text-align: center\"><span style=\"font-size: 12pt\">Intertítulo</span></p>",
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "Ecoplus",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "infoCards": [
           {
@@ -429,7 +430,8 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "fullWidth": true,
-          "title": "<h1 style=\"text-align: center\"><span style=\"font-size: 19pt\">Título do Infocard</span></h1><p style=\"text-align: center\"><span style=\"font-size: 12pt\">Intertítulo</span></p>"
+          "title": "Electrolux Cuida",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "infoCards": [
           {

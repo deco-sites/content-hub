@@ -107,12 +107,12 @@ export default function ArticleGridSection(
                     "Título do artigo",
                 }}
               />
-              <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux">
+              <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux mb-[16px]">
                 {article.description ??
                   "Descrição do artigo..."}
               </p>
               {article.cta && (
-                <span class="mt-4 text-sm font-semibold leading-[140%] text-[#5B6A78]">
+                <span class="text-sm font-semibold leading-[140%] text-[#5B6A78]">
                   {article.cta}
                 </span>
               )}

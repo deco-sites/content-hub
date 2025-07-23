@@ -161,8 +161,8 @@
         "title": "Cozinha",
         "section": {
           "fullWidth": true,
-          "title": "Cozinha",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "title": "Cozinha"
         }
       }
     },

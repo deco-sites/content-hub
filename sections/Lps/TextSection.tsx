@@ -4,7 +4,7 @@ import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import { DefaultTextSection } from "site/configs/TextSection.ts";
 /**
- * @description Componente de seção contendo um slider de cartões informativos.
+ * @description Componente de seção para inserção de textos.
  */
 interface TextSectionProps {
   /**
@@ -32,7 +32,7 @@ export default function TextSection({
     <Section
       {...section}
       id={id}
-      classesContainer="general-text-section"
+      classesContainer="general-text-section normal-case"
     >
       <div class="flex items-center w-full">
         <Text

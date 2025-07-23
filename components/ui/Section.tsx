@@ -10,6 +10,7 @@ export default function Section({
   id,
   children,
   title = "",
+  subtitle = "",
   marginBottomMobile = 32,
   marginBottomDesktop = 52,
   marginTopMobile = 0,
@@ -30,7 +31,15 @@ export default function Section({
           <Text
             title={title}
             classes={{
-              container: "section-title flex flex-col gap-y-[8px] mb-[16px] mt-[24px]",
+              container: "section-title flex flex-col gap-y-[8px] mt-[24px] text-center",
+            }}
+          />
+        )}
+        {!isEmptyText(subtitle) && (
+          <Text
+            title={subtitle}
+            classes={{
+              container: "section-subtitle mb-[16px] text-center",
             }}
           />
         )}
@@ -42,10 +51,17 @@ export default function Section({
       </div>
       <style>
         {`
-          .section-title > h1 {
+          .section-title {
             font-size: 26px;
             font-weight: 600;
             color: #041E50;
+            text-transform: none;
+          }
+
+          .section-subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            color: #041e50;
             text-transform: none;
           }
 
@@ -55,8 +71,12 @@ export default function Section({
           }
 
           @media screen and (min-width: 1280px) {
-            .section-title > h1 {
+            .section-title {
               font-size: 36px;
+            }
+
+            .section-subtitle {
+              font-size: 22px;
             }
 
             #section-${id} {

@@ -2341,9 +2341,6 @@ input.tab:checked + .tab-content,
   white-space: nowrap;
   border-width: 0;
 }
-.visible {
-  visibility: visible;
-}
 .static {
   position: static;
 }

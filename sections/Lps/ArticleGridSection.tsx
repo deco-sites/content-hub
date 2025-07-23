@@ -1,3 +1,4 @@
+import { TextArea } from "apps/admin/widgets.ts";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -7,9 +8,23 @@ import type { ISection } from "site/types/Section.d.ts";
  * @description Exibe artigos em um grid responsivo (4 colunas no desktop e 2 no mobile).
  */
 export interface ArticleItem {
+  /**
+ * @title Título
+ * @description Título do artigo.
+ */
   title?: string;
+  /**
+  * @title Texto
+  * @description Uma prévia do texto do artigo.
+  */
   description?: string;
+  /**
+  * @title Link
+  */
   href?: string;
+  /**
+  * @title Texto do botão
+  */
   cta?: string;
   image: {
     src: string;
@@ -23,7 +38,7 @@ export interface ArticleItem {
   };
 }
 
-export interface Props {
+export interface ArticleGridSectionProps {
   section?: ISection;
   articles?: ArticleItem[];
 }
@@ -32,7 +47,7 @@ export default function ArticleGridSection(
   {
     section,
     articles = [],
-  }: Props,
+  }: ArticleGridSectionProps,
 ) {
   const id = useId();
 
@@ -56,7 +71,7 @@ export default function ArticleGridSection(
 
   return (
     <Section {...section} id={id}>
-      <div class="w-full max-w-[1500px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="w-full max-w-[1500px] mx-auto my-[24px] grid grid-cols-2 lg:grid-cols-4 gap-[8px]">
         {processedArticles.map((
           article,
           index,
@@ -64,10 +79,10 @@ export default function ArticleGridSection(
           <a
             key={index}
             href={article.href ?? "#"}
-            class="border border-[#dfe7ea] p-4 flex flex-col hover:shadow-md transition"
+            class="border border-[#dfe7ea] flex flex-col hover:shadow-md transition"
           >
             {article.image?.src && (
-              <div class="w-full mb-4">
+              <div class="w-full">
                 <img
                   src={article.image
                     .src}
@@ -84,25 +99,27 @@ export default function ArticleGridSection(
                 />
               </div>
             )}
-            <h3
-              class="text-xl font-semibold text-[#041E50] mb-2"
-              dangerouslySetInnerHTML={{
-                __html: article.title ??
-                  "Título do artigo",
-              }}
-            />
-            <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux">
-              {article.description ??
-                "Descrição do artigo..."}
-            </p>
-            {article.cta && (
-              <span class="mt-4 text-sm font-semibold leading-[140%] text-[#5B6A78]">
-                {article.cta}
-              </span>
-            )}
+            <div class="p-4">
+              <h3
+                class="text-xl font-semibold text-[#041E50] mb-2"
+                dangerouslySetInnerHTML={{
+                  __html: article.title ??
+                    "Título do artigo",
+                }}
+              />
+              <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux">
+                {article.description ??
+                  "Descrição do artigo..."}
+              </p>
+              {article.cta && (
+                <span class="mt-4 text-sm font-semibold leading-[140%] text-[#5B6A78]">
+                  {article.cta}
+                </span>
+              )}
+            </div>
           </a>
         ))}
       </div>
-    </Section>
+    </Section >
   );
 }

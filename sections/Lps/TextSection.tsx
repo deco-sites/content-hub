@@ -31,16 +31,34 @@ export default function TextSection({
     <Section
       {...section}
       id={id}
-      classesContainer="general-text-section normal-case"
     >
-      <div class="flex items-center w-full">
-        <Text
-          title={text ?? ""}
-          classes={{
-            container: "text-section-container",
-          }}
-        />
-      </div>
+      <Text
+        title={text ?? ""}
+        classes={{
+          container: "text-section-container w-full",
+        }}
+      />
+      <style>
+        {`
+            .text-section-container {
+              font-size: 16px;
+              font-weight: 400;
+              color: #041e50;
+            }
+
+            @media screen and (min-width: 1280px) {
+              .text-section-container {
+                max-width: 800px;
+              }
+            }
+
+            @media screen and (min-width: 1920px) {
+              .text-section-container {
+                max-width: 960px;
+              }
+            }
+          `}
+      </style>
     </Section>
   );
 }

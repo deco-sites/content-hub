@@ -44,7 +44,7 @@ export default function Section({
           />
         )}
         {children && (
-          <div class="flex">
+          <div class="flex flex-col items-center justify-center">
             {children}
           </div>
         )}

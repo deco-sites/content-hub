@@ -183,7 +183,6 @@
               "text": "Ver mais"
             },
             "direction": "right",
-            "richText": "<p><strong>Geladeira</strong></p><h1><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></h1><p><span style=\"font-size: 12pt\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\"><span style=\"font-size: 12pt\">electrolux.com</span></a><span style=\"font-size: 12pt\">.</span></p>",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
@@ -191,7 +190,8 @@
             },
             "title": "Economizam até 47%* de energia e estão entre mais econômicas do Brasil",
             "text": "*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site electrolux.com.",
-            "smallTag": "Geladeira"
+            "smallTag": "Geladeira",
+            "richText": "<h6>Geladeira</h6>"
           }
         ]
       }
@@ -379,7 +379,9 @@
               "srcDesktop": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "srcMobile": "https://assets.decocache.com/content-hub/52996fba-86c4-4acd-8e63-d81d5b0463c9/Aspect-Ratio.png",
               "alt": "geladeira"
-            }
+            },
+            "title": "asdasd",
+            "text": "dasdasdas"
           }
         ]
       }

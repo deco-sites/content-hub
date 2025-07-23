@@ -1,4 +1,3 @@
-import { TextArea } from "apps/admin/widgets.ts";
 /**
  * @title Imagem
  */
@@ -64,19 +63,13 @@ export interface IInfoCard {
   /**
    * @title Título
    */
-  title?: string;
+  titleCMS?: string;
   
   /**
    * @title Texto
-   * @widget text-area
+   * @format rich-text 
    */
-  text?: TextArea;
-  
-  /**
-   * @title Tag
-   * @description Tag em texto que aparece sobre o título do InfoCard.
-   */
-  smallTag?: string;
+  richText?: string;
 
   /**
    * @title Link

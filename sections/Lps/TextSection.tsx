@@ -1,11 +1,11 @@
+import { TextArea } from "apps/admin/widgets.ts";
 import Section from "site/components/ui/Section.tsx";
 import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import { DefaultTextSection } from "site/configs/TextSection.ts";
-/**
- * @description Componente de seção para inserção de textos.
- */
+
+/** @description Componente de seção para inserção de textos. */
 interface TextSectionProps {
   /**
    * @title Configuração da Seção
@@ -15,11 +15,10 @@ interface TextSectionProps {
 
   /**
    * @title Texto
-   * @description Conteúdo em formato de rich text.
-   * @format rich-text
-   * @default Lorem ipsum
+   * @widget text-area
+   * @default Lorem
    */
-  text?: string;
+  text: TextArea;
 }
 
 export default function TextSection({
@@ -32,16 +31,34 @@ export default function TextSection({
     <Section
       {...section}
       id={id}
-      classesContainer="general-text-section normal-case"
     >
-      <div class="flex items-center w-full">
-        <Text
-          title={text ?? ""}
-          classes={{
-            container: "text-section-container",
-          }}
-        />
-      </div>
+      <Text
+        title={text ?? ""}
+        classes={{
+          container: "text-section-container w-full",
+        }}
+      />
+      <style>
+        {`
+            .text-section-container {
+              font-size: 16px;
+              font-weight: 400;
+              color: #041e50;
+            }
+
+            @media screen and (min-width: 1280px) {
+              .text-section-container {
+                max-width: 800px;
+              }
+            }
+
+            @media screen and (min-width: 1920px) {
+              .text-section-container {
+                max-width: 960px;
+              }
+            }
+          `}
+      </style>
     </Section>
   );
 }

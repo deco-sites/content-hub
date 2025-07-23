@@ -105,6 +105,15 @@ export default function InfoCard(
           </>
         )
         : null}
+      <style>
+        {`
+      .info-card span,
+      .info-card p {
+          color: #041E50;
+          margin-bottom: 16px;
+        }
+      `}
+      </style>
     </InfoCardComponent>
   );
 }

@@ -2341,9 +2341,6 @@ input.tab:checked + .tab-content,
   white-space: nowrap;
   border-width: 0;
 }
-.visible {
-  visibility: visible;
-}
 .static {
   position: static;
 }
@@ -2430,6 +2427,10 @@ input.tab:checked + .tab-content,
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+.my-\[24px\] {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
@@ -2942,6 +2943,9 @@ input.tab:checked + .tab-content,
 }
 .gap-\[6px\] {
   gap: 6px;
+}
+.gap-\[8px\] {
+  gap: 8px;
 }
 .gap-x-\[24px\] {
   -moz-column-gap: 24px;

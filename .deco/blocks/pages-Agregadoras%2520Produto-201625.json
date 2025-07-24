@@ -182,7 +182,29 @@
             }
           }
         ],
-        "title": "<h1><span>Aproveite nossas redes sociais</span></h1><p><span>Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</span></p><p></p>"
+        "title": "<h1>Aproveite nossas redes sociais</h1><p>Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</p><p></p>",
+        "icons": [
+          {
+            "id": "Facebook",
+            "href": "/#"
+          },
+          {
+            "id": "Instagram",
+            "href": "/#"
+          },
+          {
+            "id": "Pinterest",
+            "href": "/#"
+          },
+          {
+            "id": "Youtube",
+            "href": "/#"
+          },
+          {
+            "id": "Linkedin",
+            "href": "/#"
+          }
+        ]
       }
     },
     {

@@ -137,17 +137,33 @@
             "link": {
               "target": "blank",
               "href": "/#",
-              "title": "Alecrim"
+              "title": "Rita Lobo"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
-              "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
+              "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
             },
-            "alt": "alecrim"
+            "alt": "rita lobo"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Alecrim"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "alecrim",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png"
+            }
           },
           {
             "link": {
@@ -161,24 +177,8 @@
             },
             "alt": "brownie",
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/4d665624-24c5-4690-a145-cf21b94da572/brownie.png",
-              "mobile": "https://assets.decocache.com/content-hub/a96bff7e-f62a-4657-afba-6e3e3f13e044/brownie-mobile.png"
-            }
-          },
-          {
-            "link": {
-              "target": "blank",
-              "href": "/#",
-              "title": "Rita Lobo"
-            },
-            "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "high"
-            },
-            "alt": "rita lobo",
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png",
-              "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+              "desktop": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png"
             }
           }
         ],
@@ -204,7 +204,12 @@
             "id": "Linkedin",
             "href": "/#"
           }
-        ]
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "mobile": 1
+          }
+        }
       }
     },
     {

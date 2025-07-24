@@ -73,6 +73,10 @@
           "src": {
             "desktop": "https://data.decoassets.com/content-hub/cc579caf-0182-4c5c-8c1d-3c33c33d017c/5_cavidade-1-(1).jpg",
             "mobile": "https://data.decoassets.com/content-hub/f7914e66-6b25-4ae3-ae62-ccba6086dda3/5_cavidade-1-mob.jpg"
+          },
+          "link": {
+            "href": "/#",
+            "title": "Sua vida bem vivida"
           }
         },
         "reverse": false
@@ -281,11 +285,10 @@
         },
         "configs": {
           "customNavigation": {
-            "enabledDesktop": true
+            "enabledDesktop": false
           },
           "customPagination": {
-            "dynamicBullets": false,
-            "dynamicMainBullets": 3
+            "dynamicBullets": false
           }
         },
         "fullWidth": true,

@@ -7,7 +7,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "marginTopDesktop": 0,
+          "marginTopMobile": 0
         },
         "banners": [
           {
@@ -33,18 +35,17 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "<h1 style=\"text-align: center\">Título do InfoCard</h1><p style=\"text-align: center\">Intertítulo</p>",
           "fullWidth": true
         },
         "infoCards": [
           {
             "link": {
               "color": "#000000",
-              "text": "saiba mais",
-              "href": "/#"
+              "href": "/#",
+              "text": "Ver mais"
             },
             "direction": "right",
-            "richText": "<h1>Economizam até 47%* de energia e estão entre mais econômicas do Brasil</h1><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
+            "richText": "<h1><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h1><p><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/f39dec55-1f01-468a-b848-eeb2dc53d215/infocard-inspire.png",
               "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
@@ -190,7 +191,8 @@
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "fullWidth": false,
-          "title": "<h1 style=\"text-align: center\"><span>artigos relacionados</span></h1><p style=\"text-align: center\"><span>Conteúdos selecionados de acordo com a sua necessidade</span></p>"
+          "title": "<h1>Artigos Relacionados</h1>",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "articles": [
           {
@@ -262,7 +264,7 @@
           }
         },
         "fullWidth": true,
-        "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
+        "text": "<h2 style=\"text-align: center\">O melhor da tecnologia <br>Electrolux</h2><p style=\"text-align: center\">com a máxima eficiência Ecoplus</p>",
         "link": {
           "text": "Conheça todos os produtos",
           "href": "/#"

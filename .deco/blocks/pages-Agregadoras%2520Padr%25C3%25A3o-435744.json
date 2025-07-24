@@ -213,7 +213,7 @@
           }
         },
         "fullWidth": true,
-        "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
+        "text": "<h2 style=\"text-align: center\">O melhor da tecnologia <br>Electrolux</h2><p style=\"text-align: center\">com a máxima eficiência Ecoplus</p>",
         "link": {
           "text": "Conheça todos os produtos",
           "href": "/#"
@@ -295,7 +295,7 @@
           }
         },
         "fullWidth": true,
-        "text": "<h2>O melhor da tecnologia Electrolux</h2><p>com a máxima eficiência EcoPlus</p>",
+        "text": "<h2 style=\"text-align: center\">O melhor da tecnologia <br>Electrolux</h2><p style=\"text-align: center\">com a máxima eficiência Ecoplus</p>",
         "link": {
           "text": "Conheça todos os produtos",
           "href": "/#"

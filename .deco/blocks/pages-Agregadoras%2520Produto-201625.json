@@ -206,9 +206,7 @@
           }
         ],
         "configs": {
-          "slidesPerViewResponsive": {
-            "mobile": 1
-          }
+          "slidesPerViewResponsive": {}
         }
       }
     },

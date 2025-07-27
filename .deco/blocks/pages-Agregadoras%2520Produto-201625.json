@@ -1,7 +1,32 @@
 {
   "name": "Agregadoras Produto",
   "path": "/content-hub-product-aggregators",
-  "sections": [],
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductMediaSideBySideSection.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 1
+          }
+        },
+        "image": {
+          "src": {
+            "desktop": "https://data.decoassets.com/content-hub/cc579caf-0182-4c5c-8c1d-3c33c33d017c/5_cavidade-1-(1).jpg",
+            "mobile": "https://data.decoassets.com/content-hub/f7914e66-6b25-4ae3-ae62-ccba6086dda3/5_cavidade-1-mob.jpg"
+          },
+          "link": {
+            "href": "/#",
+            "title": "Sua casa bem vivida"
+          }
+        }
+      }
+    }
+  ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

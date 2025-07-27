@@ -9,28 +9,22 @@ import { useId } from "site/sdk/useId.ts";
 
 interface ProductMediaBannerSectionProps {
   /**
+ * @title Configuração da seção
+ * @description Define o título, subtítulo e espaçamento da seção.
+ */
+  section?: ISection;
+
+  /**
    * @title Lista de produtos
    * @description Conjunto de produtos a serem exibidos dentro do slider.
    */
   products?: Product[] | null;
 
   /**
-  * @title Configurações do slider
-  * @description Define os parâmetros de exibição e comportamento do slider.
+  * @title Direção do conteúdo
+  * @description Troca a direção do conteúdo na seção.
+  * @default false
   */
-  configs?: ISliderConfigs;
-
-  /**
-   * @title Configuração da seção
-   * @description Define o título, subtítulo e espaçamento da seção.
-   */
-  section?: ISection;
-
-  /**
-   * @title Direção do conteúdo
-   * @description Define a disposição do conteúdo dentro da seção.
-   * @default false
-   */
   reverse?: boolean;
 
   /**
@@ -68,7 +62,7 @@ interface ProductMediaBannerSectionProps {
 
     /**
      * @title Reprodução automática
-     * @description Define se o vídeo deve iniciar automaticamente ao ser carregado. (Default: false)
+     * @description Define se o vídeo deve iniciar automaticamente ao ser carregado.
      * @default false
      */
     autoplay?: boolean;
@@ -81,6 +75,12 @@ interface ProductMediaBannerSectionProps {
     "iframe"
     ];
   }
+
+  /**
+* @title Configurações do slider
+* @description Define os parâmetros de exibição e comportamento do slider.
+*/
+  configs?: ISliderConfigs;
 }
 
 export default function ProductMediaBannerSection(

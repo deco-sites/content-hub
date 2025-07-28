@@ -104,6 +104,38 @@
           }
         ]
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "section": {
+          "fullWidth": true
+        },
+        "reverse": true,
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/e9aa4f3a-657c-489d-8c6b-0dcd4bf948ba/BannerWithSlider.png"
+        },
+        "text": "<h2 style=\"text-align: center\">O melhor da tecnologia <br>Electrolux</h2><p style=\"text-align: center\">com a máxima eficiência Ecoplus</p>",
+        "link": {
+          "text": "Conheça todos os produtos",
+          "href": "/#"
+        },
+        "configs": {
+          "customNavigation": {
+            "enabledDesktop": true
+          }
+        }
+      }
     }
   ],
   "seo": {

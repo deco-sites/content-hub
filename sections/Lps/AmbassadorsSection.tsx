@@ -3,7 +3,7 @@ import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { IAmbassador } from "site/types/Ambassador.d.ts";
 
-interface Props {
+interface AmbassadorsSectionProps {
   section?: ISection;
 
   /**
@@ -24,27 +24,24 @@ export default function AmbassadorsSection({
   section,
   ambassadors = [],
   fullWidth = false,
-}: Props) {
+}: AmbassadorsSectionProps) {
   const id = useId();
 
   if (!ambassadors.length) return null;
 
-  // Define classes com base na opção "Ocupar toda a largura"
-const desktopContainerClass = fullWidth
-  ? "w-screen !px-0 flex flex-wrap"
-  : "mx-auto flex flex-wrap";
+  const desktopContainerClass = fullWidth
+    ? "w-screen !px-0 flex flex-wrap"
+    : "mx-auto flex flex-wrap";
 
-const mobileContainerClass = fullWidth
-  ? "w-screen !px-0 grid grid-cols-2 gap-0 md:hidden"
-  : "grid grid-cols-2 gap-0 md:hidden mx-auto";
+  const mobileContainerClass = fullWidth
+    ? "w-screen !px-0 grid grid-cols-2 gap-0 md:hidden"
+    : "grid grid-cols-2 gap-0 md:hidden mx-auto";
 
   return (
     <Section {...section} id={id}>
-      {/* Desktop */}
       <div class={`hidden md:flex ${desktopContainerClass}`}>
         {ambassadors.map((ambassador, index) => (
           <>
-            {/* Imagem */}
             <div class="h-[240px] flex-1">
               <img
                 src={ambassador.imageDesktop}
@@ -53,17 +50,14 @@ const mobileContainerClass = fullWidth
                 loading="lazy"
               />
             </div>
-
-            {/* Texto */}
             <div class="h-[240px] w-[183px] bg-[#002855] text-white flex flex-col justify-center p-4 shrink-0">
-              <h3 class="font-bold text-lg">{ambassador.name}</h3>
+              <h3 class="font-semibold text-lg">{ambassador.name}</h3>
               <p class="text-sm">{ambassador.description}</p>
             </div>
           </>
         ))}
       </div>
 
-      {/* Mobile */}
       <div class={mobileContainerClass}>
         {ambassadors.map((ambassador, index) => {
           const isEven = index % 2 === 0;
@@ -81,7 +75,7 @@ const mobileContainerClass = fullWidth
 
           const text = (
             <div class="h-[240px] col-span-1 bg-[#002855] text-white flex flex-col justify-center p-4">
-              <h3 class="font-bold text-lg">{ambassador.name}</h3>
+              <h3 class="font-semibold text-lg">{ambassador.name}</h3>
               <p class="text-sm">{ambassador.description}</p>
             </div>
           );

@@ -3422,9 +3422,9 @@ input.tab:checked + .tab-content,
   --tw-text-opacity: 1;
   color: rgb(102 119 129 / var(--tw-text-opacity));
 }
-.text-\[\#99E0FF\] {
+.text-\[\#FFFFFF\] {
   --tw-text-opacity: 1;
-  color: rgb(153 224 255 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .text-\[initial\] {
   color: initial;

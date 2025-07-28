@@ -32,8 +32,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/AmbassadorsSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(4, 30, 80); font-size: 36pt\">Embaixadores</span></strong><br><span style=\"color: rgb(4, 30, 80); font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
-          "fullWidth": true
+          "title": "Embaixadores",
+          "fullWidth": true,
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "ambassadors": [
           {
@@ -65,7 +66,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(4, 30, 80); font-size: 36pt\">Categorias</span></strong><br><span style=\"color: rgb(4, 30, 80)\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span><br></p>"
+          "title": "Categorias",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "icons": [
           {
@@ -157,15 +159,16 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Tendências</span></strong></p><p style=\"text-align: center\"><br><span style=\"font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
+          "title": "<h1>Tendências</h1>",
           "fullWidth": true,
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "infoCards": [
           {
             "link": {
-              "color": "#000000"
+              "color": "#000000",
+              "text": "Ver mais",
+              "href": "/#"
             },
             "direction": "right",
             "typeOfContent": {
@@ -173,7 +176,7 @@
               "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
               "alt": "geladeira"
             },
-            "richText": "<h5 style=\"text-align: justify\"><strong><span style=\"color: #041e50\">Geladeira</span></strong></h5><p style=\"text-align: justify\"><strong><span style=\"color: #041e50\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p style=\"text-align: justify\"></p><p style=\"text-align: justify\"><span style=\"color: #2b2936\">Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site electrolux.com</span><span style=\"color: #000004\"><br><br></span><u><span style=\"color: #041e50\">Ver mais</span></u></p>"
+            "richText": "<h1><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h1><p><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
           }
         ]
       }
@@ -183,8 +186,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"color: #041e50; font-size: 36pt\">Sua Casa Bem Vivida</span></strong><br><span style=\"color: #041e50; font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>",
-          "marginTopDesktop": 48
+          "title": "Sua Casa Bem Vivida",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "articles": [
           {
@@ -198,7 +201,7 @@
               }
             },
             "title": "Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a inclui...",
             "cta": "Saiba mais"
           },
           {
@@ -212,7 +215,7 @@
               }
             },
             "title": "Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a inclui...",
             "cta": "Saiba mais"
           },
           {
@@ -226,7 +229,7 @@
               }
             },
             "title": "Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a inclui...",
             "cta": "Saiba mais"
           },
           {
@@ -240,7 +243,7 @@
               }
             },
             "title": "Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a inclui...",
             "cta": "Saiba mais"
           }
         ]
@@ -249,20 +252,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/ImageGridSection.tsx",
-        "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(4, 30, 80); font-size: 36pt\">Galeria</span></strong><br><span style=\"font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
-        },
-        "image1": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
-        "image2": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
-        "image3": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/ImageGridSection.tsx",
-        "section": {},
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "imageCollection": [
           {
             "link": {
@@ -274,11 +264,11 @@
               "loading": "lazy",
               "fetchPriority": "high"
             },
+            "alt": "Lavadora Premium",
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
               "mobile": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
-            },
-            "alt": "Lavadora Premium"
+            }
           },
           {
             "link": {
@@ -290,11 +280,11 @@
               "loading": "lazy",
               "fetchPriority": "high"
             },
+            "alt": "Lavadora Premium",
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
               "mobile": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
-            },
-            "alt": "Lavadora Premium"
+            }
           },
           {
             "link": {
@@ -306,11 +296,11 @@
               "loading": "lazy",
               "fetchPriority": "high"
             },
+            "alt": "Lavadora Premium",
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png",
               "mobile": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
-            },
-            "alt": "Lavadora Premium"
+            }
           }
         ]
       }
@@ -320,7 +310,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageTextCardGridSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"color: rgb(4, 30, 80); font-size: 36pt\">Especiais</span></strong><br><span style=\"color: rgb(4, 30, 80); font-size: 16pt\">Conteudos selecionados de acordo com a sua necessidade</span></p>"
+          "title": "Especiais",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "cards": [
           {

@@ -25,6 +25,85 @@
           }
         }
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "title": "<h1>Aproveite nossas redes sociais</h1><p style=\"text-align: justify\">Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</p>",
+        "icons": [
+          {
+            "id": "Facebook",
+            "href": "/#"
+          },
+          {
+            "id": "Instagram",
+            "href": "/#"
+          },
+          {
+            "id": "Pinterest",
+            "href": "/#"
+          },
+          {
+            "id": "Youtube",
+            "href": "/#"
+          },
+          {
+            "id": "Linkedin",
+            "href": "/#"
+          }
+        ],
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Alecrim"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png"
+            },
+            "alt": "Alecrim"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "title": "Brownie",
+              "href": "/#"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Brownie",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank",
+              "title": "Rita Lobo",
+              "href": "/#"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Rita Lobo",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+            }
+          }
+        ]
+      }
     }
   ],
   "seo": {

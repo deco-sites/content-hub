@@ -7,7 +7,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "marginTopDesktop": 0,
+          "marginTopMobile": 0
         },
         "banners": [
           {
@@ -31,13 +33,16 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Eletrolux no Brasil</span></strong><br><span style=\"font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
-          "fullWidth": true
+          "title": "Eletrolux no Brasil",
+          "fullWidth": true,
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "infoCards": [
           {
             "link": {
-              "color": "#000000"
+              "color": "#000000",
+              "text": "Ver mais",
+              "href": "/#"
             },
             "direction": "right",
             "typeOfContent": {
@@ -45,7 +50,7 @@
               "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
               "alt": "Geladeira"
             },
-            "richText": "<p><span style=\"color: rgb(4, 30, 80); font-size: 14pt\">Geladeira</span><span style=\"color: rgb(4, 30, 80)\"><br><br></span><strong><span style=\"color: rgb(4, 30, 80); font-size: 16pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong><br><br><span style=\"color: rgb(43, 41, 54)\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site electrolux.com.</span></p><p><br></p><p><u><span style=\"color: rgb(4, 30, 80)\">Ver mais</span></u></p>"
+            "richText": "<h1><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h1><p><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
           }
         ]
       }
@@ -56,7 +61,8 @@
         "__resolveType": "site/sections/Lps/AmbassadorsSection.tsx",
         "section": {
           "fullWidth": true,
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Embaixadores</span></strong><br><span style=\"font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>"
+          "title": "Embaixadores",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "ambassadors": [
           {
@@ -85,13 +91,16 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Tendências</span></strong><br><span style=\"font-size: 16pt\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos</span></p>",
-          "fullWidth": true
+          "title": "Tendências",
+          "fullWidth": true,
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "infoCards": [
           {
             "link": {
-              "color": "#000000"
+              "color": "#000000",
+              "text": "Ver mais",
+              "href": "/#"
             },
             "direction": "left",
             "typeOfContent": {
@@ -99,7 +108,7 @@
               "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
               "alt": "Geladeira"
             },
-            "richText": "<p><span style=\"color: rgb(4, 30, 80); font-size: 14pt\">Geladeira</span><span style=\"color: rgb(4, 30, 80)\"><br><br></span><strong><span style=\"color: rgb(4, 30, 80); font-size: 16pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong><br><br><span style=\"color: rgb(43, 41, 54)\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site electrolux.com.</span></p><p><br></p><p><u><span style=\"color: rgb(4, 30, 80)\">Ver mais</span></u></p>"
+            "richText": "<h1><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h1><p><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
           }
         ]
       }
@@ -109,7 +118,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 36pt\">Sua Casa Bem Vivida</span></strong><br><span style=\"font-size: 16pt\">Conteúdos selecionados de acordo com a sua necessidade</span></p>"
+          "title": "Sua Casa Bem Vivida",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "articles": [
           {
@@ -117,7 +127,7 @@
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
             "title": "Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
             "cta": "Saiba mais"
           },
           {
@@ -125,7 +135,7 @@
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
             "title": "Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
             "cta": "Saiba mais"
           },
           {
@@ -133,7 +143,7 @@
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
             "title": "Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
             "cta": "Saiba mais"
           },
           {
@@ -141,7 +151,7 @@
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
             "title": "Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
             "cta": "Saiba mais"
           }
         ]

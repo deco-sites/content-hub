@@ -7,7 +7,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "marginTopDesktop": 0,
+          "marginTopMobile": 0
         },
         "banners": [
           {

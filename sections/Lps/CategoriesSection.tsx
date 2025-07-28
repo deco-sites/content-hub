@@ -4,11 +4,8 @@ import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { IInfoIcon } from "site/types/InfoIcon.d.ts";
 import { DefaultCategoriesSection } from "site/configs/CategoriesSection.ts";
-interface Props {
-  /**
-   * @title Seção
-   * @description Define o título, subtítulo e espaçamento da seção.
-   */
+
+interface CategoriesSectionProps {
   section?: ISection;
 
   /**
@@ -22,7 +19,7 @@ export default function CategoriesSection(
   {
     icons = DefaultCategoriesSection.icons,
     section,
-  }: Props,
+  }: CategoriesSectionProps,
 ) {
   const id = useId();
 

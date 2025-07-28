@@ -302,7 +302,11 @@
               "mobile": "https://assets.decocache.com/content-hub/f297e33e-aba8-4363-9dd8-7e71648efe42/lavadora-premium.png"
             }
           }
-        ]
+        ],
+        "section": {
+          "title": "Galeria",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
+        }
       }
     },
     {

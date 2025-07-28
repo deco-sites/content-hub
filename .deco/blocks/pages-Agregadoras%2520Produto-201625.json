@@ -5,10 +5,35 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Sua casa bem vivida"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/60969699-a762-4b14-9a10-059b142a38f7/banner-inspirese.png",
+              "mobile": "https://assets.decocache.com/content-hub/65e061a3-f00e-4c8d-bc89-a3fa65ea87d1/banner-inspirese-mobile.png"
+            },
+            "alt": "Banner - Sua Casa Bem Vivida"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "<h1>Arquitetura e Decoração</h1>",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
           "fullWidth": true
         },
         "infoCards": [

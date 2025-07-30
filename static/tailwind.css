@@ -2428,10 +2428,6 @@ input.tab:checked + .tab-content,
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
-.my-\[24px\] {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -3701,6 +3697,10 @@ input.tab:checked + .tab-content,
 
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-row {

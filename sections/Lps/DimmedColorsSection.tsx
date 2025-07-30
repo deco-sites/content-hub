@@ -1,6 +1,6 @@
 import { useId } from "site/sdk/useId.ts";
 import { dimmedColorsSectionData } from "site/configs/DimmedColorsSection.ts";
-import type { IResponsiveImage } from "site/types/Article.d.ts";
+import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import Section from "site/components/ui/Section.tsx";

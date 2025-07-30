@@ -48,6 +48,12 @@ export default function TextSection({
 
             @media screen and (min-width: 1280px) {
               .text-section-container {
+                max-width: 640px;
+              }
+            }
+
+            @media screen and (min-width: 1440px) {
+              .text-section-container {
                 max-width: 800px;
               }
             }

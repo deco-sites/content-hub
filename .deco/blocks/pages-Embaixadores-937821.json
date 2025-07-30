@@ -1,0 +1,161 @@
+{
+  "name": "Embaixadores",
+  "path": "/content-hub-ambassadors",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "title": "Rita Lobo"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/47916c20-d567-41cd-a21d-babfb8b9a424/437345a66d701e0fbf18232d6ede515e53f4b1fa.png",
+              "mobile": "https://assets.decocache.com/content-hub/47916c20-d567-41cd-a21d-babfb8b9a424/437345a66d701e0fbf18232d6ede515e53f4b1fa.png"
+            }
+          }
+        ],
+        "section": {
+          "fullWidth": true,
+          "marginTopDesktop": 0
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000",
+              "text": "Ver mais",
+              "href": "/#"
+            },
+            "direction": "left",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png",
+              "alt": "Rita Lobo"
+            },
+            "richText": "<p><strong><span style=\"font-size: 10pt\">Embaixadores</span></strong></p><p><strong><span style=\"font-size: 15pt\">Rita Lobo</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "section": {
+          "fullWidth": true
+        },
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
+          "alt": "Ria Lobo"
+        },
+        "text": "<h2 style=\"text-align: center\">Air Fryers Rita Lobo</h2><p style=\"text-align: center\"><span>Lorem ipsum dolor sit amet consectetur alopra lorem.</span></p>",
+        "reverse": true,
+        "link": {
+          "text": "Ver mais",
+          "href": "/#"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "articles": [
+          {
+            "image": {
+              "alt": "Medalhão de Berinjela com Pesto",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png"
+              }
+            },
+            "title": "Medalhão de Berinjela com Pesto",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "href": "/#",
+            "cta": "Ver receita"
+          },
+          {
+            "image": {
+              "alt": "Medalhão de Berinjela com Pesto",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/59dc675d-6336-48b0-a490-e6718d6c417a/MultiBanner1.png",
+                "mobile": "https://assets.decocache.com/content-hub/6f4e5330-ad61-4ed9-9730-bdb5b0c355d8/MultiBanner1-mobile.png"
+              }
+            },
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "href": "/#",
+            "cta": "Ver receita",
+            "title": "Brownie na Air Fryer"
+          },
+          {
+            "image": {
+              "src": {
+                "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
+                "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
+              },
+              "alt": "Alecrim Açucarado na Air Fryer",
+              "link": {
+                "href": "/#",
+                "title": "Alecrim Açucarado na Air fryer"
+              }
+            },
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "href": "/#",
+            "cta": "Ver receita",
+            "title": "Alecrim Açucarado na Air Fryer"
+          },
+          {
+            "image": {
+              "alt": "Medalhão de Berinjela com Pesto",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
+                "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
+              },
+              "link": {
+                "href": "/#",
+                "title": "Frango Assado na Air Fryer"
+              }
+            },
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "href": "/#",
+            "cta": "Ver receita",
+            "title": "Frango Assado na Air Fryer"
+          }
+        ],
+        "section": {
+          "title": "<h1>Receitas Air Fryer</h1>",
+          "subtitle": "Subtext"
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

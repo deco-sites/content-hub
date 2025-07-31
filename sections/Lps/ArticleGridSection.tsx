@@ -49,55 +49,62 @@ export default function ArticleGridSection(
 
   if (!articles?.length) return null;
 
-  const processedArticles = articles.map((article) => ({
-    ...article,
-    image: {
-      ...article.image,
-      sizes: {
-        ...(article.image?.sizes ?? {}),
-        width: 344,
-        height: 180,
-        widthMobile: 344,
-        heightMobile: 180,
-      },
-    },
-  }))
-
   return (
     <Section {...section} id={id}>
-      <div class="w-full max-w-[1500px] mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-[8px]">
-        {processedArticles.map((
+      <div id="article-grid-container" class="w-full mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-[8px]">
+        {articles.map((
           article,
           index,
         ) => (
-          <a
-            key={index}
-            href={article.href}
-            class="border border-[#dfe7ea] flex flex-col hover:shadow-md transition"
-          >
-            <div class="w-full ma">
-              {article.image?.src?.mobile || article.image?.src?.desktop ? (
-                <ResponsiveImage {...article.image} class="w-full h-auto object-cover" />
-              ) : null}
-            </div>
-            <div class="p-4">
-              <h3
-                class="text-xl font-semibold text-[#041E50] mb-2"
-              >
-                {article.title}
-              </h3>
-              <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux mb-[16px]">
-                {article.description}
-              </p>
-              {article.cta && (
-                <span class="text-sm font-semibold leading-[140%] text-[#5B6A78]">
-                  {article.cta}
-                </span>
-              )}
-            </div>
-          </a>
+          <div key={index} class="border border-[#dfe7ea] flex flex-col hover:shadow-md transition">
+            <a href={article.href}>
+              <div class="article-image-container">
+                {article.image?.src?.mobile || article.image?.src?.desktop ? (
+                  <ResponsiveImage {...article.image} />
+                ) : null}
+              </div>
+              <div class="flex flex-col justify-start items-start w-full px-[16px] py-[24px]">
+                <h3
+                  class="text-xl font-semibold text-[#041E50] mb-[8px]"
+                >
+                  {article.title}
+                </h3>
+                <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux mb-[16px]">
+                  {article.description}
+                </p>
+                {article.cta && (
+                  <span class="text-sm font-semibold leading-[140%] text-[#5B6A78]">
+                    {article.cta}
+                  </span>
+                )}
+              </div>
+            </a>
+          </div>
         ))}
       </div>
+      <style>
+        {`
+          .article-image-container img {
+            height: 207px;
+          }
+
+          @media screen and (min-width:1280px) {
+            #article-grid-container {
+              max-width: 1200px;
+            }
+          }
+          @media screen and (min-width:1440px) {
+            #article-grid-container {
+              max-width: 1360px;
+            }
+          }
+          @media screen and (min-width:1920px) {
+            #article-grid-container {
+              max-width: 1600px;
+            }
+          }
+        `}
+      </style>
     </Section >
   );
 }

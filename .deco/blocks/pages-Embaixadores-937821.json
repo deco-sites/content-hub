@@ -85,9 +85,22 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "title": "<h1>Receitas Air Fryer</h1>",
+          "subtitle": "Subtext"
+        },
         "articles": [
           {
             "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Medalhão de Berinjela com Pesto"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
               "alt": "Medalhão de Berinjela com Pesto",
               "src": {
                 "desktop": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png",
@@ -95,61 +108,341 @@
               }
             },
             "title": "Medalhão de Berinjela com Pesto",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
             "cta": "Ver receita"
           },
           {
             "image": {
-              "alt": "Medalhão de Berinjela com Pesto",
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Brownie na Air Fryer"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Brownie na Air Fryer",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/59dc675d-6336-48b0-a490-e6718d6c417a/MultiBanner1.png",
-                "mobile": "https://assets.decocache.com/content-hub/6f4e5330-ad61-4ed9-9730-bdb5b0c355d8/MultiBanner1-mobile.png"
+                "desktop": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png",
+                "mobile": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png"
               }
             },
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "title": "Brownie na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
-            "cta": "Ver receita",
-            "title": "Brownie na Air Fryer"
+            "cta": "Ver receita"
           },
           {
             "image": {
-              "src": {
-                "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
-                "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Alecrim Açucarado na Air Fryer"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
               },
               "alt": "Alecrim Açucarado na Air Fryer",
-              "link": {
-                "href": "/#",
-                "title": "Alecrim Açucarado na Air fryer"
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png",
+                "mobile": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png"
               }
             },
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "title": "Alecrim Açucarado na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
-            "cta": "Ver receita",
-            "title": "Alecrim Açucarado na Air Fryer"
+            "cta": "Ver receita"
           },
           {
             "image": {
-              "alt": "Medalhão de Berinjela com Pesto",
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Frango Assado na Air Fryer"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Frango Assado na Air Fryer",
               "src": {
                 "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
                 "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
-              },
-              "link": {
-                "href": "/#",
-                "title": "Frango Assado na Air Fryer"
               }
             },
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "title": "Frango Assado na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
             "href": "/#",
-            "cta": "Ver receita",
-            "title": "Frango Assado na Air Fryer"
+            "cta": "Ver receita"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/d6ff837f-2223-4d87-90cb-835f1468ad3e/cooktop-inducao-banner.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/d6ff837f-2223-4d87-90cb-835f1468ad3e/cooktop-inducao-banner.png",
+          "alt": "Ria Lobo"
+        },
+        "text": "<h2 style=\"text-align: center\">Eletroportáteis</h2><p style=\"text-align: center\">Lorem ipsum dolor sit amet consectetur alopra lorem.</p>",
+        "reverse": true,
+        "link": {
+          "text": "Ver mais",
+          "href": "/#"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Medalhão de Berinjela com Pesto"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Medalhão de Berinjela com Pesto",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png"
+              }
+            },
+            "title": "Medalhão de Berinjela com Pesto",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "Ver receita"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Brownie na Air Fryer"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Brownie na Air Fryer",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png",
+                "mobile": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png"
+              }
+            },
+            "title": "Brownie na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "Ver receita"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Alecrim Açucarado na Air Fryer"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Alecrim Açucarado na Air Fryer",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png",
+                "mobile": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png"
+              }
+            },
+            "title": "Alecrim Açucarado na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "Ver receita"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Frango Assado na Air Fryer"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Frango Assado na Air Fryer",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
+                "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
+              }
+            },
+            "title": "Frango Assado na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "Ver receita"
           }
         ],
         "section": {
-          "title": "<h1>Receitas Air Fryer</h1>",
+          "title": "<h1>Receitas Eletroportáteis</h1>",
           "subtitle": "Subtext"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000",
+              "text": "Ver mais",
+              "href": "/#"
+            },
+            "direction": "left",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png",
+              "alt": "Rita Lobo"
+            },
+            "richText": "<p><strong><span style=\"font-size: 10pt\">Embaixadores</span></strong></p><p><strong><span style=\"font-size: 15pt\">Rita Lobo</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
+        "data": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Panelinha - Receitas que funcionam"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Panelinha - Receitas que funcionam",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg",
+                "mobile": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg"
+              }
+            },
+            "title": "Bar & Adega",
+            "text": "Frigobar, cervejeira, adega e acessórios",
+            "link": "/#",
+            "color": {
+              "mobile": "#041E50",
+              "desktop": "#041E50"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Panelinha - Receitas que funcionam"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Panelinha - Receitas que funcionam",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg",
+                "mobile": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg"
+              }
+            },
+            "title": "Bar & Adega",
+            "text": "Frigobar, cervejeira, adega e acessórios",
+            "link": "/#",
+            "color": {
+              "mobile": "#041E50",
+              "desktop": "#041E50"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Panelinha - Receitas que funcionam"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Panelinha - Receitas que funcionam",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg",
+                "mobile": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg"
+              }
+            },
+            "title": "Bar & Adega",
+            "text": "Frigobar, cervejeira, adega e acessórios",
+            "link": "/#",
+            "color": {
+              "mobile": "#041E50",
+              "desktop": "#041E50"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Panelinha - Receitas que funcionam"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Panelinha - Receitas que funcionam",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg",
+                "mobile": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg"
+              }
+            },
+            "title": "Bar & Adega",
+            "text": "Frigobar, cervejeira, adega e acessórios",
+            "link": "/#",
+            "color": {
+              "mobile": "#041E50",
+              "desktop": "#041E50"
+            }
+          }
+        ],
+        "section": {
+          "title": "<h1>Livros Rita Lobo</h1>",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade."
         }
       }
     }

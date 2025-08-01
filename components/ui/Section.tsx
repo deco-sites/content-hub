@@ -39,7 +39,7 @@ export default function Section({
           <Text
             title={subtitle}
             classes={{
-              container: "section-subtitle mb-[16px] text-center normal-case",
+              container: "section-subtitle sm:mb-[16px] lg:mb-[24px] text-center normal-case",
             }}
           />
         )}

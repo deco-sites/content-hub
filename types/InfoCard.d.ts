@@ -145,4 +145,18 @@ export interface IInfoCard {
    * @hide
    */
   applyClassToAllElements?: boolean;
+
+ /**
+ * @title Cor de fundo do bloco de texto
+ * @description Ex: #323333
+ */
+  textBackgroundColor?: string;
+
+  /**
+   * @title Cor do texto
+   * @description Ex: #ffffff
+   */
+  textColor?: string;
+
+
 }

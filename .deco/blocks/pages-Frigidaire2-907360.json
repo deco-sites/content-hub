@@ -1,0 +1,198 @@
+{
+  "name": "Frigidaire2",
+  "path": "/frigidaire2",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
+        },
+        "banners": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/bd7f29ce-8c42-4ade-91df-7f5bc4a10358/Banner-FrigidairePrototipo2.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardCustomBgSection.tsx",
+        "section": {
+          "title": "<p></p>"
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "right",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/8745a05b-0009-4c7d-bb59-4be0201b4401/InfoCard-FrigidairePrototipo2.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/8745a05b-0009-4c7d-bb59-4be0201b4401/InfoCard-FrigidairePrototipo2.png",
+              "alt": "Imagem Frigidaire"
+            },
+            "textBackgroundColor": "#323333",
+            "richText": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24pt\">Un Siglo de Innovación, <br>Pensado para Tu Familia</span><span style=\"color: rgb(255, 255, 255)\"><br><br></span><span style=\"color: rgb(255, 255, 255); font-size: 12pt\">Desde hace más de 100 años, Frigidaire ha estado presente con innovaciones diseñadas para adaptarse a las necesidades de tu familia.<br><br>Descubre todo lo que Frigidaire tiene para ofrecerte.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleFrigidaireSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 24pt\">ATRÉVETE A DESCUBRIR LA FRESCURA DE TUS ALIMENTOS </span></strong><br><br>Refrigeradores que maximizan el espacio de almacenamiento<br>y conservan tus alimentos frescos por más tiempo</p>"
+        },
+        "cards": [
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/417e7243-1862-4ea9-b93b-36750a968dff/Geladeira-Frigidaire.png",
+              "alt": "Geladeira Frigidaire"
+            },
+            "title": "Fácil organización ",
+            "description": "Múltiples espacios para organizar tus alimentos  de la manera que mejor se adapta a tus necesidades"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/25a0da9c-f600-48a9-b361-8a7ec03e358e/Morango-Frigidaire.png",
+              "alt": "MorangoFrigidaire"
+            },
+            "title": "Tecnologia AutoSense",
+            "description": "Controla la temperatura automáticamente, prolongando la vida de tus alimentos hasta un 30% más"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/9df57614-1a80-4e1e-8263-68f948dcee72/Inverter-Frigidaire.png",
+              "alt": "Inverter Frigidaire"
+            },
+            "title": "Tecnología Inverter ",
+            "description": " Mantiene la temperatura más estable para preservar  tus alimentos y ahorrar energía"
+          }
+        ],
+        "heading": "ATRÉVETE A DESCUBRIR LA FRESCURA DE TUS ALIMENTOS"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleFrigidaireSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 22pt\">ATRÉVETE A PROBAR Y COCINAR EN MENOS TEMPO </span></strong><br><br><span style=\"font-size: 14pt\">Refrigeradores que maximizan el espacio de almacenamiento<br>y conservan tus alimentos frescos por más tiempo</span></p>"
+        },
+        "cards": [
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/731c7db8-b276-42ae-a433-65b61342bf8f/Fogao-Frigidaire.png",
+              "alt": "Fogão Frigidaire"
+            },
+            "title": "Fácil de limpiar",
+            "description": "Horno con esmalte vitricado que evita la adherencia de suciedad"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/26a7449e-b65e-48cf-bd46-2b6df60cea85/BocaFogao-Frigidaire.png",
+              "alt": "Boca de Fogão Frigidaire"
+            },
+            "title": "Parrillas robustas ",
+            "description": " Con 8 puntos de apoyo para mayor estabilidad  de los sartenes"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/db19e8b0-2959-4f1c-8928-7e7bcea0e050/Pao-Frigidaire.png",
+              "alt": "Pão Frigidaire"
+            },
+            "title": "Tecnología VaporBake ",
+            "description": "Cocción a Vapor que mejora hasta 2x* los resultados  de la masa haciéndola mucho más crocante"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleFrigidaireSection.tsx",
+        "section": {
+          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 22pt\">ATRÉVETE A DARLE UN CUIDADO EXTRA A TUS PRENDAS </span></strong><br><span style=\"font-size: 14pt\">Lava tu ropa de manera inteligente sin desgastar el color y dejándolas como nuevas</span></p>"
+        },
+        "cards": [
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/5d45a923-691e-4cd0-945e-55e534a762de/LavaLouca-Frigidaire.png",
+              "alt": "Lava Louças"
+            },
+            "title": "Limpieza de alto rendimiento",
+            "description": "Ajusta la limpieza según el nivel de suciedad de tus platos"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/43b026da-aff5-4b63-bf12-89c87eb1a43c/LavaRoupas-Frigidaire.png",
+              "alt": "Boca de Fogão Frigidaire"
+            },
+            "title": "Lavado Rápido ",
+            "description": "Lava rápidamente promoviendo el cuidado y menos desgaste  de la ropa"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/c6a0dcac-e7dd-4413-b1e1-2463e72c2a82/JetClean-Frigidaire.png",
+              "alt": "Pão Frigidaire"
+            },
+            "title": "Tecnología Jet&Clean",
+            "description": "Diluye el 100% de tu detergente y suavizante"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardCustomBgSection.tsx",
+        "section": {},
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "right",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/3da358eb-7f19-4e41-bf0c-4695a0f70773/FrigidaireRed.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/3da358eb-7f19-4e41-bf0c-4695a0f70773/FrigidaireRed.png",
+              "alt": "Logo da marca"
+            },
+            "textBackgroundColor": "#323333",
+            "textColor": "#ffffff",
+            "richText": "<p style=\"text-align: center\"><span style=\"font-size: 26pt\">Más de un siglo </span><span style=\"font-size: 26pt\"><br></span><span style=\"font-size: 26pt\">priorizando a las familias </span><span style=\"font-size: 26pt\"><br></span><span style=\"font-size: 26pt\">con calidad americana y </span><span style=\"font-size: 26pt\"><br></span><span style=\"font-size: 26pt\">durabilidad confiables</span><span>.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/FooterFrigidaireLogoSection.tsx",
+        "section": {},
+        "logo": {
+          "src": "https://assets.decocache.com/content-hub/3382984f-7a42-4f66-bbf1-8b18890458e6/LogoFooter-Frigidaire.png",
+          "alt": "Logo Footer"
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

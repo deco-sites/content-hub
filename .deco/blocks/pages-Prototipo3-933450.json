@@ -1,0 +1,18 @@
+{
+  "name": "Prototipo3",
+  "path": "/prototipo3",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/PdfWithTextSection.tsx",
+        "pdfUrl": "https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf",
+        "footerText": "Termos e condições da campanha Frigidaire válida até 30 de setembro."
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

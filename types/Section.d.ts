@@ -2,9 +2,14 @@ export interface ISection {
   /**
    * @title Título da Seção
    * @description Texto principal da seção.
-   * @format rich-text
-   */
-  title?: string;
+  */
+ title?: string;
+ 
+ /**
+  * @title Subtítulo da Seção
+  * @description Texto secundário da seção.
+ */
+  subtitle?: string;
 
   /**
    * @title Margem Superior (desktop). Default: 0

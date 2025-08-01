@@ -9,23 +9,14 @@ import { DefaultInfoCardSection } from "site/configs/InfoCardSection.ts";
 /**
  * @description Componente de seção contendo um cartão informativo.
  */
-interface Props {
-  /**
-   * @title Configuração da Seção
-   * @description Define o título, subtítulo e espaçamento da seção.
-   */
+interface InfoCardSectionProps {
   section?: ISection;
-
+  configs?: ISliderConfigs;
   /**
    * @title Cartões Informativos
    * @description Conjunto de cartões informativos a serem exibidos dentro do slider.
    */
   infoCards?: IInfoCard[];
-
-  /**
-   * @title Configurações do Slider
-   */
-  configs?: ISliderConfigs;
 }
 
 export default function InfoCardSection(
@@ -33,7 +24,7 @@ export default function InfoCardSection(
     section,
     infoCards = DefaultInfoCardSection.infoCards,
     configs,
-  }: Props,
+  }: InfoCardSectionProps,
 ) {
   const id = useId();
 
@@ -55,7 +46,7 @@ export default function InfoCardSection(
           ?.desktop ?? 1,
       },
     },
-  } as ISliderConfigs;
+  }
 
   return (
     <Section

@@ -7,39 +7,39 @@ interface Card {
   /**
    * @title Imagem
    */
-  image: IResponsiveImage;
+  image?: IResponsiveImage;
 
   /**
    * @title Tag
    */
-  tag: string;
+  tag?: string;
 
   /**
    * @title Título
    */
-  title: string;
+  title?: string;
 
   /**
    * @title Descrição
    */
-  description: string;
+  description?: string;
 
   /**
    * @title Link
    */
-  linkText: string;
+  linkText?: string;
 
   /**
    * @title URL do Link
    */
-  linkUrl: string;
+  linkUrl?: string;
 }
 
 /**
  * @title Grid de Cards com Imagem e Texto
  * @description Exibe uma grade de cards com imagem e textos editáveis.
  */
-interface Props {
+interface ImageTextCardGridSectionProps {
   section?: ISection;
 
   /**
@@ -52,7 +52,7 @@ interface Props {
 export default function ImageTextCardGridSection({
   section,
   cards = [],
-}: Props) {
+}: ImageTextCardGridSectionProps) {
   const id = useId();
 
   if (!cards.length) return null;
@@ -73,13 +73,13 @@ export default function ImageTextCardGridSection({
             />
             <div class="bg-[#001E50] text-white p-4 flex flex-col gap-2 min-h-[160px]">
               <span class="text-sm uppercase opacity-60">{card.tag}</span>
-              <h3 class="text-lg font-bold">{card.title}</h3>
+              <h3 class="text-lg font-semibold">{card.title}</h3>
               <p class="text-sm">{card.description}</p>
               {card.linkUrl && (
                 <a
                   href={card.linkUrl}
                   target="_blank"
-                  class="text-[#99E0FF] underline text-sm mt-2"
+                  class="text-[#FFFFFF] underline text-sm mt-2"
                 >
                   {card.linkText || "Saiba mais"}
                 </a>

@@ -20,7 +20,7 @@ export default function InfoCard(
   const hasVideoOrImage = isVideo ||
     Boolean(
       typeOfContentImage?.srcDesktop &&
-        typeOfContentImage?.srcMobile,
+      typeOfContentImage?.srcMobile,
     );
 
   const linkComponent = (
@@ -37,11 +37,11 @@ export default function InfoCard(
     return (
       <>
         <a
-          href={href ?? "/"}
+          href={href ?? "/#"}
           title={text}
-          class="info-card__link cursor-pointer flex items-center justify-center border border-solid h-12 px-4 rounded-lg text-base leading-[initial] font-semibold transition-all ease-in duration-300"
+          class="info-card__link cursor-pointer flex items-center justify-center text-base leading-[initial]"
           style={{
-            border: `1px solid ${color}`,
+            textDecoration: 'underline',
             color: `${color}`,
           }}
         >
@@ -49,11 +49,11 @@ export default function InfoCard(
         </a>
         <style>
           {`
-          .info-card__link:hover {
-            background: ${color};
-            color: #fff !important;
-          }
-        `}
+            .info-card__link {
+              font-size: 20px;
+              font-weight: 400;
+            }
+          `}
         </style>
       </>
     );
@@ -105,6 +105,15 @@ export default function InfoCard(
           </>
         )
         : null}
+      <style>
+        {`
+      .info-card span,
+      .info-card p {
+          color: #041E50;
+          margin-bottom: 16px;
+        }
+      `}
+      </style>
     </InfoCardComponent>
   );
 }

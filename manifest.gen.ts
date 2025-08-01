@@ -21,23 +21,22 @@ import * as $$$$$$10 from "./sections/Lps/FeatureHighlightSection.tsx";
 import * as $$$$$$11 from "./sections/Lps/FinalCtaWithCardsSection.tsx";
 import * as $$$$$$12 from "./sections/Lps/FooterFrigidaireLogoSection.tsx";
 import * as $$$$$$13 from "./sections/Lps/ImageCollectionGridSection.tsx";
-import * as $$$$$$14 from "./sections/Lps/ImageGridSection.tsx";
-import * as $$$$$$15 from "./sections/Lps/ImageTextCardGridSection.tsx";
-import * as $$$$$$16 from "./sections/Lps/ImageWithTextColumnsSection.tsx";
-import * as $$$$$$17 from "./sections/Lps/InfoCardCustomBgSection.tsx";
-import * as $$$$$$18 from "./sections/Lps/InfoCardSection.tsx";
-import * as $$$$$$19 from "./sections/Lps/MailingProductSection.tsx";
-import * as $$$$$$20 from "./sections/Lps/MultiImageBannerSection.tsx";
-import * as $$$$$$21 from "./sections/Lps/PdfWithTextSection.tsx";
-import * as $$$$$$22 from "./sections/Lps/ReviewsSliderSection.tsx";
-import * as $$$$$$23 from "./sections/Lps/TextSection.tsx";
-import * as $$$$$$24 from "./sections/Lps/TitleFrigidaireSection.tsx";
-import * as $$$$$$25 from "./sections/Lps/VideoWithCtaSection.tsx";
-import * as $$$$$$26 from "./sections/Product/ProductMediaSection.tsx";
-import * as $$$$$$27 from "./sections/Product/ProductMediaSideBySideSection.tsx";
-import * as $$$$$$28 from "./sections/Product/ProductShelfSection.tsx";
-import * as $$$$$$29 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
-import * as $$$$$$30 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$14 from "./sections/Lps/ImageTextCardGridSection.tsx";
+import * as $$$$$$15 from "./sections/Lps/ImageWithTextColumnsSection.tsx";
+import * as $$$$$$16 from "./sections/Lps/InfoCardCustomBgSection.tsx";
+import * as $$$$$$17 from "./sections/Lps/InfoCardSection.tsx";
+import * as $$$$$$18 from "./sections/Lps/MailingProductSection.tsx";
+import * as $$$$$$19 from "./sections/Lps/MultiImageBannerSection.tsx";
+import * as $$$$$$20 from "./sections/Lps/PdfWithTextSection.tsx";
+import * as $$$$$$21 from "./sections/Lps/ReviewsSliderSection.tsx";
+import * as $$$$$$22 from "./sections/Lps/TextSection.tsx";
+import * as $$$$$$23 from "./sections/Lps/TitleFrigidaireSection.tsx";
+import * as $$$$$$24 from "./sections/Lps/VideoWithCtaSection.tsx";
+import * as $$$$$$25 from "./sections/Product/ProductMediaSection.tsx";
+import * as $$$$$$26 from "./sections/Product/ProductMediaSideBySideSection.tsx";
+import * as $$$$$$27 from "./sections/Product/ProductShelfSection.tsx";
+import * as $$$$$$28 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
+import * as $$$$$$29 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -58,23 +57,22 @@ const manifest = {
     "site/sections/Lps/FinalCtaWithCardsSection.tsx": $$$$$$11,
     "site/sections/Lps/FooterFrigidaireLogoSection.tsx": $$$$$$12,
     "site/sections/Lps/ImageCollectionGridSection.tsx": $$$$$$13,
-    "site/sections/Lps/ImageGridSection.tsx": $$$$$$14,
-    "site/sections/Lps/ImageTextCardGridSection.tsx": $$$$$$15,
-    "site/sections/Lps/ImageWithTextColumnsSection.tsx": $$$$$$16,
-    "site/sections/Lps/InfoCardCustomBgSection.tsx": $$$$$$17,
-    "site/sections/Lps/InfoCardSection.tsx": $$$$$$18,
-    "site/sections/Lps/MailingProductSection.tsx": $$$$$$19,
-    "site/sections/Lps/MultiImageBannerSection.tsx": $$$$$$20,
-    "site/sections/Lps/PdfWithTextSection.tsx": $$$$$$21,
-    "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$22,
-    "site/sections/Lps/TextSection.tsx": $$$$$$23,
-    "site/sections/Lps/TitleFrigidaireSection.tsx": $$$$$$24,
-    "site/sections/Lps/VideoWithCtaSection.tsx": $$$$$$25,
-    "site/sections/Product/ProductMediaSection.tsx": $$$$$$26,
-    "site/sections/Product/ProductMediaSideBySideSection.tsx": $$$$$$27,
-    "site/sections/Product/ProductShelfSection.tsx": $$$$$$28,
-    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$29,
-    "site/sections/Theme/Theme.tsx": $$$$$$30,
+    "site/sections/Lps/ImageTextCardGridSection.tsx": $$$$$$14,
+    "site/sections/Lps/ImageWithTextColumnsSection.tsx": $$$$$$15,
+    "site/sections/Lps/InfoCardCustomBgSection.tsx": $$$$$$16,
+    "site/sections/Lps/InfoCardSection.tsx": $$$$$$17,
+    "site/sections/Lps/MailingProductSection.tsx": $$$$$$18,
+    "site/sections/Lps/MultiImageBannerSection.tsx": $$$$$$19,
+    "site/sections/Lps/PdfWithTextSection.tsx": $$$$$$20,
+    "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$21,
+    "site/sections/Lps/TextSection.tsx": $$$$$$22,
+    "site/sections/Lps/TitleFrigidaireSection.tsx": $$$$$$23,
+    "site/sections/Lps/VideoWithCtaSection.tsx": $$$$$$24,
+    "site/sections/Product/ProductMediaSection.tsx": $$$$$$25,
+    "site/sections/Product/ProductMediaSideBySideSection.tsx": $$$$$$26,
+    "site/sections/Product/ProductShelfSection.tsx": $$$$$$27,
+    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$28,
+    "site/sections/Theme/Theme.tsx": $$$$$$29,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

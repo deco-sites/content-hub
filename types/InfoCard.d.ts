@@ -57,19 +57,17 @@ export interface IInfoCardVideo {
 }
 
 /**
- * @title {{#title}}{{title}}{{/title}}{{^title}}Info Card{{/title}}
+ * @title {{#title}}{{title}}{{/title}}{{^title}}InfoCard{{/title}}
  */
 export interface IInfoCard {
   /**
-   * @title Título do Info Card
-   * @description Utilizado para identificar o info card no CMS.
+   * @title Título
    */
   titleCMS?: string;
-
+  
   /**
-   * @title Texto Descritivo
-   * @description Texto descritivo formatado para exibição no cartão.
-   * @format rich-text
+   * @title Texto
+   * @format rich-text 
    */
   richText?: string;
 

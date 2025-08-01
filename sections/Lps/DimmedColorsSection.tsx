@@ -1,135 +1,141 @@
-import { Text } from "@eluxlab/library-components";
+import { useId } from "site/sdk/useId.ts";
 import { dimmedColorsSectionData } from "site/configs/DimmedColorsSection.ts";
-import type { IResponsiveImage } from "site/types/Article.d.ts";
+import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
+import type { ISection } from "site/types/Section.d.ts";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import Section from "site/components/ui/Section.tsx";
 
+/**
+ * @title Cores
+ * @description RGBA das cores para cada tipo de dispositivo
+ */
 type DimmedColors = {
   mobile?: string;
   desktop?: string;
 };
 
+/**
+ * @title Card infromativo
+ */
 type DimmedColorsData = {
+  /**
+   * @title Título
+   */
   title?: string;
+  /**
+   * @title Texto
+   */
   text?: string;
+  /**
+  * @title Link
+  */
   link?: string;
   color?: DimmedColors;
   image?: IResponsiveImage;
 };
 
 interface DimmedColorsSection {
-  title: string;
-  text: string;
+  section?: ISection;
+  /**
+  * @title Lista de cards informativos
+  */
   data?: DimmedColorsData[];
 }
 
 export default function DimmedColorsSection(
   {
-    title = dimmedColorsSectionData.title,
-    text = dimmedColorsSectionData.text,
+    section,
     data = dimmedColorsSectionData
       .threeItemsData,
   }: DimmedColorsSection,
 ) {
+  const id = useId();
+
   return (
     <Section
-      id="dimmed-colors"
-      title={""}
+      {...section}
+      id={id}
     >
-      <div class="flex flex-col text-center pt-[1rem]">
-        <h1 id="dimmed-colors__title">
-          {title}
-        </h1>
-        <p
-          id="dimmed-colors__text"
-          class="px-3 pb-3 text-center"
-        >
-          {text}
-        </p>
-        <div
-          id="dimmed-colors-items__container"
-          class="flex flex-col"
-        >
-          {data.map(
-            (item, index) => {
-              return (
-                <a
-                  href={item.link}
-                  key={index}
+      <div
+        id="dimmed-colors-items__container"
+        class="flex flex-col justify-center items-center w-full"
+      >
+        {data.map(
+          (item, index) => {
+            return (
+              <a
+                href={item.link}
+                key={index}
+              >
+                <div
+                  id="dimmed-colors-item__container"
+                  class="relative flex flex-col overflow-hidden h-[171px]"
                 >
+                  <ResponsiveImage
+                    {...item.image}
+                  />
                   <div
-                    id="dimmed-colors-item__container"
-                    class="relative flex flex-col overflow-hidden"
+                    id="dimmed-colors-item__mobile"
+                    style={{
+                      backgroundColor: item.color
+                        .mobile,
+                    }}
+                    class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
                   >
-                    <ResponsiveImage
-                      {...item.image}
-                    />
-                    <div
-                      id="dimmed-colors-item__mobile"
-                      style={{
-                        backgroundColor: item.color
-                          .mobile,
-                      }}
-                      class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
-                    >
-                      <h3 class="font-semibold">
-                        {item.title}
-                      </h3>
-                      <p>{item.text}</p>
-                    </div>
-                    <div
-                      id="dimmed-colors-item__desktop"
-                      style={{
-                        backgroundColor: item.color
-                          .desktop,
-                      }}
-                      class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
-                    >
-                      <h3 class="font-semibold">
-                        {item.title}
-                      </h3>
-                      <p>{item.text}</p>
-                    </div>
+                    <h3 id="dimmed-colors-item-title__mobile" class="font-semibold">
+                      {item.title}
+                    </h3>
+                    <p id="dimmed-colors-item-text__mobile">{item.text}</p>
                   </div>
-                </a>
-              );
-            },
-          )}
-        </div>
+                  <div
+                    id="dimmed-colors-item__desktop"
+                    style={{
+                      backgroundColor: item.color
+                        .desktop,
+                    }}
+                    class="absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
+                  >
+                    <h3 class="font-semibold">
+                      {item.title}
+                    </h3>
+                    <p>{item.text}</p>
+                  </div>
+                </div>
+              </a>
+            );
+          },
+        )}
       </div>
       <style>
         {`
-          #section-dimmed-colors {
-            justify-content: center; 
-            align-items: center;
-          }
-
-          #dimmed-colors__title {
-            text-align: center;
-            font-size: 36px;
-            color: #041E50;
-            padding-bottom: 0.75rem; 
-          }
-
-          #dimmed-colors__text {
-            text-align: center;
-            font-size: 22px;
-            font-weight: 400;
-            color: #041E50;
-          }
-
           #dimmed-colors-item__mobile {
             display: flex;
+          }
+
+          #dimmed-colors-item-title__mobile {
+            font-size: 26px;
+            font-weight: 600;
+            color: #FFFFFF;
+          }
+
+          #dimmed-colors-item-text__mobile {
+            font-size: 16px;
+            font-weight: 400;
+            color: #FFFFFF;
           }
 
           #dimmed-colors-item__desktop {
             display: none;
           }
 
-          @media screen and (min-width:1024px) {
+          @media screen and (min-width:1280px) {
             #dimmed-colors-items__container {
               flex-direction: row;
-              gap: 0.25rem;
+              gap: 8px;
+            }
+            
+            #dimmed-colors-item__container {
+              height: 100%;
             }
 
             #dimmed-colors-item__mobile {
@@ -141,7 +147,7 @@ export default function DimmedColorsSection(
               justify-content: flex-start;
               padding-top: 2vh;
               position: static;
-              height: 12vh;
+              height: 15vh;
             }
           }
         `}

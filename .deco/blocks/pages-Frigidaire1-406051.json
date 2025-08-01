@@ -1,0 +1,43 @@
+{
+  "name": "Frigidaire1",
+  "path": "/frigidaire1",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TitleFrigidaireSection.tsx",
+        "section": {
+          "fullWidth": false,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/FeatureHighlightSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "marginBottomDesktop": 0,
+          "marginBottomMobile": 0
+        },
+        "topImage": "https://assets.decocache.com/content-hub/153d4e09-dc90-45ff-83e9-08be0a5118e8/Cooker_Vapor_Bake_Comparativo_Frigidaire_Spanish.jpg",
+        "stoveImage": "https://assets.decocache.com/content-hub/3b45ba99-bc81-4c17-a5e2-1c24a79feacc/Cooker_FKGN30C3MYG_Front_Frigidaire_Spanish_mod.png"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/FinalCtaWithCardsSection.tsx",
+        "section": {},
+        "leftImage": "https://assets.decocache.com/content-hub/8b0360d3-917a-425f-8a40-1df536f4438f/Cooker_RoundWire_Feature_Frigidaire_Spanish.jpg",
+        "rightImage": "https://assets.decocache.com/content-hub/c91b377f-359c-4327-820f-a50eb7220a1e/Cooker_RoundWire_Feature_Frigidaire_Spanish.jpg"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

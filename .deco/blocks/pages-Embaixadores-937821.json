@@ -445,6 +445,18 @@
           "subtitle": "Conteúdos selecionados de acordo com a sua necessidade."
         }
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductAmbassadorsSection.tsx",
+        "section": {
+          "title": "<h1>Quer uma mãozinha? Nossos embaixadores te ajudam!</h1>"
+        },
+        "ambassadors": [
+          {}
+        ]
+      }
     }
   ],
   "seo": {

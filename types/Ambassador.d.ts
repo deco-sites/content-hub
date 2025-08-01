@@ -1,4 +1,5 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { IResponsiveImage } from "../ResponsiveImage.d.ts";
+import type { Product } from "apps/commerce/types.ts";
 
 export interface IAmbassador {
     /**
@@ -8,13 +9,13 @@ export interface IAmbassador {
     /**
     * @title Descrição do Embaixador
     */
-    description: string;
+    description?: string;
     /**
-    * @title Imagem Desktop
+    * @title Fotos do Embaixador
     */
-    imageDesktop: ImageWidget;
+    image?: IResponsiveImage;
     /**
-    * @title Imagem Mobile
+    * @title Produto do Embaixador
     */
-    imageMobile: ImageWidget;
+    product?: Product;
 }

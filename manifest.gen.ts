@@ -23,11 +23,12 @@ import * as $$$$$$12 from "./sections/Lps/MultiImageBannerSection.tsx";
 import * as $$$$$$13 from "./sections/Lps/ReviewsSliderSection.tsx";
 import * as $$$$$$14 from "./sections/Lps/SolidColorsSection.tsx";
 import * as $$$$$$15 from "./sections/Lps/TextSection.tsx";
-import * as $$$$$$16 from "./sections/Product/ProductMediaSection.tsx";
-import * as $$$$$$17 from "./sections/Product/ProductMediaSideBySideSection.tsx";
-import * as $$$$$$18 from "./sections/Product/ProductShelfSection.tsx";
-import * as $$$$$$19 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
-import * as $$$$$$20 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$16 from "./sections/Product/ProductAmbassadorsSection.tsx";
+import * as $$$$$$17 from "./sections/Product/ProductMediaSection.tsx";
+import * as $$$$$$18 from "./sections/Product/ProductMediaSideBySideSection.tsx";
+import * as $$$$$$19 from "./sections/Product/ProductShelfSection.tsx";
+import * as $$$$$$20 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
+import * as $$$$$$21 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -50,11 +51,12 @@ const manifest = {
     "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$13,
     "site/sections/Lps/SolidColorsSection.tsx": $$$$$$14,
     "site/sections/Lps/TextSection.tsx": $$$$$$15,
-    "site/sections/Product/ProductMediaSection.tsx": $$$$$$16,
-    "site/sections/Product/ProductMediaSideBySideSection.tsx": $$$$$$17,
-    "site/sections/Product/ProductShelfSection.tsx": $$$$$$18,
-    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$19,
-    "site/sections/Theme/Theme.tsx": $$$$$$20,
+    "site/sections/Product/ProductAmbassadorsSection.tsx": $$$$$$16,
+    "site/sections/Product/ProductMediaSection.tsx": $$$$$$17,
+    "site/sections/Product/ProductMediaSideBySideSection.tsx": $$$$$$18,
+    "site/sections/Product/ProductShelfSection.tsx": $$$$$$19,
+    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$20,
+    "site/sections/Theme/Theme.tsx": $$$$$$21,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

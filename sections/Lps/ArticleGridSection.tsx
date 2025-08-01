@@ -49,20 +49,6 @@ export default function ArticleGridSection(
 
   if (!articles?.length) return null;
 
-  const processedArticles = articles.map((article) => ({
-    ...article,
-    image: {
-      ...article.image,
-      sizes: {
-        ...(article.image?.sizes ?? {}),
-        width: 344,
-        height: 180,
-        widthMobile: 344,
-        heightMobile: 180,
-      },
-    },
-  }))
-
   return (
     <Section {...section} id={id}>
       <div id="article-grid-container" class="w-full mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-[8px]">
@@ -84,7 +70,6 @@ export default function ArticleGridSection(
                   {article.title}
                 </h3>
                 <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux mb-[16px]">
-                  {article.description}
                 </p>
                 {article.cta && (
                   <span class="text-sm font-semibold leading-[140%] text-[#5B6A78]">

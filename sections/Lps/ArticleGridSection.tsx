@@ -49,6 +49,20 @@ export default function ArticleGridSection(
 
   if (!articles?.length) return null;
 
+  const processedArticles = articles.map((article) => ({
+    ...article,
+    image: {
+      ...article.image,
+      sizes: {
+        ...(article.image?.sizes ?? {}),
+        width: 344,
+        height: 180,
+        widthMobile: 344,
+        heightMobile: 180,
+      },
+    },
+  }))
+
   return (
     <Section {...section} id={id}>
       <div id="article-grid-container" class="w-full mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-[8px]">

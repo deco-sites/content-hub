@@ -1,0 +1,197 @@
+{
+  "name": "Prototipo2",
+  "path": "/prototipo2",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "section": {}
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {},
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "right",
+            "typeOfContent": {
+              "autoplay": false,
+              "iframeProps": {},
+              "src": "https://www.youtube.com/embed/pO7KwngOo_8",
+              "title": "Titulo"
+            },
+            "richText": "<p><strong><em><span style=\"color: rgb(48, 63, 41)\">Geladeiras</span></em></strong></p><h2 style=\"text-align: right\"><strong><span style=\"color: rgb(48, 63, 41)\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></h2><p style=\"text-align: justify\"><span style=\"color: rgb(48, 63, 41)\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\"><u><span style=\"color: rgb(48, 63, 41)\">electrolux.com</span></u></a><span style=\"color: rgb(48, 63, 41)\">.</span></p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleResponsiveGridSection.tsx",
+        "section": {},
+        "articles": [
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "cta": "Saiba mais",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "href": "#"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br />  carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br />  carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleResponsiveGridSection.tsx",
+        "section": {},
+        "articles": [
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleResponsiveGridSection.tsx",
+        "section": {},
+        "articles": [
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "href": "#",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br />  carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "href": "#",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "sizes": {
+                "width": 394,
+                "height": 438,
+                "widthMobile": 167,
+                "heightMobile": 333
+              }
+            },
+            "title": "Entrega com <br />  carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "href": "#",
+            "cta": "saiba mais"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {}
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

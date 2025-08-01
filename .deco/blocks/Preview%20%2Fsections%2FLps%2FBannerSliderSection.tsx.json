@@ -1,0 +1,39 @@
+{
+  "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+  "section": {
+    "marginTopDesktop": 0,
+    "marginTopMobile": 0,
+    "marginBottomDesktop": 52,
+    "marginBottomMobile": 32,
+    "fullWidth": false
+  },
+  "banners": [],
+  "configs": {
+    "loop": false,
+    "lazy": false,
+    "centeredSlides": false,
+    "slidesPerViewResponsive": {
+      "mobile": 1,
+      "tablet": 1,
+      "desktop": 3
+    },
+    "customNavigation": {
+      "enabled": false,
+      "enabledMobile": false,
+      "enabledDesktop": false
+    },
+    "customPagination": {
+      "enabled": false,
+      "enabledMobile": false,
+      "enabledDesktop": false,
+      "dynamicBullets": false,
+      "dynamicMainBullets": 1,
+      "clickable": true
+    },
+    "autoplay": {
+      "enabled": false
+    },
+    "speed": 300,
+    "spaceBetween": 0
+  }
+}

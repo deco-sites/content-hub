@@ -70,6 +70,7 @@ export default function ArticleGridSection(
                   {article.title}
                 </h3>
                 <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux mb-[16px]">
+                  {article.description}
                 </p>
                 {article.cta && (
                   <span class="text-sm font-semibold leading-[140%] text-[#5B6A78]">

@@ -152,6 +152,118 @@
           "subtitle": "Subtext"
         }
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
+        "section": {
+          "title": "Sua Casa Bem Vivida",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
+        },
+        "data": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Panelinha"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Panelinha",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg",
+                "mobile": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg"
+              }
+            },
+            "title": "Bar & Adega",
+            "text": "Frigobar, cervejeira, adega e acessórios",
+            "link": "/#",
+            "color": {
+              "mobile": "#041E50",
+              "desktop": "#041E50"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Panelinha"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Panelinha",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/8b6cb0b1-523d-48f7-a58c-b8c24eaa3621/530cf0586f3422d608f16261ac2117e9986b4618.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/8b6cb0b1-523d-48f7-a58c-b8c24eaa3621/530cf0586f3422d608f16261ac2117e9986b4618.jpg"
+              }
+            },
+            "title": "Bem﻿-estar",
+            "link": "/#",
+            "color": {
+              "mobile": "#6C7B67",
+              "desktop": "#6C7B67"
+            },
+            "text": "Ar condicionado, filtros de água e mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "O que tem na geladeira"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/d430fca4-be72-457b-867e-6fef64d49f89/150e69b10066f1149f63b5fdc910bd0a3e703c88.png",
+                "mobile": "https://assets.decocache.com/content-hub/d430fca4-be72-457b-867e-6fef64d49f89/150e69b10066f1149f63b5fdc910bd0a3e703c88.png"
+              },
+              "alt": "O que tem na geladeira"
+            },
+            "title": "Lavander﻿ia e Limpeza",
+            "link": "/#",
+            "color": {
+              "mobile": "#4A1E18",
+              "desktop": "#4A1E18"
+            },
+            "text": "Máquinas de lavar, secar e acessórios"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Pitadas da Rita"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Pitadas da Rita",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9ce40c44-df2f-451a-9426-c18b7a22eb98/fba69cf2dec60df4ad03a30ebed7e2b424b5ffce.png",
+                "mobile": "https://assets.decocache.com/content-hub/9ce40c44-df2f-451a-9426-c18b7a22eb98/fba69cf2dec60df4ad03a30ebed7e2b424b5ffce.png"
+              }
+            },
+            "title": "Cozi﻿nha",
+            "text": "Geladeiras, fogões e acessórios",
+            "link": "/#",
+            "color": {
+              "mobile": "#7E6464",
+              "desktop": "#7E6464"
+            }
+          }
+        ]
+      }
     }
   ],
   "seo": {

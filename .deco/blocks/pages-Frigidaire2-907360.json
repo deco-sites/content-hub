@@ -32,7 +32,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardCustomBgSection.tsx",
-        "section": {},
+        "section": {
+          "fullWidth": true
+        },
         "infoCards": [
           {
             "link": {
@@ -49,7 +51,12 @@
             "richText": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24pt\">Un Siglo de Innovación, <br>Pensado para Tu Familia</span><span style=\"color: rgb(255, 255, 255)\"><br><br></span><span style=\"color: rgb(255, 255, 255); font-size: 12pt\">Desde hace más de 100 años, Frigidaire ha estado presente con innovaciones diseñadas para adaptarse a las necesidades de tu familia.<br><br>Descubre todo lo que Frigidaire tiene para ofrecerte.</span></p>",
             "textColor": "#fff"
           }
-        ]
+        ],
+        "configs": {
+          "autoplay": {
+            "enabled": true
+          }
+        }
       }
     },
     {
@@ -57,7 +64,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleFrigidaireSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 24pt\">ATRÉVETE A DESCUBRIR LA FRESCURA DE TUS ALIMENTOS </span></strong><br><br>Refrigeradores que maximizan el espacio de almacenamiento<br>y conservan tus alimentos frescos por más tiempo</p>"
+          "title": "<h1 style=\"text-align: center; font-family: 'Gotham', sans-serif; font-weight: 700; font-size: 34px; line-height: 30px; color: #000; text-transform: uppercase;\">   ATRÉVETE A DESCUBRIR LA FRESCURA DE TUS ALIMENTOS </h1>",
+          "subtitle": "<p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   Refrigeradores que maximizan el espacio de almacenamiento </p> <p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   y conservan tus alimentos frescos por más tiempo </p>"
         },
         "cards": [
           {
@@ -93,7 +101,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleFrigidaireSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 22pt\">ATRÉVETE A PROBAR Y COCINAR EN MENOS TEMPO </span></strong><br><br><span style=\"font-size: 14pt\">Refrigeradores que maximizan el espacio de almacenamiento<br>y conservan tus alimentos frescos por más tiempo</span></p>"
+          "title": "<h1 style=\"text-align: center; font-family: 'Gotham', sans-serif; font-weight: 700; font-size: 34px; line-height: 30px; color: #000; text-transform: uppercase;\">   ATRÉVETE A PROBAR Y COCINAR EN MENOS TIEMPO </h1>",
+          "subtitle": "<p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   Refrigeradores que maximizan el espacio de almacenamiento </p><p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   y conservan tus alimentos frescos por más tiempo </p>"
         },
         "cards": [
           {
@@ -128,7 +137,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleFrigidaireSection.tsx",
         "section": {
-          "title": "<p style=\"text-align: center\"><strong><span style=\"font-size: 22pt\">ATRÉVETE A DARLE UN CUIDADO EXTRA A TUS PRENDAS </span></strong><br><span style=\"font-size: 14pt\">Lava tu ropa de manera inteligente sin desgastar el color y dejándolas como nuevas</span></p>"
+          "title": "<h1 style=\"text-align: center; font-family: 'Gotham', sans-serif; font-weight: 700; font-size: 34px; line-height: 30px; color: #000; text-transform: uppercase;\">   ATRÉVETE A DARLE UN CUIDADO EXTRA A TUS PRENDAS </h1>",
+          "subtitle": "<p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   Lava tu ropa de manera inteligente sin desgastar el color </p>  <p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   y dejándolas como nuevas </p>"
         },
         "cards": [
           {
@@ -176,7 +186,7 @@
             },
             "textBackgroundColor": "#323333",
             "textColor": "#fff",
-            "richText": "<p style=\"text-align: center\"><span style=\"color: #ffffff; font-size: 26pt\">Más de un siglo <br>priorizando a las familias <br>con calidad americana y <br>durabilidad confiables</span><span style=\"color: #ffffff\">.</span></p>"
+            "richText": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 26pt\">Más de un siglo <br>priorizando a las familias <br>con calidad americana y <br>durabilidad confiables</span><span style=\"color: rgb(255, 255, 255)\">.</span></p>"
           }
         ]
       }

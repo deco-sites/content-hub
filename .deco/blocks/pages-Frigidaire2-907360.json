@@ -9,7 +9,7 @@
         "section": {
           "marginBottomDesktop": 0,
           "marginBottomMobile": 0,
-          "fullWidth": false
+          "fullWidth": true
         },
         "banners": [
           {
@@ -32,31 +32,27 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardCustomBgSection.tsx",
-        "section": {
-          "fullWidth": true
-        },
         "infoCards": [
           {
+            "fontFamily": "Arial",
             "link": {
               "color": "#000000"
             },
-            "direction": "right",
+            "direction": "left",
             "typeOfContent": {
-              "autoplay": true,
+              "autoplay": false,
               "iframeProps": {},
               "src": "https://assets.decocache.com/content-hub/953e78fb-6853-45b3-95e0-732449765c43/video-global-ES-lifestyle-(2)-(1).mp4",
-              "title": "Video Frigidaire"
+              "title": "Frigidaire"
             },
+            "richText": "<p></p>",
             "textBackgroundColor": "#323333",
-            "richText": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24pt\">Un Siglo de Innovación, <br>Pensado para Tu Familia</span><span style=\"color: rgb(255, 255, 255)\"><br><br></span><span style=\"color: rgb(255, 255, 255); font-size: 12pt\">Desde hace más de 100 años, Frigidaire ha estado presente con innovaciones diseñadas para adaptarse a las necesidades de tu familia.<br><br>Descubre todo lo que Frigidaire tiene para ofrecerte.</span></p>",
-            "textColor": "#fff"
+            "textColor": "#ffffff",
+            "titleCMS": "TESTE",
+            "description": "<p>Desde hace más de 100 años, Frigidaire ha estado presente con innovaciones diseñadas para adaptarse a las necesidades de tu familia. <br><br>Descubre todo lo que Frigidaire tiene para ofrecerte.</p>",
+            "title": "<p>UN SIGLO DE INNOVACIÓN, </p><p>PENSADO PARA TU FAMILIA</p>"
           }
-        ],
-        "configs": {
-          "autoplay": {
-            "enabled": true
-          }
-        }
+        ]
       }
     },
     {
@@ -172,21 +168,26 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardCustomBgSection.tsx",
-        "section": {},
+        "section": {
+          "fullWidth": false
+        },
         "infoCards": [
           {
             "link": {
               "color": "#000000"
             },
-            "direction": "right",
+            "direction": "left",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/3da358eb-7f19-4e41-bf0c-4695a0f70773/FrigidaireRed.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/3da358eb-7f19-4e41-bf0c-4695a0f70773/FrigidaireRed.png",
-              "alt": "Logo da marca"
+              "autoplay": true,
+              "iframeProps": {},
+              "src": "https://assets.decocache.com/content-hub/30b2248b-cec7-48de-803b-c158ab25e1fd/F_Timeline_Video_1620x1080-(1)-(1).mp4",
+              "title": "Frigidaire video 2"
             },
             "textBackgroundColor": "#323333",
             "textColor": "#fff",
-            "richText": "<p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 26pt\">Más de un siglo <br>priorizando a las familias <br>con calidad americana y <br>durabilidad confiables</span><span style=\"color: rgb(255, 255, 255)\">.</span></p>"
+            "richText": "<p></p>",
+            "fontFamily": "Gotham",
+            "title": "<p>Más de un siglo <br>priorizando a las familias <br>con calidad americana y <br>durabilidad confiables.</p>"
           }
         ]
       }
@@ -195,7 +196,9 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/FooterFrigidaireLogoSection.tsx",
-        "section": {},
+        "section": {
+          "fullWidth": false
+        },
         "logo": {
           "src": "https://assets.decocache.com/content-hub/3382984f-7a42-4f66-bbf1-8b18890458e6/LogoFooter-Frigidaire.png",
           "alt": "Logo Footer"

@@ -5,6 +5,7 @@
 import * as $_app from "./routes/_app.tsx";
 import * as $ArticleSlider from "./islands/ArticleSlider.tsx";
 import * as $BannerSlider from "./islands/BannerSlider.tsx";
+import * as $CustomInfoCardSlider from "./islands/CustomInfoCardSlider.tsx";
 import * as $InfoCardSlider from "./islands/InfoCardSlider.tsx";
 import * as $ProductShelf from "./islands/ProductShelf.tsx";
 import type { Manifest } from "$fresh/server.ts";
@@ -16,6 +17,7 @@ const manifest = {
   islands: {
     "./islands/ArticleSlider.tsx": $ArticleSlider,
     "./islands/BannerSlider.tsx": $BannerSlider,
+    "./islands/CustomInfoCardSlider.tsx": $CustomInfoCardSlider,
     "./islands/InfoCardSlider.tsx": $InfoCardSlider,
     "./islands/ProductShelf.tsx": $ProductShelf,
   },

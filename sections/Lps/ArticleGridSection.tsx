@@ -63,13 +63,13 @@ export default function ArticleGridSection(
                   <ResponsiveImage {...article.image} />
                 ) : null}
               </div>
-              <div class="flex flex-col justify-start items-start w-full px-[16px] py-[24px]">
+              <div class="flex flex-col justify-start items-start w-full px-[8px] py-[12px] lg:px-[16px] lg:py-[24px]">
                 <h3
                   class="text-xl font-semibold text-[#041E50] mb-[8px]"
                 >
                   {article.title}
                 </h3>
-                <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux mb-[16px]">
+                <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux overflow-hidden max-h-[65px] mb-[8px] lg:mb-[16px]">
                   {article.description}
                 </p>
                 {article.cta && (
@@ -85,10 +85,16 @@ export default function ArticleGridSection(
       <style>
         {`
           .article-image-container img {
-            height: 207px;
+            width: 165px;
+            height: 124px;
           }
 
           @media screen and (min-width:1280px) {
+            .article-image-container img {
+              width: 294px;
+              height: 207px;
+            }
+
             #article-grid-container {
               max-width: 1200px;
             }

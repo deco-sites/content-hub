@@ -51,7 +51,7 @@ export default function ArticleGridSection(
 
   return (
     <Section {...section} id={id}>
-      <div id="article-grid-container" class="w-full mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-[8px]">
+      <div id="article-grid-container" class="w-full mx-auto grid grid-cols-2 lg:grid-cols-4 gap-[8px]">
         {articles.map((
           article,
           index,

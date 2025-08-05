@@ -3420,6 +3420,9 @@ input.tab:checked + .tab-content,
 .text-\[24px\] {
   font-size: 24px;
 }
+.text-\[26px\] {
+  font-size: 26px;
+}
 .text-\[48px\] {
   font-size: 48px;
 }
@@ -3841,10 +3844,6 @@ input.tab:checked + .tab-content,
 }
 @media (min-width: 640px) {
 
-  .sm\:mb-\[16px\] {
-    margin-bottom: 16px;
-  }
-
   .sm\:h-\[273px\] {
     height: 273px;
   }
@@ -3875,10 +3874,6 @@ input.tab:checked + .tab-content,
 
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-row {

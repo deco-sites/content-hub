@@ -90,7 +90,7 @@ export default function SolidColorsSection(
                     }}
                     class="flex flex-col justify-start items-start h-[170px] w-full px-[24px] pt-[24px] text-white"
                   >
-                    <h3 class="font-semibold">
+                    <h3 class="font-semibold text-[26px]">
                       {item.title}
                     </h3>
                     <p>{item.text}</p>
@@ -103,12 +103,12 @@ export default function SolidColorsSection(
       </div>
       <style>
         {`
-          .solid-color-image-container img {
-            height: 240px;
-            width: 391px;
-          }
-          
           @media screen and (min-width:1280px) {
+            .solid-color-image-container img {
+              height: 240px;
+              width: 391px;
+            }
+
             #solid-colors-container {
               max-width: 1200px;
             }

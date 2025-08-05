@@ -31,7 +31,7 @@ export default function Section({
           <Text
             title={title}
             classes={{
-              container: "section-title flex flex-col gap-y-[8px] mt-[24px] text-center normal-case",
+              container: "section-title flex flex-col mb-[8px] mt-[24px] text-center normal-case",
             }}
           />
         )}
@@ -39,7 +39,7 @@ export default function Section({
           <Text
             title={subtitle}
             classes={{
-              container: "section-subtitle sm:mb-[16px] lg:mb-[24px] text-center normal-case",
+              container: "section-subtitle mb-[16px] lg:mb-[24px] text-center normal-case",
             }}
           />
         )}

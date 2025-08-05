@@ -105,6 +105,7 @@ export default function SolidColorsSection(
         {`
           .solid-color-image-container img {
             height: 240px;
+            width: 391px;
           }
           
           @media screen and (min-width:1280px) {

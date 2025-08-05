@@ -82,12 +82,12 @@ export default function ProductAmbassadorsSection(
       {/* <div class="flex flex-col w-full mx-auto gap-4 lg:gap-6">
         <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row">
           <div class="flex w-full lg:w-[unset] lg:max-w-[500px] xl:max-w-none"> */}
-      {ambassadors.length &&
+      {/* {ambassadors.length &&
         <AmbassadorSlider
           rootId={id}
           configs={sliderConfig}
           ambassadors={ambassadors}
-        />}
+        />} */}
       {/* </div>
         </div>
       </div> */}

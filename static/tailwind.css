@@ -3122,15 +3122,8 @@ input.tab:checked + .tab-content,
 .border-b {
   border-bottom-width: 1px;
 }
-.border-t {
-  border-top-width: 1px;
-}
 .border-solid {
   border-style: solid;
-}
-.border-\[\#D9D9D9\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(217 217 217 / var(--tw-border-opacity));
 }
 .border-\[\#E1E8EB\] {
   --tw-border-opacity: 1;

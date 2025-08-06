@@ -60,8 +60,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleFrigidaireSection.tsx",
         "section": {
-          "title": "<h1 style=\"text-align: center; font-family: 'Gotham', sans-serif; font-weight: 700; font-size: 34px; line-height: 30px; color: #000; text-transform: uppercase;\">   ATRÉVETE A DESCUBRIR LA FRESCURA DE TUS ALIMENTOS </h1>",
-          "subtitle": "<p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   Refrigeradores que maximizan el espacio de almacenamiento </p> <p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   y conservan tus alimentos frescos por más tiempo </p>"
+          "subtitle": "<p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   Refrigeradores que maximizan el espacio de almacenamiento </p> <p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   y conservan tus alimentos frescos por más tiempo </p>",
+          "title": "<h1 style=\"text-align: center; font-family: 'Gotham', sans-serif; font-weight: 700; font-size: 48px; line-height: 1.2; color: #000; text-transform: uppercase;\">   <span style=\"color: red;\">ATRÉVETE</span> A MÁS DÍAS DE FRESCURA </h1>",
+          "fullWidth": false
         },
         "cards": [
           {
@@ -89,7 +90,7 @@
             "description": " Mantiene la temperatura más estable para preservar  tus alimentos y ahorrar energía"
           }
         ],
-        "heading": "ATRÉVETE A DESCUBRIR LA FRESCURA DE TUS ALIMENTOS"
+        "heading": "ATRÉVETE A MÁS DÍAS DE FRESCURA"
       }
     },
     {
@@ -97,8 +98,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleFrigidaireSection.tsx",
         "section": {
-          "title": "<h1 style=\"text-align: center; font-family: 'Gotham', sans-serif; font-weight: 700; font-size: 34px; line-height: 30px; color: #000; text-transform: uppercase;\">   ATRÉVETE A PROBAR Y COCINAR EN MENOS TIEMPO </h1>",
-          "subtitle": "<p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   Refrigeradores que maximizan el espacio de almacenamiento </p><p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   y conservan tus alimentos frescos por más tiempo </p>"
+          "title": "<h1 style=\"text-align: center; font-family: 'Gotham', sans-serif; font-weight: 700; font-size: 48px; line-height: 1.2; color: #000; text-transform: uppercase;\">   <span style=\"color: red;\">ATRÉVETE</span> A MÁS EN MENOS TIEMPO </h1>",
+          "subtitle": "<p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   Refrigeradores que maximizan el espacio de almacenamiento </p><p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   y conservan tus alimentos frescos por más tiempo </p>",
+          "fullWidth": false
         },
         "cards": [
           {
@@ -133,7 +135,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleFrigidaireSection.tsx",
         "section": {
-          "title": "<h1 style=\"text-align: center; font-family: 'Gotham', sans-serif; font-weight: 700; font-size: 34px; line-height: 30px; color: #000; text-transform: uppercase;\">   ATRÉVETE A DARLE UN CUIDADO EXTRA A TUS PRENDAS </h1>",
+          "title": "<h1 style=\"text-align: center; font-family: 'Gotham', sans-serif; font-weight: 700; font-size: 48px; line-height: 1.2; color: #000; text-transform: uppercase;\">   <span style=\"color: red;\">ATRÉVETE</span> A MÁS QUE SOLO CUIDAR </h1>",
           "subtitle": "<p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   Lava tu ropa de manera inteligente sin desgastar el color </p>  <p style=\"text-align: center; font-family: 'Gotham', sans-serif; font-size: 16px; line-height: 24px; color: #000;\">   y dejándolas como nuevas </p>"
         },
         "cards": [
@@ -202,7 +204,8 @@
         "logo": {
           "src": "https://assets.decocache.com/content-hub/3382984f-7a42-4f66-bbf1-8b18890458e6/LogoFooter-Frigidaire.png",
           "alt": "Logo Footer"
-        }
+        },
+        "caption": "<p><span style=\"font-size: 18pt\">Atrévete a disfrutar más</span></p>"
       }
     }
   ],

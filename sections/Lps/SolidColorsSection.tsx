@@ -73,7 +73,7 @@ export default function SolidColorsSection(
             return (
               <div
                 key={index}
-                class="flex flex-col overflow-hidden"
+                class="flex flex-col overflow-hidden min-w-[294px] w-full"
               >
                 <a
                   href={item.link}
@@ -103,24 +103,24 @@ export default function SolidColorsSection(
       </div>
       <style>
         {`
-          @media screen and (min-width:1280px) {
+          @media screen and (min-width: 1280px) {
             .solid-color-image-container img {
+              width: 100%;
               height: 240px;
-              width: 391px;
             }
-
+            
             #solid-colors-container {
               max-width: 1200px;
             }
           }
-
-          @media screen and (min-width:1440px) {
+          
+          @media screen and (min-width: 1440px) {
             #solid-colors-container {
               max-width: 1360px;
             }
           }
           
-          @media screen and (min-width:1920px) {
+          @media screen and (min-width: 1920px) {
             #solid-colors-container {
               max-width: 1600px;
             }

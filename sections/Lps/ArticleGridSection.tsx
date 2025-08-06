@@ -56,7 +56,7 @@ export default function ArticleGridSection(
           article,
           index,
         ) => (
-          <div key={index} class="border border-[#dfe7ea] flex flex-col hover:shadow-md transition">
+          <div key={index} class="article-grid-item border border-[#dfe7ea] flex flex-col hover:shadow-md transition w-full">
             <a href={article.href}>
               <div class="article-image-container">
                 {article.image?.src?.mobile || article.image?.src?.desktop ? (
@@ -88,10 +88,14 @@ export default function ArticleGridSection(
             width: 165px;
             height: 124px;
           }
+          
+          @media screen and (min-width: 1280px) {
+            .article-grid-item {
+              min-width: 294px;
+            }
 
-          @media screen and (min-width:1280px) {
             .article-image-container img {
-              width: 294px;
+              width: 100%;
               height: 207px;
             }
 
@@ -99,14 +103,14 @@ export default function ArticleGridSection(
               max-width: 1200px;
             }
           }
-
-          @media screen and (min-width:1440px) {
+          
+          @media screen and (min-width: 1440px) {            
             #article-grid-container {
               max-width: 1360px;
             }
           }
-
-          @media screen and (min-width:1920px) {
+          
+          @media screen and (min-width: 1920px) {
             #article-grid-container {
               max-width: 1600px;
             }

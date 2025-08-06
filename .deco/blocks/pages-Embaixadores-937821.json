@@ -445,6 +445,41 @@
           }
         ]
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
+        "ambassadors": [
+          {
+            "photo": {
+              "alt": "Rita Lobo",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
+                "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+              },
+              "link": {
+                "href": "/#",
+                "title": "Rita Lobo"
+              }
+            },
+            "product": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "2140",
+                "count": 1
+              }
+            }
+          }
+        ],
+        "section": {
+          "title": "Quer uma mãozinha? Nossos embaixadores te ajudam!"
+        }
+      }
     }
   ],
   "seo": {

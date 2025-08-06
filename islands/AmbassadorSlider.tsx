@@ -1,6 +1,7 @@
 import Slider from "site/components/ui/Slider.tsx";
-// import MiniProductCard from "site/components/product/MiniProductCard.tsx";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
+// import ProductCard from "site/components/product/ProductCard.tsx";
+import SummaryProductCard from "site/components/product/SummaryProductCard.tsx";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { IAmbassador } from "site/types/Ambassador.d.ts";
@@ -13,26 +14,30 @@ interface AmbassadorSliderProps {
 
 export default function AmbassadorSlider(
   {
-    ambassadors = [],
+    ambassadors,
     configs = {},
     rootId,
   }: AmbassadorSliderProps,
 ) {
-  const slides = ambassadors.map(
-    (ambassador, idx) => {
+  const slides = ambassadors.length ? ambassadors.map(
+    (ambassador, index) => {
       return (
-        <div key={`${ambassador.image.alt}-${idx}`}>
+        <div key={index}>
           <ResponsiveImage
-            {...ambassador.image}
+            {...ambassador.photo}
           />
-          {/* <MiniProductCard {...ambassador.product} /> */}
+          {ambassador.products.length &&
+            <SummaryProductCard
+              {...ambassador.products[0]}
+            />
+          }
         </div>
       );
     },
-  );
+  ) : [];
 
   return (
-    <Component
+    <Slider
       configs={configs}
       slides={slides}
       rootId={rootId}

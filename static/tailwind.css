@@ -2740,6 +2740,9 @@ input.tab:checked + .tab-content,
 .min-w-\[157px\] {
   min-width: 157px;
 }
+.min-w-\[294px\] {
+  min-width: 294px;
+}
 .min-w-\[340px\] {
   min-width: 340px;
 }

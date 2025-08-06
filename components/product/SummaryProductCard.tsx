@@ -9,7 +9,7 @@ import type { ProductWithComparator } from "site/types/Product.d.ts";
 const WIDTH = 230;
 const HEIGHT = 230;
 
-export default function ProductCard(
+export default function SummaryProductCard(
   props: Partial<ProductWithComparator>,
 ): preact.JSX.Element | null {
   const {
@@ -167,8 +167,8 @@ export default function ProductCard(
                 )}
             </div>
 
-            <div class="flex flex-col min-h-[60px] lg:min-h-[80px]">
-              {withoutInterest && (
+            {/* <div class="flex flex-col min-h-[60px] lg:min-h-[80px]"> */}
+            {/* {withoutInterest && (
                 <span class="text-[#5b6a78] text-sm">
                   em até{" "}
                   <b>
@@ -187,8 +187,8 @@ export default function ProductCard(
                   </b>
                   sem juros
                 </span>
-              )}
-              {withInterest && (
+              )} */}
+            {/* {withInterest && (
                 <span class="text-[#5b6a78] text-sm">
                   {withoutInterest ? "ou" : "em até"}{" "}
                   <b>
@@ -207,8 +207,8 @@ export default function ProductCard(
                   </b>
                   com juros
                 </span>
-              )}
-            </div>
+              )} */}
+            {/* </div> */}
           </div>
 
           <div class="flex items-center w-full xl:transition-all xl:ease-in-out xl:duration-200 xl:invisible xl:opacity-0 xl:group-hover:visible xl:group-hover:opacity-100">
@@ -219,14 +219,14 @@ export default function ProductCard(
               Ver Detalhes
             </a>
           </div>
-          {!!productSpecsComparator
+          {/* {!!productSpecsComparator
             ?.length && (
               <div class="flex">
                 <ProductSpecificationComparator
                   productSpecsComparator={productSpecsComparator}
                 />
               </div>
-            )}
+            )} */}
         </div>
       </div>
     </div>

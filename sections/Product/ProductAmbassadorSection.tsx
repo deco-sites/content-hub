@@ -1,20 +1,33 @@
 import { useId } from "site/sdk/useId.ts";
-// import AmbassadorSlider from "site/islands/AmbassadorSlider.tsx";
+import AmbassadorSlider from "site/islands/AmbassadorSlider.tsx";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { Product } from "apps/commerce/types.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
-import type { IAmbassador } from "site/types/Ambassador.d.ts";
+
+interface AmbassadorWithProduct {
+  /**
+  * @title Foto do embaixador
+  */
+  photo: IResponsiveImage;
+  /**
+  * @title Produto do embaixador
+  */
+  products: Product[] | null; // Ponto de atenção a ser corrigido futuramente.
+}
 
 interface ProductAmbassadorsSectionProps {
   section?: ISection;
   /**
-   * @title Lista de embaixadores com produtos
-   */
-  ambassadors?: IAmbassador[];
+  * @title Lista de embaixadores com produtos
+  */
   configs?: ISliderConfigs;
+  /**
+  * @title Lista de embaixadores
+  */
+  ambassadors?: AmbassadorWithProduct[];
 }
 
 export default function ProductAmbassadorsSection(
@@ -59,38 +72,22 @@ export default function ProductAmbassadorsSection(
     },
   } as ISliderConfigs;
 
-  // const defaultPropBanners = banners
-  //   .map((banner) => {
-  //     return {
-  //       ...{ ...banner },
-  //       sizes: {
-  //         ...banner.sizes,
-  //         width: 185,
-  //         height: 324,
-  //         widthMobile: 185,
-  //         heightMobile: 324,
-  //       },
-  //     };
-  //   });
-
   return (
     <Section
       {...section}
       id={id}
-    // class="p-0 lg:px-4"
     >
-      {/* <div class="flex flex-col w-full mx-auto gap-4 lg:gap-6">
+      <div class="flex flex-col w-full mx-auto gap-4 lg:gap-6">
         <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row">
-          <div class="flex w-full lg:w-[unset] lg:max-w-[500px] xl:max-w-none"> */}
-      {/* {ambassadors.length &&
-        <AmbassadorSlider
-          rootId={id}
-          configs={sliderConfig}
-          ambassadors={ambassadors}
-        />} */}
-      {/* </div>
+          <div class="flex w-full lg:w-[unset] lg:max-w-[500px] xl:max-w-none">
+            <AmbassadorSlider
+              rootId={id}
+              configs={sliderConfig}
+              ambassadors={ambassadors}
+            />
+          </div>
         </div>
-      </div> */}
+      </div>
     </Section>
   );
 }

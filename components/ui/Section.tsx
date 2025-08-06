@@ -43,11 +43,11 @@ export default function Section({
             }}
           />
         )}
-        {children && (
+        {children ? (
           <div class="flex flex-col items-center justify-center">
             {children}
           </div>
-        )}
+        ) : null}
       </div>
       <style>
         {`
@@ -106,7 +106,7 @@ export default function Section({
               margin-top: ${marginTopDesktop}px;
               margin-bottom: ${marginBottomDesktop}px;
             }
-        }
+          }
       `}
       </style>
     </>

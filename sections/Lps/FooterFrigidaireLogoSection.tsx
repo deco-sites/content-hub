@@ -26,7 +26,19 @@ export default function FooterFrigidaireLogoSection({ section, logo }: Props) {
             class="mb-2 max-w-full h-auto mx-auto"
             loading="lazy"
           />
-          <hr class="border-t border-[#D9D9D9] w-full max-w-[300px] mt-2 mx-auto" />
+          <h1
+            style={{
+              textAlign: "center",
+              fontFamily: "'Gotham', sans-serif",
+              fontWeight: "700",
+              fontSize: "48px",
+              lineHeight: "1.2",
+              color: "#000",
+              textTransform: "uppercase",
+            }}
+          >
+            <span style={{ color: "red" }}>ATRÉVETE</span> A DISFRUTAR MÁS
+          </h1>
         </div>
       </div>
     </Section>

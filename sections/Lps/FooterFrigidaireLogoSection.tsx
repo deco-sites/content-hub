@@ -26,7 +26,7 @@ export default function FooterFrigidaireLogoSection({ section, logo }: Props) {
             class="mb-2 max-w-full h-auto mx-auto"
             loading="lazy"
           />
-          <h1
+          {/* <h1
             style={{
               textAlign: "center",
               fontFamily: "'Gotham', sans-serif",
@@ -38,7 +38,7 @@ export default function FooterFrigidaireLogoSection({ section, logo }: Props) {
             }}
           >
             <span style={{ color: "red" }}>ATRÉVETE</span> A DISFRUTAR MÁS
-          </h1>
+          </h1> */}
         </div>
       </div>
     </Section>

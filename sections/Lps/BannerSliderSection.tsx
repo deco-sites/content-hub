@@ -63,7 +63,7 @@ export default function BannerSliderSection(
         sizes: {
           ...banner.sizes,
           fullScreen: true,
-          maxHeight: 420,
+          // maxHeight: 420,
           heightMobile: 400,
           widthMobile: 375,
         },

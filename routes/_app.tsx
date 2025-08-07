@@ -2,6 +2,7 @@ import { asset, Head } from "$fresh/runtime.ts";
 import { defineApp } from "$fresh/server.ts";
 import { Context } from "@deco/deco";
 import Theme from "site/sections/Theme/Theme.tsx";
+
 export default defineApp(
   async (_req, ctx) => {
     const revision = await Context
@@ -17,83 +18,72 @@ export default defineApp(
           <style
             dangerouslySetInnerHTML={{
               __html: `
-              @font-face {
-                font-family: 'Electrolux Sans';
-                src:
-                  url(${
-                asset(
-                  "/fonts/ElectroluxSans-Regular.woff2",
-                )
-              }) format('woff2'),
-                  url(${
-                asset(
-                  "/fonts/ElectroluxSans-Regular.woff",
-                )
-              }) format('woff');
-                font-weight: 400;
-                font-style: normal;
-                font-display: swap;
-              }
+                /* Electrolux Sans Fonts */
+                @font-face {
+                  font-family: 'Electrolux Sans';
+                  src:
+                    url(${asset("/fonts/ElectroluxSans-Regular.woff2")}) format('woff2'),
+                    url(${asset("/fonts/ElectroluxSans-Regular.woff")}) format('woff');
+                  font-weight: 400;
+                  font-style: normal;
+                  font-display: swap;
+                }
 
-              @font-face {
-                font-family: 'Electrolux Sans';
-                src:
-                  url(${
-                asset(
-                  "/fonts/ElectroluxSans-Bold.woff2",
-                )
-              }) format('woff2'),
-                  url(${
-                asset(
-                  "/fonts/ElectroluxSans-Bold.woff",
-                )
-              }) format('woff');
-                font-weight: 700;
-                font-style: normal;
-                font-display: swap;
-              }
+                @font-face {
+                  font-family: 'Electrolux Sans';
+                  src:
+                    url(${asset("/fonts/ElectroluxSans-Bold.woff2")}) format('woff2'),
+                    url(${asset("/fonts/ElectroluxSans-Bold.woff")}) format('woff');
+                  font-weight: 700;
+                  font-style: normal;
+                  font-display: swap;
+                }
 
-              @font-face {
-                font-family: 'Electrolux Sans';
-                src:
-                  url(${
-                asset(
-                  "/fonts/ElectroluxSans-SemiBold.woff2",
-                )
-              }) format('woff2'),
-                  url(${
-                asset(
-                  "/fonts/ElectroluxSans-SemiBold.woff",
-                )
-              }) format('woff');
-                font-weight: 600;
-                font-style: normal;
-                font-display: swap;
-              }
-            `,
+                @font-face {
+                  font-family: 'Electrolux Sans';
+                  src:
+                    url(${asset("/fonts/ElectroluxSans-SemiBold.woff2")}) format('woff2'),
+                    url(${asset("/fonts/ElectroluxSans-SemiBold.woff")}) format('woff');
+                  font-weight: 600;
+                  font-style: normal;
+                  font-display: swap;
+                }
+
+                /* Gotham Fonts */
+                @font-face {
+                  font-family: 'Gotham';
+                  src: url(${asset("/fonts/Gotham-Book.otf")}) format("opentype");
+                  font-weight: 400;
+                  font-style: normal;
+                  font-display: swap;
+                }
+
+                @font-face {
+                  font-family: 'Gotham';
+                  src: url(${asset("/fonts/Gotham-Bold.otf")}) format("opentype");
+                  font-weight: 700;
+                  font-style: normal;
+                  font-display: swap;
+                }
+
+                /* View Transitions */
+                @view-transition {
+                  navigation: auto;
+                }
+              `,
             }}
           />
 
-          {/* Enable View Transitions API */}
-          <style
-            dangerouslySetInnerHTML={{
-              __html: `@view-transition { navigation: auto; }`,
-            }}
-          />
           {/* Tailwind v3 CSS file */}
           <link
-            href={asset(
-              `/styles.css?revision=${revision}`,
-            )}
+            href={asset(`/styles.css?revision=${revision}`)}
             rel="stylesheet"
           />
 
           {/* Web Manifest */}
           <link
             rel="manifest"
-            href={asset(
-              "/site.webmanifest",
-            )}
+            href={asset("/site.webmanifest")}
           />
 
           {/* Swiper CSS */}
@@ -105,9 +95,7 @@ export default defineApp(
           {/* Custom CSS */}
           <link
             rel="stylesheet"
-            href={asset(
-              `/customStyles/styles.css?revision=${revision}`,
-            )}
+            href={asset(`/customStyles/styles.css?revision=${revision}`)}
           />
         </Head>
 

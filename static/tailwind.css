@@ -3021,6 +3021,9 @@ input.tab:checked + .tab-content,
 .gap-y-\[12px\] {
   row-gap: 12px;
 }
+.gap-y-\[20px\] {
+  row-gap: 20px;
+}
 .gap-y-\[8px\] {
   row-gap: 8px;
 }
@@ -4244,6 +4247,10 @@ input.tab:checked + .tab-content,
     visibility: hidden;
   }
 
+  .xl\:h-0 {
+    height: 0px;
+  }
+
   .xl\:w-\[33\%\] {
     width: 33%;
   }
@@ -4318,6 +4325,10 @@ input.tab:checked + .tab-content,
 
   .group:hover .xl\:group-hover\:visible {
     visibility: visible;
+  }
+
+  .group:hover .xl\:group-hover\:h-auto {
+    height: auto;
   }
 
   .group:hover .xl\:group-hover\:opacity-100 {

@@ -104,7 +104,7 @@ export default function SummaryProductCard(
           </div>
         </div>
       </div>
-      <div class="flex items-center w-full xl:transition-all xl:ease-in-out xl:duration-200 xl:invisible xl:opacity-0 xl:group-hover:visible xl:group-hover:opacity-100">
+      <div class="flex items-center w-full xl:h-0 xl:transition-all xl:ease-in-out xl:duration-200 xl:invisible xl:opacity-0 xl:group-hover:h-auto xl:group-hover:visible xl:group-hover:opacity-100">
         <a class="flex w-full rounded cursor-pointer no-underline items-center justify-center h-[40px] font-semibold text-white bg-[#617f57] transition-all ease-in duration-300 hover:bg-[#99b293]">
           Ver Detalhes
         </a>

@@ -77,11 +77,32 @@ export default function ProductAmbassadorsSection(
       {...section}
       id={id}
     >
-      <AmbassadorSlider
-        rootId={id}
-        configs={sliderConfig}
-        ambassadors={ambassadors}
-      />
+      <div id="product-ambassador-container" class="w-full">
+        <AmbassadorSlider
+          rootId={id}
+          configs={sliderConfig}
+          ambassadors={ambassadors}
+        />
+      </div>
+      <style>{`
+        @media screen and (min-width: 1280px) {
+          #product-ambassador-container {
+            max-width: 1200px;
+          }
+        }
+        
+        @media screen and (min-width: 1440px) {            
+          #product-ambassador-container {
+            max-width: 1360px;
+          }
+        }
+        
+        @media screen and (min-width: 1920px) {
+          #product-ambassador-container {
+            max-width: 1600px;
+          }
+        }
+      `}</style>
     </Section>
   );
 }

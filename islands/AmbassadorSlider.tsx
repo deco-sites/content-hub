@@ -21,7 +21,7 @@ export default function AmbassadorSlider(
   const slides = ambassadors.length ? ambassadors.map(
     (ambassador, index) => {
       return (
-        <div key={index} class="">
+        <div key={index} class="flex flex-col gap-y-[20px]">
           <ResponsiveImage
             {...ambassador.photo}
           />

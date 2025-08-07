@@ -1,20 +1,21 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { Product } from "apps/commerce/types.ts";
+import type { IResponsiveImage } from "./ResponsiveImage.d.ts";
+import type { ProductWithComparator } from "site/types/Product.d.ts";
 
+/**
+* @title Embaixador
+*/
 export interface IAmbassador {
-    /**
-    * @title Nome do Embaixador
-    */
-    name: string;
-    /**
-    * @title Descrição do Embaixador
-    */
-    description: string;
-    /**
-    * @title Imagem Desktop
-    */
-    imageDesktop: ImageWidget;
-    /**
-    * @title Imagem Mobile
-    */
-    imageMobile: ImageWidget;
+  /**
+  * @title Nome
+  */
+  name: string;
+  /**
+  * @title Descrição
+  */
+  description?: string;
+  /**
+  * @title Foto
+  */
+  image?: IResponsiveImage;
 }

@@ -4,9 +4,7 @@ import type { createElement } from "preact";
 import { Pagination } from "apps/workflows/deps.ts";
 
 export type Props = {
-  slides:
-    | createElement.JSX.Element[]
-    | [];
+  slides: createElement.JSX.Element[] | [];
   configs?: ISliderConfigs;
   rootId: string;
 };
@@ -14,6 +12,7 @@ export type Props = {
 export default function SwiperSlider({
   configs = {},
   slides = [],
+  rootId
 }: Props): preact.JSX.Element {
   const {
     slidesPerView,
@@ -27,6 +26,8 @@ export default function SwiperSlider({
     centeredSlides,
     lazy,
   } = configs ?? {};
+
+  const idRoot = rootId;
 
   // Fix loop mode warning
   const hasLoop = (loop &&

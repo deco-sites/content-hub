@@ -31,7 +31,7 @@ export default function Section({
           <Text
             title={title}
             classes={{
-              container: "section-title flex flex-col gap-y-[8px] mt-[24px] text-center normal-case",
+              container: "section-title flex flex-col mt-[24px] text-center normal-case",
             }}
           />
         )}
@@ -39,15 +39,15 @@ export default function Section({
           <Text
             title={subtitle}
             classes={{
-              container: "section-subtitle mb-[16px] text-center normal-case",
+              container: "section-subtitle mb-[16px] lg:mb-[24px] text-center normal-case",
             }}
           />
         )}
-        {children && (
+        {children ? (
           <div class="flex flex-col items-center justify-center">
             {children}
           </div>
-        )}
+        ) : null}
       </div>
       <style>
         {`
@@ -62,6 +62,7 @@ export default function Section({
             font-weight: 600;
             color: #041E50;
             text-transform: none;
+            margin-bottom: ${isEmptyText(subtitle) ? '24px' : '8px'};
           }
 
           .section-subtitle,
@@ -106,7 +107,7 @@ export default function Section({
               margin-top: ${marginTopDesktop}px;
               margin-bottom: ${marginBottomDesktop}px;
             }
-        }
+          }
       `}
       </style>
     </>

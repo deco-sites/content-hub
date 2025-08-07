@@ -29,14 +29,16 @@ import * as $$$$$$18 from "./sections/Lps/MailingProductSection.tsx";
 import * as $$$$$$19 from "./sections/Lps/MultiImageBannerSection.tsx";
 import * as $$$$$$20 from "./sections/Lps/PdfWithTextSection.tsx";
 import * as $$$$$$21 from "./sections/Lps/ReviewsSliderSection.tsx";
-import * as $$$$$$22 from "./sections/Lps/TextSection.tsx";
-import * as $$$$$$23 from "./sections/Lps/TitleFrigidaireSection.tsx";
-import * as $$$$$$24 from "./sections/Lps/VideoWithCtaSection.tsx";
-import * as $$$$$$25 from "./sections/Product/ProductMediaSection.tsx";
-import * as $$$$$$26 from "./sections/Product/ProductMediaSideBySideSection.tsx";
-import * as $$$$$$27 from "./sections/Product/ProductShelfSection.tsx";
-import * as $$$$$$28 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
-import * as $$$$$$29 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$22 from "./sections/Lps/SolidColorsSection.tsx";
+import * as $$$$$$23 from "./sections/Lps/TextSection.tsx";
+import * as $$$$$$24 from "./sections/Lps/TitleFrigidaireSection.tsx";
+import * as $$$$$$25 from "./sections/Lps/VideoWithCtaSection.tsx";
+import * as $$$$$$26 from "./sections/Product/ProductAmbassadorSection.tsx";
+import * as $$$$$$27 from "./sections/Product/ProductMediaSection.tsx";
+import * as $$$$$$28 from "./sections/Product/ProductMediaSideBySideSection.tsx";
+import * as $$$$$$29 from "./sections/Product/ProductShelfSection.tsx";
+import * as $$$$$$30 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
+import * as $$$$$$31 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -65,14 +67,16 @@ const manifest = {
     "site/sections/Lps/MultiImageBannerSection.tsx": $$$$$$19,
     "site/sections/Lps/PdfWithTextSection.tsx": $$$$$$20,
     "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$21,
-    "site/sections/Lps/TextSection.tsx": $$$$$$22,
-    "site/sections/Lps/TitleFrigidaireSection.tsx": $$$$$$23,
-    "site/sections/Lps/VideoWithCtaSection.tsx": $$$$$$24,
-    "site/sections/Product/ProductMediaSection.tsx": $$$$$$25,
-    "site/sections/Product/ProductMediaSideBySideSection.tsx": $$$$$$26,
-    "site/sections/Product/ProductShelfSection.tsx": $$$$$$27,
-    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$28,
-    "site/sections/Theme/Theme.tsx": $$$$$$29,
+    "site/sections/Lps/SolidColorsSection.tsx": $$$$$$22,
+    "site/sections/Lps/TextSection.tsx": $$$$$$23,
+    "site/sections/Lps/TitleFrigidaireSection.tsx": $$$$$$24,
+    "site/sections/Lps/VideoWithCtaSection.tsx": $$$$$$25,
+    "site/sections/Product/ProductAmbassadorSection.tsx": $$$$$$26,
+    "site/sections/Product/ProductMediaSection.tsx": $$$$$$27,
+    "site/sections/Product/ProductMediaSideBySideSection.tsx": $$$$$$28,
+    "site/sections/Product/ProductShelfSection.tsx": $$$$$$29,
+    "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$30,
+    "site/sections/Theme/Theme.tsx": $$$$$$31,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

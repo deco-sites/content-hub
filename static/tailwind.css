@@ -2524,6 +2524,9 @@ input.tab:checked + .tab-content,
 .aspect-\[156\/87\] {
   aspect-ratio: 156/87;
 }
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
@@ -3003,6 +3006,10 @@ input.tab:checked + .tab-content,
 .gap-\[8px\] {
   gap: 8px;
 }
+.gap-x-\[16px\] {
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
 .gap-x-\[24px\] {
   -moz-column-gap: 24px;
        column-gap: 24px;
@@ -3310,6 +3317,10 @@ input.tab:checked + .tab-content,
   padding-left: 12px;
   padding-right: 12px;
 }
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .px-\[24px\] {
   padding-left: 24px;
   padding-right: 24px;
@@ -3357,6 +3368,10 @@ input.tab:checked + .tab-content,
 .py-\[12px\] {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+.py-\[16px\] {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .pb-4 {
   padding-bottom: 1rem;

@@ -15,7 +15,7 @@ interface AmbassadorWithProduct {
   /**
   * @title Produto do embaixador
   */
-  products: Product[] | null; // Ponto de atenção a ser corrigido futuramente.
+  products: Product[] | null;
 }
 
 interface ProductAmbassadorsSectionProps {
@@ -77,17 +77,11 @@ export default function ProductAmbassadorsSection(
       {...section}
       id={id}
     >
-      <div class="flex flex-col w-full mx-auto gap-4 lg:gap-6">
-        <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row">
-          <div class="flex w-full lg:w-[unset] lg:max-w-[500px] xl:max-w-none">
-            <AmbassadorSlider
-              rootId={id}
-              configs={sliderConfig}
-              ambassadors={ambassadors}
-            />
-          </div>
-        </div>
-      </div>
+      <AmbassadorSlider
+        rootId={id}
+        configs={sliderConfig}
+        ambassadors={ambassadors}
+      />
     </Section>
   );
 }

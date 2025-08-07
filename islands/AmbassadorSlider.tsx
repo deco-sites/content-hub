@@ -1,6 +1,5 @@
 import Slider from "site/components/ui/Slider.tsx";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
-// import ProductCard from "site/components/product/ProductCard.tsx";
 import SummaryProductCard from "site/components/product/SummaryProductCard.tsx";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
@@ -22,7 +21,7 @@ export default function AmbassadorSlider(
   const slides = ambassadors.length ? ambassadors.map(
     (ambassador, index) => {
       return (
-        <div key={index}>
+        <div key={index} class="">
           <ResponsiveImage
             {...ambassador.photo}
           />

@@ -57,23 +57,14 @@ export default function CustomInfoCardSlider({
             >
               {card?.title && (
                 <h2
-                  class="mb-4 uppercase"
-                  style={{
-                    fontSize: "34px",
-                    lineHeight: "48px",
-                    fontWeight: 700,
-                  }}
+                  class="mb-4 uppercase font-bold text-[14px] leading-[20px] md:text-[34px] md:leading-[48px]"
                   dangerouslySetInnerHTML={{ __html: card.title }}
                 />
               )}
 
               {card?.description && (
                 <p
-                  style={{
-                    fontSize: "16px",
-                    lineHeight: "20px",
-                    fontWeight: 400,
-                  }}
+                  class="text-[12px] leading-[18px] md:text-[16px] md:leading-[20px] font-normal"
                   dangerouslySetInnerHTML={{ __html: card.description }}
                 />
               )}

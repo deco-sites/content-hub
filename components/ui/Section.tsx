@@ -33,6 +33,7 @@ export default function Section({
             classes={{
               container: "section-title flex flex-col mt-[24px] text-center normal-case",
             }}
+            styles={{ marginBottom: subtitle ? '24px' : '8px' }}
           />
         )}
         {!isEmptyText(subtitle) && (
@@ -62,7 +63,6 @@ export default function Section({
             font-weight: 600;
             color: #041E50;
             text-transform: none;
-            margin-bottom: ${isEmptyText(subtitle) ? '24px' : '8px'};
           }
 
           .section-subtitle,

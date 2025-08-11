@@ -2,21 +2,8 @@ import { useId } from "site/sdk/useId.ts";
 import AmbassadorSlider from "site/islands/AmbassadorSlider.tsx";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
-import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
-import type { Product } from "apps/commerce/types.ts";
+import type { AmbassadorWithProduct } from "site/types/Ambassador.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
-import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
-
-interface AmbassadorWithProduct {
-  /**
-  * @title Foto do embaixador
-  */
-  photo: IResponsiveImage;
-  /**
-  * @title Produto do embaixador
-  */
-  products: Product[] | null;
-}
 
 interface ProductAmbassadorsSectionProps {
   section?: ISection;

@@ -13,8 +13,10 @@ interface CategoriesGridSectionProps {
   categories?: Category[];
 }
 
-export default function CategoriesGridSection({ section, categories }: CategoriesGridSectionProps) {
-  if (categories.length === 0 || categories.length > 6) return null
+export default function CategoriesGridSection(
+  { section, categories }: CategoriesGridSectionProps,
+) {
+  if (categories.length === 0 || categories.length > 6) return null;
 
   // <div>
   //   {categories.map((category, index)=>(
@@ -23,5 +25,5 @@ export default function CategoriesGridSection({ section, categories }: Categorie
   //     </div>:null}
   //   ))}
   // </div>
-  return null
+  return null;
 }

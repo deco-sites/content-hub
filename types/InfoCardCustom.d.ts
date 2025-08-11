@@ -4,13 +4,12 @@ import type { IInfoCard } from "./InfoCard.d.ts";
  * @title InfoCard (Customizado)
  */
 export interface IInfoCardCustom extends IInfoCard {
-/**
- * @title Título
- * @format rich-text
- * @description Suporta quebra de linha usando Enter ou \n
- */
-title?: string;
-
+  /**
+   * @title Título
+   * @format rich-text
+   * @description Suporta quebra de linha usando Enter ou \n
+   */
+  title?: string;
 
   /**
    * @title Descrição

@@ -46,7 +46,7 @@ export default function InfoCardSection(
           ?.desktop ?? 1,
       },
     },
-  }
+  };
 
   return (
     <Section

@@ -48,15 +48,15 @@ export default function ArticleFrigidaireSection({
               class="rounded-md mb-4 w-full h-auto object-cover"
               loading="lazy"
             />
-            <h3 
-             class="text-xl font-bold text-[#000000] mb-2"
-             style="font-family: 'Gotham', sans-serif;"
-             >
+            <h3
+              class="text-xl font-bold text-[#000000] mb-2"
+              style="font-family: 'Gotham', sans-serif;"
+            >
               {card.title}
             </h3>
-            <p 
-             class="text-sm text-[#4F4F4F]"
-             style="font-family: 'Gotham', sans-serif;"
+            <p
+              class="text-sm text-[#4F4F4F]"
+              style="font-family: 'Gotham', sans-serif;"
             >
               {card.description}
             </p>

@@ -27,8 +27,8 @@ type DimmedColorsData = {
    */
   text?: string;
   /**
-  * @title Link
-  */
+   * @title Link
+   */
   link?: string;
   color?: DimmedColors;
   image?: IResponsiveImage;
@@ -37,8 +37,8 @@ type DimmedColorsData = {
 interface DimmedColorsSection {
   section?: ISection;
   /**
-  * @title Lista de cards informativos
-  */
+   * @title Lista de cards informativos
+   */
   data?: DimmedColorsData[];
 }
 
@@ -56,9 +56,7 @@ export default function DimmedColorsSection(
       {...section}
       id={id}
     >
-      <div
-        class="dimmed-colors-items__container flex flex-col justify-center items-center w-full"
-      >
+      <div class="dimmed-colors-items__container flex flex-col justify-center items-center w-full">
         {data.map(
           (item, index) => {
             return (
@@ -66,9 +64,7 @@ export default function DimmedColorsSection(
                 href={item.link}
                 key={index}
               >
-                <div
-                  class="dimmed-colors-item__container relative flex flex-col overflow-hidden h-[171px]"
-                >
+                <div class="dimmed-colors-item__container relative flex flex-col overflow-hidden h-[171px]">
                   <ResponsiveImage
                     {...item.image}
                   />

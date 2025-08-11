@@ -26,24 +26,28 @@ export default function CustomInfoCardSlider({
             {/* Mídia */}
             <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
               {card?.typeOfContent &&
-              "src" in card.typeOfContent &&
-              card.typeOfContent.src.endsWith(".mp4") ? (
-                <video
-                  src={card.typeOfContent.src}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  class="w-full h-full object-cover"
-                />
-              ) : card?.typeOfContent &&
-                "srcDesktop" in card.typeOfContent ? (
-                <img
-                  src={card.typeOfContent.srcDesktop}
-                  alt={card.typeOfContent.alt ?? "Imagem"}
-                  class="w-full h-full object-cover"
-                />
-              ) : null}
+                  "src" in card.typeOfContent &&
+                  card.typeOfContent.src.endsWith(".mp4")
+                ? (
+                  <video
+                    src={card.typeOfContent.src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    class="w-full h-full object-cover"
+                  />
+                )
+                : card?.typeOfContent &&
+                    "srcDesktop" in card.typeOfContent
+                ? (
+                  <img
+                    src={card.typeOfContent.srcDesktop}
+                    alt={card.typeOfContent.alt ?? "Imagem"}
+                    class="w-full h-full object-cover"
+                  />
+                )
+                : null}
             </div>
 
             {/* Texto */}

@@ -52,18 +52,18 @@ export default function TitleFrigidaireSection({
     >
       <div class="w-full bg-[#FF405A] text-white text-center py-12 px-4 rounded-lg">
         {/* Logo */}
-        {useTextLogo ? (
-          <h2 class="text-2xl font-bold tracking-wide mb-6">FRIGIDAIRE</h2>
-        ) : (
-          logoSrc && (
-            <img
-              src={logoSrc}
-              alt="Frigidaire"
-              class="mx-auto mb-6 w-[160px]"
-              loading="lazy"
-            />
-          )
-        )}
+        {useTextLogo
+          ? <h2 class="text-2xl font-bold tracking-wide mb-6">FRIGIDAIRE</h2>
+          : (
+            logoSrc && (
+              <img
+                src={logoSrc}
+                alt="Frigidaire"
+                class="mx-auto mb-6 w-[160px]"
+                loading="lazy"
+              />
+            )
+          )}
 
         {/* Título */}
         <p class="text-lg lg:text-2xl font-medium">

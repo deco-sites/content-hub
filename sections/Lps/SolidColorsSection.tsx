@@ -9,7 +9,7 @@ import Section from "site/components/ui/Section.tsx";
  * @title Cores
  * @description Hexadecimal das cores para cada tipo de dispositivo
  */
-type SolidColors = {
+interface SolidColors {
   /**
    * @title Mobile
    */
@@ -18,12 +18,12 @@ type SolidColors = {
    * @title Desktop
    */
   desktop?: string;
-};
+}
 
 /**
  * @title Card informativo
  */
-type SolidColorsData = {
+interface SolidColorsData {
   /**
    * @title Título
    */
@@ -33,24 +33,24 @@ type SolidColorsData = {
    */
   text?: string;
   /**
-  * @title Link
-  */
+   * @title Link
+   */
   link?: string;
   /**
-  * @title Cor
-  */
+   * @title Cor
+   */
   color?: SolidColors;
   /**
-  * @title Imagem
-  */
+   * @title Imagem
+   */
   image?: IResponsiveImage;
-};
+}
 
 interface SolidColorsSection {
   section?: ISection;
   /**
-  * @title Lista de cards informativos
-  */
+   * @title Lista de cards informativos
+   */
   data?: SolidColorsData[];
 }
 

@@ -22,7 +22,8 @@ interface Props {
 export default function VideoWithCtaSection({
   videoUrl = "https://www.youtube.com/embed/pO7KwngOo_8",
   title = "Mailing de producto",
-  description = "Descubra os benefícios exclusivos dessa nova linha de produto.",
+  description =
+    "Descubra os benefícios exclusivos dessa nova linha de produto.",
   ctaText = "Call to action",
   ctaLink = "#",
 }: Props) {
@@ -45,9 +46,7 @@ export default function VideoWithCtaSection({
         {/* Conteúdo abaixo do vídeo */}
         <div class="space-y-4 mt-6">
           <h2 class="text-2xl font-bold">{title}</h2>
-          {description && (
-            <p class="text-gray-600">{description}</p>
-          )}
+          {description && <p class="text-gray-600">{description}</p>}
           <a
             href={ctaLink}
             class="inline-block px-6 py-3 bg-red-600 text-white rounded hover:bg-red-700 transition"

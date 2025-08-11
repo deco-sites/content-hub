@@ -8,12 +8,12 @@ import type { ISliderConfigs } from "site/types/Slider.d.ts";
 interface ProductAmbassadorsSectionProps {
   section?: ISection;
   /**
-  * @title Lista de embaixadores com produtos
-  */
+   * @title Lista de embaixadores com produtos
+   */
   configs?: ISliderConfigs;
   /**
-  * @title Lista de embaixadores
-  */
+   * @title Lista de embaixadores
+   */
   ambassadors?: AmbassadorWithProduct[];
 }
 
@@ -21,7 +21,7 @@ export default function ProductAmbassadorsSection(
   {
     section,
     ambassadors,
-    configs
+    configs,
   }: ProductAmbassadorsSectionProps,
 ) {
   const id = useId();

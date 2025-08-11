@@ -23,39 +23,47 @@ export default function Section({
     <>
       <div
         id={`section-${id}`}
-        class={`section-container flex flex-col w-full ${classesContainer ?? ""
-          } ${!fullWidth ? "container" : ""}`}
+        class={`section-container flex flex-col w-full ${
+          classesContainer ?? ""
+        } ${!fullWidth ? "container" : ""}`}
         style={stylesContainer}
       >
         {!isEmptyText(title) && (
           <Text
             title={title}
             classes={{
-              container: "section-title flex flex-col mt-[24px] text-center normal-case",
+              container:
+                "section-title flex flex-col mt-[24px] text-center normal-case",
             }}
-            styles={{ marginBottom: subtitle ? '24px' : '8px' }}
+            styles={{ marginBottom: subtitle ? "24px" : "8px" }}
           />
         )}
         {!isEmptyText(subtitle) && (
           <Text
             title={subtitle}
             classes={{
-              container: "section-subtitle mb-[16px] lg:mb-[24px] text-center normal-case",
+              container:
+                "section-subtitle mb-[16px] lg:mb-[24px] text-center normal-case",
             }}
           />
         )}
-        {children ? (
-          <div class="section-children-container w-full flex flex-col items-center justify-center">
-            {children}
-          </div>
-        ) :
-          <div
-            style={{ height: "500px" }}
-            class="flex justify-center items-center"
-          >
-            <span class="loading loading-spinner" />
-          </div>
-        }
+        {children
+          ? fullWidth
+            ? (
+              <div class="w-full flex flex-col items-center justify-center">
+                {children}
+              </div>
+            )
+            : (
+              <div class="section-children-container w-full flex flex-col items-center justify-center">
+                {children}
+              </div>
+            )
+          : (
+            <div class="w-full flex justify-center items-center">
+              <span class="loading loading-spinner" />
+            </div>
+          )}
       </div>
       <style>
         {`
@@ -131,7 +139,7 @@ export default function Section({
               max-width: 1600px;
             }
           }
-      `}
+        `}
       </style>
     </>
   );

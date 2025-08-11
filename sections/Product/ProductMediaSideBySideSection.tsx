@@ -9,9 +9,9 @@ import { useId } from "site/sdk/useId.ts";
 
 interface ProductMediaBannerSectionProps {
   /**
- * @title Configuração da seção
- * @description Define o título, subtítulo e espaçamento da seção.
- */
+   * @title Configuração da seção
+   * @description Define o título, subtítulo e espaçamento da seção.
+   */
   section?: ISection;
 
   /**
@@ -21,31 +21,31 @@ interface ProductMediaBannerSectionProps {
   products?: Product[] | null;
 
   /**
-  * @title Direção do conteúdo
-  * @description Troca a direção do conteúdo na seção.
-  * @default false
-  */
+   * @title Direção do conteúdo
+   * @description Troca a direção do conteúdo na seção.
+   * @default false
+   */
   reverse?: boolean;
 
   /**
-    * @title É vídeo?
-    * @description Caso seja selecionada, esta opção faz com que seja renderizado um vídeo ao invés de uma imagem.
-    * @format string
-    */
+   * @title É vídeo?
+   * @description Caso seja selecionada, esta opção faz com que seja renderizado um vídeo ao invés de uma imagem.
+   * @format string
+   */
   isVideo?: boolean;
 
   /**
-  * @title Imagem
-  * @description Imagem que aparecerá ao lado do produto.
-  * @format string
-  */
+   * @title Imagem
+   * @description Imagem que aparecerá ao lado do produto.
+   * @format string
+   */
   image?: IResponsiveImage;
 
   /**
-  * @title Video
-  * @description Video que aparecerá ao lado do produto.
-  * @format string
-  */
+   * @title Video
+   * @description Video que aparecerá ao lado do produto.
+   * @format string
+   */
   video?: {
     /**
      * @title URL do vídeo
@@ -72,14 +72,14 @@ interface ProductMediaBannerSectionProps {
      * @hide
      */
     iframeProps?: preact.JSX.IntrinsicElements[
-    "iframe"
+      "iframe"
     ];
-  }
+  };
 
   /**
-* @title Configurações do slider
-* @description Define os parâmetros de exibição e comportamento do slider.
-*/
+   * @title Configurações do slider
+   * @description Define os parâmetros de exibição e comportamento do slider.
+   */
   configs?: ISliderConfigs;
 }
 
@@ -121,10 +121,22 @@ export default function ProductMediaBannerSection(
     >
       <div class="productMediaSideBySideContainer flex justify-center items-center gap-2.5 w-full">
         <div class="productMediaSideBySideProductContainer">
-          {products.length ? <ProductShelf products={minimalProducts} configs={configs} rootId={id} /> : null}
+          {products.length
+            ? (
+              <ProductShelf
+                products={minimalProducts}
+                configs={configs}
+                rootId={id}
+              />
+            )
+            : null}
         </div>
         <div class="productMediaSideBySideMediaContainer">
-          {isVideo ? (video.src ? <iframe {...video}></iframe> : null) : (image.src.mobile.length || image.src.desktop.length ? <ResponsiveImage {...image} /> : null)}
+          {isVideo
+            ? (video.src ? <iframe {...video}></iframe> : null)
+            : (image.src.mobile.length || image.src.desktop.length
+              ? <ResponsiveImage {...image} />
+              : null)}
         </div>
       </div>
       <style>

@@ -58,7 +58,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<h1>Sua casa bem vivida</h1>",
+          "subtitle": "lorem ipsum dolor sit amet"
         },
         "data": [
           {
@@ -265,7 +267,176 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/CategoriesSection.tsx"
+        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+        "section": {
+          "title": "<h1>Sua casa bem vivida</h1>",
+          "subtitle": "lorem ipsum dolor sit amet",
+          "fullWidth": true
+        },
+        "data": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "rgba(52, 73, 94, 0.8)",
+              "desktop": "rgba(52, 73, 94, 1)"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              },
+              "alt": "lavadora"
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "desktop": " rgba(90, 106, 90, 1)",
+              "mobile": " rgba(90, 106, 90, 0.8)"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": " rgba(107, 78, 78, 0.8)",
+              "desktop": " rgba(107, 78, 78, 1)"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              },
+              "alt": "Lavadora"
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "rgba(126, 100, 100, 0.8)",
+              "desktop": "rgba(126, 100, 100, 1)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+        "section": {
+          "title": "<h1>Explore por assunto</h1>",
+          "subtitle": "Lorem ipsum dolor sit amet"
+        },
+        "icons": [
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "",
+            "title": "Gastronomia",
+            "imageSrc": "https://assets.decocache.com/content-hub/047d6e36-b328-4ae3-9ed5-9fda6c16983b/utilidades-domesticas.svg"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#FFFFFF",
+            "title": "Arquitetura & Decoração",
+            "alt": "Arquitetura & Decoração",
+            "imageSrc": "https://assets.decocache.com/content-hub/09e9402d-13bf-40d5-b37d-134cddf37904/couch.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#FFFFFF",
+            "title": "Sua casa bem vivida",
+            "alt": "Sua casa bem vivida",
+            "imageSrc": "https://assets.decocache.com/content-hub/d0fcdc07-8b2e-442b-8985-5831e23a46af/courtains.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#FFFFFF",
+            "title": "Embaixadores da marca",
+            "alt": "Embaixadores da marca",
+            "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#FFFFFF",
+            "title": "Guia de compras",
+            "alt": "Guia de compras",
+            "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#FFFFFF",
+            "alt": "Dicas de especialistas",
+            "imageSrc": "https://assets.decocache.com/content-hub/47100eab-13d0-422c-b18f-06067198057b/heart.svg",
+            "redirect": "/#",
+            "title": "Dicas de especialistas"
+          }
+        ]
       }
     }
   ],

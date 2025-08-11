@@ -59,12 +59,3 @@ export default function VideoWithCtaSection({
     </Section>
   );
 }
-
-/** Fallback de carregamento padrão */
-export function LoadingFallback() {
-  return (
-    <div class="flex justify-center items-center h-[400px]">
-      <span class="loading loading-spinner" />
-    </div>
-  );
-}

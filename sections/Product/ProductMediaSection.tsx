@@ -125,14 +125,3 @@ export default function ProductMediaSection(
     </Section>
   );
 }
-
-export function LoadingFallback() {
-  return (
-    <div
-      style={{ height: "500px" }}
-      class="flex justify-center items-center"
-    >
-      <span class="loading loading-spinner" />
-    </div>
-  );
-}

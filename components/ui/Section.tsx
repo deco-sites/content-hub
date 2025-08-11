@@ -45,13 +45,25 @@ export default function Section({
           />
         )}
         {children ? (
-          <div class="flex flex-col items-center justify-center">
+          <div class="section-children-container w-full flex flex-col items-center justify-center">
             {children}
           </div>
-        ) : null}
+        ) :
+          <div
+            style={{ height: "500px" }}
+            class="flex justify-center items-center"
+          >
+            <span class="loading loading-spinner" />
+          </div>
+        }
       </div>
       <style>
         {`
+           #section-${id} {
+            margin-top: ${marginTopMobile}px;
+            margin-bottom: ${marginBottomMobile}px;
+          }
+
           .section-title,
           .section-title h1,
           .section-title h2,
@@ -77,12 +89,12 @@ export default function Section({
             color: #041e50;
           }
 
-          #section-${id} {
-            margin-top: ${marginTopMobile}px;
-            margin-bottom: ${marginBottomMobile}px;
-          }
-
           @media screen and (min-width: 1280px) {
+            #section-${id} {
+              margin-top: ${marginTopDesktop}px;
+              margin-bottom: ${marginBottomDesktop}px;
+            }
+
             .section-title,
             .section-title h1,
             .section-title h2,
@@ -103,9 +115,20 @@ export default function Section({
               font-size: 22px;
             }
 
-            #section-${id} {
-              margin-top: ${marginTopDesktop}px;
-              margin-bottom: ${marginBottomDesktop}px;
+            .section-children-container {
+              max-width: 1200px;
+            }
+          }
+
+          @media screen and (min-width: 1440px) {
+            .section-children-container {
+              max-width: 1360px;
+            }
+          }
+
+          @media screen and (min-width: 1920px) {
+            .section-children-container {
+              max-width: 1600px;
             }
           }
       `}

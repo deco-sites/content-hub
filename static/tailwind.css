@@ -2566,38 +2566,14 @@ input.tab:checked + .tab-content,
 .h-\[350px\] {
   height: 350px;
 }
-.h-\[382px\] {
-  height: 382px;
-}
 .h-\[3px\] {
   height: 3px;
-}
-.h-\[400px\] {
-  height: 400px;
 }
 .h-\[40px\] {
   height: 40px;
 }
-.h-\[420px\] {
-  height: 420px;
-}
-.h-\[445px\] {
-  height: 445px;
-}
 .h-\[453px\] {
   height: 453px;
-}
-.h-\[570px\] {
-  height: 570px;
-}
-.h-\[662px\] {
-  height: 662px;
-}
-.h-\[682px\] {
-  height: 682px;
-}
-.h-\[984px\] {
-  height: 984px;
 }
 .h-auto {
   height: auto;
@@ -4035,32 +4011,8 @@ input.tab:checked + .tab-content,
     height: 122px;
   }
 
-  .lg\:h-\[200px\] {
-    height: 200px;
-  }
-
-  .lg\:h-\[297px\] {
-    height: 297px;
-  }
-
-  .lg\:h-\[440px\] {
-    height: 440px;
-  }
-
   .lg\:h-\[500px\] {
     height: 500px;
-  }
-
-  .lg\:h-\[552px\] {
-    height: 552px;
-  }
-
-  .lg\:h-\[637px\] {
-    height: 637px;
-  }
-
-  .lg\:h-\[661px\] {
-    height: 661px;
   }
 
   .lg\:max-h-\[600px\] {

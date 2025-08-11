@@ -67,7 +67,7 @@ export default function SolidColorsSection(
       {...section}
       id={id}
     >
-      <div id="solid-colors-container" class="flex flex-col lg:flex-row justify-center items-center w-full gap-y-[12px] lg:gap-x-[12px]">
+      <div class="flex flex-col lg:flex-row justify-center items-center w-full gap-y-[12px] lg:gap-x-[12px]">
         {data.map(
           (item, index) => {
             return (
@@ -107,22 +107,6 @@ export default function SolidColorsSection(
             .solid-color-image-container img {
               width: 100%;
               height: 240px;
-            }
-            
-            #solid-colors-container {
-              max-width: 1200px;
-            }
-          }
-          
-          @media screen and (min-width: 1440px) {
-            #solid-colors-container {
-              max-width: 1360px;
-            }
-          }
-          
-          @media screen and (min-width: 1920px) {
-            #solid-colors-container {
-              max-width: 1600px;
             }
           }
         `}

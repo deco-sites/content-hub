@@ -68,11 +68,3 @@ export default function TextSection({
     </Section>
   );
 }
-
-export function LoadingFallback() {
-  return (
-    <div class="flex justify-center items-center h-[662px] lg:h-[637px]">
-      <span class="loading loading-spinner" />
-    </div>
-  );
-}

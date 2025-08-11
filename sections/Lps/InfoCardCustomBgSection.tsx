@@ -34,11 +34,3 @@ export default function InfoCardCustomBgSection({
     </Section>
   );
 }
-
-export function LoadingFallback() {
-  return (
-    <div class="flex justify-center items-center h-[570px] lg:h-[500px]">
-      <span class="loading loading-spinner" />
-    </div>
-  );
-}

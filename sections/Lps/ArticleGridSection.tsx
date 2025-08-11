@@ -51,7 +51,7 @@ export default function ArticleGridSection(
 
   return (
     <Section {...section} id={id}>
-      <div id="article-grid-container" class="w-full mx-auto grid grid-cols-2 lg:grid-cols-4 gap-[8px]">
+      <div class="w-full mx-auto grid grid-cols-2 lg:grid-cols-4 gap-[8px]">
         {articles.map((
           article,
           index,
@@ -97,22 +97,6 @@ export default function ArticleGridSection(
             .article-image-container img {
               width: 100%;
               height: 207px;
-            }
-
-            #article-grid-container {
-              max-width: 1200px;
-            }
-          }
-          
-          @media screen and (min-width: 1440px) {            
-            #article-grid-container {
-              max-width: 1360px;
-            }
-          }
-          
-          @media screen and (min-width: 1920px) {
-            #article-grid-container {
-              max-width: 1600px;
             }
           }
         `}

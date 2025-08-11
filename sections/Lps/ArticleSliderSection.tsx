@@ -22,8 +22,8 @@ interface Props {
    * @default "Type 1"
    */
   styleArticleOption?:
-    | "Type 1"
-    | "Type 2";
+  | "Type 1"
+  | "Type 2";
 
   /**
    * @title Lista de Artigos
@@ -85,12 +85,12 @@ export default function ArticleSliderSection(
           ...article.image.sizes,
           width: 344,
           height: styleArticleOption ===
-              "Type 1"
+            "Type 1"
             ? 180
             : 200,
           widthMobile: 344,
           heightMobile: styleArticleOption ===
-              "Type 1"
+            "Type 1"
             ? 180
             : 200,
         },
@@ -101,11 +101,10 @@ export default function ArticleSliderSection(
     <Section
       {...section}
       id={id}
-      classesContainer={`article-slider-section article-slider-section__${
-        styleArticleOption
+      classesContainer={`article-slider-section article-slider-section__${styleArticleOption
           .toLowerCase()
           .replace(" ", "-")
-      } h-full`}
+        } h-full`}
     >
       <div class="flex w-full mx-auto">
         <ArticleSlider
@@ -115,13 +114,5 @@ export default function ArticleSliderSection(
         />
       </div>
     </Section>
-  );
-}
-
-export function LoadingFallback() {
-  return (
-    <div class="flex justify-center items-center h-[662px] lg:h-[637px]">
-      <span class="loading loading-spinner" />
-    </div>
   );
 }

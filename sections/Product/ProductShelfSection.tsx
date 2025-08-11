@@ -169,15 +169,13 @@ export default function ProductShelfSection(
       fullWidth={isCustomShelf}
     >
       <div
-        class={`flex flex-col items-center justify-center relative w-full ${
-          isCustomShelf ? "lg:w-full" : ""
-        }`}
+        class={`flex flex-col items-center justify-center relative w-full ${isCustomShelf ? "lg:w-full" : ""
+          }`}
       >
         {hasBackground && (
           <div
-            class={`flex w-full top-0 left-0 absolute -z-[1] max-h-[475px] lg:[position:initial] lg:max-h-[initial] ${
-              !reverse ? "justify-end" : "justify-start"
-            }`}
+            class={`flex w-full top-0 left-0 absolute -z-[1] max-h-[475px] lg:[position:initial] lg:max-h-[initial] ${!reverse ? "justify-end" : "justify-start"
+              }`}
           >
             <div class="flex w-full max-w-[1094px]">
               <ResponsiveImage
@@ -199,21 +197,18 @@ export default function ProductShelfSection(
         )}
 
         <div
-          class={`flex w-full items-center justify-center ${
-            isCustomShelf
+          class={`flex w-full items-center justify-center ${isCustomShelf
               ? "flex-col-reverse gap-[50px] lg:max-w-[calc(100.1rem+32px)] lg:gap-[10px] lg:mx-auto"
               : ""
-          } ${hasBackground ? "lg:absolute lg:top-1/2 lg:-translate-y-2/4" : ""}
-              ${
-            !reverse && isCustomShelf ? "lg:flex-row" : "lg:flex-row-reverse"
-          }`}
+            } ${hasBackground ? "lg:absolute lg:top-1/2 lg:-translate-y-2/4" : ""}
+              ${!reverse && isCustomShelf ? "lg:flex-row" : "lg:flex-row-reverse"
+            }`}
         >
           <div
-            class={`flex w-full ${
-              isCustomShelf
+            class={`flex w-full ${isCustomShelf
                 ? "lg:max-w-[calc(65%-5px)] lg:px-[50px] xl:max-w-[calc(75%-5px)]"
                 : ""
-            }`}
+              }`}
           >
             {hasProducts && (
               <ProductShelf
@@ -226,9 +221,8 @@ export default function ProductShelfSection(
 
           {isCustomShelf && (
             <div
-              class={`product-shelf-section__text items-center flex w-full h-full pt-[84px] px-4 lg:px-0 lg:pt-0 lg:max-w-[calc(35%-5px)] xl:max-w-[calc(25%-5px)] ${
-                !reverse ? "lg:pr-4" : "lg:pl-4"
-              }`}
+              class={`product-shelf-section__text items-center flex w-full h-full pt-[84px] px-4 lg:px-0 lg:pt-0 lg:max-w-[calc(35%-5px)] xl:max-w-[calc(25%-5px)] ${!reverse ? "lg:pr-4" : "lg:pl-4"
+                }`}
             >
               <div class="flex gap-4 flex-col">
                 {text && (
@@ -262,16 +256,5 @@ export default function ProductShelfSection(
         </div>
       </div>
     </Section>
-  );
-}
-
-export function LoadingFallback() {
-  return (
-    <div
-      style={{ height: "500px" }}
-      class="flex justify-center items-center"
-    >
-      <span class="loading loading-spinner" />
-    </div>
   );
 }

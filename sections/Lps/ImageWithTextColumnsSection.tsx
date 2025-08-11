@@ -119,11 +119,3 @@ export default function ImageWithTextColumnsSection(
     </Section>
   );
 }
-
-export function LoadingFallback() {
-  return (
-    <div class="flex justify-center items-center h-[984px] lg:h-[661px]">
-      <span class="loading loading-spinner" />
-    </div>
-  );
-}

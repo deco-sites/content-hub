@@ -117,11 +117,3 @@ export default function ReviewsSliderSection(
     </>
   );
 }
-
-export function LoadingFallback() {
-  return (
-    <div class="flex justify-center items-center h-[382px] lg:h-[552px]">
-      <span class="loading loading-spinner" />
-    </div>
-  );
-}

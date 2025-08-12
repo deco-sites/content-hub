@@ -2350,8 +2350,14 @@ input.tab:checked + .tab-content,
 .relative {
   position: relative;
 }
+.inset-0 {
+  inset: 0px;
+}
 .bottom-0 {
   bottom: 0px;
+}
+.bottom-\[8px\] {
+  bottom: 8px;
 }
 .left-0 {
   left: 0px;
@@ -2364,6 +2370,9 @@ input.tab:checked + .tab-content,
 }
 .right-4 {
   right: 1rem;
+}
+.right-\[12px\] {
+  right: 12px;
 }
 .top-0 {
   top: 0px;
@@ -2454,6 +2463,9 @@ input.tab:checked + .tab-content,
 }
 .mb-\[16px\] {
   margin-bottom: 16px;
+}
+.mb-\[24px\] {
+  margin-bottom: 24px;
 }
 .mb-\[8px\] {
   margin-bottom: 8px;
@@ -2553,6 +2565,9 @@ input.tab:checked + .tab-content,
 }
 .h-\[174px\] {
   height: 174px;
+}
+.h-\[191px\] {
+  height: 191px;
 }
 .h-\[210px\] {
   height: 210px;
@@ -3616,6 +3631,9 @@ input.tab:checked + .tab-content,
 }
 .opacity-100 {
   opacity: 1;
+}
+.opacity-50 {
+  opacity: 0.5;
 }
 .opacity-60 {
   opacity: 0.6;

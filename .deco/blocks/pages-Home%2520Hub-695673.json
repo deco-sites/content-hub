@@ -31,7 +31,135 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/CategoriesGridSection.tsx",
+        "section": {
+          "title": "Electrolux Inspira"
+        },
+        "categories": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Linhas Especiais"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Linhas Especiais",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/1d40424e-7a65-4938-8a88-774383d1677d/MultiBanner2-desktop.png",
+                "mobile": "https://assets.decocache.com/content-hub/04741de6-00de-4e78-b89c-dbb39bccae44/MultiBanner2-mobile.png"
+              }
+            },
+            "name": "Linhas Especiais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "A nossa marca"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "A nossa marca",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
+                "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
+              }
+            },
+            "name": "A nossa marca"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Embaixadores"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Embaixadores",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+              }
+            },
+            "name": "Embaixadores"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Inspire-se"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/153d4e09-dc90-45ff-83e9-08be0a5118e8/Cooker_Vapor_Bake_Comparativo_Frigidaire_Spanish.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/db19e8b0-2959-4f1c-8928-7e7bcea0e050/Pao-Frigidaire.png"
+              },
+              "alt": "Inspire-se"
+            },
+            "name": "Inspire-se"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Serviços"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Serviços",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png"
+              }
+            },
+            "name": "Serviços"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Artigos úteis"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Artigos úteis",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7aa14835-c207-406e-b02e-b6063584a767/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/7aa14835-c207-406e-b02e-b6063584a767/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png"
+              }
+            },
+            "name": "Artigos úteis"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
         "infoCards": [
           {
             "link": {
@@ -47,10 +175,7 @@
               "alt": "Geladeira"
             }
           }
-        ],
-        "section": {
-          "fullWidth": true
-        }
+        ]
       }
     },
     {
@@ -58,9 +183,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "section": {
-          "fullWidth": true,
           "title": "<h1>Sua casa bem vivida</h1>",
-          "subtitle": "lorem ipsum dolor sit amet"
+          "subtitle": "lorem ipsum dolor sit amet",
+          "fullWidth": true
         },
         "data": [
           {

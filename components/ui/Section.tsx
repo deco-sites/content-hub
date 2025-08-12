@@ -33,9 +33,10 @@ export default function Section({
             title={title}
             classes={{
               container:
-                "section-title flex flex-col mt-[24px] text-center normal-case",
+                `section-title flex flex-col mt-[24px] text-center normal-case ${
+                  isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"
+                }`,
             }}
-            styles={{ marginBottom: subtitle ? "24px" : "8px" }}
           />
         )}
         {!isEmptyText(subtitle) && (
@@ -67,7 +68,7 @@ export default function Section({
       </div>
       <style>
         {`
-           #section-${id} {
+          #section-${id} {
             margin-top: ${marginTopMobile}px;
             margin-bottom: ${marginBottomMobile}px;
           }

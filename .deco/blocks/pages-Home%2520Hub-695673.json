@@ -387,14 +387,14 @@
           {
             "target": false,
             "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "",
+            "boxBackgroundColorHover": "#041E50",
             "title": "Gastronomia",
             "imageSrc": "https://assets.decocache.com/content-hub/047d6e36-b328-4ae3-9ed5-9fda6c16983b/utilidades-domesticas.svg"
           },
           {
             "target": false,
             "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#FFFFFF",
+            "boxBackgroundColorHover": "#041E50",
             "title": "Arquitetura & Decoração",
             "alt": "Arquitetura & Decoração",
             "imageSrc": "https://assets.decocache.com/content-hub/09e9402d-13bf-40d5-b37d-134cddf37904/couch.svg",
@@ -403,7 +403,7 @@
           {
             "target": false,
             "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#FFFFFF",
+            "boxBackgroundColorHover": "#041E50",
             "title": "Sua casa bem vivida",
             "alt": "Sua casa bem vivida",
             "imageSrc": "https://assets.decocache.com/content-hub/d0fcdc07-8b2e-442b-8985-5831e23a46af/courtains.svg",
@@ -412,7 +412,7 @@
           {
             "target": false,
             "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#FFFFFF",
+            "boxBackgroundColorHover": "#041E50",
             "title": "Embaixadores da marca",
             "alt": "Embaixadores da marca",
             "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
@@ -421,7 +421,7 @@
           {
             "target": false,
             "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#FFFFFF",
+            "boxBackgroundColorHover": "#041E50",
             "title": "Guia de compras",
             "alt": "Guia de compras",
             "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
@@ -430,7 +430,7 @@
           {
             "target": false,
             "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#FFFFFF",
+            "boxBackgroundColorHover": "#041E50",
             "alt": "Dicas de especialistas",
             "imageSrc": "https://assets.decocache.com/content-hub/47100eab-13d0-422c-b18f-06067198057b/heart.svg",
             "redirect": "/#",

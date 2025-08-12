@@ -120,8 +120,9 @@ export default function DimmedColorsSection(
             display: none;
           }
 
-          @media screen and (min-width:1280px) {
+          @media screen and (min-width: 1024px) {
             .dimmed-colors-items__container {
+              cursor: pointer;
               flex-direction: row;
               gap: 8px;
             }

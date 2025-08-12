@@ -51,7 +51,7 @@ export default function ArticleGridSection(
 
   return (
     <Section {...section} id={id}>
-      <div class="w-full mx-auto grid grid-cols-2 lg:grid-cols-4 gap-[8px]">
+      <div class="article-grid-container w-full mx-auto grid grid-cols-2 lg:grid-cols-4 gap-[8px]">
         {articles.map((
           article,
           index,
@@ -91,6 +91,10 @@ export default function ArticleGridSection(
           }
           
           @media screen and (min-width: 1280px) {
+            .article-grid-container {
+              cursor: pointer;
+            }
+
             .article-grid-item {
               min-width: 294px;
             }

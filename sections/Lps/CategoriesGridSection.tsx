@@ -39,42 +39,42 @@ export default function CategoriesGridSection(
               })}
             </div>
             <div class="grid-category-container__desktop">
-              <div class="grid-category-item__desktop grid-desktop-index-0">
+              <div class="grid-category-item__desktop photo0">
                 <ResponsiveImage {...categories[0].image} />
                 <div class="grid-category-item-overlay__desktop"></div>
                 <span class="grid-category-item-text__desktop">
                   {categories[0].name}
                 </span>
               </div>
-              <div class="grid-category-item__desktop grid-desktop-index-1">
+              <div class="grid-category-item__desktop photo1">
                 <ResponsiveImage {...categories[1].image} />
                 <div class="grid-category-item-overlay__desktop"></div>
                 <span class="grid-category-item-text__desktop">
                   {categories[1].name}
                 </span>
               </div>
-              <div class="grid-category-item__desktop grid-desktop-index-2">
+              <div class="grid-category-item__desktop photo2">
                 <ResponsiveImage {...categories[2].image} />
                 <div class="grid-category-item-overlay__desktop"></div>
                 <span class="grid-category-item-text__desktop">
                   {categories[2].name}
                 </span>
               </div>
-              <div class="grid-category-item__desktop grid-desktop-index-3">
+              <div class="grid-category-item__desktop photo3">
                 <ResponsiveImage {...categories[3].image} />
                 <div class="grid-category-item-overlay__desktop"></div>
                 <span class="grid-category-item-text__desktop">
                   {categories[3].name}
                 </span>
               </div>
-              <div class="grid-category-item__desktop grid-desktop-index-4">
+              <div class="grid-category-item__desktop photo4">
                 <ResponsiveImage {...categories[4].image} />
                 <div class="grid-category-item-overlay__desktop"></div>
                 <span class="grid-category-item-text__desktop">
                   {categories[4].name}
                 </span>
               </div>
-              <div class="grid-category-item__desktop grid-desktop-index-5">
+              <div class="grid-category-item__desktop photo5">
                 <ResponsiveImage {...categories[5].image} />
                 <div class="grid-category-item-overlay__desktop"></div>
                 <span class="grid-category-item-text__desktop">
@@ -102,10 +102,12 @@ export default function CategoriesGridSection(
             }
 
             .grid-category-container__desktop {
+              height: 670px;
               display: grid;
-              grid-template-areas: 
-                "index-0 index-1 index-2 index-3"
-                "index-0 index-4 index-4 index-5";
+              gap: 8px;
+              grid-template-areas:
+                'photo0 photo0 photo1 photo1 photo2 photo2 photo3 photo3' 
+                'photo0 photo0 photo4 photo4 photo4 photo5 photo5 photo5';
             }
 
             .grid-category-item__desktop {
@@ -131,12 +133,20 @@ export default function CategoriesGridSection(
               right: 12px
             }
             
-            .grid-desktop-index-0 { grid-area: index-0; }
-            .grid-desktop-index-1 { grid-area: index-1; }
-            .grid-desktop-index-2 { grid-area: index-2; }
-            .grid-desktop-index-3 { grid-area: index-3; }
-            .grid-desktop-index-4 { grid-area: index-4; }
-            .grid-desktop-index-5 { grid-area: index-5; }
+            .photo0 { grid-area: photo0; }
+            .photo1 { grid-area: photo1; }
+            .photo2 { grid-area: photo2; }
+            .photo3 { grid-area: photo3; }
+            .photo4 { grid-area: photo4; }
+            .photo5 { grid-area: photo5; }
+
+            .photo0 a,
+            .photo1 a,
+            .photo2 a,
+            .photo3 a,
+            .photo4 a,
+            .photo5 a
+              { height: 100%; }
           }
         `}
       </style>

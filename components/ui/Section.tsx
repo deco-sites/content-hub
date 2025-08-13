@@ -56,7 +56,7 @@ export default function Section({
               </div>
             )
             : (
-              <div class="section-children-container w-full flex flex-col items-center justify-center">
+              <div class="section-children-container flex flex-col items-center justify-center">
                 {children}
               </div>
             )
@@ -96,6 +96,10 @@ export default function Section({
             font-size: 16px;
             font-weight: 400;
             color: #041e50;
+          }
+
+          .section-children-container {
+            width: 100%;
           }
 
           @media screen and (min-width: 1280px) {

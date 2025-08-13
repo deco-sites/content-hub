@@ -145,8 +145,9 @@ export default function CategoriesGridSection(
             .photo2 a,
             .photo3 a,
             .photo4 a,
-            .photo5 a
-              { height: 100%; }
+            .photo5 a { 
+              height: 100%; 
+            }
           }
         `}
       </style>

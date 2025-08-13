@@ -56,15 +56,15 @@ export default function DimmedColorsSection(
       {...section}
       id={id}
     >
-      <div class="dimmed-colors-items__container flex flex-col justify-center items-center w-full">
+      <div class="dimmed-colors-items__container flex flex-col justify-center items-center">
         {data.map(
           (item, index) => {
             return (
-              <a
-                href={item.link}
-                key={index}
-              >
-                <div class="dimmed-colors-item__container relative flex flex-col overflow-hidden h-[171px]">
+              <div class="dimmed-colors-item__container relative flex flex-col overflow-hidden h-[171px]">
+                <a
+                  href={item.link}
+                  key={index}
+                >
                   <ResponsiveImage
                     {...item.image}
                   />
@@ -92,8 +92,8 @@ export default function DimmedColorsSection(
                     </h3>
                     <p>{item.text}</p>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
             );
           },
         )}
@@ -121,6 +121,10 @@ export default function DimmedColorsSection(
           }
 
           @media screen and (min-width: 1024px) {
+            .dimmed-colors-item__mobile {
+              display: none;
+            }
+
             .dimmed-colors-items__container {
               cursor: pointer;
               flex-direction: row;
@@ -131,16 +135,30 @@ export default function DimmedColorsSection(
               height: 100%;
             }
 
-            .dimmed-colors-item__mobile {
-              display: none;
-            }
-
             .dimmed-colors-item__desktop {
               display: flex;
               justify-content: flex-start;
               padding-top: 2vh;
               position: static;
               height: 15vh;
+            }
+          }
+
+          @media screen and (min-width: 1280px) {
+            .dimmed-colors-item__container {
+              width: 294px;
+            }
+          }
+          
+          @media screen and (min-width: 1440px) {
+            .dimmed-colors-item__container {
+              max-width: 334px;
+            }
+          }
+          
+          @media screen and (min-width: 1920px) {
+            .dimmed-colors-item__container {
+              max-width: 394px;
             }
           }
         `}

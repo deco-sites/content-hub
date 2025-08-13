@@ -89,19 +89,33 @@ export default function ArticleGridSection(
             width: 165px;
             height: 124px;
           }
-          
-          @media screen and (min-width: 1280px) {
+
+          @media screen and (min-width: 1024px) {
             .article-grid-container {
               cursor: pointer;
             }
-
+          }
+          
+          @media screen and (min-width: 1280px) {
             .article-grid-item {
-              min-width: 294px;
+              max-width: 294px;
             }
-
+            
             .article-image-container img {
               width: 100%;
               height: 207px;
+            }
+          }
+          
+          @media screen and (min-width: 1440px) {
+            .article-grid-item {
+              max-width: 334px;
+            }  
+          }
+          
+          @media screen and (min-width: 1920px) {
+            .article-grid-item {
+              max-width: 394px;
             }
           }
         `}

@@ -23,9 +23,8 @@ export default function Section({
     <>
       <div
         id={`section-${id}`}
-        class={`section-container flex flex-col w-full ${
-          classesContainer ?? ""
-        } ${!fullWidth ? "container" : ""}`}
+        class={`section-container flex flex-col justify-center items-center w-full ${classesContainer ?? ""
+          } ${!fullWidth ? "container" : ""}`}
         style={stylesContainer}
       >
         {!isEmptyText(title) && (
@@ -33,8 +32,7 @@ export default function Section({
             title={title}
             classes={{
               container:
-                `section-title flex flex-col mt-[24px] text-center normal-case ${
-                  isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"
+                `section-title flex flex-col mt-[24px] text-center normal-case ${isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"
                 }`,
             }}
           />
@@ -49,17 +47,14 @@ export default function Section({
           />
         )}
         {children
-          ? fullWidth
-            ? (
-              <div class="w-full flex flex-col items-center justify-center">
-                {children}
-              </div>
-            )
-            : (
-              <div class="section-children-container flex flex-col items-center justify-center">
-                {children}
-              </div>
-            )
+          ? (
+            <div
+              class={`${fullWidth ? "w-full" : "section-children-container"
+                }  flex flex-col items-center justify-center`}
+            >
+              {children}
+            </div>
+          )
           : (
             <div class="w-full flex justify-center items-center">
               <span class="loading loading-spinner" />
@@ -102,6 +97,12 @@ export default function Section({
             width: 100%;
           }
 
+          @media screen and (min-width: 1024px) {
+            .section-children-container {
+              width: 1200px;
+            }
+          }
+
           @media screen and (min-width: 1280px) {
             #section-${id} {
               margin-top: ${marginTopDesktop}px;
@@ -127,21 +128,17 @@ export default function Section({
             .section-subtitle h6 {
               font-size: 22px;
             }
-
-            .section-children-container {
-              max-width: 1200px;
-            }
           }
 
           @media screen and (min-width: 1440px) {
             .section-children-container {
-              max-width: 1360px;
+              width: 1360px;
             }
           }
 
           @media screen and (min-width: 1920px) {
             .section-children-container {
-              max-width: 1600px;
+              width: 1600px;
             }
           }
         `}

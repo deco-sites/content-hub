@@ -185,7 +185,7 @@
         "section": {
           "title": "<h1>Sua casa bem vivida</h1>",
           "subtitle": "lorem ipsum dolor sit amet",
-          "fullWidth": true
+          "fullWidth": false
         },
         "data": [
           {
@@ -396,7 +396,7 @@
         "section": {
           "title": "<h1>Sua casa bem vivida</h1>",
           "subtitle": "lorem ipsum dolor sit amet",
-          "fullWidth": true
+          "fullWidth": false
         },
         "data": [
           {

@@ -80,18 +80,20 @@ export default function DimmedColorsSection(
                     </h3>
                     <p class="dimmed-colors-item-text__mobile">{item.text}</p>
                   </div>
+
                   <div
                     style={{
                       backgroundColor: item.color
                         .desktop,
                     }}
-                    class="dimmed-colors-item__desktop absolute flex flex-col justify-center items-start h-full w-full pl-4 text-white"
+                    class="dimmed-colors-item__desktop absolute h-full w-full px-[24px] pt-[24px] text-white"
                   >
                     <h3 class="font-semibold">
                       {item.title}
                     </h3>
                     <p>{item.text}</p>
                   </div>
+
                 </a>
               </div>
             );
@@ -137,28 +139,11 @@ export default function DimmedColorsSection(
 
             .dimmed-colors-item__desktop {
               display: flex;
+              flex-direction: column;
               justify-content: flex-start;
-              padding-top: 2vh;
+              align-items: flex-start;
               position: static;
-              height: 15vh;
-            }
-          }
-
-          @media screen and (min-width: 1280px) {
-            .dimmed-colors-item__container {
-              width: 294px;
-            }
-          }
-          
-          @media screen and (min-width: 1440px) {
-            .dimmed-colors-item__container {
-              max-width: 334px;
-            }
-          }
-          
-          @media screen and (min-width: 1920px) {
-            .dimmed-colors-item__container {
-              max-width: 394px;
+              height: 170px;
             }
           }
         `}

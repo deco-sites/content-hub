@@ -6,7 +6,7 @@ import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { IInfoCardCustom } from "site/types/InfoCardCustom.d.ts";
 
 /**
- * @title Home Hub – Slider de Artigos/Blocos
+ * @title Slider de Artigos/Blocos
  * @description Slider de blocos (imagem + texto) semelhante ao InfoCard.
  */
 export interface Props {
@@ -39,6 +39,7 @@ export default function HomeHubInfoSection({
     autoplay: { enabled: false, delay: 5000 },
     ...(configs || {}),
   };
+
 
   return (
     <Section

@@ -1,0 +1,97 @@
+{
+  "name": "Home Hub Teste",
+  "path": "/home-hub-teste",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "banners": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/60969699-a762-4b14-9a10-059b142a38f7/banner-inspirese.png",
+              "mobile": "https://assets.decocache.com/content-hub/65e061a3-f00e-4c8d-bc89-a3fa65ea87d1/banner-inspirese-mobile.png"
+            }
+          }
+        ],
+        "section": {
+          "fullWidth": true
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/HomeHubInfoSection.tsx",
+        "actionLink": {},
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "left",
+            "title": "<p><span>Aspiradores e Truques para Viver com Pets Sem Viver com Pelos</span></p>",
+            "description": "<p><span>Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...</span></p>",
+            "textBackgroundColor": "#FFFFFF",
+            "textColor": "#041E50",
+            "richText": "<p></p>",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Foto de um homem segurando um cachorro",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png"
+            }
+          },
+          {
+            "fontFamily": "Arial",
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "left",
+            "title": "<p><span>Aspiradores e Truques para Viver com Pets Sem Viver com Pelos</span></p>",
+            "description": "<p><span>Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...</span></p>",
+            "textBackgroundColor": "#FFFFFF",
+            "textColor": "#2B2936",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Homem Segurando um cachorro"
+            }
+          },
+          {
+            "fontFamily": "Arial",
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "left",
+            "title": "<p>Teste</p>",
+            "description": "<p>Teste</p>",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "teste"
+            },
+            "textBackgroundColor": "#FFFFFF",
+            "textColor": "#2B2936"
+          }
+        ],
+        "description": "<p></p>",
+        "section": {
+          "title": "Ultimos Artigos",
+          "subtitle": "Ver todos os artigos",
+          "fullWidth": false
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -31,7 +31,135 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/CategoriesGridSection.tsx",
+        "section": {
+          "title": "Electrolux Inspira"
+        },
+        "categories": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Linhas Especiais"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Linhas Especiais",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/1d40424e-7a65-4938-8a88-774383d1677d/MultiBanner2-desktop.png",
+                "mobile": "https://assets.decocache.com/content-hub/04741de6-00de-4e78-b89c-dbb39bccae44/MultiBanner2-mobile.png"
+              }
+            },
+            "name": "Linhas Especiais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "A nossa marca"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "A nossa marca",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
+                "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
+              }
+            },
+            "name": "A nossa marca"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Embaixadores"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Embaixadores",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+              }
+            },
+            "name": "Embaixadores"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Inspire-se"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/153d4e09-dc90-45ff-83e9-08be0a5118e8/Cooker_Vapor_Bake_Comparativo_Frigidaire_Spanish.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/db19e8b0-2959-4f1c-8928-7e7bcea0e050/Pao-Frigidaire.png"
+              },
+              "alt": "Inspire-se"
+            },
+            "name": "Inspire-se"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Serviços"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Serviços",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png"
+              }
+            },
+            "name": "Serviços"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Artigos úteis"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Artigos úteis",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7aa14835-c207-406e-b02e-b6063584a767/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/7aa14835-c207-406e-b02e-b6063584a767/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png"
+              }
+            },
+            "name": "Artigos úteis"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
         "infoCards": [
           {
             "link": {
@@ -47,10 +175,7 @@
               "alt": "Geladeira"
             }
           }
-        ],
-        "section": {
-          "fullWidth": true
-        }
+        ]
       }
     },
     {
@@ -58,7 +183,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "section": {
-          "fullWidth": true
+          "title": "<h1>Sua casa bem vivida</h1>",
+          "subtitle": "lorem ipsum dolor sit amet",
+          "fullWidth": false
         },
         "data": [
           {
@@ -265,7 +392,208 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/CategoriesSection.tsx"
+        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+        "section": {
+          "title": "<h1>Sua casa bem vivida</h1>",
+          "subtitle": "lorem ipsum dolor sit amet",
+          "fullWidth": false
+        },
+        "data": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "rgba(52, 73, 94, 0.8)",
+              "desktop": "rgba(52, 73, 94, 1)"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              },
+              "alt": "lavadora"
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "desktop": " rgba(90, 106, 90, 1)",
+              "mobile": " rgba(90, 106, 90, 0.8)"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": " rgba(107, 78, 78, 0.8)",
+              "desktop": " rgba(107, 78, 78, 1)"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              },
+              "alt": "Lavadora"
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "rgba(126, 100, 100, 0.8)",
+              "desktop": "rgba(126, 100, 100, 1)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+        "section": {
+          "title": "<h1>Explore por assunto</h1>",
+          "subtitle": "Lorem ipsum dolor sit amet"
+        },
+        "icons": [
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "title": "Gastronomia",
+            "imageSrc": "https://assets.decocache.com/content-hub/047d6e36-b328-4ae3-9ed5-9fda6c16983b/utilidades-domesticas.svg"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "title": "Arquitetura & Decoração",
+            "alt": "Arquitetura & Decoração",
+            "imageSrc": "https://assets.decocache.com/content-hub/09e9402d-13bf-40d5-b37d-134cddf37904/couch.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "title": "Sua casa bem vivida",
+            "alt": "Sua casa bem vivida",
+            "imageSrc": "https://assets.decocache.com/content-hub/d0fcdc07-8b2e-442b-8985-5831e23a46af/courtains.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "title": "Embaixadores da marca",
+            "alt": "Embaixadores da marca",
+            "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "title": "Guia de compras",
+            "alt": "Guia de compras",
+            "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "alt": "Dicas de especialistas",
+            "imageSrc": "https://assets.decocache.com/content-hub/47100eab-13d0-422c-b18f-06067198057b/heart.svg",
+            "redirect": "/#",
+            "title": "Dicas de especialistas"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/FoldItemsSection.tsx",
+        "section": {
+          "title": "Nossos Serviços",
+          "subtitle": "Conheça mais sobre nossos serviços"
+        },
+        "foldItems": [
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Retirada & Coleta",
+                "href": "/#",
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png"
+              },
+              "alt": "Retirada & Coleta"
+            },
+            "title": "Retirada & Coleta"
+          }
+        ]
       }
     }
   ],

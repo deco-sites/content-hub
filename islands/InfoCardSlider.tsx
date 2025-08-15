@@ -27,16 +27,16 @@ function Island({
 
     const enrichedTypeOfContent = isVideo
       ? {
-          ...typeOfContentVideo,
-          iframeProps: {
-            ...typeOfContentVideo?.iframeProps,
-            className: props?.classes?.children,
-            id: `iframe-${rootId}`,
-            width: "100%",
-            allow: typeOfContentVideo?.autoplay ? "autoplay" : "",
-            allowFullScreen: true,
-          },
-        }
+        ...typeOfContentVideo,
+        iframeProps: {
+          ...typeOfContentVideo?.iframeProps,
+          className: props?.classes?.children,
+          id: `iframe-${rootId}`,
+          width: "100%",
+          allow: typeOfContentVideo?.autoplay ? "autoplay" : "",
+          allowFullScreen: true,
+        },
+      }
       : typeOfContentImage;
 
     return (
@@ -46,9 +46,7 @@ function Island({
           typeOfContent={enrichedTypeOfContent}
           classes={{
             container: `w-full info-card ${
-              props?.direction === "left"
-                ? "flex-row"
-                : "flex-row-reverse"
+              props?.direction === "left" ? "flex-row" : "flex-row-reverse"
             }`,
             children:
               `info-card-children w-full h-full flex flex-col justify-center`,
@@ -62,10 +60,10 @@ function Island({
             }`,
           }}
           styles={{
-            children:{
+            children: {
               backgroundColor: textBackgroundColor || undefined,
               color: textColor || undefined,
-            }
+            },
           }}
         />
       </div>

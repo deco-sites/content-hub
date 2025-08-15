@@ -12,7 +12,7 @@ export type Props = {
 export default function SwiperSlider({
   configs = {},
   slides = [],
-  rootId
+  rootId,
 }: Props): preact.JSX.Element {
   const {
     slidesPerView,

@@ -37,7 +37,9 @@ export default function SummaryProductCard(
       <div class="flex gap-x-[16px]">
         <div class="w-full">
           <figure class="relative overflow-hidden aspect-square">
-            <a href={url && relative(url)} class="grid grid-cols-1 w-full group"
+            <a
+              href={url && relative(url)}
+              class="grid grid-cols-1 w-full group"
             >
               <Image
                 src={front?.url!}
@@ -62,19 +64,24 @@ export default function SummaryProductCard(
         </div>
 
         <div class="flex flex-col gap-y-[8px]">
-          <h2 title={isVariantOf?.name} class="text-sm text-left font-semibold leading-[20px] text-[#011e41] text-wrap truncate line-clamp-3 xl:text-base xl:font-bold">
+          <h2
+            title={isVariantOf?.name}
+            class="text-sm text-left font-semibold leading-[20px] text-[#011e41] text-wrap truncate line-clamp-3 xl:text-base xl:font-bold"
+          >
             {isVariantOf?.name}
           </h2>
 
           <div class="flex flex-col mb-4">
-            {
-              listPrice < price ? <span class="flex h-full text-sm text-left line-through text-[#5b6a78] leading-[initial] min-h-[16px]">
-                {formatPrice(
-                  listPrice,
-                  offers!.priceCurrency!,
-                )}
-              </span> : null
-            }
+            {listPrice < price
+              ? (
+                <span class="flex h-full text-sm text-left line-through text-[#5b6a78] leading-[initial] min-h-[16px]">
+                  {formatPrice(
+                    listPrice,
+                    offers!.priceCurrency!,
+                  )}
+                </span>
+              )
+              : null}
 
             <div class="flex gap-2 items-center">
               <span class="flex items-center h-full text-xl text-left font-semibold text-[#011e41] leading-[24px] min-h-[24px] gap-1">

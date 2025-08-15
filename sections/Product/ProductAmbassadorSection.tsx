@@ -8,12 +8,12 @@ import type { ISliderConfigs } from "site/types/Slider.d.ts";
 interface ProductAmbassadorsSectionProps {
   section?: ISection;
   /**
-  * @title Lista de embaixadores com produtos
-  */
+   * @title Lista de embaixadores com produtos
+   */
   configs?: ISliderConfigs;
   /**
-  * @title Lista de embaixadores
-  */
+   * @title Lista de embaixadores
+   */
   ambassadors?: AmbassadorWithProduct[];
 }
 
@@ -21,7 +21,7 @@ export default function ProductAmbassadorsSection(
   {
     section,
     ambassadors,
-    configs
+    configs,
   }: ProductAmbassadorsSectionProps,
 ) {
   const id = useId();
@@ -64,40 +64,13 @@ export default function ProductAmbassadorsSection(
       {...section}
       id={id}
     >
-      <div id="product-ambassador-container" class="w-full">
+      <div class="w-full">
         <AmbassadorSlider
           rootId={id}
           configs={sliderConfig}
           ambassadors={ambassadors}
         />
       </div>
-      <style>{`
-        @media screen and (min-width: 1280px) {
-          #product-ambassador-container {
-            max-width: 1200px;
-          }
-        }
-        
-        @media screen and (min-width: 1440px) {            
-          #product-ambassador-container {
-            max-width: 1360px;
-          }
-        }
-        
-        @media screen and (min-width: 1920px) {
-          #product-ambassador-container {
-            max-width: 1600px;
-          }
-        }
-      `}</style>
     </Section>
-  );
-}
-
-export function LoadingFallback() {
-  return (
-    <div class="flex justify-center items-center h-[682px] lg:h-[200px]">
-      <span class="loading loading-spinner" />
-    </div>
   );
 }

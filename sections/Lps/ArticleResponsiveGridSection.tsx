@@ -28,7 +28,9 @@ export interface Props {
   articles?: ArticleItem[];
 }
 
-export default function ArticleResponsiveGridSection({ section, articles = [] }: Props) {
+export default function ArticleResponsiveGridSection(
+  { section, articles = [] }: Props,
+) {
   const id = useId();
 
   if (!articles.length) return null;

@@ -40,31 +40,36 @@ interface Props {
 export default function FeatureHighlightSection({
   section,
   topImage,
-  highlightText = "Cocción a Vapor que mejora hasta 2x los resultados de la masa haciéndola mucho más crocante.",
+  highlightText =
+    "Cocción a Vapor que mejora hasta 2x los resultados de la masa haciéndola mucho más crocante.",
   stoveImage,
   stoveTitle = "Vapor Regenerativo",
-  stoveDescription = "Conserva el sabor y el aroma de tus recetas gracias al vapor regenerativo, evitando que los alimentos se resequen",
+  stoveDescription =
+    "Conserva el sabor y el aroma de tus recetas gracias al vapor regenerativo, evitando que los alimentos se resequen",
 }: Props) {
   const id = useId();
 
   return (
     <Section {...section} id={id} classesContainer="feature-highlight-section">
       <div class="w-full bg-white text-center flex flex-col items-center px-4 ">
-
         {/* Bloco do pão */}
         {topImage && (
-          <img src={topImage} alt="Imagem superior" class="w-full max-w-5xl rounded-lg shadow-md" loading="lazy" />
+          <img
+            src={topImage}
+            alt="Imagem superior"
+            class="w-full max-w-5xl rounded-lg shadow-md"
+            loading="lazy"
+          />
         )}
 
         <div class="relative w-full flex justify-center">
-            <div
-                class="bg-white shadow-md rounded-lg px-6 py-4 max-w-xl z-20 absolute"
-                style={{ bottom: "-30px" }}
-            >
-                <p class="text-lg font-medium text-gray-700">{highlightText}</p>
-            </div>
+          <div
+            class="bg-white shadow-md rounded-lg px-6 py-4 max-w-xl z-20 absolute"
+            style={{ bottom: "-30px" }}
+          >
+            <p class="text-lg font-medium text-gray-700">{highlightText}</p>
+          </div>
         </div>
-
 
         {/* Bloco do fogão */}
         <div class="relative w-full bg-[#FF405A] max-w-5xl">

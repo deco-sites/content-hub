@@ -3,33 +3,33 @@ import type { IResponsiveImage } from "./ResponsiveImage.d.ts";
 import type { ProductWithComparator } from "site/types/Product.d.ts";
 
 /**
-* @title Embaixador
-*/
+ * @title Embaixador
+ */
 export interface IAmbassador {
   /**
-  * @title Nome
-  */
+   * @title Nome
+   */
   name: string;
   /**
-  * @title Descrição
-  */
+   * @title Descrição
+   */
   description?: string;
   /**
-  * @title Foto
-  */
+   * @title Foto
+   */
   image?: IResponsiveImage;
 }
 
 /**
-* @title Embaixador com Produto
-*/
+ * @title Embaixador com Produto
+ */
 export interface AmbassadorWithProduct {
   /**
-  * @title Foto do embaixador
-  */
+   * @title Foto do embaixador
+   */
   photo: IResponsiveImage;
   /**
-  * @title Produto do embaixador
-  */
+   * @title Produto do embaixador
+   */
   products: Product[] | null;
 }

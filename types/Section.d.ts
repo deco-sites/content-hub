@@ -2,13 +2,13 @@ export interface ISection {
   /**
    * @title Título da Seção
    * @description Texto principal da seção.
-  */
- title?: string;
- 
- /**
-  * @title Subtítulo da Seção
-  * @description Texto secundário da seção.
- */
+   */
+  title?: string;
+
+  /**
+   * @title Subtítulo da Seção
+   * @description Texto secundário da seção.
+   */
   subtitle?: string;
 
   /**

@@ -12,7 +12,8 @@ interface Props {
 
 export default function PdfWithTextSection({
   pdfUrl = "https://URL-do-seu-pdf-no-deco.pdf",
-  footerText = "Termos e condições da campanha Frigidaire válida até 30 de setembro.",
+  footerText =
+    "Termos e condições da campanha Frigidaire válida até 30 de setembro.",
 }: Props) {
   const id = useId();
 
@@ -27,13 +28,13 @@ export default function PdfWithTextSection({
             class="w-full border rounded shadow"
           >
             Este navegador não suporta exibição de PDF.
-            <a href={pdfUrl} target="_blank" rel="noopener noreferrer">Clique aqui para abrir</a>
+            <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
+              Clique aqui para abrir
+            </a>
           </iframe>
         </div>
 
-        {footerText && (
-          <p class="text-sm text-gray-700 w-full">{footerText}</p>
-        )}
+        {footerText && <p class="text-sm text-gray-700 w-full">{footerText}</p>}
       </div>
     </Section>
   );

@@ -25,7 +25,9 @@ const getInnerWidth = (): number => {
 };
 
 /** Adiciona listener de resize de forma tipada e retorna o remover */
-const addResizeListener = (handler: EventListener): (() => void) | undefined => {
+const addResizeListener = (
+  handler: EventListener,
+): (() => void) | undefined => {
   const g = getGlobal();
   const add = g.addEventListener;
   const remove = g.removeEventListener;
@@ -47,8 +49,12 @@ function resolveSlidesPerView(cfg?: ISliderConfigs) {
 
   const get = () => {
     const w = getInnerWidth();
-    if (w >= 1024) return Math.max(1, cfg?.slidesPerViewResponsive?.desktop ?? base);
-    if (w >= 768) return Math.max(1, cfg?.slidesPerViewResponsive?.tablet ?? base);
+    if (w >= 1024) {
+      return Math.max(1, cfg?.slidesPerViewResponsive?.desktop ?? base);
+    }
+    if (w >= 768) {
+      return Math.max(1, cfg?.slidesPerViewResponsive?.tablet ?? base);
+    }
     return Math.max(1, cfg?.slidesPerViewResponsive?.mobile ?? base);
   };
 
@@ -103,7 +109,12 @@ export default function CustomInfoCardSlider({
       });
     }, delay);
     return () => clearInterval(id);
-  }, [configs?.autoplay?.enabled, configs?.autoplay?.delay, configs?.loop, totalPages]);
+  }, [
+    configs?.autoplay?.enabled,
+    configs?.autoplay?.delay,
+    configs?.loop,
+    totalPages,
+  ]);
 
   const prev = () =>
     setPage((p) => (p > 0 ? p - 1 : (configs?.loop ? totalPages - 1 : 0)));
@@ -165,7 +176,9 @@ export default function CustomInfoCardSlider({
           {hasItems &&
             infoCards.map((card, index) => {
               const tc = card.typeOfContent as MediaContent | undefined;
-              const videoSrc = tc?.src && tc.src.endsWith(".mp4") ? tc.src : undefined;
+              const videoSrc = tc?.src && tc.src.endsWith(".mp4")
+                ? tc.src
+                : undefined;
               const imgSrc = tc?.srcDesktop;
               const imgAlt = tc?.alt ?? "Imagem";
 
@@ -182,30 +195,34 @@ export default function CustomInfoCardSlider({
                   {/* 50/50 em lg */}
                   <div
                     class={`flex w-full h-full items-center justify-between ${
-                      card.direction === "left" ? "lg:flex-row" : "lg:flex-row-reverse"
+                      card.direction === "left"
+                        ? "lg:flex-row"
+                        : "lg:flex-row-reverse"
                     } flex-col`}
                   >
                     {/* Mídia */}
                     <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
-                      {videoSrc ? (
-                        <video
-                          src={videoSrc}
-                          autoPlay
-                          muted
-                          loop
-                          playsInline
-                          class="w-full h-full object-cover"
-                        />
-                      ) : imgSrc ? (
-                        <img
-                          src={imgSrc}
-                          alt={imgAlt}
-                          class="w-full h-full object-cover"
-                          loading={configs?.lazy ? "lazy" : "eager"}
-                        />
-                      ) : (
-                        <div class="w-full h-full bg-gray-200" />
-                      )}
+                      {videoSrc
+                        ? (
+                          <video
+                            src={videoSrc}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            class="w-full h-full object-cover"
+                          />
+                        )
+                        : imgSrc
+                        ? (
+                          <img
+                            src={imgSrc}
+                            alt={imgAlt}
+                            class="w-full h-full object-cover"
+                            loading={configs?.lazy ? "lazy" : "eager"}
+                          />
+                        )
+                        : <div class="w-full h-full bg-gray-200" />}
                     </div>
 
                     {/* Texto */}
@@ -258,7 +275,9 @@ export default function CustomInfoCardSlider({
               type="button"
               aria-label={`Ir para página ${i + 1}`}
               class={`w-2.5 h-2.5 rounded-full border ${
-                i === page ? "bg-gray-800 border-gray-800" : "bg-transparent border-gray-400"
+                i === page
+                  ? "bg-gray-800 border-gray-800"
+                  : "bg-transparent border-gray-400"
               }`}
               onClick={() => setPage(i)}
             />

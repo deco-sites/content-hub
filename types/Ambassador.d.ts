@@ -19,3 +19,17 @@ export interface IAmbassador {
   */
   image?: IResponsiveImage;
 }
+
+/**
+* @title Embaixador com Produto
+*/
+export interface AmbassadorWithProduct {
+  /**
+  * @title Foto do embaixador
+  */
+  photo: IResponsiveImage;
+  /**
+  * @title Produto do embaixador
+  */
+  products: Product[] | null;
+}

@@ -7,6 +7,7 @@ import * as $AmbassadorSlider from "./islands/AmbassadorSlider.tsx";
 import * as $ArticleSlider from "./islands/ArticleSlider.tsx";
 import * as $BannerSlider from "./islands/BannerSlider.tsx";
 import * as $CustomInfoCardSlider from "./islands/CustomInfoCardSlider.tsx";
+import * as $FoldItemsIsland from "./islands/FoldItemsIsland.tsx";
 import * as $InfoCardSlider from "./islands/InfoCardSlider.tsx";
 import * as $ProductShelf from "./islands/ProductShelf.tsx";
 import type { Manifest } from "$fresh/server.ts";
@@ -20,6 +21,7 @@ const manifest = {
     "./islands/ArticleSlider.tsx": $ArticleSlider,
     "./islands/BannerSlider.tsx": $BannerSlider,
     "./islands/CustomInfoCardSlider.tsx": $CustomInfoCardSlider,
+    "./islands/FoldItemsIsland.tsx": $FoldItemsIsland,
     "./islands/InfoCardSlider.tsx": $InfoCardSlider,
     "./islands/ProductShelf.tsx": $ProductShelf,
   },

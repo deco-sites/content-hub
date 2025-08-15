@@ -93,7 +93,6 @@ export default function DimmedColorsSection(
                     </h3>
                     <p>{item.text}</p>
                   </div>
-
                 </a>
               </div>
             );

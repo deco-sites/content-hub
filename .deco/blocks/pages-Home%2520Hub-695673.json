@@ -563,6 +563,38 @@
           }
         ]
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/FoldItemsSection.tsx",
+        "section": {
+          "title": "Nossos Serviços",
+          "subtitle": "Conheça mais sobre nossos serviços"
+        },
+        "foldItems": [
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Retirada & Coleta",
+                "href": "/#",
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png"
+              },
+              "alt": "Retirada & Coleta"
+            },
+            "title": "Retirada & Coleta"
+          }
+        ]
+      }
     }
   ],
   "seo": {

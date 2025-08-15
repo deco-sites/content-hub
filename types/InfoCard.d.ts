@@ -64,10 +64,10 @@ export interface IInfoCard {
    * @title Título
    */
   titleCMS?: string;
-  
+
   /**
    * @title Texto
-   * @format rich-text 
+   * @format rich-text
    */
   richText?: string;
 
@@ -144,10 +144,10 @@ export interface IInfoCard {
    */
   applyClassToAllElements?: boolean;
 
- /**
- * @title Cor de fundo do bloco de texto
- * @description Ex: #323333
- */
+  /**
+   * @title Cor de fundo do bloco de texto
+   * @description Ex: #323333
+   */
   textBackgroundColor?: string;
 
   /**
@@ -155,6 +155,4 @@ export interface IInfoCard {
    * @description Ex: #ffffff
    */
   textColor?: string;
-
-
 }

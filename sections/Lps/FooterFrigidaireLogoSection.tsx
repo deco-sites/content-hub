@@ -17,7 +17,11 @@ export default function FooterFrigidaireLogoSection({ section, logo }: Props) {
   if (!logo?.src) return null;
 
   return (
-    <Section {...section} id={id} classesContainer="footer-frigidaire-logo-section">
+    <Section
+      {...section}
+      id={id}
+      classesContainer="footer-frigidaire-logo-section"
+    >
       <div class="w-full flex justify-center">
         <div class="text-center">
           <img
@@ -26,7 +30,8 @@ export default function FooterFrigidaireLogoSection({ section, logo }: Props) {
             class="mb-2 max-w-full h-auto mx-auto"
             loading="lazy"
           />
-          {/* <h1
+          {
+            /* <h1
             style={{
               textAlign: "center",
               fontFamily: "'Gotham', sans-serif",
@@ -38,7 +43,8 @@ export default function FooterFrigidaireLogoSection({ section, logo }: Props) {
             }}
           >
             <span style={{ color: "red" }}>ATRÉVETE</span> A DISFRUTAR MÁS
-          </h1> */}
+          </h1> */
+          }
         </div>
       </div>
     </Section>

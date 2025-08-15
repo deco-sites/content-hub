@@ -11,26 +11,26 @@ import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
  */
 export interface Article {
   /**
- * @title Título
- * @description Título do artigo.
- */
+   * @title Título
+   * @description Título do artigo.
+   */
   title?: string;
   /**
-  * @title Texto
-  * @description Uma prévia do texto do artigo.
-  */
+   * @title Texto
+   * @description Uma prévia do texto do artigo.
+   */
   description?: string;
   /**
-  * @title Link
-  */
+   * @title Link
+   */
   href?: string;
   /**
    * @title Texto do botão
-  */
+   */
   cta?: string;
   /**
-  * @title Imagens
-  */
+   * @title Imagens
+   */
   image: IResponsiveImage;
 }
 
@@ -51,22 +51,23 @@ export default function ArticleGridSection(
 
   return (
     <Section {...section} id={id}>
-      <div id="article-grid-container" class="w-full mx-auto grid grid-cols-2 lg:grid-cols-4 gap-[8px]">
+      <div class="article-grid-container w-full mx-auto grid grid-cols-2 lg:grid-cols-4 gap-[8px]">
         {articles.map((
           article,
           index,
         ) => (
-          <div key={index} class="article-grid-item border border-[#dfe7ea] flex flex-col hover:shadow-md transition w-full">
+          <div
+            key={index}
+            class="article-grid-item border border-[#dfe7ea] flex flex-col hover:shadow-md transition w-full"
+          >
             <a href={article.href}>
               <div class="article-image-container">
-                {article.image?.src?.mobile || article.image?.src?.desktop ? (
-                  <ResponsiveImage {...article.image} />
-                ) : null}
+                {article.image?.src?.mobile || article.image?.src?.desktop
+                  ? <ResponsiveImage {...article.image} />
+                  : null}
               </div>
               <div class="flex flex-col justify-start items-start w-full px-[8px] py-[12px] lg:px-[16px] lg:py-[24px]">
-                <h3
-                  class="text-xl font-semibold text-[#041E50] mb-[8px]"
-                >
+                <h3 class="text-xl font-semibold text-[#041E50] mb-[8px]">
                   {article.title}
                 </h3>
                 <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux overflow-hidden max-h-[65px] mb-[8px] lg:mb-[16px]">
@@ -89,34 +90,18 @@ export default function ArticleGridSection(
             height: 124px;
           }
           
-          @media screen and (min-width: 1280px) {
-            .article-grid-item {
-              min-width: 294px;
+          @media screen and (min-width: 1024px) {
+            .article-grid-container {
+              cursor: pointer;
             }
 
             .article-image-container img {
               width: 100%;
-              height: 207px;
-            }
-
-            #article-grid-container {
-              max-width: 1200px;
-            }
-          }
-          
-          @media screen and (min-width: 1440px) {            
-            #article-grid-container {
-              max-width: 1360px;
-            }
-          }
-          
-          @media screen and (min-width: 1920px) {
-            #article-grid-container {
-              max-width: 1600px;
+              height: auto; 
             }
           }
         `}
       </style>
-    </Section >
+    </Section>
   );
 }

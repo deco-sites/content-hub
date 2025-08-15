@@ -38,11 +38,3 @@ export default function CategoriesSection(
     </Section>
   );
 }
-
-export function LoadingFallback() {
-  return (
-    <div class="flex justify-center items-center h-[445px] lg:h-[297px]">
-      <span class="loading loading-spinner" />
-    </div>
-  );
-}

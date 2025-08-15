@@ -82,17 +82,19 @@ export default function AmbassadorsSection({
 
           return (
             <>
-              {isEven ? (
-                <>
-                  {image}
-                  {text}
-                </>
-              ) : (
-                <>
-                  {text}
-                  {image}
-                </>
-              )}
+              {isEven
+                ? (
+                  <>
+                    {image}
+                    {text}
+                  </>
+                )
+                : (
+                  <>
+                    {text}
+                    {image}
+                  </>
+                )}
             </>
           );
         })}

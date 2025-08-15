@@ -81,9 +81,24 @@ export default function FinalCtaWithCardsSection({
 
         {/* Rodapé legal */}
         <p class="text-xs text-white mt-8 max-w-4xl mx-auto leading-snug">
-          *Resultados obtenidos tras pruebas internas en modelos Frigidaire FKGN20C3MYG / FKGN203SYG / FKGN20C1MYB utilizando la función VaporBake, comparados con los mismos modelos sin el uso de la función. Compruebe la disponibilidad según su región.<br />
-          *Testeos internos realizados conforme a la norma European Standard Domestic cooking appliances burning gas - Part 1-1: Safety - General (Número: EN 30-1-1:2008+A3:2013 - item 5.2.8.3) comparando la estabilidad de las parrillas de alambrón del modelo nuevo marca Frigidaire - FKGN20C3MYG/ FKGN203SYG / FKGN20C1MYB con las parrillas flat wire del modelo - FKGH20AMPW marca Frigidaire. Compruebe la disponibilidad según su región.<br />
-          *Testeos internos realizados conforme a la norma European Standard Domestic cooking appliances burning gas - Part 1-1: Safety - General (Número: EN 30-1-1:2008+A3:2013 - item 5.2.8.3) comparando la estabilidad de las parrillas de hierro fundido del modelo nuevo marca Frigidaire - FKGN20C3MYI / FKGN20C3SYI / FKGN20C1MYI con las parrillas flat wire del modelo - FKGH20AMPW marca Frigidaire. Compruebe la disponibilidad según su región.
+          *Resultados obtenidos tras pruebas internas en modelos Frigidaire
+          FKGN20C3MYG / FKGN203SYG / FKGN20C1MYB utilizando la función
+          VaporBake, comparados con los mismos modelos sin el uso de la función.
+          Compruebe la disponibilidad según su región.<br />
+          *Testeos internos realizados conforme a la norma European Standard
+          Domestic cooking appliances burning gas - Part 1-1: Safety - General
+          (Número: EN 30-1-1:2008+A3:2013 - item 5.2.8.3) comparando la
+          estabilidad de las parrillas de alambrón del modelo nuevo marca
+          Frigidaire - FKGN20C3MYG/ FKGN203SYG / FKGN20C1MYB con las parrillas
+          flat wire del modelo - FKGH20AMPW marca Frigidaire. Compruebe la
+          disponibilidad según su región.<br />
+          *Testeos internos realizados conforme a la norma European Standard
+          Domestic cooking appliances burning gas - Part 1-1: Safety - General
+          (Número: EN 30-1-1:2008+A3:2013 - item 5.2.8.3) comparando la
+          estabilidad de las parrillas de hierro fundido del modelo nuevo marca
+          Frigidaire - FKGN20C3MYI / FKGN20C3SYI / FKGN20C1MYI con las parrillas
+          flat wire del modelo - FKGH20AMPW marca Frigidaire. Compruebe la
+          disponibilidad según su región.
         </p>
       </div>
     </Section>

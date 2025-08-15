@@ -151,11 +151,3 @@ export default function BannerMediaSliderSection(
     </Section>
   );
 }
-
-export function LoadingFallback() {
-  return (
-    <div class="flex justify-center items-center h-[682px] lg:h-[200px]">
-      <span class="loading loading-spinner" />
-    </div>
-  );
-}

@@ -84,14 +84,3 @@ export default function BannerSliderSection(
     </Section>
   );
 }
-
-export function LoadingFallback() {
-  return (
-    <div
-      style={{ height: "500px" }}
-      class="flex justify-center items-center h-[420px] lg:h-[440px]"
-    >
-      <span class="loading loading-spinner" />
-    </div>
-  );
-}

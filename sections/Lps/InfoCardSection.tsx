@@ -46,7 +46,7 @@ export default function InfoCardSection(
           ?.desktop ?? 1,
       },
     },
-  }
+  };
 
   return (
     <Section
@@ -60,13 +60,5 @@ export default function InfoCardSection(
         infoCards={infoCards}
       />
     </Section>
-  );
-}
-
-export function LoadingFallback() {
-  return (
-    <div class="flex justify-center items-center h-[570px] lg:h-[500px]">
-      <span class="loading loading-spinner" />
-    </div>
   );
 }

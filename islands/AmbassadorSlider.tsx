@@ -8,7 +8,7 @@ interface AmbassadorSliderProps {
   ambassadors: IAmbassador[];
   configs: ISliderConfigs;
   rootId: string;
-};
+}
 
 export default function AmbassadorSlider(
   {
@@ -17,22 +17,25 @@ export default function AmbassadorSlider(
     rootId,
   }: AmbassadorSliderProps,
 ) {
-  const slides = ambassadors.length ? ambassadors.map(
-    (ambassador, index) => {
-      return (
-        <div key={index} class="flex flex-col gap-y-[20px]">
-          <ResponsiveImage
-            {...ambassador.photo}
-          />
-          {ambassador.products.length &&
-            <SummaryProductCard
-              {...ambassador.products[0]}
+  const slides = ambassadors.length
+    ? ambassadors.map(
+      (ambassador, index) => {
+        return (
+          <div key={index} class="flex flex-col gap-y-[20px]">
+            <ResponsiveImage
+              {...ambassador.photo}
             />
-          }
-        </div>
-      );
-    },
-  ) : [];
+            {ambassador.products.length &&
+              (
+                <SummaryProductCard
+                  {...ambassador.products[0]}
+                />
+              )}
+          </div>
+        );
+      },
+    )
+    : [];
 
   return (
     <Slider

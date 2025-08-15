@@ -139,32 +139,32 @@ export default function ProductCard(
               </span>
               {!priceIsPix &&
                 discount !== 0 && (
-                  <span class="flex items-center justify-center h-[22px] bg-[#bc8817] font-semibold text-white rounded leading-[initial] text-xs min-w-[48px] w-fit">
-                    {discount}%
-                  </span>
-                )}
+                <span class="flex items-center justify-center h-[22px] bg-[#bc8817] font-semibold text-white rounded leading-[initial] text-xs min-w-[48px] w-fit">
+                  {discount}%
+                </span>
+              )}
             </div>
 
             <div class="h-[22px] flex gap-1 items-center mb-1">
               {priceIsPix &&
                 salePrice && (
-                  <span class="text-[#5b6a78] text-sm leading-[initial]">
-                    ou{" "}
-                    <b>
-                      {formatPrice(
-                        salePrice,
-                        offers!
-                          .priceCurrency!,
-                      )}
-                    </b>
-                  </span>
-                )}
+                <span class="text-[#5b6a78] text-sm leading-[initial]">
+                  ou{" "}
+                  <b>
+                    {formatPrice(
+                      salePrice,
+                      offers!
+                        .priceCurrency!,
+                    )}
+                  </b>
+                </span>
+              )}
               {priceIsPix &&
                 discount !== 0 && (
-                  <span class="flex items-center justify-center h-[22px] bg-[#bc8817] font-semibold text-white rounded leading-[initial] text-xs min-w-[48px] w-fit">
-                    -{discount}%
-                  </span>
-                )}
+                <span class="flex items-center justify-center h-[22px] bg-[#bc8817] font-semibold text-white rounded leading-[initial] text-xs min-w-[48px] w-fit">
+                  -{discount}%
+                </span>
+              )}
             </div>
 
             <div class="flex flex-col min-h-[60px] lg:min-h-[80px]">
@@ -221,12 +221,12 @@ export default function ProductCard(
           </div>
           {!!productSpecsComparator
             ?.length && (
-              <div class="flex">
-                <ProductSpecificationComparator
-                  productSpecsComparator={productSpecsComparator}
-                />
-              </div>
-            )}
+            <div class="flex">
+              <ProductSpecificationComparator
+                productSpecsComparator={productSpecsComparator}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

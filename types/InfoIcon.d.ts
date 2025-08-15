@@ -1,13 +1,13 @@
 /**
  * @title {{#title}}{{title}}{{/title}}{{^title}}Ícone{{/title}}
-*/
+ */
 export interface IInfoIcon {
   /**
    * @title Título
    * @description Título do ícone exibido ao usuário.
    */
   title?: string;
-  
+
   /**
    * @title Texto alternativo
    * @description Texto descritivo para a imagem do ícone.
@@ -20,7 +20,7 @@ export interface IInfoIcon {
    * @description URL da imagem do ícone.
    */
   imageSrc?: string;
-  
+
   /**
    * @title Link de redirecionamento
    * @description URL para onde o usuário será redirecionado ao clicar no ícone.

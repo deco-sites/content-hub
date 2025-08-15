@@ -23,35 +23,54 @@ export default function Section({
     <>
       <div
         id={`section-${id}`}
-        class={`section-container flex flex-col w-full ${classesContainer ?? ""
-          } ${!fullWidth ? "container" : ""}`}
+        class={`section-container flex flex-col justify-center items-center w-full ${
+          classesContainer ?? ""
+        } ${!fullWidth ? "container" : ""}`}
         style={stylesContainer}
       >
         {!isEmptyText(title) && (
           <Text
             title={title}
             classes={{
-              container: "section-title flex flex-col mt-[24px] text-center normal-case",
+              container:
+                `section-title flex flex-col mt-[24px] text-center normal-case ${
+                  isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"
+                }`,
             }}
-            styles={{ marginBottom: subtitle ? '24px' : '8px' }}
           />
         )}
         {!isEmptyText(subtitle) && (
           <Text
             title={subtitle}
             classes={{
-              container: "section-subtitle mb-[16px] lg:mb-[24px] text-center normal-case",
+              container:
+                "section-subtitle mb-[16px] lg:mb-[24px] text-center normal-case",
             }}
           />
         )}
-        {children ? (
-          <div class="flex flex-col items-center justify-center">
-            {children}
-          </div>
-        ) : null}
+        {children
+          ? (
+            <div
+              class={`${
+                fullWidth ? "w-full" : "section-children-container"
+              }  flex flex-col items-center justify-center`}
+            >
+              {children}
+            </div>
+          )
+          : (
+            <div class="w-full flex justify-center items-center">
+              <span class="loading loading-spinner" />
+            </div>
+          )}
       </div>
       <style>
         {`
+          #section-${id} {
+            margin-top: ${marginTopMobile}px;
+            margin-bottom: ${marginBottomMobile}px;
+          }
+
           .section-title,
           .section-title h1,
           .section-title h2,
@@ -77,12 +96,22 @@ export default function Section({
             color: #041e50;
           }
 
-          #section-${id} {
-            margin-top: ${marginTopMobile}px;
-            margin-bottom: ${marginBottomMobile}px;
+          .section-children-container {
+            width: 100%;
+          }
+
+          @media screen and (min-width: 1024px) {
+            .section-children-container {
+              width: 1200px;
+            }
           }
 
           @media screen and (min-width: 1280px) {
+            #section-${id} {
+              margin-top: ${marginTopDesktop}px;
+              margin-bottom: ${marginBottomDesktop}px;
+            }
+
             .section-title,
             .section-title h1,
             .section-title h2,
@@ -102,13 +131,20 @@ export default function Section({
             .section-subtitle h6 {
               font-size: 22px;
             }
+          }
 
-            #section-${id} {
-              margin-top: ${marginTopDesktop}px;
-              margin-bottom: ${marginBottomDesktop}px;
+          @media screen and (min-width: 1440px) {
+            .section-children-container {
+              width: 1360px;
             }
           }
-      `}
+
+          @media screen and (min-width: 1920px) {
+            .section-children-container {
+              width: 1600px;
+            }
+          }
+        `}
       </style>
     </>
   );

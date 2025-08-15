@@ -37,7 +37,10 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
 
   return (
     <>
-      <div id="foldItems-container" class={`foldItems-container__mobile w-full`}>
+      <div
+        id="foldItems-container"
+        class={`foldItems-container__mobile w-full`}
+      >
         {foldItems.length
           ? (
             foldItems.map((item, index) => (
@@ -48,17 +51,23 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
                 >
                   <div
                     onClick={toggleItem}
-                    class={`foldItems-item-image__mobile relative w-full flex flex-col ${isOpen.value
-                      ? "h-[206px] justify-end"
-                      : "h-[42px] justify-center"
-                      }`}
+                    class={`foldItems-item-image__mobile relative w-full flex flex-col ${
+                      isOpen.value
+                        ? "h-[206px] justify-end"
+                        : "h-[42px] justify-center"
+                    }`}
                   >
-                    <ResponsiveImage {...item.image} class={`absolute`} link={{}} />
+                    <ResponsiveImage
+                      {...item.image}
+                      class={`absolute`}
+                      link={{}}
+                    />
                     <div class="absolute bg-black inset-0 bg-black opacity-25">
                     </div>
                     <span
-                      class={`absolute text-white font-semibold text-[26px] ${isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
-                        }`}
+                      class={`absolute text-white font-semibold text-[26px] ${
+                        isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
+                      }`}
                     >
                       {item.title}
                     </span>
@@ -66,25 +75,32 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
 
                   <div
                     onClick={toggleItem}
-                    class={`foldItems-item-image__desktop relative w-full flex ${isOpen.value
-                      ? "h-[206px] justify-end"
-                      : "h-[42px] justify-center"
-                      }`}
+                    class={`foldItems-item-image__desktop relative w-full flex ${
+                      isOpen.value
+                        ? "h-[206px] justify-end"
+                        : "h-[42px] justify-center"
+                    }`}
                   >
-                    <ResponsiveImage {...item.image} class={`absolute`} link={{}} />
+                    <ResponsiveImage
+                      {...item.image}
+                      class={`absolute`}
+                      link={{}}
+                    />
                     <div class="absolute bg-black inset-0 bg-black opacity-25">
                     </div>
                     <span
-                      class={`absolute text-white font-semibold text-[26px] ${isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
-                        }`}
+                      class={`absolute text-white font-semibold text-[26px] ${
+                        isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
+                      }`}
                     >
                       {item.title}
                     </span>
                   </div>
 
                   <div
-                    class={`foldItems-item-info ${isOpen.value ? "h-full" : "hidden"
-                      } overflow-hidden flex flex-col items-start gap-[8px] py-[16px]`}
+                    class={`foldItems-item-info ${
+                      isOpen.value ? "h-full" : "hidden"
+                    } overflow-hidden flex flex-col items-start gap-[8px] py-[16px]`}
                   >
                     <h4 class={`text-[#041E50] font-semibold text-[26px]`}>
                       {item.title}
@@ -99,7 +115,8 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
             "FoldItemsSection: não há itens a serem renderizados."
           )}
       </div>
-      {/* <div class={`foldItems-container__desktop w-full`}>
+      {
+        /* <div class={`foldItems-container__desktop w-full`}>
         {foldItems.length
           ? (
             foldItems.map((item, index) => (
@@ -142,7 +159,8 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
           : (
             "FoldItemsSection: não há itens a serem renderizados."
           )}
-      </div> */}
+      </div> */
+      }
 
       <style>
         {`

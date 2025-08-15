@@ -24,17 +24,21 @@ export default function HomeHubInfoSection({
 
   if (!infoCards.length) return null;
 
-const sliderDefaults: ISliderConfigs = {
-  loop: true,
-  speed: 300,
-  spaceBetween: 32,
-  slidesPerView: 1,
-  slidesPerViewResponsive: { mobile: 1, tablet: 1, desktop: 1 },
-  customNavigation: { enabledDesktop: true, enabledMobile: false },
-  customPagination: { enabledDesktop: true, enabledMobile: true, clickable: true },
-  autoplay: { enabled: false, delay: 5000 },
-  ...(configs || {}),
-};
+  const sliderDefaults: ISliderConfigs = {
+    loop: true,
+    speed: 300,
+    spaceBetween: 32,
+    slidesPerView: 1,
+    slidesPerViewResponsive: { mobile: 1, tablet: 1, desktop: 1 },
+    customNavigation: { enabledDesktop: true, enabledMobile: false },
+    customPagination: {
+      enabledDesktop: true,
+      enabledMobile: true,
+      clickable: true,
+    },
+    autoplay: { enabled: false, delay: 5000 },
+    ...(configs || {}),
+  };
 
   return (
     <Section

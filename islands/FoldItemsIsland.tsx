@@ -37,7 +37,7 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
 
   return (
     <>
-      <div class={`foldItems-container__mobile w-full`}>
+      <div id="foldItems-container" class={`foldItems-container__mobile w-full`}>
         {foldItems.length
           ? (
             foldItems.map((item, index) => (
@@ -146,12 +146,12 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
 
       <style>
         {`
-          [class*='__desktop'] {
+          #foldItems-container [class*='__desktop'] {
             display: none;
           }
         
           @media screen and (min-width: 1024px) {
-              [class*='__mobile'] {
+            #foldItems-container [class*='__mobile'] {
                 display: none;
             }
           }

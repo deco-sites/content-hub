@@ -137,146 +137,132 @@ export default function CustomInfoCardSlider({
             onClick={prev}
             class="hidden lg:flex absolute left-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 items-center justify-center rounded-full border bg-white hover:bg-gray-50"
           >
-            {/* Mídia */}
-            <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
-              {card?.typeOfContent &&
-                "src" in card.typeOfContent &&
-                card.typeOfContent.src.endsWith(".mp4")
-                ? (
-                  <video
-                    src={card.typeOfContent.src}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    class="w-full h-full object-cover"
-                  />
-                )
-                : card?.typeOfContent &&
-                  "srcDesktop" in card.typeOfContent
-                  ? (
-                    <img
-                      src={card.typeOfContent.srcDesktop}
-                      alt={card.typeOfContent.alt ?? "Imagem"}
-                      class="w-full h-full object-cover"
-                    />
-                  )
-                  : null}
-            </div>
+            ‹
+          </button>
+          <button
+            type="button"
+            aria-label="Próximo"
+            onClick={next}
+            class="hidden lg:flex absolute right-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 items-center justify-center rounded-full border bg-white hover:bg-gray-50"
+          >
+            ›
+          </button>
+        </>
+      )}
 
-            {/* Viewport */}
-            <div class="w-full overflow-hidden">
-              {/* Track */}
-              <div
-                class="flex ease-out"
-                style={{
-                  transitionProperty: "transform",
-                  transitionDuration: `${speed}ms`,
-                  transform: `translateX(-${page * 100}%)`, // <- anda 1 viewport por página
-                  // REMOVER qualquer 'width: ...' aqui
-                }}
-              >
-                {hasItems &&
-                  infoCards.map((card, index) => {
-                    const tc = card.typeOfContent as MediaContent | undefined;
-                    const videoSrc = tc?.src && tc.src.endsWith(".mp4") ? tc.src : undefined;
-                    const imgSrc = tc?.srcDesktop;
-                    const imgAlt = tc?.alt ?? "Imagem";
+      {/* Viewport */}
+      <div class="w-full overflow-hidden">
+        {/* Track */}
+        <div
+          class="flex ease-out"
+          style={{
+            transitionProperty: "transform",
+            transitionDuration: `${speed}ms`,
+            transform: `translateX(-${page * 100}%)`, // <- anda 1 viewport por página
+            // REMOVER qualquer 'width: ...' aqui
+          }}
+        >
+          {hasItems &&
+            infoCards.map((card, index) => {
+              const tc = card.typeOfContent as MediaContent | undefined;
+              const videoSrc = tc?.src && tc.src.endsWith(".mp4") ? tc.src : undefined;
+              const imgSrc = tc?.srcDesktop;
+              const imgAlt = tc?.alt ?? "Imagem";
 
-                    return (
-                      <div
-                        key={index}
-                        class="h-[453px] flex items-stretch"
-                        style={{
-                          flex: `0 0 ${itemWidthPct}%`,
-                          paddingLeft: `${gap / 2}px`,
-                          paddingRight: `${gap / 2}px`,
-                        }}
-                      >
-                        {/* 50/50 em lg */}
-                        <div
-                          class={`flex w-full h-full items-center justify-between ${card.direction === "left" ? "lg:flex-row" : "lg:flex-row-reverse"
-                            } flex-col`}
-                        >
-                          {/* Mídia */}
-                          <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
-                            {videoSrc ? (
-                              <video
-                                src={videoSrc}
-                                autoPlay
-                                muted
-                                loop
-                                playsInline
-                                class="w-full h-full object-cover"
-                              />
-                            ) : imgSrc ? (
-                              <img
-                                src={imgSrc}
-                                alt={imgAlt}
-                                class="w-full h-full object-cover"
-                                loading={configs?.lazy ? "lazy" : "eager"}
-                              />
-                            ) : (
-                              <div class="w-full h-full bg-gray-200" />
-                            )}
-                          </div>
+              return (
+                <div
+                  key={index}
+                  class="h-[453px] flex items-stretch"
+                  style={{
+                    flex: `0 0 ${itemWidthPct}%`,
+                    paddingLeft: `${gap / 2}px`,
+                    paddingRight: `${gap / 2}px`,
+                  }}
+                >
+                  {/* 50/50 em lg */}
+                  <div
+                    class={`flex w-full h-full items-center justify-between ${card.direction === "left" ? "lg:flex-row" : "lg:flex-row-reverse"
+                      } flex-col`}
+                  >
+                    {/* Mídia */}
+                    <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
+                      {videoSrc ? (
+                        <video
+                          src={videoSrc}
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          class="w-full h-full object-cover"
+                        />
+                      ) : imgSrc ? (
+                        <img
+                          src={imgSrc}
+                          alt={imgAlt}
+                          class="w-full h-full object-cover"
+                          loading={configs?.lazy ? "lazy" : "eager"}
+                        />
+                      ) : (
+                        <div class="w-full h-full bg-gray-200" />
+                      )}
+                    </div>
 
-                          {/* Texto */}
-                          <div
-                            class="w-full lg:w-1/2 h-full p-6 lg:p-10 flex flex-col justify-center"
-                            style={{
-                              backgroundColor: card.textBackgroundColor ?? "#000000",
-                              color: card.textColor ?? "#FFFFFF",
-                              fontFamily: card.fontFamily ?? "Arial",
-                            }}
+                    {/* Texto */}
+                    <div
+                      class="w-full lg:w-1/2 h-full p-6 lg:p-10 flex flex-col justify-center"
+                      style={{
+                        backgroundColor: card.textBackgroundColor ?? "#000000",
+                        color: card.textColor ?? "#FFFFFF",
+                        fontFamily: card.fontFamily ?? "Arial",
+                      }}
+                    >
+                      {card.title && (
+                        <h2
+                          class="mb-4 uppercase font-bold text-[14px] leading-[20px] md:text-[34px] md:leading-[48px]"
+                          dangerouslySetInnerHTML={{ __html: card.title }}
+                        />
+                      )}
+
+                      {card.description && (
+                        <p
+                          class="text-[12px] leading-[18px] md:text-[16px] md:leading-[20px] font-normal"
+                          dangerouslySetInnerHTML={{ __html: card.description }}
+                        />
+                      )}
+
+                      {card.link?.href && (
+                        <div class="mt-6">
+                          <a
+                            href={card.link.href}
+                            class="inline-block bg-white text-black px-6 py-2 rounded font-semibold hover:opacity-80 transition"
                           >
-                            {card.title && (
-                              <h2
-                                class="mb-4 uppercase font-bold text-[14px] leading-[20px] md:text-[34px] md:leading-[48px]"
-                                dangerouslySetInnerHTML={{ __html: card.title }}
-                              />
-                            )}
-
-                            {card.description && (
-                              <p
-                                class="text-[12px] leading-[18px] md:text-[16px] md:leading-[20px] font-normal"
-                                dangerouslySetInnerHTML={{ __html: card.description }}
-                              />
-                            )}
-
-                            {card.link?.href && (
-                              <div class="mt-6">
-                                <a
-                                  href={card.link.href}
-                                  class="inline-block bg-white text-black px-6 py-2 rounded font-semibold hover:opacity-80 transition"
-                                >
-                                  {card.link.text ?? "Saiba mais"}
-                                </a>
-                              </div>
-                            )}
-                          </div>
+                            {card.link.text ?? "Saiba mais"}
+                          </a>
                         </div>
-                      </div>
-                    );
-                  })}
-              </div>
-            </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+        </div>
+      </div>
 
-            {/* Dots */}
-            {showPag && totalPages > 1 && (
-              <div class="mt-4 flex items-center justify-center gap-2">
-                {Array.from({ length: totalPages }).map((_, i) => (
-                  <button
-                    key={i}
-                    type="button"
-                    aria-label={`Ir para página ${i + 1}`}
-                    class={`w-2.5 h-2.5 rounded-full border ${i === page ? "bg-gray-800 border-gray-800" : "bg-transparent border-gray-400"
-                      }`}
-                    onClick={() => setPage(i)}
-                  />
-                ))}
-              </div>
-            )}
-          </div>
-          );
+      {/* Dots */}
+      {showPag && totalPages > 1 && (
+        <div class="mt-4 flex items-center justify-center gap-2">
+          {Array.from({ length: totalPages }).map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              aria-label={`Ir para página ${i + 1}`}
+              class={`w-2.5 h-2.5 rounded-full border ${i === page ? "bg-gray-800 border-gray-800" : "bg-transparent border-gray-400"
+                }`}
+              onClick={() => setPage(i)}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
 }

@@ -128,6 +128,9 @@ export default function DimmedColorsSection(
 
             .dimmed-colors-items__container {
               cursor: pointer;
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
               flex-direction: row;
               gap: 8px;
             }

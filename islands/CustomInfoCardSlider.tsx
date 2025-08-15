@@ -1,3 +1,4 @@
+import { useEffect, useMemo, useState } from "preact/hooks";
 import type { IInfoCardCustom } from "site/types/InfoCardCustom.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
@@ -7,27 +8,140 @@ interface Props {
   configs?: ISliderConfigs;
 }
 
+/** Tipos seguros para usar globalThis sem 'window' */
+type GlobalWithResize = {
+  innerWidth?: number;
+  addEventListener?: (type: "resize", listener: EventListener) => void;
+  removeEventListener?: (type: "resize", listener: EventListener) => void;
+};
+
+const getGlobal = (): GlobalWithResize =>
+  (globalThis as unknown as GlobalWithResize) ?? {};
+
+/** Largura da janela (ou 0 no SSR) */
+const getInnerWidth = (): number => {
+  const g = getGlobal();
+  return typeof g.innerWidth === "number" ? g.innerWidth : 0;
+};
+
+/** Adiciona listener de resize de forma tipada e retorna o remover */
+const addResizeListener = (handler: EventListener): (() => void) | undefined => {
+  const g = getGlobal();
+  const add = g.addEventListener;
+  const remove = g.removeEventListener;
+
+  if (typeof add === "function" && typeof remove === "function") {
+    // chama preservando o 'this'
+    add.call(g, "resize", handler);
+    return () => remove.call(g, "resize", handler);
+  }
+  return undefined;
+};
+
+/** Resolve slidesPerView conforme seus breakpoints */
+function resolveSlidesPerView(cfg?: ISliderConfigs) {
+  const base = Math.max(
+    1,
+    cfg?.slidesPerView ?? cfg?.slidesPerViewResponsive?.mobile ?? 1,
+  );
+
+  const get = () => {
+    const w = getInnerWidth();
+    if (w >= 1024) return Math.max(1, cfg?.slidesPerViewResponsive?.desktop ?? base);
+    if (w >= 768) return Math.max(1, cfg?.slidesPerViewResponsive?.tablet ?? base);
+    return Math.max(1, cfg?.slidesPerViewResponsive?.mobile ?? base);
+  };
+
+  const isDesktop = () => getInnerWidth() >= 1024;
+  const isMobile = () => getInnerWidth() < 1024;
+
+  return { get, isDesktop, isMobile };
+}
+
+/** Tipos auxiliares para o conteúdo de mídia */
+type MediaContent = { src?: string; srcDesktop?: string; alt?: string };
+
 export default function CustomInfoCardSlider({
   infoCards = [],
   rootId,
+  configs,
 }: Props) {
-  if (!infoCards.length) return null;
+  const { get, isDesktop, isMobile } = resolveSlidesPerView(configs);
+
+  const [spv, setSpv] = useState<number>(get());
+  const [page, setPage] = useState<number>(0);
+
+  const gap = Math.max(0, configs?.spaceBetween ?? 0);
+  const speed = Math.max(0, configs?.speed ?? 300);
+
+  const len = Math.max(1, infoCards.length);
+  const totalPages = useMemo(
+    () => Math.max(1, Math.ceil(len / Math.max(1, spv))),
+    [len, spv],
+  );
+
+  // Resize (corrige: handler aceita arg opcional; podemos chamar sem args)
+  useEffect(() => {
+    const onResize = (_evt?: Event) => {
+      const v = get();
+      setSpv(v);
+      setPage((p) => Math.min(p, Math.max(0, Math.ceil(len / v) - 1)));
+    };
+    onResize();
+    return addResizeListener(onResize as EventListener);
+  }, [get, len]);
+
+  // Autoplay
+  useEffect(() => {
+    if (!configs?.autoplay?.enabled) return;
+    const delay = Math.max(1000, configs?.autoplay?.delay ?? 5000);
+    const id = setInterval(() => {
+      setPage((p) => {
+        const next = p + 1;
+        if (next < totalPages) return next;
+        return configs?.loop ? 0 : p;
+      });
+    }, delay);
+    return () => clearInterval(id);
+  }, [configs?.autoplay?.enabled, configs?.autoplay?.delay, configs?.loop, totalPages]);
+
+  const prev = () =>
+    setPage((p) => (p > 0 ? p - 1 : (configs?.loop ? totalPages - 1 : 0)));
+
+  const next = () =>
+    setPage((p) => {
+      const n = p + 1;
+      return n < totalPages ? n : (configs?.loop ? 0 : p);
+    });
+
+  const itemWidthPct = 100 / Math.max(1, spv);
+
+  const showNav =
+    (!!configs?.customNavigation?.enabledDesktop && isDesktop()) ||
+    (!!configs?.customNavigation?.enabledMobile && isMobile());
+
+  const showPag =
+    (!!configs?.customPagination?.enabledDesktop && isDesktop()) ||
+    (!!configs?.customPagination?.enabledMobile && isMobile());
+
+  const hasItems = infoCards.length > 0;
 
   return (
-    <div id={rootId} class="w-full overflow-hidden">
-      <div class="flex flex-col gap-8 lg:gap-12">
-        {infoCards.map((card, index) => (
-          <div
-            key={index}
-            class={`flex flex-col lg:flex-row ${
-              card?.direction === "left" ? "" : "lg:flex-row-reverse"
-            } w-full h-[453px] items-center justify-between`}
+    <div id={rootId} class="relative w-full">
+      {/* Arrows */}
+      {showNav && totalPages > 1 && (
+        <>
+          <button
+            type="button"
+            aria-label="Anterior"
+            onClick={prev}
+            class="hidden lg:flex absolute left-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 items-center justify-center rounded-full border bg-white hover:bg-gray-50"
           >
             {/* Mídia */}
             <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
               {card?.typeOfContent &&
-                  "src" in card.typeOfContent &&
-                  card.typeOfContent.src.endsWith(".mp4")
+                "src" in card.typeOfContent &&
+                card.typeOfContent.src.endsWith(".mp4")
                 ? (
                   <video
                     src={card.typeOfContent.src}
@@ -39,54 +153,130 @@ export default function CustomInfoCardSlider({
                   />
                 )
                 : card?.typeOfContent &&
-                    "srcDesktop" in card.typeOfContent
-                ? (
-                  <img
-                    src={card.typeOfContent.srcDesktop}
-                    alt={card.typeOfContent.alt ?? "Imagem"}
-                    class="w-full h-full object-cover"
+                  "srcDesktop" in card.typeOfContent
+                  ? (
+                    <img
+                      src={card.typeOfContent.srcDesktop}
+                      alt={card.typeOfContent.alt ?? "Imagem"}
+                      class="w-full h-full object-cover"
+                    />
+                  )
+                  : null}
+            </div>
+
+            {/* Viewport */}
+            <div class="w-full overflow-hidden">
+              {/* Track */}
+              <div
+                class="flex ease-out"
+                style={{
+                  transitionProperty: "transform",
+                  transitionDuration: `${speed}ms`,
+                  transform: `translateX(-${page * 100}%)`, // <- anda 1 viewport por página
+                  // REMOVER qualquer 'width: ...' aqui
+                }}
+              >
+                {hasItems &&
+                  infoCards.map((card, index) => {
+                    const tc = card.typeOfContent as MediaContent | undefined;
+                    const videoSrc = tc?.src && tc.src.endsWith(".mp4") ? tc.src : undefined;
+                    const imgSrc = tc?.srcDesktop;
+                    const imgAlt = tc?.alt ?? "Imagem";
+
+                    return (
+                      <div
+                        key={index}
+                        class="h-[453px] flex items-stretch"
+                        style={{
+                          flex: `0 0 ${itemWidthPct}%`,
+                          paddingLeft: `${gap / 2}px`,
+                          paddingRight: `${gap / 2}px`,
+                        }}
+                      >
+                        {/* 50/50 em lg */}
+                        <div
+                          class={`flex w-full h-full items-center justify-between ${card.direction === "left" ? "lg:flex-row" : "lg:flex-row-reverse"
+                            } flex-col`}
+                        >
+                          {/* Mídia */}
+                          <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
+                            {videoSrc ? (
+                              <video
+                                src={videoSrc}
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                class="w-full h-full object-cover"
+                              />
+                            ) : imgSrc ? (
+                              <img
+                                src={imgSrc}
+                                alt={imgAlt}
+                                class="w-full h-full object-cover"
+                                loading={configs?.lazy ? "lazy" : "eager"}
+                              />
+                            ) : (
+                              <div class="w-full h-full bg-gray-200" />
+                            )}
+                          </div>
+
+                          {/* Texto */}
+                          <div
+                            class="w-full lg:w-1/2 h-full p-6 lg:p-10 flex flex-col justify-center"
+                            style={{
+                              backgroundColor: card.textBackgroundColor ?? "#000000",
+                              color: card.textColor ?? "#FFFFFF",
+                              fontFamily: card.fontFamily ?? "Arial",
+                            }}
+                          >
+                            {card.title && (
+                              <h2
+                                class="mb-4 uppercase font-bold text-[14px] leading-[20px] md:text-[34px] md:leading-[48px]"
+                                dangerouslySetInnerHTML={{ __html: card.title }}
+                              />
+                            )}
+
+                            {card.description && (
+                              <p
+                                class="text-[12px] leading-[18px] md:text-[16px] md:leading-[20px] font-normal"
+                                dangerouslySetInnerHTML={{ __html: card.description }}
+                              />
+                            )}
+
+                            {card.link?.href && (
+                              <div class="mt-6">
+                                <a
+                                  href={card.link.href}
+                                  class="inline-block bg-white text-black px-6 py-2 rounded font-semibold hover:opacity-80 transition"
+                                >
+                                  {card.link.text ?? "Saiba mais"}
+                                </a>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
+
+            {/* Dots */}
+            {showPag && totalPages > 1 && (
+              <div class="mt-4 flex items-center justify-center gap-2">
+                {Array.from({ length: totalPages }).map((_, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    aria-label={`Ir para página ${i + 1}`}
+                    class={`w-2.5 h-2.5 rounded-full border ${i === page ? "bg-gray-800 border-gray-800" : "bg-transparent border-gray-400"
+                      }`}
+                    onClick={() => setPage(i)}
                   />
-                )
-                : null}
-            </div>
-
-            {/* Texto */}
-            <div
-              class="w-full lg:w-1/2 h-full p-6 lg:p-10 flex flex-col justify-center"
-              style={{
-                backgroundColor: card?.textBackgroundColor ?? "#000000",
-                color: card?.textColor ?? "#FFFFFF",
-                fontFamily: card?.fontFamily ?? "Arial",
-              }}
-            >
-              {card?.title && (
-                <h2
-                  class="mb-4 uppercase font-bold text-[14px] leading-[20px] md:text-[34px] md:leading-[48px]"
-                  dangerouslySetInnerHTML={{ __html: card.title }}
-                />
-              )}
-
-              {card?.description && (
-                <p
-                  class="text-[12px] leading-[18px] md:text-[16px] md:leading-[20px] font-normal"
-                  dangerouslySetInnerHTML={{ __html: card.description }}
-                />
-              )}
-
-              {card?.link?.href && (
-                <div class="mt-6">
-                  <a
-                    href={card.link.href}
-                    class="inline-block bg-white text-black px-6 py-2 rounded font-semibold hover:opacity-80 transition"
-                  >
-                    {card.link.text ?? "Saiba mais"}
-                  </a>
-                </div>
-              )}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
-        ))}
-      </div>
-    </div>
-  );
+          );
 }

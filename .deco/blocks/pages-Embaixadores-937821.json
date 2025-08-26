@@ -76,7 +76,7 @@
         "text": "<h2 style=\"text-align: center\">Air Fryers Rita Lobo</h2><p style=\"text-align: center\"><span>Lorem ipsum dolor sit amet consectetur alopra lorem.</span></p>",
         "reverse": true,
         "link": {
-          "text": "Ver mais",
+          "text": "Ver tudo",
           "href": "/#"
         }
       }
@@ -314,7 +314,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "Ecoplus",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "infoCards": [
           {

@@ -8,7 +8,7 @@ import FoldItemsIsland from "site/islands/FoldItemsIsland.tsx";
 import type { FoldItem } from "site/islands/FoldItemsIsland.tsx";
 
 /**
- * @title Seção de items "abre e fecha"
+ * @title Seção de items "abre e fecha".
  * @description Exibe um item ou uma coleção de items que abrem e fecham a partir do click ou toque na imagem.
  */
 interface FoldItemsSectionProps {

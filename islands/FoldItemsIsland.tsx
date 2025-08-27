@@ -4,8 +4,8 @@ import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 
 /**
- * @title Seção de Artigos em Grid
- * @description Exibe artigos em um grid responsivo (4 colunas no desktop e 2 no mobile).
+ * @title Seção de items "abre e fecha".
+ * @description Exibe um item ou uma coleção de items que abrem e fecham a partir do click ou toque na imagem.
  */
 export interface FoldItem {
   /**
@@ -30,151 +30,63 @@ interface FoldItemsIslandProps {
   foldItems?: FoldItem[];
 }
 
-export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
+function FoldItem({ foldItem }: FoldItem) {
+  const { title, text, image } = foldItem
   const isOpen = useSignal<boolean>(false);
-
   const toggleItem = () => isOpen.value = !isOpen.value;
 
   return (
-    <>
+    <div
+      class={`flex flex-col justify-center items-center w-full gap-y-[8px]`}
+    >
       <div
-        id="foldItems-container"
-        class={`foldItems-container__mobile w-full`}
+        onClick={toggleItem}
+        class={`relative w-full flex flex-col ${isOpen.value
+          ? "h-[206px] justify-end"
+          : "h-[42px] justify-center"
+          }`}
       >
-        {foldItems.length
-          ? (
-            foldItems.map((item, index) => (
-              <>
-                <div
-                  key={index}
-                  class={`foldItems-item__mobile flex flex-col justify-center items-center w-full`}
-                >
-                  <div
-                    onClick={toggleItem}
-                    class={`foldItems-item-image__mobile relative w-full flex flex-col ${
-                      isOpen.value
-                        ? "h-[206px] justify-end"
-                        : "h-[42px] justify-center"
-                    }`}
-                  >
-                    <ResponsiveImage
-                      {...item.image}
-                      class={`absolute`}
-                      link={{}}
-                    />
-                    <div class="absolute bg-black inset-0 bg-black opacity-25">
-                    </div>
-                    <span
-                      class={`absolute text-white font-semibold text-[26px] ${
-                        isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
-                      }`}
-                    >
-                      {item.title}
-                    </span>
-                  </div>
-
-                  <div
-                    onClick={toggleItem}
-                    class={`foldItems-item-image__desktop relative w-full flex ${
-                      isOpen.value
-                        ? "h-[206px] justify-end"
-                        : "h-[42px] justify-center"
-                    }`}
-                  >
-                    <ResponsiveImage
-                      {...item.image}
-                      class={`absolute`}
-                      link={{}}
-                    />
-                    <div class="absolute bg-black inset-0 bg-black opacity-25">
-                    </div>
-                    <span
-                      class={`absolute text-white font-semibold text-[26px] ${
-                        isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
-                      }`}
-                    >
-                      {item.title}
-                    </span>
-                  </div>
-
-                  <div
-                    class={`foldItems-item-info ${
-                      isOpen.value ? "h-full" : "hidden"
-                    } overflow-hidden flex flex-col items-start gap-[8px] py-[16px]`}
-                  >
-                    <h4 class={`text-[#041E50] font-semibold text-[26px]`}>
-                      {item.title}
-                    </h4>
-                    <p class={`text-[#2B2936] text-[14px]`}>{item.text}</p>
-                  </div>
-                </div>
-              </>
-            ))
-          )
-          : (
-            "FoldItemsSection: não há itens a serem renderizados."
-          )}
+        <ResponsiveImage
+          {...image}
+          class={`absolute`}
+          link={{}}
+        />
+        <div class="absolute bg-black inset-0 bg-black opacity-25">
+        </div>
+        <span
+          class={`absolute text-white font-semibold text-[26px] ${isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
+            }`}
+        >
+          {title}
+        </span>
       </div>
-      {
-        /* <div class={`foldItems-container__desktop w-full`}>
-        {foldItems.length
-          ? (
-            foldItems.map((item, index) => (
-              <>
-                <div
-                  key={index}
-                  class={`foldItems-item__desktop flex flex-col justify-center items-center w-full`}
-                >
-                  <div
-                    onClick={toggleItem}
-                    class={`foldItems-item-image__desktop relative w-full flex ${isOpen.value
-                      ? "h-[206px] justify-end"
-                      : "h-[42px] justify-center"
-                      }`}
-                  >
-                    <ResponsiveImage {...item.image} class={`absolute`} link={{}} />
-                    <div class="absolute bg-black inset-0 bg-black opacity-25">
-                    </div>
-                    <span
-                      class={`absolute text-white font-semibold text-[26px] ${isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
-                        }`}
-                    >
-                      {item.title}
-                    </span>
-                  </div>
+      <div
+        class={`${isOpen.value ? "h-full" : "hidden"
+          } overflow-hidden flex flex-col items-start gap-[8px] py-[16px]`}
+      >
+        <h4 class={`text-[#041E50] font-semibold text-[26px]`}>
+          {title}
+        </h4>
+        <p class={`text-[#2B2936] text-[14px]`}>{text}</p>
+      </div>
+    </div>
+  )
+}
 
-                  <div
-                    class={`foldItems-item-info ${isOpen.value ? "h-full" : "hidden"
-                      } overflow-hidden flex flex-col items-start gap-[8px] py-[16px]`}
-                  >
-                    <h4 class={`text-[#041E50] font-semibold text-[26px]`}>
-                      {item.title}
-                    </h4>
-                    <p class={`text-[#2B2936] text-[14px]`}>{item.text}</p>
-                  </div>
-                </div>
-              </>
-            ))
-          )
-          : (
-            "FoldItemsSection: não há itens a serem renderizados."
-          )}
-      </div> */
-      }
-
-      <style>
-        {`
-          #foldItems-container [class*='__desktop'] {
-            display: none;
-          }
-        
-          @media screen and (min-width: 1024px) {
-            #foldItems-container [class*='__mobile'] {
-                display: none;
-            }
-          }
-        `}
-      </style>
-    </>
-  );
+export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
+  return (
+    <div
+      class={`w-full flex flex-col gap-y-[8px]`}
+    >
+      {foldItems.length
+        ? (
+          foldItems.map((item, index) => (
+            <FoldItem foldItem={item} key={index} />
+          ))
+        )
+        : (
+          "FoldItemsSection: não há itens a serem renderizados."
+        )}
+    </div>
+  )
 }

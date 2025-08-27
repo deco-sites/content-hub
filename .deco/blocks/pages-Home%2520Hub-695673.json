@@ -592,6 +592,86 @@
               "alt": "Retirada & Coleta"
             },
             "title": "Retirada & Coleta"
+          },
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Assistência",
+                "href": "/#",
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7f04357e-91e1-4c68-ae61-d59a9011d7f3/Media-Ratios.png",
+                "mobile": "https://assets.decocache.com/content-hub/7f04357e-91e1-4c68-ae61-d59a9011d7f3/Media-Ratios.png"
+              },
+              "alt": "Assistência"
+            },
+            "title": "Assistência"
+          },
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Personal Cheff",
+                "href": "/#",
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+              },
+              "alt": "Personal Cheff"
+            },
+            "title": "Personal Cheff"
+          },
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Assinatura",
+                "href": "/#",
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png"
+              },
+              "alt": "Assinatura"
+            },
+            "title": "Assinatura"
+          },
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Manutenção Preventiva",
+                "href": "/#",
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/64305e48-14ec-4283-821d-bceb1d712473/BannerEspeciais.png",
+                "mobile": "https://assets.decocache.com/content-hub/6cdf1cf5-2d50-4780-9390-b393aa4c7643/BannerEspeciais-mobile.png"
+              },
+              "alt": "Manutenção Preventiva"
+            },
+            "title": "Manutenção Preventiva"
           }
         ]
       }

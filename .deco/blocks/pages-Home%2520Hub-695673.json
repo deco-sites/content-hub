@@ -570,7 +570,8 @@
         "__resolveType": "site/sections/Lps/FoldItemsSection.tsx",
         "section": {
           "title": "Nossos Serviços",
-          "subtitle": "Conheça mais sobre nossos serviços"
+          "subtitle": "Conheça mais sobre nossos serviços",
+          "fullWidth": false
         },
         "foldItems": [
           {
@@ -674,6 +675,81 @@
             "title": "Manutenção Preventiva"
           }
         ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/HomeHubInfoSection.tsx",
+        "infoCards": [
+          {
+            "fontFamily": "Arial",
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "left",
+            "title": "<pre><code>&lt;h3 style=\"font-size: 20px; color: #;\"&gt;</code></pre><p>Aspiradores e Truques para Viver com Pets Sem Viver com Pelos</p><pre><code>&lt;/h3&gt;</code></pre>",
+            "description": "<p><span>Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...</span></p>",
+            "textBackgroundColor": "#ffffff",
+            "textColor": "#041E50",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Família com Cachorro"
+            }
+          },
+          {
+            "fontFamily": "Arial",
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "left",
+            "title": "<p><span>Aspiradores e Truques para Viver com Pets Sem Viver com Pelos</span></p>",
+            "description": "<p><span>Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...</span></p>",
+            "textBackgroundColor": "#ffffff",
+            "textColor": "#041E50",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Família com Cachorro"
+            }
+          },
+          {
+            "fontFamily": "Arial",
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "left",
+            "title": "<p><span>Aspiradores e Truques para Viver com Pets Sem Viver com Pelos</span></p>",
+            "description": "<p><span>Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...</span></p>",
+            "textBackgroundColor": "#ffffff",
+            "textColor": "#041E50",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Família com Cachorro"
+            }
+          }
+        ],
+        "configs": {
+          "customNavigation": {
+            "enabledDesktop": true
+          },
+          "customPagination": {
+            "enabledMobile": true,
+            "dynamicBullets": true,
+            "dynamicMainBullets": 3
+          },
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 1
+          }
+        },
+        "section": {
+          "title": "Últimos artigos",
+          "subtitle": "Ver todos os artigos"
+        }
       }
     }
   ],

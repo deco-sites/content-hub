@@ -181,212 +181,123 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+        "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
         "section": {
-          "title": "<h1>Sua casa bem vivida</h1>",
-          "subtitle": "lorem ipsum dolor sit amet",
-          "fullWidth": false
+          "title": "Quer uma maozinha? Nossos embaixadores te ajudam"
         },
-        "data": [
+        "ambassadors": [
           {
-            "image": {
+            "photo": {
               "link": {
                 "target": "blank",
                 "href": "/#",
-                "title": "Para preservar"
+                "title": "Rita Lobo"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
+              "alt": "Rita Lobo",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
               }
             },
-            "title": "Para preservar",
-            "text": "Lorem ipsum dolor sit amet",
-            "link": "/#",
-            "color": {
-              "mobile": "rgba(52, 73, 94, 0.8)",
-              "desktop": "rgba(52, 73, 94, 1)"
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "2140",
+                "count": 1
+              }
             }
           },
           {
-            "image": {
+            "photo": {
               "link": {
                 "target": "blank",
                 "href": "/#",
-                "title": "Para preservar"
+                "title": "Rita Lobo"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
+              "alt": "Rita Lobo",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              },
-              "alt": "lavadora"
-            },
-            "title": "Para preservar",
-            "text": "Lorem ipsum dolor sit amet",
-            "link": "/#",
-            "color": {
-              "desktop": " rgba(90, 106, 90, 1)",
-              "mobile": " rgba(90, 106, 90, 0.8)"
-            }
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Para preservar"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
               }
             },
-            "title": "Para preservar",
-            "text": "Lorem ipsum dolor sit amet",
-            "link": "/#",
-            "color": {
-              "mobile": " rgba(107, 78, 78, 0.8)",
-              "desktop": " rgba(107, 78, 78, 1)"
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "2140",
+                "count": 1
+              }
             }
           },
           {
-            "image": {
+            "photo": {
               "link": {
                 "target": "blank",
                 "href": "/#",
-                "title": "Para preservar"
+                "title": "Rita Lobo"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
+              "alt": "Rita Lobo",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              },
-              "alt": "Lavadora"
+                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+              }
             },
-            "title": "Para preservar",
-            "text": "Lorem ipsum dolor sit amet",
-            "link": "/#",
-            "color": {
-              "mobile": "rgba(126, 100, 100, 0.8)",
-              "desktop": "rgba(126, 100, 100, 1)"
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "2140",
+                "count": 1
+              }
+            }
+          },
+          {
+            "photo": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Rita Lobo"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Rita Lobo",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+              }
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "2140",
+                "count": 1
+              }
             }
           }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
-        "section": {
-          "title": "<h1>Outros artigos</h1>",
-          "subtitle": "Conheça todos os outros artigos aqui."
-        },
-        "articles": [
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              },
-              "alt": "Lavadora"
-            },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
-            "href": "/#",
-            "cta": "Saiba mais"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              },
-              "alt": "Lavadora"
-            },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
-            "href": "/#",
-            "cta": "Saiba mais"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              },
-              "alt": "Lavadora"
-            },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
-            "href": "/#",
-            "cta": "Saiba mais"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              },
-              "alt": "Lavadora"
-            },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
-            "href": "/#",
-            "cta": "Saiba mais"
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 4
           }
-        ]
+        }
       }
     },
     {
@@ -503,63 +414,22 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+        "__resolveType": "site/sections/Lps/HomeHubInfoSection.tsx",
         "section": {
-          "title": "<h1>Explore por assunto</h1>",
-          "subtitle": "Lorem ipsum dolor sit amet"
+          "title": "Últimos Artigos",
+          "subtitle": "Ver todos os artigos"
         },
-        "icons": [
+        "infoCards": [
           {
-            "target": false,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "title": "Gastronomia",
-            "imageSrc": "https://assets.decocache.com/content-hub/047d6e36-b328-4ae3-9ed5-9fda6c16983b/utilidades-domesticas.svg"
-          },
-          {
-            "target": false,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "title": "Arquitetura & Decoração",
-            "alt": "Arquitetura & Decoração",
-            "imageSrc": "https://assets.decocache.com/content-hub/09e9402d-13bf-40d5-b37d-134cddf37904/couch.svg",
-            "redirect": "/#"
-          },
-          {
-            "target": false,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "title": "Sua casa bem vivida",
-            "alt": "Sua casa bem vivida",
-            "imageSrc": "https://assets.decocache.com/content-hub/d0fcdc07-8b2e-442b-8985-5831e23a46af/courtains.svg",
-            "redirect": "/#"
-          },
-          {
-            "target": false,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "title": "Embaixadores da marca",
-            "alt": "Embaixadores da marca",
-            "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
-            "redirect": "/#"
-          },
-          {
-            "target": false,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "title": "Guia de compras",
-            "alt": "Guia de compras",
-            "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
-            "redirect": "/#"
-          },
-          {
-            "target": false,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "alt": "Dicas de especialistas",
-            "imageSrc": "https://assets.decocache.com/content-hub/47100eab-13d0-422c-b18f-06067198057b/heart.svg",
-            "redirect": "/#",
-            "title": "Dicas de especialistas"
+            "fontFamily": "Arial",
+            "direction": "left",
+            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
+            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Família com Cachorro"
+            }
           }
         ]
       }
@@ -680,22 +550,289 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/HomeHubInfoSection.tsx",
+        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
         "section": {
-          "title": "Últimos Artigos",
-          "subtitle": "Ver todos os artigos"
+          "fullWidth": true
         },
-        "infoCards": [
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "background": {
+          "srcDesktop": "https://assets.decocache.com/content-hub/84dcd53e-b58b-4216-b521-c68a29e42670/Rita-Lobo-v3.png",
+          "srcMobile": "https://assets.decocache.com/content-hub/84dcd53e-b58b-4216-b521-c68a29e42670/Rita-Lobo-v3.png"
+        },
+        "text": "<h2 style=\"text-align: center\">Black Novembro</h2><p style=\"text-align: center\"><span>Lorem ipsum dolor sit amet consectetur alopra lorem.</span></p>",
+        "link": {
+          "text": "Ver tudo",
+          "href": "/#",
+          "bgColor": "#6C7B67"
+        },
+        "configs": {
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 3
+          },
+          "customNavigation": {
+            "enabledDesktop": true
+          },
+          "customPagination": {
+            "enabledMobile": true
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+        "section": {
+          "fullWidth": false,
+          "title": "<h1>Sua casa bem vivida</h1>",
+          "subtitle": "lorem ipsum dolor sit amet"
+        },
+        "data": [
           {
-            "fontFamily": "Arial",
-            "direction": "left",
-            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
-            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
-            "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
-              "alt": "Família com Cachorro"
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "rgba(52, 73, 94, 0.8)",
+              "desktop": "rgba(52, 73, 94, 1)"
             }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              },
+              "alt": "lavadora"
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "desktop": " rgba(90, 106, 90, 1)",
+              "mobile": " rgba(90, 106, 90, 0.8)"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": " rgba(107, 78, 78, 0.8)",
+              "desktop": " rgba(107, 78, 78, 1)"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              },
+              "alt": "Lavadora"
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "rgba(126, 100, 100, 0.8)",
+              "desktop": "rgba(126, 100, 100, 1)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+        "section": {
+          "title": "Explore por assunto",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+        },
+        "icons": [
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "title": "Gastronomia",
+            "imageSrc": "https://assets.decocache.com/content-hub/b73007ae-8b24-4d95-b4f9-96606299c3d7/gastronomia.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "imageSrc": "https://assets.decocache.com/content-hub/09e9402d-13bf-40d5-b37d-134cddf37904/couch.svg",
+            "redirect": "/#",
+            "title": "Arquitetura & Decoração"
+          },
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "imageSrc": "https://assets.decocache.com/content-hub/d0fcdc07-8b2e-442b-8985-5831e23a46af/courtains.svg",
+            "redirect": "/#",
+            "title": "Sua casa bem vivida"
+          },
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
+            "redirect": "/#",
+            "title": "Embaixadores de marca"
+          },
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "title": "Guia de compras",
+            "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "imageSrc": "https://assets.decocache.com/content-hub/47100eab-13d0-422c-b18f-06067198057b/heart.svg",
+            "redirect": "/#",
+            "title": "Dicas de especialistas"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "title": "<h1><span style=\"font-size: 15pt\">Aproveite nossas redes sociais</span></h1><p><span style=\"font-size: 12pt\">Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</span></p>",
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Rita Lobo"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+            },
+            "alt": "Rita Lobo"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Rita Lobo"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png"
+            },
+            "alt": "Alecrim"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Rita Lobo"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+            },
+            "alt": "Rita Lobo"
+          }
+        ],
+        "icons": [
+          {
+            "id": "Facebook",
+            "href": "/#"
+          },
+          {
+            "id": "Instagram",
+            "href": "/#"
+          },
+          {
+            "id": "Pinterest",
+            "href": "/#"
+          },
+          {
+            "id": "Youtube",
+            "href": "/#"
+          },
+          {
+            "id": "Linkedin",
+            "href": "/#"
           }
         ]
       }

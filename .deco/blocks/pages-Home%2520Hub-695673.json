@@ -550,6 +550,120 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/IconGridSection.tsx",
+        "section": {
+          "title": "Electrolux com você",
+          "subtitle": "Subtext"
+        },
+        "iconItems": [
+          {
+            "icon": {
+              "id": "WhatsApp",
+              "href": "/#",
+              "alt": "WhatsApp",
+              "link": {
+                "title": "WhatsApp",
+                "href": "/#"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/c38e9b31-b00c-4dd4-9688-71dd616a7db1/WhatsApp.svg",
+                "mobile": "https://assets.decocache.com/content-hub/c38e9b31-b00c-4dd4-9688-71dd616a7db1/WhatsApp.svg"
+              }
+            },
+            "title": "WhatsApp",
+            "description": "Dúvidas sobre produtos ou sobre seu pedido"
+          },
+          {
+            "icon": {
+              "id": "store",
+              "href": "/#",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f5c4429e-e706-453a-82f5-ce81015ed94f/Store.svg",
+                "mobile": "https://assets.decocache.com/content-hub/f5c4429e-e706-453a-82f5-ce81015ed94f/Store.svg"
+              },
+              "alt": "Lojas Electrolux",
+              "link": {
+                "title": "Lojas Electrolux",
+                "href": "/#"
+              }
+            },
+            "title": "Lojas Electrolux",
+            "description": "Compre online e retire em uma de nossas lojas"
+          },
+          {
+            "icon": {
+              "id": "cashback",
+              "href": "/#",
+              "alt": "Cashback",
+              "link": {
+                "title": "Cashback",
+                "href": "/#"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/ab73c0cc-7f3b-4ec6-91c3-c35d4dd224bd/Cashback.svg",
+                "mobile": "https://assets.decocache.com/content-hub/ab73c0cc-7f3b-4ec6-91c3-c35d4dd224bd/Cashback.svg"
+              }
+            },
+            "title": "Cashback",
+            "description": "Aqui seu dinheiro vale mais"
+          },
+          {
+            "icon": {
+              "id": "Truck",
+              "href": "/#",
+              "alt": "Instalação",
+              "link": {
+                "title": "Instalação",
+                "href": "/#"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/60687cb3-f5d6-4e0e-8e08-d107c9e915a8/Tool.svg",
+                "mobile": "https://assets.decocache.com/content-hub/60687cb3-f5d6-4e0e-8e08-d107c9e915a8/Tool.svg"
+              }
+            },
+            "title": "Instalação",
+            "description": "Instalamos seu produto com segurança"
+          },
+          {
+            "icon": {
+              "id": "MapPin",
+              "href": "/#",
+              "alt": "Garantia estendida",
+              "link": {
+                "title": "Garantia estendida",
+                "href": "/#"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/fc52d6b8-fc21-4562-923e-897e28f632b5/Shield.svg",
+                "mobile": "https://assets.decocache.com/content-hub/fc52d6b8-fc21-4562-923e-897e28f632b5/Shield.svg"
+              }
+            },
+            "title": "Garantia estendida",
+            "description": "Mais tranquilidade para você"
+          },
+          {
+            "icon": {
+              "id": "Heart",
+              "href": "/#",
+              "alt": "Electrolux cuida",
+              "link": {
+                "title": "Electrolux cuida",
+                "href": "/#"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/be3fcde4-87de-46f0-8d0b-5c481ddcce74/Likephone.svg",
+                "mobile": "https://assets.decocache.com/content-hub/be3fcde4-87de-46f0-8d0b-5c481ddcce74/Likephone.svg"
+              }
+            },
+            "title": "Electrolux cuida",
+            "description": "Assistência técnica online"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
         "section": {
           "fullWidth": true
@@ -592,9 +706,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "section": {
-          "fullWidth": false,
           "title": "<h1>Sua casa bem vivida</h1>",
-          "subtitle": "lorem ipsum dolor sit amet"
+          "subtitle": "lorem ipsum dolor sit amet",
+          "fullWidth": false
         },
         "data": [
           {
@@ -702,10 +816,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
-        "section": {
-          "title": "Explore por assunto",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
-        },
         "icons": [
           {
             "target": true,
@@ -755,7 +865,11 @@
             "redirect": "/#",
             "title": "Dicas de especialistas"
           }
-        ]
+        ],
+        "section": {
+          "title": "Explore por assunto",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+        }
       }
     },
     {
@@ -800,17 +914,17 @@
             "link": {
               "target": "blank",
               "href": "/#",
-              "title": "Rita Lobo"
+              "title": "Brownie"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
-              "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+              "desktop": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/a96bff7e-f62a-4657-afba-6e3e3f13e044/brownie-mobile.png"
             },
-            "alt": "Rita Lobo"
+            "alt": "Brownie"
           }
         ],
         "icons": [

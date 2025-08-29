@@ -3170,6 +3170,9 @@ input.tab:checked + .tab-content,
 .gap-y-\[20px\] {
   row-gap: 20px;
 }
+.gap-y-\[24px\] {
+  row-gap: 24px;
+}
 .gap-y-\[8px\] {
   row-gap: 8px;
 }
@@ -4150,6 +4153,11 @@ input.tab:checked + .tab-content,
     margin-right: auto;
   }
 
+  .lg\:my-\[72px\] {
+    margin-top: 72px;
+    margin-bottom: 72px;
+  }
+
   .lg\:mb-\[16px\] {
     margin-bottom: 16px;
   }
@@ -4224,6 +4232,10 @@ input.tab:checked + .tab-content,
 
   .lg\:w-\[122px\] {
     width: 122px;
+  }
+
+  .lg\:w-\[180px\] {
+    width: 180px;
   }
 
   .lg\:w-\[unset\] {
@@ -4303,6 +4315,10 @@ input.tab:checked + .tab-content,
     flex-wrap: nowrap;
   }
 
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:items-center {
     align-items: center;
   }
@@ -4317,6 +4333,10 @@ input.tab:checked + .tab-content,
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-2 {
@@ -4344,6 +4364,14 @@ input.tab:checked + .tab-content,
   .lg\:gap-x-\[8px\] {
     -moz-column-gap: 8px;
          column-gap: 8px;
+  }
+
+  .lg\:gap-y-\[4px\] {
+    row-gap: 4px;
+  }
+
+  .lg\:overflow-hidden {
+    overflow: hidden;
   }
 
   .lg\:whitespace-normal {
@@ -4404,6 +4432,10 @@ input.tab:checked + .tab-content,
     text-align: left;
   }
 
+  .lg\:text-\[14px\] {
+    font-size: 14px;
+  }
+
   .lg\:text-\[16px\] {
     font-size: 16px;
   }
@@ -4415,6 +4447,15 @@ input.tab:checked + .tab-content,
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:font-normal {
+    font-weight: 400;
+  }
+
+  .lg\:text-\[\#5B6A78\] {
+    --tw-text-opacity: 1;
+    color: rgb(91 106 120 / var(--tw-text-opacity));
   }
 
   .lg\:\[position\:initial\] {

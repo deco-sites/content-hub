@@ -43,9 +43,14 @@ export type AvailableIcons =
   | "WhatsApp"
   | "XMark"
   | "Youtube"
-  | "Zoom";
+  | "Zoom"
+  | "Shield"
+  | "Tool"
+  | "Cashback"
+  | "Likephone"
+  | "Store";
 
-interface Props extends
+interface IconProps extends
   preact.JSX.SVGAttributes<
     SVGSVGElement
   > {
@@ -58,7 +63,7 @@ interface Props extends
   size?: number;
 }
 
-function Icon({
+export default function Icon({
   id,
   strokeWidth = 1,
   size,
@@ -66,7 +71,7 @@ function Icon({
   height,
   style = { color: "#ADB9C3" },
   ...otherProps
-}: Props): preact.JSX.Element {
+}: IconProps): preact.JSX.Element {
   return (
     <svg
       {...otherProps}
@@ -83,5 +88,3 @@ function Icon({
     </svg>
   );
 }
-
-export default Icon;

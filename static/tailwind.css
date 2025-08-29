@@ -3737,6 +3737,9 @@ input.tab:checked + .tab-content,
 .text-\[16px\] {
   font-size: 16px;
 }
+.text-\[20px\] {
+  font-size: 20px;
+}
 .text-\[24px\] {
   font-size: 24px;
 }
@@ -4383,14 +4386,6 @@ input.tab:checked + .tab-content,
     line-height: 2.5rem;
   }
 
-  .md\:text-\[16px\] {
-    font-size: 16px;
-  }
-
-  .md\:text-\[34px\] {
-    font-size: 34px;
-  }
-
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -4399,14 +4394,6 @@ input.tab:checked + .tab-content,
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:leading-\[20px\] {
-    line-height: 20px;
-  }
-
-  .md\:leading-\[48px\] {
-    line-height: 48px;
   }
 }
 @media (min-width: 1024px) {
@@ -4690,6 +4677,14 @@ input.tab:checked + .tab-content,
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-\[16px\] {
+    font-size: 16px;
+  }
+
+  .lg\:text-\[26px\] {
+    font-size: 26px;
   }
 
   .lg\:text-base {

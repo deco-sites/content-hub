@@ -2963,6 +2963,9 @@ input.tab:checked + .tab-content,
 .max-w-\[480px\] {
   max-width: 480px;
 }
+.max-w-\[48px\] {
+  max-width: 48px;
+}
 .max-w-\[522px\] {
   max-width: 522px;
 }
@@ -3167,11 +3170,11 @@ input.tab:checked + .tab-content,
 .gap-y-\[12px\] {
   row-gap: 12px;
 }
+.gap-y-\[16px\] {
+  row-gap: 16px;
+}
 .gap-y-\[20px\] {
   row-gap: 20px;
-}
-.gap-y-\[24px\] {
-  row-gap: 24px;
 }
 .gap-y-\[8px\] {
   row-gap: 8px;
@@ -4364,6 +4367,10 @@ input.tab:checked + .tab-content,
   .lg\:gap-x-\[8px\] {
     -moz-column-gap: 8px;
          column-gap: 8px;
+  }
+
+  .lg\:gap-y-\[24px\] {
+    row-gap: 24px;
   }
 
   .lg\:gap-y-\[4px\] {

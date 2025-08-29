@@ -42,16 +42,16 @@ export default function IconGridSection(
 
   return (
     <Section {...section} id={id}>
-      <div class="w-full grid grid-cols-2 lg:flex lg:justify-between lg:items-start lg:my-[72px]">
+      <div class="w-full grid grid-cols-2 gap-y-[16px] gap-x-[16px] lg:flex lg:justify-between lg:items-start lg:my-[72px]">
         {iconItems.map((
           item,
           index,
         ) => (
           <div
             key={index}
-            class="flex flex-col justify-center items-center gap-y-[24px] lg:w-[180px]"
+            class="flex flex-col justify-center items-center gap-y-[12px] lg:gap-y-[24px] lg:w-[180px]"
           >
-            <div class="flex justify-center items-center object-cover">
+            <div class="flex justify-center items-center object-cover max-w-[48px]">
               {item.icon.src.mobile || item.icon.src.desktop ? <ResponsiveImage {...item.icon} sizes={{ width: 48, height: 48, widthMobile: 48, heightMobile: 48 }} /> : null}
             </div>
             <div class="flex flex-col justify-center items-center w-full lg:gap-y-[4px]">
@@ -65,11 +65,6 @@ export default function IconGridSection(
           </div>
         ))}
       </div>
-      <style>
-        {`
-          @media screen and (min-width: 1024px) {}
-        `}
-      </style>
     </Section>
   );
 }

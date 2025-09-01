@@ -42,7 +42,7 @@ export default function IconGridSection(
 
   return (
     <Section {...section} id={id}>
-      <div class="w-full grid grid-cols-2 gap-y-[16px] gap-x-[16px] lg:flex lg:justify-between lg:items-start lg:my-[72px]">
+      <div class="w-full grid grid-cols-2 gap-y-[16px] gap-x-[16px] mb-[24px] lg:flex lg:justify-between lg:items-start lg:my-[72px]">
         {iconItems.map((
           item,
           index,

@@ -2573,6 +2573,10 @@ input.tab:checked + .tab-content,
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+.my-\[48px\] {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -2942,6 +2946,9 @@ input.tab:checked + .tab-content,
 .max-w-\[310px\] {
   max-width: 310px;
 }
+.max-w-\[343px\] {
+  max-width: 343px;
+}
 .max-w-\[350px\] {
   max-width: 350px;
 }
@@ -2971,9 +2978,6 @@ input.tab:checked + .tab-content,
 }
 .max-w-\[528px\] {
   max-width: 528px;
-}
-.max-w-\[600px\] {
-  max-width: 600px;
 }
 .max-w-\[80px\] {
   max-width: 80px;
@@ -3747,6 +3751,10 @@ input.tab:checked + .tab-content,
   --tw-text-opacity: 1;
   color: rgb(79 79 79 / var(--tw-text-opacity));
 }
+.text-\[\#515253\] {
+  --tw-text-opacity: 1;
+  color: rgb(81 82 83 / var(--tw-text-opacity));
+}
 .text-\[\#5B6A78\] {
   --tw-text-opacity: 1;
   color: rgb(91 106 120 / var(--tw-text-opacity));
@@ -4241,8 +4249,8 @@ input.tab:checked + .tab-content,
     width: 180px;
   }
 
-  .lg\:w-\[unset\] {
-    width: unset;
+  .lg\:w-\[560px\] {
+    width: 560px;
   }
 
   .lg\:w-full {
@@ -4251,10 +4259,6 @@ input.tab:checked + .tab-content,
 
   .lg\:min-w-\[initial\] {
     min-width: initial;
-  }
-
-  .lg\:max-w-\[500px\] {
-    max-width: 500px;
   }
 
   .lg\:max-w-\[calc\(100\.1rem\+32px\)\] {
@@ -4326,10 +4330,6 @@ input.tab:checked + .tab-content,
     align-items: center;
   }
 
-  .lg\:justify-start {
-    justify-content: flex-start;
-  }
-
   .lg\:justify-end {
     justify-content: flex-end;
   }
@@ -4344,10 +4344,6 @@ input.tab:checked + .tab-content,
 
   .lg\:gap-2 {
     gap: 0.5rem;
-  }
-
-  .lg\:gap-6 {
-    gap: 1.5rem;
   }
 
   .lg\:gap-\[10px\] {
@@ -4398,11 +4394,6 @@ input.tab:checked + .tab-content,
     padding-right: 0px;
   }
 
-  .lg\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .lg\:px-\[16px\] {
     padding-left: 16px;
     padding-right: 16px;
@@ -4433,10 +4424,6 @@ input.tab:checked + .tab-content,
 
   .lg\:pt-0 {
     padding-top: 0px;
-  }
-
-  .lg\:text-left {
-    text-align: left;
   }
 
   .lg\:text-\[14px\] {
@@ -4497,10 +4484,6 @@ input.tab:checked + .tab-content,
 
   .xl\:max-w-\[calc\(75\%-5px\)\] {
     max-width: calc(75% - 5px);
-  }
-
-  .xl\:max-w-none {
-    max-width: none;
   }
 
   .xl\:gap-8 {

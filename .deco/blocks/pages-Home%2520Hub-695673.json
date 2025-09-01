@@ -430,6 +430,28 @@
               "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
               "alt": "Família com Cachorro"
             }
+          },
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
+            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Família com Cachorro"
+            }
+          },
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
+            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Família com Cachorro"
+            }
           }
         ]
       }
@@ -876,7 +898,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
-        "title": "<h1><span style=\"font-size: 15pt\">Aproveite nossas redes sociais</span></h1><p><span style=\"font-size: 12pt\">Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</span></p>",
+        "title": "Aproveite nossas redes sociais",
         "banners": [
           {
             "link": {
@@ -948,7 +970,8 @@
             "id": "Linkedin",
             "href": "/#"
           }
-        ]
+        ],
+        "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."
       }
     }
   ],

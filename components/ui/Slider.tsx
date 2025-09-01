@@ -3,7 +3,7 @@ import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import type { createElement } from "preact";
 import { Pagination } from "apps/workflows/deps.ts";
 
-export type Props = {
+export type SwiperSliderProps = {
   slides: createElement.JSX.Element[] | [];
   configs?: ISliderConfigs;
   rootId: string;
@@ -13,7 +13,7 @@ export default function SwiperSlider({
   configs = {},
   slides = [],
   rootId,
-}: Props): preact.JSX.Element {
+}: SwiperSliderProps): preact.JSX.Element {
   const {
     slidesPerView,
     slidesPerViewResponsive,

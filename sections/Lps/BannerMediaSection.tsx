@@ -1,7 +1,6 @@
 import BannerSlider from "site/islands/BannerSlider.tsx";
 import Icon from "site/components/ui/Icon.tsx";
 import Section from "site/components/ui/Section.tsx";
-import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import { isEmptyText } from "site/utils/text.ts";
 import type { AvailableIcons } from "site/components/ui/Icon.tsx";
@@ -9,6 +8,7 @@ import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import type { ISection } from "site/types/Section.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { DefaultBannerMedia } from "site/configs/BannerMediaSection.ts";
+import { TextArea } from "apps/admin/widgets.ts";
 
 /**
  * @title {{#id}}{{id}}{{/id}}{{^id}}Ícone{{/id}}
@@ -18,11 +18,7 @@ interface IconItem {
   href: string;
 }
 
-interface Props {
-  /**
-   * @title Configuração da Seção
-   * @description Define o título, subtítulo e espaçamento da seção.
-   */
+interface BannerMediaSliderSectionProps {
   section?: ISection;
 
   /**
@@ -36,10 +32,16 @@ interface Props {
   configs?: ISliderConfigs;
 
   /**
-   * @title Configurações dos textos ao lado
-   * @format rich-text
+   * @title Título
    */
   title?: string;
+
+  /**
+   * @title Texto
+   * @widget text-area
+   * @default Lorem
+   */
+  text: TextArea;
 
   /**
    * @title Lista de ícones para renderizar
@@ -52,9 +54,10 @@ export default function BannerMediaSliderSection(
     section,
     banners = DefaultBannerMedia.banners,
     title = DefaultBannerMedia.title,
+    text,
     configs = DefaultBannerMedia.configs,
     icons = DefaultBannerMedia.icons,
-  }: Props,
+  }: BannerMediaSliderSectionProps,
 ) {
   const id = useId();
 
@@ -62,11 +65,11 @@ export default function BannerMediaSliderSection(
 
   const {
     slidesPerViewResponsive = {
-      mobile: 1.6,
-      tablet: 2.3,
+      mobile: 1,
+      tablet: 1,
       desktop: 3,
     },
-    spaceBetween = 32,
+    spaceBetween = 24,
     centeredSlides = true,
   } = configs ?? {};
 
@@ -79,13 +82,13 @@ export default function BannerMediaSliderSection(
       768: {
         slidesPerView: slidesPerViewResponsive
           .tablet,
-        spaceBetween: 32,
+        spaceBetween: 24,
         centeredSlides: false,
       },
       1024: {
         slidesPerView: slidesPerViewResponsive
           .desktop,
-        spaceBetween: 32,
+        spaceBetween: 24,
         centeredSlides: false,
       },
     },
@@ -109,45 +112,79 @@ export default function BannerMediaSliderSection(
     <Section
       {...section}
       id={id}
-      classesContainer="banner-media-section p-0 lg:px-4"
     >
-      <div class="flex flex-col w-full mx-auto gap-4 lg:gap-6">
-        <div class="flex items-center justify-between flex-col-reverse gap-8 lg:flex-row">
-          <div class="flex w-full lg:w-[unset] lg:max-w-[500px] xl:max-w-none">
-            <BannerSlider
-              configs={sliderConfig}
-              rootId={id}
-              banners={defaultPropBanners}
-            />
+      <div class="flex flex-col items-center justify-center gap-8 my-[48px] lg:flex-row lg:justify-between">
+        <div class="banner-media-slider-container w-full">
+          <BannerSlider
+            configs={sliderConfig}
+            rootId={id}
+            banners={defaultPropBanners}
+          />
+        </div>
+        <div class="flex flex-col items-start justify-center gap-y-[20px] max-w-[343px] lg:w-[560px]">
+          <div class="flex flex-col gap-y-[16px] text-left">
+            {!isEmptyText(title) && <h2 class='text-[20px] text-[#011E41] font-semibold'>{title}</h2>}
+            {!isEmptyText(text) && <p class='text-[#515253]'>{text}</p>}
           </div>
-          <div class="flex flex-col items-center justify-center max-w-[600px]">
-            {!isEmptyText(title) && (
-              <>
-                <div class="flex text-center lg:text-left">
-                  <Text title={title} />
-                </div>
-                <div class="w-full mt-4 flex flex-wrap justify-center items-center gap-x-[24px] lg:justify-start">
-                  {icons?.map((
-                    { id, href },
-                  ) => (
-                    <a
-                      target="_blank"
-                      key={id}
-                      title={id}
-                      href={href}
-                    >
-                      <Icon
-                        id={id}
-                        size={32}
-                      />
-                    </a>
-                  ))}
-                </div>
-              </>
-            )}
+          <div class="w-full flex flex-wrap justify-start items-center gap-x-[24px]">
+            {icons?.map((
+              { id, href },
+            ) => (
+              <a
+                target="_blank"
+                key={id}
+                title={id}
+                href={href}
+              >
+                <Icon
+                  id={id}
+                  size={32}
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>
+      <style>
+        {` 
+          .banner-media-slider-container .swiper-slide {
+            max-width: 343px;
+          }
+
+          .banner-media-slider-container .swiper-slide a picture,
+          .banner-media-slider-container .swiper-slide a img,
+          .banner-media-slider-container .swiper-slide a source {
+            object-fit: cover;
+            border-radius: 4px;
+          }
+          
+          @media screen and (min-width: 1280px) {
+            .banner-media-slider-container .swiper-slide {
+              height: auto !important;
+            }
+
+            .banner-media-slider-container .swiper-slide a {
+              height: 100%;
+            }
+            
+            .banner-media-slider-container {
+              max-width: 600px;
+            }
+          }
+
+          @media screen and (min-width: 1440px) {
+            .banner-media-slider-container {
+              max-width: 760px;
+            }
+          }
+
+          @media screen and (min-width: 1920px) {
+            .banner-media-slider-container {
+              max-width: 1000px;
+            }
+          }
+        `}
+      </style>
     </Section>
   );
 }

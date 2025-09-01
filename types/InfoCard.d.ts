@@ -20,7 +20,7 @@ export interface IInfoCardImage {
    * @title Texto Alternativo
    * @description Texto descritivo para acessibilidade.
    */
-  alt: string;
+  alt?: string;
 }
 
 /**

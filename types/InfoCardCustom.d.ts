@@ -1,40 +1,47 @@
-import type { IInfoCard } from "./InfoCard.d.ts";
+import type { IInfoCard, IInfoCardImage, IInfoCardVideo } from "./InfoCard.d.ts";
+import { TextArea } from "apps/admin/widgets.ts";
 
 /**
- * @title InfoCard (Customizado)
+ * @title {{#title}}{{title}}{{/title}}{{^title}}InfoCard{{/title}}
  */
-export interface IInfoCardCustom extends IInfoCard {
+export interface IInfoCardCustom extends Pick<IInfoCard, 'link' | 'typeOfContent' | 'direction'> {
   /**
    * @title Título
-   * @format rich-text
-   * @description Suporta quebra de linha usando Enter ou \n
    */
   title?: string;
 
   /**
    * @title Descrição
-   * @format rich-text
-   * @description Texto descritivo com suporte a quebra de linha (\\n), usado apenas no componente custom.
-   */
-  description?: string;
+   * @widget text-area
+   * @description Texto descritivo.
+  */
+ description?: TextArea;
+
+ /**
+  * @title Cor de fundo do texto
+  * @format color-input
+  */
+ textBackgroundColor?: string;
+ 
+ /**
+  * @title Fonte do texto
+  * @description Ex: Arial, Gotham, Roboto
+  * @default Arial
+  * @options Arial, Gotham, Roboto, Helvetica, Sans-serif
+  */
+ fontFamily?: string;
 
   /**
-   * @title Fonte do texto
-   * @description Ex: Arial, Gotham, Roboto
-   * @default Arial
-   * @options Arial, Gotham, Roboto, Helvetica, Sans-serif
+   * @title Tipo de Conteúdo
+   * @description Define se o cartão exibe uma imagem ou um vídeo.
    */
-  fontFamily?: string;
+  typeOfContent?:
+    | IInfoCardImage
+    | IInfoCardVideo;
 
-  /**
-   * @title Cor de fundo do texto
-   * @format color-input
+    /**
+   * @title Alinhamento do Conteúdo
+   * @description Define o alinhamento do conteúdo. (Default: left)
    */
-  textBackgroundColor?: string;
-
-  /**
-   * @title Cor do texto
-   * @format color-input
-   */
-  textColor?: string;
+  direction?: "left" | "right";
 }

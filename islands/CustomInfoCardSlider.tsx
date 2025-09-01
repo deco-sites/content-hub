@@ -194,11 +194,10 @@ export default function CustomInfoCardSlider({
                 >
                   {/* 50/50 em lg */}
                   <div
-                    class={`flex w-full h-full items-center justify-between ${
-                      card.direction === "left"
-                        ? "lg:flex-row"
-                        : "lg:flex-row-reverse"
-                    } flex-col`}
+                    class={`flex w-full h-full items-center justify-between ${card.direction === "left"
+                      ? "lg:flex-row"
+                      : "lg:flex-row-reverse"
+                      } flex-col`}
                   >
                     {/* Mídia */}
                     <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
@@ -214,36 +213,35 @@ export default function CustomInfoCardSlider({
                           />
                         )
                         : imgSrc
-                        ? (
-                          <img
-                            src={imgSrc}
-                            alt={imgAlt}
-                            class="w-full h-full object-cover"
-                            loading={configs?.lazy ? "lazy" : "eager"}
-                          />
-                        )
-                        : <div class="w-full h-full bg-gray-200" />}
+                          ? (
+                            <img
+                              src={imgSrc}
+                              alt={imgAlt}
+                              class="w-full h-full object-cover"
+                              loading={configs?.lazy ? "lazy" : "eager"}
+                            />
+                          )
+                          : <div class="w-full h-full bg-gray-200" />}
                     </div>
 
                     {/* Texto */}
                     <div
                       class="w-full lg:w-1/2 h-full p-6 lg:p-10 flex flex-col justify-center"
                       style={{
-                        backgroundColor: card.textBackgroundColor ?? "#000000",
-                        color: card.textColor ?? "#FFFFFF",
+                        backgroundColor: card.textBackgroundColor ?? "#FFFFFF",
                         fontFamily: card.fontFamily ?? "Arial",
                       }}
                     >
                       {card.title && (
                         <h2
-                          class="mb-4 uppercase font-bold text-[14px] leading-[20px] md:text-[34px] md:leading-[48px]"
+                          class="mb-4 font-bold text-[#041E50] text-[20px] lg:text-[26px]"
                           dangerouslySetInnerHTML={{ __html: card.title }}
                         />
                       )}
 
                       {card.description && (
                         <p
-                          class="text-[12px] leading-[18px] md:text-[16px] md:leading-[20px] font-normal"
+                          class="font-normal text-[#2B2936] text-[14px] lg:text-[16px]"
                           dangerouslySetInnerHTML={{ __html: card.description }}
                         />
                       )}
@@ -274,11 +272,10 @@ export default function CustomInfoCardSlider({
               key={i}
               type="button"
               aria-label={`Ir para página ${i + 1}`}
-              class={`w-2.5 h-2.5 rounded-full border ${
-                i === page
-                  ? "bg-gray-800 border-gray-800"
-                  : "bg-transparent border-gray-400"
-              }`}
+              class={`w-2.5 h-2.5 rounded-full border ${i === page
+                ? "bg-gray-800 border-gray-800"
+                : "bg-transparent border-gray-400"
+                }`}
               onClick={() => setPage(i)}
             />
           ))}

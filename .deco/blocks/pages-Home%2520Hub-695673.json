@@ -158,7 +158,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "Inspire-se",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "infoCards": [
           {
@@ -167,7 +169,7 @@
               "text": "Ver mais",
               "href": "/#"
             },
-            "direction": "left",
+            "direction": "right",
             "richText": "<h1><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h1><p><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/f39dec55-1f01-468a-b848-eeb2dc53d215/infocard-inspire.png",
@@ -452,6 +454,106 @@
               "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
               "alt": "Família com Cachorro"
             }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "title": "Outros artigos",
+          "subtitle": "Conheça todos os nossos outros artigos aqui"
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Lavadora"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
+            "href": "/#",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Lavadora"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
+            "href": "/#",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Lavadora"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
+            "href": "/#",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Lavadora"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
+            "href": "/#",
+            "cta": "Saiba mais"
           }
         ]
       }

@@ -128,6 +128,7 @@ export default function CategoriesGridSection(
             .grid-category-item-text__desktop {
               position: absolute;
               color: #FFFFFF;
+              font-size: 36px;
               font-weight: 600;
               bottom: 8px;
               right: 12px

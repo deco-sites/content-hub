@@ -82,11 +82,18 @@ export default function InfoCardSlider({
               text-align: start !important;
             }
 
+            .infocard-children-container > div:first-child {
+              margin-top: 24px;
+            }
+
+            .infocard-children-container > div:last-child {
+              margin-bottom: 24px;
+            }
+
             @media screen and (min-width: 1024px) {
               .infocard-children-container > div {
                 align-items: flex-start;
                 gap: 16px;
-                max-width: 576px;
               }
             }
           `}

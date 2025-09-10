@@ -47,8 +47,8 @@ export default function InfoCardSlider({
           classes={{
             container: `${props?.direction === "left" ? "flex-col lg:flex-row" : "flex-col-reverse lg:flex-row-reverse"} w-full justify-start items-center`,
             children:
-              `infocard-children-container h-full flex flex-col items-start justify-center`,
-            button: `flex w-full`,
+              `infocard-children-container h-full flex flex-col items-start justify-center gap-[16px]`,
+            button: `flex w-full pt-[0px] text-[14px]`,
             childrenTextContent: `${props?.link?.text ? "h-auto" : "h-full"} w-full`,
           }}
           styles={{
@@ -67,7 +67,7 @@ export default function InfoCardSlider({
             }
 
             .infocard-children-container > div {
-              padding: 24px;
+              padding: 0 24px;
               gap: 8px;
             }
 
@@ -79,7 +79,7 @@ export default function InfoCardSlider({
             .infocard-children-container > div h5,
             .infocard-children-container > div h6,
             .infocard-children-container > div p {
-              text-align: start;
+              text-align: start !important;
             }
 
             @media screen and (min-width: 1024px) {

@@ -148,75 +148,6 @@
 
 /* Info Card Section */
 .info-card-section {
-  .info-card {
-    @media screen and (max-width: 1023px) {
-      flex-direction: column;
-    }
-
-    .info-card-children {
-      min-height: 320px !important;
-      padding: 60px 16px !important;
-      width: 100% !important;
-
-      iframe {
-        height: 250px;
-      }
-    }
-
-    .info-card-children:last-child {
-      padding: 0 !important;
-      min-height: initial !important;
-
-      @media screen and (max-width: 1023px) {
-        max-height: 250px !important;
-
-        img {
-          max-height: 250px !important;
-        }
-      }
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 110%;
-      margin: 0 0 8px;
-      text-align: left !important;
-      text-overflow: ellipsis;
-      text-transform: initial;
-      width: 100%;
-      word-break: break-word;
-    }
-
-    p {
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 18px;
-      text-align: left !important;
-      text-overflow: ellipsis;
-      width: 100%;
-      word-break: break-word;
-
-      a {
-        text-decoration: underline;
-      }
-    }
-
-    p > em {
-      display: block;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 17px;
-      margin: 0 0 8px;
-    }
-  }
-
   .swiper {
     padding: 0 0 12px;
     position: relative;
@@ -425,38 +356,6 @@
     }
   }
 
-  .info-card-section {
-    /*  Workaround for style component */
-    .info-card[style*="flex-direction: row-reverse;"],
-    .info-card[style*="flex-direction:row-reverse;"] {
-      flex-direction: row-reverse !important;
-    }
-
-    .info-card[style*="flex-direction:row;"],
-    .info-card[style*="flex-direction: row;"] {
-      flex-direction: row !important;
-    }
-    /* End Workaround */
-
-    .info-card {
-      .info-card-children {
-        iframe {
-          height: 500px;
-        }
-      }
-    }
-
-    .info-card-children:first-child {
-      height: 100%;
-      padding: 40px !important;
-      width: 50% !important;
-    }
-
-    .info-card-children:last-child {
-      width: 50% !important;
-    }
-  }
-
   /* Review Section */
   .review-section {
     .section-title {
@@ -503,37 +402,6 @@
 
       > em {
         font-size: 14px;
-      }
-    }
-  }
-
-  /* Info Card Section */
-  .info-card-section {
-    .info-card {
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-size: 36px;
-        margin: 0 0 16px;
-        text-align: unset !important;
-        max-width: 550px;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 24px;
-        text-align: end;
-        text-align: unset !important;
-        max-width: 550px;
-      }
-
-      p > em {
-        font-size: 16px;
-        line-height: 19px;
-        margin: 0 0 16px;
       }
     }
   }

@@ -49,11 +49,7 @@ export default function InfoCardSection(
   };
 
   return (
-    <Section
-      {...section}
-      id={id}
-      classesContainer="info-card-section"
-    >
+    <Section {...section} id={id}>
       <InfoCardSlider
         rootId={id}
         configs={sliderConfig}

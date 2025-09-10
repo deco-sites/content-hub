@@ -170,7 +170,7 @@
               "href": "/#"
             },
             "direction": "right",
-            "richText": "<h1><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h1><p><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
+            "richText": "<h1 style=\"text-align: justify\"><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h1><p style=\"text-align: justify\"><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p style=\"text-align: justify\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/f39dec55-1f01-468a-b848-eeb2dc53d215/infocard-inspire.png",
               "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",

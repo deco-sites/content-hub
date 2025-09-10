@@ -7,17 +7,17 @@ import type {
 } from "site/types/InfoCard.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
-type Props = {
+interface InfoCardSliderProps {
   infoCards?: IInfoCard[];
   configs?: ISliderConfigs;
   rootId: string;
 };
 
-function Island({
+export default function InfoCardSlider({
   infoCards = [],
   configs = {},
   rootId,
-}: Props) {
+}: InfoCardSliderProps) {
   const slides = infoCards.map((props) => {
     const { typeOfContent, textBackgroundColor, textColor } = props ?? {};
 
@@ -45,19 +45,11 @@ function Island({
           {...props}
           typeOfContent={enrichedTypeOfContent}
           classes={{
-            container: `w-full info-card ${
-              props?.direction === "left" ? "flex-row" : "flex-row-reverse"
-            }`,
+            container: `${props?.direction === "left" ? "flex-col lg:flex-row" : "flex-col-reverse lg:flex-row-reverse"} w-full justify-start items-center`,
             children:
-              `info-card-children w-full h-full flex flex-col justify-center`,
-            button: `flex mt-8 w-full ${
-              props?.direction === "left"
-                ? "justify-start lg:justify-end"
-                : "justify-start"
-            }`,
-            childrenTextContent: `w-full ${
-              props?.link?.text ? "h-auto" : "h-full"
-            }`,
+              `infocard-children-container h-full flex flex-col items-start justify-center`,
+            button: `flex w-full`,
+            childrenTextContent: `${props?.link?.text ? "h-auto" : "h-full"} w-full`,
           }}
           styles={{
             children: {
@@ -66,6 +58,39 @@ function Island({
             },
           }}
         />
+        <style>
+          {`
+            .infocard-children-container {
+              width: 100% !important;
+              min-height: unset !important;
+              padding: 0 !important;
+            }
+
+            .infocard-children-container > div {
+              padding: 24px;
+              gap: 8px;
+            }
+
+            .infocard-children-container > div,
+            .infocard-children-container > div h1,
+            .infocard-children-container > div h2,
+            .infocard-children-container > div h3,
+            .infocard-children-container > div h4,
+            .infocard-children-container > div h5,
+            .infocard-children-container > div h6,
+            .infocard-children-container > div p {
+              text-align: start;
+            }
+
+            @media screen and (min-width: 1024px) {
+              .infocard-children-container > div {
+                align-items: flex-start;
+                gap: 16px;
+                max-width: 576px;
+              }
+            }
+          `}
+        </style>
       </div>
     );
   });
@@ -78,5 +103,3 @@ function Island({
     />
   );
 }
-
-export default Island;

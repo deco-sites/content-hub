@@ -20,7 +20,7 @@ export default function InfoCard(
   const hasVideoOrImage = isVideo ||
     Boolean(
       typeOfContentImage?.srcDesktop &&
-        typeOfContentImage?.srcMobile,
+      typeOfContentImage?.srcMobile,
     );
 
   const linkComponent = (
@@ -39,7 +39,7 @@ export default function InfoCard(
         <a
           href={href ?? "/#"}
           title={text}
-          class="info-card__link cursor-pointer flex items-center justify-center text-base leading-[initial]"
+          class="info-card__link cursor-pointer flex items-center justify-center text-base"
           style={{
             textDecoration: "underline",
             color: `${color}`,

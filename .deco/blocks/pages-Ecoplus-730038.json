@@ -498,7 +498,7 @@
           },
           "centeredSlides": true
         },
-        "title": "<h3>Já segue a Electrolux?</h3><p>Nas nossas redes sociais tem sempre uma nova promoção ou dica incrível de sustentabilidade pra você.</p>",
+        "title": "Já segue a Electrolux?",
         "icons": [
           {
             "id": "Facebook",
@@ -520,7 +520,8 @@
             "id": "Pinterest",
             "href": "/"
           }
-        ]
+        ],
+        "text": "Nas nossas redes sociais tem sempre uma nova promoção ou dica incrível de sustentabilidade pra você."
       }
     }
   ],

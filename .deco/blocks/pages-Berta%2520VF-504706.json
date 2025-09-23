@@ -1,6 +1,5 @@
 {
-  "name": "Berta VF",
-  "path": "/linha-fonos-fogoes",
+  "path": "/novos-fornos-fogoes",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -916,16 +915,13 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
-        "section": {
-          "marginBottomMobile": 32,
-          "marginBottomDesktop": 52
-        },
+        "section": {},
         "banners": [
           {
             "link": {
               "target": "blank",
-              "title": "Img 1",
-              "href": "https://www.instagram.com/reel/CxiXzFwsXaK/?igsh=b3p6amwzcmhvbHRq"
+              "href": "https://www.instagram.com/reel/CxiXzFwsXaK/?igsh=b3p6amwzcmhvbHRq",
+              "title": "Rita Lobo"
             },
             "loadingOptions": {
               "loading": "lazy",
@@ -935,7 +931,7 @@
               "desktop": "https://assets.decocache.com/content-hub/30fe592f-dedc-49be-b3ca-14b0dcab0740/33e6c06d-2bf2-4159-8dda-14cb01e9c532___0b8a95706e04d078001d9b4b4a3ea013.webp",
               "mobile": "https://assets.decocache.com/content-hub/30fe592f-dedc-49be-b3ca-14b0dcab0740/33e6c06d-2bf2-4159-8dda-14cb01e9c532___0b8a95706e04d078001d9b4b4a3ea013.webp"
             },
-            "alt": "Img 1"
+            "alt": "Rita Lobo"
           },
           {
             "link": {
@@ -985,7 +981,7 @@
             "alt": "Img 4"
           }
         ],
-        "title": "<h3>Aproveite nossas redes sociais</h3><p>Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.</p>",
+        "title": "Aproveite nossas redes sociais",
         "icons": [
           {
             "id": "Facebook",
@@ -1019,12 +1015,14 @@
             "enabledMobile": true
           },
           "loop": true
-        }
+        },
+        "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."
       }
     }
   ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "Novos Fornos e Fogões"
 }

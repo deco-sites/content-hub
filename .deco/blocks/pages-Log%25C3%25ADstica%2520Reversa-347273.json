@@ -190,7 +190,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleSliderSection.tsx",
         "section": {
-          "title": "<h2 style=\"text-align: center\">Veja Como Funciona</h2>",
+          "title": "Veja Como Funciona",
           "marginBottomDesktop": 32,
           "marginBottomMobile": 32,
           "fullWidth": false,
@@ -228,7 +228,7 @@
           "speed": 300,
           "spaceBetween": 0
         },
-        "styleArticleOption": "\"Type 1\"",
+        "styleArticleOption": "Type 1",
         "articles": [
           {
             "image": {

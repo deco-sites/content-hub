@@ -1075,6 +1075,27 @@
         ],
         "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "text": "O que é a Black Friday? \n\nA Black Friday é marcada por um dia inteiro de promoções para que você possa comprar os produtos que deseja pelos melhores preços e condições. Na Electrolux, por exemplo, você encontra eletrodomésticos, eletroportáteis e utensílios de cozinha com ofertas imperdíveis! "
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "text": "Quando é a Black Friday na Electrolux? \n\nA Black Friday Electrolux começa às 00h00 do dia 28 de novembro e segue até o dia 1º de dezembro, às 23h59, com a Cyber Monday. Assim, você ganha ainda mais tempo para escolher e comprar seus produtos favoritos em promoção! "
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "text": "Quando é a Black Friday 2025: ofertas imperdíveis | Electrolux "
+      }
     }
   ],
   "seo": {

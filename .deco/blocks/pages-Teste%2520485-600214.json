@@ -1,0 +1,226 @@
+{
+  "name": "Teste 485",
+  "path": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "banners": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/60969699-a762-4b14-9a10-059b142a38f7/banner-inspirese.png",
+              "mobile": "https://assets.decocache.com/content-hub/65e061a3-f00e-4c8d-bc89-a3fa65ea87d1/banner-inspirese-mobile.png"
+            }
+          }
+        ],
+        "section": {
+          "fullWidth": true
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/SearchBarHeroSection.tsx",
+        "section": {
+          "fullWidth": true
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticlesWithSidebarSection.tsx",
+        "section": {
+          "fullWidth": true
+        },
+        "categories": [
+          {
+            "label": "Linhas especiais",
+            "active": false
+          },
+          {
+            "label": "Ecoplus"
+          },
+          {
+            "label": "Roupas"
+          },
+          {
+            "label": "Alimentos"
+          },
+          {
+            "label": "Eletrodomesticos"
+          },
+          {
+            "label": "Exemplo"
+          },
+          {
+            "label": "Exemplo"
+          }
+        ],
+        "articles": [
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+            },
+            "title": "Entrega com <br /> carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+        "icons": [
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "title": "Gastronomia",
+            "alt": "gastronomia",
+            "imageSrc": "https://assets.decocache.com/content-hub/b73007ae-8b24-4d95-b4f9-96606299c3d7/gastronomia.svg"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "imageSrc": "https://assets.decocache.com/content-hub/5aad613f-8970-4978-a955-50987a050599/arquitetura-decoracaco.svg",
+            "title": "Arquitetura & Decoração",
+            "alt": "arquitetura-decoracao"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "imageSrc": "https://assets.decocache.com/content-hub/8c0ea621-610a-4409-81c6-b0d54cbc9750/sua-casa-bem-vivida.png",
+            "title": "Sua casa bem vivida",
+            "alt": "logo sua casa bem vivida"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "imageSrc": "https://assets.decocache.com/content-hub/77074a5c-3a45-45f1-87c1-5cc772839fd6/embaixadores-marca.png",
+            "title": "Embaixadores de marca",
+            "alt": "logo embaixadores de marca"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "imageSrc": "https://assets.decocache.com/content-hub/5280bcf5-c0c5-4de1-98bc-14a1027b5682/dicas-especialistas.png",
+            "title": "Dicas de especialistas",
+            "alt": "logo dicas de especialistas"
+          }
+        ],
+        "section": {
+          "title": "Explore por Assunto",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

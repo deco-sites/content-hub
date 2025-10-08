@@ -5,6 +5,14 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "pathOverride": "/content-hub-brand",
+        "section": {}
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {
           "fullWidth": true,
@@ -33,8 +41,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "Eletrolux no Brasil",
           "fullWidth": true,
+          "title": "Eletrolux no Brasil",
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "infoCards": [
@@ -60,8 +68,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/AmbassadorsSection.tsx",
         "section": {
-          "fullWidth": true,
           "title": "Embaixadores",
+          "fullWidth": true,
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "ambassadors": [
@@ -92,8 +100,8 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "title": "Tendências",
-          "fullWidth": true,
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "fullWidth": true
         },
         "infoCards": [
           {

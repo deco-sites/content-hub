@@ -6,6 +6,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $AmbassadorSlider from "./islands/AmbassadorSlider.tsx";
 import * as $ArticleSlider from "./islands/ArticleSlider.tsx";
 import * as $BannerSlider from "./islands/BannerSlider.tsx";
+import * as $BreadcrumbIsland from "./islands/BreadcrumbIsland.tsx";
 import * as $CustomInfoCardSlider from "./islands/CustomInfoCardSlider.tsx";
 import * as $FoldItemsIsland from "./islands/FoldItemsIsland.tsx";
 import * as $InfoCardSlider from "./islands/InfoCardSlider.tsx";
@@ -20,6 +21,7 @@ const manifest = {
     "./islands/AmbassadorSlider.tsx": $AmbassadorSlider,
     "./islands/ArticleSlider.tsx": $ArticleSlider,
     "./islands/BannerSlider.tsx": $BannerSlider,
+    "./islands/BreadcrumbIsland.tsx": $BreadcrumbIsland,
     "./islands/CustomInfoCardSlider.tsx": $CustomInfoCardSlider,
     "./islands/FoldItemsIsland.tsx": $FoldItemsIsland,
     "./islands/InfoCardSlider.tsx": $InfoCardSlider,

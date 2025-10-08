@@ -5,6 +5,13 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "pathOverride": "/content-hub-department"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {
           "fullWidth": true,
@@ -32,6 +39,11 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+        "section": {
+          "fullWidth": true,
+          "title": "<h1>Cozinha</h1>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+        },
         "data": [
           {
             "image": {
@@ -158,12 +170,7 @@
           }
         ],
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-        "title": "Cozinha",
-        "section": {
-          "fullWidth": true,
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-          "title": "<h1>Cozinha</h1>"
-        }
+        "title": "Cozinha"
       }
     },
     {

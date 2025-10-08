@@ -2,6 +2,13 @@
   "name": "Home Hub",
   "path": "/content-hub-home-hub",
   "sections": [
+        {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "pathOverride": "/content-hub-home-hub"
+      }
+    },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
@@ -1097,6 +1104,7 @@
         "text": "Quando é a Black Friday 2025: ofertas imperdíveis | Electrolux "
       }
     }
+
   ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"

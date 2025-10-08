@@ -2,6 +2,13 @@
   "name": "Embaixadores",
   "path": "/content-hub-ambassadors",
   "sections": [
+        {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "pathOverride": "/content-hub-ambassadors"
+      }
+    },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
@@ -555,6 +562,7 @@
         }
       }
     }
+
   ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"

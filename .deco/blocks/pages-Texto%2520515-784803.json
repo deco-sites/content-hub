@@ -1,6 +1,5 @@
 {
-  "name": "Texto 515",
-  "path": "/example-path-515",
+  "name": "515",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

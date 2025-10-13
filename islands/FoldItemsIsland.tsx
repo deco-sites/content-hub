@@ -30,8 +30,7 @@ interface FoldItemsIslandProps {
   foldItems?: FoldItem[];
 }
 
-function FoldItem({ foldItem }: FoldItem) {
-  const { title, text, image } = foldItem
+function FoldItem({ title, text, image }: FoldItem) {
   const isOpen = useSignal<boolean>(false);
   const toggleItem = () => isOpen.value = !isOpen.value;
 
@@ -48,7 +47,7 @@ function FoldItem({ foldItem }: FoldItem) {
       >
         <ResponsiveImage
           {...image}
-          class={`absolute`}
+          // className='absolute'
           link={{}}
         />
         <div class="absolute bg-black inset-0 bg-black opacity-25">
@@ -86,8 +85,8 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
       `}
     >
       <div class="w-full flex flex-col gap-y-[8px] lg:hidden">
-        {foldItems.map((item, index) => (
-          <FoldItem foldItem={item} key={index} />
+        {foldItems && foldItems.map((item, index) => (
+          <FoldItem title={item.title} text={item.text} image={item.image} key={index} />
         ))}
       </div>
 
@@ -97,7 +96,7 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
           lg:flex lg:flex-row lg:items-center lg:justify-center lg:h-full lg:gap-x-[8px]
         `}
       >
-        {foldItems.map((item, index) => (
+        {foldItems && foldItems.map((item, index) => (
           <div
             key={index}
             class={`
@@ -109,7 +108,7 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
           >
             <ResponsiveImage
               {...item.image}
-              class={`h-full w-full object-cover`}
+              // class={`h-full w-full object-cover`}
               link={{}}
             />
             <div class="absolute inset-0 bg-black opacity-40"></div>
@@ -129,10 +128,10 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
 
       <div class="hidden lg:flex flex-col justify-center items-start gap-[16px] pr-8">
         <h2 class="text-[#041E50] font-bold text-4xl">
-          {foldItems[selectedItem.value].title}
+          {foldItems && foldItems[selectedItem.value].title}
         </h2>
         <p class="text-[#2B2936] text-base">
-          {foldItems[selectedItem.value].text}
+          {foldItems && foldItems[selectedItem.value].text}
         </p>
       </div>
       <style>

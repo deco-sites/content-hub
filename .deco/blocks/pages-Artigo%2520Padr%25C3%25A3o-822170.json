@@ -1,5 +1,4 @@
 {
-  "name": "Qual a melhor geladeira Electrolux para comprar na Black Friday?",
   "sections": [
         {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -136,7 +135,8 @@
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
           "title": "Galeria"
-        }
+        },
+        "text": "  "
       }
     },
     {
@@ -780,12 +780,6 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "Meta title: Quando é a Black Friday 2025: ofertas imperdíveis | Electrolux"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
           "marginBottomDesktop": 0,
@@ -801,5 +795,7 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "Artigos Padrão",
+  "path": "/content-hub-default-article"
 }

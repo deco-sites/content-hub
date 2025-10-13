@@ -1,5 +1,5 @@
 import { TextArea } from "apps/admin/widgets.ts";
-import Section from "site/components/ui/Section.tsx";
+import Section from "../../components/ui/Section.tsx";
 import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
@@ -35,36 +35,9 @@ export default function TextSection({
       <Text
         title={text ?? ""}
         classes={{
-          container: "text-section-container w-full",
+          container: "w-full text-base font-normal text-[#041e50] lg:max-w-[800px]",
         }}
       />
-      <style>
-        {`
-            .text-section-container {
-              font-size: 16px;
-              font-weight: 400;
-              color: #041e50;
-            }
-
-            @media screen and (min-width: 1280px) {
-              .text-section-container {
-                max-width: 640px;
-              }
-            }
-
-            @media screen and (min-width: 1440px) {
-              .text-section-container {
-                max-width: 800px;
-              }
-            }
-
-            @media screen and (min-width: 1920px) {
-              .text-section-container {
-                max-width: 960px;
-              }
-            }
-          `}
-      </style>
     </Section>
   );
 }

@@ -102,7 +102,7 @@ export default function Section({
 
           @media screen and (min-width: 1024px) {
             .section-children-container {
-              width: 1200px;
+              // width: 1200px;
             }
           }
 

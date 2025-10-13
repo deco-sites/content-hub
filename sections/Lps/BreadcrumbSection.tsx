@@ -13,66 +13,41 @@ type SeparatorKind = "chevron" | "slash" | "dot" | "custom";
 
 export interface BreadcrumbSectionProps {
   section?: ISection;
-
-  /** @title Rótulo da Home @default Início */
   homeLabel?: string;
-
-  /** @title Link da Home @default / */
   homeHref?: string;
-
   /**
    * @title Separador
    * @enum ["chevron","slash","dot","custom"]
    * @default chevron
    */
   separator?: SeparatorKind;
-
   /** @title Separador customizado (quando "custom") @default > */
   customSeparator?: string;
-
   /** @title Uppercase nos rótulos @default false */
   uppercase?: boolean;
-
-  /** @title Cor dos links (Tailwind/hex) @default text-[#5B6A78] */
+  /** @title Cor não selecionado @default text-[color:var(--color-foreground-secondary,#2B2936)] */
   textColor?: string;
-
-  /** @title Cor do item atual @default text-[#041E50] */
+  /** @title Cor selecionado @default text-[color:var(--color-foreground-secondary,#2B2936)] */
   currentColor?: string;
-
-  /** @title Cor do separador @default text-[#9AA6B2] */
+  /** @title Cor separador @default text-[#5B6A78] */
   separatorColor?: string;
-
   /**
-   * @title Tamanho da fonte (Tailwind)
-   * @description Ex.: "text-[14px] md:text-[16px]"
+   * @title Tamanho da fonte
    * @default text-[14px] md:text-[16px]
    */
   textSize?: string;
-
-  /**
-   * @title Classe de fonte
-   * @description Normalmente "font-electrolux"
-   * @default font-electrolux
-   */
+  /** @title Classe de fonte @default font-electrolux */
   fontFamilyClass?: string;
-
   /**
-   * @title Classe do container (alinhamento à esquerda)
-   * @description Ex.: "max-w-[1216px] mx-auto px-4 md:px-6"
+   * @title Classe do container
    * @default max-w-[1216px] mx-auto px-4 md:px-6
    */
   containerClass?: string;
-
   /** @title Mapa de rótulos por slug */
   labelsMap?: Record<string, string>;
-
   /** @title Remover prefixos do path */
   stripPrefixes?: string[];
-
-  /**
-   * @title Path Override (Admin/Preview)
-   * @description Ex.: "/content-hub-brand"
-   */
+  /** @title Path Override (Admin/Preview) */
   pathOverride?: string;
 }
 
@@ -83,12 +58,12 @@ export default function BreadcrumbSection({
   separator = "chevron",
   customSeparator = ">",
   uppercase = false,
-  textColor = "text-[#5B6A78]",
-  currentColor = "text-[#041E50]",
-  separatorColor = "text-[#9AA6B2]",
-  textSize = "text-[14px] md:text-[16px]",          // 14px / 16px
-  fontFamilyClass = "font-electrolux",              // Electrolux Sans
-  containerClass = "max-w-[1216px] mx-auto px-4 md:px-6", // alinhado à esquerda no grid
+  textColor = "text-[color:var(--color-foreground-secondary,#2B2936)]",
+  currentColor = "text-[color:var(--color-foreground-secondary,#2B2936)]",
+  separatorColor = "text-[#5B6A78]",
+  textSize = "text-[14px] md:text-[16px]",
+  fontFamilyClass = "font-electrolux",
+  containerClass = "max-w-[1216px] mx-auto px-4 md:px-6",
   labelsMap = {},
   stripPrefixes = [],
   pathOverride,
@@ -97,11 +72,12 @@ export default function BreadcrumbSection({
 
   return (
     <Section {...section} id={id}>
-      {/* Placeholder SSR */}
-    <div class={`${containerClass} self-start w-full`}>
+      {/* Placeholder SSR alinhado à esquerda */}
+      <div class={`${containerClass} self-start w-full`}>
         <div class="py-3">
+          <div class="h-4 w-40 rounded" />
         </div>
-    </div>
+      </div>
 
       {/* Island (client) */}
       <BreadcrumbIsland
@@ -124,10 +100,10 @@ export default function BreadcrumbSection({
   );
 }
 
-// Fallback para Async Rendering do Deco
+/* Fallback para Async Rendering do Deco */
 export function LoadingFallback() {
   return (
-    <div class="max-w-[1216px] mx-auto px-4 md:px-6 py-3">
+    <div class="max-w-[1216px] mx-auto px-4 md:px-6 self-start w-full py-3">
       <div class="h-4 w-40 rounded bg-[#E6EDF2]" />
     </div>
   );

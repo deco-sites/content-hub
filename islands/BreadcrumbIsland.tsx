@@ -10,13 +10,11 @@ export interface BreadcrumbIslandProps {
   separator: SeparatorKind;
   customSeparator: string;
   uppercase: boolean;
-  textColor: string;
-  currentColor: string;
-  separatorColor: string;
+  textColor: string;        // itens não selecionados
+  currentColor: string;     // item atual
+  separatorColor: string;   // separador (setinha)
   textSize: string;
-  /** classe da fonte (ex.: "font-electrolux") */
   fontFamilyClass: string;
-  /** wrapper para alinhar à esquerda (ex.: "max-w-[1216px] mx-auto px-4 md:px-6") */
   containerClass: string;
   labelsMap: Record<string, string>;
   stripPrefixes: string[];
@@ -27,15 +25,12 @@ interface Crumb { label: string; href?: string; }
 const pathSig = signal<string>("");
 
 const Chevron = () => (
-  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" class="inline-block align-middle">
+  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" class="inline-block align-middle shrink-0">
     <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" />
   </svg>
 );
-const Dot = () => <span aria-hidden="true" class="inline-block align-middle w-[4px] h-[4px] rounded-full bg-current" />;
-const HomeIcon = () => (
-  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" class="inline-block align-middle">
-    <path d="M3 10.5l9-7 9 7V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5z" fill="currentColor" />
-  </svg>
+const Dot = () => (
+  <span aria-hidden="true" class="inline-block align-middle w-[4px] h-[4px] rounded-full bg-current shrink-0" />
 );
 
 function prettifySlug(slug: string) {
@@ -106,63 +101,79 @@ export default function BreadcrumbIsland(props: BreadcrumbIslandProps) {
 
   return (
     <div class={`${props.containerClass} self-start w-full`}>
-      <nav aria-label="breadcrumb">
-        <ol
-          class={[
-            "flex flex-wrap items-center gap-x-2 gap-y-1",
-            props.fontFamilyClass,        // fonte Electrolux
-            "font-normal",                 // weight 400
-            "leading-[140%]",              // line-height 140%
-            props.textSize,                // tamanho controlável
-            props.textColor,
-            props.uppercase ? "uppercase tracking-wide" : "",
-            "!text-left",
-          ].join(" ")}
-        >
-          {crumbs.map((crumb, idx) => {
-            const isLast = idx === crumbs.length - 1;
-            return (
-              <li key={`${crumb.label}-${idx}`} class="flex items-center gap-2">
-                {isLast || !crumb.href ? (
-                  <span
-                    class={[
-                      "inline-flex items-center align-middle",
-                      props.currentColor,
-                      "whitespace-nowrap",
-                    ].join(" ")}
-                    aria-current="page"
-                  >
-                    {crumb.label}
-                  </span>
-                ) : (
-                  <a
-                    href={crumb.href}
-                    class="inline-flex items-center align-middle hover:underline whitespace-nowrap"
-                  >
-                    {idx === 0 ? (
-                      <span class="inline-flex items-center gap-1">
-                        <HomeIcon /> {crumb.label}
-                      </span>
-                    ) : (
-                      crumb.label
-                    )}
-                  </a>
-                )}
-                {!isLast && (
-                  <Separator
-                    kind={props.separator}
-                    custom={props.customSeparator}
-                    className={["mx-1", "inline-flex items-center align-middle", props.separatorColor].join(" ")}
-                  />
-                )}
-              </li>
-            );
-          })}
-        </ol>
-      </nav>
+      {/* Scroller no mobile; visível normal no desktop */}
+      <div class="md:overflow-visible overflow-x-auto -mx-4 md:mx-0 px-4 no-scrollbar">
+        <nav aria-label="breadcrumb">
+          <ol
+            class={[
+              // mobile: uma linha só com scroll; desktop: pode quebrar
+              "flex items-center gap-x-2",
+              "flex-nowrap md:flex-wrap",
+              "whitespace-nowrap md:whitespace-normal",
+              props.fontFamilyClass,
+              "font-normal",           // 400 itens não selecionados
+              "leading-[140%]",
+              props.textSize,
+              props.textColor,
+              props.uppercase ? "uppercase tracking-wide" : "",
+              "text-left !text-left",
+              "justify-start",
+            ].join(" ")}
+          >
+            {crumbs.map((crumb, idx) => {
+              const isLast = idx === crumbs.length - 1;
+              return (
+                <li
+                  key={`${crumb.label}-${idx}`}
+                  class="flex items-center gap-2 min-w-0"  // min-w-0 permite truncar conteúdo dentro
+                >
+                  {isLast || !crumb.href ? (
+                    <span
+                      class={[
+                        "inline-flex items-center align-middle",
+                        "font-semibold",         // 600 selecionado
+                        props.currentColor,
+                        // Truncar último item no mobile para não “vazar”
+                        "truncate max-w-[70vw] sm:max-w-[60vw] md:max-w-none",
+                      ].join(" ")}
+                      aria-current="page"
+                      title={crumb.label}
+                    >
+                      {crumb.label}
+                    </span>
+                  ) : (
+                    <a
+                      href={crumb.href}
+                      class="inline-flex items-center align-middle hover:underline truncate max-w-[55vw] sm:max-w-[45vw] md:max-w-none"
+                      title={crumb.label}
+                    >
+                      {crumb.label}
+                    </a>
+                  )}
+                  {!isLast && (
+                    <Separator
+                      kind={props.separator}
+                      custom={props.customSeparator}
+                      className={["mx-1 inline-flex items-center align-middle", props.separatorColor].join(" ")}
+                    />
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+        </nav>
+      </div>
 
       {/* deno-lint-ignore react-no-danger */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      {/* esconder scrollbar apenas no mobile */}
+      <style>
+        {`
+          .no-scrollbar::-webkit-scrollbar { display: none; }
+          .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        `}
+      </style>
     </div>
   );
 }

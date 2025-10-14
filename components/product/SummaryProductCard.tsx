@@ -1,6 +1,5 @@
 import Icon from "site/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
-import ProductSpecificationComparator from "site/components/product/ProductSpecificationComparator.tsx";
 import { formatPrice } from "site/sdk/format.ts";
 import { relative } from "site/sdk/url.ts";
 import { useOffer } from "site/sdk/useOffer.ts";
@@ -14,20 +13,13 @@ export default function SummaryProductCard(
     isVariantOf,
     offers,
     image: images,
-    productSpecsComparator,
   } = props ?? {};
 
   const [front, back] = images ?? [];
   const {
     listPrice,
     price,
-    discount,
     priceIsPix,
-    salePrice,
-    installments: {
-      withInterest,
-      withoutInterest,
-    },
   } = useOffer(offers);
 
   if (!url) return null;
@@ -47,8 +39,6 @@ export default function SummaryProductCard(
                 class="bg-base-100 col-span-full row-span-full rounded w-full"
                 width={60}
                 height={60}
-                widthMobile={60}
-                heightMobile={60}
               />
               <Image
                 src={back?.url ?? front?.url!}
@@ -56,8 +46,6 @@ export default function SummaryProductCard(
                 class="bg-base-100 col-span-full row-span-full transition-opacity rounded w-full opacity-0 xl:group-hover:opacity-100"
                 width={60}
                 height={60}
-                widthMobile={60}
-                heightMobile={60}
               />
             </a>
           </figure>
@@ -72,7 +60,7 @@ export default function SummaryProductCard(
           </h2>
 
           <div class="flex flex-col mb-4">
-            {listPrice < price
+            {listPrice && price && listPrice < price
               ? (
                 <span class="flex h-full text-sm text-left line-through text-[#5b6a78] leading-[initial] min-h-[16px]">
                   {formatPrice(

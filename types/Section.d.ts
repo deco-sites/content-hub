@@ -50,7 +50,7 @@ export interface ISection {
    * @title Children
    * @hide
    */
-  children?: preact.createElement.JSX.Element;
+  children?: preact.createElement.JSX.Element | null;
 
   /**
    * @title Container classes

@@ -27,31 +27,31 @@ export default function ImageCollectionGridSection(
 
   return (
     <Section {...section} id={id}>
-      {imageCollection.length === 1
+      {imageCollection && imageCollection?.length === 1
         ? (
-          <div class="w-full grid sm:grid-cols-1 lg:grid-cols-1 justify-center items-center">
+          <div class="w-full grid sm:grid-cols-1 lg:grid-cols-1 justify-center items-center lg:max-w-[800px]">
             {imageCollection.map((image, index) => (
               <ResponsiveImage src={image.src} key={index} />
             ))}
           </div>
         )
-        : imageCollection.length === 2
-        ? (
-          <div class="w-full grid sm:grid-cols-1 lg:grid-cols-2 justify-center items-center gap-y-[8px] gap-x-[8px]">
-            {imageCollection.map((image, index) => (
-              <ResponsiveImage src={image.src} key={index} />
-            ))}
-          </div>
-        )
-        : imageCollection.length === 3
-        ? (
-          <div class="w-full grid sm:grid-cols-1 lg:grid-cols-3 justify-center items-center gap-y-[8px] gap-x-[8px]">
-            {imageCollection.map((image, index) => (
-              <ResponsiveImage src={image.src} key={index} />
-            ))}
-          </div>
-        )
-        : null}
+        : imageCollection?.length === 2
+          ? (
+            <div class="w-full grid sm:grid-cols-1 lg:grid-cols-2 justify-center items-center gap-y-[8px] gap-x-[8px] lg:max-w-[800px]">
+              {imageCollection.map((image, index) => (
+                <ResponsiveImage src={image.src} key={index} />
+              ))}
+            </div>
+          )
+          : imageCollection?.length === 3
+            ? (
+              <div class="w-full grid sm:grid-cols-1 lg:grid-cols-3 justify-center items-center gap-y-[8px] gap-x-[8px] lg:max-w-[800px]">
+                {imageCollection.map((image, index) => (
+                  <ResponsiveImage src={image.src} key={index} />
+                ))}
+              </div>
+            )
+            : null}
     </Section>
   );
 }

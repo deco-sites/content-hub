@@ -91,7 +91,7 @@ export default function CustomInfoCardSlider({
     const onResize = (_evt?: Event) => {
       const v = get();
       setSpv(v);
-      setPage((p) => Math.min(p, Math.max(0, Math.ceil(len / v) - 1)));
+      setPage((p: number) => Math.min(p, Math.max(0, Math.ceil(len / v) - 1)));
     };
     onResize();
     return addResizeListener(onResize as EventListener);
@@ -102,7 +102,7 @@ export default function CustomInfoCardSlider({
     if (!configs?.autoplay?.enabled) return;
     const delay = Math.max(1000, configs?.autoplay?.delay ?? 5000);
     const id = setInterval(() => {
-      setPage((p) => {
+      setPage((p: number) => {
         const next = p + 1;
         if (next < totalPages) return next;
         return configs?.loop ? 0 : p;
@@ -117,10 +117,10 @@ export default function CustomInfoCardSlider({
   ]);
 
   const prev = () =>
-    setPage((p) => (p > 0 ? p - 1 : (configs?.loop ? totalPages - 1 : 0)));
+    setPage((p: number) => (p > 0 ? p - 1 : (configs?.loop ? totalPages - 1 : 0)));
 
   const next = () =>
-    setPage((p) => {
+    setPage((p: number) => {
       const n = p + 1;
       return n < totalPages ? n : (configs?.loop ? 0 : p);
     });
@@ -235,15 +235,15 @@ export default function CustomInfoCardSlider({
                       {card.title && (
                         <h2
                           class="mb-4 font-bold text-[#041E50] text-[20px] lg:text-[26px]"
-                          dangerouslySetInnerHTML={{ __html: card.title }}
-                        />
+                        >
+                          {card.title}</h2>
                       )}
 
                       {card.description && (
                         <p
                           class="font-normal text-[#2B2936] text-[14px] lg:text-[16px]"
-                          dangerouslySetInnerHTML={{ __html: card.description }}
-                        />
+                        >
+                          {card.description}</p>
                       )}
 
                       {card.link?.href && (

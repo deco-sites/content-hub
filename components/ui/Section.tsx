@@ -23,9 +23,8 @@ export default function Section({
     <>
       <div
         id={`section-${id}`}
-        class={`section-container flex flex-col justify-center items-center w-full ${
-          classesContainer ?? ""
-        } ${!fullWidth ? "container" : ""}`}
+        class={`section-container flex flex-col justify-center items-center w-full ${classesContainer ?? ""
+          } ${!fullWidth ? "container" : ""}`}
         style={stylesContainer}
       >
         {!isEmptyText(title) && (
@@ -33,9 +32,7 @@ export default function Section({
             title={title}
             classes={{
               container:
-                `section-title flex flex-col mt-[24px] text-center normal-case ${
-                  isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"
-                }`,
+                `section-title mt-[24px] text-left normal-case font-semibold text-[#041E50] text-[24px] lg:text-[36px] lg:max-w-[800px] ${isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"}`,
             }}
           />
         )}
@@ -44,16 +41,15 @@ export default function Section({
             title={subtitle}
             classes={{
               container:
-                "section-subtitle mb-[16px] lg:mb-[24px] text-center normal-case",
+                "section-subtitle mb-[16px] lg:mb-[24px] text-left normal-case font-normal text-[#041E50] text-[16px] lg:text-[22px] lg:max-w-[800px]",
             }}
           />
         )}
         {children
           ? (
             <div
-              class={`${
-                fullWidth ? "w-full" : "section-children-container"
-              }  flex flex-col items-center justify-center`}
+              class={`${fullWidth ? "w-full" : "section-children-container"
+                }  flex flex-col items-center justify-center`}
             >
               {children}
             </div>
@@ -71,65 +67,48 @@ export default function Section({
             margin-bottom: ${marginBottomMobile}px;
           }
 
-          .section-title,
-          .section-title h1,
-          .section-title h2,
-          .section-title h3,
-          .section-title h4,
-          .section-title h5,
-          .section-title h6 {
-            font-size: 26px;
-            font-weight: 600;
-            color: #041E50;
-            text-transform: none;
-          }
-
-          .section-subtitle,
-          .section-subtitle h1, 
-          .section-subtitle h2, 
-          .section-subtitle h3, 
-          .section-subtitle h4, 
-          .section-subtitle h5, 
-          .section-subtitle h6 {
-            font-size: 16px;
-            font-weight: 400;
-            color: #041e50;
-          }
-
           .section-children-container {
             width: 100%;
           }
 
-          @media screen and (min-width: 1024px) {
-            .section-children-container {
-              // width: 1200px;
-            }
+          .section-children-container h1,
+          .section-children-container h2,
+          .section-children-container h3 {
+            font-size: 24px;
           }
 
-          @media screen and (min-width: 1280px) {
+          @media screen and (min-width: 1024px) {
             #section-${id} {
               margin-top: ${marginTopDesktop}px;
               margin-bottom: ${marginBottomDesktop}px;
             }
 
-            .section-title,
-            .section-title h1,
-            .section-title h2,
-            .section-title h3,
-            .section-title h4,
-            .section-title h5,
-            .section-title h6 {
+            .section-children-container {
+              width: 1000px;
+            }
+
+            .section-children-container h1 {
+              font-size: 48px;
+            }
+
+            .section-children-container h2 {
               font-size: 36px;
             }
 
-            .section-subtitle,
-            .section-subtitle h1, 
-            .section-subtitle h2, 
-            .section-subtitle h3, 
-            .section-subtitle h4, 
-            .section-subtitle h5, 
-            .section-subtitle h6 {
-              font-size: 22px;
+            .section-children-container h3 {
+              font-size: 24px;
+            }
+          }
+
+          @media screen and (min-width: 1280px) {
+            .section-children-container {
+              width: 1200px;
+            }
+          }
+
+          @media screen and (min-width: 1366px) {
+            .section-children-container {
+              width: 1286px;
             }
           }
 

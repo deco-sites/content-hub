@@ -22,7 +22,8 @@
           }
         ],
         "section": {
-          "title": "<h1>Black Friday 2025</h1>"
+          "title": "<h1>Black Friday 2025</h1>",
+          "children": null
         }
       }
     },

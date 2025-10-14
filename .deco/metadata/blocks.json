@@ -591,6 +591,12 @@
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
+  "/.deco/blocks/pages-Texto%2520573-548845.json": {
+    "name": "Texto 573",
+    "path": "/inspira/blog/produtos/micro-ondas-grande-ou-pequeno",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
   "/.deco/blocks/pages-Texto%2520533-556883.json": {
     "name": "Texto 533",
     "path": "/example-path-533",

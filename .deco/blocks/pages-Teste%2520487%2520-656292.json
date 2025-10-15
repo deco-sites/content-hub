@@ -1,6 +1,5 @@
 {
-  "name": "Teste 487 ",
-  "path": "/example-path-487",
+  "name": "Texto 487",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -14,5 +13,6 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "path": "/inspira/blog/produtos/geladeira-pequena-black-friday"
 }

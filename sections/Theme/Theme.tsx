@@ -67,47 +67,47 @@ export interface Button {
    * @title Border width
    */
   "--border-btn":
-    | "1px"
-    | "2px"
-    | "3px"
-    | "4px"
-    | "5px"
-    | "6px"
-    | "7px"
-    | "8px";
+  | "1px"
+  | "2px"
+  | "3px"
+  | "4px"
+  | "5px"
+  | "6px"
+  | "7px"
+  | "8px";
   /**
    * @default 0.2rem
    * @title Radius
    * @description Button and similar elements
    */
   "--rounded-btn":
-    | "0"
-    | "0.2rem"
-    | "0.4rem"
-    | "0.8rem"
-    | "2rem";
+  | "0"
+  | "0.2rem"
+  | "0.4rem"
+  | "0.8rem"
+  | "2rem";
   /**
    * @default 0.95
    * @title Scale on click
    */
   "--btn-focus-scale":
-    | "0.9"
-    | "0.95"
-    | "1"
-    | "1.05"
-    | "1.1";
+  | "0.9"
+  | "0.95"
+  | "1"
+  | "1.05"
+  | "1.1";
   /**
    * @default 0.25s
    * @title Animation
    * @description Duration when you click
    */
   "--animation-btn":
-    | "0.1s"
-    | "0.15s"
-    | "0.2s"
-    | "0.25s"
-    | "0.3s"
-    | "0.35s";
+  | "0.1s"
+  | "0.15s"
+  | "0.2s"
+  | "0.25s"
+  | "0.3s"
+  | "0.35s";
 }
 
 export interface Miscellaneous {
@@ -173,7 +173,7 @@ const darken = (
 
 const isDark = (c: Color) =>
   c.contrast("black", "WCAG21") <
-    c.contrast("white", "WCAG21");
+  c.contrast("white", "WCAG21");
 
 const contrasted = (
   color: string,
@@ -276,26 +276,17 @@ const defaultTheme = {
   warning: "oklch(1 0 0)",
   error: "oklch(1 0 0)",
 
-  "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
-  "--rounded-btn": "0.2rem" as const, // border radius rounded-btn utility class, used in buttons and similar element
-  "--rounded-badge": "1.9rem", // border radius rounded-badge utility class, used in badges and similar
-  "--animation-btn": "0.25s" as const, // duration of animation when you click on button
-  "--animation-input": "0.2s", // duration of animation for inputs like checkbox, toggle, radio, etc
-  "--btn-focus-scale": "0.95" as const, // scale transform of button when you focus on it
-  "--border-btn": "1px" as const, // border width of buttons
-  "--tab-border": "1px", // border width of tabs
-  "--tab-radius": "0.5rem", // border radius of tabs
+  "--rounded-box": "1rem",
+  "--rounded-btn": "0.2rem" as const,
+  "--rounded-badge": "1.9rem",
+  "--animation-btn": "0.25s" as const,
+  "--animation-input": "0.2s",
+  "--btn-focus-scale": "0.95" as const,
+  "--border-btn": "1px" as const,
+  "--tab-border": "1px",
+  "--tab-radius": "0.5rem",
 };
 
-/**
- * This section merges the DESIGN_SYTEM variable with incoming props into a css sheet with variables, i.e.
- * this function transforms props into
- *
- * :root {
- *   --color-primary: #FFFFFF;
- *   --color-secondary: "#161616"
- * }
- */
 function Section({
   mainColors,
   complementaryColors,
@@ -337,12 +328,6 @@ export function Preview(props: Props) {
   const adminColorMode = props.mode === "dark" ? "dark" : "light";
   return (
     <>
-      {
-        /* This stylesheet is used to simulate the colors from the admin's color schema (admin's light or dark mode), which are not accessible in the site's color schema.
-       * This is a temporary solution until the admin's color schema is accessible.
-       * TODO(@carol): Change this temporary solution / discuss with designers a doable approach
-       */
-      }
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;700&display=swap');
@@ -498,9 +483,9 @@ const ButtonSizesPreview = () => {
         [sizeCode, sizeText],
       ) => (
         <button
-          className={`btn capitalize btn-${sizeCode} ${
-            style ? `btn-${style}` : ""
-          }`}
+          type='button'
+          className={`btn capitalize btn-${sizeCode} ${style ? `btn-${style}` : ""
+            }`}
         >
           {sizeText}
         </button>
@@ -546,9 +531,9 @@ const ButtonColorsPreview = () => {
         { class: colorClass, label },
       ) => (
         <button
-          className={`btn btn-xs md:btn-sm capitalize ${colorClass} ${type} ${
-            type === "btn-ghost" ? "text-[initial]" : ""
-          }`}
+          type='button'
+          className={`btn btn-xs md:btn-sm capitalize ${colorClass} ${type} ${type === "btn-ghost" ? "text-[initial]" : ""
+            }`}
         >
           {label}
         </button>
@@ -584,6 +569,7 @@ const ButtonStylesPreview = () => {
     <div className="bg-base-100 overflow-x-auto rounded-lg flex flex-row p-2 gap-2">
       {buttons.map((button) => (
         <button
+          type='button'
           className={`btn btn-xs md:btn-sm capitalize ${button.class}`}
         >
           {button.label}
@@ -634,16 +620,13 @@ const PreviewContainer = ({
   const btnOutlineClass = mode === "dark"
     ? "btn-outline-dark"
     : "btn-outline-light";
-  const checkboxId = `show-code-${
-    title.replace(/\s+/g, "-")
-      .toLowerCase()
-  }`;
-  const codeBlockId = `code-block-${
-    title.replace(/\s+/g, "-")
-      .toLowerCase()
-  }`;
+  const checkboxId = `show-code-${title.replace(/\s+/g, "-")
+    .toLowerCase()
+    }`;
+  const codeBlockId = `code-block-${title.replace(/\s+/g, "-")
+    .toLowerCase()
+    }`;
 
-  // Dynamic styles added to hide/show labels based on the checkbox state
   const dynamicStyle = `
     #${codeBlockId} {
       display: none;
@@ -658,16 +641,14 @@ const PreviewContainer = ({
       display: none;
     }
     #${checkboxId}:checked ~ .hide-label {
-      background-color: ${
-    mode === "dark"
+      background-color: ${mode === "dark"
       ? "var(--admin-hover-bg-color)"
       : "var(--admin-text-color-light)"
-  };
-      color: ${
-    mode === "dark"
+    };
+      color: ${mode === "dark"
       ? "var(--admin-text-color-light)"
       : "var(--admin-hover-bg-color)"
-  };
+    };
     }
   `;
 
@@ -687,14 +668,12 @@ const PreviewContainer = ({
               id={checkboxId}
               className="sr-only"
             />
-            {/* Label for "Show code" */}
             <label
               htmlFor={checkboxId}
               className={`btn-sm absolute right-4 top-4 ${btnOutlineClass} show-label`}
             >
               Show code
             </label>
-            {/* Label for "Hide code" */}
             <label
               htmlFor={checkboxId}
               className={`btn-sm absolute right-4 top-4 ${btnOutlineClass} hide-label`}
@@ -703,9 +682,8 @@ const PreviewContainer = ({
             </label>
             <div
               id={codeBlockId}
-              className={`mt-4 mb-2 text-xs md:text-sm ${
-                mode === "dark" ? "bg-slate-800" : "bg-slate-100"
-              }`}
+              className={`mt-4 mb-2 text-xs md:text-sm ${mode === "dark" ? "bg-slate-800" : "bg-slate-100"
+                }`}
             >
               <pre className="p-4 overflow-x-auto">{codeString}</pre>
             </div>
@@ -717,7 +695,6 @@ const PreviewContainer = ({
   );
 };
 
-// TODO(@carol): find a way to make these snippets more dynamic
 const snippets = {
   textColors: `
   <div>Content</div>

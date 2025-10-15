@@ -33,7 +33,7 @@ export interface BreadcrumbSectionProps {
   separatorColor?: string;
   /**
    * @title Tamanho da fonte
-   * @default text-[14px] md:text-[16px]
+   * @default text-[16px]
    */
   textSize?: string;
   /** @title Classe de fonte @default font-electrolux */
@@ -61,7 +61,8 @@ export default function BreadcrumbSection({
   textColor = "text-[color:var(--color-foreground-secondary,#2B2936)]",
   currentColor = "text-[color:var(--color-foreground-secondary,#2B2936)]",
   separatorColor = "text-[#5B6A78]",
-  textSize = "text-[14px] md:text-[16px]",
+  // 👇 agora 16px em todas as larguras
+  textSize = "text-[16px]",
   fontFamilyClass = "font-electrolux",
   containerClass = "max-w-[1216px] mx-auto px-4 md:px-6",
   labelsMap = {},

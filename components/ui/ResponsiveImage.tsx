@@ -32,9 +32,8 @@ export default function ResponsiveImage(
 
   const ResponsiveImageComponent = (
     <Picture
-      class={`flex items-center justify-center w-full h-full ${
-        fullScreen ? "w-screen max-w-full" : ""
-      }`}
+      class={`flex items-center justify-center w-full h-full aspect-[16/9] ${fullScreen ? "w-screen max-w-full" : ""
+        }`}
       preload={preload}
     >
       {mobile && (

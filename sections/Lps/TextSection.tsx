@@ -28,16 +28,34 @@ export default function TextSection({
   const id = useId();
 
   return (
-    <Section
-      {...section}
-      id={id}
-    >
-      <Text
-        title={text ?? ""}
-        classes={{
-          container: "w-full text-base font-normal text-[#041e50] lg:max-w-[800px]",
-        }}
-      />
-    </Section>
+    <>
+      <Section
+        {...section}
+        id={id}
+      >
+        <Text
+          title={text ?? ""}
+          classes={{
+            container: "w-full text-base text-left font-normal text-[#041e50] lg:max-w-[800px]",
+          }}
+        />
+      </Section>
+      <style>
+        {`
+        .text-section-container {    
+          ul,
+          ol {
+            list-style-type: disc;
+            margin: 1em 0;
+            padding-left: 20px;
+          }
+        
+          li + li {
+            margin-top: 8px;
+          }
+        }
+        `}
+      </style>
+    </>
   );
 }

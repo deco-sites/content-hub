@@ -32,7 +32,7 @@ export default function Section({
             title={title}
             classes={{
               container:
-                `section-title mt-[24px] text-left normal-case font-semibold text-[#041E50] text-[24px] lg:text-[36px] lg:max-w-[800px] ${isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"}`,
+                `section-title mt-[24px] text-left normal-case font-semibold text-[#041E50] w-full lg:max-w-[800px] ${isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"}`,
             }}
           />
         )}
@@ -41,7 +41,7 @@ export default function Section({
             title={subtitle}
             classes={{
               container:
-                "section-subtitle mb-[16px] lg:mb-[24px] text-left normal-case font-normal text-[#041E50] text-[16px] lg:text-[22px] lg:max-w-[800px]",
+                "section-subtitle mb-[16px] lg:mb-[24px] text-left normal-case font-normal text-[#041E50] w-full lg:max-w-[800px]",
             }}
           />
         )}
@@ -71,13 +71,38 @@ export default function Section({
             width: 100%;
           }
 
-          .section-children-container h1,
-          .section-children-container h2,
-          .section-children-container h3 {
+          .section-title h1,
+          .section-subtitle h1,
+          .section-children-container h1 {
             font-size: 24px;
           }
 
-          @media screen and (min-width: 1024px) {
+          .section-title h2,
+          .section-subtitle h2,
+          .section-children-container h2 {
+            font-size: 20px;
+          }
+
+          .section-title h3,
+          .section-subtitle h3,
+          .section-children-container h3 {
+            font-size: 16px;
+          }
+
+          .section-children-container h1,
+          .section-children-container h2,
+          .section-children-container h3 {
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 24px;
+          }
+          
+          .section-children-container p {
+            line-height: 1.4;
+            margin-bottom: 16px;
+          }
+
+          @media screen and (min-width: 1080px) {
             #section-${id} {
               margin-top: ${marginTopDesktop}px;
               margin-bottom: ${marginBottomDesktop}px;
@@ -87,14 +112,20 @@ export default function Section({
               width: 1000px;
             }
 
+            .section-title h1,
+            .section-subtitle h1,
             .section-children-container h1 {
               font-size: 48px;
             }
 
+            .section-title h2,
+            .section-subtitle h2,
             .section-children-container h2 {
               font-size: 36px;
             }
 
+            .section-title h3,
+            .section-subtitle h3,
             .section-children-container h3 {
               font-size: 24px;
             }

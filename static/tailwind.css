@@ -4630,16 +4630,8 @@ input.tab:checked + .tab-content,
     font-size: 16px;
   }
 
-  .lg\:text-\[22px\] {
-    font-size: 22px;
-  }
-
   .lg\:text-\[26px\] {
     font-size: 26px;
-  }
-
-  .lg\:text-\[36px\] {
-    font-size: 36px;
   }
 
   .lg\:text-base {

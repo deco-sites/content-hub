@@ -1,6 +1,5 @@
 {
   "name": "teste 462 atualizado",
-  "path": "/example-path",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -41,5 +40,6 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "path": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar"
 }

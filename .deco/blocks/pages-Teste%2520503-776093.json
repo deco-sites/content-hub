@@ -1,6 +1,6 @@
 {
   "name": "Teste 503",
-  "path": "/example-path-503",
+  "path": "/inspira/blog/dicas/melhores-ofertas-na-black-friday",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

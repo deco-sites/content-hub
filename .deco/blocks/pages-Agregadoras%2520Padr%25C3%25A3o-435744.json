@@ -2,11 +2,14 @@
   "name": "Agregadoras Padrão",
   "path": "/content-hub-default-aggregators",
   "sections": [
-        {
+    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
-        "pathOverride": "/content-hub-default-aggregators"
+        "pathOverride": "/content-hub-default-aggregators",
+        "section": {
+          "children": null
+        }
       }
     },
     {
@@ -1525,7 +1528,6 @@
         }
       }
     }
-
   ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"

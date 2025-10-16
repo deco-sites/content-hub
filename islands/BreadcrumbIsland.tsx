@@ -125,17 +125,16 @@ export default function BreadcrumbIsland(props: BreadcrumbIslandProps) {
               return (
                 <li
                   key={`${crumb.label}-${idx}`}
-                  class="flex items-center gap-2 min-w-0"  // min-w-0 permite truncar conteúdo dentro
+                  class="flex items-center gap-2 flex-none"
                 >
                   {isLast || !crumb.href ? (
                     <span
                       class={[
                         "inline-flex items-center align-middle",
-                        "font-semibold",         // 600 selecionado
+                        "font-semibold",
+                        "flex-none",
                         props.currentColor,
-                        // Truncar último item no mobile para não “vazar”
-                        "truncate max-w-[70vw] sm:max-w-[60vw] md:max-w-none",
-                      ].join(" ")}
+                        ].join(" ")}
                       aria-current="page"
                       title={crumb.label}
                     >
@@ -144,7 +143,7 @@ export default function BreadcrumbIsland(props: BreadcrumbIslandProps) {
                   ) : (
                     <a
                       href={crumb.href}
-                      class="inline-flex items-center align-middle hover:underline truncate max-w-[55vw] sm:max-w-[45vw] md:max-w-none"
+                      class="inline-flex items-center align-middle hover:underline flex-none"
                       title={crumb.label}
                     >
                       {crumb.label}

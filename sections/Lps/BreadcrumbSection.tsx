@@ -49,6 +49,9 @@ export interface BreadcrumbSectionProps {
   stripPrefixes?: string[];
   /** @title Path Override (Admin/Preview) */
   pathOverride?: string;
+
+  /** @title Ativar scroll lateral em mobile @default true */
+  enableMobileScroll?: boolean;
 }
 
 export default function BreadcrumbSection({
@@ -61,15 +64,26 @@ export default function BreadcrumbSection({
   textColor = "text-[color:var(--color-foreground-secondary,#2B2936)]",
   currentColor = "text-[color:var(--color-foreground-secondary,#2B2936)]",
   separatorColor = "text-[#5B6A78]",
-  // 👇 agora 16px em todas as larguras
+  // 16px em todas as larguras (pedido do QA/cliente)
   textSize = "text-[16px]",
   fontFamilyClass = "font-electrolux",
   containerClass = "max-w-[1216px] mx-auto px-4 md:px-6",
   labelsMap = {},
   stripPrefixes = [],
   pathOverride,
+  enableMobileScroll = true,
 }: BreadcrumbSectionProps) {
   const id = useId();
+
+  // classes que habilitam a pista de scroll só em mobile
+  const scrollerClasses = enableMobileScroll
+    ? // -mx-4/px-4 para o scroll pegar de borda a borda em mobile; em md, volta ao normal
+      "md:overflow-visible overflow-x-auto overscroll-x-contain -mx-4 px-4 md:mx-0 md:px-0 hide-scrollbar"
+    : "";
+
+  // essas classes garantem que o conteúdo do breadcrumb não quebre linha
+  // (aplicaremos no container imediatamente acima dos itens)
+  const trackClasses = "whitespace-nowrap inline-flex items-center gap-2";
 
   return (
     <Section {...section} id={id}>
@@ -80,23 +94,33 @@ export default function BreadcrumbSection({
         </div>
       </div>
 
-      {/* Island (client) */}
-      <BreadcrumbIsland
-        homeLabel={homeLabel}
-        homeHref={homeHref}
-        separator={separator}
-        customSeparator={customSeparator}
-        uppercase={uppercase}
-        textColor={textColor}
-        currentColor={currentColor}
-        separatorColor={separatorColor}
-        textSize={textSize}
-        fontFamilyClass={fontFamilyClass}
-        containerClass={containerClass}
-        labelsMap={labelsMap}
-        stripPrefixes={stripPrefixes}
-        pathOverride={pathOverride}
-      />
+      {/* Island (client) com scroller em mobile */}
+      <div class={`${containerClass} self-start w-full`}>
+        <div
+          class={`py-3 ${scrollerClasses}`}
+          role="region"
+          aria-label="Trilha de navegação"
+        >
+          <div class={trackClasses}>
+            <BreadcrumbIsland
+              homeLabel={homeLabel}
+              homeHref={homeHref}
+              separator={separator}
+              customSeparator={customSeparator}
+              uppercase={uppercase}
+              textColor={textColor}
+              currentColor={currentColor}
+              separatorColor={separatorColor}
+              textSize={textSize}
+              fontFamilyClass={fontFamilyClass}
+              containerClass="" // evitar nesting de padding interno duplicado
+              labelsMap={labelsMap}
+              stripPrefixes={stripPrefixes}
+              pathOverride={pathOverride}
+            />
+          </div>
+        </div>
+      </div>
     </Section>
   );
 }

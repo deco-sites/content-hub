@@ -1,6 +1,6 @@
 {
   "name": "Teste 505",
-  "path": "/example-path-505",
+  "path": "/inspira/blog/dicas/cozinha-black-friday",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

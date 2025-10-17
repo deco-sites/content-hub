@@ -1,6 +1,6 @@
 {
   "name": "Artigos Padrão",
-  "path": "/content-hub-artigo-padrao",
+  "path": "/content-hub-default-article",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

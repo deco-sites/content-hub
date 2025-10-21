@@ -1,0 +1,11 @@
+{
+  "name": "collections/blog/authors/8711358a14cd",
+  "__resolveType": "blog/loaders/Author.ts",
+  "author": {
+    "name": "Bernardo Marinho",
+    "email": "bernardo.marinho@electrolux.com",
+    "avatar": "https://assets.decocache.com/content-hub/db19e8b0-2959-4f1c-8928-7e7bcea0e050/Pao-Frigidaire.png",
+    "jobTitle": "Developer",
+    "company": "Electrolux (Quality Digital)"
+  }
+}

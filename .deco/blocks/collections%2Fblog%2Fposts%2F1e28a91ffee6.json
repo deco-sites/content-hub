@@ -1,0 +1,43 @@
+{
+  "name": "collections/blog/posts/1e28a91ffee6",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [
+      {
+        "name": "Bernardo Marinho",
+        "email": "bernardo.marinho@electrolux.com",
+        "avatar": "https://assets.decocache.com/content-hub/db19e8b0-2959-4f1c-8928-7e7bcea0e050/Pao-Frigidaire.png",
+        "jobTitle": "Developer",
+        "company": "Electrolux (Quality Digital)"
+      }
+    ],
+    "categories": [
+      {
+        "name": "Teste - Categoria 1",
+        "slug": "test-category-1"
+      }
+    ],
+    "imageCarousel": {
+      "banners": []
+    },
+    "extraProps": [],
+    "aggregateRating": {
+      "@type": "AggregateRating"
+    },
+    "review": [],
+    "contentRating": [],
+    "interactionStatistic": {
+      "@type": "InteractionCounter",
+      "image": null,
+      "video": null
+    },
+    "title": "Teste de artigo de blog",
+    "excerpt": "esse é um texto de exemplo somente para não deixar esse campo vazio",
+    "date": "2025-10-21",
+    "alt": "imagem-texte",
+    "image": "https://assets.decocache.com/content-hub/c806d91d-27f5-4942-9327-18ae99d86cad/geladeira-electrolux-familia.webp",
+    "slug": "test",
+    "readTime": 5,
+    "content": "<p>Texto de exemplo sem qualquer finalidade.</p>"
+  }
+}

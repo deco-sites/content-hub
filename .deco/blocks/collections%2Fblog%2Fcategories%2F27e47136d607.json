@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/27e47136d607",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Teste - Categoria 1",
+    "slug": "test-category-1"
+  }
+}

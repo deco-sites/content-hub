@@ -1,4 +1,7 @@
-export interface ISection {
+import { ComponentChildren } from "preact";
+import { JSX } from "preact";
+
+export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   /**
    * @title Título da Seção
    * @description Texto principal da seção.
@@ -12,32 +15,32 @@ export interface ISection {
   subtitle?: string;
 
   /**
-   * @title Margem Superior (desktop). Default: 0
-   * @description Espaçamento superior da seção, em pixels.
-   * @default 0
-   */
-  marginTopDesktop?: number;
-
-  /**
-   * @title Margem Superior (mobile). Default: 0
+   * @title Mobile - Margem Superior.
    * @description Espaçamento superior da seção, em pixels.
    * @default 0
    */
   marginTopMobile?: number;
 
   /**
-   * @title Margem Inferior (desktop). Default: 52
+   * @title Mobile - Margem Inferior.
    * @description Espaçamento inferior da seção, em pixels.
-   * @default 52
-   */
-  marginBottomDesktop?: number;
-
-  /**
-   * @title Margem Inferior (mobile). Default: 32
-   * @description Espaçamento inferior da seção, em pixels.
-   * @default 32
+   * @default 0
    */
   marginBottomMobile?: number;
+
+  /**
+   * @title Desktop - Margem Superior.
+   * @description Espaçamento superior da seção, em pixels.
+   * @default 0
+   */
+  marginTopDesktop?: number;
+
+  /**
+   * @title Desktop - Margem Inferior.
+   * @description Espaçamento inferior da seção, em pixels.
+   * @default 0
+   */
+  marginBottomDesktop?: number;
 
   /**
    * @title Ocupar Toda a Largura?
@@ -50,17 +53,11 @@ export interface ISection {
    * @title Children
    * @hide
    */
-  children?: preact.createElement.JSX.Element | null;
+  children?: ComponentChildren | null;
 
   /**
    * @title Container classes
    * @hide
    */
   classesContainer?: string;
-
-  /**
-   * @title Container styles
-   * @hide
-   */
-  stylesContainer?: preact.JSX.AllCSSProperties;
 }

@@ -11,12 +11,11 @@ export default function Section({
   children,
   title = "",
   subtitle = "",
-  marginBottomMobile = 32,
-  marginBottomDesktop = 52,
+  marginBottomMobile = 0,
+  marginBottomDesktop = 0,
   marginTopMobile = 0,
   marginTopDesktop = 0,
   classesContainer,
-  stylesContainer = {},
   fullWidth = false,
 }: SectionProps) {
   return (
@@ -25,7 +24,6 @@ export default function Section({
         id={`section-${id}`}
         class={`section-container flex flex-col justify-center items-center w-full ${classesContainer ?? ""
           } ${!fullWidth ? "container" : ""}`}
-        style={stylesContainer}
       >
         {!isEmptyText(title) && (
           <Text

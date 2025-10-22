@@ -8,31 +8,31 @@ import * as $$$$$$$$$$$2 from "./apps/deco/records.ts";
 import * as $$$$$$$$$$$3 from "./apps/deco/vtex.ts";
 import * as $$$$$$$$$$$4 from "./apps/site.ts";
 import * as $$$0 from "./loaders/customVTEX/productById.ts";
-import * as $$$$$$0 from "./sections/Logos.tsx";
-import * as $$$$$$1 from "./sections/Lps/AmbassadorsSection.tsx";
-import * as $$$$$$2 from "./sections/Lps/ArticleGridSection.tsx";
-import * as $$$$$$3 from "./sections/Lps/ArticleResponsiveGridSection.tsx";
-import * as $$$$$$4 from "./sections/Lps/ArticleSliderSection.tsx";
-import * as $$$$$$5 from "./sections/Lps/ArticlesWithSidebarSection.tsx";
-import * as $$$$$$6 from "./sections/Lps/BannerMediaSection.tsx";
-import * as $$$$$$7 from "./sections/Lps/BannerSliderSection.tsx";
-import * as $$$$$$8 from "./sections/Lps/BlogArticlesSliderSection.tsx";
-import * as $$$$$$9 from "./sections/Lps/BreadcrumbSection.tsx";
-import * as $$$$$$10 from "./sections/Lps/CategoriesGridSection.tsx";
-import * as $$$$$$11 from "./sections/Lps/CategoriesSection.tsx";
-import * as $$$$$$12 from "./sections/Lps/DimmedColorsSection.tsx";
-import * as $$$$$$13 from "./sections/Lps/FoldItemsSection.tsx";
-import * as $$$$$$14 from "./sections/Lps/HomeHubInfoSection.tsx";
-import * as $$$$$$15 from "./sections/Lps/IconGridSection.tsx";
-import * as $$$$$$16 from "./sections/Lps/ImageCollectionGridSection.tsx";
-import * as $$$$$$17 from "./sections/Lps/ImageTextCardGridSection.tsx";
-import * as $$$$$$18 from "./sections/Lps/ImageWithTextColumnsSection.tsx";
-import * as $$$$$$19 from "./sections/Lps/InfoCardSection.tsx";
-import * as $$$$$$20 from "./sections/Lps/MultiImageBannerSection.tsx";
-import * as $$$$$$21 from "./sections/Lps/ReviewsSliderSection.tsx";
-import * as $$$$$$22 from "./sections/Lps/SearchBarHeroSection.tsx";
-import * as $$$$$$23 from "./sections/Lps/SolidColorsSection.tsx";
-import * as $$$$$$24 from "./sections/Lps/TextSection.tsx";
+import * as $$$$$$0 from "./sections/Blog/ImageCollectionGridSection.tsx";
+import * as $$$$$$1 from "./sections/Blog/TextSection.tsx";
+import * as $$$$$$2 from "./sections/Logos.tsx";
+import * as $$$$$$3 from "./sections/Lps/AmbassadorsSection.tsx";
+import * as $$$$$$4 from "./sections/Lps/ArticleGridSection.tsx";
+import * as $$$$$$5 from "./sections/Lps/ArticleResponsiveGridSection.tsx";
+import * as $$$$$$6 from "./sections/Lps/ArticleSliderSection.tsx";
+import * as $$$$$$7 from "./sections/Lps/ArticlesWithSidebarSection.tsx";
+import * as $$$$$$8 from "./sections/Lps/BannerMediaSection.tsx";
+import * as $$$$$$9 from "./sections/Lps/BannerSliderSection.tsx";
+import * as $$$$$$10 from "./sections/Lps/BlogArticlesSliderSection.tsx";
+import * as $$$$$$11 from "./sections/Lps/BreadcrumbSection.tsx";
+import * as $$$$$$12 from "./sections/Lps/CategoriesGridSection.tsx";
+import * as $$$$$$13 from "./sections/Lps/CategoriesSection.tsx";
+import * as $$$$$$14 from "./sections/Lps/DimmedColorsSection.tsx";
+import * as $$$$$$15 from "./sections/Lps/FoldItemsSection.tsx";
+import * as $$$$$$16 from "./sections/Lps/HomeHubInfoSection.tsx";
+import * as $$$$$$17 from "./sections/Lps/IconGridSection.tsx";
+import * as $$$$$$18 from "./sections/Lps/ImageTextCardGridSection.tsx";
+import * as $$$$$$19 from "./sections/Lps/ImageWithTextColumnsSection.tsx";
+import * as $$$$$$20 from "./sections/Lps/InfoCardSection.tsx";
+import * as $$$$$$21 from "./sections/Lps/MultiImageBannerSection.tsx";
+import * as $$$$$$22 from "./sections/Lps/ReviewsSliderSection.tsx";
+import * as $$$$$$23 from "./sections/Lps/SearchBarHeroSection.tsx";
+import * as $$$$$$24 from "./sections/Lps/SolidColorsSection.tsx";
 import * as $$$$$$25 from "./sections/Product/ProductAmbassadorSection.tsx";
 import * as $$$$$$26 from "./sections/Product/ProductMediaSection.tsx";
 import * as $$$$$$27 from "./sections/Product/ProductMediaSideBySideSection.tsx";
@@ -46,31 +46,31 @@ const manifest = {
     "site/loaders/customVTEX/productById.ts": $$$0,
   },
   "sections": {
-    "site/sections/Logos.tsx": $$$$$$0,
-    "site/sections/Lps/AmbassadorsSection.tsx": $$$$$$1,
-    "site/sections/Lps/ArticleGridSection.tsx": $$$$$$2,
-    "site/sections/Lps/ArticleResponsiveGridSection.tsx": $$$$$$3,
-    "site/sections/Lps/ArticleSliderSection.tsx": $$$$$$4,
-    "site/sections/Lps/ArticlesWithSidebarSection.tsx": $$$$$$5,
-    "site/sections/Lps/BannerMediaSection.tsx": $$$$$$6,
-    "site/sections/Lps/BannerSliderSection.tsx": $$$$$$7,
-    "site/sections/Lps/BlogArticlesSliderSection.tsx": $$$$$$8,
-    "site/sections/Lps/BreadcrumbSection.tsx": $$$$$$9,
-    "site/sections/Lps/CategoriesGridSection.tsx": $$$$$$10,
-    "site/sections/Lps/CategoriesSection.tsx": $$$$$$11,
-    "site/sections/Lps/DimmedColorsSection.tsx": $$$$$$12,
-    "site/sections/Lps/FoldItemsSection.tsx": $$$$$$13,
-    "site/sections/Lps/HomeHubInfoSection.tsx": $$$$$$14,
-    "site/sections/Lps/IconGridSection.tsx": $$$$$$15,
-    "site/sections/Lps/ImageCollectionGridSection.tsx": $$$$$$16,
-    "site/sections/Lps/ImageTextCardGridSection.tsx": $$$$$$17,
-    "site/sections/Lps/ImageWithTextColumnsSection.tsx": $$$$$$18,
-    "site/sections/Lps/InfoCardSection.tsx": $$$$$$19,
-    "site/sections/Lps/MultiImageBannerSection.tsx": $$$$$$20,
-    "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$21,
-    "site/sections/Lps/SearchBarHeroSection.tsx": $$$$$$22,
-    "site/sections/Lps/SolidColorsSection.tsx": $$$$$$23,
-    "site/sections/Lps/TextSection.tsx": $$$$$$24,
+    "site/sections/Blog/ImageCollectionGridSection.tsx": $$$$$$0,
+    "site/sections/Blog/TextSection.tsx": $$$$$$1,
+    "site/sections/Logos.tsx": $$$$$$2,
+    "site/sections/Lps/AmbassadorsSection.tsx": $$$$$$3,
+    "site/sections/Lps/ArticleGridSection.tsx": $$$$$$4,
+    "site/sections/Lps/ArticleResponsiveGridSection.tsx": $$$$$$5,
+    "site/sections/Lps/ArticleSliderSection.tsx": $$$$$$6,
+    "site/sections/Lps/ArticlesWithSidebarSection.tsx": $$$$$$7,
+    "site/sections/Lps/BannerMediaSection.tsx": $$$$$$8,
+    "site/sections/Lps/BannerSliderSection.tsx": $$$$$$9,
+    "site/sections/Lps/BlogArticlesSliderSection.tsx": $$$$$$10,
+    "site/sections/Lps/BreadcrumbSection.tsx": $$$$$$11,
+    "site/sections/Lps/CategoriesGridSection.tsx": $$$$$$12,
+    "site/sections/Lps/CategoriesSection.tsx": $$$$$$13,
+    "site/sections/Lps/DimmedColorsSection.tsx": $$$$$$14,
+    "site/sections/Lps/FoldItemsSection.tsx": $$$$$$15,
+    "site/sections/Lps/HomeHubInfoSection.tsx": $$$$$$16,
+    "site/sections/Lps/IconGridSection.tsx": $$$$$$17,
+    "site/sections/Lps/ImageTextCardGridSection.tsx": $$$$$$18,
+    "site/sections/Lps/ImageWithTextColumnsSection.tsx": $$$$$$19,
+    "site/sections/Lps/InfoCardSection.tsx": $$$$$$20,
+    "site/sections/Lps/MultiImageBannerSection.tsx": $$$$$$21,
+    "site/sections/Lps/ReviewsSliderSection.tsx": $$$$$$22,
+    "site/sections/Lps/SearchBarHeroSection.tsx": $$$$$$23,
+    "site/sections/Lps/SolidColorsSection.tsx": $$$$$$24,
     "site/sections/Product/ProductAmbassadorSection.tsx": $$$$$$25,
     "site/sections/Product/ProductMediaSection.tsx": $$$$$$26,
     "site/sections/Product/ProductMediaSideBySideSection.tsx": $$$$$$27,

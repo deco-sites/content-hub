@@ -8,9 +8,7 @@
         "section": {
           "children": null
         },
-        "stripPrefixes": [
-          "Artigos Padrão"
-        ]
+        "stripPrefixes": ["Artigos Padrão"]
       }
     },
     {

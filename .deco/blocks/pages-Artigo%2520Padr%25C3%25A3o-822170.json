@@ -45,6 +45,37 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "title": "<h1>Escolha a máquina de café certa: cafeteira ou máquina de café expresso?</h1>",
+          "children": null,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
+          "marginBottomDesktop": 40
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Fogão por indução"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Fogão por indução",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/5b7734e2-7a61-4216-b4a7-b2c64bd99233/image-figma-teste.jpg",
+              "mobile": "https://assets.decocache.com/content-hub/5b7734e2-7a61-4216-b4a7-b2c64bd99233/image-figma-teste.jpg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
           "children": null,

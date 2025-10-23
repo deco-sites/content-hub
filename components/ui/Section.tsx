@@ -1,6 +1,7 @@
 import { Text } from "@eluxlab/library-components";
 import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
+import LoadingFallback from "./LoadingFallback.tsx";
 
 export default function Section({
   id,
@@ -51,11 +52,7 @@ export default function Section({
               {children}
             </div>
           )
-          : (
-            <div class="w-full flex justify-center items-center">
-              <span class="loading loading-spinner" />
-            </div>
-          )}
+          : <LoadingFallback />}
       </div>
       <style>
         {`

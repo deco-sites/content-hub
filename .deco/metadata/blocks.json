@@ -296,8 +296,8 @@
     "__resolveType": "website/pages/Page.tsx"
   },
   "/.deco/blocks/pages-Artigo%2520Padr%25C3%25A3o-822170.json": {
-    "name": "Artigos Padrão",
-    "path": "/default-article-",
+    "name": "Artigos Padrão V4",
+    "path": "/default-article-v4",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },

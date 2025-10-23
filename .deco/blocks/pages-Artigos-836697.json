@@ -17,7 +17,8 @@
         "section": {
           "title": "Blog",
           "subtitle": "Descubra artigos inspiradores, dicas para casa e dia a dia.",
-          "fullWidth": false
+          "fullWidth": false,
+          "children": null
         },
         "heading": "Últimos artigos:",
         "panelBgColor": "#041E50",
@@ -40,7 +41,7 @@
             "title": "Entrega com carbono neutro",
             "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
             "href": "/",
-            "ctaLabel": "Saba mais"
+            "ctaLabel": "Saiba mais"
           },
           {
             "image": {
@@ -78,7 +79,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticlesWithSidebarSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "children": null
         },
         "categories": [
           {
@@ -86,8 +88,8 @@
             "active": false
           },
           {
-            "label": "Rceitas",
-            "href": "/inspira/blog//slug-do-post"
+            "label": "Receitas",
+            "href": "/inspira/blog/slug-do-post"
           },
           {
             "label": "Dicas",

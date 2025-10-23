@@ -19,42 +19,41 @@ export default function Section({
   articlePaddingForContent = false
 }: ISection) {
   return (
-    <>
-      <div
-        id={`section-${id}`}
-        class={`section-container flex flex-col justify-center items-center w-full ${classesContainer ?? ""} ${!fullWidth && "container"}`}
-      >
-        {!isEmptyText(title) && (
-          <Text
-            title={title}
-            classes={{
-              container:
-                `section-title mt-[24px] normal-case font-semibold text-[#041E50] w-full ${centralizeTitleAndSubtitle ? "text-center" : "text-left"
-                } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"} ${isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"}
+    <div
+      id={`section-${id}`}
+      class={`section-container flex flex-col justify-center items-center w-full ${classesContainer ?? ""} ${!fullWidth && "container"}`}
+    >
+      {!isEmptyText(title) && (
+        <Text
+          title={title}
+          classes={{
+            container:
+              `section-title mt-[24px] normal-case font-semibold text-[#041E50] w-full ${centralizeTitleAndSubtitle ? "text-center" : "text-left"
+              } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"} ${isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"}
                 `,
-            }}
-          />
-        )}
-        {!isEmptyText(subtitle) && (
-          <Text
-            title={subtitle}
-            classes={{
-              container:
-                `section-subtitle mb-[16px] lg:mb-[24px] normal-case font-normal text-[#041E50] w-full ${centralizeTitleAndSubtitle ? "text-center" : "text-left"
-                } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"}`,
-            }}
-          />
-        )}
-        {children
-          ? (
-            <div
-              class={`flex flex-col items-center justify-center ${articlePaddingForContent && "lg:max-w-[800px]"}`}
-            >
-              {children}
-            </div>
-          )
-          : <LoadingFallback />}
-      </div>
+          }}
+        />
+      )}
+      {!isEmptyText(subtitle) && (
+        <Text
+          title={subtitle}
+          classes={{
+            container:
+              `section-subtitle mb-[16px] lg:mb-[24px] normal-case font-normal text-[#041E50] w-full ${centralizeTitleAndSubtitle ? "text-center" : "text-left"
+              } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"}`,
+          }}
+        />
+      )}
+      {children
+        ? (
+          <div
+            class={`w-full flex flex-col items-center justify-center ${articlePaddingForContent && "lg:max-w-[800px]"}`}
+          >
+            {children}
+          </div>
+        )
+        : <LoadingFallback />}
+
       <style>
         {`
           #section-${id} {
@@ -62,39 +61,19 @@ export default function Section({
             margin-bottom: ${marginBottomMobile}px;
           }
 
-          .section-container {
-            width: 100%;
-          }
-
           .section-title h1,
-          .section-subtitle h1,
-          .section-children-container h1 {
+          .section-subtitle h1 {
             font-size: 24px;
           }
 
           .section-title h2,
-          .section-subtitle h2,
-          .section-children-container h2 {
+          .section-subtitle h2 {
             font-size: 20px;
           }
 
           .section-title h3,
-          .section-subtitle h3,
-          .section-children-container h3 {
+          .section-subtitle h3 {
             font-size: 16px;
-          }
-
-          .section-children-container h1,
-          .section-children-container h2,
-          .section-children-container h3 {
-            font-weight: 600;
-            line-height: 1;
-            margin-bottom: 24px;
-          }
-          
-          .section-children-container p {
-            line-height: 1.4;
-            margin-bottom: 16px;
           }
 
           @media screen and (min-width: 1080px) {
@@ -108,20 +87,17 @@ export default function Section({
             }
 
             .section-title h1,
-            .section-subtitle h1,
-            .section-children-container h1 {
+            .section-subtitle h1 {
               font-size: 48px;
             }
 
             .section-title h2,
-            .section-subtitle h2,
-            .section-children-container h2 {
+            .section-subtitle h2 {
               font-size: 36px;
             }
 
             .section-title h3,
-            .section-subtitle h3,
-            .section-children-container h3 {
+            .section-subtitle h3 {
               font-size: 24px;
             }
           }
@@ -151,6 +127,6 @@ export default function Section({
           }
         `}
       </style>
-    </>
+    </div>
   );
 }

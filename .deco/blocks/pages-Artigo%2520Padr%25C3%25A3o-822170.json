@@ -16,12 +16,256 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "title": "<h1>Escolha a máquina de café certa: cafeteira ou máquina de café expresso?</h1>",
+          "children": null,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
+          "marginBottomDesktop": 40
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Fogão por indução"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Fogão por indução",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/5b7734e2-7a61-4216-b4a7-b2c64bd99233/image-figma-teste.jpg",
+              "mobile": "https://assets.decocache.com/content-hub/5b7734e2-7a61-4216-b4a7-b2c64bd99233/image-figma-teste.jpg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h2>Galeria</h2>",
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40
+        },
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat risus ac metus vehicula commodo. In hac habitasse platea dictumst. Nunc placerat condimentum purus, id imperdiet leo posuere eu. Sed imperdiet purus eu risus varius aliquet. Quisque commodo tempus condimentum. Integer nec ex ut erat rhoncus maximus. Maecenas vel ultrices libero. Mauris imperdiet, turpis et tincidunt placerat, arcu mi ornare arcu, eget tincidunt augue lectus sit amet nulla. Quisque rhoncus ut odio in consequat. Vivamus eget nibh a augue euismod vehicula in a est. Vestibulum quis laoreet urna, et varius ipsum.\nPhasellus luctus efficitur congue. Praesent quis blandit nulla. Nunc nulla lectus, sollicitudin a odio sit amet, feugiat scelerisque quam. Curabitur viverra tortor eget eleifend tempus. Etiam congue eleifend lobortis. Nulla maximus imperdiet quam, vel elementum elit cursus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec auctor sapien sit amet augue accumsan, at scelerisque augue pharetra. Etiam sit amet neque quis erat mollis tempor ac eget nulla. Vivamus porta tellus in venenatis dignissim. Praesent congue enim at neque varius auctor. Donec molestie venenatis nisl vel facilisis.</p><br />\n<p>Phasellus luctus efficitur congue. Praesent quis blandit nulla. Nunc nulla lectus, sollicitudin a odio sit amet, feugiat scelerisque quam. Curabitur viverra tortor eget eleifend tempus. Etiam congue eleifend lobortis. Nulla maximus imperdiet quam, vel elementum elit cursus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec auctor sapien sit amet augue accumsan, at scelerisque augue pharetra. Etiam sit amet neque quis erat mollis tempor ac eget nulla. Vivamus porta tellus in venenatis dignissim. Praesent congue enim at neque varius auctor. Donec molestie venenatis nisl vel facilisis.</p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "children": null,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Alecrim"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/e5fe6232-1618-4f04-b34f-564b3862fa05/alecrim.png",
+              "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
+            },
+            "alt": "Alecrim"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h2>Galeria</h2>",
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40
+        },
+        "text": "<ul>\n<li>Verifique a compatibilidade: procure pelo símbolo de indução no fundo da panela ou confirme se um ímã gruda na base;</li>\n<li>Prefira materiais de qualidade: dê preferência por panela aço inox para fogão de indução ou ferro fundido, que oferecem melhor desempenho e durabilidade. Também podem ser panelas de cerâmica contanto que a base seja magnética, pois bases de alumínio não funcionam;</li>\n<li>Invista em um jogo de panelas: um jogo de panela para fogão de indução com diferentes tamanhos e formatos é o indicado para atender a todas as suas necessidades na cozinha;</li><li>Considere o design e a agilidade: panelas com alças ergonômicas e tampas bem vedadas facilitam o manuseio e o cozimento.</li>\n<li>Verifique a compatibilidade: procure pelo símbolo de indução no fundo da panela ou confirme se um ímã gruda na base;</li>\n<li>Prefira materiais de qualidade: dê preferência por panela aço inox para fogão de indução ou ferro fundido, que oferecem melhor desempenho e durabilidade. Também podem ser panelas de cerâmica contanto que a base seja magnética, pois bases de alumínio não funcionam;</li>\n<li>Invista em um jogo de panelas: um jogo de panela para fogão de indução com diferentes tamanhos e formatos é o indicado para atender a todas as suas necessidades na cozinha;</li>\n<li>Considere o design e a agilidade: panelas com alças ergonômicas e tampas bem vedadas facilitam o manuseio e o cozimento.</li>\n</ul>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "children": null,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Brownie"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/d3b4e7f4-ffa2-4b02-a47a-7defd2817883/brownie.png",
+              "mobile": "https://assets.decocache.com/content-hub/a96bff7e-f62a-4657-afba-6e3e3f13e044/brownie-mobile.png"
+            },
+            "alt": "Brownie"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "title": "Forno",
+              "href": "/#"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Forno",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/6edd1068-ecdc-4edf-851d-63a1274a2776/MultiBanner2.png",
+              "mobile": "https://assets.decocache.com/content-hub/04741de6-00de-4e78-b89c-dbb39bccae44/MultiBanner2-mobile.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "title": "<h2>Galeria</h2>",
+          "children": null,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
+        },
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat risus ac metus vehicula commodo. In hac habitasse platea dictumst. Nunc placerat condimentum purus, id imperdiet leo posuere eu. Sed imperdiet purus eu risus varius aliquet. Quisque commodo tempus condimentum. Integer nec ex ut erat rhoncus maximus. Maecenas vel ultrices libero. Mauris imperdiet, turpis et tincidunt placerat, arcu mi ornare arcu, eget tincidunt augue lectus sit amet nulla. Quisque rhoncus ut odio in consequat. Vivamus eget nibh a augue euismod vehicula in a est. Vestibulum quis laoreet urna, et varius ipsum.\nPhasellus luctus efficitur congue. Praesent quis blandit nulla. Nunc nulla lectus, sollicitudin a odio sit amet, feugiat scelerisque quam. Curabitur viverra tortor eget eleifend tempus. Etiam congue eleifend lobortis. Nulla maximus imperdiet quam, vel elementum elit cursus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec auctor sapien sit amet augue accumsan, at scelerisque augue pharetra. Etiam sit amet neque quis erat mollis tempor ac eget nulla. Vivamus porta tellus in venenatis dignissim. Praesent congue enim at neque varius auctor. Donec molestie venenatis nisl vel facilisis.</p><br />\n<p>Phasellus luctus efficitur congue. Praesent quis blandit nulla. Nunc nulla lectus, sollicitudin a odio sit amet, feugiat scelerisque quam. Curabitur viverra tortor eget eleifend tempus. Etiam congue eleifend lobortis. Nulla maximus imperdiet quam, vel elementum elit cursus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec auctor sapien sit amet augue accumsan, at scelerisque augue pharetra. Etiam sit amet neque quis erat mollis tempor ac eget nulla. Vivamus porta tellus in venenatis dignissim. Praesent congue enim at neque varius auctor. Donec molestie venenatis nisl vel facilisis.</p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "children": null,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Airfryer"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
+              "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
+            },
+            "alt": "Airfryer"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "title": "<h2>Galeria</h2>",
+          "children": null,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
+        },
+        "text": "<p>Se você está em dúvida sobre qual panela escolher, é importante conhecer os materiais mais indicados. A seguir, confira as opções que melhor se adaptam ao seu eletrodoméstico de indução:</p><br />\n<h3>1. Panela de aço inox para cooktop de indução</h3><br />\n<p>As panelas de aço inox são uma das melhores opções. Elas são duráveis, resistentes à corrosão e fáceis de limpar. Além disso, o aço inox distribui o calor de forma uniforme, ajudando para que os seus alimentos sejam cozidos de maneira perfeita.\n</p><br />\n<h3>2. Panela de ferro fundido</h3><br />\n<p>O ferro fundido é outro material altamente compatível com fogões de indução. Essas panelas são conhecidas por sua capacidade de reter calor por mais tempo, sendo indicadas para preparações que exigem cozimento lento, como ensopados e grelhados.\n</p><br />\n<h3>3. Panelas com base magnética</h3><br />\n<p>Se você já possui panelas de alumínio ou cerâmica, é possível adaptá-las ao fogão de indução desde que tenham uma base magnética. Essa camada adicional permite que o campo magnético do fogão aqueça a panela corretamente.</p><br />\n"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ShelfSection.tsx",
+        "section": {
+          "title": "<h2>Produtos Relacionados</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
+        },
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "simulationBehavior": "default",
+            "count": 10
+          }
+        },
+        "configs": {
+          "customPagination": {
+            "enabledMobile": true,
+            "enabledDesktop": true,
+            "dynamicBullets": true,
+            "dynamicMainBullets": 3
+          },
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 3
+          },
+          "customNavigation": {
+            "enabledMobile": true,
+            "enabledDesktop": true
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "title": "<h2>Artigos Relacionados</h2>",
           "subtitle": "Conteúdos selecionados de acordo com a sua necessidade.",
           "children": null,
-          "centralizeTitleAndSubtitle": true
+          "centralizeTitleAndSubtitle": true,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40
         },
         "articles": [
           {
@@ -569,45 +813,6 @@
             "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido..."
           }
         ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ShelfSection.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc",
-            "collection": "2140",
-            "simulationBehavior": "default",
-            "count": 10
-          }
-        },
-        "section": {
-          "children": null,
-          "title": "<h2>Produtos Relacionados</h2>",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-          "centralizeTitleAndSubtitle": true,
-          "articlePaddingForTitleAndSubtitle": true
-        },
-        "configs": {
-          "customPagination": {
-            "enabledMobile": true,
-            "enabledDesktop": true,
-            "dynamicBullets": true,
-            "dynamicMainBullets": 3
-          },
-          "slidesPerViewResponsive": {
-            "mobile": 1,
-            "tablet": 1,
-            "desktop": 3
-          },
-          "customNavigation": {
-            "enabledMobile": true,
-            "enabledDesktop": true
-          }
-        }
       }
     }
   ],

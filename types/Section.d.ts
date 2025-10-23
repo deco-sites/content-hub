@@ -1,5 +1,4 @@
-import { ComponentChildren } from "preact";
-import { JSX } from "preact";
+import { ComponentChildren, JSX } from "preact";
 
 export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   /**
@@ -33,6 +32,13 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
    * @default false
    */
   articlePaddingForTitleAndSubtitle?: boolean;
+
+  /**
+   * @title Utilizar margens laterais maiores para o conteúdo?
+   * @description Esta opção só faz diferença em visualização desktop.
+   * @default false
+   */
+  articlePaddingForContent?: boolean;
 
   /**
    * @title Mobile - Margem Superior.

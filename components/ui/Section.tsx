@@ -16,6 +16,7 @@ export default function Section({
   fullWidth = false,
   centralizeTitleAndSubtitle = false,
   articlePaddingForTitleAndSubtitle = false,
+  articlePaddingForContent = false
 }: ISection) {
   return (
     <>
@@ -47,7 +48,7 @@ export default function Section({
         {children
           ? (
             <div
-              class={`w-full flex flex-col items-center justify-center`}
+              class={`flex flex-col items-center justify-center ${articlePaddingForContent && "lg:max-w-[800px]"}`}
             >
               {children}
             </div>
@@ -61,7 +62,7 @@ export default function Section({
             margin-bottom: ${marginBottomMobile}px;
           }
 
-          .section-children-container {
+          .section-container {
             width: 100%;
           }
 
@@ -102,7 +103,7 @@ export default function Section({
               margin-bottom: ${marginBottomDesktop}px;
             }
 
-            .section-children {
+            .section-container {
               width: 1000px;
             }
 
@@ -126,25 +127,25 @@ export default function Section({
           }
 
           @media screen and (min-width: 1280px) {
-            .section-children {
+            .section-container {
               width: 1200px;
             }
           }
 
           @media screen and (min-width: 1366px) {
-            .section-children {
+            .section-container {
               width: 1286px;
             }
           }
 
           @media screen and (min-width: 1440px) {
-            .section-children {
+            .section-container {
               width: 1360px;
             }
           }
 
           @media screen and (min-width: 1920px) {
-            .section-children {
+            .section-container {
               width: 1600px;
             }
           }

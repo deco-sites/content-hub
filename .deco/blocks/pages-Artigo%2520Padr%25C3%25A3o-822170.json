@@ -570,6 +570,45 @@
           }
         ]
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ShelfSection.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "simulationBehavior": "default",
+            "count": 10
+          }
+        },
+        "section": {
+          "children": null,
+          "title": "<h2>Produtos Relacionados</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "centralizeTitleAndSubtitle": true,
+          "articlePaddingForTitleAndSubtitle": true
+        },
+        "configs": {
+          "customPagination": {
+            "enabledMobile": true,
+            "enabledDesktop": true,
+            "dynamicBullets": true,
+            "dynamicMainBullets": 3
+          },
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 3
+          },
+          "customNavigation": {
+            "enabledMobile": true,
+            "enabledDesktop": true
+          }
+        }
+      }
     }
   ],
   "seo": {

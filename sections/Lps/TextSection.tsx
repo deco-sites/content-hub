@@ -36,7 +36,8 @@ export default function TextSection({
         <Text
           title={text ?? ""}
           classes={{
-            container: "w-full text-base text-left font-normal text-[#041e50] lg:max-w-[800px]",
+            container:
+              "w-full text-base text-left font-normal text-[#041e50] lg:max-w-[800px]",
           }}
         />
       </Section>

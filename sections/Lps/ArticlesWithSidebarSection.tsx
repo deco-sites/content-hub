@@ -47,11 +47,11 @@ function chunk<T>(arr: T[], size: number): T[][] {
 
 /** categorias padrão */
 const DEFAULT_CATEGORIES: CategoryItem[] = [
-  { label: "Todos",             href: "/inspira/blog" },
-  { label: "Receitas",          href: "/inspira/blog/receitas" },
-  { label: "Dicas",             href: "/inspira/blog/dicas" },
-  { label: "Produtos",          href: "/inspira/blog/produtos" },
-  { label: "Sustentabilidade",  href: "/inspira/blog/sustentabilidade" },
+  { label: "Todos", href: "/inspira/blog" },
+  { label: "Receitas", href: "/inspira/blog/receitas" },
+  { label: "Dicas", href: "/inspira/blog/dicas" },
+  { label: "Produtos", href: "/inspira/blog/produtos" },
+  { label: "Sustentabilidade", href: "/inspira/blog/sustentabilidade" },
 ];
 
 export default function ArticlesWithSidebarSection({
@@ -102,12 +102,10 @@ export default function ArticlesWithSidebarSection({
                   <li key={cat.label} class="inline-block">
                     <a
                       href={cat.href ?? "#"}
-                      class={
-                        "whitespace-nowrap text-sm px-3 py-2 rounded-full border " +
+                      class={"whitespace-nowrap text-sm px-3 py-2 rounded-full border " +
                         (cat.active
                           ? "border-[#041E50] text-[#041E50] font-semibold"
-                          : "border-[#DFE7EA] text-[#5B6A78] hover:text-[#041E50]")
-                      }
+                          : "border-[#DFE7EA] text-[#5B6A78] hover:text-[#041E50]")}
                     >
                       {cat.label}
                     </a>
@@ -143,10 +141,10 @@ export default function ArticlesWithSidebarSection({
                     <li key={cat.label}>
                       <a
                         href={cat.href ?? "#"}
-                        class={
-                          "block font-electrolux text-[14px] leading-[14px] text-[#011E41] " +
-                          (cat.active ? "font-semibold" : "font-normal hover:opacity-80")
-                        }
+                        class={"block font-electrolux text-[14px] leading-[14px] text-[#011E41] " +
+                          (cat.active
+                            ? "font-semibold"
+                            : "font-normal hover:opacity-80")}
                       >
                         <span class="block py-3 mr-3 border-b border-[#EAEBED]">
                           {cat.label}

@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState, useEffect } from "preact/hooks";
+import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 
@@ -27,8 +27,8 @@ export default function BlogArticlesSliderIsland({
   defaultCtaLabel,
 }: Props) {
   const [index, setIndex] = useState(0);
-  const [slideW, setSlideW] = useState(0);              // largura do viewport
-  const viewportRef = useRef<HTMLDivElement>(null);     // wrapper overflow-hidden
+  const [slideW, setSlideW] = useState(0); // largura do viewport
+  const viewportRef = useRef<HTMLDivElement>(null); // wrapper overflow-hidden
   const trackRef = useRef<HTMLDivElement>(null);
 
   const count = slides.length;
@@ -51,7 +51,11 @@ export default function BlogArticlesSliderIsland({
   const slidesMarkup = useMemo(
     () =>
       slides.map((s, i) => (
-        <div key={i} class="shrink-0 w-full snap-center" aria-roledescription="slide">
+        <div
+          key={i}
+          class="shrink-0 w-full snap-center"
+          aria-roledescription="slide"
+        >
           <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8">
             {/* min-w-0 evita overflow horizontal do grid */}
             <div class="grid grid-cols-1 lg:grid-cols-[1fr_421px] gap-0 min-w-0">
@@ -72,7 +76,10 @@ export default function BlogArticlesSliderIsland({
                 <div>
                   <h3
                     class="text-white text-[24px] md:text-[28px] font-semibold tracking-[0]"
-                    style={{ fontFamily: "Electrolux Sans, sans-serif", lineHeight: "100%" }}
+                    style={{
+                      fontFamily: "Electrolux Sans, sans-serif",
+                      lineHeight: "100%",
+                    }}
                   >
                     {s.title}
                   </h3>
@@ -143,7 +150,9 @@ export default function BlogArticlesSliderIsland({
             type="button"
             onClick={() => go(i)}
             aria-label={`Ir para o slide ${i + 1}`}
-            class={`h-2 w-2 rounded-full ${i === index ? "bg-[#041E50]" : "bg-[#041E50]/30"}`}
+            class={`h-2 w-2 rounded-full ${
+              i === index ? "bg-[#041E50]" : "bg-[#041E50]/30"
+            }`}
           />
         ))}
       </div>

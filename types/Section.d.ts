@@ -43,7 +43,7 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   marginBottomDesktop?: number;
 
   /**
-   * @title Ocupar Toda a Largura?
+   * @title Ocupar toda a largura?
    * @description Define se o componente deve ocupar toda a largura disponível.
    * @default false
    */

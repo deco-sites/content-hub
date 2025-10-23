@@ -22,15 +22,18 @@ export default function Section({
     <>
       <div
         id={`section-${id}`}
-        class={`section-container flex flex-col justify-center items-center w-full ${classesContainer ?? ""
-          } ${!fullWidth ? "container" : ""}`}
+        class={`section-container flex flex-col justify-center items-center w-full ${
+          classesContainer ?? ""
+        } ${!fullWidth ? "container" : ""}`}
       >
         {!isEmptyText(title) && (
           <Text
             title={title}
             classes={{
               container:
-                `section-title mt-[24px] text-left normal-case font-semibold text-[#041E50] w-full lg:max-w-[800px] ${isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"}`,
+                `section-title mt-[24px] text-left normal-case font-semibold text-[#041E50] w-full lg:max-w-[800px] ${
+                  isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"
+                }`,
             }}
           />
         )}
@@ -46,8 +49,9 @@ export default function Section({
         {children
           ? (
             <div
-              class={`${fullWidth ? "w-full" : "section-children-container"
-                }  flex flex-col items-center justify-center`}
+              class={`${
+                fullWidth ? "w-full" : "section-children-container"
+              }  flex flex-col items-center justify-center`}
             >
               {children}
             </div>

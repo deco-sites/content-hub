@@ -1,7 +1,6 @@
-
 /**
-* The code snippet below is an example.
-*/
+ * The code snippet below is an example.
+ */
 
 /**
 * import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";

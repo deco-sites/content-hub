@@ -40,10 +40,9 @@ function FoldItem({ title, text, image }: FoldItem) {
     >
       <div
         onClick={toggleItem}
-        class={`relative w-full flex flex-col ${isOpen.value
-          ? "h-[206px] justify-end"
-          : "h-[42px] justify-center"
-          }`}
+        class={`relative w-full flex flex-col ${
+          isOpen.value ? "h-[206px] justify-end" : "h-[42px] justify-center"
+        }`}
       >
         <ResponsiveImage
           {...image}
@@ -53,16 +52,18 @@ function FoldItem({ title, text, image }: FoldItem) {
         <div class="absolute bg-black inset-0 bg-black opacity-25">
         </div>
         <span
-          class={`absolute text-white font-semibold text-[26px] ${isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
-            }`}
+          class={`absolute text-white font-semibold text-[26px] ${
+            isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
+          }`}
         >
           {title}
         </span>
       </div>
 
       <div
-        class={`${isOpen.value ? "h-full" : "hidden"
-          } overflow-hidden flex flex-col items-start gap-[8px] py-[16px]`}
+        class={`${
+          isOpen.value ? "h-full" : "hidden"
+        } overflow-hidden flex flex-col items-start gap-[8px] py-[16px]`}
       >
         <h4 class={`text-[#041E50] font-semibold text-[26px]`}>
           {title}
@@ -70,7 +71,7 @@ function FoldItem({ title, text, image }: FoldItem) {
         <p class={`text-[#2B2936] text-[14px]`}>{text}</p>
       </div>
     </div>
-  )
+  );
 }
 
 export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
@@ -85,9 +86,15 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
       `}
     >
       <div class="w-full flex flex-col gap-y-[8px] lg:hidden">
-        {foldItems && foldItems.map((item, index) => (
-          <FoldItem title={item.title} text={item.text} image={item.image} key={index} />
-        ))}
+        {foldItems &&
+          foldItems.map((item, index) => (
+            <FoldItem
+              title={item.title}
+              text={item.text}
+              image={item.image}
+              key={index}
+            />
+          ))}
       </div>
 
       <div
@@ -102,7 +109,11 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
             class={`
               relative cursor-pointer
               transition-all duration-300 ease-in-out
-              ${index === selectedItem.value ? 'w-[380px] h-full' : 'w-[120px] h-[486px]'}
+              ${
+              index === selectedItem.value
+                ? "w-[380px] h-full"
+                : "w-[120px] h-[486px]"
+            }
             `}
             onClick={() => selectedItem.value = index}
           >
@@ -115,7 +126,9 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
             <span
               class={`
                 absolute bottom-4 
-                ${index === selectedItem.value ? 'left-[388px]' : 'left-[132px]'}
+                ${
+                index === selectedItem.value ? "left-[388px]" : "left-[132px]"
+              }
                 text-white font-semibold text-[26px]
                 -rotate-90 transform origin-bottom-left whitespace-nowrap pb-4 pl-4
               `}

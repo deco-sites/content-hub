@@ -30,18 +30,14 @@ export default function SearchBarHeroSection({
 
   return (
     <Section {...section} id={id}>
-      <div
-        class="
+      <div class="
           w-full mx-auto px-4 py-6 md:pt-10 md:pb-[5.5rem]
           flex flex-col items-start md:items-center text-left md:text-center gap-3
-        "
-      >
-        <h2
-          class="
+        ">
+        <h2 class="
             font-electrolux text-[#041E50] font-semibold
             text-2xl md:text-4xl leading-none tracking-normal capitalize
-          "
-        >
+          ">
           {title}
         </h2>
 

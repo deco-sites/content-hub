@@ -28,7 +28,9 @@ interface ShelfSectionProps {
   configs?: ISliderConfigs;
 }
 
-export default function ShelfSection({ section, configs, products, }: ShelfSectionProps) {
+export default function ShelfSection(
+  { section, configs, products }: ShelfSectionProps,
+) {
   const id = useId();
   const hasProducts = !!products
     ?.length;

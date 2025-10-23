@@ -67,47 +67,47 @@ export interface Button {
    * @title Border width
    */
   "--border-btn":
-  | "1px"
-  | "2px"
-  | "3px"
-  | "4px"
-  | "5px"
-  | "6px"
-  | "7px"
-  | "8px";
+    | "1px"
+    | "2px"
+    | "3px"
+    | "4px"
+    | "5px"
+    | "6px"
+    | "7px"
+    | "8px";
   /**
    * @default 0.2rem
    * @title Radius
    * @description Button and similar elements
    */
   "--rounded-btn":
-  | "0"
-  | "0.2rem"
-  | "0.4rem"
-  | "0.8rem"
-  | "2rem";
+    | "0"
+    | "0.2rem"
+    | "0.4rem"
+    | "0.8rem"
+    | "2rem";
   /**
    * @default 0.95
    * @title Scale on click
    */
   "--btn-focus-scale":
-  | "0.9"
-  | "0.95"
-  | "1"
-  | "1.05"
-  | "1.1";
+    | "0.9"
+    | "0.95"
+    | "1"
+    | "1.05"
+    | "1.1";
   /**
    * @default 0.25s
    * @title Animation
    * @description Duration when you click
    */
   "--animation-btn":
-  | "0.1s"
-  | "0.15s"
-  | "0.2s"
-  | "0.25s"
-  | "0.3s"
-  | "0.35s";
+    | "0.1s"
+    | "0.15s"
+    | "0.2s"
+    | "0.25s"
+    | "0.3s"
+    | "0.35s";
 }
 
 export interface Miscellaneous {
@@ -173,7 +173,7 @@ const darken = (
 
 const isDark = (c: Color) =>
   c.contrast("black", "WCAG21") <
-  c.contrast("white", "WCAG21");
+    c.contrast("white", "WCAG21");
 
 const contrasted = (
   color: string,
@@ -483,9 +483,10 @@ const ButtonSizesPreview = () => {
         [sizeCode, sizeText],
       ) => (
         <button
-          type='button'
-          className={`btn capitalize btn-${sizeCode} ${style ? `btn-${style}` : ""
-            }`}
+          type="button"
+          className={`btn capitalize btn-${sizeCode} ${
+            style ? `btn-${style}` : ""
+          }`}
         >
           {sizeText}
         </button>
@@ -531,9 +532,10 @@ const ButtonColorsPreview = () => {
         { class: colorClass, label },
       ) => (
         <button
-          type='button'
-          className={`btn btn-xs md:btn-sm capitalize ${colorClass} ${type} ${type === "btn-ghost" ? "text-[initial]" : ""
-            }`}
+          type="button"
+          className={`btn btn-xs md:btn-sm capitalize ${colorClass} ${type} ${
+            type === "btn-ghost" ? "text-[initial]" : ""
+          }`}
         >
           {label}
         </button>
@@ -569,7 +571,7 @@ const ButtonStylesPreview = () => {
     <div className="bg-base-100 overflow-x-auto rounded-lg flex flex-row p-2 gap-2">
       {buttons.map((button) => (
         <button
-          type='button'
+          type="button"
           className={`btn btn-xs md:btn-sm capitalize ${button.class}`}
         >
           {button.label}
@@ -620,12 +622,14 @@ const PreviewContainer = ({
   const btnOutlineClass = mode === "dark"
     ? "btn-outline-dark"
     : "btn-outline-light";
-  const checkboxId = `show-code-${title.replace(/\s+/g, "-")
-    .toLowerCase()
-    }`;
-  const codeBlockId = `code-block-${title.replace(/\s+/g, "-")
-    .toLowerCase()
-    }`;
+  const checkboxId = `show-code-${
+    title.replace(/\s+/g, "-")
+      .toLowerCase()
+  }`;
+  const codeBlockId = `code-block-${
+    title.replace(/\s+/g, "-")
+      .toLowerCase()
+  }`;
 
   const dynamicStyle = `
     #${codeBlockId} {
@@ -641,14 +645,16 @@ const PreviewContainer = ({
       display: none;
     }
     #${checkboxId}:checked ~ .hide-label {
-      background-color: ${mode === "dark"
+      background-color: ${
+    mode === "dark"
       ? "var(--admin-hover-bg-color)"
       : "var(--admin-text-color-light)"
-    };
-      color: ${mode === "dark"
+  };
+      color: ${
+    mode === "dark"
       ? "var(--admin-text-color-light)"
       : "var(--admin-hover-bg-color)"
-    };
+  };
     }
   `;
 
@@ -682,8 +688,9 @@ const PreviewContainer = ({
             </label>
             <div
               id={codeBlockId}
-              className={`mt-4 mb-2 text-xs md:text-sm ${mode === "dark" ? "bg-slate-800" : "bg-slate-100"
-                }`}
+              className={`mt-4 mb-2 text-xs md:text-sm ${
+                mode === "dark" ? "bg-slate-800" : "bg-slate-100"
+              }`}
             >
               <pre className="p-4 overflow-x-auto">{codeString}</pre>
             </div>

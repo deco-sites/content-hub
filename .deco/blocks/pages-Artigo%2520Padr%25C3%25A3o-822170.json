@@ -18,8 +18,10 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "title": "Artigos Relacionados",
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade."
+          "title": "<h2>Artigos Relacionados</h2>",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade.",
+          "children": null,
+          "centralizeTitleAndSubtitle": true
         },
         "articles": [
           {
@@ -574,6 +576,6 @@
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
   "__resolveType": "website/pages/Page.tsx",
-  "name": "Artigos Padrão",
-  "path": "/default-article-"
+  "name": "Artigos Padrão V4",
+  "path": "/default-article-v4"
 }

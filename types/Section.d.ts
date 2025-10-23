@@ -3,6 +3,13 @@ import { JSX } from "preact";
 
 export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   /**
+   * @title Id da Seção
+   * @description Para utilizar, é necessário importar "import { useId } from "site/sdk/useId.ts";" quando for criar uma nova section.
+   * @hide
+   */
+  id: string;
+
+  /**
    * @title Título da Seção
    * @description Texto principal da seção.
    */
@@ -13,6 +20,19 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
    * @description Texto secundário da seção.
    */
   subtitle?: string;
+
+  /**
+   * @title Centralizar título e subtítulo?
+   * @default false
+   */
+  centralizeTitleAndSubtitle?: boolean;
+
+  /**
+   * @title Utilizar margens laterais maiores para título e subtítulo?
+   * @description Ideal para seções de texto (TextSection) e de imagem (ImageCollectionGridSection) em artigos. Esta opção só faz diferença em visualização desktop.
+   * @default false
+   */
+  articlePaddingForTitleAndSubtitle?: boolean;
 
   /**
    * @title Mobile - Margem Superior.

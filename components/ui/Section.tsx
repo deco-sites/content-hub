@@ -2,10 +2,6 @@ import { Text } from "@eluxlab/library-components";
 import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
 
-interface SectionProps extends ISection {
-  id: string;
-}
-
 export default function Section({
   id,
   children,
@@ -17,23 +13,23 @@ export default function Section({
   marginTopDesktop = 0,
   classesContainer,
   fullWidth = false,
-}: SectionProps) {
+  centralizeTitleAndSubtitle = false,
+  articlePaddingForTitleAndSubtitle = false,
+}: ISection) {
   return (
     <>
       <div
         id={`section-${id}`}
-        class={`section-container flex flex-col justify-center items-center w-full ${
-          classesContainer ?? ""
-        } ${!fullWidth ? "container" : ""}`}
+        class={`section-container flex flex-col justify-center items-center w-full ${classesContainer ?? ""} ${!fullWidth && "container"}`}
       >
         {!isEmptyText(title) && (
           <Text
             title={title}
             classes={{
               container:
-                `section-title mt-[24px] text-left normal-case font-semibold text-[#041E50] w-full lg:max-w-[800px] ${
-                  isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"
-                }`,
+                `section-title mt-[24px] normal-case font-semibold text-[#041E50] w-full ${centralizeTitleAndSubtitle ? "text-center" : "text-left"
+                } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"} ${isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"}
+                `,
             }}
           />
         )}
@@ -42,16 +38,15 @@ export default function Section({
             title={subtitle}
             classes={{
               container:
-                "section-subtitle mb-[16px] lg:mb-[24px] text-left normal-case font-normal text-[#041E50] w-full lg:max-w-[800px]",
+                `section-subtitle mb-[16px] lg:mb-[24px] normal-case font-normal text-[#041E50] w-full ${centralizeTitleAndSubtitle ? "text-center" : "text-left"
+                } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"}`,
             }}
           />
         )}
         {children
           ? (
             <div
-              class={`${
-                fullWidth ? "w-full" : "section-children-container"
-              }  flex flex-col items-center justify-center`}
+              class={`w-full flex flex-col items-center justify-center`}
             >
               {children}
             </div>
@@ -110,7 +105,7 @@ export default function Section({
               margin-bottom: ${marginBottomDesktop}px;
             }
 
-            .section-children-container {
+            .section-children {
               width: 1000px;
             }
 
@@ -134,25 +129,25 @@ export default function Section({
           }
 
           @media screen and (min-width: 1280px) {
-            .section-children-container {
+            .section-children {
               width: 1200px;
             }
           }
 
           @media screen and (min-width: 1366px) {
-            .section-children-container {
+            .section-children {
               width: 1286px;
             }
           }
 
           @media screen and (min-width: 1440px) {
-            .section-children-container {
+            .section-children {
               width: 1360px;
             }
           }
 
           @media screen and (min-width: 1920px) {
-            .section-children-container {
+            .section-children {
               width: 1600px;
             }
           }

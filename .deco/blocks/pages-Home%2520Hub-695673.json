@@ -570,7 +570,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/FoldItemsSection.tsx",
         "section": {
-          "title": "Nossos Serviços",
+          "title": "<h2>Nossos Serviços</h2>",
           "subtitle": "Conheça mais sobre nossos serviços",
           "fullWidth": false,
           "children": null

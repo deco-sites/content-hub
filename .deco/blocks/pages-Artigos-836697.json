@@ -108,11 +108,13 @@
         "articles": [
           {
             "image": {
-              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+              "alt": "Teste microondas"
             },
-            "title": "Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "cta": "Saiba mais"
+            "title": "Entrega com <br /> carbono neutro 2",
+            "description": "5 Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
+            "cta": "Saiba mais",
+            "href": "/eletrodomesticos/micro-ondas/micro-ondas-20-litros"
           },
           {
             "image": {

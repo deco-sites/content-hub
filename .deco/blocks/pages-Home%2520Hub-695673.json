@@ -581,8 +581,8 @@
             "image": {
               "link": {
                 "title": "Retirada & Coleta",
-                "href": "/black-friday-electrolux/geladeira",
-                "target": "blank"
+                "target": "blank",
+                "href": "https://loja.electrolux.com.br/"
               },
               "loadingOptions": {
                 "loading": "eager",

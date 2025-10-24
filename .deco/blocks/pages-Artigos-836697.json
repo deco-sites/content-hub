@@ -89,7 +89,8 @@
           },
           {
             "label": "Receitas",
-            "href": "/inspira/blog/slug-do-post"
+            "href": "/eletrodomesticos/geladeiras---refrigeradores",
+            "active": true
           },
           {
             "label": "Dicas",

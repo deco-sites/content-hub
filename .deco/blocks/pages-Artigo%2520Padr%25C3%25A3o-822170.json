@@ -1,6 +1,6 @@
 {
   "sections": [
-        {
+    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
@@ -227,7 +227,8 @@
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "title": "Artigos Relacionados",
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade."
+          "children": null,
+          "fullWidth": false
         },
         "articles": [
           {
@@ -790,7 +791,6 @@
         "text": "Black Friday 2025\n\nA Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis da Electrolux!\n\n\n\n"
       }
     }
-
   ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"

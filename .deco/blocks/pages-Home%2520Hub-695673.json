@@ -2,7 +2,7 @@
   "name": "Home Hub",
   "path": "/content-hub-home-hub",
   "sections": [
-        {
+    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
@@ -570,9 +570,10 @@
       "section": {
         "__resolveType": "site/sections/Lps/FoldItemsSection.tsx",
         "section": {
-          "title": "Nossos Serviços",
+          "title": "<h2>Nossos Serviços</h2>",
           "subtitle": "Conheça mais sobre nossos serviços",
-          "fullWidth": false
+          "fullWidth": false,
+          "children": null
         },
         "foldItems": [
           {
@@ -580,11 +581,11 @@
             "image": {
               "link": {
                 "title": "Retirada & Coleta",
-                "href": "/#",
-                "target": "blank"
+                "target": "blank",
+                "href": "https://loja.electrolux.com.br/"
               },
               "loadingOptions": {
-                "loading": "lazy",
+                "loading": "eager",
                 "fetchPriority": "high"
               },
               "src": {
@@ -839,7 +840,8 @@
         "section": {
           "title": "<h1>Sua casa bem vivida</h1>",
           "subtitle": "lorem ipsum dolor sit amet",
-          "fullWidth": false
+          "fullWidth": false,
+          "children": null
         },
         "data": [
           {
@@ -999,7 +1001,8 @@
         ],
         "section": {
           "title": "Explore por assunto",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "children": null
         }
       }
     },
@@ -1080,7 +1083,10 @@
             "href": "/#"
           }
         ],
-        "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."
+        "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux.",
+        "section": {
+          "children": null
+        }
       }
     },
     {
@@ -1104,7 +1110,6 @@
         "text": "Quando é a Black Friday 2025: ofertas imperdíveis | Electrolux "
       }
     }
-
   ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"

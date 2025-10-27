@@ -117,7 +117,9 @@ export default function CustomInfoCardSlider({
   ]);
 
   const prev = () =>
-    setPage((p: number) => (p > 0 ? p - 1 : (configs?.loop ? totalPages - 1 : 0)));
+    setPage((
+      p: number,
+    ) => (p > 0 ? p - 1 : (configs?.loop ? totalPages - 1 : 0)));
 
   const next = () =>
     setPage((p: number) => {
@@ -194,10 +196,11 @@ export default function CustomInfoCardSlider({
                 >
                   {/* 50/50 em lg */}
                   <div
-                    class={`flex w-full h-full items-center justify-between ${card.direction === "left"
-                      ? "lg:flex-row"
-                      : "lg:flex-row-reverse"
-                      } flex-col`}
+                    class={`flex w-full h-full items-center justify-between ${
+                      card.direction === "left"
+                        ? "lg:flex-row"
+                        : "lg:flex-row-reverse"
+                    } flex-col`}
                   >
                     {/* Mídia */}
                     <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
@@ -213,15 +216,15 @@ export default function CustomInfoCardSlider({
                           />
                         )
                         : imgSrc
-                          ? (
-                            <img
-                              src={imgSrc}
-                              alt={imgAlt}
-                              class="w-full h-full object-cover"
-                              loading={configs?.lazy ? "lazy" : "eager"}
-                            />
-                          )
-                          : <div class="w-full h-full bg-gray-200" />}
+                        ? (
+                          <img
+                            src={imgSrc}
+                            alt={imgAlt}
+                            class="w-full h-full object-cover"
+                            loading={configs?.lazy ? "lazy" : "eager"}
+                          />
+                        )
+                        : <div class="w-full h-full bg-gray-200" />}
                     </div>
 
                     {/* Texto */}
@@ -233,17 +236,15 @@ export default function CustomInfoCardSlider({
                       }}
                     >
                       {card.title && (
-                        <h2
-                          class="mb-4 font-bold text-[#041E50] text-[20px] lg:text-[26px]"
-                        >
-                          {card.title}</h2>
+                        <h2 class="mb-4 font-bold text-[#041E50] text-[20px] lg:text-[26px]">
+                          {card.title}
+                        </h2>
                       )}
 
                       {card.description && (
-                        <p
-                          class="font-normal text-[#2B2936] text-[14px] lg:text-[16px]"
-                        >
-                          {card.description}</p>
+                        <p class="font-normal text-[#2B2936] text-[14px] lg:text-[16px]">
+                          {card.description}
+                        </p>
                       )}
 
                       {card.link?.href && (
@@ -272,10 +273,11 @@ export default function CustomInfoCardSlider({
               key={i}
               type="button"
               aria-label={`Ir para página ${i + 1}`}
-              class={`w-2.5 h-2.5 rounded-full border ${i === page
-                ? "bg-gray-800 border-gray-800"
-                : "bg-transparent border-gray-400"
-                }`}
+              class={`w-2.5 h-2.5 rounded-full border ${
+                i === page
+                  ? "bg-gray-800 border-gray-800"
+                  : "bg-transparent border-gray-400"
+              }`}
               onClick={() => setPage(i)}
             />
           ))}

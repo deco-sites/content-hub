@@ -10,9 +10,9 @@ export interface BreadcrumbIslandProps {
   separator: SeparatorKind;
   customSeparator: string;
   uppercase: boolean;
-  textColor: string;        // itens não selecionados
-  currentColor: string;     // item atual
-  separatorColor: string;   // separador (setinha)
+  textColor: string; // itens não selecionados
+  currentColor: string; // item atual
+  separatorColor: string; // separador (setinha)
   textSize: string;
   fontFamilyClass: string;
   containerClass: string;
@@ -21,16 +21,33 @@ export interface BreadcrumbIslandProps {
   pathOverride?: string;
 }
 
-interface Crumb { label: string; href?: string; }
+interface Crumb {
+  label: string;
+  href?: string;
+}
 const pathSig = signal<string>("");
 
 const Chevron = () => (
-  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" class="inline-block align-middle shrink-0">
-    <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" />
+  <svg
+    aria-hidden="true"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    class="inline-block align-middle shrink-0"
+  >
+    <path
+      d="M9 18l6-6-6-6"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+    />
   </svg>
 );
 const Dot = () => (
-  <span aria-hidden="true" class="inline-block align-middle w-[4px] h-[4px] rounded-full bg-current shrink-0" />
+  <span
+    aria-hidden="true"
+    class="inline-block align-middle w-[4px] h-[4px] rounded-full bg-current shrink-0"
+  />
 );
 
 function prettifySlug(slug: string) {
@@ -42,14 +59,22 @@ function prettifySlug(slug: string) {
 }
 
 function Separator(
-  { kind, custom, className }: { kind: SeparatorKind; custom?: string; className?: string },
+  { kind, custom, className }: {
+    kind: SeparatorKind;
+    custom?: string;
+    className?: string;
+  },
 ) {
   return (
     <span class={className}>
       {kind === "chevron" && <Chevron />}
-      {kind === "slash" && <span aria-hidden="true" class="align-middle">/</span>}
+      {kind === "slash" && (
+        <span aria-hidden="true" class="align-middle">/</span>
+      )}
       {kind === "dot" && <Dot />}
-      {kind === "custom" && <span aria-hidden="true" class="align-middle">{custom || ">"}</span>}
+      {kind === "custom" && (
+        <span aria-hidden="true" class="align-middle">{custom || ">"}</span>
+      )}
     </span>
   );
 }
@@ -111,7 +136,7 @@ export default function BreadcrumbIsland(props: BreadcrumbIslandProps) {
               "flex-nowrap md:flex-wrap",
               "whitespace-nowrap md:whitespace-normal",
               props.fontFamilyClass,
-              "font-normal",           // 400 itens não selecionados
+              "font-normal", // 400 itens não selecionados
               "leading-[140%]",
               props.textSize,
               props.textColor,
@@ -127,33 +152,38 @@ export default function BreadcrumbIsland(props: BreadcrumbIslandProps) {
                   key={`${crumb.label}-${idx}`}
                   class="flex items-center gap-2 flex-none"
                 >
-                  {isLast || !crumb.href ? (
-                    <span
-                      class={[
-                        "inline-flex items-center align-middle",
-                        "font-semibold",
-                        "flex-none",
-                        props.currentColor,
+                  {isLast || !crumb.href
+                    ? (
+                      <span
+                        class={[
+                          "inline-flex items-center align-middle",
+                          "font-semibold",
+                          "flex-none",
+                          props.currentColor,
                         ].join(" ")}
-                      aria-current="page"
-                      title={crumb.label}
-                    >
-                      {crumb.label}
-                    </span>
-                  ) : (
-                    <a
-                      href={crumb.href}
-                      class="inline-flex items-center align-middle hover:underline flex-none"
-                      title={crumb.label}
-                    >
-                      {crumb.label}
-                    </a>
-                  )}
+                        aria-current="page"
+                        title={crumb.label}
+                      >
+                        {crumb.label}
+                      </span>
+                    )
+                    : (
+                      <a
+                        href={crumb.href}
+                        class="inline-flex items-center align-middle hover:underline flex-none"
+                        title={crumb.label}
+                      >
+                        {crumb.label}
+                      </a>
+                    )}
                   {!isLast && (
                     <Separator
                       kind={props.separator}
                       custom={props.customSeparator}
-                      className={["mx-1 inline-flex items-center align-middle", props.separatorColor].join(" ")}
+                      className={[
+                        "mx-1 inline-flex items-center align-middle",
+                        props.separatorColor,
+                      ].join(" ")}
                     />
                   )}
                 </li>
@@ -164,7 +194,10 @@ export default function BreadcrumbIsland(props: BreadcrumbIslandProps) {
       </div>
 
       {/* deno-lint-ignore react-no-danger */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* esconder scrollbar apenas no mobile */}
       <style>

@@ -4,33 +4,70 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
-        "pathOverride": "/Artigo-Padrao"
+        "pathOverride": "/Artigo-Padrao",
+        "section": {
+          "children": null
+        },
+        "stripPrefixes": ["Artigos Padrão"]
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
-          "fullWidth": true,
-          "title": "Galeria",
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
+          "title": "<h1>Escolha a máquina de café certa: cafeteira ou máquina de café expresso?</h1>",
+          "children": null,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
+          "marginBottomDesktop": 40
         },
-        "banners": [
+        "imageCollection": [
           {
             "link": {
               "target": "blank",
-              "title": "Cook-top Indução",
-              "href": "/#"
+              "href": "/#",
+              "title": "Fogão por indução"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
             },
-            "alt": "Cook-top Indução",
+            "alt": "Fogão por indução",
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/f6ffddcf-a583-484c-9aea-b620f205251b/cooktop-inducao-banner-v2.png",
-              "mobile": "https://assets.decocache.com/content-hub/d6ff837f-2223-4d87-90cb-835f1468ad3e/cooktop-inducao-banner.png"
+              "desktop": "https://assets.decocache.com/content-hub/5b7734e2-7a61-4216-b4a7-b2c64bd99233/image-figma-teste.jpg",
+              "mobile": "https://assets.decocache.com/content-hub/5b7734e2-7a61-4216-b4a7-b2c64bd99233/image-figma-teste.jpg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "title": "<h1>Escolha a máquina de café certa: cafeteira ou máquina de café expresso?</h1>",
+          "children": null,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
+          "marginBottomDesktop": 40
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Fogão por indução"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "alt": "Fogão por indução",
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/5b7734e2-7a61-4216-b4a7-b2c64bd99233/image-figma-teste.jpg",
+              "mobile": "https://assets.decocache.com/content-hub/5b7734e2-7a61-4216-b4a7-b2c64bd99233/image-figma-teste.jpg"
             }
           }
         ]
@@ -41,23 +78,27 @@
       "section": {
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
-          "fullWidth": false,
-          "subtitle": "<h2>Descubra qual a geladeira ideal de acordo com as suas necessidades, conheça os principais modelos e saiba como comprar nesta Black Friday </h2>",
-          "title": "<h2>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h2>"
+          "children": null,
+          "title": "<h2>Galeria</h2>",
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40
         },
-        "paragraphCollection": [
-          "este é um paragrafo",
-          "este é outro",
-          "e esse auqi é um terceiro"
-        ],
-        "text": "<h1>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h1> \nA Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux. \n\nEsses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções da Black Friday, como escolher e os modelos mais indicados para cada tipo de família.  <br>\n\n<h2>Qual a melhor geladeira Electrolux na Black Friday </h2>\n<h2Depende das suas necessidades e estilo de vida da sua família. A melhor geladeira é aquela que combina capacidade, eficiência, recursos tecnológicos e praticidade de acordo com a rotina da sua casa. Veja os principais critérios que ajudam na escolha:</h2>\n\n<h3>Capacidade em litros x tamanho da família</h3> <br\n<h3>O tamanho da geladeira deve estar de acordo com a quantidade de pessoas na casa. Para solteiros e casais, modelos a partir de 300 litros são suficientes, garantindo espaço para o essencial sem ocupar muito da cozinha.</h3> <br> <br>\n\n<h3>Já famílias médias se beneficiam de modelos que oferecem mais de 400 litros e elevam a organização no dia a dia. Para famílias maiores, as versões Side by Side, 3 ou 4 portas, que ultrapassam 500 litros, oferecem amplo espaço interno e compartimentos inteligentes.</h3> <br>\n\n<h3>Essa escolha assegura mais praticidade no armazenamento e conforto no dia a dia. Além de mais liberdade para organizar alimentos e bebidas e manter tudo ao alcance de forma simples.</h3> <br>\n\n<h3>Eficiência energética e economia na conta de luz</h3> <br>\nUm dos grandes diferenciais das geladeiras Electrolux é a eficiência energética. Modelos com Selo Procel A e tecnologia Inverter garantem consumo reduzido de energia sem comprometer a performance.</h3>  <br>\n\n<h3>Isso significa mais economia na conta de luz e maior durabilidade do motor, já que ele funciona de forma inteligente, ajustando a potência conforme a necessidade de resfriamento.</h3> <br>\n\n<h3>Tecnologias de conservação de alimentos</h3> <br>\n\n<h3>As geladeiras Electrolux são desenvolvidas para preservar frescor e sabor por muito mais tempo. Recursos como inteligência artificial, gavetas com controle de umidade, prateleiras ajustáveis, compartimentos especiais para frutas, verduras e bebidas, além de sistemas de resfriamento uniforme, tornam a experiência mais prática e eficiente.</h3>\n\n<h3>Isso significa menos desperdício de alimentos, refeições frescas e uma rotina mais organizada. Essa tecnologia de ponta é ideal para quem preza pela qualidade de vida e quer assegurar que os alimentos estejam sempre prontos para consumo. </h3> <br>\n\n<h3>Praticidade no dia a dia</h3> <br>\n\n<h3>O design inteligente da Electrolux pensa em cada detalhe para facilitar sua rotina. Painéis de controle externos, dispenser de água e gelo, portas reversíveis e gavetas organizadoras são alguns dos recursos que tornam o uso da geladeira mais confortável e dinâmico. </h3>\n\n<h3>Essas funções contribuem para um lar mais funcional e moderno, onde cada recurso existe para simplificar a sua vida.</h3> <br>\n\n<h3>Preço e custo-benefício nas promoções da Black Friday</h3> <br>\n\n<h3>Black Friday é o momento ideal para investir em uma nova geladeira Electrolux. Durante as promoções, é possível encontrar modelos premium com tecnologia avançada com condições exclusivas.</h3> \n\n<h3>O mais importante é analisar as necessidades da sua família e investir em um modelo que ofereça o equilíbrio perfeito entre preço, funcionalidade e inovação. </h3> <br>\n\n<h2>Principais modelos de geladeiras Electrolux </h2> <br>\n\n<h2>Confira os principais modelos disponíveis na Black Friday da Electrolux! <h2> <br>\n\n  \n"
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat risus ac metus vehicula commodo. In hac habitasse platea dictumst. Nunc placerat condimentum purus, id imperdiet leo posuere eu. Sed imperdiet purus eu risus varius aliquet. Quisque commodo tempus condimentum. Integer nec ex ut erat rhoncus maximus. Maecenas vel ultrices libero. Mauris imperdiet, turpis et tincidunt placerat, arcu mi ornare arcu, eget tincidunt augue lectus sit amet nulla. Quisque rhoncus ut odio in consequat. Vivamus eget nibh a augue euismod vehicula in a est. Vestibulum quis laoreet urna, et varius ipsum.\nPhasellus luctus efficitur congue. Praesent quis blandit nulla. Nunc nulla lectus, sollicitudin a odio sit amet, feugiat scelerisque quam. Curabitur viverra tortor eget eleifend tempus. Etiam congue eleifend lobortis. Nulla maximus imperdiet quam, vel elementum elit cursus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec auctor sapien sit amet augue accumsan, at scelerisque augue pharetra. Etiam sit amet neque quis erat mollis tempor ac eget nulla. Vivamus porta tellus in venenatis dignissim. Praesent congue enim at neque varius auctor. Donec molestie venenatis nisl vel facilisis.</p><br />\n<p>Phasellus luctus efficitur congue. Praesent quis blandit nulla. Nunc nulla lectus, sollicitudin a odio sit amet, feugiat scelerisque quam. Curabitur viverra tortor eget eleifend tempus. Etiam congue eleifend lobortis. Nulla maximus imperdiet quam, vel elementum elit cursus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec auctor sapien sit amet augue accumsan, at scelerisque augue pharetra. Etiam sit amet neque quis erat mollis tempor ac eget nulla. Vivamus porta tellus in venenatis dignissim. Praesent congue enim at neque varius auctor. Donec molestie venenatis nisl vel facilisis.</p>"
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
-        "section": {},
+        "section": {
+          "children": null,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40
+        },
         "imageCollection": [
           {
             "link": {
@@ -70,8 +111,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
-              "mobile": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png"
+              "desktop": "https://assets.decocache.com/content-hub/e5fe6232-1618-4f04-b34f-564b3862fa05/alecrim.png",
+              "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
             },
             "alt": "Alecrim"
           }
@@ -83,16 +124,27 @@
       "section": {
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
-          "title": "Qual a melhor geladeira Electrolux para comprar na Black Friday?"
+          "children": null,
+          "title": "<h2>Galeria</h2>",
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40
         },
-        "text": "Quando é a Black Friday? \n\nA Black Friday ocorre tradicionalmente na última sexta-feira de novembro que, neste ano, é dia 28 do mês. Porém, antes mesmo de a data chegar, você pode conferir os produtos que deseja comprar para começar a acompanhar os preços! "
+        "text": "<ul>\n<li>Verifique a compatibilidade: procure pelo símbolo de indução no fundo da panela ou confirme se um ímã gruda na base;</li>\n<li>Prefira materiais de qualidade: dê preferência por panela aço inox para fogão de indução ou ferro fundido, que oferecem melhor desempenho e durabilidade. Também podem ser panelas de cerâmica contanto que a base seja magnética, pois bases de alumínio não funcionam;</li>\n<li>Invista em um jogo de panelas: um jogo de panela para fogão de indução com diferentes tamanhos e formatos é o indicado para atender a todas as suas necessidades na cozinha;</li><li>Considere o design e a agilidade: panelas com alças ergonômicas e tampas bem vedadas facilitam o manuseio e o cozimento.</li>\n<li>Verifique a compatibilidade: procure pelo símbolo de indução no fundo da panela ou confirme se um ímã gruda na base;</li>\n<li>Prefira materiais de qualidade: dê preferência por panela aço inox para fogão de indução ou ferro fundido, que oferecem melhor desempenho e durabilidade. Também podem ser panelas de cerâmica contanto que a base seja magnética, pois bases de alumínio não funcionam;</li>\n<li>Invista em um jogo de panelas: um jogo de panela para fogão de indução com diferentes tamanhos e formatos é o indicado para atender a todas as suas necessidades na cozinha;</li>\n<li>Considere o design e a agilidade: panelas com alças ergonômicas e tampas bem vedadas facilitam o manuseio e o cozimento.</li>\n</ul>"
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
-        "section": {},
+        "section": {
+          "children": null,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
+        },
         "imageCollection": [
           {
             "link": {
@@ -113,18 +165,18 @@
           {
             "link": {
               "target": "blank",
-              "href": "/#",
-              "title": "Lava-louças"
+              "title": "Forno",
+              "href": "/#"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
             },
+            "alt": "Forno",
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/1d40424e-7a65-4938-8a88-774383d1677d/MultiBanner2-desktop.png",
+              "desktop": "https://assets.decocache.com/content-hub/6edd1068-ecdc-4edf-851d-63a1274a2776/MultiBanner2.png",
               "mobile": "https://assets.decocache.com/content-hub/04741de6-00de-4e78-b89c-dbb39bccae44/MultiBanner2-mobile.png"
-            },
-            "alt": "Lava-louças"
+            }
           }
         ]
       }
@@ -134,22 +186,33 @@
       "section": {
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
-          "title": "Galeria"
+          "title": "<h2>Galeria</h2>",
+          "children": null,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
         },
-        "text": "  "
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat risus ac metus vehicula commodo. In hac habitasse platea dictumst. Nunc placerat condimentum purus, id imperdiet leo posuere eu. Sed imperdiet purus eu risus varius aliquet. Quisque commodo tempus condimentum. Integer nec ex ut erat rhoncus maximus. Maecenas vel ultrices libero. Mauris imperdiet, turpis et tincidunt placerat, arcu mi ornare arcu, eget tincidunt augue lectus sit amet nulla. Quisque rhoncus ut odio in consequat. Vivamus eget nibh a augue euismod vehicula in a est. Vestibulum quis laoreet urna, et varius ipsum.\nPhasellus luctus efficitur congue. Praesent quis blandit nulla. Nunc nulla lectus, sollicitudin a odio sit amet, feugiat scelerisque quam. Curabitur viverra tortor eget eleifend tempus. Etiam congue eleifend lobortis. Nulla maximus imperdiet quam, vel elementum elit cursus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec auctor sapien sit amet augue accumsan, at scelerisque augue pharetra. Etiam sit amet neque quis erat mollis tempor ac eget nulla. Vivamus porta tellus in venenatis dignissim. Praesent congue enim at neque varius auctor. Donec molestie venenatis nisl vel facilisis.</p><br />\n<p>Phasellus luctus efficitur congue. Praesent quis blandit nulla. Nunc nulla lectus, sollicitudin a odio sit amet, feugiat scelerisque quam. Curabitur viverra tortor eget eleifend tempus. Etiam congue eleifend lobortis. Nulla maximus imperdiet quam, vel elementum elit cursus in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec auctor sapien sit amet augue accumsan, at scelerisque augue pharetra. Etiam sit amet neque quis erat mollis tempor ac eget nulla. Vivamus porta tellus in venenatis dignissim. Praesent congue enim at neque varius auctor. Donec molestie venenatis nisl vel facilisis.</p>"
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
-        "section": {},
+        "section": {
+          "children": null,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
+        },
         "imageCollection": [
           {
             "link": {
               "target": "blank",
               "href": "/#",
-              "title": "Air-fryer"
+              "title": "Airfryer"
             },
             "loadingOptions": {
               "loading": "lazy",
@@ -159,7 +222,7 @@
               "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
               "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
             },
-            "alt": "Air-fryer"
+            "alt": "Airfryer"
           }
         ]
       }
@@ -169,56 +232,56 @@
       "section": {
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
-          "title": "Galeria"
+          "title": "<h2>Galeria</h2>",
+          "children": null,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
         },
-        "text": "O que é a Black Friday? \n\nA Black Friday é marcada por um dia inteiro de promoções para que você possa comprar os produtos que deseja pelos melhores preços e condições. Na Electrolux, por exemplo, você encontra eletrodomésticos, eletroportáteis e utensílios de cozinha com ofertas imperdíveis!"
+        "text": "<p>Se você está em dúvida sobre qual panela escolher, é importante conhecer os materiais mais indicados. A seguir, confira as opções que melhor se adaptam ao seu eletrodoméstico de indução:</p><br />\n<h3>1. Panela de aço inox para cooktop de indução</h3><br />\n<p>As panelas de aço inox são uma das melhores opções. Elas são duráveis, resistentes à corrosão e fáceis de limpar. Além disso, o aço inox distribui o calor de forma uniforme, ajudando para que os seus alimentos sejam cozidos de maneira perfeita.\n</p><br />\n<h3>2. Panela de ferro fundido</h3><br />\n<p>O ferro fundido é outro material altamente compatível com fogões de indução. Essas panelas são conhecidas por sua capacidade de reter calor por mais tempo, sendo indicadas para preparações que exigem cozimento lento, como ensopados e grelhados.\n</p><br />\n<h3>3. Panelas com base magnética</h3><br />\n<p>Se você já possui panelas de alumínio ou cerâmica, é possível adaptá-las ao fogão de indução desde que tenham uma base magnética. Essa camada adicional permite que o campo magnético do fogão aqueça a panela corretamente.</p><br />\n"
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "__resolveType": "site/sections/Product/ShelfSection.tsx",
         "section": {
-          "fullWidth": true
-        },
-        "text": "<h2 style=\"text-align: center\">O melhor da tecnologia <br>Electrolux</h2><p style=\"text-align: center\">com a máxima eficiência Ecoplus<br></p>",
-        "configs": {
-          "customNavigation": {
-            "enabledDesktop": true
-          },
-          "customPagination": {
-            "enabledDesktop": true,
-            "dynamicBullets": true
-          }
+          "title": "<h2>Produtos Relacionados</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
             "collection": "2140",
+            "simulationBehavior": "default",
             "count": 10
           }
         },
-        "reverse": true,
-        "background": {
-          "srcDesktop": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png",
-          "srcMobile": "https://data.decoassets.com/content-hub/0fa2b7c7-fcc2-47f9-8ee0-6d95bd19b695/shelfimage.png"
-        },
-        "link": {
-          "text": "Conheça todos os produtos",
-          "href": "#",
-          "bgColor": "#6C7B67"
+        "configs": {
+          "customPagination": {
+            "enabledMobile": true,
+            "enabledDesktop": true,
+            "dynamicBullets": true,
+            "dynamicMainBullets": 3
+          },
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 3
+          },
+          "customNavigation": {
+            "enabledMobile": true,
+            "enabledDesktop": true
+          }
         }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/TextSection.tsx",
-        "section": {
-          "title": "Galeria"
-        },
-        "text": "Quais são as regras da Black Friday? \n\nAs marcas que oferecem descontos na Black Friday devem manter as ofertas sinalizadas e com informações claras sobre preços, formas de pagamento e prazos de entrega. Mesmo na compra de itens promocionais, o consumidor tem direito ao arrependimento, à troca ou à devolução do produto conforme prazo legal e à garantia. "
       }
     },
     {
@@ -226,9 +289,12 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "title": "Artigos Relacionados",
+          "title": "<h2>Artigos Relacionados</h2>",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade.",
           "children": null,
-          "fullWidth": false
+          "centralizeTitleAndSubtitle": true,
+          "marginTopDesktop": 40,
+          "marginBottomDesktop": 40
         },
         "articles": [
           {
@@ -777,25 +843,12 @@
           }
         ]
       }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/TextSection.tsx",
-        "section": {
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0,
-          "title": "Quando é a Black Friday 2025: ofertas imperdíveis | Electrolux",
-          "subtitle": "Quando é a Black Friday 2025, o que comprar e quais as principais dicas da data mais aguardada do ano. Aproveite os melhores preços na Electrolux!"
-        },
-        "text": "Black Friday 2025\n\nA Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis da Electrolux!\n\n\n\n"
-      }
     }
   ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
   "__resolveType": "website/pages/Page.tsx",
-  "name": "Artigos Padrão",
-  "path": "/content-hub-default-article"
+  "name": "Artigos Padrão V4",
+  "path": "/default-article-v4"
 }

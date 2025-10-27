@@ -36,22 +36,22 @@ export default function ImageCollectionGridSection(
           </div>
         )
         : imageCollection?.length === 2
-          ? (
-            <div class="w-full grid sm:grid-cols-1 lg:grid-cols-2 justify-center items-center gap-y-[8px] gap-x-[8px] lg:max-w-[800px]">
-              {imageCollection.map((image, index) => (
-                <ResponsiveImage src={image.src} key={index} />
-              ))}
-            </div>
-          )
-          : imageCollection?.length === 3
-            ? (
-              <div class="w-full grid sm:grid-cols-1 lg:grid-cols-3 justify-center items-center gap-y-[8px] gap-x-[8px] lg:max-w-[800px]">
-                {imageCollection.map((image, index) => (
-                  <ResponsiveImage src={image.src} key={index} />
-                ))}
-              </div>
-            )
-            : null}
+        ? (
+          <div class="w-full grid sm:grid-cols-1 lg:grid-cols-2 justify-center items-center gap-y-[8px] gap-x-[8px] lg:max-w-[800px]">
+            {imageCollection.map((image, index) => (
+              <ResponsiveImage src={image.src} key={index} />
+            ))}
+          </div>
+        )
+        : imageCollection?.length === 3
+        ? (
+          <div class="w-full grid sm:grid-cols-1 lg:grid-cols-3 justify-center items-center gap-y-[8px] gap-x-[8px] lg:max-w-[800px]">
+            {imageCollection.map((image, index) => (
+              <ResponsiveImage src={image.src} key={index} />
+            ))}
+          </div>
+        )
+        : null}
     </Section>
   );
 }

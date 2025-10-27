@@ -32,13 +32,20 @@ export default function BlogArticlesSliderSection({
   if (!slides.length) return null;
 
   return (
-    <Section {...section} id={id} classesContainer="blog-articles-slider-section">
+    <Section
+      {...section}
+      id={id}
+      classesContainer="blog-articles-slider-section"
+    >
       {/* Section espera 1 único filho */}
       <div>
         <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8">
           <h2
             class="mb-4 text-[24px] md:text-[36px] font-semibold tracking-[0] text-[#041E50]"
-            style={{ fontFamily: "Electrolux Sans, sans-serif", lineHeight: "100%" }}
+            style={{
+              fontFamily: "Electrolux Sans, sans-serif",
+              lineHeight: "100%",
+            }}
           >
             {heading}
           </h2>

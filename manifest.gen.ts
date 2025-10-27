@@ -38,7 +38,8 @@ import * as $$$$$$26 from "./sections/Product/ProductMediaSection.tsx";
 import * as $$$$$$27 from "./sections/Product/ProductMediaSideBySideSection.tsx";
 import * as $$$$$$28 from "./sections/Product/ProductShelfSection.tsx";
 import * as $$$$$$29 from "./sections/Product/ProductShelfWithComparatorSection.tsx";
-import * as $$$$$$30 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$30 from "./sections/Product/ShelfSection.tsx";
+import * as $$$$$$31 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -75,7 +76,8 @@ const manifest = {
     "site/sections/Product/ProductMediaSideBySideSection.tsx": $$$$$$27,
     "site/sections/Product/ProductShelfSection.tsx": $$$$$$28,
     "site/sections/Product/ProductShelfWithComparatorSection.tsx": $$$$$$29,
-    "site/sections/Theme/Theme.tsx": $$$$$$30,
+    "site/sections/Product/ShelfSection.tsx": $$$$$$30,
+    "site/sections/Theme/Theme.tsx": $$$$$$31,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

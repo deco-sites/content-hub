@@ -20,7 +20,7 @@ export default function InfoCard(
   const hasVideoOrImage = isVideo ||
     Boolean(
       typeOfContentImage?.srcDesktop &&
-      typeOfContentImage?.srcMobile,
+        typeOfContentImage?.srcMobile,
     );
 
   const linkComponent = (

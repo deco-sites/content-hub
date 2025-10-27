@@ -246,31 +246,6 @@
   }
 }
 
-/* Product Shelf Section */
-.product-shelf-section {
-  .product-shelf-section__text {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 24px;
-      margin: 0 0 16px;
-    }
-
-    p {
-      color: #dee7ea;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 14px;
-    }
-  }
-}
-
 /* Triple Banner Section */
 .triple-banner-section {
   .swiper-wrapper {
@@ -297,26 +272,6 @@
       h6 {
         font-size: 36px;
         max-width: unset;
-      }
-    }
-  }
-
-  /* Product Shelf Section */
-  .product-shelf-section {
-    .product-shelf-section__text {
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-size: 35px;
-        line-height: 44px;
-      }
-
-      p {
-        font-size: 20px;
-        line-height: 24px;
       }
     }
   }

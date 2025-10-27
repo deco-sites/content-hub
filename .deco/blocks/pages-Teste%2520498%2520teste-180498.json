@@ -7,6 +7,40 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h1>Frost Free ou Degelo Manual: Qual a melhor opção?</h1> "
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "children": null
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/e9d85b91-fc88-4e45-94a8-f957db8d5700/498-(1).webp",
+              "mobile": "https://assets.decocache.com/content-hub/f01706b4-5bc8-4831-af84-ba15d444ff29/498-MOBILE-(1).webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
           "children": null

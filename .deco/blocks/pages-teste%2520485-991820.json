@@ -7,7 +7,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "title": "<h1>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h1>"
         }
       }
     },
@@ -16,8 +17,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
-          "children": null,
-          "title": "<h1>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h1>"
+          "children": null
         },
         "imageCollection": [
           {
@@ -33,6 +33,15 @@
               "mobile": "https://assets.decocache.com/content-hub/3068b3ff-e8f6-47f0-9a32-1ce6ce8f5517/geladeira-electrolux-familia-teste-mobile.webp"
             },
             "alt": "familia na cozinha abrindo a porta de geladeira side by side electrolux"
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            }
           }
         ]
       }

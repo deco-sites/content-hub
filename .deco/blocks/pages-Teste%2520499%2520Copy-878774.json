@@ -5,6 +5,39 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "section": {
+          "children": null
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "children": null
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/aa3de8b9-8557-40ec-bebb-00c97c2165e4/499.webp",
+              "mobile": "https://assets.decocache.com/content-hub/dc5703c7-ce50-4093-9f04-ece481dd44e7/499-MOBILE.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
           "fullWidth": false,

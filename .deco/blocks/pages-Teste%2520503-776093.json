@@ -5,9 +5,19 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h1>Saiba como aproveitar as melhores ofertas da Electrolux na Black Friday</h1>"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
-          "title": "<h1>Saiba como aproveitar as melhores ofertas da Electrolux na Black Friday</h1>"
+          "children": null
         },
         "imageCollection": [
           {
@@ -17,6 +27,10 @@
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/0e18978c-a81d-487a-ac0c-030657e86ef0/503.webp",
+              "mobile": "https://assets.decocache.com/content-hub/161a8432-f5e0-46f8-91b3-330b6c68d81f/503-MOBILE.webp"
             }
           }
         ]

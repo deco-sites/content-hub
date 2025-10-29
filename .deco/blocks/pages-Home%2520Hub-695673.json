@@ -12,15 +12,66 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "title": "<h1></h1>",
+          "children": null
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/25c6b1c6-38c9-4d31-9f99-c3935c04e9d0/515.webp",
+              "mobile": "https://assets.decocache.com/content-hub/41ae8c7e-007e-417b-b866-62e0b9b542c8/515-MOBILE.webp"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/57a040b0-6d0f-40ee-a49e-4083ac4f1017/502.webp",
+              "mobile": "https://assets.decocache.com/content-hub/73b5cd55-b74b-4a31-9eaa-2109e116e91d/502-MOBILE.webp"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/6a5e6719-238f-442f-b534-e94f497aa616/507.webp",
+              "mobile": "https://assets.decocache.com/content-hub/b612a7ef-e09a-4e10-94bd-364409364209/507-MOBILE.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": false,
           "title": "<h2>Inspire-se</h2>",
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade",
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
-          "marginBottomDesktop": 48
+          "marginBottomDesktop": 48,
+          "fullWidth": false,
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "infoCards": [
           {
@@ -171,13 +222,13 @@
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "section": {
-          "fullWidth": false,
           "title": "<h2>Sua casa bem vivida</h2>",
           "subtitle": "lorem ipsum dolor sit amet",
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
-          "marginBottomDesktop": 48
+          "marginBottomDesktop": 48,
+          "fullWidth": false
         },
         "data": [
           {
@@ -441,9 +492,9 @@
         "section": {
           "title": "<h2>Nossos Serviços</h2>",
           "subtitle": "Conheça mais sobre nossos serviços",
-          "fullWidth": false,
           "children": null,
           "centralizeTitleAndSubtitle": true,
+          "fullWidth": false,
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48
         },
@@ -556,9 +607,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/IconGridSection.tsx",
         "section": {
+          "children": null,
           "title": "<h2>Electrolux com você</h2>",
           "subtitle": "Subtext",
-          "children": null,
           "centralizeTitleAndSubtitle": true
         },
         "iconItems": [
@@ -672,9 +723,9 @@
       "section": {
         "__resolveType": "site/sections/Product/ShelfSection.tsx",
         "section": {
-          "children": null,
           "title": "<h2>Ofertas especiais para você</h2>",
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "children": null,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48
@@ -705,13 +756,13 @@
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "section": {
+          "children": null,
           "title": "<h2>Sua casa bem vivida</h2>",
           "subtitle": "lorem ipsum dolor sit amet",
-          "children": null,
-          "fullWidth": false,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
-          "marginBottomDesktop": 48
+          "marginBottomDesktop": 48,
+          "fullWidth": false
         },
         "data": [
           {
@@ -821,11 +872,11 @@
         "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
         "section": {
           "children": null,
-          "title": "<h2>Explore por assunto</h2>",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
-          "marginBottomDesktop": 48
+          "marginBottomDesktop": 48,
+          "title": "<h2>Explore por assunto</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
         },
         "icons": [
           {

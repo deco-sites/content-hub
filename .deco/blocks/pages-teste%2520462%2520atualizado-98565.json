@@ -6,7 +6,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "title": "<h1>Black Friday 2025</h1>"
         }
       }
     },
@@ -15,7 +16,6 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
-          "title": "<h1>Black Friday 2025</h1>",
           "children": null
         },
         "imageCollection": [

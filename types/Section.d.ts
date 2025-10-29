@@ -29,7 +29,7 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   /**
    * @title Utilizar margens laterais maiores para título e subtítulo?
    * @description Ideal para seções de texto (TextSection) e de imagem (ImageCollectionGridSection) em artigos. Esta opção só faz diferença em visualização desktop.
-   * @default false
+   * @default true
    */
   articlePaddingForTitleAndSubtitle?: boolean;
 

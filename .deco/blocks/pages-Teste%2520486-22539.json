@@ -1,5 +1,5 @@
 {
-  "name": "Teste 486",
+  "name": "Texto 486",
   "path": "/inspira/blog/produtos/tipos-geladeira-black-friday",
   "sections": [
     {
@@ -7,7 +7,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "title": "<h1>Tipos de geladeira Electrolux Black Friday: descubra qual combina com você</h1>"
         }
       }
     },
@@ -16,8 +17,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
-          "children": null,
-          "title": "<h1>Tipos de geladeira Electrolux Black Friday: descubra qual combina com você</h1>"
+          "children": null
         },
         "imageCollection": [
           {
@@ -28,10 +28,7 @@
               "loading": "lazy",
               "fetchPriority": "high"
             },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/f1134bfa-db39-4679-981c-9643abd9283d/486.webp",
-              "mobile": "https://assets.decocache.com/content-hub/e5106120-f53c-4e0c-b85c-41d92b3a7b5e/486-MOBILE.webp"
-            }
+            "src": {}
           }
         ]
       }

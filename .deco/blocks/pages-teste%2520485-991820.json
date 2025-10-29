@@ -1,5 +1,5 @@
 {
-  "name": "texto  485",
+  "name": "texto   485",
   "path": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday",
   "sections": [
     {
@@ -19,31 +19,7 @@
         "section": {
           "children": null
         },
-        "imageCollection": [
-          {
-            "link": {
-              "target": "blank"
-            },
-            "loadingOptions": {
-              "loading": "eager",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/c806d91d-27f5-4942-9327-18ae99d86cad/geladeira-electrolux-familia.webp",
-              "mobile": "https://assets.decocache.com/content-hub/3068b3ff-e8f6-47f0-9a32-1ce6ce8f5517/geladeira-electrolux-familia-teste-mobile.webp"
-            },
-            "alt": "familia na cozinha abrindo a porta de geladeira side by side electrolux"
-          },
-          {
-            "link": {
-              "target": "blank"
-            },
-            "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "high"
-            }
-          }
-        ]
+        "imageCollection": []
       }
     },
     {

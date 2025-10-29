@@ -1,12 +1,13 @@
 {
-  "name": "teste 462 atualizado",
+  "name": "texto 462",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "title": "<h1>Black Friday 2025</h1>"
         }
       }
     },
@@ -15,7 +16,6 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
-          "title": "<h1>Black Friday 2025</h1>",
           "children": null
         },
         "imageCollection": [
@@ -27,9 +27,7 @@
               "loading": "eager",
               "fetchPriority": "high"
             },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/5b7734e2-7a61-4216-b4a7-b2c64bd99233/image-figma-teste.jpg"
-            },
+            "src": {},
             "alt": "panela de inox com macarrão e água fervendo sobre cooktop electrolux"
           }
         ]

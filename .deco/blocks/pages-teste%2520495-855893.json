@@ -7,8 +7,42 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "section": {
+          "children": null
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "children": null
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/6f605b05-f7c7-43b3-a129-8be08d939a6b/495.webp",
+              "mobile": "https://assets.decocache.com/content-hub/5a3c3675-1ca0-4c3e-8923-78a51e333ce7/495-MOBILE-(1).webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
+          "children": null,
           "marginBottomDesktop": 0,
           "marginBottomMobile": 0
         },

@@ -1,0 +1,186 @@
+{
+  "name": "Blog Category",
+  "path": "/content-hub-blog-category",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "children": null,
+          "title": "Titulo ",
+          "subtitle": "Subtitulo",
+          "centralizeTitleAndSubtitle": true
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "title": "Entrega com carbono neutro",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "saiba mais"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "children": null
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
+            "href": "/#",
+            "cta": "saiba mais"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

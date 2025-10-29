@@ -18,7 +18,8 @@
           "title": "Blog",
           "subtitle": "Descubra artigos inspiradores, dicas para casa e dia a dia.",
           "fullWidth": false,
-          "children": null
+          "children": null,
+          "centralizeTitleAndSubtitle": true
         },
         "heading": "Últimos artigos:",
         "panelBgColor": "#041E50",
@@ -68,19 +69,12 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/SearchBarHeroSection.tsx",
-        "section": {
-          "fullWidth": true
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Lps/ArticlesWithSidebarSection.tsx",
         "section": {
           "fullWidth": true,
-          "children": null
+          "children": null,
+          "centralizeTitleAndSubtitle": false,
+          "articlePaddingForContent": false
         },
         "categories": [
           {

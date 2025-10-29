@@ -34,7 +34,7 @@
           "marginTopDesktop": 0,
           "children": null,
           "title": "<h1>Rita Lobo</h1>",
-          "centralizeTitleAndSubtitle": false
+          "centralizeTitleAndSubtitle": true
         }
       }
     },

@@ -1,5 +1,5 @@
 {
-  "name": "Teste 505",
+  "name": "Texto 505",
   "path": "/inspira/blog/dicas/cozinha-black-friday",
   "sections": [
     {
@@ -9,6 +9,15 @@
         "section": {
           "children": null,
           "title": "<h1>Cozinha Electrolux na Black Friday: 18 itens para completar seu lar</h1>"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "children": null
         }
       }
     },

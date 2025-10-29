@@ -8,7 +8,9 @@
         "section": {
           "children": null
         },
-        "stripPrefixes": ["Artigos Padrão"]
+        "stripPrefixes": [
+          "Artigos Padrão"
+        ]
       }
     },
     {
@@ -840,6 +842,28 @@
             "title": "Entrega com carbono neutro",
             "cta": "Saiba mais",
             "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido..."
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/CategoriesGridSection.tsx",
+        "section": {
+          "children": null
+        },
+        "categories": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            }
           }
         ]
       }

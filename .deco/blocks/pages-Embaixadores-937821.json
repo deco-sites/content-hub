@@ -2,7 +2,7 @@
   "name": "Embaixadores",
   "path": "/content-hub-ambassadors",
   "sections": [
-        {
+    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
@@ -31,8 +31,46 @@
         ],
         "section": {
           "fullWidth": true,
-          "marginTopDesktop": 0
+          "marginTopDesktop": 0,
+          "children": null,
+          "title": "<h1>Rita Lobo</h1>",
+          "centralizeTitleAndSubtitle": true
         }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+        "section": {
+          "children": null
+        },
+        "icons": [
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "title": "Geladeira",
+            "imageSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
+            "alt": "Geladeira"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "imageSrc": "https://assets.decocache.com/content-hub/fe5dc78b-8efd-43a9-9b11-aeeda9424772/fogoes.svg",
+            "title": "Fogões",
+            "alt": "Fogões"
+          },
+          {
+            "target": false,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#617f57",
+            "imageSrc": "https://assets.decocache.com/content-hub/3aade863-235c-4fc5-92e3-5001b79bda21/maquina-de-lavar.svg",
+            "title": "Lavadoras",
+            "alt": "Lavadoras"
+          }
+        ]
       }
     },
     {
@@ -40,6 +78,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
+          "children": null,
           "fullWidth": true
         },
         "infoCards": [
@@ -93,8 +132,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "title": "<h1>Receitas Eletroportáteis</h1>",
-          "subtitle": "Subtext"
+          "title": "<h2>Receitas Eletroportáteis</h2>",
+          "subtitle": "Subtext",
+          "children": null
         },
         "articles": [
           {
@@ -221,8 +261,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "title": "<h1>Receitas Eletroportáteis</h1>",
-          "subtitle": "Subtext"
+          "title": "<h2>Receitas Eletroportáteis</h2>",
+          "subtitle": "Subtext",
+          "children": null
         },
         "articles": [
           {
@@ -321,9 +362,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true,
           "title": "Ecoplus",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "fullWidth": true
         },
         "infoCards": [
           {
@@ -348,8 +389,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
         "section": {
-          "title": "Sua Casa Bem Vivida",
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
+          "title": "<h2>Sua Casa Bem Vivida</h2>",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade",
+          "children": null
         },
         "data": [
           {
@@ -459,17 +501,22 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
+        "section": {
+          "title": "<h2>Quer Uma Mãozinha? Nossos Embaixadores Te Ajudam</h2>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true
+        },
         "ambassadors": [
           {
             "photo": {
               "alt": "Rita Lobo",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
-                "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+                "desktop": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg"
               },
               "link": {
-                "href": "/#",
-                "title": "Rita Lobo"
+                "href": "/panela-de-pressao-eletrica-pce20-electrolux/p",
+                "title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
               }
             },
             "product": {
@@ -478,23 +525,24 @@
             "products": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
               "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
+                "ids": [
+                  "2002911"
+                ],
+                "simulationBehavior": "default"
               }
             }
           },
           {
             "photo": {
-              "alt": "Rita Lobo",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
-                "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+                "desktop": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg"
               },
               "link": {
-                "href": "/#",
-                "title": "Rita Lobo"
-              }
+                "href": "/panela-de-pressao-eletrica-pce20-electrolux/p",
+                "title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
+              },
+              "alt": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
             },
             "product": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -502,23 +550,24 @@
             "products": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
               "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
+                "ids": [
+                  "2002911"
+                ],
+                "simulationBehavior": "default"
               }
             }
           },
           {
             "photo": {
-              "alt": "Rita Lobo",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
-                "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+                "desktop": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg"
               },
               "link": {
-                "href": "/#",
-                "title": "Rita Lobo"
-              }
+                "href": "/panela-de-pressao-eletrica-pce20-electrolux/p",
+                "title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
+              },
+              "alt": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
             },
             "product": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -526,23 +575,24 @@
             "products": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
               "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
+                "ids": [
+                  "2002911"
+                ],
+                "simulationBehavior": "default"
               }
             }
           },
           {
             "photo": {
-              "alt": "Rita Lobo",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
-                "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+                "desktop": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg"
               },
               "link": {
-                "href": "/#",
-                "title": "Rita Lobo"
-              }
+                "href": "/panela-de-pressao-eletrica-pce20-electrolux/p",
+                "title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
+              },
+              "alt": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
             },
             "product": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -550,19 +600,21 @@
             "products": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
               "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
+                "ids": [
+                  "2002911"
+                ],
+                "simulationBehavior": "default"
               }
             }
           }
         ],
-        "section": {
-          "title": "Quer uma mãozinha? Nossos embaixadores te ajudam!"
+        "configs": {
+          "slidesPerViewResponsive": {},
+          "customPagination": {},
+          "autoplay": {}
         }
       }
     }
-
   ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"

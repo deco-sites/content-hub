@@ -104,7 +104,8 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "children": null
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -119,7 +120,7 @@
           "srcMobile": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
           "alt": "Ria Lobo"
         },
-        "text": "<h2 style=\"text-align: center\">Air Fryers Rita Lobo</h2><p style=\"text-align: center\"><span>Lorem ipsum dolor sit amet consectetur alopra lorem.</span></p>",
+        "text": "<h2 style=\"text-align: center\">Air Fryers Rita Lobo</h2><p style=\"text-align: center\">tesste xxxxxxxxxxxxxxxxxxx  xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>",
         "reverse": true,
         "link": {
           "text": "Ver tudo",

@@ -1,5 +1,5 @@
 {
-  "name": "Texto 497",
+  "name": "Teste 497",
   "path": "/inspira/blog/produtos/por-que-comprar-ar-condicionado-na-black",
   "sections": [
     {
@@ -28,10 +28,7 @@
               "loading": "lazy",
               "fetchPriority": "high"
             },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/7ee96685-6466-4d1e-a548-45d97889e7d0/497-(2).webp",
-              "mobile": "https://assets.decocache.com/content-hub/bfbdd5db-b6b4-4175-a1df-4ed9349bd88e/497-MOBILE-(1).webp"
-            }
+            "src": {}
           }
         ]
       }

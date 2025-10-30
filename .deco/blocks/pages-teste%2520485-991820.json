@@ -19,7 +19,17 @@
         "section": {
           "children": null
         },
-        "imageCollection": []
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            }
+          }
+        ]
       }
     },
     {

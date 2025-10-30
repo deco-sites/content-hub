@@ -1,6 +1,6 @@
 {
-  "name": "Embaixadores",
-  "path": "/content-hub-ambassadors",
+  "name": "Embaixadores Copy",
+  "path": "/content-hub-ambassadors-2",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -234,8 +234,7 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
         "section": {
-          "fullWidth": true,
-          "children": null
+          "fullWidth": true
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",

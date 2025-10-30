@@ -17,7 +17,22 @@
         "section": {
           "children": null,
           "title": "<h1>Geladeira Electrolux pequena Black Friday: encontre o modelo ideal para sua cozinha</h1>"
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/07583e20-9858-49e2-a38c-34a8088e0fe2/487-(2).webp",
+              "mobile": "https://assets.decocache.com/content-hub/419b9b72-38ae-4e83-a975-5b4836b3aa94/487-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

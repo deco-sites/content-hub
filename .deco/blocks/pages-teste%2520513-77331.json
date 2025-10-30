@@ -10,7 +10,6 @@
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Guia completo de compra de ar-condicionado Electrolux na Black Friday</h1>",
           "subtitle": "teste"
         }
       }
@@ -20,7 +19,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "title": "<h1>Guia completo de compra de ar-condicionado Electrolux na Black Friday</h1>"
         },
         "imageCollection": [
           {

@@ -25,11 +25,12 @@
               "src": {
                 "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
                 "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
+              },
+              "alt": "teste alt da imagem"
             },
             "description": "Somos a primeira empresa do setor a incluir nas entregas um cami...",
-            "href": "/#",
-            "cta": "saiba mais",
+            "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar ",
+            "cta": "Saiba mais",
             "title": "<h2>Entrega com carbono neutro </h2>"
           },
           {

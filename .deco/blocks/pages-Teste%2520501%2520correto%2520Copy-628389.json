@@ -9,8 +9,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
         "section": {
-          "children": null,
-          "title": "<h1>Lavadora Electrolux silenciosa na Black Friday: como escolher?</h1>"
+          "children": null
         }
       }
     },
@@ -19,7 +18,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "title": "<h1>Lavadora Electrolux silenciosa na Black Friday: como escolher?</h1>"
         },
         "imageCollection": [
           {

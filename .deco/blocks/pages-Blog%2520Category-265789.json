@@ -1,6 +1,6 @@
 {
   "name": "Blog Category",
-  "path": "/content-hub-blog-category",
+  "path": "/content-hub-blog-category-1",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -8,8 +8,8 @@
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "children": null,
-          "title": "Titulo ",
-          "subtitle": "Subtitulo",
+          "title": "<H1>Teste H1</H1>",
+          "subtitle": "<p>exemplo de paragráfo  após o H1</p>",
           "centralizeTitleAndSubtitle": true
         },
         "articles": [

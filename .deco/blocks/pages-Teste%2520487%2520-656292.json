@@ -6,6 +6,15 @@
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
         "section": {
+          "children": null
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
           "children": null,
           "title": "<h1>Geladeira Electrolux pequena Black Friday: encontre o modelo ideal para sua cozinha</h1>"
         }

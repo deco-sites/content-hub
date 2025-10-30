@@ -7,8 +7,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
         "section": {
-          "children": null,
-          "title": "<h1>Black Friday Electrolux: como identificar promoções reais</h1>"
+          "children": null
         }
       }
     },
@@ -17,7 +16,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "title": "<h1>Black Friday Electrolux: como identificar promoções reais</h1>"
         }
       }
     },

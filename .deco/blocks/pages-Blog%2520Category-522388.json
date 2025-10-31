@@ -8,8 +8,7 @@
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "children": null,
-          "subtitle": "Subtitulo",
-          "title": "Titulo ",
+          "title": "<h2>Titulo </h2>",
           "centralizeTitleAndSubtitle": true
         },
         "articles": [

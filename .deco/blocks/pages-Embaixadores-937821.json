@@ -138,11 +138,28 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Product/ShelfSection.tsx",
+        "section": {
+          "children": null
+        },
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
+          "children": null,
           "title": "<h2>Receitas Eletroportáteis</h2>",
-          "subtitle": "Subtext",
-          "children": null
+          "subtitle": "Subtext"
         },
         "articles": [
           {
@@ -241,8 +258,8 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
         "section": {
-          "fullWidth": true,
-          "children": null
+          "children": null,
+          "fullWidth": true
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -399,8 +416,8 @@
         "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
         "section": {
           "title": "<h2>Sua Casa Bem Vivida</h2>",
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade",
-          "children": null
+          "children": null,
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "data": [
           {
@@ -511,8 +528,8 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
         "section": {
-          "title": "<h2>Quer Uma Mãozinha? Nossos Embaixadores Te Ajudam</h2>",
           "children": null,
+          "title": "<h2>Quer Uma Mãozinha? Nossos Embaixadores Te Ajudam</h2>",
           "centralizeTitleAndSubtitle": true
         },
         "ambassadors": [
@@ -621,23 +638,6 @@
           "slidesPerViewResponsive": {},
           "customPagination": {},
           "autoplay": {}
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ShelfSection.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc",
-            "collection": "2140",
-            "count": 10
-          }
-        },
-        "section": {
-          "children": null
         }
       }
     }

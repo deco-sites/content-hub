@@ -100,29 +100,40 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
-        "section": {
-          "fullWidth": true,
-          "children": null
-        },
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc",
-            "collection": "2140",
-            "count": 10
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+              "section": {
+                "fullWidth": true,
+                "children": null
+              },
+              "products": {
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                "props": {
+                  "sort": "price:desc",
+                  "collection": "2140",
+                  "count": 10
+                }
+              },
+              "background": {
+                "srcMobile": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
+                "alt": "Ria Lobo",
+                "srcDesktop": "https://assets.decocache.com/content-hub/2f48c2b9-30d3-423f-a650-c58b9fe74174/rita-lobo-desk.png"
+              },
+              "text": "<p>Teste</p><p></p><p>teste</p><p>xxxxxxxxxxxxxxxxxxxxx</p>",
+              "reverse": true,
+              "link": {}
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
           }
-        },
-        "background": {
-          "srcMobile": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
-          "alt": "Ria Lobo"
-        },
-        "text": "<p></p>",
-        "reverse": true,
-        "link": {}
-      }
+        }
+      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -610,6 +621,23 @@
           "slidesPerViewResponsive": {},
           "customPagination": {},
           "autoplay": {}
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ShelfSection.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "section": {
+          "children": null
         }
       }
     }

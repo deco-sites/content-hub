@@ -20,7 +20,9 @@
           "centralizeTitleAndSubtitle": false,
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true,
-          "fullWidth": false
+          "fullWidth": false,
+          "marginBottomMobile": 48,
+          "marginTopMobile": 48
         },
         "imageCollection": [
           {

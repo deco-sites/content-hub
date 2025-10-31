@@ -1,6 +1,6 @@
 {
   "name": "Embaixadores",
-  "path": "/content-hub-ambassadors",
+  "path": "/content-hub-ambassadors-x",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -140,7 +140,8 @@
       "section": {
         "__resolveType": "site/sections/Product/ShelfSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "centralizeTitleAndSubtitle": false
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",

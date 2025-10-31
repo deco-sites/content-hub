@@ -18,8 +18,8 @@
           "children": null,
           "title": "<h1>Black Friday 2025</h1>",
           "centralizeTitleAndSubtitle": false,
-          "articlePaddingForTitleAndSubtitle": false,
-          "articlePaddingForContent": false,
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true,
           "fullWidth": false
         },
         "imageCollection": [

@@ -1,6 +1,6 @@
 {
   "name": "Embaixadores",
-  "path": "/content-hub-ambassadors-x",
+  "path": "/content-hub-ambassadors-3",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

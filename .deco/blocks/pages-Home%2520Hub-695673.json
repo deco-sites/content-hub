@@ -88,7 +88,17 @@
               "alt": "Geladeira"
             }
           }
-        ]
+        ],
+        "configs": {
+          "autoplay": {
+            "enabled": false
+          },
+          "centeredSlides": false,
+          "customNavigation": {
+            "enabledDesktop": true
+          },
+          "slidesPerViewResponsive": {}
+        }
       }
     },
     {
@@ -125,7 +135,8 @@
               "props": {
                 "sort": "price:desc",
                 "collection": "2140",
-                "count": 1
+                "count": 1,
+                "hideUnavailableItems": false
               }
             }
           },
@@ -251,8 +262,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": "rgba(52, 73, 94, 0.8)",
-              "desktop": "rgba(52, 73, 94, 1)"
+              "mobile": "#041E50",
+              "desktop": "#041E50"
             }
           },
           {
@@ -274,11 +285,11 @@
             },
             "title": "Para preservar",
             "text": "Lorem ipsum dolor sit amet",
-            "link": "/#",
             "color": {
-              "desktop": " rgba(90, 106, 90, 1)",
-              "mobile": " rgba(90, 106, 90, 0.8)"
-            }
+              "desktop": "#6C7B67",
+              "mobile": "#6C7B67"
+            },
+            "link": "/#"
           },
           {
             "image": {
@@ -300,8 +311,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": " rgba(107, 78, 78, 0.8)",
-              "desktop": " rgba(107, 78, 78, 1)"
+              "mobile": "#4A1E18",
+              "desktop": "#4A1E18"
             }
           },
           {
@@ -325,8 +336,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": "rgba(126, 100, 100, 0.8)",
-              "desktop": "rgba(126, 100, 100, 1)"
+              "mobile": "#7E6464",
+              "desktop": "#7E6464"
             }
           }
         ]
@@ -512,8 +523,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png",
-                "mobile": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png"
+                "desktop": "https://assets.decocache.com/content-hub/6064c43a-b9c5-4a91-8d04-854139b16858/fold-item-1.png",
+                "mobile": "https://assets.decocache.com/content-hub/6064c43a-b9c5-4a91-8d04-854139b16858/fold-item-1.png"
               },
               "alt": "Retirada & Coleta"
             },
@@ -572,8 +583,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png",
-                "mobile": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png"
+                "desktop": "https://assets.decocache.com/content-hub/f77bd46f-27ae-4db3-921f-45f5bc90aede/fold-item-4.png",
+                "mobile": "https://assets.decocache.com/content-hub/f77bd46f-27ae-4db3-921f-45f5bc90aede/fold-item-4.png"
               },
               "alt": "Assinatura"
             },
@@ -592,8 +603,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/64305e48-14ec-4283-821d-bceb1d712473/BannerEspeciais.png",
-                "mobile": "https://assets.decocache.com/content-hub/6cdf1cf5-2d50-4780-9390-b393aa4c7643/BannerEspeciais-mobile.png"
+                "desktop": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png",
+                "mobile": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png"
               },
               "alt": "Manutenção Preventiva"
             },
@@ -785,8 +796,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": "rgba(52, 73, 94, 0.8)",
-              "desktop": "rgba(52, 73, 94, 1)"
+              "mobile": "#041E50",
+              "desktop": "#041E50"
             }
           },
           {
@@ -810,8 +821,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "desktop": " rgba(90, 106, 90, 1)",
-              "mobile": " rgba(90, 106, 90, 0.8)"
+              "desktop": "#6C7B67",
+              "mobile": "#6C7B67"
             }
           },
           {
@@ -834,8 +845,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": " rgba(107, 78, 78, 0.8)",
-              "desktop": " rgba(107, 78, 78, 1)"
+              "mobile": "#4A1E18",
+              "desktop": "#4A1E18"
             }
           },
           {
@@ -859,8 +870,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": "rgba(126, 100, 100, 0.8)",
-              "desktop": "rgba(126, 100, 100, 1)"
+              "mobile": "#7E6464",
+              "desktop": "#7E6464"
             }
           }
         ]
@@ -883,25 +894,25 @@
             "target": true,
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
-            "title": "Gastronomia",
-            "imageSrc": "https://assets.decocache.com/content-hub/b73007ae-8b24-4d95-b4f9-96606299c3d7/gastronomia.svg",
+            "title": "Blog",
+            "imageSrc": "https://assets.decocache.com/content-hub/9bce9111-3792-4e48-b043-da93ee9480c3/blog.svg",
             "redirect": "/#"
           },
           {
             "target": true,
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
-            "imageSrc": "https://assets.decocache.com/content-hub/09e9402d-13bf-40d5-b37d-134cddf37904/couch.svg",
+            "imageSrc": "https://assets.decocache.com/content-hub/d550a16b-3faa-40c5-9ff5-594a2234362f/sustentabilidade.svg",
             "redirect": "/#",
-            "title": "Arquitetura & Decoração"
+            "title": "<p class=\"label\">Sustentabili-<br>dade</p>"
           },
           {
             "target": true,
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
-            "imageSrc": "https://assets.decocache.com/content-hub/d0fcdc07-8b2e-442b-8985-5831e23a46af/courtains.svg",
+            "imageSrc": "https://assets.decocache.com/content-hub/8ba2c67f-8a13-452e-931d-18fb7b0160d3/ambiente.svg",
             "redirect": "/#",
-            "title": "Sua casa bem vivida"
+            "title": "Ambientes"
           },
           {
             "target": true,
@@ -909,23 +920,15 @@
             "boxBackgroundColorHover": "#041E50",
             "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
             "redirect": "/#",
-            "title": "Embaixadores de marca"
+            "title": "Embaixadores"
           },
           {
             "target": true,
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
-            "title": "Guia de compras",
+            "title": "Lançamentos",
             "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
             "redirect": "/#"
-          },
-          {
-            "target": true,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "imageSrc": "https://assets.decocache.com/content-hub/47100eab-13d0-422c-b18f-06067198057b/heart.svg",
-            "redirect": "/#",
-            "title": "Dicas de especialistas"
           }
         ]
       }

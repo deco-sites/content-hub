@@ -16,21 +16,24 @@ export default function Section({
   fullWidth = false,
   centralizeTitleAndSubtitle = false,
   articlePaddingForTitleAndSubtitle = false,
-  articlePaddingForContent = false
+  articlePaddingForContent = false,
 }: ISection) {
   return (
     <div
       id={`section-${id}`}
-      class={`section-container flex flex-col justify-center items-center w-full ${classesContainer ?? ""} ${!fullWidth && "container"}`}
+      class={`section-container flex flex-col justify-center items-center ${
+        fullWidth ? "w-screen max-w-none" : "w-full"
+      } ${classesContainer ?? ""} ${!fullWidth && "container mx-auto"}`}
     >
       {!isEmptyText(title) && (
         <Text
           title={title}
           classes={{
-            container:
-              `section-title mt-[24px] normal-case font-semibold text-[#041E50] w-full ${centralizeTitleAndSubtitle ? "text-center" : "text-left"
-              } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"} ${isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"}
-                `,
+            container: `section-title mt-[24px] normal-case font-semibold text-[#041E50] w-full ${
+              centralizeTitleAndSubtitle ? "text-center" : "text-left"
+            } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"} ${
+              isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"
+            }`,
           }}
         />
       )}
@@ -38,21 +41,23 @@ export default function Section({
         <Text
           title={subtitle}
           classes={{
-            container:
-              `section-subtitle mb-[16px] lg:mb-[24px] normal-case font-normal text-[#041E50] w-full ${centralizeTitleAndSubtitle ? "text-center" : "text-left"
-              } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"}`,
+            container: `section-subtitle mb-[16px] lg:mb-[24px] normal-case font-normal text-[#041E50] w-full ${
+              centralizeTitleAndSubtitle ? "text-center" : "text-left"
+            } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"}`,
           }}
         />
       )}
-      {children
-        ? (
-          <div
-            class={`w-full flex flex-col items-center justify-center ${articlePaddingForContent && "lg:max-w-[800px]"}`}
-          >
-            {children}
-          </div>
-        )
-        : <LoadingFallback />}
+      {children ? (
+        <div
+          class={`w-full flex flex-col items-center justify-center ${
+            articlePaddingForContent && "lg:max-w-[800px]"
+          }`}
+        >
+          {children}
+        </div>
+      ) : (
+        <LoadingFallback />
+      )}
 
       <style>
         {`
@@ -82,7 +87,8 @@ export default function Section({
               margin-bottom: ${marginBottomDesktop}px;
             }
 
-            .section-container {
+            /* Apply max-width only when not fullWidth */
+            #section-${id}:not(.full-width) .section-container {
               width: 1000px;
             }
 
@@ -103,25 +109,25 @@ export default function Section({
           }
 
           @media screen and (min-width: 1280px) {
-            .section-container {
+            #section-${id}:not(.full-width) .section-container {
               width: 1200px;
             }
           }
 
           @media screen and (min-width: 1366px) {
-            .section-container {
+            #section-${id}:not(.full-width) .section-container {
               width: 1286px;
             }
           }
 
           @media screen and (min-width: 1440px) {
-            .section-container {
+            #section-${id}:not(.full-width) .section-container {
               width: 1360px;
             }
           }
 
           @media screen and (min-width: 1920px) {
-            .section-container {
+            #section-${id}:not(.full-width) .section-container {
               width: 1600px;
             }
           }

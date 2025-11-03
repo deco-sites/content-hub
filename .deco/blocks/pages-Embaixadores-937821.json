@@ -150,6 +150,12 @@
             "collection": "2140",
             "count": 10
           }
+        },
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "mobile": 1
+          }
         }
       }
     },

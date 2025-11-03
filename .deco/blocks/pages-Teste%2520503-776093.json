@@ -1,5 +1,5 @@
 {
-  "name": "Teste 503",
+  "name": "Texto 503",
   "path": "/inspira/blog/dicas/melhores-ofertas-na-black-friday",
   "sections": [
     {
@@ -29,8 +29,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/0e18978c-a81d-487a-ac0c-030657e86ef0/503.webp",
-              "mobile": "https://assets.decocache.com/content-hub/161a8432-f5e0-46f8-91b3-330b6c68d81f/503-MOBILE.webp"
+              "desktop": "https://assets.decocache.com/content-hub/00e2dc9a-8323-407b-a974-578f56379532/503.webp",
+              "mobile": "https://assets.decocache.com/content-hub/ba7340c4-078d-40ae-84e7-52b5c9f0fc79/503-MOBILE.webp"
             }
           }
         ]

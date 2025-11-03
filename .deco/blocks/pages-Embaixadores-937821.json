@@ -1,6 +1,6 @@
 {
   "name": "Embaixadores",
-  "path": "/content-hub-ambassadors",
+  "path": "/content-hub-ambassadors-3",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -100,12 +100,48 @@
       }
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+              "section": {
+                "fullWidth": true,
+                "children": null
+              },
+              "products": {
+                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                "props": {
+                  "sort": "price:desc",
+                  "collection": "2140",
+                  "count": 10
+                }
+              },
+              "background": {
+                "srcMobile": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
+                "alt": "Ria Lobo",
+                "srcDesktop": "https://assets.decocache.com/content-hub/2f48c2b9-30d3-423f-a650-c58b9fe74174/rita-lobo-desk.png"
+              },
+              "text": "<p>Teste</p><p></p><p>teste</p><p>xxxxxxxxxxxxxxxxxxxxx</p>",
+              "reverse": true,
+              "link": {}
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
+    },
+    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "__resolveType": "site/sections/Product/ShelfSection.tsx",
         "section": {
-          "fullWidth": true,
-          "children": null
+          "children": null,
+          "centralizeTitleAndSubtitle": false
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -115,16 +151,11 @@
             "count": 10
           }
         },
-        "background": {
-          "srcDesktop": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
-          "srcMobile": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
-          "alt": "Ria Lobo"
-        },
-        "text": "<h2 style=\"text-align: center\">Air Fryers Rita Lobo</h2><p style=\"text-align: center\">tesste xxxxxxxxxxxxxxxxxxx  xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>",
-        "reverse": true,
-        "link": {
-          "text": "Ver tudo",
-          "href": "/#"
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "mobile": 1
+          }
         }
       }
     },
@@ -133,9 +164,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
+          "children": null,
           "title": "<h2>Receitas Eletroportáteis</h2>",
-          "subtitle": "Subtext",
-          "children": null
+          "subtitle": "Subtext"
         },
         "articles": [
           {
@@ -234,8 +265,8 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
         "section": {
-          "fullWidth": true,
-          "children": null
+          "children": null,
+          "fullWidth": true
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -392,8 +423,8 @@
         "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
         "section": {
           "title": "<h2>Sua Casa Bem Vivida</h2>",
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade",
-          "children": null
+          "children": null,
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "data": [
           {
@@ -504,8 +535,8 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
         "section": {
-          "title": "<h2>Quer Uma Mãozinha? Nossos Embaixadores Te Ajudam</h2>",
           "children": null,
+          "title": "<h2>Quer Uma Mãozinha? Nossos Embaixadores Te Ajudam</h2>",
           "centralizeTitleAndSubtitle": true
         },
         "ambassadors": [

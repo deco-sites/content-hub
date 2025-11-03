@@ -27,7 +27,7 @@
               "target": "blank"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {

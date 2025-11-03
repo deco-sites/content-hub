@@ -8,8 +8,7 @@
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<H1>Teste H1</H1>",
-          "subtitle": "<p>exemplo de paragráfo  após o H1</p>",
+          "title": "<h2>Titulo</h2> ",
           "centralizeTitleAndSubtitle": true
         },
         "articles": [

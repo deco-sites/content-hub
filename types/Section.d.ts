@@ -49,8 +49,8 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
 
   /**
    * @title Mobile - Margem Inferior.
-   * @description Espaçamento inferior da seção, em pixels.
-   * @default 0
+   * @description Espaçamento inferior da seção, em pixels. Default: 40px
+   * @default 40
    */
   marginBottomMobile?: number;
 
@@ -63,8 +63,8 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
 
   /**
    * @title Desktop - Margem Inferior.
-   * @description Espaçamento inferior da seção, em pixels.
-   * @default 0
+   * @description Espaçamento inferior da seção, em pixels. Default: 40px
+   * @default 40
    */
   marginBottomDesktop?: number;
 

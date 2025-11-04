@@ -43,7 +43,7 @@
     "@deco/dev": "jsr:@deco/dev@1.128.2",
     "@deco/durable": "jsr:@deco/durable@0.5.3",
     "@deco/warp": "jsr:@deco/warp@0.3.10",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.130.1/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.130.4/",
     "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.128.2/",
     "drizzle-orm": "https://esm.sh/drizzle-orm@0.30.10",
     "drizzle-orm/": "https://esm.sh/drizzle-orm@0.30.10/",

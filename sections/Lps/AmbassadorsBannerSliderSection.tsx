@@ -14,7 +14,7 @@ interface Props {
    * @title Configuração da Seção
    * @description Define o título, subtítulo e espaçamento da seção.
    */
-  section?: ISection;
+  section?: Omit<ISection, "centralizeTitleAndSubtitle">;
 
   /**
    * @title Banners
@@ -26,6 +26,55 @@ interface Props {
    */
   configs?: ISliderConfigs;
 }
+
+const Styles = () => (
+  <style>{`
+    .ambassadors-banner-slider-section .section-title {
+      font-weight: 400;
+      padding: 0 12%;
+      position: absolute;
+    }
+
+    .ambassadors-banner-slider-section .section-title,
+    .ambassadors-banner-slider-section .section-title h1 {
+      color: #fff;
+      font-size: 48px;
+      z-index: 2;
+    }
+
+    .ambassadors-banner-slider-section::before {
+      background: linear-gradient(
+        0deg,
+        rgb(54 54 54 / 60%) 26.08%,
+        rgb(105 105 105 / 30%) 40.63%,
+        rgb(156 156 156 / 0%) 72.5%
+      );
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    @media (min-width: 768px) {
+      .ambassadors-banner-slider-section::before {
+        background: linear-gradient(
+          270deg,
+          rgb(54 54 54 / 60%) 39.26%,
+          rgb(105 105 105 / 30%) 61.17%,
+          rgb(156 156 156 / 0%) 109.15%
+        );
+      }
+
+      .ambassadors-banner-slider-section .section-title,
+      .ambassadors-banner-slider-section .section-title h1 {
+        font-size: 128px;
+      }
+    }
+  `}</style>
+);
 
 export default function AmbassadorsBannerSliderSection({
   section,
@@ -64,16 +113,19 @@ export default function AmbassadorsBannerSliderSection({
   });
 
   return (
-    <Section
-      {...section}
-      id={id}
-      classesContainer="ambassadors-banner-slider-section"
-    >
-      <BannerSlider
-        configs={sliderConfig}
-        rootId={id}
-        banners={defaultPropsBanners}
-      />
-    </Section>
+    <>
+      <Styles />
+      <Section
+        {...section}
+        id={id}
+        classesContainer="ambassadors-banner-slider-section relative font-[Ephesis,cursive]"
+      >
+        <BannerSlider
+          configs={sliderConfig}
+          rootId={id}
+          banners={defaultPropsBanners}
+        />
+      </Section>
+    </>
   );
 }

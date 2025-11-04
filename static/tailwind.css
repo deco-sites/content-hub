@@ -2617,12 +2617,6 @@ input.tab:checked + .tab-content,
 .aspect-\[156\/87\] {
   aspect-ratio: 156/87;
 }
-.aspect-\[16\/9\] {
-  aspect-ratio: 16/9;
-}
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
 .h-10 {
   height: 2.5rem;
 }
@@ -3622,8 +3616,14 @@ input.tab:checked + .tab-content,
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .align-middle {
   vertical-align: middle;
+}
+.font-\[Ephesis\2c cursive\] {
+  font-family: Ephesis,cursive;
 }
 .text-2xl {
   font-size: 1.5rem;

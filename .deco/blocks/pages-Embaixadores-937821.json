@@ -11,7 +11,16 @@
           "title": "<h1>Rita Lobo</h1>",
           "centralizeTitleAndSubtitle": false,
           "fullWidth": true,
-          "marginTopDesktop": 0
+          "marginTopDesktop": 0,
+          "titleAlignment": {
+            "0": "r",
+            "1": "i",
+            "2": "g",
+            "3": "h",
+            "4": "t",
+            "mobile": "center",
+            "desktop": "right"
+          }
         },
         "banners": [
           {
@@ -24,7 +33,7 @@
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/47916c20-d567-41cd-a21d-babfb8b9a424/437345a66d701e0fbf18232d6ede515e53f4b1fa.png",
-              "mobile": "https://assets.decocache.com/content-hub/47916c20-d567-41cd-a21d-babfb8b9a424/437345a66d701e0fbf18232d6ede515e53f4b1fa.png"
+              "mobile": "https://assets.decocache.com/content-hub/45639921-085e-43ab-87c6-d66180b81dba/banner-rita-lobo-mobile.png"
             }
           }
         ]

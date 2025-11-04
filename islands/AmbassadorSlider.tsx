@@ -5,7 +5,7 @@ import type { AmbassadorWithProduct } from "site/types/Ambassador.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
 interface AmbassadorSliderProps {
-  ambassadors: IAmbassador[];
+  ambassadors: AmbassadorWithProduct[];
   configs: ISliderConfigs;
   rootId: string;
 }
@@ -28,7 +28,7 @@ export default function AmbassadorSlider(
             <ResponsiveImage
               {...ambassador.photo}
             />
-            {ambassador.products.length &&
+            {!!ambassador?.products?.length &&
               (
                 <SummaryProductCard
                   {...ambassador.products[0]}

@@ -5,19 +5,27 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
-        "pathOverride": "/content-hub-ambassadors"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "__resolveType": "site/sections/Lps/AmbassadorsBannerSliderSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h1>Rita Lobo</h1>",
+          "centralizeTitleAndSubtitle": false,
+          "fullWidth": true,
+          "marginTopDesktop": 0,
+          "titleAlignment": {
+            "0": "r",
+            "1": "i",
+            "2": "g",
+            "3": "h",
+            "4": "t",
+            "mobile": "center",
+            "desktop": "right"
+          }
+        },
         "banners": [
           {
             "link": {
-              "target": "blank",
-              "title": "Rita Lobo"
+              "target": "blank"
             },
             "loadingOptions": {
               "loading": "lazy",
@@ -25,17 +33,17 @@
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/47916c20-d567-41cd-a21d-babfb8b9a424/437345a66d701e0fbf18232d6ede515e53f4b1fa.png",
-              "mobile": "https://assets.decocache.com/content-hub/47916c20-d567-41cd-a21d-babfb8b9a424/437345a66d701e0fbf18232d6ede515e53f4b1fa.png"
+              "mobile": "https://assets.decocache.com/content-hub/45639921-085e-43ab-87c6-d66180b81dba/banner-rita-lobo-mobile.png"
             }
           }
-        ],
-        "section": {
-          "fullWidth": true,
-          "marginTopDesktop": 0,
-          "children": null,
-          "title": "<h1>Rita Lobo</h1>",
-          "centralizeTitleAndSubtitle": true
-        }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "pathOverride": "/content-hub-ambassadors"
       }
     },
     {
@@ -165,6 +173,7 @@
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "children": null,
+          "centralizeTitleAndSubtitle": true,
           "title": "<h2>Receitas Eletroportáteis</h2>",
           "subtitle": "Subtext"
         },
@@ -294,9 +303,10 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
+          "children": null,
           "title": "<h2>Receitas Eletroportáteis</h2>",
           "subtitle": "Subtext",
-          "children": null
+          "centralizeTitleAndSubtitle": true
         },
         "articles": [
           {
@@ -423,8 +433,8 @@
         "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
         "section": {
           "title": "<h2>Sua Casa Bem Vivida</h2>",
-          "children": null,
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade",
+          "children": null
         },
         "data": [
           {

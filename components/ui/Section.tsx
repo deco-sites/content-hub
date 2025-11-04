@@ -8,8 +8,9 @@ export default function Section({
   children,
   title = "",
   subtitle = "",
-  marginBottomMobile = 0,
-  marginBottomDesktop = 0,
+  titleAlignment,
+  marginBottomMobile = 40,
+  marginBottomDesktop = 40,
   marginTopMobile = 0,
   marginTopDesktop = 0,
   classesContainer,
@@ -18,6 +19,16 @@ export default function Section({
   articlePaddingForTitleAndSubtitle = false,
   articlePaddingForContent = false,
 }: ISection) {
+  const effectiveTitleAlignment = centralizeTitleAndSubtitle
+    ? "center"
+    : titleAlignment?.desktop ?? "left";
+
+  const titleAlignmentClass = {
+    left: "text-left",
+    center: "text-center",
+    right: "text-right",
+  }[effectiveTitleAlignment];
+
   return (
     <div
       id={`section-${id}`}
@@ -29,11 +40,9 @@ export default function Section({
         <Text
           title={title}
           classes={{
-            container: `section-title mt-[24px] normal-case font-semibold text-[#041E50] w-full ${
-              centralizeTitleAndSubtitle ? "text-center" : "text-left"
-            } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"} ${
-              isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"
-            }`,
+            container: `section-title mt-[24px] normal-case font-semibold text-[#041E50] w-full ${titleAlignmentClass} ${
+              articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"
+            } ${isEmptyText(subtitle) ? "mb-[24px]" : "mb-[8px]"}`,
           }}
         />
       )}
@@ -41,9 +50,9 @@ export default function Section({
         <Text
           title={subtitle}
           classes={{
-            container: `section-subtitle mb-[16px] lg:mb-[24px] normal-case font-normal text-[#041E50] w-full ${
-              centralizeTitleAndSubtitle ? "text-center" : "text-left"
-            } ${articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"}`,
+            container: `section-subtitle mb-[16px] lg:mb-[24px] normal-case font-normal text-[#041E50] w-full ${titleAlignmentClass} ${
+              articlePaddingForTitleAndSubtitle && "lg:max-w-[800px]"
+            }`,
           }}
         />
       )}

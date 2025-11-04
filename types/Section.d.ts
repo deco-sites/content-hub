@@ -21,8 +21,20 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   subtitle?: string;
 
   /**
+   * @title Alinhamento do título e subtítulo
+   * @description Define o alinhamento do título e subtítulo da seção.
+   * @default "left"
+   */
+  titleAlignment?: {
+    desktop?: "left" | "center" | "right";
+    mobile?: "left" | "center" | "right";
+  };
+
+  /**
    * @title Centralizar título e subtítulo?
    * @default false
+   * @deprecated Use `titleAlignment` instead.
+   * @description Deprecado: Use `titleAlignment` em vez disso. Define se o título e subtítulo devem ser centralizados.
    */
   centralizeTitleAndSubtitle?: boolean;
 

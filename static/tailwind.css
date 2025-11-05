@@ -2479,6 +2479,9 @@ input.tab:checked + .tab-content,
 .z-\[-2\] {
   z-index: -2;
 }
+.z-\[1\] {
+  z-index: 1;
+}
 .z-\[5\] {
   z-index: 5;
 }
@@ -2562,6 +2565,9 @@ input.tab:checked + .tab-content,
 }
 .mr-3 {
   margin-right: 0.75rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -3589,6 +3595,9 @@ input.tab:checked + .tab-content,
 .pr-4 {
   padding-right: 1rem;
 }
+.pr-6 {
+  padding-right: 1.5rem;
+}
 .pr-8 {
   padding-right: 2rem;
 }
@@ -3762,6 +3771,9 @@ input.tab:checked + .tab-content,
 .leading-none {
   line-height: 1;
 }
+.leading-tight {
+  line-height: 1.25;
+}
 .tracking-\[0\] {
   letter-spacing: 0;
 }
@@ -3870,6 +3882,9 @@ input.tab:checked + .tab-content,
 }
 .decoration-solid {
   text-decoration-style: solid;
+}
+.underline-offset-4 {
+  text-underline-offset: 4px;
 }
 .placeholder-transparent::-moz-placeholder {
   color: transparent;
@@ -4218,6 +4233,10 @@ input.tab:checked + .tab-content,
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -4244,6 +4263,10 @@ input.tab:checked + .tab-content,
 
   .md\:flex-1 {
     flex: 1 1 0%;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:grid-cols-\[868px_194px\] {
@@ -4337,6 +4360,10 @@ input.tab:checked + .tab-content,
 }
 @media (min-width: 1024px) {
 
+  .lg\:static {
+    position: static;
+  }
+
   .lg\:absolute {
     position: absolute;
   }
@@ -4381,6 +4408,10 @@ input.tab:checked + .tab-content,
 
   .lg\:h-\[122px\] {
     height: 122px;
+  }
+
+  .lg\:h-\[170px\] {
+    height: 170px;
   }
 
   .lg\:h-\[460px\] {
@@ -4445,6 +4476,10 @@ input.tab:checked + .tab-content,
 
   .lg\:w-\[560px\] {
     width: 560px;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:w-full {
@@ -4520,6 +4555,10 @@ input.tab:checked + .tab-content,
     flex-direction: row-reverse;
   }
 
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -4530,6 +4569,10 @@ input.tab:checked + .tab-content,
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-center {
@@ -4596,6 +4639,11 @@ input.tab:checked + .tab-content,
     padding-right: 0px;
   }
 
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -4631,6 +4679,10 @@ input.tab:checked + .tab-content,
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pt-6 {
+    padding-top: 1.5rem;
   }
 
   .lg\:text-\[14px\] {
@@ -4762,4 +4814,14 @@ input.tab:checked + .tab-content,
   .\32xl\:max-w-\[1600px\] {
     max-width: 1600px;
   }
+}
+.\[\&_\*\]\:\!h-auto * {
+  height: auto !important;
+}
+.\[\&_\*\]\:w-full * {
+  width: 100%;
+}
+.\[\&_\*\]\:\!object-contain * {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }

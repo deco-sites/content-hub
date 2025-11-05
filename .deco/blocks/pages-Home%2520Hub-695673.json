@@ -12,12 +12,38 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "__resolveType": "site/sections/Lps/InspireTilesSection.tsx",
         "section": {
-          "title": "<h1></h1>",
-          "children": null
+          "title": "<h1>Electrolux Inspira</h1>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true
         },
-        "imageCollection": [
+        "items": [
+          {
+            "desktop": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
+              }
+            },
+            "mobile": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            }
+          }
+        ],
+        "desktopImages": [
           {
             "link": {
               "target": "blank"
@@ -27,8 +53,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/25c6b1c6-38c9-4d31-9f99-c3935c04e9d0/515.webp",
-              "mobile": "https://assets.decocache.com/content-hub/41ae8c7e-007e-417b-b866-62e0b9b542c8/515-MOBILE.webp"
+              "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
+              "mobile": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
             }
           },
           {
@@ -40,8 +66,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/57a040b0-6d0f-40ee-a49e-4083ac4f1017/502.webp",
-              "mobile": "https://assets.decocache.com/content-hub/73b5cd55-b74b-4a31-9eaa-2109e116e91d/502-MOBILE.webp"
+              "desktop": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png",
+              "mobile": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png"
             }
           },
           {
@@ -53,8 +79,75 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/6a5e6719-238f-442f-b534-e94f497aa616/507.webp",
-              "mobile": "https://assets.decocache.com/content-hub/b612a7ef-e09a-4e10-94bd-364409364209/507-MOBILE.webp"
+              "desktop": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png",
+              "mobile": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png",
+              "mobile": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png"
+            }
+          }
+        ],
+        "mobileImages": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png",
+              "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png",
+              "mobile": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png",
+              "mobile": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png",
+              "mobile": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png"
             }
           }
         ]
@@ -342,7 +435,8 @@
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
-          "marginBottomDesktop": 48
+          "marginBottomDesktop": 48,
+          "fullWidth": false
         },
         "infoCards": [
           {

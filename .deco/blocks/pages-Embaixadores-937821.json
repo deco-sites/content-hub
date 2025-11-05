@@ -51,7 +51,11 @@
       "section": {
         "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "titleAlignment": {
+            "desktop": "center",
+            "mobile": "center"
+          }
         },
         "icons": [
           {
@@ -103,6 +107,118 @@
               "alt": "Rita Lobo"
             },
             "richText": "<p><strong><span style=\"font-size: 10pt\">Embaixadores</span></strong></p><p><strong><span style=\"font-size: 15pt\">Rita Lobo</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/CategoriesGridSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h2>Coleção</h2>",
+          "titleAlignment": {
+            "desktop": "center",
+            "mobile": "center"
+          }
+        },
+        "categories": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg"
+              }
+            },
+            "name": "Cozinha"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png",
+                "mobile": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png"
+              }
+            },
+            "name": "Cozinha"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg"
+              }
+            },
+            "name": "Cozinha"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png",
+                "mobile": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png"
+              }
+            },
+            "name": "Cozinha"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/4fe3418a-60bc-4b35-8c6c-21bb6a62b97f/rita-lobo-colecao-3.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/4fe3418a-60bc-4b35-8c6c-21bb6a62b97f/rita-lobo-colecao-3.jpg"
+              }
+            },
+            "name": "Cozinha"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/4fe3418a-60bc-4b35-8c6c-21bb6a62b97f/rita-lobo-colecao-3.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/4fe3418a-60bc-4b35-8c6c-21bb6a62b97f/rita-lobo-colecao-3.jpg"
+              }
+            },
+            "name": "Cozinha"
           }
         ]
       }
@@ -303,9 +419,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "children": null,
           "title": "<h2>Receitas Eletroportáteis</h2>",
           "subtitle": "Subtext",
+          "children": null,
           "centralizeTitleAndSubtitle": true
         },
         "articles": [
@@ -432,9 +548,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
         "section": {
+          "children": null,
           "title": "<h2>Sua Casa Bem Vivida</h2>",
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade",
-          "children": null
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "data": [
           {

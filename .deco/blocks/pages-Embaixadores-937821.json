@@ -333,10 +333,145 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/MontageSection.tsx",
+        "section": {
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "title": "<h2>Coleção</h2>"
+        },
+        "montageItemsMobile": [
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "link": {
+              "color": "#2B2936",
+              "text": "Ver produtos",
+              "href": "/#"
+            },
+            "title": "Ferro de passar",
+            "textBackgroundColor": "#F6F6F6",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
+              "srcMobile": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
+              "alt": "rita-lobo"
+            },
+            "textColor": "#2B3227",
+            "description": "Temperatura ideal para armazenar diversos tipos de cerveja. Com capacidade para organizar suas latas, garrafas e barris de forma prática e eficiente."
+          },
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "link": {
+              "color": "#2B2936",
+              "text": "Ver produtos",
+              "href": "/#"
+            },
+            "title": "Vaporizador",
+            "description": "Com amplo espaço interno e recursos que mantêm as bebidas na temperatura perfeita para servir.",
+            "textBackgroundColor": "#F6F6F6",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png",
+              "alt": "rita-lobo"
+            },
+            "textColor": "#2B3227"
+          },
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "link": {
+              "color": "#2B2936",
+              "text": "Ver produtos",
+              "href": "/#"
+            },
+            "textBackgroundColor": "#F6F6F6",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg",
+              "srcMobile": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg",
+              "alt": "rita-lobo"
+            },
+            "textColor": "#2B3227",
+            "title": "Lavadora de alta pressão",
+            "description": "Com as melhores condições para seus vinhos, mantém a tempertura adequada para preservar o sabor e o aroma da sua coleção."
+          }
+        ],
+        "montageItemsDesktop": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Ferro de passar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "rita-lobo",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg"
+              }
+            },
+            "title": "Ferro de passar",
+            "text": "Temperatura ideal para armazenar diversos tipos de cerveja. Com capacidade para organizar suas latas, garrafas e barris de forma prática e eficiente."
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Vaporizador"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "rita-lobo",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png",
+                "mobile": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png"
+              }
+            },
+            "title": "Vaporizador",
+            "text": "Com amplo espaço interno e recursos que mantêm as bebidas na temperatura perfeita para servir."
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Lavadora de alta pressão"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "rita-lobo",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg"
+              }
+            },
+            "title": "Lavadora de alta pressão",
+            "text": "Com as melhores condições para seus vinhos, mantém a tempertura adequada para preservar o sabor e o aroma da sua coleção."
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Product/ShelfSection.tsx",
         "section": {
           "children": null,
           "centralizeTitleAndSubtitle": false
+        },
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "mobile": 1
+          }
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -344,12 +479,6 @@
             "sort": "price:desc",
             "collection": "2140",
             "count": 10
-          }
-        },
-        "configs": {
-          "slidesPerViewResponsive": {
-            "desktop": 4,
-            "mobile": 1
           }
         }
       }
@@ -359,11 +488,11 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "children": null,
           "title": "<h2>Ecoplus</h2>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-          "fullWidth": true,
-          "centralizeTitleAndSubtitle": true
+          "fullWidth": true
         },
         "infoCards": [
           {
@@ -506,10 +635,10 @@
       "section": {
         "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
         "section": {
-          "title": "<h2>Livros Rita Lobo</h2>",
           "children": null,
-          "centralizeTitleAndSubtitle": true,
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
+          "title": "<h2>Livros Rita Lobo</h2>",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade",
+          "centralizeTitleAndSubtitle": true
         },
         "data": [
           {
@@ -621,10 +750,10 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "children": null,
+          "centralizeTitleAndSubtitle": true,
           "title": "<h2>Ecoplus</h2>",
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-          "fullWidth": true,
-          "centralizeTitleAndSubtitle": true
+          "fullWidth": true
         },
         "infoCards": [
           {
@@ -651,8 +780,8 @@
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "children": null,
-          "centralizeTitleAndSubtitle": true,
           "title": "<h2>Receitas Eletroportateis</h2>",
+          "centralizeTitleAndSubtitle": true,
           "subtitle": "Subtext"
         },
         "articles": [

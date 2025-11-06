@@ -26,19 +26,27 @@ interface Props {
 
 const Styles = () => (
   <style>{`
-    .ambassadors-banner-slider-section .section-title {
+    .ambassadors-banner-slider-section .section-title,
+    .ambassadors-banner-slider-section .section-title h1 {
       font-weight: 400;
       padding: 0 12%;
       position: absolute;
       z-index: 2;
       color: #fff;
-      font-size: 48px;
-    }
-    @media (min-width: 768px) {
-      .ambassadors-banner-slider-section .section-title { font-size: 128px; }
+      font-size: 48px !important;
+      bottom: 12px;
+      right: 45px;
     }
 
-    /* Overlay somente no banner (evita "faixa cinza") */
+    @media (min-width: 768px) {
+      .ambassadors-banner-slider-section .section-title,
+      .ambassadors-banner-slider-section .section-title h1 {
+        font-size: 128px !important; /* <-- desktop */
+        top: 0;
+        right: 20px;
+      }
+    }
+
     .ambassadors-banner-slider-section .banner-hero { position: relative; z-index: 1; }
     .ambassadors-banner-slider-section .banner-hero::before {
       content: '';

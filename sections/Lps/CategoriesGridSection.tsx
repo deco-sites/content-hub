@@ -20,9 +20,38 @@ export default function CategoriesGridSection({
 }: CategoriesGridSectionProps) {
   const id = useId();
 
+  const allowedLengths = [3, 6];
+
+  if (!categories || !allowedLengths.includes(categories.length)) {
+    return '"CategoriesGridSection: é necessário adicionar 3 ou 6 items para que esta section seja renderizada."';
+  }
+
+  if (categories?.length === 3) {
+    return (
+      <Section {...section} id={id}>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          {categories.map((category, index) => (
+            <div
+              class="relative flex flex-col justify-end items-end text-right"
+              key={index}
+            >
+              <ResponsiveImage {...category.image} />
+
+              <div class="absolute bg-black/50 h-[130px] bottom-0 left-0 w-full flex items-end justify-end pointer-events-none">
+                <span class="text-white text-[24px] lg:text-[36px] font-semibold px-5 pb-6 leading-none">
+                  {category.name}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+    );
+  }
+
   return (
     <Section {...section} id={id}>
-      {categories?.length === 6 ? (
+      {categories?.length === 6 && (
         <>
           <div class="grid-category-container__mobile grid grid-cols-2 gap-[8px]">
             {categories?.map((category, index) => {
@@ -85,8 +114,6 @@ export default function CategoriesGridSection({
             </div>
           </div>
         </>
-      ) : (
-        "CategoriesGridSection: é necessário adicionar 6 items para que esta section seja renderizada."
       )}
       <style>
         {`

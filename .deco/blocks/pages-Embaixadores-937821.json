@@ -132,98 +132,55 @@
           {
             "image": {
               "link": {
-                "target": "blank"
+                "target": "blank",
+                "href": "/eletroportateis/air-fryer",
+                "title": "Air Fryer"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
-                "mobile": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg"
+                "desktop": "https://assets.decocache.com/content-hub/7f38b2c0-b3dc-4226-8beb-76f7486fb09f/rita-lobo-categoria-air-fryer.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/7f38b2c0-b3dc-4226-8beb-76f7486fb09f/rita-lobo-categoria-air-fryer.jpg"
               }
             },
-            "name": "Cozinha"
+            "name": "Air Fryer"
           },
           {
             "image": {
               "link": {
-                "target": "blank"
+                "target": "blank",
+                "href": "/eletroportateis/panela-eletrica/panela-de-pressao",
+                "title": "Panela De Pressão Elétrica"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png",
-                "mobile": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png"
+                "desktop": "https://assets.decocache.com/content-hub/413ef87d-cbb7-4990-8aa1-f67aa203aa47/rita-lobo-categoria-panela-de-pressao-eletrica.png",
+                "mobile": "https://assets.decocache.com/content-hub/413ef87d-cbb7-4990-8aa1-f67aa203aa47/rita-lobo-categoria-panela-de-pressao-eletrica.png"
               }
             },
-            "name": "Cozinha"
+            "name": "Panela De Pressão Elétrica"
           },
           {
             "image": {
               "link": {
-                "target": "blank"
+                "target": "blank",
+                "href": "Panela de Arroz"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
-                "mobile": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg"
+                "desktop": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg"
               }
             },
-            "name": "Cozinha"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png",
-                "mobile": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png"
-              }
-            },
-            "name": "Cozinha"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/4fe3418a-60bc-4b35-8c6c-21bb6a62b97f/rita-lobo-colecao-3.jpg",
-                "mobile": "https://assets.decocache.com/content-hub/4fe3418a-60bc-4b35-8c6c-21bb6a62b97f/rita-lobo-colecao-3.jpg"
-              }
-            },
-            "name": "Cozinha"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/4fe3418a-60bc-4b35-8c6c-21bb6a62b97f/rita-lobo-colecao-3.jpg",
-                "mobile": "https://assets.decocache.com/content-hub/4fe3418a-60bc-4b35-8c6c-21bb6a62b97f/rita-lobo-colecao-3.jpg"
-              }
-            },
-            "name": "Cozinha"
+            "name": "Panela de Arroz"
           }
         ]
       }

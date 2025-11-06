@@ -33,8 +33,7 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   /**
    * @title Centralizar título e subtítulo?
    * @default false
-   * @deprecated Use `titleAlignment` instead.
-   * @description Deprecado: Use `titleAlignment` em vez disso. Define se o título e subtítulo devem ser centralizados.
+   * @description Define se o título e subtítulo devem ser centralizados.
    */
   centralizeTitleAndSubtitle?: boolean;
 
@@ -53,28 +52,28 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   articlePaddingForContent?: boolean;
 
   /**
-   * @title Mobile - Margem Superior.
+   * @title Mobile - Margem Superior
    * @description Espaçamento superior da seção, em pixels.
    * @default 0
    */
   marginTopMobile?: number;
 
   /**
-   * @title Mobile - Margem Inferior.
+   * @title Mobile - Margem Inferior
    * @description Espaçamento inferior da seção, em pixels. Default: 40px
    * @default 40
    */
   marginBottomMobile?: number;
 
   /**
-   * @title Desktop - Margem Superior.
+   * @title Desktop - Margem Superior
    * @description Espaçamento superior da seção, em pixels.
    * @default 0
    */
   marginTopDesktop?: number;
 
   /**
-   * @title Desktop - Margem Inferior.
+   * @title Desktop - Margem Inferior
    * @description Espaçamento inferior da seção, em pixels. Default: 40px
    * @default 40
    */

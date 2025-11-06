@@ -1,6 +1,6 @@
 {
   "name": "Embaixadores",
-  "path": "/content-hub-ambassadors-3",
+  "path": "/content-hub-ambassadors",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -91,7 +91,10 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "children": null,
-          "fullWidth": true
+          "fullWidth": true,
+          "title": "<h2>Último vídeo</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "centralizeTitleAndSubtitle": true
         },
         "infoCards": [
           {
@@ -102,9 +105,9 @@
             },
             "direction": "left",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png",
-              "alt": "Rita Lobo"
+              "autoplay": false,
+              "iframeProps": {},
+              "src": "https://www.youtube.com/watch?v=V0IPOOwdCzM"
             },
             "richText": "<p><strong><span style=\"font-size: 10pt\">Embaixadores</span></strong></p><p><strong><span style=\"font-size: 15pt\">Rita Lobo</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
           }
@@ -117,11 +120,13 @@
         "__resolveType": "site/sections/Lps/CategoriesGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h2>Coleção</h2>",
+          "title": "<h2>Conteúdos sobre Categorias</h2>",
           "titleAlignment": {
             "desktop": "center",
             "mobile": "center"
-          }
+          },
+          "subtitle": "Subtext",
+          "centralizeTitleAndSubtitle": true
         },
         "categories": [
           {
@@ -224,73 +229,13 @@
       }
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
-              "section": {
-                "fullWidth": true,
-                "children": null
-              },
-              "products": {
-                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-                "props": {
-                  "sort": "price:desc",
-                  "collection": "2140",
-                  "count": 10
-                }
-              },
-              "background": {
-                "srcMobile": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
-                "alt": "Ria Lobo",
-                "srcDesktop": "https://assets.decocache.com/content-hub/2f48c2b9-30d3-423f-a650-c58b9fe74174/rita-lobo-desk.png"
-              },
-              "text": "<p>Teste</p><p></p><p>teste</p><p>xxxxxxxxxxxxxxxxxxxxx</p>",
-              "reverse": true,
-              "link": {}
-            }
-          },
-          "rule": {
-            "__resolveType": "website/matchers/never.ts"
-          }
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ShelfSection.tsx",
-        "section": {
-          "children": null,
-          "centralizeTitleAndSubtitle": false
-        },
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc",
-            "collection": "2140",
-            "count": 10
-          }
-        },
-        "configs": {
-          "slidesPerViewResponsive": {
-            "desktop": 4,
-            "mobile": 1
-          }
-        }
-      }
-    },
-    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "children": null,
           "centralizeTitleAndSubtitle": true,
-          "title": "<h2>Receitas Eletroportáteis</h2>",
+          "title": "<h2>Receitas Air Fryer</h2>",
           "subtitle": "Subtext"
         },
         "articles": [
@@ -388,10 +333,10 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "__resolveType": "site/sections/Product/ShelfSection.tsx",
         "section": {
           "children": null,
-          "fullWidth": true
+          "centralizeTitleAndSubtitle": false
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -401,119 +346,12 @@
             "count": 10
           }
         },
-        "background": {
-          "srcDesktop": "https://assets.decocache.com/content-hub/d6ff837f-2223-4d87-90cb-835f1468ad3e/cooktop-inducao-banner.png",
-          "srcMobile": "https://assets.decocache.com/content-hub/d6ff837f-2223-4d87-90cb-835f1468ad3e/cooktop-inducao-banner.png",
-          "alt": "Ria Lobo"
-        },
-        "text": "<h2 style=\"text-align: center\">Eletroportáteis</h2><p style=\"text-align: center\">Lorem ipsum dolor sit amet consectetur alopra lorem.</p>",
-        "reverse": false,
-        "link": {
-          "text": "Ver mais",
-          "href": "/#"
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
-        "section": {
-          "title": "<h2>Receitas Eletroportáteis</h2>",
-          "subtitle": "Subtext",
-          "children": null,
-          "centralizeTitleAndSubtitle": true
-        },
-        "articles": [
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "title": "Medalhão de Beringela com Pesto",
-                "href": "/#"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Medalhão de Beringela com Pesto",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png",
-                "mobile": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png"
-              }
-            },
-            "title": "Medalhão de Beringela com Pesto",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
-            "cta": "Ver receita"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "title": "Brownie na Air Fryer",
-                "href": "/#"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Brownie na Air Fryer",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png",
-                "mobile": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png"
-              }
-            },
-            "title": "Brownie na Air Fryer",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
-            "cta": "Ver receita"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "title": "Alecrim Açucarado na Air Fryer",
-                "href": "/#"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Alecrim Açucarado na Air Fryer",
-              "src": {
-                "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
-                "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
-              }
-            },
-            "title": "Alecrim Açucarado na Air Fryer",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
-            "cta": "Ver receita"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "title": "Frango Assado na Air Fryer",
-                "href": "/#"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Frango Assado na Air Fryer",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
-                "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
-              }
-            },
-            "title": "Frango Assado na Air Fryer",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
-            "cta": "Ver receita"
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "mobile": 1
           }
-        ]
+        }
       }
     },
     {
@@ -521,9 +359,11 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "Ecoplus",
+          "children": null,
+          "title": "<h2>Ecoplus</h2>",
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-          "fullWidth": true
+          "fullWidth": true,
+          "centralizeTitleAndSubtitle": true
         },
         "infoCards": [
           {
@@ -532,126 +372,13 @@
               "text": "Ver mais",
               "href": "/#"
             },
-            "direction": "left",
+            "direction": "right",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png",
-              "alt": "Rita Lobo"
+              "autoplay": false,
+              "iframeProps": {},
+              "src": "https://www.youtube.com/watch?v=V0IPOOwdCzM"
             },
-            "richText": "<p><strong><span style=\"font-size: 10pt\">Embaixadores</span></strong></p><p><strong><span style=\"font-size: 15pt\">Rita Lobo</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
-        "section": {
-          "children": null,
-          "title": "<h2>Sua Casa Bem Vivida</h2>",
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
-        },
-        "data": [
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Panelinha"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Panelinha",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg",
-                "mobile": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg"
-              }
-            },
-            "title": "Bar & Adega",
-            "text": "Frigobar, cervejeira, adega e acessórios",
-            "link": "/#",
-            "color": {
-              "mobile": "#041E50",
-              "desktop": "#041E50"
-            }
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Panelinha"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Panelinha",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/8b6cb0b1-523d-48f7-a58c-b8c24eaa3621/530cf0586f3422d608f16261ac2117e9986b4618.jpg",
-                "mobile": "https://assets.decocache.com/content-hub/8b6cb0b1-523d-48f7-a58c-b8c24eaa3621/530cf0586f3422d608f16261ac2117e9986b4618.jpg"
-              }
-            },
-            "title": "Bem﻿-estar",
-            "link": "/#",
-            "color": {
-              "mobile": "#6C7B67",
-              "desktop": "#6C7B67"
-            },
-            "text": "Ar condicionado, filtros de água e mais"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "O que tem na geladeira"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/d430fca4-be72-457b-867e-6fef64d49f89/150e69b10066f1149f63b5fdc910bd0a3e703c88.png",
-                "mobile": "https://assets.decocache.com/content-hub/d430fca4-be72-457b-867e-6fef64d49f89/150e69b10066f1149f63b5fdc910bd0a3e703c88.png"
-              },
-              "alt": "O que tem na geladeira"
-            },
-            "title": "Lavander﻿ia e Limpeza",
-            "link": "/#",
-            "color": {
-              "mobile": "#4A1E18",
-              "desktop": "#4A1E18"
-            },
-            "text": "Máquinas de lavar, secar e acessórios"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Pitadas da Rita"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Pitadas da Rita",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9ce40c44-df2f-451a-9426-c18b7a22eb98/fba69cf2dec60df4ad03a30ebed7e2b424b5ffce.png",
-                "mobile": "https://assets.decocache.com/content-hub/9ce40c44-df2f-451a-9426-c18b7a22eb98/fba69cf2dec60df4ad03a30ebed7e2b424b5ffce.png"
-              }
-            },
-            "title": "Cozi﻿nha",
-            "text": "Geladeiras, fogões e acessórios",
-            "link": "/#",
-            "color": {
-              "mobile": "#7E6464",
-              "desktop": "#7E6464"
-            }
+            "richText": "<p><strong><span style=\"font-size: 10pt\">Embaixadores</span></strong></p><p><strong><span style=\"font-size: 15pt\">Rita Lobo</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a></p>"
           }
         ]
       }
@@ -661,8 +388,8 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
         "section": {
-          "children": null,
           "title": "<h2>Quer Uma Mãozinha? Nossos Embaixadores Te Ajudam</h2>",
+          "children": null,
           "centralizeTitleAndSubtitle": true
         },
         "ambassadors": [
@@ -772,6 +499,252 @@
           "customPagination": {},
           "autoplay": {}
         }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
+        "section": {
+          "title": "<h2>Livros Rita Lobo</h2>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
+        },
+        "data": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Panelinha"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Panelinha",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg",
+                "mobile": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg"
+              }
+            },
+            "title": "Bar & Adega",
+            "text": "Frigobar, cervejeira, adega e acessórios",
+            "link": "/#",
+            "color": {
+              "mobile": "#041E50",
+              "desktop": "#041E50"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Panelinha"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Panelinha",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/8b6cb0b1-523d-48f7-a58c-b8c24eaa3621/530cf0586f3422d608f16261ac2117e9986b4618.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/8b6cb0b1-523d-48f7-a58c-b8c24eaa3621/530cf0586f3422d608f16261ac2117e9986b4618.jpg"
+              }
+            },
+            "title": "Bem﻿-estar",
+            "link": "/#",
+            "color": {
+              "mobile": "#6C7B67",
+              "desktop": "#6C7B67"
+            },
+            "text": "Ar condicionado, filtros de água e mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "O que tem na geladeira"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/d430fca4-be72-457b-867e-6fef64d49f89/150e69b10066f1149f63b5fdc910bd0a3e703c88.png",
+                "mobile": "https://assets.decocache.com/content-hub/d430fca4-be72-457b-867e-6fef64d49f89/150e69b10066f1149f63b5fdc910bd0a3e703c88.png"
+              },
+              "alt": "O que tem na geladeira"
+            },
+            "title": "Lavander﻿ia e Limpeza",
+            "link": "/#",
+            "color": {
+              "mobile": "#4A1E18",
+              "desktop": "#4A1E18"
+            },
+            "text": "Máquinas de lavar, secar e acessórios"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Pitadas da Rita"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Pitadas da Rita",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9ce40c44-df2f-451a-9426-c18b7a22eb98/fba69cf2dec60df4ad03a30ebed7e2b424b5ffce.png",
+                "mobile": "https://assets.decocache.com/content-hub/9ce40c44-df2f-451a-9426-c18b7a22eb98/fba69cf2dec60df4ad03a30ebed7e2b424b5ffce.png"
+              }
+            },
+            "title": "Cozi﻿nha",
+            "text": "Geladeiras, fogões e acessórios",
+            "link": "/#",
+            "color": {
+              "mobile": "#7E6464",
+              "desktop": "#7E6464"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h2>Ecoplus</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "fullWidth": true,
+          "centralizeTitleAndSubtitle": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#041E50",
+              "text": "Ver mais",
+              "href": "/#"
+            },
+            "direction": "left",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png",
+              "alt": "air fryer"
+            },
+            "richText": "<p><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a></p>",
+            "textColor": "#041E50"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "title": "<h2>Receitas Eletroportateis</h2>",
+          "subtitle": "Subtext"
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "title": "Medalhão de Beringela com Pesto",
+                "href": "/#"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Medalhão de Beringela com Pesto",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png"
+              }
+            },
+            "title": "Medalhão de Beringela com Pesto",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
+            "href": "/#",
+            "cta": "Ver receita"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "title": "Brownie na Air Fryer",
+                "href": "/#"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Brownie na Air Fryer",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png",
+                "mobile": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png"
+              }
+            },
+            "title": "Brownie na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
+            "href": "/#",
+            "cta": "Ver receita"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "title": "Alecrim Açucarado na Air Fryer",
+                "href": "/#"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Alecrim Açucarado na Air Fryer",
+              "src": {
+                "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
+                "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
+              }
+            },
+            "title": "Alecrim Açucarado na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
+            "href": "/#",
+            "cta": "Ver receita"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "title": "Frango Assado na Air Fryer",
+                "href": "/#"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Frango Assado na Air Fryer",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
+                "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
+              }
+            },
+            "title": "Frango Assado na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
+            "href": "/#",
+            "cta": "Ver receita"
+          }
+        ]
       }
     }
   ],

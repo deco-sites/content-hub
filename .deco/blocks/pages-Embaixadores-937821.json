@@ -36,6 +36,56 @@
               "mobile": "https://assets.decocache.com/content-hub/45639921-085e-43ab-87c6-d66180b81dba/banner-rita-lobo-mobile.png"
             }
           }
+        ],
+        "products": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/98cf00c4-056a-4184-b394-8c0e3203efd8/AirFryer.png",
+                "mobile": "https://assets.decocache.com/content-hub/98cf00c4-056a-4184-b394-8c0e3203efd8/AirFryer.png"
+              }
+            },
+            "title": "Air Fryer"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/61a46d2e-d3e0-40eb-91f3-f778efd75eea/PanelaPressaoEletrica.png",
+                "mobile": "https://assets.decocache.com/content-hub/61a46d2e-d3e0-40eb-91f3-f778efd75eea/PanelaPressaoEletrica.png"
+              }
+            },
+            "title": "Panela de Pressão Elétrica"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/d238367c-7c6e-43c8-85fd-87fa9ae8a4e0/PanelaArroz.png",
+                "mobile": "https://assets.decocache.com/content-hub/d238367c-7c6e-43c8-85fd-87fa9ae8a4e0/PanelaArroz.png"
+              }
+            },
+            "title": "Panela de arroz"
+          }
         ]
       }
     },

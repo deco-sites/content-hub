@@ -33,7 +33,7 @@ export interface Props {
   productId: string;
 }
 
-const PRODUCT_QUERY = `
+export const PRODUCT_QUERY = `
 query product($identifier: ProductUniqueIdentifier) {
   product(identifier: $identifier) @context(provider: "vtex.search-graphql") {
     brand
@@ -94,7 +94,7 @@ query product($identifier: ProductUniqueIdentifier) {
 }
 `;
 
-async function loader(
+export default async function productByIdLoader(
   { productId }: Props,
   _req: Request,
   ctx: AppContext,
@@ -146,5 +146,3 @@ async function loader(
     return null;
   }
 }
-
-export default loader;

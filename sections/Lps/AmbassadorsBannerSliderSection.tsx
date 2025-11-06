@@ -9,7 +9,7 @@ import { DefaultBannerSection } from "site/configs/BannerSliderSection.ts";
 /**
  * @description Seção com um slider de banners.
  */
-interface Props {
+interface AmbassadorsBannerSliderSectionProps {
   /**
    * @title Configuração da Seção
    * @description Define o título, subtítulo e espaçamento da seção.
@@ -20,6 +20,11 @@ interface Props {
    * @title Banners
    */
   banners?: IResponsiveImage[];
+
+  /**
+  * @title Produtos
+  */
+  productIds?: string[];
 
   /**
    * @title Configurações do Slider
@@ -79,8 +84,9 @@ const Styles = () => (
 export default function AmbassadorsBannerSliderSection({
   section,
   banners = DefaultBannerSection.banners,
+  productIds,
   configs,
-}: Props) {
+}: AmbassadorsBannerSliderSectionProps) {
   const id = useId();
 
   const { slidesPerViewResponsive } = configs ?? {};
@@ -121,9 +127,10 @@ export default function AmbassadorsBannerSliderSection({
         classesContainer="ambassadors-banner-slider-section relative font-[Ephesis,cursive]"
       >
         <BannerSlider
-          configs={sliderConfig}
           rootId={id}
           banners={defaultPropsBanners}
+          productIds={productIds}
+          configs={sliderConfig}
         />
       </Section>
     </>

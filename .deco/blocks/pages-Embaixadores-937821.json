@@ -41,7 +41,9 @@
           {
             "image": {
               "link": {
-                "target": "blank"
+                "target": "blank",
+                "href": "https://loja.electrolux.com.br/eletroportateis/air-fryer",
+                "title": "Air Fryer"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -57,7 +59,9 @@
           {
             "image": {
               "link": {
-                "target": "blank"
+                "target": "blank",
+                "href": "https://loja.electrolux.com.br/eletroportateis/panela-eletrica/panela-de-pressao",
+                "title": "Panela de Pressão Elétrica"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -73,7 +77,9 @@
           {
             "image": {
               "link": {
-                "target": "blank"
+                "target": "blank",
+                "href": "https://loja.electrolux.com.br/eletroportateis/panela-eletrica/panela-de-arroz",
+                "title": "Panela de Arroz"
               },
               "loadingOptions": {
                 "loading": "lazy",

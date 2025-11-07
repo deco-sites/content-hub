@@ -17,7 +17,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Fogão de piso ou embutir: prós, contras e como acertar na escolha</h1>"
+          "title": "<h1>Fogão de piso ou embutir: prós, contras e como acertar na escolha</h1>",
+          "articlePaddingForContent": true,
+          "articlePaddingForTitleAndSubtitle": true
         }
       }
     },

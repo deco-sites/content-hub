@@ -157,7 +157,7 @@
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
           "children": null,
-          "fullWidth": true,
+          "fullWidth": false,
           "title": "<h2>Último vídeo</h2>",
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
           "centralizeTitleAndSubtitle": true

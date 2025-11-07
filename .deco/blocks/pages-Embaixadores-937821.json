@@ -97,43 +97,53 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
-        "section": {
-          "children": null,
-          "titleAlignment": {
-            "desktop": "center",
-            "mobile": "center"
-          }
-        },
-        "icons": [
-          {
-            "target": false,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#617f57",
-            "title": "Geladeira",
-            "imageSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
-            "alt": "Geladeira"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+              "section": {
+                "children": null,
+                "titleAlignment": {
+                  "desktop": "center",
+                  "mobile": "center"
+                }
+              },
+              "icons": [
+                {
+                  "target": false,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#617f57",
+                  "title": "Geladeira",
+                  "imageSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
+                  "alt": "Geladeira"
+                },
+                {
+                  "target": false,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#617f57",
+                  "imageSrc": "https://assets.decocache.com/content-hub/fe5dc78b-8efd-43a9-9b11-aeeda9424772/fogoes.svg",
+                  "title": "Fogões",
+                  "alt": "Fogões"
+                },
+                {
+                  "target": false,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#617f57",
+                  "imageSrc": "https://assets.decocache.com/content-hub/3aade863-235c-4fc5-92e3-5001b79bda21/maquina-de-lavar.svg",
+                  "title": "Lavadoras",
+                  "alt": "Lavadoras"
+                }
+              ]
+            }
           },
-          {
-            "target": false,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#617f57",
-            "imageSrc": "https://assets.decocache.com/content-hub/fe5dc78b-8efd-43a9-9b11-aeeda9424772/fogoes.svg",
-            "title": "Fogões",
-            "alt": "Fogões"
-          },
-          {
-            "target": false,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#617f57",
-            "imageSrc": "https://assets.decocache.com/content-hub/3aade863-235c-4fc5-92e3-5001b79bda21/maquina-de-lavar.svg",
-            "title": "Lavadoras",
-            "alt": "Lavadoras"
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

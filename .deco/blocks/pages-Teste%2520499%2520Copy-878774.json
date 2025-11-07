@@ -17,7 +17,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Capacidade máquina de lavar Electrolux Black Friday: descubra o modelo ideal para você</h1>"
+          "title": "<h1>Capacidade máquina de lavar Electrolux Black Friday: descubra o modelo ideal para você</h1>",
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
         },
         "imageCollection": [
           {

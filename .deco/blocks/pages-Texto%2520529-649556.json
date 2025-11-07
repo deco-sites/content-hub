@@ -1,5 +1,5 @@
 {
-  "name": "Geladeira inverter Electrolux na Black Friday: vale a pena investir?",
+  "name": "Texto 529",
   "path": "/inspira/blog/produtos/geladeira-inverter-black-friday",
   "sections": [
     {
@@ -17,7 +17,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "articlePaddingForContent": true,
+          "articlePaddingForTitleAndSubtitle": true
         }
       }
     },

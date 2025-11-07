@@ -17,7 +17,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Tipos de geladeira Electrolux Black Friday: descubra qual combina com você</h1>"
+          "title": "<h1>Tipos de geladeira Electrolux Black Friday: descubra qual combina com você</h1>",
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
         },
         "imageCollection": [
           {

@@ -19,7 +19,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Fogão Electrolux Black Friday: veja as opções com superofertas</h1>"
+          "title": "<h1>Fogão Electrolux Black Friday: veja as opções com superofertas</h1>",
+          "articlePaddingForContent": true,
+          "articlePaddingForTitleAndSubtitle": true
         },
         "imageCollection": [
           {

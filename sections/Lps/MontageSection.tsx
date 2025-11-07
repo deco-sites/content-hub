@@ -74,19 +74,19 @@ export default function MontageSection(
         <CustomInfoCardSlider rootId={id} infoCards={montageItemsMobile} configs={sliderDefaults} />
       </div>
 
-      <div id="montage-container-desktop" className={`grid grid-cols-2 gap-y-[4px] max-h-[588px]`}>
+      <div id="montage-container-desktop" className={`grid grid-cols-2 gap-[4px] max-h-[588px]`}>
         <div className={`grid grid-rows-2 h-full`}>
           <div className={`grid grid-cols-2`}>
             <div className={``}>
               <ResponsiveImage {...montageItemsDesktop[0].image} sizes={{ height: 292 }} />
             </div>
-            <div className={`flex flex-col justify-center items-start px-[24px]`}>
+            <div className={`flex flex-col justify-center items-start px-[24px] bg-[#F6F6F6]`}>
               <h3 className={`text-start font-semibold text-xl text-[#2B3227]`}>{montageItemsDesktop[0].title}</h3>
               <p className={`font-normal text-sm text-[#2B3227]`}>{montageItemsDesktop[0].text}</p>
             </div>
           </div>
           <div className={`grid grid-cols-2`}>
-            <div className={`flex flex-col justify-center items-start px-[24px]`}>
+            <div className={`flex flex-col justify-center items-start px-[24px] bg-[#F6F6F6]`}>
               <h3 className={`text-start font-semibold text-xl text-[#2B3227]`}>{montageItemsDesktop[1].title}</h3>
               <p className={`font-normal text-sm text-[#2B3227]`}>{montageItemsDesktop[1].text}</p>
             </div>

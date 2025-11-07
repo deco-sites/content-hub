@@ -3192,9 +3192,6 @@ input.tab:checked + .tab-content,
 .gap-y-\[20px\] {
   row-gap: 20px;
 }
-.gap-y-\[4px\] {
-  row-gap: 4px;
-}
 .gap-y-\[8px\] {
   row-gap: 8px;
 }

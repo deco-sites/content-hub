@@ -17,7 +17,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Aspirador de pó Electrolux para pelo de pets: qual a melhor opção?</h1>"
+          "title": "<h1>Aspirador de pó Electrolux para pelo de pets: qual a melhor opção?</h1>",
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
         }
       }
     },

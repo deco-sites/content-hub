@@ -17,7 +17,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>6 modelos de micro-ondas Electrolux para conhecer na Black Friday</h1>"
+          "title": "<h1>6 modelos de micro-ondas Electrolux para conhecer na Black Friday</h1>",
+          "articlePaddingForContent": true,
+          "articlePaddingForTitleAndSubtitle": true
         }
       }
     },

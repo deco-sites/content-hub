@@ -17,7 +17,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Purificador com compressor Electrolux na Black Friday: qual escolher?</h1> "
+          "title": "<h1>Purificador com compressor Electrolux na Black Friday: qual escolher?</h1> ",
+          "articlePaddingForContent": true,
+          "articlePaddingForTitleAndSubtitle": true
         },
         "imageCollection": [
           {

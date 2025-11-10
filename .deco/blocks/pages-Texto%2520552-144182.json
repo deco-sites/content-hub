@@ -17,7 +17,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Funcionalidades air fryer Electrolux Black Friday: inovações que vão facilitar a sua vida</h1>"
+          "title": "<h1>Funcionalidades air fryer Electrolux Black Friday: inovações que vão facilitar a sua vida</h1>",
+          "articlePaddingForContent": true,
+          "articlePaddingForTitleAndSubtitle": true
         }
       }
     },

@@ -17,7 +17,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Black Friday Electrolux: o que esperar dos preços em 2025?</h1>"
+          "title": "<h1>Black Friday Electrolux: o que esperar dos preços em 2025?</h1>",
+          "articlePaddingForContent": true,
+          "articlePaddingForTitleAndSubtitle": true
         }
       }
     },

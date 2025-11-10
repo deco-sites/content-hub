@@ -17,7 +17,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Ar-condicionado Electrolux silencioso: conheça os modelos ideais para o quarto</h1>"
+          "title": "<h1>Ar-condicionado Electrolux silencioso: conheça os modelos ideais para o quarto</h1>",
+          "articlePaddingForContent": true,
+          "articlePaddingForTitleAndSubtitle": true
         }
       }
     },

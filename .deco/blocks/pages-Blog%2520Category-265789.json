@@ -8,7 +8,7 @@
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h2>Titulo</h2> ",
+          "title": "<h1>Receita</h1> ",
           "centralizeTitleAndSubtitle": true
         },
         "articles": [
@@ -97,7 +97,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "centralizeTitleAndSubtitle": true
         },
         "articles": [
           {

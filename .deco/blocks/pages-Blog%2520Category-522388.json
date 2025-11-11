@@ -94,7 +94,13 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
+<<<<<<< HEAD
           "children": null
+=======
+          "children": null,
+          "title": "<h2>Receita</h2>",
+          "centralizeTitleAndSubtitle": true
+>>>>>>> 72b1bf39bc52b1de014c4965ce191e25cca7ee9d
         },
         "articles": [
           {

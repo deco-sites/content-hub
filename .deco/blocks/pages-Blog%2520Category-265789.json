@@ -8,7 +8,11 @@
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "children": null,
+<<<<<<< HEAD
           "title": "<h2>Titulo</h2> ",
+=======
+          "title": "<h1>Receita</h1> ",
+>>>>>>> 72b1bf39bc52b1de014c4965ce191e25cca7ee9d
           "centralizeTitleAndSubtitle": true
         },
         "articles": [
@@ -97,7 +101,12 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
+<<<<<<< HEAD
           "children": null
+=======
+          "children": null,
+          "centralizeTitleAndSubtitle": true
+>>>>>>> 72b1bf39bc52b1de014c4965ce191e25cca7ee9d
         },
         "articles": [
           {

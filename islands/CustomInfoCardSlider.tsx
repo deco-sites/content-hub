@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from "preact/hooks";
 import type { IInfoCardCustom } from "site/types/InfoCardCustom.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
+import { HTMLAttributes } from "react";
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLDivElement> {
   infoCards?: IInfoCardCustom[];
   rootId: string;
   configs?: ISliderConfigs;
@@ -196,11 +197,10 @@ export default function CustomInfoCardSlider({
                 >
                   {/* 50/50 em lg */}
                   <div
-                    class={`flex w-full h-full items-center justify-between ${
-                      card.direction === "left"
-                        ? "lg:flex-row"
-                        : "lg:flex-row-reverse"
-                    } flex-col`}
+                    class={`flex w-full h-full items-center justify-between ${card.direction === "left"
+                      ? "lg:flex-row"
+                      : "lg:flex-row-reverse"
+                      } flex-col`}
                   >
                     {/* Mídia */}
                     <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
@@ -216,15 +216,15 @@ export default function CustomInfoCardSlider({
                           />
                         )
                         : imgSrc
-                        ? (
-                          <img
-                            src={imgSrc}
-                            alt={imgAlt}
-                            class="w-full h-full object-cover"
-                            loading={configs?.lazy ? "lazy" : "eager"}
-                          />
-                        )
-                        : <div class="w-full h-full bg-gray-200" />}
+                          ? (
+                            <img
+                              src={imgSrc}
+                              alt={imgAlt}
+                              class="w-full h-full object-cover"
+                              loading={configs?.lazy ? "lazy" : "eager"}
+                            />
+                          )
+                          : <div class="w-full h-full bg-gray-200" />}
                     </div>
 
                     {/* Texto */}
@@ -251,7 +251,7 @@ export default function CustomInfoCardSlider({
                         <div class="mt-6">
                           <a
                             href={card.link.href}
-                            class="inline-block bg-white text-black px-6 py-2 rounded font-semibold hover:opacity-80 transition"
+                            class="inline-block font-semibold "
                           >
                             {card.link.text ?? "Saiba mais"}
                           </a>
@@ -273,11 +273,10 @@ export default function CustomInfoCardSlider({
               key={i}
               type="button"
               aria-label={`Ir para página ${i + 1}`}
-              class={`w-2.5 h-2.5 rounded-full border ${
-                i === page
-                  ? "bg-gray-800 border-gray-800"
-                  : "bg-transparent border-gray-400"
-              }`}
+              class={`w-2.5 h-2.5 rounded-full border ${i === page
+                ? "bg-gray-800 border-gray-800"
+                : "bg-transparent border-gray-400"
+                }`}
               onClick={() => setPage(i)}
             />
           ))}

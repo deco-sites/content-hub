@@ -7,23 +7,10 @@
       "section": {
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {
-          "fullWidth": true
+          "fullWidth": true,
+          "children": null
         },
         "banners": [
-          {
-            "link": {
-              "target": "blank"
-            },
-            "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "high",
-              "preload": true
-            },
-            "src": {
-              "desktop": "https://data.decoassets.com/content-hub/8201d5fb-4cb4-4e21-8650-823cf5530a54/Image.png",
-              "mobile": "https://data.decoassets.com/content-hub/71843d75-4551-47d8-97c7-6af5a7e38b2c/image-(15).png"
-            }
-          },
           {
             "link": {
               "target": "blank"
@@ -57,9 +44,20 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "section": {
+          "children": null
+        },
+        "pathOverride": "/ecoplus"
+      }
+    },
+    {
       "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
       "section": {
-        "title": "<h1 style=\"text-align: center\">QUEM ESCOLHE VIVER NUM MUNDO MELHOR, NÃO JOGA NADA FORA</h1><p style=\"text-align: center\">Sabia que você pode reduzir seu impacto ambiental quando escolhe um Electrolux EcoPlus? Isso porque eles representam o melhor da tecnologia Electrolux: economizam água, energia e te ajudam a não jogar nada fora.</p>"
+        "title": "<h1 style=\"text-align: center\">QUEM ESCOLHE VIVER NUM MUNDO MELHOR, NÃO JOGA NADA FORA</h1><p style=\"text-align: center\">Sabia que você pode reduzir seu impacto ambiental quando escolhe um Electrolux EcoPlus? Isso porque eles representam o melhor da tecnologia Electrolux: economizam água, energia e te ajudam a não jogar nada fora.</p>",
+        "children": null
       },
       "icons": [
         {
@@ -67,23 +65,14 @@
           "boxBackgroundColorHover": "#617f57",
           "imageSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
           "redirect": "/",
-          "title": "Geladeira",
+          "title": "Geladeiras",
           "alt": "Geladeira Alt"
         },
         {
           "boxBackgroundColor": "#ffffff",
           "boxBackgroundColorHover": "#617f57",
           "target": false,
-          "title": "Frigobares",
-          "alt": "Frigobares Alt",
-          "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/39fe3c49-bea5-4efd-b840-4c94034655f2___c297eb37aca7757089a4be4238975e3a.svg",
-          "redirect": "/"
-        },
-        {
-          "boxBackgroundColor": "#ffffff",
-          "boxBackgroundColorHover": "#617f57",
-          "target": false,
-          "title": "Lavadora",
+          "title": "Lavadoras",
           "alt": "Lavadora Alt",
           "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/dbe0383c-ccd4-4d3c-9cfb-0f9b77bce279___7f2866be984ef103d8668ff611421f61.svg",
           "redirect": "/"
@@ -92,9 +81,18 @@
           "boxBackgroundColor": "#ffffff",
           "boxBackgroundColorHover": "#617f57",
           "target": false,
-          "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/d93949d5-a4d8-44a3-bffa-6e231c3ce0aa___f705e273fa0f839201c0f3d6fde1e151.svg",
-          "alt": "Lava-louças Alt",
-          "title": "Lava-louças",
+          "title": "Purificadores",
+          "alt": "Purificadores de água Alt",
+          "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/3893cd54-8e6f-4aab-ba7c-597a513b7674___5bf5e85f87e62ef4497432a621dc76f8.svg",
+          "redirect": "/"
+        },
+        {
+          "boxBackgroundColor": "#ffffff",
+          "boxBackgroundColorHover": "#617f57",
+          "target": false,
+          "imageSrc": "https://data.decoassets.com/content-hub/16710286-8cd7-49c0-a10a-52789fde5ae1/ar.svg",
+          "alt": "Ares-condicionados Alt",
+          "title": "Ares-condicionados",
           "redirect": "/"
         },
         {
@@ -102,18 +100,18 @@
           "boxBackgroundColorHover": "#617f57",
           "target": false,
           "redirect": "/",
-          "alt": "Ares-condicionados Alt",
-          "title": "Ares-condicionados",
-          "imageSrc": "https://data.decoassets.com/content-hub/16710286-8cd7-49c0-a10a-52789fde5ae1/ar.svg"
+          "alt": "Lava-louças Alt",
+          "title": "Lava-louças",
+          "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/d93949d5-a4d8-44a3-bffa-6e231c3ce0aa___f705e273fa0f839201c0f3d6fde1e151.svg"
         },
         {
           "boxBackgroundColor": "#ffffff",
           "boxBackgroundColorHover": "#617f57",
           "target": false,
-          "alt": "Purificadores de água Alt",
-          "title": "Purificadores de água",
+          "alt": "Frigobares Alt",
+          "title": "Frigobares",
           "redirect": "/",
-          "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/3893cd54-8e6f-4aab-ba7c-597a513b7674___5bf5e85f87e62ef4497432a621dc76f8.svg"
+          "imageSrc": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/39fe3c49-bea5-4efd-b840-4c94034655f2___c297eb37aca7757089a4be4238975e3a.svg"
         }
       ]
     },
@@ -124,7 +122,8 @@
         "section": {
           "marginBottomDesktop": 52,
           "marginBottomMobile": 32,
-          "fullWidth": true
+          "fullWidth": true,
+          "children": null
         },
         "infoCards": [
           {
@@ -135,7 +134,7 @@
               "title": "Teste"
             },
             "direction": "left",
-            "richText": "<h2 style=\"text-align: justify\"><span style=\"color: #303f29\">Nossos produtos mais eficientes</span></h2><p style=\"text-align: justify\"><span style=\"color: #303f29\">Conheça a seleção de produtos da Electrolux com impacto ambiental reduzido.</span></p>"
+            "richText": "<h2 style=\"text-align: justify\"><span style=\"color: #041e50\">Nossos produtos mais eficientes</span></h2><p style=\"text-align: justify\"><span style=\"color: rgb(48, 63, 41)\">Conheça a seleção de produtos da Electrolux com impacto ambiental reduzido.</span><br><br><u><span style=\"color: rgb(48, 63, 41)\">Conhecer produtos</span></u></p>"
           }
         ]
       }
@@ -145,17 +144,18 @@
       "section": {
         "__resolveType": "site/sections/Lps/ImageWithTextColumnsSection.tsx",
         "section": {
-          "title": "<h2 style=\"text-align: center\">CRITÉRIOS DE SELEÇÃO</h2><p style=\"text-align: center\">Produtos com máxima eficiência energética e economia de água</p>"
+          "title": "<h2 style=\"text-align: center\">CRITÉRIOS DE SELEÇÃO</h2><p style=\"text-align: center\">Produtos com máxima eficiência energética e economia de água</p>",
+          "children": null
         },
         "left": {
-          "text": "<p><strong>85%*</strong> do impacto ambiental de um eletrodoméstico, em todo seu ciclo de vida, acontece durante a fase de uso, na casa dos consumidores, principalmente devido à utilização de energia. Pensando nisso, o Electrolux Ecoplus chega com o objetivo de ajudar os consumidores a fazerem escolhas ainda mais responsáveis, através da seleção dos produtos mais eficientes do portfólio Electrolux.</p><p><em>*De acordo com estudos realizados pela Electrolux, que avaliam o impacto ambiental dos produtos em seu ciclo de vida, desde extração da matéria prima, manufatura, logística, uso e destino final, conforme ISO 14040-14043.</em></p>",
-          "backgroundColor": "#617f57",
-          "textColor": "#f6f6f6"
+          "text": "<p><strong><span style=\"font-size: 24pt\">85%*</span></strong><span style=\"font-size: 24pt\"> do impacto ambiental </span><br><br>de um eletrodoméstico, em todo seu ciclo de vida, acontece durante a fase de uso, na casa dos consumidores, principalmente devido à utilização de energia. Pensando nisso, o Electrolux Ecoplus chega com o objetivo de ajudar os consumidores a fazerem escolhas ainda mais responsáveis, através da seleção dos produtos mais eficientes do portfólio Electrolux.</p><p><em>*De acordo com estudos realizados pela Electrolux, que avaliam o impacto ambiental dos produtos em seu ciclo de vida, desde extração da matéria prima, manufatura, logística, uso e destino final, conforme ISO 14040-14043.</em></p>",
+          "backgroundColor": "#6C7B67",
+          "textColor": "#fFfFfF"
         },
         "right": {
-          "text": "<p>Os produtos são selecionados com base na etiquetagem energética e testes rigorosos no alto desempenho em economia de energia e água. Aqueles que apresentam os mais altos índices de eficiência são incluídos no programa Electrolux EcoPlus.</p>",
-          "backgroundColor": "#303f29",
-          "textColor": "#f6f6f6"
+          "text": "<p><span style=\"font-size: 17pt\">EficiÊncia energética</span><br><br>Os produtos são selecionados com base na etiquetagem energética e testes rigorosos no alto desempenho em economia de energia e água. Aqueles que apresentam os mais altos índices de eficiência são incluídos no programa Electrolux EcoPlus.</p>",
+          "backgroundColor": "#6C7B67",
+          "textColor": "#fFfFfF"
         },
         "image": {
           "srcDesktop": "https://electrolux.vtexassets.com/assets/vtex.file-manager-graphql/images/44fc5216-7ae9-4af4-9310-15f053432a8d___c97bd8dff9731ef5783abb0e05144e22.png",
@@ -179,30 +179,8 @@
         "section": {
           "marginBottomDesktop": 0,
           "marginBottomMobile": 0,
-          "fullWidth": true
-        },
-        "infoCards": [
-          {
-            "typeOfContent": {
-              "autoplay": true,
-              "iframeProps": {},
-              "src": "https://www.youtube.com/embed/LDqsD4CGXbM?si=a6jNow5KMedLc29K",
-              "title": "teste"
-            },
-            "direction": "left",
-            "richText": "<p><em><span style=\"color: #303f29\">Geladeiras</span></em></p><h2><span style=\"color: #303f29\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></h2><p style=\"text-align: justify\"><span style=\"color: #303f29\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\"><span style=\"color: #303f29\">electrolux.com</span></a><span style=\"color: #303f29\">.</span></p>"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
-        "section": {
-          "marginBottomDesktop": 0,
-          "marginBottomMobile": 0,
-          "fullWidth": true
+          "fullWidth": true,
+          "children": null
         },
         "infoCards": [
           {
@@ -213,6 +191,12 @@
             },
             "direction": "right",
             "richText": "<p><em><span style=\"color: #303f29\">Frigobares</span></em></p><h3><span style=\"color: #303f29\">Economizam até 30%* de energia e possuem tecnologia para máxima eficiência</span></h3><p style=\"text-align: justify\"><span style=\"color: #303f29\">*Economia obtida considerando o segmento de frigobares com volume interno de 46,5L a 120L, conforme tabela de eficiência energética de 31/01/2023 PBE (Programa Brasileiro de Etiquetagem), nos modelos EM50 127V e220V, EM120 220V. Para outros modelos, consulte o site.</span></p>"
+          },
+          {
+            "link": {
+              "color": "#000000"
+            },
+            "direction": "left"
           }
         ]
       }
@@ -385,8 +369,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ReviewsSliderSection.tsx",
         "section": {
-          "fullWidth": true,
-          "title": "<h2 style=\"text-align: center\"><strong>Quem escolhe melhor, vive melhor</strong></h2>"
+          "title": "<h2 style=\"text-align: center\"><strong>Quem escolhe melhor, vive melhor</strong></h2>",
+          "fullWidth": true
         },
         "background": {
           "srcDesktop": "https://data.decoassets.com/content-hub/b94e45b8-183a-4c71-9bd2-a0722c14a20f/reviews-bg.webp",

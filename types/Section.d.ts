@@ -21,50 +21,61 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   subtitle?: string;
 
   /**
+   * @title Alinhamento do título e subtítulo
+   * @description Define o alinhamento do título e subtítulo da seção.
+   * @default "left"
+   */
+  titleAlignment?: {
+    desktop?: "left" | "center" | "right";
+    mobile?: "left" | "center" | "right";
+  };
+
+  /**
    * @title Centralizar título e subtítulo?
    * @default false
+   * @description Define se o título e subtítulo devem ser centralizados.
    */
   centralizeTitleAndSubtitle?: boolean;
 
   /**
    * @title Utilizar margens laterais maiores para título e subtítulo?
    * @description Ideal para seções de texto (TextSection) e de imagem (ImageCollectionGridSection) em artigos. Esta opção só faz diferença em visualização desktop.
-   * @default false
+   * @default true
    */
   articlePaddingForTitleAndSubtitle?: boolean;
 
   /**
    * @title Utilizar margens laterais maiores para o conteúdo?
    * @description Esta opção só faz diferença em visualização desktop.
-   * @default false
+   * @default true
    */
   articlePaddingForContent?: boolean;
 
   /**
-   * @title Mobile - Margem Superior.
+   * @title Mobile - Margem Superior
    * @description Espaçamento superior da seção, em pixels.
    * @default 0
    */
   marginTopMobile?: number;
 
   /**
-   * @title Mobile - Margem Inferior.
-   * @description Espaçamento inferior da seção, em pixels.
-   * @default 0
+   * @title Mobile - Margem Inferior
+   * @description Espaçamento inferior da seção, em pixels. Default: 40px
+   * @default 40
    */
   marginBottomMobile?: number;
 
   /**
-   * @title Desktop - Margem Superior.
+   * @title Desktop - Margem Superior
    * @description Espaçamento superior da seção, em pixels.
    * @default 0
    */
   marginTopDesktop?: number;
 
   /**
-   * @title Desktop - Margem Inferior.
-   * @description Espaçamento inferior da seção, em pixels.
-   * @default 0
+   * @title Desktop - Margem Inferior
+   * @description Espaçamento inferior da seção, em pixels. Default: 40px
+   * @default 40
    */
   marginBottomDesktop?: number;
 

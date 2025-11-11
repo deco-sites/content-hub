@@ -1,0 +1,9 @@
+{
+  "name": "Ecoplus",
+  "path": "/content-hub-ecoplus",
+  "sections": [],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

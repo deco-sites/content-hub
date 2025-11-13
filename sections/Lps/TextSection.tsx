@@ -28,10 +28,7 @@ export default function TextSection({
   const id = useId();
 
   return (
-    <Section
-      {...section}
-      id={id}
-    >
+    <Section {...section} id={id}>
       <Text
         title={text ?? ""}
         classes={{
@@ -43,9 +40,17 @@ export default function TextSection({
         {`
         .text-section-container ul,
         .text-section-container ol {
-          list-style: disc outside !important;
+          list-style-position: outside;
           margin: 0;
           padding-left: 20px;
+        }
+
+        .text-section-container ul {
+          list-style-type: disc;
+        }
+
+        .text-section-container ol {
+          list-style-type: decimal;
         }
         
         .text-section-container h1 {

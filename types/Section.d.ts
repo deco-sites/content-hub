@@ -38,14 +38,14 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   centralizeTitleAndSubtitle?: boolean;
 
   /**
-   * @title Utilizar margens laterais maiores para título e subtítulo?
+   * @title Utilizar margens laterais menores para título e subtítulo?
    * @description Ideal para seções de texto (TextSection) e de imagem (ImageCollectionGridSection) em artigos. Esta opção só faz diferença em visualização desktop.
    * @default true
    */
   articlePaddingForTitleAndSubtitle?: boolean;
 
   /**
-   * @title Utilizar margens laterais maiores para o conteúdo?
+   * @title Utilizar margens laterais menores para o conteúdo?
    * @description Esta opção só faz diferença em visualização desktop.
    * @default true
    */

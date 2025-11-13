@@ -22,7 +22,7 @@ export interface FoldItem {
   text?: TextArea;
   /**
    * @title Texto CTA
-   * @description Texto do CTA vinculado ao item(mesmo do title).
+   * @description Texto do CTA vinculado ao item (mesmo do atributo title).
    * @default Lorem
    */
   textCTA?: TextArea;

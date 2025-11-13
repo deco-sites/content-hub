@@ -6,7 +6,11 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
-        "pathOverride": "/content-hub-home-hub"
+        "pathOverride": "/content-hub-home-hub/teste",
+        "section": {
+          "children": null
+        },
+        "enableMobileScroll": true
       }
     },
     {

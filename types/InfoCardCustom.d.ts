@@ -1,10 +1,15 @@
-import type { IInfoCard, IInfoCardImage, IInfoCardVideo } from "./InfoCard.d.ts";
+import type {
+  IInfoCard,
+  IInfoCardImage,
+  IInfoCardVideo,
+} from "./InfoCard.d.ts";
 import { TextArea } from "apps/admin/widgets.ts";
 
 /**
  * @title {{#title}}{{title}}{{/title}}{{^title}}InfoCard{{/title}}
  */
-export interface IInfoCardCustom extends Pick<IInfoCard, 'link' | 'typeOfContent' | 'direction'> {
+export interface IInfoCardCustom
+  extends Pick<IInfoCard, "link" | "typeOfContent" | "direction"> {
   /**
    * @title Título
    */
@@ -14,22 +19,22 @@ export interface IInfoCardCustom extends Pick<IInfoCard, 'link' | 'typeOfContent
    * @title Descrição
    * @widget text-area
    * @description Texto descritivo.
-  */
- description?: TextArea;
+   */
+  description?: TextArea;
 
- /**
-  * @title Cor de fundo do texto
-  * @format color-input
-  */
- textBackgroundColor?: string;
- 
- /**
-  * @title Fonte do texto
-  * @description Ex: Arial, Gotham, Roboto
-  * @default Arial
-  * @options Arial, Gotham, Roboto, Helvetica, Sans-serif
-  */
- fontFamily?: string;
+  /**
+   * @title Cor de fundo do texto
+   * @format color-input
+   */
+  textBackgroundColor?: string;
+
+  /**
+   * @title Fonte do texto
+   * @description Ex: Arial, Gotham, Roboto
+   * @default Arial
+   * @options Arial, Gotham, Roboto, Helvetica, Sans-serif
+   */
+  fontFamily?: string;
 
   /**
    * @title Tipo de Conteúdo
@@ -39,7 +44,7 @@ export interface IInfoCardCustom extends Pick<IInfoCard, 'link' | 'typeOfContent
     | IInfoCardImage
     | IInfoCardVideo;
 
-    /**
+  /**
    * @title Alinhamento do Conteúdo
    * @description Define o alinhamento do conteúdo. (Default: left)
    */

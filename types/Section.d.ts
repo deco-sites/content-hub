@@ -1,4 +1,13 @@
-export interface ISection {
+import { ComponentChildren, JSX } from "preact";
+
+export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
+  /**
+   * @title Id da Seção
+   * @description Para utilizar, é necessário importar "import { useId } from "site/sdk/useId.ts";" quando for criar uma nova section.
+   * @hide
+   */
+  id: string;
+
   /**
    * @title Título da Seção
    * @description Texto principal da seção.
@@ -12,35 +21,66 @@ export interface ISection {
   subtitle?: string;
 
   /**
-   * @title Margem Superior (desktop). Default: 0
-   * @description Espaçamento superior da seção, em pixels.
-   * @default 0
+   * @title Alinhamento do título e subtítulo
+   * @description Define o alinhamento do título e subtítulo da seção.
+   * @default "left"
    */
-  marginTopDesktop?: number;
+  titleAlignment?: {
+    desktop?: "left" | "center" | "right";
+    mobile?: "left" | "center" | "right";
+  };
 
   /**
-   * @title Margem Superior (mobile). Default: 0
+   * @title Centralizar título e subtítulo?
+   * @default false
+   * @description Define se o título e subtítulo devem ser centralizados.
+   */
+  centralizeTitleAndSubtitle?: boolean;
+
+  /**
+   * @title Utilizar margens laterais maiores para título e subtítulo?
+   * @description Ideal para seções de texto (TextSection) e de imagem (ImageCollectionGridSection) em artigos. Esta opção só faz diferença em visualização desktop.
+   * @default true
+   */
+  articlePaddingForTitleAndSubtitle?: boolean;
+
+  /**
+   * @title Utilizar margens laterais maiores para o conteúdo?
+   * @description Esta opção só faz diferença em visualização desktop.
+   * @default true
+   */
+  articlePaddingForContent?: boolean;
+
+  /**
+   * @title Mobile - Margem Superior
    * @description Espaçamento superior da seção, em pixels.
    * @default 0
    */
   marginTopMobile?: number;
 
   /**
-   * @title Margem Inferior (desktop). Default: 52
-   * @description Espaçamento inferior da seção, em pixels.
-   * @default 52
-   */
-  marginBottomDesktop?: number;
-
-  /**
-   * @title Margem Inferior (mobile). Default: 32
-   * @description Espaçamento inferior da seção, em pixels.
-   * @default 32
+   * @title Mobile - Margem Inferior
+   * @description Espaçamento inferior da seção, em pixels. Default: 40px
+   * @default 40
    */
   marginBottomMobile?: number;
 
   /**
-   * @title Ocupar Toda a Largura?
+   * @title Desktop - Margem Superior
+   * @description Espaçamento superior da seção, em pixels.
+   * @default 0
+   */
+  marginTopDesktop?: number;
+
+  /**
+   * @title Desktop - Margem Inferior
+   * @description Espaçamento inferior da seção, em pixels. Default: 40px
+   * @default 40
+   */
+  marginBottomDesktop?: number;
+
+  /**
+   * @title Ocupar toda a largura?
    * @description Define se o componente deve ocupar toda a largura disponível.
    * @default false
    */
@@ -50,17 +90,11 @@ export interface ISection {
    * @title Children
    * @hide
    */
-  children?: preact.createElement.JSX.Element;
+  children?: ComponentChildren | null;
 
   /**
    * @title Container classes
    * @hide
    */
   classesContainer?: string;
-
-  /**
-   * @title Container styles
-   * @hide
-   */
-  stylesContainer?: preact.JSX.AllCSSProperties;
 }

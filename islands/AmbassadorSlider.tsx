@@ -5,7 +5,7 @@ import type { AmbassadorWithProduct } from "site/types/Ambassador.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 
 interface AmbassadorSliderProps {
-  ambassadors: IAmbassador[];
+  ambassadors: AmbassadorWithProduct[];
   configs: ISliderConfigs;
   rootId: string;
 }
@@ -21,11 +21,14 @@ export default function AmbassadorSlider(
     ? ambassadors.map(
       (ambassador, index) => {
         return (
-          <div key={index} class="ambassadorProductSlide flex flex-col gap-y-[20px]">
+          <div
+            key={index}
+            class="ambassadorProductSlide flex flex-col gap-y-[20px]"
+          >
             <ResponsiveImage
               {...ambassador.photo}
             />
-            {ambassador.products.length &&
+            {!!ambassador?.products?.length &&
               (
                 <SummaryProductCard
                   {...ambassador.products[0]}

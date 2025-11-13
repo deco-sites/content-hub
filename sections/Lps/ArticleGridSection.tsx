@@ -1,4 +1,3 @@
-import { TextArea } from "apps/admin/widgets.ts";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -15,19 +14,23 @@ export interface Article {
    * @description Título do artigo.
    */
   title?: string;
+
   /**
    * @title Texto
    * @description Uma prévia do texto do artigo.
    */
   description?: string;
+
   /**
    * @title Link
    */
   href?: string;
+
   /**
    * @title Texto do botão
    */
   cta?: string;
+
   /**
    * @title Imagens
    */
@@ -83,25 +86,6 @@ export default function ArticleGridSection(
           </div>
         ))}
       </div>
-      <style>
-        {`
-          .article-image-container img {
-            width: 165px;
-            height: 124px;
-          }
-          
-          @media screen and (min-width: 1024px) {
-            .article-grid-container {
-              cursor: pointer;
-            }
-
-            .article-image-container img {
-              width: 100%;
-              height: auto; 
-            }
-          }
-        `}
-      </style>
     </Section>
   );
 }

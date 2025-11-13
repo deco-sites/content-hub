@@ -1,0 +1,1112 @@
+{
+  "name": "hb186-qa",
+  "path": "/hb186-qa",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InspireTilesSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h1>Electrolux Inspira</h1>",
+          "centralizeTitleAndSubtitle": true
+        },
+        "items": [
+          {
+            "desktop": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
+              }
+            },
+            "mobile": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            }
+          }
+        ],
+        "desktopImages": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
+              "mobile": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png",
+              "mobile": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png",
+              "mobile": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png",
+              "mobile": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png"
+            }
+          }
+        ],
+        "mobileImages": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png",
+              "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png",
+              "mobile": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png",
+              "mobile": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png",
+              "mobile": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h2>Inspire-se</h2>",
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
+          "fullWidth": false,
+          "subtitle": "<h3>Conteúdos selecionados de acordo com a sua necessidade<h3>"
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#000000",
+              "text": "Ver mais",
+              "href": "/#"
+            },
+            "direction": "right",
+            "richText": "<h1 style=\"text-align: justify\"><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h1><p style=\"text-align: justify\"><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p style=\"text-align: justify\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f39dec55-1f01-468a-b848-eeb2dc53d215/infocard-inspire.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
+              "alt": "Geladeira"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
+        "section": {
+          "title": "<h2>Quer uma maozinha? Nossos embaixadores te ajudam</h2>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48
+        },
+        "ambassadors": [
+          {
+            "photo": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Embaixadora 1"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg"
+              },
+              "alt": "Embaixadora 1"
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "2140",
+                "count": 1
+              }
+            }
+          },
+          {
+            "photo": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Embaixador 2"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg"
+              },
+              "alt": "Embaixador 2"
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "2140",
+                "count": 1
+              }
+            }
+          },
+          {
+            "photo": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Rita Lobo"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Rita Lobo",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg"
+              }
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "2140",
+                "count": 1
+              }
+            }
+          },
+          {
+            "photo": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Embaixadora 4"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg"
+              },
+              "alt": "Embaixadora 4"
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "2140",
+                "count": 1
+              }
+            }
+          }
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {
+            "mobile": 1,
+            "tablet": 1,
+            "desktop": 4
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+        "section": {
+          "title": "<h2>Sua casa bem vivida</h2>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
+          "subtitle": "lorem ipsum dolor sit amet",
+          "fullWidth": false
+        },
+        "data": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "#041E50",
+              "desktop": "#041E50"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              },
+              "alt": "lavadora"
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "desktop": "#6C7B67",
+              "mobile": "#6C7B67"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "#4A1E18",
+              "desktop": "#4A1E18"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              },
+              "alt": "Lavadora"
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "#7E6464",
+              "desktop": "#7E6464"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/HomeHubInfoSection.tsx",
+        "section": {
+          "title": "<h2>Últimos Artigos</h2>",
+          "subtitle": "Ver todos os artigos",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
+          "fullWidth": false
+        },
+        "infoCards": [
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
+            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Família com Cachorro"
+            }
+          },
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
+            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Família com Cachorro"
+            }
+          },
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
+            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "alt": "Família com Cachorro"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "title": "<h2>Outros artigos</h2>",
+          "subtitle": "Conheça todos os nossos outros artigos aqui",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Lavadora"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "<h2>Entrega com carbono neutro<h2>",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
+            "href": "/#",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Lavadora"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
+            "href": "/#",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Lavadora"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
+            "href": "/#",
+            "cta": "Saiba mais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Lavadora"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Lavadora",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Entrega com carbono neutro",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
+            "href": "/#",
+            "cta": "Saiba mais"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/FoldItemsSection.tsx",
+        "section": {
+          "title": "<h2>Nossos Serviços</h2>",
+          "subtitle": "Conheça mais sobre nossos serviços",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
+          "fullWidth": false
+        },
+        "foldItems": [
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Retirada & Coleta",
+                "target": "blank",
+                "href": "https://loja.electrolux.com.br/"
+              },
+              "loadingOptions": {
+                "loading": "eager",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/6064c43a-b9c5-4a91-8d04-854139b16858/fold-item-1.png",
+                "mobile": "https://assets.decocache.com/content-hub/6064c43a-b9c5-4a91-8d04-854139b16858/fold-item-1.png"
+              },
+              "alt": "Retirada & Coleta"
+            },
+            "title": "Retirada & Coleta"
+          },
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Assistência",
+                "href": "/#",
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7f04357e-91e1-4c68-ae61-d59a9011d7f3/Media-Ratios.png",
+                "mobile": "https://assets.decocache.com/content-hub/7f04357e-91e1-4c68-ae61-d59a9011d7f3/Media-Ratios.png"
+              },
+              "alt": "Assistência"
+            },
+            "title": "Assistência"
+          },
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Personal Cheff",
+                "href": "/#",
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+              },
+              "alt": "Personal Cheff"
+            },
+            "title": "Personal Cheff"
+          },
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Assinatura",
+                "href": "/#",
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f77bd46f-27ae-4db3-921f-45f5bc90aede/fold-item-4.png",
+                "mobile": "https://assets.decocache.com/content-hub/f77bd46f-27ae-4db3-921f-45f5bc90aede/fold-item-4.png"
+              },
+              "alt": "Assinatura"
+            },
+            "title": "Assinatura"
+          },
+          {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "image": {
+              "link": {
+                "title": "Manutenção Preventiva",
+                "href": "/#",
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png",
+                "mobile": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png"
+              },
+              "alt": "Manutenção Preventiva"
+            },
+            "title": "Manutenção Preventiva"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/IconGridSection.tsx",
+        "section": {
+          "title": "<h2>Electrolux com você</h2>",
+          "subtitle": "Subtext",
+          "children": null,
+          "centralizeTitleAndSubtitle": true
+        },
+        "iconItems": [
+          {
+            "icon": {
+              "id": "WhatsApp",
+              "href": "/#",
+              "alt": "WhatsApp",
+              "link": {
+                "title": "WhatsApp",
+                "href": "/#"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/c38e9b31-b00c-4dd4-9688-71dd616a7db1/WhatsApp.svg",
+                "mobile": "https://assets.decocache.com/content-hub/c38e9b31-b00c-4dd4-9688-71dd616a7db1/WhatsApp.svg"
+              }
+            },
+            "title": "WhatsApp",
+            "description": "Dúvidas sobre produtos ou sobre seu pedido"
+          },
+          {
+            "icon": {
+              "id": "store",
+              "href": "/#",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f5c4429e-e706-453a-82f5-ce81015ed94f/Store.svg",
+                "mobile": "https://assets.decocache.com/content-hub/f5c4429e-e706-453a-82f5-ce81015ed94f/Store.svg"
+              },
+              "alt": "Lojas Electrolux",
+              "link": {
+                "title": "Lojas Electrolux",
+                "href": "/#"
+              }
+            },
+            "title": "Lojas Electrolux",
+            "description": "Compre online e retire em uma de nossas lojas"
+          },
+          {
+            "icon": {
+              "id": "cashback",
+              "href": "/#",
+              "alt": "Cashback",
+              "link": {
+                "title": "Cashback",
+                "href": "/#"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/ab73c0cc-7f3b-4ec6-91c3-c35d4dd224bd/Cashback.svg",
+                "mobile": "https://assets.decocache.com/content-hub/ab73c0cc-7f3b-4ec6-91c3-c35d4dd224bd/Cashback.svg"
+              }
+            },
+            "title": "Cashback",
+            "description": "Aqui seu dinheiro vale mais"
+          },
+          {
+            "icon": {
+              "id": "Truck",
+              "href": "/#",
+              "alt": "Instalação",
+              "link": {
+                "title": "Instalação",
+                "href": "/#"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/60687cb3-f5d6-4e0e-8e08-d107c9e915a8/Tool.svg",
+                "mobile": "https://assets.decocache.com/content-hub/60687cb3-f5d6-4e0e-8e08-d107c9e915a8/Tool.svg"
+              }
+            },
+            "title": "Instalação",
+            "description": "Instalamos seu produto com segurança"
+          },
+          {
+            "icon": {
+              "id": "MapPin",
+              "href": "/#",
+              "alt": "Garantia estendida",
+              "link": {
+                "title": "Garantia estendida",
+                "href": "/#"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/fc52d6b8-fc21-4562-923e-897e28f632b5/Shield.svg",
+                "mobile": "https://assets.decocache.com/content-hub/fc52d6b8-fc21-4562-923e-897e28f632b5/Shield.svg"
+              }
+            },
+            "title": "Garantia estendida",
+            "description": "Mais tranquilidade para você"
+          },
+          {
+            "icon": {
+              "id": "Heart",
+              "href": "/#",
+              "alt": "Electrolux cuida",
+              "link": {
+                "title": "Electrolux cuida",
+                "href": "/#"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/be3fcde4-87de-46f0-8d0b-5c481ddcce74/Likephone.svg",
+                "mobile": "https://assets.decocache.com/content-hub/be3fcde4-87de-46f0-8d0b-5c481ddcce74/Likephone.svg"
+              }
+            },
+            "title": "Electrolux cuida",
+            "description": "Assistência técnica online"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ShelfSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h2>Ofertas especiais para você</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48
+        },
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "2140",
+            "count": 10
+          }
+        },
+        "configs": {
+          "customNavigation": {
+            "enabledMobile": true,
+            "enabledDesktop": true
+          },
+          "customPagination": {
+            "enabledMobile": true,
+            "enabledDesktop": true,
+            "dynamicBullets": true
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+        "section": {
+          "title": "<h2>Sua casa bem vivida</h2>",
+          "subtitle": "lorem ipsum dolor sit amet",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
+          "fullWidth": false
+        },
+        "data": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "#041E50",
+              "desktop": "#041E50"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              },
+              "alt": "lavadora"
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "desktop": "#6C7B67",
+              "mobile": "#6C7B67"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "#4A1E18",
+              "desktop": "#4A1E18"
+            }
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Para preservar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              },
+              "alt": "Lavadora"
+            },
+            "title": "Para preservar",
+            "text": "Lorem ipsum dolor sit amet",
+            "link": "/#",
+            "color": {
+              "mobile": "#7E6464",
+              "desktop": "#7E6464"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h2>Explore por assunto</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48
+        },
+        "icons": [
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "title": "Blog",
+            "imageSrc": "https://assets.decocache.com/content-hub/9bce9111-3792-4e48-b043-da93ee9480c3/blog.svg",
+            "redirect": "/#"
+          },
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "imageSrc": "https://assets.decocache.com/content-hub/d550a16b-3faa-40c5-9ff5-594a2234362f/sustentabilidade.svg",
+            "redirect": "/#",
+            "title": "<p class=\"label\">Sustentabili-<br>dade</p>"
+          },
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "imageSrc": "https://assets.decocache.com/content-hub/8ba2c67f-8a13-452e-931d-18fb7b0160d3/ambiente.svg",
+            "redirect": "/#",
+            "title": "Ambientes"
+          },
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
+            "redirect": "/#",
+            "title": "Embaixadores"
+          },
+          {
+            "target": true,
+            "boxBackgroundColor": "#ffffff",
+            "boxBackgroundColorHover": "#041E50",
+            "title": "Lançamentos",
+            "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
+            "redirect": "/#"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "section": {
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48
+        },
+        "icons": [
+          {
+            "id": "Facebook",
+            "href": "/#"
+          },
+          {
+            "id": "Instagram",
+            "href": "/#"
+          },
+          {
+            "id": "Pinterest",
+            "href": "/#"
+          },
+          {
+            "id": "Youtube",
+            "href": "/#"
+          },
+          {
+            "id": "Linkedin",
+            "href": "/#"
+          }
+        ],
+        "title": "Aproveite nossas redes sociais",
+        "banners": [
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Rita Lobo"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
+              "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+            },
+            "alt": "Rita Lobo"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Rita Lobo"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/50a91048-2ec8-4139-a8a6-33811a18a2d8/rita-lobo-alecrim.png",
+              "mobile": "https://assets.decocache.com/content-hub/50a91048-2ec8-4139-a8a6-33811a18a2d8/rita-lobo-alecrim.png"
+            },
+            "alt": "Alecrim"
+          },
+          {
+            "link": {
+              "target": "blank",
+              "href": "/#",
+              "title": "Brownie"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/2e5d12db-13ec-490a-89bf-4e8b09ac0b9e/rita-lobo-brownie.png",
+              "mobile": "https://assets.decocache.com/content-hub/2e5d12db-13ec-490a-89bf-4e8b09ac0b9e/rita-lobo-brownie.png"
+            },
+            "alt": "Brownie"
+          }
+        ],
+        "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "section": {
+          "children": null
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

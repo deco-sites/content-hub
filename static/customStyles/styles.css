@@ -91,31 +91,6 @@
   }
 }
 
-/* Section Component */
-.section-title {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #011e41;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 100%;
-    margin: 0 0 8px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  > p,
-  > span {
-    color: #041e50;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-}
-
 /* Banner Slider Section */
 .banner-slider-section {
   .swiper {
@@ -271,31 +246,6 @@
   }
 }
 
-/* Product Shelf Section */
-.product-shelf-section {
-  .product-shelf-section__text {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 24px;
-      margin: 0 0 16px;
-    }
-
-    p {
-      color: #dee7ea;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 14px;
-    }
-  }
-}
-
 /* Triple Banner Section */
 .triple-banner-section {
   .swiper-wrapper {
@@ -310,52 +260,7 @@
   }
 }
 
-/* Text Section */
-.text-section-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 24px 0 0;
-
-  p {
-    color: #041e50;
-    font-size: 16px;
-    line-height: 22.4px;
-  }
-
-  ul,
-  ol {
-    list-style-type: disc;
-    margin: 1em 0;
-    padding-left: 20px;
-  }
-
-  li + li {
-    margin-top: 8px;
-  }
-}
-
-/* Responsive */
 @media screen and (min-width: 1024px) {
-  /* Section Component */
-  .section-title {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-size: 36px;
-      line-height: 43px;
-      margin: 0;
-    }
-
-    > p,
-    > span {
-      font-size: 16px;
-    }
-  }
-
   /* Review Section */
   .review-section {
     .section-title {
@@ -367,26 +272,6 @@
       h6 {
         font-size: 36px;
         max-width: unset;
-      }
-    }
-  }
-
-  /* Product Shelf Section */
-  .product-shelf-section {
-    .product-shelf-section__text {
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-size: 35px;
-        line-height: 44px;
-      }
-
-      p {
-        font-size: 20px;
-        line-height: 24px;
       }
     }
   }

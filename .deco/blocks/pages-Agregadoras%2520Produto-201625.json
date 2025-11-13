@@ -5,6 +5,13 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "pathOverride": "/content-hub-product-aggregators"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
         "section": {
           "fullWidth": true,
@@ -729,7 +736,10 @@
             "href": "/#",
             "cta": "saiba mais"
           }
-        ]
+        ],
+        "section": {
+          "children": null
+        }
       }
     },
     {

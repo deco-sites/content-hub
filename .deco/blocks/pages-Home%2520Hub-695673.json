@@ -5,150 +5,150 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
-        "banners": [
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "pathOverride": "/content-hub-home-hub"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/InspireTilesSection.tsx",
+        "section": {
+          "title": "<h1>Electrolux Inspira</h1>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true
+        },
+        "items": [
+          {
+            "desktop": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
+              }
+            },
+            "mobile": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            }
+          }
+        ],
+        "desktopImages": [
           {
             "link": {
-              "target": "blank",
-              "href": "/#",
-              "title": "Banner Principal"
+              "target": "blank"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/60969699-a762-4b14-9a10-059b142a38f7/banner-inspirese.png",
-              "mobile": "https://assets.decocache.com/content-hub/65e061a3-f00e-4c8d-bc89-a3fa65ea87d1/banner-inspirese-mobile.png"
+              "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
+              "mobile": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png",
+              "mobile": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png",
+              "mobile": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png"
+            }
+          },
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png",
+              "mobile": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png"
             }
           }
         ],
-        "section": {
-          "fullWidth": true
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/CategoriesGridSection.tsx",
-        "section": {
-          "title": "Electrolux Inspira"
-        },
-        "categories": [
+        "mobileImages": [
           {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Linhas Especiais"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Linhas Especiais",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/1d40424e-7a65-4938-8a88-774383d1677d/MultiBanner2-desktop.png",
-                "mobile": "https://assets.decocache.com/content-hub/04741de6-00de-4e78-b89c-dbb39bccae44/MultiBanner2-mobile.png"
-              }
+            "link": {
+              "target": "blank"
             },
-            "name": "Linhas Especiais"
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png",
+              "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+            }
           },
           {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "A nossa marca"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "A nossa marca",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
-                "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
-              }
+            "link": {
+              "target": "blank"
             },
-            "name": "A nossa marca"
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png",
+              "mobile": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png"
+            }
           },
           {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Embaixadores"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Embaixadores",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
-              }
+            "link": {
+              "target": "blank"
             },
-            "name": "Embaixadores"
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png",
+              "mobile": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png"
+            }
           },
           {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Inspire-se"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/153d4e09-dc90-45ff-83e9-08be0a5118e8/Cooker_Vapor_Bake_Comparativo_Frigidaire_Spanish.jpg",
-                "mobile": "https://assets.decocache.com/content-hub/db19e8b0-2959-4f1c-8928-7e7bcea0e050/Pao-Frigidaire.png"
-              },
-              "alt": "Inspire-se"
+            "link": {
+              "target": "blank"
             },
-            "name": "Inspire-se"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Serviços"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Serviços",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png",
-                "mobile": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png"
-              }
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
             },
-            "name": "Serviços"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Artigos úteis"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Artigos úteis",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/7aa14835-c207-406e-b02e-b6063584a767/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png",
-                "mobile": "https://assets.decocache.com/content-hub/7aa14835-c207-406e-b02e-b6063584a767/Oven_OE9XB_Front_Electrolux_Portuguese-2-(1).png"
-              }
-            },
-            "name": "Artigos úteis"
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png",
+              "mobile": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png"
+            }
           }
         ]
       }
@@ -158,8 +158,12 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true,
-          "title": "Inspire-se",
+          "title": "<h2>Inspire-se</h2>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
+          "fullWidth": false,
           "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "infoCards": [
@@ -185,7 +189,11 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
         "section": {
-          "title": "Quer uma maozinha? Nossos embaixadores te ajudam"
+          "title": "<h2>Quer uma maozinha? Nossos embaixadores te ajudam</h2>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48
         },
         "ambassadors": [
           {
@@ -193,17 +201,43 @@
               "link": {
                 "target": "blank",
                 "href": "/#",
-                "title": "Rita Lobo"
+                "title": "Embaixadora 1"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "alt": "Rita Lobo",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+                "desktop": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg"
+              },
+              "alt": "Embaixadora 1"
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "2140",
+                "count": 1
               }
+            }
+          },
+          {
+            "photo": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Embaixador 2"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg"
+              },
+              "alt": "Embaixador 2"
             },
             "products": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -227,8 +261,8 @@
               },
               "alt": "Rita Lobo",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+                "desktop": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg"
               }
             },
             "products": {
@@ -245,43 +279,17 @@
               "link": {
                 "target": "blank",
                 "href": "/#",
-                "title": "Rita Lobo"
+                "title": "Embaixadora 4"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "alt": "Rita Lobo",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
-              }
-            },
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
-              }
-            }
-          },
-          {
-            "photo": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Rita Lobo"
+                "desktop": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg"
               },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Rita Lobo",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
-              }
+              "alt": "Embaixadora 4"
             },
             "products": {
               "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -307,8 +315,12 @@
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "section": {
-          "title": "<h1>Sua casa bem vivida</h1>",
+          "title": "<h2>Sua casa bem vivida</h2>",
           "subtitle": "lorem ipsum dolor sit amet",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
           "fullWidth": false
         },
         "data": [
@@ -332,8 +344,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": "rgba(52, 73, 94, 0.8)",
-              "desktop": "rgba(52, 73, 94, 1)"
+              "mobile": "#041E50",
+              "desktop": "#041E50"
             }
           },
           {
@@ -357,8 +369,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "desktop": " rgba(90, 106, 90, 1)",
-              "mobile": " rgba(90, 106, 90, 0.8)"
+              "desktop": "#6C7B67",
+              "mobile": "#6C7B67"
             }
           },
           {
@@ -381,8 +393,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": " rgba(107, 78, 78, 0.8)",
-              "desktop": " rgba(107, 78, 78, 1)"
+              "mobile": "#4A1E18",
+              "desktop": "#4A1E18"
             }
           },
           {
@@ -406,8 +418,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": "rgba(126, 100, 100, 0.8)",
-              "desktop": "rgba(126, 100, 100, 1)"
+              "mobile": "#7E6464",
+              "desktop": "#7E6464"
             }
           }
         ]
@@ -418,8 +430,13 @@
       "section": {
         "__resolveType": "site/sections/Lps/HomeHubInfoSection.tsx",
         "section": {
-          "title": "Últimos Artigos",
-          "subtitle": "Ver todos os artigos"
+          "title": "<h2>Últimos Artigos</h2>",
+          "subtitle": "Ver todos os artigos",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
+          "fullWidth": false
         },
         "infoCards": [
           {
@@ -463,8 +480,12 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "title": "Outros artigos",
-          "subtitle": "Conheça todos os nossos outros artigos aqui"
+          "title": "<h2>Outros artigos</h2>",
+          "subtitle": "Conheça todos os nossos outros artigos aqui",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48
         },
         "articles": [
           {
@@ -563,9 +584,13 @@
       "section": {
         "__resolveType": "site/sections/Lps/FoldItemsSection.tsx",
         "section": {
-          "title": "Nossos Serviços",
+          "title": "<h2>Nossos Serviços</h2>",
           "subtitle": "Conheça mais sobre nossos serviços",
-          "fullWidth": false
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "fullWidth": false,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48
         },
         "foldItems": [
           {
@@ -573,16 +598,16 @@
             "image": {
               "link": {
                 "title": "Retirada & Coleta",
-                "href": "/#",
-                "target": "blank"
+                "target": "blank",
+                "href": "https://loja.electrolux.com.br/"
               },
               "loadingOptions": {
-                "loading": "lazy",
+                "loading": "eager",
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png",
-                "mobile": "https://assets.decocache.com/content-hub/48e51fe4-4ea8-402a-8326-c56a33c076bc/image-(1).png"
+                "desktop": "https://assets.decocache.com/content-hub/6064c43a-b9c5-4a91-8d04-854139b16858/fold-item-1.png",
+                "mobile": "https://assets.decocache.com/content-hub/6064c43a-b9c5-4a91-8d04-854139b16858/fold-item-1.png"
               },
               "alt": "Retirada & Coleta"
             },
@@ -645,8 +670,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png",
-                "mobile": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png"
+                "desktop": "https://assets.decocache.com/content-hub/f77bd46f-27ae-4db3-921f-45f5bc90aede/fold-item-4.png",
+                "mobile": "https://assets.decocache.com/content-hub/f77bd46f-27ae-4db3-921f-45f5bc90aede/fold-item-4.png"
               },
               "alt": "Assinatura"
             },
@@ -665,8 +690,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/64305e48-14ec-4283-821d-bceb1d712473/BannerEspeciais.png",
-                "mobile": "https://assets.decocache.com/content-hub/6cdf1cf5-2d50-4780-9390-b393aa4c7643/BannerEspeciais-mobile.png"
+                "desktop": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png",
+                "mobile": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png"
               },
               "alt": "Manutenção Preventiva"
             },
@@ -680,8 +705,10 @@
       "section": {
         "__resolveType": "site/sections/Lps/IconGridSection.tsx",
         "section": {
-          "title": "Electrolux com você",
-          "subtitle": "Subtext"
+          "children": null,
+          "title": "<h2>Electrolux com você</h2>",
+          "subtitle": "Subtext",
+          "centralizeTitleAndSubtitle": true
         },
         "iconItems": [
           {
@@ -792,9 +819,14 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "__resolveType": "site/sections/Product/ShelfSection.tsx",
         "section": {
-          "fullWidth": true
+          "title": "<h2>Ofertas especiais para você</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -804,27 +836,15 @@
             "count": 10
           }
         },
-        "background": {
-          "srcDesktop": "https://assets.decocache.com/content-hub/84dcd53e-b58b-4216-b521-c68a29e42670/Rita-Lobo-v3.png",
-          "srcMobile": "https://assets.decocache.com/content-hub/84dcd53e-b58b-4216-b521-c68a29e42670/Rita-Lobo-v3.png"
-        },
-        "text": "<h2 style=\"text-align: center\">Black Novembro</h2><p style=\"text-align: center\"><span>Lorem ipsum dolor sit amet consectetur alopra lorem.</span></p>",
-        "link": {
-          "text": "Ver tudo",
-          "href": "/#",
-          "bgColor": "#6C7B67"
-        },
         "configs": {
-          "slidesPerViewResponsive": {
-            "mobile": 1,
-            "tablet": 1,
-            "desktop": 3
-          },
           "customNavigation": {
+            "enabledMobile": true,
             "enabledDesktop": true
           },
           "customPagination": {
-            "enabledMobile": true
+            "enabledMobile": true,
+            "enabledDesktop": true,
+            "dynamicBullets": true
           }
         }
       }
@@ -834,8 +854,12 @@
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "section": {
-          "title": "<h1>Sua casa bem vivida</h1>",
+          "children": null,
+          "title": "<h2>Sua casa bem vivida</h2>",
           "subtitle": "lorem ipsum dolor sit amet",
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
           "fullWidth": false
         },
         "data": [
@@ -859,8 +883,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": "rgba(52, 73, 94, 0.8)",
-              "desktop": "rgba(52, 73, 94, 1)"
+              "mobile": "#041E50",
+              "desktop": "#041E50"
             }
           },
           {
@@ -884,8 +908,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "desktop": " rgba(90, 106, 90, 1)",
-              "mobile": " rgba(90, 106, 90, 0.8)"
+              "desktop": "#6C7B67",
+              "mobile": "#6C7B67"
             }
           },
           {
@@ -908,8 +932,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": " rgba(107, 78, 78, 0.8)",
-              "desktop": " rgba(107, 78, 78, 1)"
+              "mobile": "#4A1E18",
+              "desktop": "#4A1E18"
             }
           },
           {
@@ -933,8 +957,8 @@
             "text": "Lorem ipsum dolor sit amet",
             "link": "/#",
             "color": {
-              "mobile": "rgba(126, 100, 100, 0.8)",
-              "desktop": "rgba(126, 100, 100, 1)"
+              "mobile": "#7E6464",
+              "desktop": "#7E6464"
             }
           }
         ]
@@ -944,30 +968,38 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+        "section": {
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
+          "title": "<h2>Explore por assunto</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+        },
         "icons": [
           {
             "target": true,
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
-            "title": "Gastronomia",
-            "imageSrc": "https://assets.decocache.com/content-hub/b73007ae-8b24-4d95-b4f9-96606299c3d7/gastronomia.svg",
+            "title": "Blog",
+            "imageSrc": "https://assets.decocache.com/content-hub/9bce9111-3792-4e48-b043-da93ee9480c3/blog.svg",
             "redirect": "/#"
           },
           {
             "target": true,
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
-            "imageSrc": "https://assets.decocache.com/content-hub/09e9402d-13bf-40d5-b37d-134cddf37904/couch.svg",
+            "imageSrc": "https://assets.decocache.com/content-hub/d550a16b-3faa-40c5-9ff5-594a2234362f/sustentabilidade.svg",
             "redirect": "/#",
-            "title": "Arquitetura & Decoração"
+            "title": "<p class=\"label\">Sustentabili-<br>dade</p>"
           },
           {
             "target": true,
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
-            "imageSrc": "https://assets.decocache.com/content-hub/d0fcdc07-8b2e-442b-8985-5831e23a46af/courtains.svg",
+            "imageSrc": "https://assets.decocache.com/content-hub/8ba2c67f-8a13-452e-931d-18fb7b0160d3/ambiente.svg",
             "redirect": "/#",
-            "title": "Sua casa bem vivida"
+            "title": "Ambientes"
           },
           {
             "target": true,
@@ -975,35 +1007,29 @@
             "boxBackgroundColorHover": "#041E50",
             "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
             "redirect": "/#",
-            "title": "Embaixadores de marca"
+            "title": "Embaixadores"
           },
           {
             "target": true,
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
-            "title": "Guia de compras",
+            "title": "Lançamentos",
             "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
             "redirect": "/#"
-          },
-          {
-            "target": true,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "imageSrc": "https://assets.decocache.com/content-hub/47100eab-13d0-422c-b18f-06067198057b/heart.svg",
-            "redirect": "/#",
-            "title": "Dicas de especialistas"
           }
-        ],
-        "section": {
-          "title": "Explore por assunto",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
-        }
+        ]
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BannerMediaSection.tsx",
+        "section": {
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48
+        },
         "title": "Aproveite nossas redes sociais",
         "banners": [
           {
@@ -1033,8 +1059,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png",
-              "mobile": "https://assets.decocache.com/content-hub/7362beba-7aa6-4e83-976b-5e57c0ce893e/alecrim--BannerMediaSection.png"
+              "desktop": "https://assets.decocache.com/content-hub/50a91048-2ec8-4139-a8a6-33811a18a2d8/rita-lobo-alecrim.png",
+              "mobile": "https://assets.decocache.com/content-hub/50a91048-2ec8-4139-a8a6-33811a18a2d8/rita-lobo-alecrim.png"
             },
             "alt": "Alecrim"
           },
@@ -1049,8 +1075,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png",
-              "mobile": "https://assets.decocache.com/content-hub/a96bff7e-f62a-4657-afba-6e3e3f13e044/brownie-mobile.png"
+              "desktop": "https://assets.decocache.com/content-hub/2e5d12db-13ec-490a-89bf-4e8b09ac0b9e/rita-lobo-brownie.png",
+              "mobile": "https://assets.decocache.com/content-hub/2e5d12db-13ec-490a-89bf-4e8b09ac0b9e/rita-lobo-brownie.png"
             },
             "alt": "Brownie"
           }

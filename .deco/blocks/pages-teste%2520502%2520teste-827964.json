@@ -1,0 +1,57 @@
+{
+  "name": "teste 502",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "section": {
+          "children": null
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h1>Diferença entre geladeiras Electrolux inverter e convencionais</h1>",
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/49aeee42-e2ef-4d5f-9d6d-9b5fb2b8031d/502.webp",
+              "mobile": "https://assets.decocache.com/content-hub/759ec6e0-53b4-474d-9445-48bfdabc551b/502-MOBILE.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/TextSection.tsx",
+        "section": {
+          "children": null,
+          "fullWidth": true
+        },
+        "text": " \n\n<p>Escolher a geladeira inverter Electrolux ideal significa investir em tecnologia que une economia de energia e preservação superior dos alimentos.</p>  \n\n<p>Com motor de alta eficiência energética, esses modelos representam o que há de mais avançado em refrigeração, oferecendo controle preciso de temperatura.</p> \n\n<h2>O que são as geladeiras inverter?</h2> \n\n<p>As <a href=\"https://electrolux.sharepoint.com/:w:/r/sites/eCommerceElux/Shared%20Documents/10.%20SEO%20Latam/Textos/Brasil/WE%20-%20Categoria%20-%20Pr%C3%A9-compra%20-%20PDPs/2025/Agosto/%5BElectrolux%5D%20%23Pauta%20524%20-%20geladeira%20inverter%20vale%20a%20pena.docx?d=wa4bd318d1681434db89e4701d54f1d6a&csf=1&web=1&e=ngwwZZ\">geladeiras inverter</a> revolucionaram a forma como preservamos alimentos. Diferente dos modelos convencionais, elas utilizam um motor inteligente que ajusta sua velocidade automaticamente, mantendo a temperatura sempre estável.</p>  \n\n<p>Pense em uma geladeira que antecipa suas necessidades, sabendo exatamente quando acelerar ou desacelerar. É assim que a tecnologia inverter trabalha para você.</p> \n\n<h3>Motor Inverter: o coração eficiente da sua geladeira</h3> \n\n<p>A <a href=\"https://loja.electrolux.com.br/eletrodomesticos/geladeiras---refrigeradores/geladeira-inverter\">geladeira inverter</a> mantém uma temperatura estável, já que o motor trabalha de maneira contínua, sem oscilações de energia. Essa estabilidade proporciona mais eficiência ao eletrodoméstico, resultando em melhores condições para preservar os alimentos por mais tempo e reduzindo o consumo de energia.</p> \n\n<h3>AutoSense: inteligência artificial que aprende sua rotina</h3> \n\n<p>As <a href=\"https://loja.electrolux.com.br/eletrodomesticos/geladeiras---refrigeradores/geladeira-com-autosense\">geladeiras com AutoSense</a> são equipadas com tecnologias que aprendem seus hábitos, identificando os horários de maior uso e ajustando automaticamente a refrigeração.</p> \n\n<p>Esses eletrodomésticos promovem uma temperatura constante nos momentos de maior abertura de portas, permitindo uma operação mais silenciosa durante a noite e estabilização automática durante viagens ou férias.</p> \n\n<h2>Diferenças entre a geladeira inverter e convencionais</h2> \n\n<p>Entender as diferenças entre os modelos de geladeira com motor inverter e convencional ajuda você a escolher o modelo ideal para suas necessidades, já que cada um possui suas características específicas.</p> \n\n<h3>1. Tecnologia e funcionamento do motor</h3> \n\n<p>As geladeiras inverter utilizam motor com velocidade variável, ajustando automaticamente a potência conforme a necessidade de refrigeração. Essa tecnologia garante partida suave sem picos de energia e maior durabilidade dos componentes internos.</p>  \n\n<p>Já os modelos convencionais operam com motor de velocidade fixa em ciclos de liga/desliga, funcionando com partidas que geram picos de consumo energético.</p> \n\n<h3>2. Economia de energia e impacto na conta de luz</h3> \n\n<p>A tecnologia inverter proporciona maior eficiência energética comparada aos modelos convencionais, resultando em contas de luz mais baixas e impacto reduzido no orçamento doméstico. Os modelos inverter geralmente possuem melhor classificação no selo Procel.</p> \n\n<h3>3. Preservação e qualidade dos alimentos</h3> \n\n<p>O sistema inverter mantém a temperatura mais estável, preservando as condições e o frescor dos alimentos por maior tempo.</p>  \n\n<p>Os modelos convencionais oferecem preservação eficiente para uso cotidiano, com funcionamento confiável que atende às necessidades básicas de refrigeração.</p> \n\n<h3>4. Versatilidade de modelos e configurações</h3> \n\n<p>Tanto geladeiras side by side quanto outros formatos estão disponíveis com tecnologia inverter e convencional.</p> \n\n<p>Os modelos side-by-side oferecem controle independente de temperatura, menor variação térmica no dispenser de água e fabricação de gelo mais eficiente. As versões convencionais focam em amplo espaço de armazenamento, design imponente e preço mais acessível.</p> \n\n<p>A escolha entre uma geladeira inverter e convencional Electrolux depende das suas prioridades. Se você busca máxima economia de energia e preservação superior dos alimentos, a tecnologia inverter oferece esses benefícios com as inovações AutoSense e mais.</p> \n\n<p>Para quem procura por uma preservação tradicional, os modelos convencionais e <a href=\"https://loja.electrolux.com.br/eletrodomesticos/geladeiras---refrigeradores/geladeira-frost-free\">frost free</a> Electrolux são uma escolha confiável e eficiente.</p> \n\n<h2>Diferenciais das geladeiras inverter Electrolux</h2> \n\n<p>Os modelos de geladeiras inverter da Electrolux contam ainda com diversas outras funcionalidades e tecnologias que combinam sustentabilidade e qualidade premium, pensadas para facilitar a sua rotina.</p>\n\n<ul> \n\n<li>Fresh&Flex: gaveta com temperatura ajustável para preservação ideal de diversos alimentos, como carnes e vegetais, além de bebidas;</li> \n\n<li>Função Meat & Fish: preserva 99% das proteínas das carnes por mais tempo;</li> \n\n<li>Tecnologia TwinTech: conta com dois sistemas de refrigeração independentes para proporcionar temperatura e umidade ideais, mantendo o sabor e a textura dos alimentos por mais tempo;</li> \n\n<li>FlexiSpace: compartimento que amplia o espaço do freezer ou da geladeira com a possibilidade de escolher a temperatura ideal de preservação para cada tipo de alimento e bebida;</li> \n\n<li>Dispenser de água e gelo filtrados na porta;</li> \n\n<li>Drink Express para resfriamento rápido de bebidas;</li> \n\n<li>Ice Maker, com produção automática de gelo em cubos ou triturado; e IceMax, compartimento de gelo sem respingos e sem mistura de odores;</li> \n\n<li>Painel Blue Touch para controle intuitivo das funções;</li> \n\n<li>FastAdapt: sistema de prateleiras deslizantes e reversíveis para total flexibilidade;</li> \n\n<li>Gaveta HortiNatura: mantém frutas e vegetais frescos por mais tempo;</li> \n\n<li>TasteGuard: funcionalidade que elimina maus odores causados por bactérias;</li> \n\n<li>IceTwister: para retirada fácil de gelo com sistema giratório.</li>\n\n</ul> <br>\n\n<p>A tecnologia Inverter representa eficiência energética real e economia que impacta diretamente no seu orçamento doméstico. Confira os produtos disponíveis na Electrolux e aproveite para comprar uma geladeira nova agora mesmo, transformando a sua cozinha!</p> "
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx",
+  "path": "/inspira/blog/produtos/5-diferencas-entre-geladeiras-inverter-e-convencionais"
+}

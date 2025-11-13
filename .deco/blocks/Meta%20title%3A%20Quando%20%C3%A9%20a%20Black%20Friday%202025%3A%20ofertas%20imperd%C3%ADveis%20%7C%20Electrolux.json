@@ -1,0 +1,37 @@
+{
+  "__resolveType": "blog/sections/Seo/SeoBlogPost.tsx",
+  "jsonLD": {
+    "post": {
+      "authors": [],
+      "categories": [],
+      "imageCarousel": {
+        "banners": []
+      },
+      "extraProps": [],
+      "aggregateRating": {
+        "@type": "AggregateRating"
+      },
+      "review": [],
+      "contentRating": [],
+      "interactionStatistic": {
+        "@type": "InteractionCounter",
+        "video": null,
+        "image": null
+      },
+      "title": "Fogão Black Friday: como escolher o modelo ideal? | Electrolux",
+      "content": "<p></p>",
+      "date": "2025-10-06",
+      "excerpt": "Descubra o fogão ideal para sua cozinha na Black Friday: design sofisticado, desempenho profissional e tecnologias que transformam sua experiência",
+      "seo": {
+        "title": " Quando é a Black Friday 2025: ofertas imperdíveis Electrolux",
+        "description": "Quando é a Black Friday 2025, o que comprar e quais as principais dicas da data mais aguardada do ano. Aproveite os melhores preços na Electrolux!",
+        "noIndexing": true
+      },
+      "slug": "/inspira/blog/produtos/fogao-black-friday"
+    },
+    "seo": null,
+    "@type": "BlogPostPage"
+  },
+  "description": "Quando é a Black Friday 2025, o que comprar e quais as principais dicas da data mais aguardada do ano. Aproveite os melhores preços na Electrolux!",
+  "title": "Quando é a Black Friday 2025: ofertas imperdíveis Electrolux"
+}

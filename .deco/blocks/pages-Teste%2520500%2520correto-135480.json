@@ -1,5 +1,5 @@
 {
-  "name": "Teste 500 correto",
+  "name": "Texto 500 ",
   "path": "/inspira/blog/dicas/renove-sua-casa-com-descontos-black-friday",
   "sections": [
     {
@@ -20,7 +20,22 @@
           "title": "<h1>Descontos Electrolux Black Friday: renove sua casa com tecnologia e design premium</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/05637f9f-9eb9-4b95-ab93-880e085b9363/500.webp",
+              "mobile": "https://assets.decocache.com/content-hub/b951df4f-1801-41d4-a71b-d5e586aecc32/500-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

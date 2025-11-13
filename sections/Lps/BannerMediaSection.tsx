@@ -123,8 +123,10 @@ export default function BannerMediaSliderSection(
         </div>
         <div class="flex flex-col items-start justify-center gap-y-[20px] max-w-[343px] lg:w-[560px]">
           <div class="flex flex-col gap-y-[16px] text-left">
-            {!isEmptyText(title) && <h2 class='text-[20px] text-[#011E41] font-semibold'>{title}</h2>}
-            {!isEmptyText(text) && <p class='text-[#515253]'>{text}</p>}
+            {!isEmptyText(title) && (
+              <h2 class="text-[20px] text-[#011E41] font-semibold">{title}</h2>
+            )}
+            {!isEmptyText(text) && <p class="text-[#515253]">{text}</p>}
           </div>
           <div class="w-full flex flex-wrap justify-start items-center gap-x-[24px]">
             {icons?.map((

@@ -18,6 +18,7 @@ export type AvailableIcons =
   | "Facebook"
   | "FilterList"
   | "Heart"
+  | "Home"
   | "Instagram"
   | "Linkedin"
   | "MagnifyingGlass"
@@ -50,10 +51,7 @@ export type AvailableIcons =
   | "Likephone"
   | "Store";
 
-interface IconProps extends
-  preact.JSX.SVGAttributes<
-    SVGSVGElement
-  > {
+interface IconProps extends preact.JSX.SVGAttributes<SVGSVGElement> {
   /**
    * Symbol id from element to render. Take a look at `/static/icons.svg`.
    *
@@ -80,11 +78,7 @@ export default function Icon({
       strokeWidth={strokeWidth}
       style={style}
     >
-      <use
-        href={asset(
-          `/sprites.svg#${id}`,
-        )}
-      />
+      <use href={asset(`/sprites.svg#${id}`)} />
     </svg>
   );
 }

@@ -38,13 +38,16 @@
     "std/": "https://deno.land/std@0.190.0/",
     "update": "npm:update@^0.7.4",
     "@deco/codemod-toolkit": "jsr:@deco/codemod-toolkit@0.3.4",
-    "@deco/deco": "jsr:@deco/deco@1.120.10",
+    "@deco/deco": "jsr:@deco/deco@1.128.2",
     "@deco/deno-ast-wasm": "jsr:@deco/deno-ast-wasm@^0.5.5",
-    "@deco/dev": "jsr:@deco/dev@1.120.10",
+    "@deco/dev": "jsr:@deco/dev@1.128.2",
     "@deco/durable": "jsr:@deco/durable@0.5.3",
     "@deco/warp": "jsr:@deco/warp@0.3.10",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.115.3/",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.120.10/"
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.130.4/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.128.2/",
+    "drizzle-orm": "https://esm.sh/drizzle-orm@0.30.10",
+    "drizzle-orm/": "https://esm.sh/drizzle-orm@0.30.10/",
+    "drizzle-kit": "https://esm.sh/drizzle-kit@0.21.2"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
@@ -62,7 +65,14 @@
     "preview": "deno run -A main.ts",
     "dev": "deno run -A --env --unstable-kv --unstable-hmr dev.ts",
     "reload": "deno cache -r https://deco.cx/run",
-    "format": "deno fmt"
+    "format": "deno fmt",
+    "db:setup:deps": "deno cache -r --node-modules-dir npm:drizzle-orm@0.30.10 npm:drizzle-kit@0.21.2 npm:@libsql/client@0.6.0/node",
+    "db:check:credentials": "deno eval --env 'import{getDbCredentials}from\"apps/records/scripts/checkDbCredential.ts\";getDbCredentials();'",
+    "db:pull:prod": "deno eval --env 'import \"apps/records/scripts/pullProd.ts\"'",
+    "db:generate": "deno run -A --node-modules-dir npm:drizzle-kit@0.21.2 generate < /dev/null",
+    "db:migrate": "deno run -A --node-modules-dir --config=deno.json npm:drizzle-kit@0.21.2 migrate",
+    "db:drop": "deno run -A --node-modules-dir --config=deno.json npm:drizzle-kit@0.21.2 drop",
+    "db:schema:update": "DENO_FUTURE=1 deno task db:check:credentials && deno task db:generate && deno task db:migrate"
   },
   "githooks": {
     "pre-commit": "check"
@@ -77,7 +87,10 @@
   ],
   "lint": {
     "rules": {
-      "tags": ["fresh", "recommended"]
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
     }
   },
   "fmt": {

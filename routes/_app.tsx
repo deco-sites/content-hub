@@ -18,16 +18,19 @@ export default defineApp(
           <style
             dangerouslySetInnerHTML={{
               __html: `
+                /* Ephesis Font */
+                @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
                 /* Electrolux Sans Fonts */
                 @font-face {
                   font-family: 'Electrolux Sans';
                   src:
-                    url(${
-                asset("/fonts/ElectroluxSans-Regular.woff2")
-              }) format('woff2'),
-                    url(${
-                asset("/fonts/ElectroluxSans-Regular.woff")
-              }) format('woff');
+                    url(${asset(
+                      "/fonts/ElectroluxSans-Regular.woff2"
+                    )}) format('woff2'),
+                    url(${asset(
+                      "/fonts/ElectroluxSans-Regular.woff"
+                    )}) format('woff');
                   font-weight: 400;
                   font-style: normal;
                   font-display: swap;
@@ -36,12 +39,12 @@ export default defineApp(
                 @font-face {
                   font-family: 'Electrolux Sans';
                   src:
-                    url(${
-                asset("/fonts/ElectroluxSans-Bold.woff2")
-              }) format('woff2'),
-                    url(${
-                asset("/fonts/ElectroluxSans-Bold.woff")
-              }) format('woff');
+                    url(${asset(
+                      "/fonts/ElectroluxSans-Bold.woff2"
+                    )}) format('woff2'),
+                    url(${asset(
+                      "/fonts/ElectroluxSans-Bold.woff"
+                    )}) format('woff');
                   font-weight: 700;
                   font-style: normal;
                   font-display: swap;
@@ -50,12 +53,12 @@ export default defineApp(
                 @font-face {
                   font-family: 'Electrolux Sans';
                   src:
-                    url(${
-                asset("/fonts/ElectroluxSans-SemiBold.woff2")
-              }) format('woff2'),
-                    url(${
-                asset("/fonts/ElectroluxSans-SemiBold.woff")
-              }) format('woff');
+                    url(${asset(
+                      "/fonts/ElectroluxSans-SemiBold.woff2"
+                    )}) format('woff2'),
+                    url(${asset(
+                      "/fonts/ElectroluxSans-SemiBold.woff"
+                    )}) format('woff');
                   font-weight: 600;
                   font-style: normal;
                   font-display: swap;
@@ -64,9 +67,9 @@ export default defineApp(
                 /* Gotham Fonts */
                 @font-face {
                   font-family: 'Gotham';
-                  src: url(${
-                asset("/fonts/Gotham-Book.otf")
-              }) format("opentype");
+                  src: url(${asset(
+                    "/fonts/Gotham-Book.otf"
+                  )}) format("opentype");
                   font-weight: 400;
                   font-style: normal;
                   font-display: swap;
@@ -74,9 +77,9 @@ export default defineApp(
 
                 @font-face {
                   font-family: 'Gotham';
-                  src: url(${
-                asset("/fonts/Gotham-Bold.otf")
-              }) format("opentype");
+                  src: url(${asset(
+                    "/fonts/Gotham-Bold.otf"
+                  )}) format("opentype");
                   font-weight: 700;
                   font-style: normal;
                   font-display: swap;
@@ -97,10 +100,7 @@ export default defineApp(
           />
 
           {/* Web Manifest */}
-          <link
-            rel="manifest"
-            href={asset("/site.webmanifest")}
-          />
+          <link rel="manifest" href={asset("/site.webmanifest")} />
 
           {/* Swiper CSS */}
           <link

@@ -40,7 +40,6 @@ export default function HomeHubInfoSection({
     ...(configs || {}),
   };
 
-
   return (
     <Section
       {...section}

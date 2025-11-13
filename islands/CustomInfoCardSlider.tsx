@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from "preact/hooks";
 import type { IInfoCardCustom } from "site/types/InfoCardCustom.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
+import { HTMLAttributes } from "react";
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLDivElement> {
   infoCards?: IInfoCardCustom[];
   rootId: string;
   configs?: ISliderConfigs;
@@ -91,7 +92,7 @@ export default function CustomInfoCardSlider({
     const onResize = (_evt?: Event) => {
       const v = get();
       setSpv(v);
-      setPage((p) => Math.min(p, Math.max(0, Math.ceil(len / v) - 1)));
+      setPage((p: number) => Math.min(p, Math.max(0, Math.ceil(len / v) - 1)));
     };
     onResize();
     return addResizeListener(onResize as EventListener);
@@ -102,7 +103,7 @@ export default function CustomInfoCardSlider({
     if (!configs?.autoplay?.enabled) return;
     const delay = Math.max(1000, configs?.autoplay?.delay ?? 5000);
     const id = setInterval(() => {
-      setPage((p) => {
+      setPage((p: number) => {
         const next = p + 1;
         if (next < totalPages) return next;
         return configs?.loop ? 0 : p;
@@ -117,10 +118,12 @@ export default function CustomInfoCardSlider({
   ]);
 
   const prev = () =>
-    setPage((p) => (p > 0 ? p - 1 : (configs?.loop ? totalPages - 1 : 0)));
+    setPage((
+      p: number,
+    ) => (p > 0 ? p - 1 : (configs?.loop ? totalPages - 1 : 0)));
 
   const next = () =>
-    setPage((p) => {
+    setPage((p: number) => {
       const n = p + 1;
       return n < totalPages ? n : (configs?.loop ? 0 : p);
     });
@@ -233,24 +236,22 @@ export default function CustomInfoCardSlider({
                       }}
                     >
                       {card.title && (
-                        <h2
-                          class="mb-4 font-bold text-[#041E50] text-[20px] lg:text-[26px]"
-                          dangerouslySetInnerHTML={{ __html: card.title }}
-                        />
+                        <h2 class="mb-4 font-bold text-[#041E50] text-[20px] lg:text-[26px]">
+                          {card.title}
+                        </h2>
                       )}
 
                       {card.description && (
-                        <p
-                          class="font-normal text-[#2B2936] text-[14px] lg:text-[16px]"
-                          dangerouslySetInnerHTML={{ __html: card.description }}
-                        />
+                        <p class="font-normal text-[#2B2936] text-[14px] lg:text-[16px]">
+                          {card.description}
+                        </p>
                       )}
 
                       {card.link?.href && (
                         <div class="mt-6">
                           <a
                             href={card.link.href}
-                            class="inline-block bg-white text-black px-6 py-2 rounded font-semibold hover:opacity-80 transition"
+                            class="inline-block font-semibold "
                           >
                             {card.link.text ?? "Saiba mais"}
                           </a>

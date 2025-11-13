@@ -11,7 +11,7 @@ interface InfoCardSliderProps {
   infoCards?: IInfoCard[];
   configs?: ISliderConfigs;
   rootId: string;
-};
+}
 
 export default function InfoCardSlider({
   infoCards = [],
@@ -45,11 +45,17 @@ export default function InfoCardSlider({
           {...props}
           typeOfContent={enrichedTypeOfContent}
           classes={{
-            container: `${props?.direction === "left" ? "flex-col lg:flex-row" : "flex-col-reverse lg:flex-row-reverse"} w-full justify-start items-center`,
+            container: `${
+              props?.direction === "left"
+                ? "flex-col lg:flex-row"
+                : "flex-col-reverse lg:flex-row-reverse"
+            } w-full justify-start items-center`,
             children:
               `infocard-children-container h-full flex flex-col items-start justify-center gap-[16px]`,
             button: `flex w-full pt-[0px] text-[14px]`,
-            childrenTextContent: `${props?.link?.text ? "h-auto" : "h-full"} w-full`,
+            childrenTextContent: `${
+              props?.link?.text ? "h-auto" : "h-full"
+            } w-full`,
           }}
           styles={{
             children: {

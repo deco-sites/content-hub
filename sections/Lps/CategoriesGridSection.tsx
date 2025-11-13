@@ -14,77 +14,107 @@ interface CategoriesGridSectionProps {
   categories?: Category[];
 }
 
-export default function CategoriesGridSection(
-  { section, categories }: CategoriesGridSectionProps,
-) {
+export default function CategoriesGridSection({
+  section,
+  categories,
+}: CategoriesGridSectionProps) {
   const id = useId();
+
+  const allowedLengths = [3, 6];
+
+  if (!categories || !allowedLengths.includes(categories.length)) {
+    return '"CategoriesGridSection: é necessário adicionar 3 ou 6 items para que esta section seja renderizada."';
+  }
+
+  if (categories?.length === 3) {
+    return (
+      <Section {...section} id={id}>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          {categories.map((category, index) => (
+            <div
+              class="relative flex flex-col justify-end items-end text-right"
+              key={index}
+            >
+              <ResponsiveImage {...category.image} />
+
+              <div class="absolute bg-black/50 h-[130px] bottom-0 left-0 w-full flex items-end justify-end pointer-events-none">
+                <span class="text-white text-[24px] lg:text-[36px] font-semibold px-5 pb-6 leading-none">
+                  {category.name}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+    );
+  }
 
   return (
     <Section {...section} id={id}>
-      {categories.length === 6
-        ? (
-          <>
-            <div class="grid-category-container__mobile grid grid-cols-2 gap-[8px]">
-              {categories.map((category, index) => {
-                return (
-                  <div class="grid-category-item__mobile relative flex flex-col justify-end items-end h-[191px]">
-                    <ResponsiveImage {...category.image} />
-                    <div class="grid-category-item-overlay__mobile absolute bg-black inset-0 bg-black opacity-50">
-                    </div>
-                    <span class="grid-category-item-text__mobile absolute text-[#FFFFFF] font-semibold bottom-[8px] right-[12px]">
-                      {category.name}
-                    </span>
-                  </div>
-                );
-              })}
+      {categories?.length === 6 && (
+        <>
+          <div class="grid-category-container__mobile grid grid-cols-2 gap-[8px]">
+            {categories?.map((category, index) => {
+              return (
+                <div
+                  key={index}
+                  class="grid-category-item__mobile relative flex flex-col justify-end items-end h-[191px]"
+                >
+                  <ResponsiveImage {...category.image} />
+                  <div class="grid-category-item-overlay__mobile absolute inset-0 bg-black opacity-50" />
+                  <span class="grid-category-item-text__mobile absolute text-[#FFFFFF] font-semibold bottom-[8px] right-[12px]">
+                    {category.name}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <div class="grid-category-container__desktop">
+            <div class="grid-category-item__desktop photo0">
+              <ResponsiveImage {...categories?.[0].image} />
+              <div class="grid-category-item-overlay__desktop"></div>
+              <span class="grid-category-item-text__desktop">
+                {categories?.[0].name}
+              </span>
             </div>
-            <div class="grid-category-container__desktop">
-              <div class="grid-category-item__desktop photo0">
-                <ResponsiveImage {...categories[0].image} />
-                <div class="grid-category-item-overlay__desktop"></div>
-                <span class="grid-category-item-text__desktop">
-                  {categories[0].name}
-                </span>
-              </div>
-              <div class="grid-category-item__desktop photo1">
-                <ResponsiveImage {...categories[1].image} />
-                <div class="grid-category-item-overlay__desktop"></div>
-                <span class="grid-category-item-text__desktop">
-                  {categories[1].name}
-                </span>
-              </div>
-              <div class="grid-category-item__desktop photo2">
-                <ResponsiveImage {...categories[2].image} />
-                <div class="grid-category-item-overlay__desktop"></div>
-                <span class="grid-category-item-text__desktop">
-                  {categories[2].name}
-                </span>
-              </div>
-              <div class="grid-category-item__desktop photo3">
-                <ResponsiveImage {...categories[3].image} />
-                <div class="grid-category-item-overlay__desktop"></div>
-                <span class="grid-category-item-text__desktop">
-                  {categories[3].name}
-                </span>
-              </div>
-              <div class="grid-category-item__desktop photo4">
-                <ResponsiveImage {...categories[4].image} />
-                <div class="grid-category-item-overlay__desktop"></div>
-                <span class="grid-category-item-text__desktop">
-                  {categories[4].name}
-                </span>
-              </div>
-              <div class="grid-category-item__desktop photo5">
-                <ResponsiveImage {...categories[5].image} />
-                <div class="grid-category-item-overlay__desktop"></div>
-                <span class="grid-category-item-text__desktop">
-                  {categories[5].name}
-                </span>
-              </div>
+            <div class="grid-category-item__desktop photo1">
+              <ResponsiveImage {...categories?.[1].image} />
+              <div class="grid-category-item-overlay__desktop"></div>
+              <span class="grid-category-item-text__desktop">
+                {categories?.[1].name}
+              </span>
             </div>
-          </>
-        )
-        : "CategoriesGridSection: é necessário adicionar 6 items para que esta section seja renderizada."}
+            <div class="grid-category-item__desktop photo2">
+              <ResponsiveImage {...categories?.[2].image} />
+              <div class="grid-category-item-overlay__desktop"></div>
+              <span class="grid-category-item-text__desktop">
+                {categories?.[2].name}
+              </span>
+            </div>
+            <div class="grid-category-item__desktop photo3">
+              <ResponsiveImage {...categories?.[3].image} />
+              <div class="grid-category-item-overlay__desktop"></div>
+              <span class="grid-category-item-text__desktop">
+                {categories?.[3].name}
+              </span>
+            </div>
+            <div class="grid-category-item__desktop photo4">
+              <ResponsiveImage {...categories?.[4].image} />
+              <div class="grid-category-item-overlay__desktop"></div>
+              <span class="grid-category-item-text__desktop">
+                {categories?.[4].name}
+              </span>
+            </div>
+            <div class="grid-category-item__desktop photo5">
+              <ResponsiveImage {...categories?.[5].image} />
+              <div class="grid-category-item-overlay__desktop"></div>
+              <span class="grid-category-item-text__desktop">
+                {categories?.[5].name}
+              </span>
+            </div>
+          </div>
+        </>
+      )}
       <style>
         {`
           .grid-category-item__mobile img {
@@ -121,8 +151,11 @@ export default function CategoriesGridSection(
             .grid-category-item-overlay__desktop {
               position: absolute;
               background-color: #000000;
-              inset: 0;
               opacity: 0.5;
+              height: 120px;
+              bottom: 0;
+              left: 0;
+              width: 100%;
             }
 
             .grid-category-item-text__desktop {

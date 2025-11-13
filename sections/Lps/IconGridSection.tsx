@@ -1,4 +1,3 @@
-import { TextArea } from "apps/admin/widgets.ts";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -51,8 +50,20 @@ export default function IconGridSection(
             key={index}
             class="flex flex-col justify-center items-center gap-y-[12px] lg:gap-y-[24px] lg:w-[180px]"
           >
-            <div class="flex justify-center items-center object-cover max-w-[48px]">
-              {item.icon.src.mobile || item.icon.src.desktop ? <ResponsiveImage {...item.icon} sizes={{ width: 48, height: 48, widthMobile: 48, heightMobile: 48 }} /> : null}
+            <div class="icon-container flex justify-center items-center w-full object-contain max-w-[48px]">
+              {item.icon.src?.mobile || item.icon.src?.desktop
+                ? (
+                  <ResponsiveImage
+                    {...item.icon}
+                    sizes={{
+                      width: 48,
+                      height: 48,
+                      widthMobile: 48,
+                      heightMobile: 48,
+                    }}
+                  />
+                )
+                : null}
             </div>
             <div class="flex flex-col justify-center items-center w-full lg:gap-y-[4px]">
               <h3 class="text-[16px] font-semibold text-[#041E50]">
@@ -65,6 +76,7 @@ export default function IconGridSection(
           </div>
         ))}
       </div>
+      <style>{`.icon-container img {object-fit: contain !important;}`}</style>
     </Section>
   );
 }

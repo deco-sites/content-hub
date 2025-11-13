@@ -5,12 +5,27 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/BannerSliderSection.tsx",
+        "__resolveType": "site/sections/Lps/AmbassadorsBannerSliderSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h1>Rita Lobo</h1>",
+          "centralizeTitleAndSubtitle": false,
+          "fullWidth": true,
+          "marginTopDesktop": 0,
+          "titleAlignment": {
+            "0": "r",
+            "1": "i",
+            "2": "g",
+            "3": "h",
+            "4": "t",
+            "mobile": "center",
+            "desktop": "right"
+          }
+        },
         "banners": [
           {
             "link": {
-              "target": "blank",
-              "title": "Rita Lobo"
+              "target": "blank"
             },
             "loadingOptions": {
               "loading": "lazy",
@@ -18,22 +33,134 @@
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/47916c20-d567-41cd-a21d-babfb8b9a424/437345a66d701e0fbf18232d6ede515e53f4b1fa.png",
-              "mobile": "https://assets.decocache.com/content-hub/47916c20-d567-41cd-a21d-babfb8b9a424/437345a66d701e0fbf18232d6ede515e53f4b1fa.png"
+              "mobile": "https://assets.decocache.com/content-hub/45639921-085e-43ab-87c6-d66180b81dba/banner-rita-lobo-mobile.png"
             }
           }
         ],
-        "section": {
-          "fullWidth": true,
-          "marginTopDesktop": 0
-        }
+        "products": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "https://loja.electrolux.com.br/eletroportateis/air-fryer",
+                "title": "Air Fryer"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/b03936f8-f71b-451f-b074-ee060893a63c/banner-airfryer-fundo.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/b03936f8-f71b-451f-b074-ee060893a63c/banner-airfryer-fundo.jpg"
+              }
+            },
+            "title": "Air Fryer"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "https://loja.electrolux.com.br/eletroportateis/panela-eletrica/panela-de-pressao",
+                "title": "Panela de Pressão Elétrica"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/1054b8d9-7204-432f-b50f-743b6466205c/panela-pressao.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/1054b8d9-7204-432f-b50f-743b6466205c/panela-pressao.jpg"
+              }
+            },
+            "title": "Panela de Pressão Elétrica"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "https://loja.electrolux.com.br/eletroportateis/panela-eletrica/panela-de-arroz",
+                "title": "Panela de Arroz"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/db118b3c-e6b6-4944-b342-cecd6146033c/panela-arroz.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/db118b3c-e6b6-4944-b342-cecd6146033c/panela-arroz.jpg"
+              }
+            },
+            "title": "Panela de arroz"
+          }
+        ]
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "pathOverride": "/content-hub-ambassadors"
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+              "section": {
+                "children": null,
+                "titleAlignment": {
+                  "desktop": "center",
+                  "mobile": "center"
+                }
+              },
+              "icons": [
+                {
+                  "target": false,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#617f57",
+                  "title": "Geladeira",
+                  "imageSrc": "https://data.decoassets.com/content-hub/2ba382ba-9762-480f-ab0f-805cc39479a6/geladeiraicon.svg",
+                  "alt": "Geladeira"
+                },
+                {
+                  "target": false,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#617f57",
+                  "imageSrc": "https://assets.decocache.com/content-hub/fe5dc78b-8efd-43a9-9b11-aeeda9424772/fogoes.svg",
+                  "title": "Fogões",
+                  "alt": "Fogões"
+                },
+                {
+                  "target": false,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#617f57",
+                  "imageSrc": "https://assets.decocache.com/content-hub/3aade863-235c-4fc5-92e3-5001b79bda21/maquina-de-lavar.svg",
+                  "title": "Lavadoras",
+                  "alt": "Lavadoras"
+                }
+              ]
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true
+          "children": null,
+          "fullWidth": false,
+          "title": "<h2>Último vídeo</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "centralizeTitleAndSubtitle": true
         },
         "infoCards": [
           {
@@ -44,9 +171,9 @@
             },
             "direction": "left",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png",
-              "alt": "Rita Lobo"
+              "autoplay": false,
+              "iframeProps": {},
+              "src": "https://www.youtube.com/watch?v=V0IPOOwdCzM"
             },
             "richText": "<p><strong><span style=\"font-size: 10pt\">Embaixadores</span></strong></p><p><strong><span style=\"font-size: 15pt\">Rita Lobo</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
           }
@@ -56,29 +183,72 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "__resolveType": "site/sections/Lps/CategoriesGridSection.tsx",
         "section": {
-          "fullWidth": true
+          "children": null,
+          "title": "<h2>Conteúdos sobre Categorias</h2>",
+          "titleAlignment": {
+            "desktop": "center",
+            "mobile": "center"
+          },
+          "subtitle": "Subtext",
+          "centralizeTitleAndSubtitle": true
         },
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc",
-            "collection": "2140",
-            "count": 10
+        "categories": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/eletroportateis/air-fryer",
+                "title": "Air Fryer"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7f38b2c0-b3dc-4226-8beb-76f7486fb09f/rita-lobo-categoria-air-fryer.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/7f38b2c0-b3dc-4226-8beb-76f7486fb09f/rita-lobo-categoria-air-fryer.jpg"
+              }
+            },
+            "name": "Air Fryer"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/eletroportateis/panela-eletrica/panela-de-pressao",
+                "title": "Panela De Pressão Elétrica"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/413ef87d-cbb7-4990-8aa1-f67aa203aa47/rita-lobo-categoria-panela-de-pressao-eletrica.png",
+                "mobile": "https://assets.decocache.com/content-hub/413ef87d-cbb7-4990-8aa1-f67aa203aa47/rita-lobo-categoria-panela-de-pressao-eletrica.png"
+              }
+            },
+            "name": "Panela De Pressão Elétrica"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "Panela de Arroz"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg"
+              }
+            },
+            "name": "Panela de Arroz"
           }
-        },
-        "background": {
-          "srcDesktop": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
-          "srcMobile": "https://assets.decocache.com/content-hub/8eb52343-045c-4e74-97bb-e924a9417ab0/c4d737c5d4a401e9a2ff63d6cc946d9df79a15a9.png",
-          "alt": "Ria Lobo"
-        },
-        "text": "<h2 style=\"text-align: center\">Air Fryers Rita Lobo</h2><p style=\"text-align: center\"><span>Lorem ipsum dolor sit amet consectetur alopra lorem.</span></p>",
-        "reverse": true,
-        "link": {
-          "text": "Ver tudo",
-          "href": "/#"
-        }
+        ]
       }
     },
     {
@@ -86,7 +256,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "title": "<h1>Receitas Eletroportáteis</h1>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "title": "<h2>Receitas Air Fryer</h2>",
           "subtitle": "Subtext"
         },
         "articles": [
@@ -107,7 +279,7 @@
                 "mobile": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png"
               }
             },
-            "title": "Medalhão de Beringela com Pesto",
+            "title": "<h3>Medalhão de Beringela com Pesto",
             "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
             "href": "/#",
             "cta": "Ver receita"
@@ -184,9 +356,145 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelfSection.tsx",
+        "__resolveType": "site/sections/Lps/MontageSection.tsx",
         "section": {
-          "fullWidth": true
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "title": "<h2>Coleção</h2>"
+        },
+        "montageItemsMobile": [
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "link": {
+              "color": "#2B2936",
+              "text": "Ver produtos",
+              "href": "/#"
+            },
+            "title": "Ferro de passar",
+            "textBackgroundColor": "#F6F6F6",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
+              "srcMobile": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
+              "alt": "rita-lobo"
+            },
+            "textColor": "#2B3227",
+            "description": "Temperatura ideal para armazenar diversos tipos de cerveja. Com capacidade para organizar suas latas, garrafas e barris de forma prática e eficiente."
+          },
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "link": {
+              "color": "#2B2936",
+              "text": "Ver produtos",
+              "href": "/#"
+            },
+            "title": "Vaporizador",
+            "description": "Com amplo espaço interno e recursos que mantêm as bebidas na temperatura perfeita para servir.",
+            "textBackgroundColor": "#F6F6F6",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png",
+              "alt": "rita-lobo"
+            },
+            "textColor": "#2B3227"
+          },
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "link": {
+              "color": "#2B2936",
+              "text": "Ver produtos",
+              "href": "/#"
+            },
+            "textBackgroundColor": "#F6F6F6",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg",
+              "srcMobile": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg",
+              "alt": "rita-lobo"
+            },
+            "textColor": "#2B3227",
+            "title": "Lavadora de alta pressão",
+            "description": "Com as melhores condições para seus vinhos, mantém a tempertura adequada para preservar o sabor e o aroma da sua coleção."
+          }
+        ],
+        "montageItemsDesktop": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Ferro de passar"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "rita-lobo",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg"
+              }
+            },
+            "title": "<h3>Ferro de passar",
+            "text": "Temperatura ideal para armazenar diversos tipos de cerveja. Com capacidade para organizar suas latas, garrafas e barris de forma prática e eficiente."
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Vaporizador"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "rita-lobo",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png",
+                "mobile": "https://assets.decocache.com/content-hub/57af3cb1-6145-4f2d-b576-3a5c70b00234/rita-lobo-colecao-2.png"
+              }
+            },
+            "title": "Vaporizador",
+            "text": "Com amplo espaço interno e recursos que mantêm as bebidas na temperatura perfeita para servir."
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/#",
+                "title": "Lavadora de alta pressão"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "rita-lobo",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg"
+              }
+            },
+            "title": "Lavadora de alta pressão",
+            "text": "Com as melhores condições para seus vinhos, mantém a tempertura adequada para preservar o sabor e o aroma da sua coleção."
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ShelfSection.tsx",
+        "section": {
+          "children": null,
+          "centralizeTitleAndSubtitle": false
+        },
+        "configs": {
+          "slidesPerViewResponsive": {
+            "desktop": 4,
+            "mobile": 1
+          }
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -195,118 +503,7 @@
             "collection": "2140",
             "count": 10
           }
-        },
-        "background": {
-          "srcDesktop": "https://assets.decocache.com/content-hub/d6ff837f-2223-4d87-90cb-835f1468ad3e/cooktop-inducao-banner.png",
-          "srcMobile": "https://assets.decocache.com/content-hub/d6ff837f-2223-4d87-90cb-835f1468ad3e/cooktop-inducao-banner.png",
-          "alt": "Ria Lobo"
-        },
-        "text": "<h2 style=\"text-align: center\">Eletroportáteis</h2><p style=\"text-align: center\">Lorem ipsum dolor sit amet consectetur alopra lorem.</p>",
-        "reverse": false,
-        "link": {
-          "text": "Ver mais",
-          "href": "/#"
         }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
-        "section": {
-          "title": "<h1>Receitas Eletroportáteis</h1>",
-          "subtitle": "Subtext"
-        },
-        "articles": [
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "title": "Medalhão de Beringela com Pesto",
-                "href": "/#"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Medalhão de Beringela com Pesto",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png",
-                "mobile": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png"
-              }
-            },
-            "title": "Medalhão de Beringela com Pesto",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
-            "cta": "Ver receita"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "title": "Brownie na Air Fryer",
-                "href": "/#"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Brownie na Air Fryer",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png",
-                "mobile": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png"
-              }
-            },
-            "title": "Brownie na Air Fryer",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
-            "cta": "Ver receita"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "title": "Alecrim Açucarado na Air Fryer",
-                "href": "/#"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Alecrim Açucarado na Air Fryer",
-              "src": {
-                "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
-                "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
-              }
-            },
-            "title": "Alecrim Açucarado na Air Fryer",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
-            "cta": "Ver receita"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "title": "Frango Assado na Air Fryer",
-                "href": "/#"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Frango Assado na Air Fryer",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
-                "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
-              }
-            },
-            "title": "Frango Assado na Air Fryer",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
-            "cta": "Ver receita"
-          }
-        ]
       }
     },
     {
@@ -314,9 +511,11 @@
       "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "fullWidth": true,
-          "title": "Ecoplus",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+          "title": "<h2>Ecoplus</h2>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "fullWidth": true
         },
         "infoCards": [
           {
@@ -325,15 +524,133 @@
               "text": "Ver mais",
               "href": "/#"
             },
-            "direction": "left",
+            "direction": "right",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png",
-              "alt": "Rita Lobo"
+              "autoplay": false,
+              "iframeProps": {},
+              "src": "https://www.youtube.com/watch?v=V0IPOOwdCzM"
             },
-            "richText": "<p><strong><span style=\"font-size: 10pt\">Embaixadores</span></strong></p><p><strong><span style=\"font-size: 15pt\">Rita Lobo</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
+            "richText": "<p><strong><span style=\"font-size: 10pt\">Embaixadores</span></strong></p><p><strong><span style=\"font-size: 15pt\">Rita Lobo</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a></p>"
           }
         ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
+        "section": {
+          "title": "<h2>Quer Uma Mãozinha? Nossos Embaixadores Te Ajudam</h2>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true
+        },
+        "ambassadors": [
+          {
+            "photo": {
+              "alt": "Rita Lobo",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg"
+              },
+              "link": {
+                "href": "/panela-de-pressao-eletrica-pce20-electrolux/p",
+                "title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
+              }
+            },
+            "product": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "ids": [
+                  "2002911"
+                ],
+                "simulationBehavior": "default"
+              }
+            }
+          },
+          {
+            "photo": {
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg"
+              },
+              "link": {
+                "href": "/panela-de-pressao-eletrica-pce20-electrolux/p",
+                "title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
+              },
+              "alt": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
+            },
+            "product": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "ids": [
+                  "2002911"
+                ],
+                "simulationBehavior": "default"
+              }
+            }
+          },
+          {
+            "photo": {
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg"
+              },
+              "link": {
+                "href": "/panela-de-pressao-eletrica-pce20-electrolux/p",
+                "title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
+              },
+              "alt": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
+            },
+            "product": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "ids": [
+                  "2002911"
+                ],
+                "simulationBehavior": "default"
+              }
+            }
+          },
+          {
+            "photo": {
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg"
+              },
+              "link": {
+                "href": "/panela-de-pressao-eletrica-pce20-electrolux/p",
+                "title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
+              },
+              "alt": "Panela de Pressão Elétrica Electrolux por Rita Lobo 5L Preta Efficient c/ Timer (PCE20)"
+            },
+            "product": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+            },
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "ids": [
+                  "2002911"
+                ],
+                "simulationBehavior": "default"
+              }
+            }
+          }
+        ],
+        "configs": {
+          "slidesPerViewResponsive": {},
+          "customPagination": {},
+          "autoplay": {}
+        }
       }
     },
     {
@@ -341,8 +658,10 @@
       "section": {
         "__resolveType": "site/sections/Lps/SolidColorsSection.tsx",
         "section": {
-          "title": "Sua Casa Bem Vivida",
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
+          "children": null,
+          "title": "<h2>Livros Rita Lobo</h2>",
+          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade",
+          "centralizeTitleAndSubtitle": true
         },
         "data": [
           {
@@ -451,108 +770,133 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
-        "ambassadors": [
-          {
-            "photo": {
-              "alt": "Rita Lobo",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
-                "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
-              },
-              "link": {
-                "href": "/#",
-                "title": "Rita Lobo"
-              }
-            },
-            "product": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            },
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
-              }
-            }
-          },
-          {
-            "photo": {
-              "alt": "Rita Lobo",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
-                "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
-              },
-              "link": {
-                "href": "/#",
-                "title": "Rita Lobo"
-              }
-            },
-            "product": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            },
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
-              }
-            }
-          },
-          {
-            "photo": {
-              "alt": "Rita Lobo",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
-                "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
-              },
-              "link": {
-                "href": "/#",
-                "title": "Rita Lobo"
-              }
-            },
-            "product": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            },
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
-              }
-            }
-          },
-          {
-            "photo": {
-              "alt": "Rita Lobo",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
-                "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
-              },
-              "link": {
-                "href": "/#",
-                "title": "Rita Lobo"
-              }
-            },
-            "product": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-            },
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
-              }
-            }
-          }
-        ],
+        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "Quer uma mãozinha? Nossos embaixadores te ajudam!"
-        }
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "title": "<h2>Ecoplus</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+          "fullWidth": true
+        },
+        "infoCards": [
+          {
+            "link": {
+              "color": "#041E50",
+              "text": "Ver mais",
+              "href": "/#"
+            },
+            "direction": "left",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
+              "srcMobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png",
+              "alt": "air fryer"
+            },
+            "richText": "<p><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a></p>",
+            "textColor": "#041E50"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "children": null,
+          "title": "<h2>Receitas Eletroportateis</h2>",
+          "centralizeTitleAndSubtitle": true,
+          "subtitle": "Subtext"
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "title": "Medalhão de Beringela com Pesto",
+                "href": "/#"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Medalhão de Beringela com Pesto",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png",
+                "mobile": "https://assets.decocache.com/content-hub/f01ab9eb-bb91-4523-977b-2a08a12214ba/008487216a7c8b62962a05d07d6306d81a66e34f-(1).png"
+              }
+            },
+            "title": "Medalhão de Beringela com Pesto",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
+            "href": "/#",
+            "cta": "Ver receita"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "title": "Brownie na Air Fryer",
+                "href": "/#"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Brownie na Air Fryer",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png",
+                "mobile": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png"
+              }
+            },
+            "title": "Brownie na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
+            "href": "/#",
+            "cta": "Ver receita"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "title": "Alecrim Açucarado na Air Fryer",
+                "href": "/#"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Alecrim Açucarado na Air Fryer",
+              "src": {
+                "desktop": "https://data.decoassets.com/content-hub/41fae86f-aec4-4480-a137-f3e85fbf894a/alecrim.png",
+                "mobile": "https://assets.decocache.com/content-hub/3899aa67-da65-4538-9a6b-82e2693c107d/alecrim-mobile.png"
+              }
+            },
+            "title": "Alecrim Açucarado na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
+            "href": "/#",
+            "cta": "Ver receita"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "title": "Frango Assado na Air Fryer",
+                "href": "/#"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Frango Assado na Air Fryer",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
+                "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
+              }
+            },
+            "title": "Frango Assado na Air Fryer",
+            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
+            "href": "/#",
+            "cta": "Ver receita"
+          }
+        ]
       }
     }
   ],

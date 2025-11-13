@@ -5,21 +5,10 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
-        "pathOverride": "/content-hub-home-hub/teste",
-        "section": {
-          "children": null
-        },
-        "enableMobileScroll": true
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Lps/InspireTilesSection.tsx",
         "section": {
-          "title": "<h1>Electrolux Inspira</h1>",
           "children": null,
+          "title": "<h1>Electrolux Inspira</h1>",
           "centralizeTitleAndSubtitle": true
         },
         "items": [
@@ -155,6 +144,17 @@
             }
           }
         ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "section": {
+          "children": null
+        },
+        "pathOverride": "/content-hub-home-hub/teste",
+        "enableMobileScroll": true
       }
     },
     {
@@ -1104,6 +1104,15 @@
           }
         ],
         "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "section": {
+          "children": null
+        }
       }
     }
   ],

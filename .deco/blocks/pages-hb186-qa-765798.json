@@ -149,26 +149,15 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
-        "section": {
-          "children": null
-        },
-        "pathOverride": "/content-hub-home-hub/teste",
-        "enableMobileScroll": true
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
         "section": {
-          "title": "<h2>Inspire-se</h2>",
           "children": null,
+          "title": "<h2>Inspire-se</h2>",
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48,
           "fullWidth": false,
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
+          "subtitle": "<h3>Conteúdos selecionados de acordo com a sua necessidade<h3>"
         },
         "infoCards": [
           {
@@ -320,11 +309,11 @@
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "section": {
           "title": "<h2>Sua casa bem vivida</h2>",
-          "subtitle": "lorem ipsum dolor sit amet",
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48,
+          "subtitle": "lorem ipsum dolor sit amet",
           "fullWidth": false
         },
         "data": [
@@ -509,7 +498,7 @@
                 "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
               }
             },
-            "title": "Entrega com carbono neutro",
+            "title": "<h2>Entrega com carbono neutro<h2>",
             "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
             "href": "/#",
             "cta": "Saiba mais"
@@ -592,9 +581,9 @@
           "subtitle": "Conheça mais sobre nossos serviços",
           "children": null,
           "centralizeTitleAndSubtitle": true,
-          "fullWidth": false,
           "marginBottomMobile": 48,
-          "marginBottomDesktop": 48
+          "marginBottomDesktop": 48,
+          "fullWidth": false
         },
         "foldItems": [
           {
@@ -705,9 +694,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/IconGridSection.tsx",
         "section": {
-          "children": null,
           "title": "<h2>Electrolux com você</h2>",
           "subtitle": "Subtext",
+          "children": null,
           "centralizeTitleAndSubtitle": true
         },
         "iconItems": [
@@ -821,9 +810,9 @@
       "section": {
         "__resolveType": "site/sections/Product/ShelfSection.tsx",
         "section": {
+          "children": null,
           "title": "<h2>Ofertas especiais para você</h2>",
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-          "children": null,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48
@@ -854,9 +843,9 @@
       "section": {
         "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
         "section": {
-          "children": null,
           "title": "<h2>Sua casa bem vivida</h2>",
           "subtitle": "lorem ipsum dolor sit amet",
+          "children": null,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48,
@@ -970,11 +959,11 @@
         "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
         "section": {
           "children": null,
+          "title": "<h2>Explore por assunto</h2>",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
-          "marginBottomDesktop": 48,
-          "title": "<h2>Explore por assunto</h2>",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos"
+          "marginBottomDesktop": 48
         },
         "icons": [
           {
@@ -1030,6 +1019,28 @@
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48
         },
+        "icons": [
+          {
+            "id": "Facebook",
+            "href": "/#"
+          },
+          {
+            "id": "Instagram",
+            "href": "/#"
+          },
+          {
+            "id": "Pinterest",
+            "href": "/#"
+          },
+          {
+            "id": "Youtube",
+            "href": "/#"
+          },
+          {
+            "id": "Linkedin",
+            "href": "/#"
+          }
+        ],
         "title": "Aproveite nossas redes sociais",
         "banners": [
           {
@@ -1079,28 +1090,6 @@
               "mobile": "https://assets.decocache.com/content-hub/2e5d12db-13ec-490a-89bf-4e8b09ac0b9e/rita-lobo-brownie.png"
             },
             "alt": "Brownie"
-          }
-        ],
-        "icons": [
-          {
-            "id": "Facebook",
-            "href": "/#"
-          },
-          {
-            "id": "Instagram",
-            "href": "/#"
-          },
-          {
-            "id": "Pinterest",
-            "href": "/#"
-          },
-          {
-            "id": "Youtube",
-            "href": "/#"
-          },
-          {
-            "id": "Linkedin",
-            "href": "/#"
           }
         ],
         "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."

@@ -76,7 +76,7 @@ function FoldItem({ foldItem }: FoldItem) {
         {textCTA && (
           <a
             href={linkCTA}
-            class="foldItemDesktopCTA text-[#fff] bg-[#bf9600] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
+            class="foldItemMobileCTA text-[#fff] bg-[#bf9600] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
             title={textCTA}
           >
             {textCTA}

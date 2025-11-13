@@ -3223,6 +3223,9 @@ input.tab:checked + .tab-content,
 .rounded-\[3px\] {
   border-radius: 3px;
 }
+.rounded-\[4px\] {
+  border-radius: 4px;
+}
 .rounded-\[6px\] {
   border-radius: 6px;
 }
@@ -3359,6 +3362,10 @@ input.tab:checked + .tab-content,
 .bg-\[\#bc8817\] {
   --tw-bg-opacity: 1;
   background-color: rgb(188 136 23 / var(--tw-bg-opacity));
+}
+.bg-\[\#bf9600\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 150 0 / var(--tw-bg-opacity));
 }
 .bg-\[var\(--bg-color\)\] {
   background-color: var(--bg-color);
@@ -3765,6 +3772,10 @@ input.tab:checked + .tab-content,
   color: rgb(102 119 129 / var(--tw-text-opacity));
 }
 .text-\[\#FFFFFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-\[\#fff\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }

@@ -21,8 +21,7 @@
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true,
           "fullWidth": false,
-          "marginBottomMobile": 48,
-          "marginTopMobile": 48
+          "marginTopMobile": 15
         },
         "imageCollection": [
           {

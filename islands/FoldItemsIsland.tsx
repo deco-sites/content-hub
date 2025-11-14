@@ -20,18 +20,27 @@ export interface FoldItem {
    * @default Lorem
    */
   text?: TextArea;
-  /**
-   * @title Texto CTA
-   * @description Texto do CTA vinculado ao item (mesmo do atributo title).
-   * @default Lorem
-   */
-  textCTA?: TextArea;
-  /**
-   * @title Link CTA
-   * @description Link do CTA vinculado ao item.
-   * @default Lorem
-   */
-  linkCTA?: TextArea;
+
+  cta?: {
+    /**
+     * @title Texto CTA
+     * @description Texto do CTA vinculado ao item (mesmo do atributo title).
+     * @default Lorem
+     */
+    textCTA?: TextArea;
+    /**
+     * @title Link CTA
+     * @description Link do CTA vinculado ao item.
+     * @default /#
+     */
+    linkCTA?: TextArea;
+    /**
+     * @title Abrir em nova aba?
+     * @description Caso seja selecionada, esta opção irá permitir que o link abra em uma nova aba.
+     * @default false
+     */
+    targetCTA?: boolean;
+  };
   /**
    * @title Imagens
    */
@@ -42,7 +51,21 @@ interface FoldItemsIslandProps {
   foldItems?: FoldItem[];
 }
 
-function FoldItem({ title, text, image, textCTA, linkCTA }: FoldItem) {
+function FoldItem({
+  title,
+  text,
+  image,
+  cta,
+}: {
+  title?: string;
+  text?: string;
+  image?: IResponsiveImage;
+  cta?: {
+    textCTA?: string;
+    linkCTA?: string;
+    targetCTA?: boolean;
+  };
+}) {
   const isOpen = useSignal<boolean>(false);
   const toggleItem = () => (isOpen.value = !isOpen.value);
 
@@ -72,13 +95,14 @@ function FoldItem({ title, text, image, textCTA, linkCTA }: FoldItem) {
       >
         <h4 class={`text-[#041E50] font-semibold text-[26px]`}>{title}</h4>
         <p class={`text-[#2B2936] text-[14px]`}>{text}</p>
-        {textCTA && (
+        {cta?.textCTA && (
           <a
-            href={linkCTA}
-            class="foldItemMobileCTA text-[#fff] bg-[#bf9600] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
-            title={textCTA}
+            href={cta?.linkCTA}
+            target={cta?.targetCTA ? "_blank" : "_self"}
+            class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
+            title={cta?.textCTA}
           >
-            {textCTA}
+            {cta.textCTA}
           </a>
         )}
       </div>
@@ -147,18 +171,23 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
 
       <div class="hidden lg:flex flex-col justify-center items-start gap-[16px] pr-8">
         <h2 class="text-[#041E50] font-bold text-4xl">
-          {foldItems && foldItems[selectedItem.value].title}
+          {foldItems?.[selectedItem.value]?.title}
         </h2>
         <p class="text-[#2B2936] text-base">
-          {foldItems && foldItems[selectedItem.value].text}
+          {foldItems?.[selectedItem.value]?.text}
         </p>
-        {foldItems && foldItems[selectedItem.value].textCTA && (
+        {foldItems?.[selectedItem.value]?.cta?.textCTA && (
           <a
-            href={foldItems[selectedItem.value].linkCTA}
-            class="foldItemDesktopCTA text-[#fff] bg-[#bf9600] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
-            title={foldItems[selectedItem.value].textCTA}
+            href={foldItems?.[selectedItem.value]?.cta?.linkCTA}
+            target={
+              foldItems?.[selectedItem.value]?.cta?.targetCTA
+                ? "_blank"
+                : "_self"
+            }
+            class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
+            title={foldItems?.[selectedItem.value]?.cta?.textCTA}
           >
-            {foldItems[selectedItem.value].textCTA}
+            {foldItems?.[selectedItem.value]?.cta?.textCTA}
           </a>
         )}
       </div>

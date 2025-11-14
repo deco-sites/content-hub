@@ -21,6 +21,18 @@ export interface FoldItem {
    */
   text?: TextArea;
   /**
+   * @title Texto CTA
+   * @description Texto do CTA vinculado ao item (mesmo do atributo title).
+   * @default Lorem
+   */
+  textCTA?: TextArea;
+  /**
+   * @title Link CTA
+   * @description Link do CTA vinculado ao item.
+   * @default Lorem
+   */
+  linkCTA?: TextArea;
+  /**
    * @title Imagens
    */
   image?: IResponsiveImage;
@@ -30,27 +42,20 @@ interface FoldItemsIslandProps {
   foldItems?: FoldItem[];
 }
 
-function FoldItem({ title, text, image }: FoldItem) {
+function FoldItem({ title, text, image, textCTA, linkCTA }: FoldItem) {
   const isOpen = useSignal<boolean>(false);
-  const toggleItem = () => isOpen.value = !isOpen.value;
+  const toggleItem = () => (isOpen.value = !isOpen.value);
 
   return (
-    <div
-      class={`flex flex-col justify-center items-center w-full gap-y-[8px]`}
-    >
+    <div class={`flex flex-col justify-center items-center w-full gap-y-[8px]`}>
       <div
         onClick={toggleItem}
         class={`relative w-full flex flex-col ${
           isOpen.value ? "h-[206px] justify-end" : "h-[42px] justify-center"
         }`}
       >
-        <ResponsiveImage
-          {...image}
-          // className='absolute'
-          link={{}}
-        />
-        <div class="absolute bg-black inset-0 bg-black opacity-25">
-        </div>
+        <ResponsiveImage {...image} link={{}} />
+        <div class="absolute inset-0 bg-black opacity-25"></div>
         <span
           class={`absolute text-white font-semibold text-[26px] ${
             isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
@@ -65,10 +70,17 @@ function FoldItem({ title, text, image }: FoldItem) {
           isOpen.value ? "h-full" : "hidden"
         } overflow-hidden flex flex-col items-start gap-[8px] py-[16px]`}
       >
-        <h4 class={`text-[#041E50] font-semibold text-[26px]`}>
-          {title}
-        </h4>
+        <h4 class={`text-[#041E50] font-semibold text-[26px]`}>{title}</h4>
         <p class={`text-[#2B2936] text-[14px]`}>{text}</p>
+        {textCTA && (
+          <a
+            href={linkCTA}
+            class="foldItemMobileCTA text-[#fff] bg-[#bf9600] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
+            title={textCTA}
+          >
+            {textCTA}
+          </a>
+        )}
       </div>
     </div>
   );
@@ -79,11 +91,7 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
 
   return (
     <div
-      class={`
-        foldItems-container
-        w-full flex flex-col
-        lg:grid lg:grid-cols-[auto_1fr] lg:grid-rows-[1fr] lg:gap-x-[32px]
-      `}
+      class={`foldItems-container w-full flex flex-col lg:grid lg:grid-cols-[auto_1fr] lg:grid-rows-[1fr] lg:gap-x-[32px]`}
     >
       <div class="w-full flex flex-col gap-y-[8px] lg:hidden">
         {foldItems &&
@@ -98,45 +106,43 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
       </div>
 
       <div
-        class={`
-          hidden relative
-          lg:flex lg:flex-row lg:items-center lg:justify-center lg:h-full lg:gap-x-[8px]
-        `}
+        class={`hidden relative lg:flex lg:flex-row lg:items-center lg:justify-center lg:h-full lg:gap-x-[8px]`}
       >
-        {foldItems && foldItems.map((item, index) => (
-          <div
-            key={index}
-            class={`
+        {foldItems &&
+          foldItems.map((item, index) => (
+            <div
+              key={index}
+              class={`
               relative cursor-pointer
               transition-all duration-300 ease-in-out
               ${
-              index === selectedItem.value
-                ? "w-[380px] h-full"
-                : "w-[120px] h-[486px]"
-            }
+                index === selectedItem.value
+                  ? "w-[380px] h-full"
+                  : "w-[120px] h-[486px]"
+              }
             `}
-            onClick={() => selectedItem.value = index}
-          >
-            <ResponsiveImage
-              {...item.image}
-              // class={`h-full w-full object-cover`}
-              link={{}}
-            />
-            <div class="absolute inset-0 bg-black opacity-40"></div>
-            <span
-              class={`
+              onClick={() => (selectedItem.value = index)}
+            >
+              <ResponsiveImage
+                {...item.image}
+                // class={`h-full w-full object-cover`}
+                link={{}}
+              />
+              <div class="absolute inset-0 bg-black opacity-40"></div>
+              <span
+                class={`
                 absolute bottom-4 
                 ${
-                index === selectedItem.value ? "left-[388px]" : "left-[132px]"
-              }
+                  index === selectedItem.value ? "left-[388px]" : "left-[132px]"
+                }
                 text-white font-semibold text-[26px]
                 -rotate-90 transform origin-bottom-left whitespace-nowrap pb-4 pl-4
               `}
-            >
-              {item.title}
-            </span>
-          </div>
-        ))}
+              >
+                {item.title}
+              </span>
+            </div>
+          ))}
       </div>
 
       <div class="hidden lg:flex flex-col justify-center items-start gap-[16px] pr-8">
@@ -146,6 +152,15 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
         <p class="text-[#2B2936] text-base">
           {foldItems && foldItems[selectedItem.value].text}
         </p>
+        {foldItems && foldItems[selectedItem.value].textCTA && (
+          <a
+            href={foldItems[selectedItem.value].linkCTA}
+            class="foldItemDesktopCTA text-[#fff] bg-[#bf9600] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
+            title={foldItems[selectedItem.value].textCTA}
+          >
+            {foldItems[selectedItem.value].textCTA}
+          </a>
+        )}
       </div>
       <style>
         {`

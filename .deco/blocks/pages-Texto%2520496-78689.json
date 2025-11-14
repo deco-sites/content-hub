@@ -48,7 +48,7 @@
         "__resolveType": "site/sections/Lps/TextSection.tsx",
         "section": {
           "children": null,
-          "fullWidth": true,
+          "fullWidth": false,
           "articlePaddingForContent": false,
           "articlePaddingForTitleAndSubtitle": false,
           "centralizeTitleAndSubtitle": false,

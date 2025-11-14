@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -28,9 +29,10 @@ export interface Props {
   articles?: ArticleItem[];
 }
 
-export default function ArticleResponsiveGridSection(
-  { section, articles = [] }: Props,
-) {
+export default function ArticleResponsiveGridSection({
+  section,
+  articles = [],
+}: Props) {
   const id = useId();
 
   if (!articles.length) return null;
@@ -75,11 +77,9 @@ export default function ArticleResponsiveGridSection(
                 />
               </div>
             )}
-            <h3
-              class="text-xl font-semibold text-[#041E50] mb-2"
-              dangerouslySetInnerHTML={{
-                __html: article.title ?? "Título do artigo",
-              }}
+            <Text
+              title={article.title ?? ""}
+              classes={{ container: "text-xl font-semibold text-[#041E50] mb-2" }}
             />
             <p class="text-base text-[#4F4F4F] font-electrolux">
               {article.description ?? "Descrição do artigo..."}

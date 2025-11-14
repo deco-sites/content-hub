@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import BannerSlider from "site/islands/BannerSlider.tsx";
 import Icon from "site/components/ui/Icon.tsx";
 import Section from "site/components/ui/Section.tsx";
@@ -49,16 +50,14 @@ interface BannerMediaSliderSectionProps {
   icons?: IconItem[];
 }
 
-export default function BannerMediaSliderSection(
-  {
-    section,
-    banners = DefaultBannerMedia.banners,
-    title = DefaultBannerMedia.title,
-    text,
-    configs = DefaultBannerMedia.configs,
-    icons = DefaultBannerMedia.icons,
-  }: BannerMediaSliderSectionProps,
-) {
+export default function BannerMediaSliderSection({
+  section,
+  banners = DefaultBannerMedia.banners,
+  title = DefaultBannerMedia.title,
+  text,
+  configs = DefaultBannerMedia.configs,
+  icons = DefaultBannerMedia.icons,
+}: BannerMediaSliderSectionProps) {
   const id = useId();
 
   if (!banners?.length) return null;
@@ -80,39 +79,33 @@ export default function BannerMediaSliderSection(
     centeredSlides,
     breakpoints: {
       768: {
-        slidesPerView: slidesPerViewResponsive
-          .tablet,
+        slidesPerView: slidesPerViewResponsive.tablet,
         spaceBetween: 24,
         centeredSlides: false,
       },
       1024: {
-        slidesPerView: slidesPerViewResponsive
-          .desktop,
+        slidesPerView: slidesPerViewResponsive.desktop,
         spaceBetween: 24,
         centeredSlides: false,
       },
     },
   } as ISliderConfigs;
 
-  const defaultPropBanners = banners
-    .map((banner) => {
-      return {
-        ...{ ...banner },
-        sizes: {
-          ...banner.sizes,
-          width: 185,
-          height: 324,
-          widthMobile: 185,
-          heightMobile: 324,
-        },
-      };
-    });
+  const defaultPropBanners = banners.map((banner) => {
+    return {
+      ...{ ...banner },
+      sizes: {
+        ...banner.sizes,
+        width: 185,
+        height: 324,
+        widthMobile: 185,
+        heightMobile: 324,
+      },
+    };
+  });
 
   return (
-    <Section
-      {...section}
-      id={id}
-    >
+    <Section {...section} id={id}>
       <div class="flex flex-col items-center justify-center gap-8 my-[48px] lg:flex-row lg:justify-between">
         <div class="banner-media-slider-container w-full">
           <BannerSlider
@@ -124,24 +117,19 @@ export default function BannerMediaSliderSection(
         <div class="flex flex-col items-start justify-center gap-y-[20px] max-w-[343px] lg:w-[560px]">
           <div class="flex flex-col gap-y-[16px] text-left">
             {!isEmptyText(title) && (
-              <h2 class="text-[20px] text-[#011E41] font-semibold">{title}</h2>
+              <Text
+                title={title}
+                classes={{
+                  container: "text-[20px] text-[#011E41] font-semibold",
+                }}
+              />
             )}
             {!isEmptyText(text) && <p class="text-[#515253]">{text}</p>}
           </div>
           <div class="w-full flex flex-wrap justify-start items-center gap-x-[24px]">
-            {icons?.map((
-              { id, href },
-            ) => (
-              <a
-                target="_blank"
-                key={id}
-                title={id}
-                href={href}
-              >
-                <Icon
-                  id={id}
-                  size={32}
-                />
+            {icons?.map(({ id, href }) => (
+              <a target="_blank" key={id} title={id} href={href}>
+                <Icon id={id} size={32} />
               </a>
             ))}
           </div>

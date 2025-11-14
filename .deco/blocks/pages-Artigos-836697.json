@@ -1,5 +1,5 @@
 {
-  "name": "Artigos",
+  "name": "Home Blog Inspira",
   "path": "/content-hub-artigos",
   "sections": [
     {
@@ -15,7 +15,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/BlogArticlesSliderSection.tsx",
         "section": {
-          "title": "Blog",
+          "title": "<h1>Blog</h1>",
           "subtitle": "Descubra artigos inspiradores, dicas para casa e dia a dia.",
           "fullWidth": false,
           "children": null,
@@ -31,18 +31,19 @@
                 "target": "blank"
               },
               "loadingOptions": {
-                "loading": "lazy",
+                "loading": "eager",
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/5f5d83a6-7956-4c3b-820d-688408ad00a7/BannerBlog-Desktop.png",
-                "mobile": "https://assets.decocache.com/content-hub/1a40a40d-65ba-4e92-a078-112a2c29ab9f/BannerBlog-Mobile.png"
-              }
+                "desktop": "https://assets.decocache.com/content-hub/8724cdf3-6677-4138-a010-d0105831dc88/462.webp",
+                "mobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp"
+              },
+              "alt": "Mulher pesquisando ofertas de black friday no tablet"
             },
-            "title": "<h2>Entrega com carbono neutro</h2>",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "href": "/",
-            "ctaLabel": "Saiba mais"
+            "title": "<h3>Black Friday 2025 </h3>",
+            "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar",
+            "ctaLabel": "Saiba mais",
+            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis da Electrolux! "
           },
           {
             "image": {
@@ -50,18 +51,19 @@
                 "target": "blank"
               },
               "loadingOptions": {
-                "loading": "lazy",
+                "loading": "eager",
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/5f5d83a6-7956-4c3b-820d-688408ad00a7/BannerBlog-Desktop.png",
-                "mobile": "https://assets.decocache.com/content-hub/1a40a40d-65ba-4e92-a078-112a2c29ab9f/BannerBlog-Mobile.png"
-              }
+                "desktop": "https://assets.decocache.com/content-hub/539edc2f-f239-4fb0-abd8-0fde15368181/485.webp",
+                "mobile": "https://assets.decocache.com/content-hub/7e30e524-59a9-43a2-9464-e1abf578b9dd/485-MOBILE.webp"
+              },
+              "alt": "Geladeira inox Electrolux em destaque em cozinha com iluminação baixa"
             },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "href": "/",
-            "ctaLabel": "Saiba mais"
+            "title": "<h3>Qual a melhor geladeira Electrolux para comprar na Black Friday? </h3>",
+            "ctaLabel": "Saiba mais",
+            "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux.  Esses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções",
+            "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
           }
         ]
       }
@@ -83,20 +85,20 @@
           },
           {
             "label": "Receitas",
-            "href": "https://loja.electrolux.com.br/",
+            "href": "/inspira/blog/receitas",
             "active": true
           },
           {
             "label": "Dicas",
-            "href": "/inspira/blog/dicas/slug-do-post"
+            "href": "/inspira/blog/dicas"
           },
           {
             "label": "Produtos",
-            "href": "/inspira/blog/produtos/slug-do-produto"
+            "href": "/inspira/blog/produtos"
           },
           {
             "label": "Sustentabilidade",
-            "href": "/inspira/blog/sustentabilidade/slug-do-post"
+            "href": "/inspira/blog/sustentabilidade"
           }
         ],
         "articles": [

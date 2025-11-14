@@ -1,4 +1,4 @@
-// sections/Lps/SearchBarHeroSection.tsx
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -30,16 +30,19 @@ export default function SearchBarHeroSection({
 
   return (
     <Section {...section} id={id}>
-      <div class="
+      <div
+        class="
           w-full mx-auto px-4 py-6 md:pt-10 md:pb-[5.5rem]
           flex flex-col items-start md:items-center text-left md:text-center gap-3
-        ">
-        <h2 class="
-            font-electrolux text-[#041E50] font-semibold
-            text-2xl md:text-4xl leading-none tracking-normal capitalize
-          ">
-          {title}
-        </h2>
+        "
+      >
+        <Text
+          title={title}
+          classes={{
+            container:
+              "font-electrolux text-[#041E50] font-semibold text-2xl md:text-4xl leading-none tracking-normal capitalize",
+          }}
+        />
 
         {/* Wrapper exato do conjunto: 1078px (868 + 16 + 194) em desktop */}
         <div class="w-full max-w-full md:max-w-[1078px]">

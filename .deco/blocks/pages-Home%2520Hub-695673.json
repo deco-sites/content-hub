@@ -612,12 +612,8 @@
               "alt": "Retirada & Coleta"
             },
             "title": "Retirada & Coleta",
-            "textCTA": "Retirada & Coleta",
-            "linkCTA": "/#",
+            "link": "/#",
             "cta": {
-              "textCTA": "Retirada & Coleta",
-              "linkCTA": "/#",
-              "targetCTA": true,
               "text": "Retirada & Coleta",
               "link": "/#",
               "target": "_blank"
@@ -641,14 +637,9 @@
               },
               "alt": "Assistência"
             },
-            "title": "Assistência",
-            "textCTA": "Assistência",
-            "linkCTA": "/#",
             "cta": {
-              "textCTA": "Assistência",
-              "linkCTA": "/#",
               "text": "Assistência",
-              "link": "/#",
+              "link": "/#", 
               "target": "_self"
             }
           },

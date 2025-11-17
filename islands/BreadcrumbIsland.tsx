@@ -1,6 +1,7 @@
 // islands/BreadcrumbIsland.tsx
 import { useEffect } from "preact/hooks";
 import { signal } from "@preact/signals";
+import Icon from "../components/ui/Icon.tsx";
 
 type SeparatorKind = "chevron" | "slash" | "dot" | "custom";
 
@@ -58,22 +59,28 @@ function prettifySlug(slug: string) {
     .replace(/\b\w/g, (m) => m.toUpperCase());
 }
 
-function Separator(
-  { kind, custom, className }: {
-    kind: SeparatorKind;
-    custom?: string;
-    className?: string;
-  },
-) {
+function Separator({
+  kind,
+  custom,
+  className,
+}: {
+  kind: SeparatorKind;
+  custom?: string;
+  className?: string;
+}) {
   return (
     <span class={className}>
       {kind === "chevron" && <Chevron />}
       {kind === "slash" && (
-        <span aria-hidden="true" class="align-middle">/</span>
+        <span aria-hidden="true" class="align-middle">
+          /
+        </span>
       )}
       {kind === "dot" && <Dot />}
       {kind === "custom" && (
-        <span aria-hidden="true" class="align-middle">{custom || ">"}</span>
+        <span aria-hidden="true" class="align-middle">
+          {custom || ">"}
+        </span>
       )}
     </span>
   );
@@ -116,7 +123,7 @@ export default function BreadcrumbIsland(props: BreadcrumbIslandProps) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": crumbs.map((c, i) => ({
+    itemListElement: crumbs.map((c, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: c.label,
@@ -152,30 +159,35 @@ export default function BreadcrumbIsland(props: BreadcrumbIslandProps) {
                   key={`${crumb.label}-${idx}`}
                   class="flex items-center gap-2 flex-none"
                 >
-                  {isLast || !crumb.href
-                    ? (
-                      <span
-                        class={[
-                          "inline-flex items-center align-middle",
-                          "font-semibold",
-                          "flex-none",
-                          props.currentColor,
-                        ].join(" ")}
-                        aria-current="page"
-                        title={crumb.label}
-                      >
-                        {crumb.label}
-                      </span>
-                    )
-                    : (
-                      <a
-                        href={crumb.href}
-                        class="inline-flex items-center align-middle hover:underline flex-none"
-                        title={crumb.label}
-                      >
-                        {crumb.label}
-                      </a>
-                    )}
+                  {isLast || !crumb.href ? (
+                    <span
+                      class={[
+                        "inline-flex items-center align-middle",
+                        "font-semibold",
+                        "flex-none",
+                        props.currentColor,
+                      ].join(" ")}
+                      aria-current="page"
+                      title={crumb.label}
+                    >
+                      {crumb.label}
+                    </span>
+                  ) : (
+                    <a
+                      href={crumb.href}
+                      class="inline-flex items-center align-middle hover:underline flex-none"
+                      title={crumb.label}
+                    >
+                      <Icon
+                        id="Home"
+                        width={17}
+                        height={17}
+                        style={{
+                          color: "#2b2936",
+                        }}
+                      />
+                    </a>
+                  )}
                   {!isLast && (
                     <Separator
                       kind={props.separator}

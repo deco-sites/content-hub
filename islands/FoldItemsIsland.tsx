@@ -27,19 +27,19 @@ export interface FoldItem {
      * @description Texto do CTA vinculado ao item (mesmo do atributo title).
      * @default Lorem
      */
-    textCTA?: TextArea;
+    text?: string;
     /**
      * @title Link CTA
      * @description Link do CTA vinculado ao item.
      * @default /#
      */
-    linkCTA?: TextArea;
+    link?: string;
     /**
      * @title Abrir em nova aba?
      * @description Caso seja selecionada, esta opção irá permitir que o link abra em uma nova aba.
      * @default false
      */
-    targetCTA?: boolean;
+    target?: boolean;
   };
   /**
    * @title Imagens
@@ -61,9 +61,9 @@ function FoldItem({
   text?: string;
   image?: IResponsiveImage;
   cta?: {
-    textCTA?: string;
-    linkCTA?: string;
-    targetCTA?: boolean;
+    text?: string;
+    link?: string;
+    target?: boolean;
   };
 }) {
   const isOpen = useSignal<boolean>(false);
@@ -93,16 +93,17 @@ function FoldItem({
           isOpen.value ? "h-full" : "hidden"
         } overflow-hidden flex flex-col items-start gap-[8px] py-[16px]`}
       >
-        <h4 class={`text-[#041E50] font-semibold text-[26px]`}>{title}</h4>
-        <p class={`text-[#2B2936] text-[14px]`}>{text}</p>
-        {cta?.textCTA && (
+        <h4 class={`text-[#041e50] font-semibold text-[26px]`}>{title}</h4>
+        <p class={`text-[#2b2936] text-[14px]`}>{text}</p>
+        {cta?.text && (
           <a
-            href={cta?.linkCTA}
-            target={cta?.targetCTA ? "_blank" : "_self"}
+            href={cta?.link}
+            target={cta?.target ? "_blank" : "_self"}
+            rel="noopener noreferrer"
             class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
-            title={cta?.textCTA}
+            title={cta?.text}
           >
-            {cta.textCTA}
+            {cta.text}
           </a>
         )}
       </div>
@@ -170,24 +171,23 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
       </div>
 
       <div class="hidden lg:flex flex-col justify-center items-start gap-[16px] pr-8">
-        <h2 class="text-[#041E50] font-bold text-4xl">
+        <h2 class="text-[#041e50] font-bold text-4xl">
           {foldItems?.[selectedItem.value]?.title}
         </h2>
-        <p class="text-[#2B2936] text-base">
+        <p class="text-[#2b2936] text-base">
           {foldItems?.[selectedItem.value]?.text}
         </p>
-        {foldItems?.[selectedItem.value]?.cta?.textCTA && (
+        {foldItems?.[selectedItem.value]?.cta?.text && (
           <a
-            href={foldItems?.[selectedItem.value]?.cta?.linkCTA}
+            href={foldItems?.[selectedItem.value]?.cta?.link}
             target={
-              foldItems?.[selectedItem.value]?.cta?.targetCTA
-                ? "_blank"
-                : "_self"
+              foldItems?.[selectedItem.value]?.cta?.target ? "_blank" : "_self"
             }
+            rel="noopener noreferrer"
             class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
-            title={foldItems?.[selectedItem.value]?.cta?.textCTA}
+            title={foldItems?.[selectedItem.value]?.cta?.text}
           >
-            {foldItems?.[selectedItem.value]?.cta?.textCTA}
+            {foldItems?.[selectedItem.value]?.cta?.text}
           </a>
         )}
       </div>

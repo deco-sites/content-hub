@@ -1,5 +1,5 @@
 {
-  "name": "Artigos",
+  "name": "Home Blog Inspira",
   "path": "/content-hub-artigos",
   "sections": [
     {
@@ -15,7 +15,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/BlogArticlesSliderSection.tsx",
         "section": {
-          "title": "Blog",
+          "title": "<h1>Blog</h1>",
           "subtitle": "Descubra artigos inspiradores, dicas para casa e dia a dia.",
           "fullWidth": false,
           "children": null,
@@ -31,18 +31,19 @@
                 "target": "blank"
               },
               "loadingOptions": {
-                "loading": "lazy",
+                "loading": "eager",
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/5f5d83a6-7956-4c3b-820d-688408ad00a7/BannerBlog-Desktop.png",
-                "mobile": "https://assets.decocache.com/content-hub/1a40a40d-65ba-4e92-a078-112a2c29ab9f/BannerBlog-Mobile.png"
-              }
+                "desktop": "https://assets.decocache.com/content-hub/8724cdf3-6677-4138-a010-d0105831dc88/462.webp",
+                "mobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp"
+              },
+              "alt": "Mulher pesquisando ofertas de black friday no tablet"
             },
-            "title": "<h2>Entrega com carbono neutro</h2>",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "href": "/",
-            "ctaLabel": "Saiba mais"
+            "title": "Black Friday 2025",
+            "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar",
+            "ctaLabel": "Saiba mais",
+            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis da Electrolux! "
           },
           {
             "image": {
@@ -50,18 +51,19 @@
                 "target": "blank"
               },
               "loadingOptions": {
-                "loading": "lazy",
+                "loading": "eager",
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/5f5d83a6-7956-4c3b-820d-688408ad00a7/BannerBlog-Desktop.png",
-                "mobile": "https://assets.decocache.com/content-hub/1a40a40d-65ba-4e92-a078-112a2c29ab9f/BannerBlog-Mobile.png"
-              }
+                "desktop": "https://assets.decocache.com/content-hub/539edc2f-f239-4fb0-abd8-0fde15368181/485.webp",
+                "mobile": "https://assets.decocache.com/content-hub/7e30e524-59a9-43a2-9464-e1abf578b9dd/485-MOBILE.webp"
+              },
+              "alt": "Geladeira inox Electrolux em destaque em cozinha com iluminação baixa"
             },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "href": "/",
-            "ctaLabel": "Saiba mais"
+            "title": "Qual a melhor geladeira Electrolux para comprar na Black Friday?",
+            "ctaLabel": "Saiba mais",
+            "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux.  Esses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções",
+            "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
           }
         ]
       }
@@ -79,24 +81,25 @@
         "categories": [
           {
             "label": "Todos",
-            "active": false
+            "active": false,
+            "href": "/inspira/blog/todos"
           },
           {
             "label": "Receitas",
-            "href": "https://loja.electrolux.com.br/",
+            "href": "/inspira/blog/receitas",
             "active": true
           },
           {
             "label": "Dicas",
-            "href": "/inspira/blog/dicas/slug-do-post"
+            "href": "/inspira/blog/dicas"
           },
           {
             "label": "Produtos",
-            "href": "/inspira/blog/produtos/slug-do-produto"
+            "href": "/inspira/blog/produtos"
           },
           {
             "label": "Sustentabilidade",
-            "href": "/inspira/blog/sustentabilidade/slug-do-post"
+            "href": "/inspira/blog/sustentabilidade"
           }
         ],
         "articles": [
@@ -114,7 +117,7 @@
             "image": {
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
-            "title": "<h3>Black Friday 2025</h3>",
+            "title": "Black Friday 2025",
             "cta": "Saiba mais",
             "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal...",
             "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar"
@@ -123,7 +126,7 @@
             "image": {
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
-            "title": "<h3>Descontos Electrolux Black Friday: renove sua casa com tecnologia e design premium</h3>",
+            "title": "Descontos Electrolux Black Friday: renove sua casa com tecnologia e design premium",
             "cta": "Saiba mais",
             "description": "Os descontos Electrolux Black Friday são a chance perfeita de tr...",
             "href": "/inspira/blog/dicas/renove-sua-casa-com-descontos-black-friday"
@@ -132,73 +135,55 @@
             "image": {
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
-            "title": "4Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "cta": "Saiba mais"
+            "title": "Qual a melhor geladeira Electrolux para comprar na Black Friday?",
+            "cta": "Saiba mais",
+            "description": "A Black Friday é a oportunidade perfeita para renovar sua cozin... ",
+            "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
           },
           {
             "image": {
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
-            "title": "5Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "cta": "Saiba mais"
+            "cta": "Saiba mais",
+            "title": "Tipos de geladeira Electrolux Black Friday: descubra qual combina com você",
+            "description": "Se você está pesquisando sobre tipos de geladeira Electrolux Bla...",
+            "href": "/inspira/blog/produtos/tipos-geladeira-black-friday"
           },
           {
             "image": {
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
-            "title": "6Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "cta": "Saiba mais"
+            "title": "Geladeira Electrolux pequena Black Friday: encontre o modelo ideal para sua cozinha",
+            "cta": "Saiba mais",
+            "description": "Chegou a hora mais esperada do ano: o momento de encontrar a gel...",
+            "href": "/inspira/blog/produtos/geladeira-pequena-black-friday"
           },
           {
             "image": {
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
-            "title": "7Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "cta": "Saiba mais"
+            "cta": "Saiba mais",
+            "title": "Air fryer Electrolux: descubra quais modelos são mais econômicos em energia",
+            "description": "Você já imaginou preparar receitas deliciosas gastando menos ene...",
+            "href": "/inspira/blog/sustentabilidade/air-fryer-economica-black-friday"
           },
           {
             "image": {
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
-            "title": "8Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "cta": "Saiba mais"
+            "cta": "Saiba mais",
+            "title": "Como escolher uma geladeira econômica e eficiente para o seu lar?",
+            "description": "Escolher uma geladeira econômica traz benefícios que ultrapassam...",
+            "href": "/inspira/blog/sustentabilidade/geladeira-economica"
           },
           {
             "image": {
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
-            "title": "9Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "cta": "Saiba mais"
-          },
-          {
-            "image": {
-              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-            },
-            "title": "10Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "cta": "Saiba mais"
-          },
-          {
-            "image": {
-              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-            },
-            "title": "11Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "cta": "Saiba mais"
-          },
-          {
-            "image": {
-              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-            },
-            "title": "12Entrega com <br /> carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir nas entregas um caminhão movidoSomos a primeira empresa do setor a incluir nas entregas um caminhão movido",
-            "cta": "Saiba mais"
+            "title": "Purificador Electrolux econômico Black Friday: descubra o modelo ideal para você",
+            "cta": "Saiba mais",
+            "description": "A procura por um purificador Electrolux econômico Black Friday a...",
+            "href": "/inspira/blog/sustentabilidade/purificador-economico-black-friday"
           }
         ],
         "showTitleOnFirstGroup": false

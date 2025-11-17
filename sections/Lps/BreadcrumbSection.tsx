@@ -13,6 +13,7 @@ type SeparatorKind = "chevron" | "slash" | "dot" | "custom";
 
 export interface BreadcrumbSectionProps {
   section?: ISection;
+  /** Atributo Title do ícone da home */
   homeLabel?: string;
   homeHref?: string;
   /**
@@ -77,8 +78,8 @@ export default function BreadcrumbSection({
 
   // classes que habilitam a pista de scroll só em mobile
   const scrollerClasses = enableMobileScroll
-    // -mx-4/px-4 para o scroll pegar de borda a borda em mobile; em md, volta ao normal
-    ? "md:overflow-visible overflow-x-auto overscroll-x-contain -mx-4 px-4 md:mx-0 md:px-0 hide-scrollbar"
+    ? // -mx-4/px-4 para o scroll pegar de borda a borda em mobile; em md, volta ao normal
+      "md:overflow-visible overflow-x-auto overscroll-x-contain -mx-4 px-4 md:mx-0 md:px-0 hide-scrollbar"
     : "";
 
   // essas classes garantem que o conteúdo do breadcrumb não quebre linha

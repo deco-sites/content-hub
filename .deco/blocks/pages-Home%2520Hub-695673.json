@@ -617,7 +617,10 @@
             "cta": {
               "textCTA": "Retirada & Coleta",
               "linkCTA": "/#",
-              "targetCTA": true
+              "targetCTA": true,
+              "text": "Retirada & Coleta",
+              "link": "/#",
+              "target": "_blank"
             }
           },
           {
@@ -643,7 +646,10 @@
             "linkCTA": "/#",
             "cta": {
               "textCTA": "Assistência",
-              "linkCTA": "/#"
+              "linkCTA": "/#",
+              "text": "Assistência",
+              "link": "/#",
+              "target": "_self"
             }
           },
           {

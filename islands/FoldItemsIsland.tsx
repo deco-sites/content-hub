@@ -37,9 +37,9 @@ export interface FoldItem {
     /**
      * @title Abrir em nova aba?
      * @description Caso seja selecionada, esta opção irá permitir que o link abra em uma nova aba.
-     * @default false
+     * @default _blank
      */
-    target?: boolean;
+    target?: "_blank" | "_self";
   };
   /**
    * @title Imagens
@@ -63,7 +63,7 @@ function FoldItem({
   cta?: {
     text?: string;
     link?: string;
-    target?: boolean;
+    target?: string;
   };
 }) {
   const isOpen = useSignal<boolean>(false);
@@ -98,8 +98,8 @@ function FoldItem({
         {cta?.text && (
           <a
             href={cta?.link}
-            target={cta?.target ? "_blank" : "_self"}
-            rel="noopener noreferrer"
+            target={cta?.target}
+            rel={cta?.target == "_blank" ? "noopener noreferrer" : ""}
             class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
             title={cta?.text}
           >
@@ -180,10 +180,12 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
         {foldItems?.[selectedItem.value]?.cta?.text && (
           <a
             href={foldItems?.[selectedItem.value]?.cta?.link}
-            target={
-              foldItems?.[selectedItem.value]?.cta?.target ? "_blank" : "_self"
+            target={foldItems?.[selectedItem.value]?.cta?.target}
+            rel={
+              foldItems?.[selectedItem.value]?.cta?.target == "_blank"
+                ? "noopener noreferrer"
+                : ""
             }
-            rel="noopener noreferrer"
             class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
             title={foldItems?.[selectedItem.value]?.cta?.text}
           >

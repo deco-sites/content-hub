@@ -3901,6 +3901,10 @@ input.tab:checked + .tab-content,
   --tw-text-opacity: 1;
   color: rgb(43 50 39 / var(--tw-text-opacity));
 }
+.text-\[\#2b2936\] {
+  --tw-text-opacity: 1;
+  color: rgb(43 41 54 / var(--tw-text-opacity));
+}
 .text-\[\#4F4F4F\] {
   --tw-text-opacity: 1;
   color: rgb(79 79 79 / var(--tw-text-opacity));

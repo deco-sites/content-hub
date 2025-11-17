@@ -20,7 +20,22 @@
           "title": "<h1>Aspirador de pó vertical ou tradicional: qual escolher na Black Friday?</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/f1bc7374-17ca-48a6-bd0a-33e9b4a5d2ef/508.webp",
+              "mobile": "https://assets.decocache.com/content-hub/ec308800-c8b1-454f-a078-ee796e747357/508-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

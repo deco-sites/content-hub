@@ -1,5 +1,5 @@
 {
-  "name": "teste 502 texto",
+  "name": "teste 502",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -30,8 +30,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/57a040b0-6d0f-40ee-a49e-4083ac4f1017/502.webp",
-              "mobile": "https://assets.decocache.com/content-hub/73b5cd55-b74b-4a31-9eaa-2109e116e91d/502-MOBILE.webp"
+              "desktop": "https://assets.decocache.com/content-hub/49aeee42-e2ef-4d5f-9d6d-9b5fb2b8031d/502.webp",
+              "mobile": "https://assets.decocache.com/content-hub/759ec6e0-53b4-474d-9445-48bfdabc551b/502-MOBILE.webp"
             }
           }
         ]

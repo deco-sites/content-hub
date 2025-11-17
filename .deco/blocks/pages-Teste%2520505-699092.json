@@ -20,7 +20,22 @@
           "title": "<h1>Cozinha Electrolux na Black Friday: 18 itens para completar seu lar</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/889affd9-35ab-45a3-acbc-68ca04912261/505.webp",
+              "mobile": "https://assets.decocache.com/content-hub/03e7351a-d484-4141-855c-78ce3630e567/505-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

@@ -614,7 +614,12 @@
               },
               "alt": "Retirada & Coleta"
             },
-            "title": "Retirada & Coleta"
+            "title": "Retirada & Coleta",
+            "cta": {
+              "text": "Retirada & Coleta",
+              "link": "#",
+              "target": "_blank"
+            }
           },
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
@@ -634,7 +639,12 @@
               },
               "alt": "Assistência"
             },
-            "title": "Assistência"
+            "title": "Assistência",
+            "cta": {
+              "text": "Assistência",
+              "link": "/#",
+              "target": "_self"
+            }
           },
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",

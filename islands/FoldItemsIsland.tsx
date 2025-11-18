@@ -97,11 +97,12 @@ function FoldItem({
         <p class={`text-[#2b2936] text-[14px]`}>{text}</p>
         {cta?.text && (
           <a
-            href={cta?.link}
+            href={cta?.link || "#"}
             target={cta?.target}
-            rel={cta?.target == "_blank" ? "noopener noreferrer" : ""}
+            rel={cta?.target === "_blank" ? "noopener noreferrer" : ""}
             class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
             title={cta?.text}
+            aria-label={cta?.text || "CTA button"}
           >
             {cta.text}
           </a>
@@ -179,15 +180,18 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
         </p>
         {foldItems?.[selectedItem.value]?.cta?.text && (
           <a
-            href={foldItems?.[selectedItem.value]?.cta?.link}
+            href={foldItems?.[selectedItem.value]?.cta?.link || "#"}
             target={foldItems?.[selectedItem.value]?.cta?.target}
             rel={
-              foldItems?.[selectedItem.value]?.cta?.target == "_blank"
+              foldItems?.[selectedItem.value]?.cta?.target === "_blank"
                 ? "noopener noreferrer"
                 : ""
             }
             class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
             title={foldItems?.[selectedItem.value]?.cta?.text}
+            aria-label={
+              foldItems?.[selectedItem.value]?.cta?.text || "CTA button"
+            }
           >
             {foldItems?.[selectedItem.value]?.cta?.text}
           </a>

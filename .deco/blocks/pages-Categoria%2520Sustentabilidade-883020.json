@@ -1,0 +1,108 @@
+{
+  "name": "Categoria Sustentabilidade",
+  "path": "/inspira/blog/sustentabilidade",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
+        "section": {
+          "children": null
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "title": "<h1>Sustentabilidade</h1>",
+          "subtitle": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "cta": "saiba mais",
+            "title": "<h2>Black Friday 2025</h2>",
+            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal...",
+            "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "cta": "saiba mais",
+            "title": "<h2>Descontos Electrolux Black Friday: renove sua casa com tecnologia e design premium</h2>",
+            "description": "Os descontos Electrolux Black Friday são a chance perfeita de tr...",
+            "href": "/inspira/blog/dicas/renove-sua-casa-com-descontos-black-friday"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "description": "Para aproveitar as melhores ofertas da Electrolux na Black Frida...",
+            "cta": "saiba mais",
+            "title": "<h2>Saiba como aproveitar as melhores ofertas da Electrolux na Black Friday</h2>",
+            "href": "/inspira/blog/dicas/melhores-ofertas-na-black-friday"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
+            },
+            "title": "<h2>Como escolher máquina de lavar Electrolux Black Friday? Dicas para acertar em cheio!</h2>",
+            "description": "Está em dúvida sobre como escolher máquina de lavar Electrolux B...",
+            "href": "/inspira/blog/dicas/como-escolher-maquina-de-lavar-black-friday"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -19,7 +19,11 @@
           "children": null,
           "title": "<h1>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h1>",
           "articlePaddingForContent": true,
-          "articlePaddingForTitleAndSubtitle": true
+          "articlePaddingForTitleAndSubtitle": true,
+          "marginTopMobile": 1000,
+          "marginBottomMobile": 1000,
+          "marginTopDesktop": 1000,
+          "marginBottomDesktop": 1000
         },
         "imageCollection": [
           {

@@ -78,12 +78,8 @@ function FoldItem({
           isOpen.value ? "h-[206px] justify-end" : "h-[42px] justify-center"
         }`}
       >
-        <ResponsiveImage
-          {...image}
-          // className='absolute'
-          link={{}}
-        />
-        <div class="absolute bg-black inset-0 bg-black opacity-25"></div>
+        <ResponsiveImage {...image} link={{}} />
+        <div class="absolute inset-0 bg-black opacity-25"></div>
         <span
           class={`absolute text-white font-semibold text-[26px] ${
             isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
@@ -105,11 +101,11 @@ function FoldItem({
             href={cta?.link || "#"}
             target={cta?.target}
             rel={cta?.target === "_blank" ? "noopener noreferrer" : ""}
-            class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
+            class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold mx-auto"
             title={cta?.text}
             aria-label={cta?.text || "CTA button"}
           >
-            {cta.text}
+            {cta?.text}
           </a>
         )}
       </div>
@@ -135,6 +131,7 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
               title={item.title}
               text={item.text}
               image={item.image}
+              cta={item.cta}
               key={index}
             />
           ))}
@@ -169,7 +166,7 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
               <div class="absolute inset-0 bg-black opacity-40"></div>
               <span
                 class={`
-                absolute bottom-4 
+                absolute bottom-4
                 ${
                   index === selectedItem.value ? "left-[388px]" : "left-[132px]"
                 }

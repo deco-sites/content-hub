@@ -49,109 +49,125 @@
         "desktopImages": [
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/content-hub-home-artigos"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
               "mobile": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
-            }
+            },
+            "alt": "homem utilizando aspirador de pó Electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/lancamentos-electrolux"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png",
               "mobile": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png"
-            }
+            },
+            "alt": "forno inox na cor preto electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/content-hub-ambassadors"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png",
               "mobile": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png"
-            }
+            },
+            "alt": "linha de produtos Rita Lobo Electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/sustentabilidade"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png",
               "mobile": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png"
-            }
+            },
+            "alt": "sustentabilidade electrolux"
           }
         ],
         "mobileImages": [
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/content-hub-home-artigos"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png",
               "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
-            }
+            },
+            "alt": "homem utilizando aspirador de pó Electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/lancamentos-electrolux"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png",
               "mobile": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png"
-            }
+            },
+            "alt": "forno inox na cor preto electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/content-hub-ambassadors"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png",
               "mobile": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png"
-            }
+            },
+            "alt": "linha de produtos Rita Lobo Electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/sustentabilidade"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png",
               "mobile": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png"
-            }
+            },
+            "alt": "sustentabilidade electrolux"
           }
         ]
       }
@@ -172,16 +188,16 @@
         "infoCards": [
           {
             "link": {
-              "color": "#000000",
+              "color": "#FFFFF",
               "text": "Ver mais",
-              "href": "/#"
+              "href": "/inspira/blog/produtos/geladeira-para-apartamento-pequeno"
             },
             "direction": "right",
-            "richText": "<h1 style=\"text-align: justify\"><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h1><p style=\"text-align: justify\"><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p style=\"text-align: justify\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
+            "richText": "<h3><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h3><h3><strong><span style=\"color: #041e50; font-size: 15pt\">Geladeira para apartamento: o que você precisa saber antes de comprar</span></strong></h3><p style=\"text-align: justify\">Escolher a geladeira para apartamento certa é fundamental para otimizar o espaço e proporcionar conforto e agilidade à rotina</p>",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/f39dec55-1f01-468a-b848-eeb2dc53d215/infocard-inspire.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
-              "alt": "Geladeira"
+              "srcDesktop": "https://assets.decocache.com/content-hub/25c6b1c6-38c9-4d31-9f99-c3935c04e9d0/515.webp",
+              "srcMobile": "https://assets.decocache.com/content-hub/41ae8c7e-007e-417b-b866-62e0b9b542c8/515-MOBILE.webp",
+              "alt": "Geladeira Side-by-Side preta electrolux"
             }
           }
         ]

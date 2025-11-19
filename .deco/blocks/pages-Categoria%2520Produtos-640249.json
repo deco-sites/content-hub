@@ -740,9 +740,9 @@
               }
             },
             "cta": "saiba mais",
-            "title": "<h2>Purificador e nível de filtragem: o que você precisa saber para ter água de qualidade/h2>",
-            "description": "Quando falamos em purificador e nível de filtragem, muitas pesso...",
-            "href": "/inspira/blog/dicas/purificador-agua-e-nivel-de-filtragem-tudo-que-precisa-saber"
+            "title": "<h2>Micro-ondas pequeno ou grande: qual escolher na Black Friday?</h2>",
+            "description": "Já se decidiu entre micro-ondas pequeno ou grande Black Friday? ...",
+            "href": "/inspira/blog/produtos/micro-ondas-grande-ou-pequeno"
           },
           {
             "image": {
@@ -759,9 +759,9 @@
               }
             },
             "cta": "saiba mais",
-            "title": "<h2>Purificador Electrolux: como funciona a vazão de água e como escolher o melhor modelo</h2>",
-            "description": "A vazão de água em um purificador indica a quantidade de litros ...",
-            "href": "/inspira/blog/dicas/purificador-de-agua-como-funciona-vazao"
+            "title": "<h2>Purificador de água com água quente: quando faz sentido investir?</h2>",
+            "description": "O purificador de água com água quente é uma solução eficiente e ...",
+            "href": "/inspira/blog/produtos/purificador-de-agua-quente-black-friday"
           },
           {
             "image": {
@@ -778,9 +778,9 @@
               }
             },
             "cta": "saiba mais",
-            "title": "<h2>Quais são as funções do ar-condicionado? Conheça os principais recursos</h2>",
-            "description": "As funções do ar-condicionado moderno vão muito além do que apen...",
-            "href": "/inspira/blog/dicas/principais-recursos-funcoes-ar-condicionado"
+            "title": "<h2>O que é ar-condicionado inverter?</h2>",
+            "description": "O ar-condicionado inverter é uma evolução tecnológica que transf...",
+            "href": "/inspira/blog/produtos/ar-condicionado-inverter"
           },
           {
             "image": {
@@ -797,9 +797,9 @@
               }
             },
             "cta": "saiba mais",
-            "title": "<h2>Tipos de ar-condicionado: descubra o ideal para o seu espaço</h2>",
-            "description": "Os diferentes tipos de ar-condicionado disponíveis no mercado mo...",
-            "href": "/inspira/blog/dicas/tipos-ar-condicionado-descubra-o-ideal"
+            "title": "<h2>Qual geladeira comprar? Veja os modelos Electrolux recomendados</h2>",
+            "description": "Escolher a geladeira ideal para o seu lar envolve mais do que co...",
+            "href": "/inspira/blog/produtos/qual-geladeira-comprar"
           }
         ]
       }
@@ -828,9 +828,9 @@
               }
             },
             "cta": "saiba mais",
-            "title": "<h2>Purificador e nível de filtragem: o que você precisa saber para ter água de qualidade/h2>",
-            "description": "Quando falamos em purificador e nível de filtragem, muitas pesso...",
-            "href": "/inspira/blog/dicas/purificador-agua-e-nivel-de-filtragem-tudo-que-precisa-saber"
+            "title": "<h2>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h2>",
+            "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinh...",
+            "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
           },
           {
             "image": {
@@ -847,9 +847,9 @@
               }
             },
             "cta": "saiba mais",
-            "title": "<h2>Purificador Electrolux: como funciona a vazão de água e como escolher o melhor modelo</h2>",
-            "description": "A vazão de água em um purificador indica a quantidade de litros ...",
-            "href": "/inspira/blog/dicas/purificador-de-agua-como-funciona-vazao"
+            "title": "<h2>Tipos de geladeira Electrolux Black Friday: descubra qual combina com você</h2>",
+            "description": "Se você está pesquisando sobre tipos de geladeira Electrolux Bla...",
+            "href": "/inspira/blog/produtos/tipos-geladeira-black-friday"
           },
           {
             "image": {
@@ -866,9 +866,9 @@
               }
             },
             "cta": "saiba mais",
-            "title": "<h2>Quais são as funções do ar-condicionado? Conheça os principais recursos</h2>",
-            "description": "As funções do ar-condicionado moderno vão muito além do que apen...",
-            "href": "/inspira/blog/dicas/principais-recursos-funcoes-ar-condicionado"
+            "title": "<h2>Geladeira Electrolux pequena Black Friday: encontre o modelo ideal para sua cozinha</h2>",
+            "description": "Chegou a hora mais esperada do ano: o momento de encontrar a gel...",
+            "href": "/inspira/blog/produtos/geladeira-pequena-black-friday"
           },
           {
             "image": {
@@ -885,9 +885,9 @@
               }
             },
             "cta": "saiba mais",
-            "title": "<h2>Tipos de ar-condicionado: descubra o ideal para o seu espaço</h2>",
-            "description": "Os diferentes tipos de ar-condicionado disponíveis no mercado mo...",
-            "href": "/inspira/blog/dicas/tipos-ar-condicionado-descubra-o-ideal"
+            "title": "<h2>Fogão Electrolux Black Friday: veja as opções com superofertas</h2>",
+            "description": "Está pesquisando fogão Electrolux Black Friday? Pois chegou ao l...",
+            "href": "/inspira/blog/produtos/fogao-black-friday"
           }
         ]
       }
@@ -897,8 +897,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "children": null,
-          "centralizeTitleAndSubtitle": true
+          "children": null
         },
         "articles": [
           {
@@ -909,249 +908,8 @@
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
               }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Purificador e nível de filtragem: o que você precisa saber para ter água de qualidade/h2>",
-            "description": "Quando falamos em purificador e nível de filtragem, muitas pesso...",
-            "href": "/inspira/blog/dicas/purificador-agua-e-nivel-de-filtragem-tudo-que-precisa-saber"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Purificador Electrolux: como funciona a vazão de água e como escolher o melhor modelo</h2>",
-            "description": "A vazão de água em um purificador indica a quantidade de litros ...",
-            "href": "/inspira/blog/dicas/purificador-de-agua-como-funciona-vazao"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Quais são as funções do ar-condicionado? Conheça os principais recursos</h2>",
-            "description": "As funções do ar-condicionado moderno vão muito além do que apen...",
-            "href": "/inspira/blog/dicas/principais-recursos-funcoes-ar-condicionado"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Tipos de ar-condicionado: descubra o ideal para o seu espaço</h2>",
-            "description": "Os diferentes tipos de ar-condicionado disponíveis no mercado mo...",
-            "href": "/inspira/blog/dicas/tipos-ar-condicionado-descubra-o-ideal"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
-        "section": {
-          "children": null,
-          "centralizeTitleAndSubtitle": true
-        },
-        "articles": [
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Purificador e nível de filtragem: o que você precisa saber para ter água de qualidade/h2>",
-            "description": "Quando falamos em purificador e nível de filtragem, muitas pesso...",
-            "href": "/inspira/blog/dicas/purificador-agua-e-nivel-de-filtragem-tudo-que-precisa-saber"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Purificador Electrolux: como funciona a vazão de água e como escolher o melhor modelo</h2>",
-            "description": "A vazão de água em um purificador indica a quantidade de litros ...",
-            "href": "/inspira/blog/dicas/purificador-de-agua-como-funciona-vazao"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Quais são as funções do ar-condicionado? Conheça os principais recursos</h2>",
-            "description": "As funções do ar-condicionado moderno vão muito além do que apen...",
-            "href": "/inspira/blog/dicas/principais-recursos-funcoes-ar-condicionado"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Tipos de ar-condicionado: descubra o ideal para o seu espaço</h2>",
-            "description": "Os diferentes tipos de ar-condicionado disponíveis no mercado mo...",
-            "href": "/inspira/blog/dicas/tipos-ar-condicionado-descubra-o-ideal"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
-        "section": {
-          "children": null,
-          "centralizeTitleAndSubtitle": true
-        },
-        "articles": [
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Purificadorx e nível de filtragem: o que você precisa saber para ter água de qualidade/h2>",
-            "description": "Quando falamos em purificador e nível de filtragem, muitas pesso...",
-            "href": "/inspira/blog/dicas/purificador-agua-e-nivel-de-filtragem-tudo-que-precisa-saber"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Purificador Electrolux: como funciona a vazão de água e como escolher o melhor modelo</h2>",
-            "description": "A vazão de água em um purificador indica a quantidade de litros ...",
-            "href": "/inspira/blog/dicas/purificador-de-agua-como-funciona-vazao"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Quais são as funções do ar-condicionado? Conheça os principais recursos</h2>",
-            "description": "As funções do ar-condicionado moderno vão muito além do que apen...",
-            "href": "/inspira/blog/dicas/principais-recursos-funcoes-ar-condicionado"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "cta": "saiba mais",
-            "title": "<h2>Tipos de ar-condicionado: descubra o ideal para o seu espaço</h2>",
-            "description": "Os diferentes tipos de ar-condicionado disponíveis no mercado mo...",
-            "href": "/inspira/blog/dicas/tipos-ar-condicionado-descubra-o-ideal"
+            }
           }
         ]
       }

@@ -461,34 +461,43 @@
           {
             "fontFamily": "Arial",
             "direction": "left",
-            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
-            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "title": "<h3>Quando é a Black Friday</h3>",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
-              "alt": "Família com Cachorro"
+              "srcDesktop": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp",
+              "srcMobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp",
+              "alt": "mulher buscando promoções de black friday no tablet"
+            },
+            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis",
+            "link": {
+              "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar"
             }
           },
           {
             "fontFamily": "Arial",
             "direction": "left",
-            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
-            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "title": "<h3>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h3>",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcDesktop": "https://assets.decocache.com/content-hub/539edc2f-f239-4fb0-abd8-0fde15368181/485.webp",
+              "srcMobile": "https://assets.decocache.com/content-hub/7e30e524-59a9-43a2-9464-e1abf578b9dd/485-MOBILE.webp",
               "alt": "Família com Cachorro"
+            },
+            "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux. \nEsses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções da Black Friday",
+            "link": {
+              "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
             }
           },
           {
             "fontFamily": "Arial",
             "direction": "left",
-            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
-            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "title": "<h3>Tipos de geladeira Electrolux Black Friday: descubra qual combina com você</h3>",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcDesktop": "https://assets.decocache.com/content-hub/ee0f2592-4b64-4ca8-afa9-ec3a01c3b4ba/486.webp",
+              "srcMobile": "https://assets.decocache.com/content-hub/f885a74d-e36b-445e-815d-2e5f6a8908d2/486-MOBILE.webp",
               "alt": "Família com Cachorro"
+            },
+            "description": "Se você está pesquisando sobre tipos de geladeira Electrolux Black Friday, chegou a hora de conhecer em detalhes os modelos que podem transformar sua rotina na cozinha.  \nNa Black Friday, as geladeiras Electrolux unem inovação, design sofisticado e condições especiais para transformar sua rotina. Descubra qual modelo combina com seu estilo de vida e aproveite o momento ideal para investir em qualidade premium. ",
+            "link": {
+              "href": "/inspira/blog/produtos/tipos-geladeira-black-friday"
             }
           }
         ]
@@ -998,15 +1007,15 @@
             "boxBackgroundColorHover": "#041E50",
             "title": "Blog",
             "imageSrc": "https://assets.decocache.com/content-hub/9bce9111-3792-4e48-b043-da93ee9480c3/blog.svg",
-            "redirect": "/#"
+            "redirect": "/content-hub-home-artigos"
           },
           {
             "target": true,
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
             "imageSrc": "https://assets.decocache.com/content-hub/d550a16b-3faa-40c5-9ff5-594a2234362f/sustentabilidade.svg",
-            "redirect": "/#",
-            "title": "<p class=\"label\">Sustentabili-<br>dade</p>"
+            "redirect": "/sustentabilidade",
+            "title": "<p class=\"label\">Sustentabilidade</p>"
           },
           {
             "target": true,
@@ -1021,8 +1030,8 @@
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
             "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
-            "redirect": "/#",
-            "title": "Embaixadores"
+            "title": "Embaixadores",
+            "redirect": "/content-hub-ambassadors"
           },
           {
             "target": true,
@@ -1030,7 +1039,7 @@
             "boxBackgroundColorHover": "#041E50",
             "title": "Lançamentos",
             "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
-            "redirect": "/#"
+            "redirect": "/lancamentos-electrolux"
           }
         ]
       }

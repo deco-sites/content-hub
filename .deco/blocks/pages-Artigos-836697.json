@@ -73,7 +73,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticlesWithSidebarSection.tsx",
         "section": {
-          "fullWidth": true,
+          "fullWidth": false,
           "children": null,
           "centralizeTitleAndSubtitle": false,
           "articlePaddingForContent": false

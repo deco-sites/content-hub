@@ -897,7 +897,8 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
-          "children": null
+          "children": null,
+          "centralizeTitleAndSubtitle": true
         },
         "articles": [
           {
@@ -909,7 +910,146 @@
                 "loading": "lazy",
                 "fetchPriority": "high"
               }
-            }
+            },
+            "title": "<h2>Máquina de lavar Electrolux na Black Friday: considerações importantes</h2>",
+            "description": "Comprar uma máquina de lavar Electrolux na Black Friday represen...",
+            "href": "/inspira/blog/produtos/maquina-de-lavar-black-friday"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "title": "<h2>Vantagens de comprar um ar-condicionado Electrolux na Black Friday</h2>",
+            "description": "A Black Friday é o momento ideal para comprar seu ar-condicionad...",
+            "href": "/inspira/blog/produtos/por-que-comprar-ar-condicionado-na-black"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "title": "<h2>Frost Free ou Degelo Manual: Qual a melhor opção?</h2>",
+            "description": "Na hora de escolher uma nova geladeira, surge uma dúvida muito c...",
+            "href": "/inspira/blog/produtos/geladeira-frost-free-ou-degelo-manual"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "title": "<h2>Capacidade máquina de lavar Electrolux Black Friday: descubra o modelo ideal para você</h2>",
+            "description": "A capacidade máquina de lavar Electrolux Black Friday é um dos f...",
+            "href": "/inspira/blog/produtos/capacidade-maquina-de-lavar-black-friday"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "children": null,
+          "centralizeTitleAndSubtitle": true
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "title": "<h2>Diferença entre geladeiras Electrolux inverter e convencionais</h2>",
+            "description": "Escolher a geladeira inverter Electrolux ideal significa investi...",
+            "href": "/inspira/blog/produtos/5-diferencas-entre-geladeiras-inverter-e-convencionais"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "title": "<h2>Fogão Electrolux 4 ou 5 bocas: qual modelo escolher na Black Friday?</h2>",
+            "description": "A cozinha é o coração da casa, e faz toda a diferença ter um fog...",
+            "href": "/inspira/blog/produtos/fogao-4-bocas-ou-5-bocas-black-friday"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "title": "<h2>Aspirador de pó vertical ou tradicional: qual escolher na Black Friday?</h2>",
+            "description": "Com a chegada da Black Friday, muitas pessoas aproveitam para in...",
+            "href": "/inspira/blog/produtos/aspirador-vertical-ou-tradicional-black-friday"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "title": "<h2>Aspirador de pó Electrolux para pelo de pets: qual a melhor opção?</h2>",
+            "description": "Esperando a Black Friday para adquirir o aspirador de pó ideal p...",
+            "href": "/inspira/blog/produtos/aspirador-para-pelos-de-pet-black-friday"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
+        "section": {
+          "children": null,
+          "centralizeTitleAndSubtitle": true
+        },
+        "articles": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            },
+            "title": "<h2>Guia completo de compra de ar-condicionado Electrolux na Black Friday</h2>",
+            "description": "Na Black Friday Electrolux, você encontra ar-condicionado com de...",
+            "href": "/inspira/blog/produtos/ar-condicionado-black-friday"
           }
         ]
       }

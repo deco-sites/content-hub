@@ -52,34 +52,6 @@ export interface ISection extends JSX.HTMLAttributes<HTMLDivElement> {
   articlePaddingForContent?: boolean;
 
   /**
-   * @title Mobile - Margem Superior
-   * @description Espaçamento superior da seção, em pixels.
-   * @default 0
-   */
-  marginTopMobile?: number;
-
-  /**
-   * @title Mobile - Margem Inferior
-   * @description Espaçamento inferior da seção, em pixels. Default: 40px
-   * @default 40
-   */
-  marginBottomMobile?: number;
-
-  /**
-   * @title Desktop - Margem Superior
-   * @description Espaçamento superior da seção, em pixels.
-   * @default 0
-   */
-  marginTopDesktop?: number;
-
-  /**
-   * @title Desktop - Margem Inferior
-   * @description Espaçamento inferior da seção, em pixels. Default: 40px
-   * @default 40
-   */
-  marginBottomDesktop?: number;
-
-  /**
    * @title Ocupar toda a largura?
    * @description Define se o componente deve ocupar toda a largura disponível.
    * @default false

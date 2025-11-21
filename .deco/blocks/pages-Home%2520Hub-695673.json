@@ -463,7 +463,7 @@
             "direction": "left",
             "title": "<h3>Quando é a Black Friday</h3>",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp",
+              "srcDesktop": "https://assets.decocache.com/content-hub/8724cdf3-6677-4138-a010-d0105831dc88/462.webp",
               "srcMobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp",
               "alt": "mulher buscando promoções de black friday no tablet"
             },
@@ -520,8 +520,8 @@
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
+                "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar",
+                "title": "quando é a black friday"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -529,12 +529,12 @@
               },
               "alt": "Lavadora",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/8724cdf3-6677-4138-a010-d0105831dc88/462.webp",
+                "mobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp"
               }
             },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
+            "title": "<h3>Black Friday 2025</h3>",
+            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas",
             "href": "/#",
             "cta": "Saiba mais"
           },
@@ -542,8 +542,30 @@
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
+                "href": "/inspira/blog/produtos/tipos-geladeira-black-friday",
+                "title": "tipos de geladeira"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "tipos de geladeira",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f1134bfa-db39-4679-981c-9643abd9283d/486.webp",
+                "mobile": "https://assets.decocache.com/content-hub/e5106120-f53c-4e0c-b85c-41d92b3a7b5e/486-MOBILE.webp"
+              }
+            },
+            "href": "/inspira/blog/produtos/tipos-geladeira-black-friday",
+            "cta": "Saiba mais",
+            "title": "<h3>Tipos de geladeira Electrolux Black Friday: descubra qual combina com você</h3>",
+            "description": "Se você está pesquisando sobre tipos de geladeira Electrolux Black Friday, chegou a hora de conhecer em detalhes os modelos que podem transformar sua rotina na cozinha."
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/inspira/blog/produtos/geladeira-pequena-black-friday",
+                "title": "geladeira pequena black friday"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -551,58 +573,36 @@
               },
               "alt": "Lavadora",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/07583e20-9858-49e2-a38c-34a8088e0fe2/487-(2).webp",
+                "mobile": "https://assets.decocache.com/content-hub/eab32ac9-ed03-499a-a468-5e2897f66f10/487-MOBILE-(2).webp"
               }
             },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
-            "href": "/#",
+            "title": "<h3>Geladeira Electrolux pequena Black Friday: encontre o modelo ideal para sua cozinha</h3>",
+            "description": "Chegou a hora mais esperada do ano: o momento de encontrar a geladeira Electrolux pequena Black Friday que combina design premium, eficiência e condições exclusivas.",
+            "href": "/inspira/blog/produtos/geladeira-pequena-black-friday",
             "cta": "Saiba mais"
           },
           {
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
+                "href": "/inspira/blog/produtos/fogao-black-friday",
+                "title": "fogão black friday"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "alt": "Lavadora",
+              "alt": "fogão black friday",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/6f605b05-f7c7-43b3-a129-8be08d939a6b/495.webp",
+                "mobile": "https://assets.decocache.com/content-hub/5a3c3675-1ca0-4c3e-8923-78a51e333ce7/495-MOBILE-(1).webp"
               }
             },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
-            "href": "/#",
-            "cta": "Saiba mais"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Lavadora",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
-            "href": "/#",
-            "cta": "Saiba mais"
+            "href": "/inspira/blog/produtos/fogao-black-friday",
+            "cta": "Saiba mais",
+            "title": "<h3>Fogão Electrolux Black Friday: veja as opções com superofertas</h3>",
+            "description": "Está pesquisando fogão Electrolux Black Friday? Pois chegou ao lugar certo! Na Black Friday Electrolux, você encontra fogões que unem performance profissional, design sofisticado e tecnologias exclusivas que elevam sua experiência na cozinha, seja em receitas do dia a dia ou em pratos elaborados"
           }
         ]
       }
@@ -1108,23 +1108,23 @@
         "icons": [
           {
             "id": "Facebook",
-            "href": "/#"
+            "href": "https://www.facebook.com/electroluxbr/"
           },
           {
             "id": "Instagram",
-            "href": "/#"
+            "href": "https://www.instagram.com/electroluxbr/"
           },
           {
             "id": "Pinterest",
-            "href": "/#"
+            "href": "https://br.pinterest.com/electroluxbr/"
           },
           {
             "id": "Youtube",
-            "href": "/#"
+            "href": "https://www.youtube.com/c/electroluxbr"
           },
           {
             "id": "Linkedin",
-            "href": "/#"
+            "href": "https://br.linkedin.com/company/electroluxgroup"
           }
         ],
         "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."

@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -10,23 +11,23 @@ import type { IResponsiveImage } from "../../types/ResponsiveImage.d.ts";
 
 type MontageItemDesktop = {
   /**
- * @title Título
- * @default Lorem
- */
-  title: string
+   * @title Título
+   * @default Lorem
+   */
+  title: string;
 
   /**
- * @title Texto
- * @widget text-area
- * @default Lorem
- */
-  text: TextArea
+   * @title Texto
+   * @widget text-area
+   * @default Lorem
+   */
+  text: TextArea;
 
   /**
-  * @title Imagem
-  */
-  image: IResponsiveImage
-}
+   * @title Imagem
+   */
+  image: IResponsiveImage;
+};
 /**
  * @title Seção de Montagem de fotos e textos
  * @description Exibe items com imagem, título/nome e texto em uma colagem. IMPORTANTE: este componente só funciona com três items.
@@ -38,14 +39,12 @@ export interface MontageSectionProps {
   configs?: ISliderConfigs;
 }
 
-export default function MontageSection(
-  {
-    section,
-    montageItemsMobile = [],
-    montageItemsDesktop = [],
-    configs
-  }: MontageSectionProps,
-) {
+export default function MontageSection({
+  section,
+  montageItemsMobile = [],
+  montageItemsDesktop = [],
+  configs,
+}: MontageSectionProps) {
   const id = useId();
 
   const sliderDefaults: ISliderConfigs = {
@@ -64,46 +63,83 @@ export default function MontageSection(
     ...(configs || {}),
   };
 
-
   if (!montageItemsMobile?.length || montageItemsMobile.length > 3) return null;
 
   return (
     <Section {...section} id={id}>
-
-      <div id='montage-container-mobile'>
-        <CustomInfoCardSlider rootId={id} infoCards={montageItemsMobile} configs={sliderDefaults} />
+      <div id="montage-container-mobile">
+        <CustomInfoCardSlider
+          rootId={id}
+          infoCards={montageItemsMobile}
+          configs={sliderDefaults}
+        />
       </div>
 
-      <div id="montage-container-desktop" className={`grid grid-cols-2 gap-[4px] max-h-[588px]`}>
+      <div
+        id="montage-container-desktop"
+        className={`grid grid-cols-2 gap-[4px] max-h-[588px]`}
+      >
         <div className={`grid grid-rows-2 h-full`}>
           <div className={`grid grid-cols-2`}>
             <div className={``}>
-              <ResponsiveImage {...montageItemsDesktop[0].image} sizes={{ height: 292 }} />
+              <ResponsiveImage
+                {...montageItemsDesktop[0].image}
+                sizes={{ height: 292 }}
+              />
             </div>
-            <div className={`flex flex-col justify-center items-start px-[24px] bg-[#F6F6F6]`}>
-              <h3 className={`text-start font-semibold text-xl text-[#2B3227]`}>{montageItemsDesktop[0].title}</h3>
-              <p className={`font-normal text-sm text-[#2B3227]`}>{montageItemsDesktop[0].text}</p>
+            <div
+              className={`flex flex-col justify-center items-start px-[24px] bg-[#F6F6F6]`}
+            >
+              <Text
+                title={montageItemsDesktop[0].title}
+                classes={{
+                  container: "text-start font-semibold text-xl text-[#2B3227]",
+                }}
+              />
+              <p className={`font-normal text-sm text-[#2B3227]`}>
+                {montageItemsDesktop[0].text}
+              </p>
             </div>
           </div>
           <div className={`grid grid-cols-2`}>
-            <div className={`flex flex-col justify-center items-start px-[24px] bg-[#F6F6F6]`}>
-              <h3 className={`text-start font-semibold text-xl text-[#2B3227]`}>{montageItemsDesktop[1].title}</h3>
-              <p className={`font-normal text-sm text-[#2B3227]`}>{montageItemsDesktop[1].text}</p>
+            <div
+              className={`flex flex-col justify-center items-start px-[24px] bg-[#F6F6F6]`}
+            >
+              <Text
+                title={montageItemsDesktop[1].title}
+                classes={{
+                  container: "text-start font-semibold text-xl text-[#2B3227]",
+                }}
+              />
+              <p className={`font-normal text-sm text-[#2B3227]`}>
+                {montageItemsDesktop[1].text}
+              </p>
             </div>
             <div className={``}>
-              <ResponsiveImage {...montageItemsDesktop[1].image} sizes={{ height: 292 }} />
+              <ResponsiveImage
+                {...montageItemsDesktop[1].image}
+                sizes={{ height: 292 }}
+              />
             </div>
           </div>
         </div>
 
         <div className={`relative flex flex-col justify-end items-start`}>
           <ResponsiveImage {...montageItemsDesktop[2].image} />
-          <div className={`absolute py-[32px] px-[40px] bg-black bg-opacity-40`}>
-            <h3 className={`text-start font-semibold text-[34px] text-white`}>{montageItemsDesktop[2].title}</h3>
-            <p className={`text-start font-normal text-sm text-white`}>{montageItemsDesktop[2].text}</p>
+          <div
+            className={`absolute py-[32px] px-[40px] bg-black bg-opacity-40`}
+          >
+            <Text
+              title={montageItemsDesktop[2].title}
+              classes={{
+                container: "text-start font-semibold text-[34px] text-white",
+              }}
+            />
+            <p className={`text-start font-normal text-sm text-white`}>
+              {montageItemsDesktop[2].text}
+            </p>
           </div>
         </div>
-
       </div>
       <style>
         {`

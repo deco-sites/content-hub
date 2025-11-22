@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import { dimmedColorsSectionData } from "site/configs/DimmedColorsSection.ts";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
@@ -54,52 +55,37 @@ interface SolidColorsSection {
   data?: SolidColorsData[];
 }
 
-export default function SolidColorsSection(
-  {
-    section,
-    data = dimmedColorsSectionData.threeItemsData,
-  }: SolidColorsSection,
-) {
+export default function SolidColorsSection({
+  section,
+  data = dimmedColorsSectionData.threeItemsData,
+}: SolidColorsSection) {
   const id = useId();
 
   return (
-    <Section
-      {...section}
-      id={id}
-    >
+    <Section {...section} id={id}>
       <div class="flex flex-col lg:flex-row justify-center items-center w-full gap-y-[12px] lg:gap-x-[12px]">
-        {data.map(
-          (item, index) => {
-            return (
-              <div
-                key={index}
-                class="flex flex-col overflow-hidden min-w-[294px] w-full"
-              >
-                <a
-                  href={item.link}
-                >
-                  <div class="solid-color-image-container">
-                    <ResponsiveImage
-                      {...item.image}
-                    />
-                  </div>
-                  <div
-                    style={{
-                      backgroundColor: item.color
-                        .desktop,
-                    }}
-                    class="flex flex-col justify-start items-start h-[170px] w-full px-[24px] pt-[24px] text-white"
-                  >
-                    <h3 class="font-semibold text-[26px]">
-                      {item.title}
-                    </h3>
-                    <p>{item.text}</p>
-                  </div>
-                </a>
+        {data.map((item, index) => (
+          <div
+            key={index}
+            class="flex flex-col overflow-hidden min-w-[294px] w-full"
+          >
+            <a href={item.link}>
+              <div class="solid-color-image-container">
+                <ResponsiveImage {...item.image} />
               </div>
-            );
-          },
-        )}
+              <div
+                style={{ backgroundColor: item.color?.desktop }}
+                class="flex flex-col justify-start items-start h-[170px] w-full px-[24px] pt-[24px] text-white"
+              >
+                <Text
+                  title={item.title ?? ""}
+                  classes={{ container: "font-semibold text-[26px]" }}
+                />
+                <p>{item.text}</p>
+              </div>
+            </a>
+          </div>
+        ))}
       </div>
       <style>
         {`

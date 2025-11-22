@@ -1,9 +1,6 @@
-import { TextArea } from "apps/admin/widgets.ts";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
-import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
-import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import FoldItemsIsland from "site/islands/FoldItemsIsland.tsx";
 import type { FoldItem } from "site/islands/FoldItemsIsland.tsx";
 

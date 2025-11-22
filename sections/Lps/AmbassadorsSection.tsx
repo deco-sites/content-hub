@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import Section from "site/components/ui/Section.tsx";
 import { useId } from "site/sdk/useId.ts";
 import type { ISection } from "site/types/Section.d.ts";
@@ -51,7 +52,10 @@ export default function AmbassadorsSection({
               />
             </div>
             <div class="h-[240px] w-[183px] bg-[#002855] text-white flex flex-col justify-center p-4 shrink-0">
-              <h3 class="font-semibold text-lg">{ambassador.name}</h3>
+              <Text
+                title={ambassador.name}
+                classes={{ container: "font-semibold text-lg" }}
+              />
               <p class="text-sm">{ambassador.description}</p>
             </div>
           </>
@@ -75,26 +79,27 @@ export default function AmbassadorsSection({
 
           const text = (
             <div class="h-[240px] col-span-1 bg-[#002855] text-white flex flex-col justify-center p-4">
-              <h3 class="font-semibold text-lg">{ambassador.name}</h3>
+              <Text
+                title={ambassador.name}
+                classes={{ container: "font-semibold text-lg" }}
+              />
               <p class="text-sm">{ambassador.description}</p>
             </div>
           );
 
           return (
             <>
-              {isEven
-                ? (
-                  <>
-                    {image}
-                    {text}
-                  </>
-                )
-                : (
-                  <>
-                    {text}
-                    {image}
-                  </>
-                )}
+              {isEven ? (
+                <>
+                  {image}
+                  {text}
+                </>
+              ) : (
+                <>
+                  {text}
+                  {image}
+                </>
+              )}
             </>
           );
         })}

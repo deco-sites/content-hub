@@ -1,4 +1,4 @@
-// sections/DimmedColorsSection.tsx
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import { dimmedColorsSectionData } from "site/configs/DimmedColorsSection.ts";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
@@ -23,6 +23,7 @@ type DimmedColors = {
 type DimmedColorsItem = {
   /** @title Título */
   title?: string;
+
   /** @title Texto */
   text?: string;
 
@@ -90,9 +91,13 @@ export default function DimmedColorsSection({
                 )}
 
                 {item?.title && (
-                  <h3 class="dimmed-colors-item-title__mobile font-semibold text-[26px] leading-tight">
-                    {item.title}
-                  </h3>
+                  <Text
+                    title={item.title}
+                    classes={{
+                      container:
+                        "dimmed-colors-item-title__mobile font-semibold text-[26px] leading-tight",
+                    }}
+                  />
                 )}
 
                 {item?.text && (
@@ -116,9 +121,12 @@ export default function DimmedColorsSection({
                 class="dimmed-colors-item__desktop hidden lg:flex lg:flex-col lg:justify-start lg:items-start lg:static lg:h-[170px] lg:w-full lg:px-6 lg:pt-6 text-white"
               >
                 {item?.title && (
-                  <h3 class="font-semibold text-[26px] leading-tight">
-                    {item.title}
-                  </h3>
+                  <Text
+                    title={item.title}
+                    classes={{
+                      container: "font-semibold text-[26px] leading-tight",
+                    }}
+                  />
                 )}
 
                 {item?.text && <p class="text-[16px] mt-1">{item.text}</p>}

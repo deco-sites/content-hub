@@ -49,109 +49,125 @@
         "desktopImages": [
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/content-hub-home-artigos"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
               "mobile": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
-            }
+            },
+            "alt": "homem utilizando aspirador de pó Electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/lancamentos-electrolux"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png",
               "mobile": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png"
-            }
+            },
+            "alt": "forno inox na cor preto electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/content-hub-ambassadors"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png",
               "mobile": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png"
-            }
+            },
+            "alt": "linha de produtos Rita Lobo Electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/sustentabilidade"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png",
               "mobile": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png"
-            }
+            },
+            "alt": "sustentabilidade electrolux"
           }
         ],
         "mobileImages": [
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/content-hub-home-artigos"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png",
               "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
-            }
+            },
+            "alt": "homem utilizando aspirador de pó Electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/lancamentos-electrolux"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png",
               "mobile": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png"
-            }
+            },
+            "alt": "forno inox na cor preto electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/content-hub-ambassadors"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png",
               "mobile": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png"
-            }
+            },
+            "alt": "linha de produtos Rita Lobo Electrolux"
           },
           {
             "link": {
-              "target": "blank"
+              "target": "blank",
+              "href": "/sustentabilidade"
             },
             "loadingOptions": {
-              "loading": "lazy",
+              "loading": "eager",
               "fetchPriority": "high"
             },
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png",
               "mobile": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png"
-            }
+            },
+            "alt": "sustentabilidade electrolux"
           }
         ]
       }
@@ -172,16 +188,16 @@
         "infoCards": [
           {
             "link": {
-              "color": "#000000",
+              "color": "#FFFFF",
               "text": "Ver mais",
-              "href": "/#"
+              "href": "/inspira/blog/produtos/geladeira-para-apartamento-pequeno"
             },
             "direction": "right",
-            "richText": "<h1 style=\"text-align: justify\"><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h1><p style=\"text-align: justify\"><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p style=\"text-align: justify\">*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>",
+            "richText": "<h3><strong><span style=\"font-size: 10pt\">Geladeira</span></strong></h3><h3><strong><span style=\"color: #041e50; font-size: 15pt\">Geladeira para apartamento: o que você precisa saber antes de comprar</span></strong></h3><p style=\"text-align: justify\">Escolher a geladeira para apartamento certa é fundamental para otimizar o espaço e proporcionar conforto e agilidade à rotina</p>",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/f39dec55-1f01-468a-b848-eeb2dc53d215/infocard-inspire.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/974df753-58ce-4730-a260-81e0527fcf7c/infocard-inspire-mobile.png",
-              "alt": "Geladeira"
+              "srcDesktop": "https://assets.decocache.com/content-hub/25c6b1c6-38c9-4d31-9f99-c3935c04e9d0/515.webp",
+              "srcMobile": "https://assets.decocache.com/content-hub/41ae8c7e-007e-417b-b866-62e0b9b542c8/515-MOBILE.webp",
+              "alt": "Geladeira Side-by-Side preta electrolux"
             }
           }
         ]
@@ -445,34 +461,43 @@
           {
             "fontFamily": "Arial",
             "direction": "left",
-            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
-            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "title": "<h3>Quando é a Black Friday</h3>",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
-              "alt": "Família com Cachorro"
+              "srcDesktop": "https://assets.decocache.com/content-hub/8724cdf3-6677-4138-a010-d0105831dc88/462.webp",
+              "srcMobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp",
+              "alt": "mulher buscando promoções de black friday no tablet"
+            },
+            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis",
+            "link": {
+              "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar"
             }
           },
           {
             "fontFamily": "Arial",
             "direction": "left",
-            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
-            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "title": "<h3>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h3>",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcDesktop": "https://assets.decocache.com/content-hub/539edc2f-f239-4fb0-abd8-0fde15368181/485.webp",
+              "srcMobile": "https://assets.decocache.com/content-hub/7e30e524-59a9-43a2-9464-e1abf578b9dd/485-MOBILE.webp",
               "alt": "Família com Cachorro"
+            },
+            "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux. \nEsses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções da Black Friday",
+            "link": {
+              "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
             }
           },
           {
             "fontFamily": "Arial",
             "direction": "left",
-            "title": "Aspiradores e Truques para Viver com Pets Sem Viver com Pelos",
-            "description": "Ter um pet em casa é sinônimo de amor, alegria... e muitos pelos espalhados, não é mesmo? Para quem convive com cães e gatos, manter a casa limpa pode parecer uma missão impossível — mas com os eletrodomésticos certos, isso muda de figura. Hoje, aspiradores com filtros HEPA, escovas especiais e tecnologia antiemaranhamento são aliados indispensáveis para quem quer curtir a companhia do seu pet sem abrir mão da limpeza. Modelos robôs, verticais ou tradicionais ganham espaço nos lares pet-friendly pela praticidade e eficiência...",
+            "title": "<h3>Tipos de geladeira Electrolux Black Friday: descubra qual combina com você</h3>",
             "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/539fb39c-3f2c-4919-b38a-c80e677c28a3/HomeHub1.png",
+              "srcDesktop": "https://assets.decocache.com/content-hub/ee0f2592-4b64-4ca8-afa9-ec3a01c3b4ba/486.webp",
+              "srcMobile": "https://assets.decocache.com/content-hub/f885a74d-e36b-445e-815d-2e5f6a8908d2/486-MOBILE.webp",
               "alt": "Família com Cachorro"
+            },
+            "description": "Se você está pesquisando sobre tipos de geladeira Electrolux Black Friday, chegou a hora de conhecer em detalhes os modelos que podem transformar sua rotina na cozinha.  \nNa Black Friday, as geladeiras Electrolux unem inovação, design sofisticado e condições especiais para transformar sua rotina. Descubra qual modelo combina com seu estilo de vida e aproveite o momento ideal para investir em qualidade premium. ",
+            "link": {
+              "href": "/inspira/blog/produtos/tipos-geladeira-black-friday"
             }
           }
         ]
@@ -495,8 +520,8 @@
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
+                "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar",
+                "title": "quando é a black friday"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -504,12 +529,12 @@
               },
               "alt": "Lavadora",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/8724cdf3-6677-4138-a010-d0105831dc88/462.webp",
+                "mobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp"
               }
             },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
+            "title": "<h3>Black Friday 2025</h3>",
+            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas",
             "href": "/#",
             "cta": "Saiba mais"
           },
@@ -517,8 +542,30 @@
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
+                "href": "/inspira/blog/produtos/tipos-geladeira-black-friday",
+                "title": "tipos de geladeira"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "tipos de geladeira",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f1134bfa-db39-4679-981c-9643abd9283d/486.webp",
+                "mobile": "https://assets.decocache.com/content-hub/e5106120-f53c-4e0c-b85c-41d92b3a7b5e/486-MOBILE.webp"
+              }
+            },
+            "href": "/inspira/blog/produtos/tipos-geladeira-black-friday",
+            "cta": "Saiba mais",
+            "title": "<h3>Tipos de geladeira Electrolux Black Friday: descubra qual combina com você</h3>",
+            "description": "Se você está pesquisando sobre tipos de geladeira Electrolux Black Friday, chegou a hora de conhecer em detalhes os modelos que podem transformar sua rotina na cozinha."
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/inspira/blog/produtos/geladeira-pequena-black-friday",
+                "title": "geladeira pequena black friday"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -526,58 +573,36 @@
               },
               "alt": "Lavadora",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/07583e20-9858-49e2-a38c-34a8088e0fe2/487-(2).webp",
+                "mobile": "https://assets.decocache.com/content-hub/eab32ac9-ed03-499a-a468-5e2897f66f10/487-MOBILE-(2).webp"
               }
             },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
-            "href": "/#",
+            "title": "<h3>Geladeira Electrolux pequena Black Friday: encontre o modelo ideal para sua cozinha</h3>",
+            "description": "Chegou a hora mais esperada do ano: o momento de encontrar a geladeira Electrolux pequena Black Friday que combina design premium, eficiência e condições exclusivas.",
+            "href": "/inspira/blog/produtos/geladeira-pequena-black-friday",
             "cta": "Saiba mais"
           },
           {
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
+                "href": "/inspira/blog/produtos/fogao-black-friday",
+                "title": "fogão black friday"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "alt": "Lavadora",
+              "alt": "fogão black friday",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                "desktop": "https://assets.decocache.com/content-hub/6f605b05-f7c7-43b3-a129-8be08d939a6b/495.webp",
+                "mobile": "https://assets.decocache.com/content-hub/5a3c3675-1ca0-4c3e-8923-78a51e333ce7/495-MOBILE-(1).webp"
               }
             },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
-            "href": "/#",
-            "cta": "Saiba mais"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Lavadora"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Lavadora",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "title": "Entrega com carbono neutro",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão mo",
-            "href": "/#",
-            "cta": "Saiba mais"
+            "href": "/inspira/blog/produtos/fogao-black-friday",
+            "cta": "Saiba mais",
+            "title": "<h3>Fogão Electrolux Black Friday: veja as opções com superofertas</h3>",
+            "description": "Está pesquisando fogão Electrolux Black Friday? Pois chegou ao lugar certo! Na Black Friday Electrolux, você encontra fogões que unem performance profissional, design sofisticado e tecnologias exclusivas que elevam sua experiência na cozinha, seja em receitas do dia a dia ou em pratos elaborados"
           }
         ]
       }
@@ -982,15 +1007,15 @@
             "boxBackgroundColorHover": "#041E50",
             "title": "Blog",
             "imageSrc": "https://assets.decocache.com/content-hub/9bce9111-3792-4e48-b043-da93ee9480c3/blog.svg",
-            "redirect": "/#"
+            "redirect": "/content-hub-home-artigos"
           },
           {
             "target": true,
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
             "imageSrc": "https://assets.decocache.com/content-hub/d550a16b-3faa-40c5-9ff5-594a2234362f/sustentabilidade.svg",
-            "redirect": "/#",
-            "title": "<p class=\"label\">Sustentabili-<br>dade</p>"
+            "redirect": "/sustentabilidade",
+            "title": "<p class=\"label\">Sustentabilidade</p>"
           },
           {
             "target": true,
@@ -1005,8 +1030,8 @@
             "boxBackgroundColor": "#ffffff",
             "boxBackgroundColorHover": "#041E50",
             "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
-            "redirect": "/#",
-            "title": "Embaixadores"
+            "title": "Embaixadores",
+            "redirect": "/content-hub-ambassadors"
           },
           {
             "target": true,
@@ -1014,7 +1039,7 @@
             "boxBackgroundColorHover": "#041E50",
             "title": "Lançamentos",
             "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
-            "redirect": "/#"
+            "redirect": "/lancamentos-electrolux"
           }
         ]
       }
@@ -1083,23 +1108,23 @@
         "icons": [
           {
             "id": "Facebook",
-            "href": "/#"
+            "href": "https://www.facebook.com/electroluxbr/"
           },
           {
             "id": "Instagram",
-            "href": "/#"
+            "href": "https://www.instagram.com/electroluxbr/"
           },
           {
             "id": "Pinterest",
-            "href": "/#"
+            "href": "https://br.pinterest.com/electroluxbr/"
           },
           {
             "id": "Youtube",
-            "href": "/#"
+            "href": "https://www.youtube.com/c/electroluxbr"
           },
           {
             "id": "Linkedin",
-            "href": "/#"
+            "href": "https://br.linkedin.com/company/electroluxgroup"
           }
         ],
         "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."

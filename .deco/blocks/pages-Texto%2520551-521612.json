@@ -20,7 +20,22 @@
           "title": "<h1>Air fryer Electrolux digital: conheça os diferenciais dos modelos</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/6999c163-7201-4fa9-807a-63550b754c87/551.webp",
+              "mobile": "https://assets.decocache.com/content-hub/4f2e38e4-04e3-4289-99b1-533b3bfd52d3/551-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

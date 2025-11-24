@@ -73,7 +73,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/ArticlesWithSidebarSection.tsx",
         "section": {
-          "fullWidth": true,
+          "fullWidth": false,
           "children": null,
           "centralizeTitleAndSubtitle": false,
           "articlePaddingForContent": false
@@ -105,8 +105,8 @@
         "articles": [
           {
             "image": {
-              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-              "alt": "Teste microondas"
+              "alt": "Teste microondas",
+              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
             "title": "Por que a Black Friday é a melhor época para trocar sua air fryer por um modelo Electrolux",
             "cta": "Saiba mais",
@@ -115,7 +115,7 @@
           },
           {
             "image": {
-              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              "src": "https://assets.decocache.com/content-hub/8724cdf3-6677-4138-a010-d0105831dc88/462.webp"
             },
             "title": "Black Friday 2025",
             "cta": "Saiba mais",
@@ -124,7 +124,7 @@
           },
           {
             "image": {
-              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              "src": "https://assets.decocache.com/content-hub/05637f9f-9eb9-4b95-ab93-880e085b9363/500.webp"
             },
             "title": "Descontos Electrolux Black Friday: renove sua casa com tecnologia e design premium",
             "cta": "Saiba mais",
@@ -133,7 +133,7 @@
           },
           {
             "image": {
-              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              "src": "https://assets.decocache.com/content-hub/a58a5fb3-22be-4d4b-bdc1-eb8b48b4c085/485-(1).webp"
             },
             "title": "Qual a melhor geladeira Electrolux para comprar na Black Friday?",
             "cta": "Saiba mais",
@@ -142,7 +142,7 @@
           },
           {
             "image": {
-              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              "src": "https://assets.decocache.com/content-hub/ee0f2592-4b64-4ca8-afa9-ec3a01c3b4ba/486.webp"
             },
             "cta": "Saiba mais",
             "title": "Tipos de geladeira Electrolux Black Friday: descubra qual combina com você",
@@ -151,7 +151,7 @@
           },
           {
             "image": {
-              "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              "src": "https://assets.decocache.com/content-hub/07583e20-9858-49e2-a38c-34a8088e0fe2/487-(2).webp"
             },
             "title": "Geladeira Electrolux pequena Black Friday: encontre o modelo ideal para sua cozinha",
             "cta": "Saiba mais",

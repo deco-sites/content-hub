@@ -1,5 +1,5 @@
 {
-  "name": "Embaixadores",
+  "name": "Página Embaixadores - Rita Lobo",
   "path": "/content-hub-ambassadors",
   "sections": [
     {
@@ -372,7 +372,6 @@
               "text": "Ver produtos",
               "href": "/#"
             },
-            "title": "Ferro de passar",
             "textBackgroundColor": "#F6F6F6",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/f6715b73-8658-4787-a591-a3e377d1e499/rita-lobo-colecao-1.jpg",
@@ -380,7 +379,8 @@
               "alt": "rita-lobo"
             },
             "textColor": "#2B3227",
-            "description": "Temperatura ideal para armazenar diversos tipos de cerveja. Com capacidade para organizar suas latas, garrafas e barris de forma prática e eficiente."
+            "description": "Temperatura ideal para armazenar diversos tipos de cerveja. Com capacidade para organizar suas latas, garrafas e barris de forma prática e eficiente...",
+            "title": "Ferro de Passar"
           },
           {
             "fontFamily": "Arial",
@@ -516,7 +516,7 @@
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-          "fullWidth": true
+          "fullWidth": false
         },
         "infoCards": [
           {
@@ -777,7 +777,7 @@
           "centralizeTitleAndSubtitle": true,
           "title": "<h2>Ecoplus</h2>",
           "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-          "fullWidth": true
+          "fullWidth": false
         },
         "infoCards": [
           {

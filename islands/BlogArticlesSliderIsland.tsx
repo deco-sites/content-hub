@@ -34,8 +34,6 @@ export default function BlogArticlesSliderIsland({
   const count = slides.length;
   const safeIndex = (i: number) => (i + count) % count;
   const go = (i: number) => setIndex(safeIndex(i));
-  const next = () => go(index + 1);
-  const prev = () => go(index - 1);
 
   // mede a largura do viewport
   useEffect(() => {
@@ -104,7 +102,7 @@ export default function BlogArticlesSliderIsland({
           </div>
         </div>
       )),
-    [slides, panelBgColor, defaultCtaLabel],
+    [slides, panelBgColor, defaultCtaLabel]
   );
 
   return (
@@ -120,41 +118,21 @@ export default function BlogArticlesSliderIsland({
         </div>
       </div>
 
-      {/* setas */}
-      <div class="absolute inset-y-0 left-0 right-0 pointer-events-none">
-        <div class="max-w-screen-2xl mx-auto h-full px-4 md:px-6 lg:px-8 flex items-center justify-between">
-          <button
-            type="button"
-            class="pointer-events-auto w-9 h-9 rounded-full bg-white/80 hover:bg-white shadow flex items-center justify-center"
-            aria-label="Anterior"
-            onClick={prev}
-          >
-            ‹
-          </button>
-          <button
-            type="button"
-            class="pointer-events-auto w-9 h-9 rounded-full bg-white/80 hover:bg-white shadow flex items-center justify-center"
-            aria-label="Próximo"
-            onClick={next}
-          >
-            ›
-          </button>
-        </div>
-      </div>
-
       {/* dots */}
-      <div class="mt-3 flex items-center justify-center gap-2">
-        {Array.from({ length: count }).map((_, i) => (
-          <button
-            key={i}
-            type="button"
-            onClick={() => go(i)}
-            aria-label={`Ir para o slide ${i + 1}`}
-            class={`h-2 w-2 rounded-full ${
-              i === index ? "bg-[#041E50]" : "bg-[#041E50]/30"
-            }`}
-          />
-        ))}
+      <div class="flex items-center justify-center absolute bottom-4 w-full">
+        <div class="flex items-center justify-center gap-2 py-[9px] px-3 bg-white border rounded-[2000px] border-[#7A8A9C]">
+          {Array.from({ length: count }).map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => go(i)}
+              aria-label={`Ir para o slide ${i + 1}`}
+              class={`w-2.5 h-2.5 rounded-full ${
+                i === index ? "bg-[#041E50]" : "bg-[#ADB9C3]"
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

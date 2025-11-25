@@ -45,13 +45,14 @@ function FoldItem({ title, text, image }: FoldItem) {
       >
         <ResponsiveImage {...image} link={{}} />
         <div class="absolute bg-black inset-0 opacity-25"></div>
-        <span
-          class={`absolute text-white font-semibold text-[26px] ${
-            isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
-          }`}
-        >
-          {title}
-        </span>
+        <Text
+          title={title ?? ""}
+          classes={{
+            container: `absolute text-white font-semibold text-[26px] pl-[16px] ${
+              isOpen.value ? "pb-[8px]" : "pl-[16px]"
+            }`,
+          }}
+        />
       </div>
 
       <div

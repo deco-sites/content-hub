@@ -20,7 +20,22 @@
           "title": "<h1>Quais modelos de aspirador têm melhor desempenho em pisos frios e carpetes?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/bf1b429a-05e2-45dd-b76c-226f424f6c44/574.webp",
+              "mobile": "https://assets.decocache.com/content-hub/cf714bcf-3bcb-4be7-a5e5-ee7956875ea1/574-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

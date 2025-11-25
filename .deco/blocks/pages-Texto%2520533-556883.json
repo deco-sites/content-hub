@@ -20,7 +20,22 @@
           "title": "<h1>Lavadora e lava e seca, qual a diferença? Entenda e descubra qual é a melhor</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/772e0dec-8924-40e8-9862-8133db29c2c9/533.webp",
+              "mobile": "https://assets.decocache.com/content-hub/13e8d494-5519-45da-9555-07fe0690c1a7/533-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

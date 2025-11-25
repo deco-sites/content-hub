@@ -20,7 +20,22 @@
           "title": "<h1>Como escolher a geladeira Electrolux ideal na Black Friday</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/d1518590-28d6-4730-853d-63d9c13bcb4d/530.webp",
+              "mobile": "https://assets.decocache.com/content-hub/43835ce2-4dc6-4c64-a619-c803a18bd81c/530-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

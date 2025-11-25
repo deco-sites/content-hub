@@ -182,7 +182,7 @@
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48,
-          "fullWidth": false,
+          "fullWidth": true,
           "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
         },
         "infoCards": [

@@ -137,7 +137,9 @@
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "src": {}
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
             },
             "cta": "saiba mais",
             "title": "<h2>Black Friday Electrolux: como identificar promoções reais</h2>",
@@ -153,7 +155,10 @@
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "src": {}
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
             },
             "cta": "saiba mais",
             "title": "<h2>Por que a Black Friday é a melhor época para trocar sua air fryer por um modelo Electrolux</h2>",
@@ -169,7 +174,10 @@
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "src": {}
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
             },
             "cta": "saiba mais",
             "title": "<h2>Por que comprar um ar-condicionado Electrolux na Black Friday?</h2>",
@@ -216,7 +224,10 @@
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "src": {}
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
             },
             "cta": "saiba mais",
             "title": "<h2>Como escolher o tamanho de fogão na Black Friday Electrolux?</h2>",
@@ -232,7 +243,10 @@
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "src": {}
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+              }
             },
             "cta": "saiba mais",
             "title": "<h2>Como escolher o micro-ondas Electrolux ideal na Black Friday: grill, espelhado, pequeno ou 34L?</h2>",

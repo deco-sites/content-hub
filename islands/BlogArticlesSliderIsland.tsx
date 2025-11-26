@@ -56,7 +56,7 @@ export default function BlogArticlesSliderIsland({
           class="shrink-0 w-full snap-center"
           aria-roledescription="slide"
         >
-          <div class="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8">
+          <div class="max-w-screen-2xl mx-auto">
             {/* min-w-0 evita overflow horizontal do grid */}
             <div class="grid grid-cols-1 lg:grid-cols-[1fr_421px] gap-0 min-w-0">
               {/* Imagem */}

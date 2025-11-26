@@ -42,7 +42,7 @@ export interface Props {
    * @title Mostrar link abaixo do grid
    * @description Define se o link abaixo do grid de artigos deve ser exibido ou não.
    */
-  showSubtitleLink?: boolean;
+
   categories?: CategoryItem[];
   articles?: ArticleItem[];
   groupSize?: number;
@@ -71,7 +71,6 @@ export default function ArticlesWithSidebarSection({
   title = "Outros artigos",
   subtitleLinkText,
   subtitleLinkHref,
-  showSubtitleLink = true,
   categories = DEFAULT_CATEGORIES,
   articles = [],
   groupSize = 3,
@@ -85,8 +84,6 @@ export default function ArticlesWithSidebarSection({
     subtitleLinkText ?? (section?.props?.subtitleLinkText as string | undefined) ?? undefined;
   const resolvedSubtitleLinkHref =
     subtitleLinkHref ?? (section?.props?.subtitleLinkHref as string | undefined) ?? "#";
-  const resolvedShowSubtitleLink =
-    showSubtitleLink ?? (section?.props?.showSubtitleLink as boolean | undefined) ?? true;
 
   const processedArticles = articles.map((article) => ({
     ...article,
@@ -239,7 +236,7 @@ export default function ArticlesWithSidebarSection({
                 </div>
 
                 {/* Link abaixo do GRID (como no Figma) */}
-                {resolvedSubtitleLinkText && resolvedShowSubtitleLink && (
+                {resolvedSubtitleLinkText && (
                   <div class="text-center mt-4">
                     <a
                       href={resolvedSubtitleLinkHref}

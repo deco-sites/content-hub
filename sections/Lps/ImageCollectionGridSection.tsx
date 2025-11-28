@@ -31,7 +31,7 @@ export default function ImageCollectionGridSection(
         ? (
           <div class="w-full grid sm:grid-cols-1 lg:grid-cols-1 justify-center items-center">
             {imageCollection.map((image, index) => (
-              <ResponsiveImage src={image.src} key={index} />
+              <ResponsiveImage {...image} key={index}  />
             ))}
           </div>
         )
@@ -39,7 +39,7 @@ export default function ImageCollectionGridSection(
           ? (
             <div class="w-full grid sm:grid-cols-1 lg:grid-cols-2 justify-center items-center gap-y-[8px] gap-x-[8px]">
               {imageCollection.map((image, index) => (
-                <ResponsiveImage src={image.src} key={index} />
+                <ResponsiveImage {...image} key={index} />
               ))}
             </div>
           )
@@ -47,7 +47,7 @@ export default function ImageCollectionGridSection(
             ? (
               <div class="w-full grid sm:grid-cols-1 lg:grid-cols-3 justify-center items-center gap-y-[8px] gap-x-[8px]">
                 {imageCollection.map((image, index) => (
-                  <ResponsiveImage src={image.src} key={index} />
+                  <ResponsiveImage {...image} key={index} />
                 ))}
               </div>
             )

@@ -61,6 +61,7 @@ export default function DimmedColorsSection({
     <Section {...section} id={id}>
       <div class="dimmed-colors-items__container flex flex-col justify-center items-center lg:flex-row lg:items-start lg:justify-start lg:gap-2">
         {data?.map((item, index) => {
+          console.log("🚀 ~ DimmedColorsSection ~ item:", item)
           const key = `${id}-${index}`;
           const overlayMobile = item?.color?.mobile ?? "rgba(0,0,0,0.6)";
           const overlayDesktop = item?.color?.desktop ?? "rgba(0,0,0,0.6)";
@@ -75,7 +76,7 @@ export default function DimmedColorsSection({
               class="dimmed-colors-item__container relative flex flex-col overflow-hidden h-[171px] w-full lg:w-auto"
             >
               {/* Imagem base */}
-              {item?.image && <ResponsiveImage {...item.image} />}
+              {item?.image && <ResponsiveImage {...item} {...item.image} />}
 
               {/* OVERLAY MOBILE (com marca d’água da própria imagem) */}
               <div
@@ -85,7 +86,7 @@ export default function DimmedColorsSection({
                 {/* Marca d’água: mesma imagem do admin, por baixo do conteúdo */}
                 {item?.image && (
                   <div class="watermark absolute inset-0 pointer-events-none -z-[1]">
-                    <ResponsiveImage {...item.image} />
+                    <ResponsiveImage {...item} {...item.image} />
                   </div>
                 )}
 

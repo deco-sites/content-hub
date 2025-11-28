@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
@@ -61,11 +62,7 @@ export default function BlogArticlesSliderIsland({
             <div class="grid grid-cols-1 lg:grid-cols-[1fr_421px] gap-0 min-w-0">
               {/* Imagem */}
               <div class="h-[300px] sm:h-[360px] md:h-[420px] lg:h-[471px] min-w-0 overflow-hidden">
-                <ResponsiveImage
-                  {...s.image}
-                  // não forçar sizes.fullScreen (pode estourar o grid)
-                  class="w-full h-full object-cover"
-                />
+                <ResponsiveImage {...s.image} />
               </div>
 
               {/* Painel de texto */}
@@ -74,15 +71,13 @@ export default function BlogArticlesSliderIsland({
                 style={{ backgroundColor: panelBgColor }}
               >
                 <div>
-                  <h3
-                    class="text-white text-[24px] md:text-[28px] font-semibold tracking-[0]"
-                    style={{
-                      fontFamily: "Electrolux Sans, sans-serif",
-                      lineHeight: "100%",
+                  <Text
+                    title={s.title}
+                    classes={{
+                      container:
+                        "text-white text-[24px] md:text-[28px] font-semibold tracking-[0] leading-none",
                     }}
-                  >
-                    {s.title}
-                  </h3>
+                  />
 
                   <p
                     class="mt-4 text-white/90 text-[16px] leading-[140%] font-normal"
@@ -104,7 +99,7 @@ export default function BlogArticlesSliderIsland({
           </div>
         </div>
       )),
-    [slides, panelBgColor, defaultCtaLabel],
+    [slides, panelBgColor, defaultCtaLabel]
   );
 
   return (

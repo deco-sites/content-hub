@@ -1,4 +1,5 @@
 import { useSignal } from "@preact/signals";
+import { Text } from "@eluxlab/library-components";
 import { TextArea } from "apps/admin/widgets.ts";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
@@ -32,32 +33,26 @@ interface FoldItemsIslandProps {
 
 function FoldItem({ title, text, image }: FoldItem) {
   const isOpen = useSignal<boolean>(false);
-  const toggleItem = () => isOpen.value = !isOpen.value;
+  const toggleItem = () => (isOpen.value = !isOpen.value);
 
   return (
-    <div
-      class={`flex flex-col justify-center items-center w-full gap-y-[8px]`}
-    >
+    <div class={`flex flex-col justify-center items-center w-full gap-y-[8px]`}>
       <div
         onClick={toggleItem}
         class={`relative w-full flex flex-col ${
           isOpen.value ? "h-[206px] justify-end" : "h-[42px] justify-center"
         }`}
       >
-        <ResponsiveImage
-          {...image}
-          // className='absolute'
-          link={{}}
+        <ResponsiveImage {...image} link={{}} />
+        <div class="absolute bg-black inset-0 opacity-25"></div>
+        <Text
+          title={title ?? ""}
+          classes={{
+            container: `absolute text-white font-semibold text-[26px] pl-[16px] ${
+              isOpen.value ? "pb-[8px]" : "pl-[16px]"
+            }`,
+          }}
         />
-        <div class="absolute bg-black inset-0 bg-black opacity-25">
-        </div>
-        <span
-          class={`absolute text-white font-semibold text-[26px] ${
-            isOpen.value ? "pl-[16px] pb-[8px]" : "pl-[16px]"
-          }`}
-        >
-          {title}
-        </span>
       </div>
 
       <div
@@ -65,9 +60,10 @@ function FoldItem({ title, text, image }: FoldItem) {
           isOpen.value ? "h-full" : "hidden"
         } overflow-hidden flex flex-col items-start gap-[8px] py-[16px]`}
       >
-        <h4 class={`text-[#041E50] font-semibold text-[26px]`}>
-          {title}
-        </h4>
+        <Text
+          title={title ?? ""}
+          classes={{ container: "text-[#041E50] font-semibold text-[26px]" }}
+        />
         <p class={`text-[#2B2936] text-[14px]`}>{text}</p>
       </div>
     </div>
@@ -86,15 +82,14 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
       `}
     >
       <div class="w-full flex flex-col gap-y-[8px] lg:hidden">
-        {foldItems &&
-          foldItems.map((item, index) => (
-            <FoldItem
-              title={item.title}
-              text={item.text}
-              image={item.image}
-              key={index}
-            />
-          ))}
+        {foldItems?.map((item, index) => (
+          <FoldItem
+            title={item.title}
+            text={item.text}
+            image={item.image}
+            key={index}
+          />
+        ))}
       </div>
 
       <div
@@ -103,48 +98,43 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
           lg:flex lg:flex-row lg:items-center lg:justify-center lg:h-full lg:gap-x-[8px]
         `}
       >
-        {foldItems && foldItems.map((item, index) => (
+        {foldItems?.map((item, index) => (
           <div
             key={index}
             class={`
               relative cursor-pointer
               transition-all duration-300 ease-in-out
               ${
-              index === selectedItem.value
-                ? "w-[380px] h-full"
-                : "w-[120px] h-[486px]"
-            }
-            `}
-            onClick={() => selectedItem.value = index}
-          >
-            <ResponsiveImage
-              {...item.image}
-              // class={`h-full w-full object-cover`}
-              link={{}}
-            />
-            <div class="absolute inset-0 bg-black opacity-40"></div>
-            <span
-              class={`
-                absolute bottom-4 
-                ${
-                index === selectedItem.value ? "left-[388px]" : "left-[132px]"
+                index === selectedItem.value
+                  ? "w-[380px] h-full"
+                  : "w-[120px] h-[486px]"
               }
-                text-white font-semibold text-[26px]
-                -rotate-90 transform origin-bottom-left whitespace-nowrap pb-4 pl-4
-              `}
-            >
-              {item.title}
-            </span>
+            `}
+            onClick={() => (selectedItem.value = index)}
+          >
+            <ResponsiveImage {...item.image} link={{}} />
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <Text
+              title={item.title ?? ""}
+              classes={{
+                container: `absolute bottom-4 text-white font-semibold text-[26px] -rotate-90 transform origin-bottom-left whitespace-nowrap pb-4 pl-4  ${
+                  index === selectedItem.value ? "left-[388px]" : "left-[132px]"
+                }`,
+              }}
+            />
           </div>
         ))}
       </div>
 
       <div class="hidden lg:flex flex-col justify-center items-start gap-[16px] pr-8">
-        <h2 class="text-[#041E50] font-bold text-4xl">
-          {foldItems && foldItems[selectedItem.value].title}
-        </h2>
+        <Text
+          title={foldItems?.[selectedItem.value].title ?? ""}
+          classes={{
+            container: "text-[#041E50] font-bold text-4xl",
+          }}
+        />
         <p class="text-[#2B2936] text-base">
-          {foldItems && foldItems[selectedItem.value].text}
+          {foldItems?.[selectedItem.value].text}
         </p>
       </div>
       <style>

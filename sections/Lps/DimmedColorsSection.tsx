@@ -61,7 +61,6 @@ export default function DimmedColorsSection({
     <Section {...section} id={id}>
       <div class="dimmed-colors-items__container flex flex-col justify-center items-center lg:flex-row lg:items-start lg:justify-start lg:gap-2">
         {data?.map((item, index) => {
-          console.log("🚀 ~ DimmedColorsSection ~ item:", item)
           const key = `${id}-${index}`;
           const overlayMobile = item?.color?.mobile ?? "rgba(0,0,0,0.6)";
           const overlayDesktop = item?.color?.desktop ?? "rgba(0,0,0,0.6)";

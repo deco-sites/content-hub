@@ -17,7 +17,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/InspireTilesSection.tsx",
         "section": {
-          "title": "<h1>Electrolux Inspira</h1>",
+          "title": "<h1>Electrolux Inspira DEV</h1>",
           "children": null,
           "centralizeTitleAndSubtitle": true
         },
@@ -168,6 +168,170 @@
               "mobile": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png"
             },
             "alt": "sustentabilidade electrolux"
+          }
+        ],
+        "inspireImage": {
+          "desktopImages": [
+            {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              }
+            }
+          ]
+        },
+        "desktopCategories": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "ddsds"
+            },
+            "name": "Deddd"
+          }
+        ],
+        "desktopInspireImages": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "dsdsd",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
+              }
+            },
+            "name": "fddfdfdf"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Alt Imagem 2",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
+              }
+            },
+            "name": "imagem 2"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Alt Imagem 3",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
+              }
+            },
+            "name": "Imagem 3"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Alt Imagem 4",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
+              }
+            },
+            "name": "Imagem 4"
+          }
+        ],
+        "InspireImages": [
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Alt Imagem 1",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
+                "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+              }
+            },
+            "name": "<h2><a href=\"https://loja.electrolux.com.br/content-hub-home-artigos\">Blog</a></h2>"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Alt Imagem 2",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
+                "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+              }
+            },
+            "name": "Imagem 2"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Alt Imagem 3",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
+                "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+              }
+            },
+            "name": "Imagem 3"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "Alt Imagem 4",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
+                "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+              }
+            },
+            "name": "sustentabilidade"
           }
         ]
       }

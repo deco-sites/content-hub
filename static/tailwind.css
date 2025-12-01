@@ -619,7 +619,9 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -3252,6 +3254,10 @@ input.tab:checked + .tab-content,
 .overflow-ellipsis {
   text-overflow: ellipsis;
 }
+.hyphens-auto {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
 .whitespace-normal {
   white-space: normal;
 }
@@ -4018,7 +4024,9 @@ input.tab:checked + .tab-content,
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -4303,6 +4311,14 @@ input.tab:checked + .tab-content,
 }
 @media (min-width: 768px) {
 
+  .md\:bottom-\[34px\] {
+    bottom: 34px;
+  }
+
+  .md\:right-\[21px\] {
+    right: 21px;
+  }
+
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -4318,10 +4334,6 @@ input.tab:checked + .tab-content,
 
   .md\:flex {
     display: flex;
-  }
-
-  .md\:grid {
-    display: grid;
   }
 
   .md\:hidden {
@@ -4475,6 +4487,10 @@ input.tab:checked + .tab-content,
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:leading-\[36px\] {
+    line-height: 36px;
   }
 }
 @media (min-width: 1024px) {
@@ -4937,14 +4953,4 @@ input.tab:checked + .tab-content,
   .\32xl\:max-w-\[1600px\] {
     max-width: 1600px;
   }
-}
-.\[\&_\*\]\:\!h-auto * {
-  height: auto !important;
-}
-.\[\&_\*\]\:w-full * {
-  width: 100%;
-}
-.\[\&_\*\]\:\!object-contain * {
-  -o-object-fit: contain !important;
-     object-fit: contain !important;
 }

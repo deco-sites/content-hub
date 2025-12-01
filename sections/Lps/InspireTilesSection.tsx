@@ -1,4 +1,4 @@
-// sections/InspireTilesSection.tsx
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -10,16 +10,22 @@ import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
  * @description Grid com imagens inteiras (sem crop). 2x2 no mobile, 4 colunas no desktop.
  * As imagens são configuradas separadamente para desktop e mobile.
  */
+
+interface InspireImage {
+  name?: string;
+  image?: IResponsiveImage;
+}
+
 export interface InspireTilesSectionProps {
   section?: ISection;
 
-  /** @title Imagens (Desktop) */
-  desktopImages: IResponsiveImage[];
+  /**
+   * @title Imagens
+   * @description Os cadastros de desktop e mobile estão em cada item
+   */
+  InspireImages: InspireImage[];
 
-  /** @title Imagens (Mobile) */
-  mobileImages: IResponsiveImage[];
-
-  /** @title Cor de fundo dos tiles (aparece nas “bordas” do contain) @default #0F172A */
+  /** @title Cor de fundo dos tiles (aparece nas “bordas” do container) @default #0F172A */
   cardBg?: string;
 
   /** @title Raio de borda (px) @default 6 */
@@ -31,41 +37,39 @@ export interface InspireTilesSectionProps {
 
 export default function InspireTilesSection({
   section,
-  desktopImages = [],
-  mobileImages = [],
+  InspireImages = [],
   cardBg = "#0F172A",
+  radius = 8,
   gap = 8,
 }: InspireTilesSectionProps) {
   const id = useId();
-  const containDescendants = "[&_*]:!object-contain [&_*]:!h-auto [&_*]:w-full";
 
   return (
     <Section {...section} id={id}>
-      {/* MOBILE (2 colunas) */}
-      <div class="grid grid-cols-2 md:hidden" style={{ gap: `${gap}px` }}>
-        {mobileImages.map((img, i) => (
+      <div
+        class="inspireTilesGrid grid grid-cols-2 md:grid-cols-4"
+        style={{ gap: `${gap}px` }}
+      >
+        {InspireImages.map((img, i) => (
           <div
-            key={`m-${i}`}
-            class={`w-full overflow-hidden ${containDescendants}`}
+            key={`${img.image?.src ?? ""}-${i}`}
+            class="inspireGridTile relative overflow-hidden object-contain h-auto"
             style={{
               backgroundColor: cardBg,
+              borderRadius: `${radius}px`,
             }}
           >
-            <ResponsiveImage src={img.src} />
-          </div>
-        ))}
-      </div>
+            <ResponsiveImage {...img.image} />
 
-      <div class="hidden md:grid md:grid-cols-4" style={{ gap: `${gap}px` }}>
-        {desktopImages.map((img, i) => (
-          <div
-            key={`d-${i}`}
-            class={`w-full overflow-hidden ${containDescendants}`}
-            style={{
-              backgroundColor: cardBg,
-            }}
-          >
-            <ResponsiveImage src={img.src} />
+            <div class="inspireOverlay absolute inset-0 bg-black opacity-50" />
+
+            <Text
+              title={img.name ?? ""}
+              classes={{
+                container:
+                  "inspireText absolute text-white font-semibold md:bottom-[34px] bottom-[8px] md:right-[21px] right-[12px] md:text-[36px] md:leading-[36px] text-[16px] leading-[16px] font-semibold break-words hyphens-auto",
+              }}
+            />
           </div>
         ))}
       </div>

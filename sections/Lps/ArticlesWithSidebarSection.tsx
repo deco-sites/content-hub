@@ -69,9 +69,8 @@ const DEFAULT_CATEGORIES: CategoryItem[] = [
 export default function ArticlesWithSidebarSection({
   section,
   title = "Outros artigos",
-  subtitleLinkText,
-  subtitleLinkHref,
-  showSubtitleLink = true,
+  subtitleLinkText = "Conheça todos os nossos outros artigos aqui",
+  subtitleLinkHref = "#",
   categories = DEFAULT_CATEGORIES,
   articles = [],
   groupSize = 3,
@@ -80,9 +79,6 @@ export default function ArticlesWithSidebarSection({
 }: Props) {
   const id = useId();
   if (!articles.length) return null;
-
-  const resolvedSubtitleLinkText =
-    subtitleLinkText ?? (section?.props?.subtitleLinkText as string | undefined) ?? undefined;
 
   const processedArticles = articles.map((article) => ({
     ...article,

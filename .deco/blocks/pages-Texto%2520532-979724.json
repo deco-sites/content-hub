@@ -17,7 +17,22 @@
           "title": "<h1>Máquina de lavar básica ou com funções avançadas, qual compensa mais?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/71e6245e-8463-43dc-bb8e-9e1706c994fe/532.webp",
+              "mobile": "https://assets.decocache.com/content-hub/db5362ae-9d15-4c7a-8e67-52da651d1165/532-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

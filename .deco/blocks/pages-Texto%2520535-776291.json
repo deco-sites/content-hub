@@ -20,7 +20,22 @@
           "title": "<h1>Fogão de piso ou embutir: prós, contras e como acertar na escolha</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/c2f05afe-7835-40fb-a82b-59d4d3c6a08d/535.webp",
+              "mobile": "https://assets.decocache.com/content-hub/64d301d9-1766-4a03-880d-7d94a900d6b2/535-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

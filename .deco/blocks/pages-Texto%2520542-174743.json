@@ -20,7 +20,22 @@
           "title": "<h1>Vale mais a pena comprar aspirador de pó ou robô aspirador?</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/63537844-6adc-41fd-af85-d0b9d46f34cd/542.webp",
+              "mobile": "https://assets.decocache.com/content-hub/00539597-10e4-484e-a2c7-57e0f04751d4/542-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

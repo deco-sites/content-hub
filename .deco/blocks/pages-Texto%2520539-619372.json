@@ -20,7 +20,22 @@
           "title": "<h1>Como garantir o melhor preço de micro-ondas Electrolux na Black Friday antes que acabe a promoção</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/dfe3ae1a-22b6-43e9-885c-793490151c80/539.webp",
+              "mobile": "https://assets.decocache.com/content-hub/b1be44eb-5ff9-49d1-a76f-c96db04b4f84/539-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

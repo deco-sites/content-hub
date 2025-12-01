@@ -198,86 +198,22 @@
             "name": "Deddd"
           }
         ],
-        "desktopInspireImages": [
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "dsdsd",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
-              }
-            },
-            "name": "fddfdfdf"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Alt Imagem 2",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
-              }
-            },
-            "name": "imagem 2"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Alt Imagem 3",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
-              }
-            },
-            "name": "Imagem 3"
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Alt Imagem 4",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
-              }
-            },
-            "name": "Imagem 4"
-          }
-        ],
         "InspireImages": [
           {
             "image": {
               "link": {
-                "target": "blank"
+                "target": "blank",
+                "href": "/content-hub-home-artigos",
+                "title": "Blog"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "alt": "Alt Imagem 1",
+              "alt": "homem utilizando aspirador de pó Electrolux",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
-                "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+                "desktop": "https://assets.decocache.com/content-hub/12781b18-f61f-4846-abaf-1cb503a636de/blog.png",
+                "mobile": "https://assets.decocache.com/content-hub/41330569-f537-424c-80a5-9ea9655783b7/blogmob.png"
               }
             },
             "name": "<h2><a href=\"https://loja.electrolux.com.br/content-hub-home-artigos\">Blog</a></h2>"
@@ -285,53 +221,59 @@
           {
             "image": {
               "link": {
-                "target": "blank"
+                "target": "blank",
+                "href": "/lancamentos-electrolux",
+                "title": "Lançamentos"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "alt": "Alt Imagem 2",
+              "alt": "forno inox na cor preto electrolux",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
-                "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+                "desktop": "https://assets.decocache.com/content-hub/32519fbc-45bf-40df-ba20-6e3551db306c/lancamentos.png",
+                "mobile": "https://assets.decocache.com/content-hub/c120afaa-9eb2-4fce-ac3f-da6dc441a14f/lancamentosmob.png"
               }
             },
-            "name": "Imagem 2"
+            "name": "<h2><a href=\"/lancamentos-electrolux\">Lançamentos</a></h2>"
           },
           {
             "image": {
               "link": {
-                "target": "blank"
+                "target": "blank",
+                "href": "/content-hub-ambassadors",
+                "title": "Rita Lobo"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "alt": "Alt Imagem 3",
+              "alt": "linha de produtos Rita Lobo Electrolux",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
-                "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+                "desktop": "https://assets.decocache.com/content-hub/35252598-44ce-42b9-911c-14da38ea115b/rita.png",
+                "mobile": "https://assets.decocache.com/content-hub/08695bb6-e556-46cf-a9d3-5839e9cd9356/ritamob.png"
               }
             },
-            "name": "Imagem 3"
+            "name": "<h2><a href=\"/content-hub-ambassadors\">Rita Lobo</a></h2>"
           },
           {
             "image": {
               "link": {
-                "target": "blank"
+                "target": "blank",
+                "href": "/sustentabilidade",
+                "title": "Sustentabilidade"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "alt": "Alt Imagem 4",
+              "alt": "sustentabilidade electrolux",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
-                "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
+                "desktop": "https://assets.decocache.com/content-hub/febe556c-5df8-4a77-a1c8-8ee098b5eafc/sustentabilidade.png",
+                "mobile": "https://assets.decocache.com/content-hub/9ba176ae-a76e-48cd-ab0c-87cd28a8efa9/sustentabilidademob.png"
               }
             },
-            "name": "sustentabilidade"
+            "name": "<h2><a href=\"/sustentabilidade\">Sustentabilidade</a></h2>"
           }
         ]
       }

@@ -29,8 +29,20 @@ export interface CategoryItem {
 export interface Props {
   section?: ISection;
   title?: string;
+  /**
+   * @title Texto do link abaixo do grid de artigos
+   */
   subtitleLinkText?: string;
+  /**
+   * @title URL do link abaixo do grid
+   * @description Endereço para onde o link deve apontar. Ex: `/inspira/blog`
+   */
   subtitleLinkHref?: string;
+  /**
+   * @title Mostrar link abaixo do grid
+   * @description Define se o link abaixo do grid de artigos deve ser exibido ou não.
+   */
+  showSubtitleLink?: boolean;
   categories?: CategoryItem[];
   articles?: ArticleItem[];
   groupSize?: number;
@@ -219,13 +231,13 @@ export default function ArticlesWithSidebarSection({
                 </div>
 
                 {/* Link abaixo do GRID (como no Figma) */}
-                {subtitleLinkText && (
+                {resolvedSubtitleLinkText && resolvedShowSubtitleLink && (
                   <div class="text-center mt-4">
                     <a
-                      href={subtitleLinkHref}
+                      href={resolvedSubtitleLinkHref}
                       class="inline-block font-electrolux font-normal text-[16px] leading-[140%] underline decoration-solid text-[#041E50]"
                     >
-                      {subtitleLinkText}
+                      {resolvedSubtitleLinkText}
                     </a>
                   </div>
                 )}

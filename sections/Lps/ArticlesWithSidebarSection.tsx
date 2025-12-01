@@ -83,10 +83,6 @@ export default function ArticlesWithSidebarSection({
 
   const resolvedSubtitleLinkText =
     subtitleLinkText ?? (section?.props?.subtitleLinkText as string | undefined) ?? undefined;
-  const resolvedSubtitleLinkHref =
-    subtitleLinkHref ?? (section?.props?.subtitleLinkHref as string | undefined) ?? "#";
-  const resolvedShowSubtitleLink =
-    showSubtitleLink ?? (section?.props?.showSubtitleLink as boolean | undefined) ?? true;
 
   const processedArticles = articles.map((article) => ({
     ...article,

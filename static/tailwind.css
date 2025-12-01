@@ -4315,10 +4315,6 @@ input.tab:checked + .tab-content,
     bottom: 34px;
   }
 
-  .md\:right-\[21px\] {
-    right: 21px;
-  }
-
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -4440,6 +4436,11 @@ input.tab:checked + .tab-content,
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:px-\[21px\] {
+    padding-left: 21px;
+    padding-right: 21px;
   }
 
   .md\:pb-\[5\.5rem\] {

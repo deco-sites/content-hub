@@ -67,11 +67,30 @@ export default function InspireTilesSection({
               title={img.name ?? ""}
               classes={{
                 container:
-                  "inspireText absolute text-white font-semibold md:bottom-[34px] bottom-[8px] md:right-[21px] right-[12px] md:text-[36px] md:leading-[36px] text-[16px] leading-[16px] font-semibold break-words hyphens-auto",
+                  "inspireText absolute text-white font-semibold md:bottom-[34px] bottom-[8px] right-0 md:px-[21px] px-[12px] md:text-[36px] md:leading-[36px] text-[16px] leading-[16px] font-semibold break-words hyphens-auto",
               }}
             />
           </div>
         ))}
+        <style>
+          {`
+          .inspireText,
+          .inspireText > h1,
+          .inspireText > h1 a,
+          .inspireText > h2,
+          .inspireText > h2 a,
+          .inspireText > h3,
+          .inspireText > h3 a,
+          .inspireText > a {
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+            overflow-wrap: break-word;
+            word-break: break-word;
+          }
+        `}
+        </style>
       </div>
     </Section>
   );

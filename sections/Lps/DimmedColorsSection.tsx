@@ -75,7 +75,7 @@ export default function DimmedColorsSection({
               class="dimmed-colors-item__container relative flex flex-col overflow-hidden h-[171px] w-full lg:w-auto"
             >
               {/* Imagem base */}
-              {item?.image && <ResponsiveImage {...item} {...item.image} />}
+              {item?.image && <ResponsiveImage {...item.image} />}
 
               {/* OVERLAY MOBILE (com marca d’água da própria imagem) */}
               <div
@@ -85,7 +85,7 @@ export default function DimmedColorsSection({
                 {/* Marca d’água: mesma imagem do admin, por baixo do conteúdo */}
                 {item?.image && (
                   <div class="watermark absolute inset-0 pointer-events-none -z-[1]">
-                    <ResponsiveImage {...item} {...item.image} />
+                    <ResponsiveImage {...item.image} />
                   </div>
                 )}
 

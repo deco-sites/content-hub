@@ -31,7 +31,7 @@ export default function ImageCollectionGridSection(
         ? (
           <div class="w-full grid sm:grid-cols-1 lg:grid-cols-1 justify-center items-center">
             {imageCollection.map((image, index) => (
-              <ResponsiveImage {...image} key={index}  />
+              <ResponsiveImage {...image} key={index} />
             ))}
           </div>
         )

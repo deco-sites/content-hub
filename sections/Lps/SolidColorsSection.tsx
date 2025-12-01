@@ -80,7 +80,7 @@ export default function SolidColorsSection(
                 >
                   <div class="solid-color-image-container">
                     <ResponsiveImage
-                      {...item}
+                      {...item.image}
                     />
                   </div>
                   <div

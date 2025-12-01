@@ -4546,6 +4546,10 @@ input.tab:checked + .tab-content,
     height: 122px;
   }
 
+  .lg\:h-\[164px\] {
+    height: 164px;
+  }
+
   .lg\:h-\[170px\] {
     height: 170px;
   }

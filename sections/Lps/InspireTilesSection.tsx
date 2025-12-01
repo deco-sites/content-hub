@@ -12,6 +12,10 @@ import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
  */
 
 interface InspireImage {
+  /**
+   * @title Título Overlay
+   * @description Cadastro do texto por cima do overlay
+   */
   name?: string;
   image?: IResponsiveImage;
 }

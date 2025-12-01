@@ -61,7 +61,7 @@ export default function InspireTilesSection({
           >
             <ResponsiveImage {...img.image} />
 
-            <div class="inspireOverlay absolute inset-0 bg-black opacity-50" />
+            <div class="inspireOverlay absolute bottom-0 left-0 w-full lg:h-[164px] bg-black opacity-50" />
 
             <Text
               title={img.name ?? ""}

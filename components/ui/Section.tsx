@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { Text } from "@eluxlab/library-components";
 import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
@@ -32,9 +33,11 @@ export default function Section({
   return (
     <div
       id={`section-${id}`}
-      class={`section-container flex flex-col justify-center items-center ${
-        fullWidth ? "w-screen max-w-none" : "w-full"
-      } ${classesContainer ?? ""} ${!fullWidth && "container mx-auto"}`}
+      class={classNames(
+        "section-container flex flex-col justify-center items-center w-full",
+        fullWidth ? "section-container--full max-w-none" : "container mx-auto",
+        classesContainer
+      )}
     >
       {!isEmptyText(title) && (
         <Text
@@ -70,9 +73,17 @@ export default function Section({
 
       <style>
         {`
-          #section-${id} {
+          .section-container {
             margin-top: ${marginTopMobile}px;
             margin-bottom: ${marginBottomMobile}px;
+          }
+
+          .section-container:not(.section-container--full) {
+            --container: 1600px;
+            --padding: 1rem;
+
+            max-width: calc(var(--container) + var(--padding) * 2);
+            padding: 0 var(--padding);
           }
 
           .section-title h1,
@@ -91,14 +102,13 @@ export default function Section({
           }
 
           @media screen and (min-width: 1080px) {
-            #section-${id} {
+            .section-container {
               margin-top: ${marginTopDesktop}px;
               margin-bottom: ${marginBottomDesktop}px;
             }
 
-            /* Apply max-width only when not fullWidth */
-            #section-${id}:not(.full-width) .section-container {
-              width: 1000px;
+            .section-container:not(.section-container--full) {
+              --padding: 2rem;
             }
 
             .section-title h1,
@@ -114,30 +124,6 @@ export default function Section({
             .section-title h3,
             .section-subtitle h3 {
               font-size: 24px;
-            }
-          }
-
-          @media screen and (min-width: 1280px) {
-            #section-${id}:not(.full-width) .section-container {
-              width: 1200px;
-            }
-          }
-
-          @media screen and (min-width: 1366px) {
-            #section-${id}:not(.full-width) .section-container {
-              width: 1286px;
-            }
-          }
-
-          @media screen and (min-width: 1440px) {
-            #section-${id}:not(.full-width) .section-container {
-              width: 1360px;
-            }
-          }
-
-          @media screen and (min-width: 1920px) {
-            #section-${id}:not(.full-width) .section-container {
-              width: 1600px;
             }
           }
         `}

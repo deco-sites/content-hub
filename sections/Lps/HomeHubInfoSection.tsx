@@ -27,7 +27,7 @@ export default function HomeHubInfoSection({
   const sliderDefaults: ISliderConfigs = {
     loop: true,
     speed: 300,
-    spaceBetween: 32,
+    spaceBetween: 0,
     slidesPerView: 1,
     slidesPerViewResponsive: { mobile: 1, tablet: 1, desktop: 1 },
     customNavigation: { enabledDesktop: true, enabledMobile: false },

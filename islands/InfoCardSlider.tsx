@@ -44,6 +44,14 @@ export default function InfoCardSlider({
         <InfoCard
           {...props}
           typeOfContent={enrichedTypeOfContent}
+          styles={{
+            children: {
+              padding: "0",
+              minHeight: "initial",
+              backgroundColor: textBackgroundColor || undefined,
+              color: textColor || undefined,
+            },
+          }}
           classes={{
             container: `${
               props?.direction === "left"
@@ -51,55 +59,37 @@ export default function InfoCardSlider({
                 : "flex-col-reverse lg:flex-row-reverse"
             } w-full justify-start items-center`,
             children:
-              `infocard-children-container h-full flex flex-col items-start justify-center gap-[16px]`,
+              "infocard-children-container h-full flex flex-col items-start justify-center",
             button: `flex w-full pt-[0px] text-[14px]`,
             childrenTextContent: `${
               props?.link?.text ? "h-auto" : "h-full"
-            } w-full`,
-          }}
-          styles={{
-            children: {
-              backgroundColor: textBackgroundColor || undefined,
-              color: textColor || undefined,
-            },
+            } w-full infocard-children-inner`,
           }}
         />
         <style>
           {`
+            .infocard-children-container .infocard-children-inner,
+            .infocard-children-container .infocard-children-inner + div {
+              max-width: clamp(751px, 48vw, 751px);
+              padding: 0 24px;
+              width: 100%;
+            }
             .infocard-children-container {
               width: 100% !important;
-              min-height: unset !important;
-              padding: 0 !important;
+            }
+              
+            .infocard-children-container:first-of-type {
+              padding: 24px 0 !important;
             }
 
-            .infocard-children-container > div {
-              padding: 0 24px;
-              gap: 8px;
-            }
+            @media screen and (min-width: 1081px) {
+              .infocard-children-container {
+                width: 50% !important;
+              }
 
-            .infocard-children-container > div,
-            .infocard-children-container > div h1,
-            .infocard-children-container > div h2,
-            .infocard-children-container > div h3,
-            .infocard-children-container > div h4,
-            .infocard-children-container > div h5,
-            .infocard-children-container > div h6,
-            .infocard-children-container > div p {
-              text-align: start !important;
-            }
-
-            .infocard-children-container > div:first-child {
-              margin-top: 24px;
-            }
-
-            .infocard-children-container > div:last-child {
-              margin-bottom: 24px;
-            }
-
-            @media screen and (min-width: 1024px) {
-              .infocard-children-container > div {
-                align-items: flex-start;
-                gap: 16px;
+              .infocard-children-container .infocard-children-inner,
+              .infocard-children-container .infocard-children-inner + div {
+                padding: 0 0 0 24px;
               }
             }
           `}

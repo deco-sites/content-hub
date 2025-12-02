@@ -78,14 +78,8 @@ export default function InspireTilesSection({
         ))}
         <style>
           {`
-          .inspireText,
-          .inspireText > h1,
-          .inspireText > h1 a,
-          .inspireText > h2,
-          .inspireText > h2 a,
-          .inspireText > h3,
-          .inspireText > h3 a,
-          .inspireText > a {
+          .inspireText :is(h1, h2, h3, a),
+          .inspireText {
             -ms-hyphens: auto;
             -moz-hyphens: auto;
             -webkit-hyphens: auto;

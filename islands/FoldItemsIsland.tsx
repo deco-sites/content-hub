@@ -21,6 +21,28 @@ export interface FoldItem {
    * @default Lorem
    */
   text?: TextArea;
+
+  cta?: {
+    /**
+     * @title Texto CTA
+     * @description Texto do CTA vinculado ao item (mesmo do atributo title).
+     * @default Lorem
+     */
+    text?: string;
+    /**
+     * @title Link CTA
+     * @description Link do CTA vinculado ao item.
+     * @default /#
+     */
+    link?: string;
+    /**
+     * @title Abrir em nova aba?
+     * @description Caso seja selecionada, esta opção irá permitir que o link abra em uma nova aba.
+     * @default _blank
+     */
+    target?: "_blank" | "_self";
+  };
+
   /**
    * @title Imagens
    */
@@ -31,7 +53,21 @@ interface FoldItemsIslandProps {
   foldItems?: FoldItem[];
 }
 
-function FoldItem({ title, text, image }: FoldItem) {
+function FoldItem({
+  title,
+  text,
+  image,
+  cta,
+}: {
+  title?: string;
+  text?: string;
+  image?: IResponsiveImage;
+  cta?: {
+    text?: string;
+    link?: string;
+    target?: string;
+  };
+}) {
   const isOpen = useSignal<boolean>(false);
   const toggleItem = () => (isOpen.value = !isOpen.value);
 
@@ -65,6 +101,18 @@ function FoldItem({ title, text, image }: FoldItem) {
           classes={{ container: "text-[#041E50] font-semibold text-[26px]" }}
         />
         <p class={`text-[#2B2936] text-[14px]`}>{text}</p>
+        {cta?.text && (
+          <a
+            href={cta?.link || "#"}
+            target={cta?.target}
+            rel={cta?.target === "_blank" ? "noopener noreferrer" : ""}
+            class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold mx-auto"
+            title={cta?.text}
+            aria-label={cta?.text || "CTA button"}
+          >
+            {cta?.text}
+          </a>
+        )}
       </div>
     </div>
   );
@@ -82,14 +130,16 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
       `}
     >
       <div class="w-full flex flex-col gap-y-[8px] lg:hidden">
-        {foldItems?.map((item, index) => (
-          <FoldItem
-            title={item.title}
-            text={item.text}
-            image={item.image}
-            key={index}
-          />
-        ))}
+        {foldItems &&
+          foldItems.map((item, index) => (
+            <FoldItem
+              title={item.title}
+              text={item.text}
+              image={item.image}
+              cta={item.cta}
+              key={index}
+            />
+          ))}
       </div>
 
       <div
@@ -136,6 +186,24 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
         <p class="text-[#2B2936] text-base">
           {foldItems?.[selectedItem.value].text}
         </p>
+        {foldItems?.[selectedItem.value]?.cta?.text && (
+          <a
+            href={foldItems?.[selectedItem.value]?.cta?.link || "#"}
+            target={foldItems?.[selectedItem.value]?.cta?.target}
+            rel={
+              foldItems?.[selectedItem.value]?.cta?.target === "_blank"
+                ? "noopener noreferrer"
+                : ""
+            }
+            class="foldItemDesktopCTA text-[#fff] bg-[#041e50] text-base flex items-center justify-center rounded-[4px] border-0 btn btn-md font-semibold"
+            title={foldItems?.[selectedItem.value]?.cta?.text}
+            aria-label={
+              foldItems?.[selectedItem.value]?.cta?.text || "CTA button"
+            }
+          >
+            {foldItems?.[selectedItem.value]?.cta?.text}
+          </a>
+        )}
       </div>
       <style>
         {`

@@ -13,9 +13,10 @@ interface FoldItemsSectionProps {
   foldItems?: FoldItem[];
 }
 
-export default function FoldItemsSection(
-  { section, foldItems = [] }: FoldItemsSectionProps,
-) {
+export default function FoldItemsSection({
+  section,
+  foldItems = [],
+}: FoldItemsSectionProps) {
   const id = useId();
 
   return (

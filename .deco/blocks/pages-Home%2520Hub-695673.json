@@ -590,10 +590,14 @@
               "src": {
                 "desktop": "https://assets.decocache.com/content-hub/6064c43a-b9c5-4a91-8d04-854139b16858/fold-item-1.png",
                 "mobile": "https://assets.decocache.com/content-hub/6064c43a-b9c5-4a91-8d04-854139b16858/fold-item-1.png"
-              },
-              "alt": "Retirada & Coleta"
+              }
             },
-            "title": "Retirada & Coleta"
+            "title": "Retirada & Coleta",
+            "cta": {
+              "link": "link01",
+              "target": "_blank",
+              "text": "Retirada & Coleta"
+            }
           },
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
@@ -613,7 +617,12 @@
               },
               "alt": "Assistência"
             },
-            "title": "Assistência"
+            "title": "Assistência",
+            "cta": {
+              "text": "Assistência",
+              "link": "link02",
+              "target": "_blank"
+            }
           },
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
@@ -633,7 +642,12 @@
               },
               "alt": "Personal Cheff"
             },
-            "title": "Personal Cheff"
+            "title": "Personal Cheff",
+            "cta": {
+              "text": "Personal Cheff",
+              "link": "link03",
+              "target": "_blank"
+            }
           },
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
@@ -653,7 +667,12 @@
               },
               "alt": "Assinatura"
             },
-            "title": "Assinatura"
+            "title": "Assinatura",
+            "cta": {
+              "text": "Assinatura",
+              "link": "link04",
+              "target": "_blank"
+            }
           },
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
@@ -673,7 +692,12 @@
               },
               "alt": "Manutenção Preventiva"
             },
-            "title": "Manutenção Preventiva"
+            "title": "Manutenção Preventiva",
+            "cta": {
+              "text": "Manutenção Preventiva",
+              "link": "link05",
+              "target": "_blank"
+            }
           }
         ]
       }

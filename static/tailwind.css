@@ -3285,6 +3285,9 @@ input.tab:checked + .tab-content,
 .rounded-\[3px\] {
   border-radius: 3px;
 }
+.rounded-\[4px\] {
+  border-radius: 4px;
+}
 .rounded-\[6px\] {
   border-radius: 6px;
 }
@@ -3405,6 +3408,10 @@ input.tab:checked + .tab-content,
 }
 .bg-\[\#041E50\]\/30 {
   background-color: rgb(4 30 80 / 0.3);
+}
+.bg-\[\#041e50\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 30 80 / var(--tw-bg-opacity));
 }
 .bg-\[\#0D1717\] {
   --tw-bg-opacity: 1;
@@ -3923,6 +3930,10 @@ input.tab:checked + .tab-content,
   color: rgb(173 185 195 / var(--tw-text-opacity));
 }
 .text-\[\#FFFFFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-\[\#fff\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }

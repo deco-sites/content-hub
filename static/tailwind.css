@@ -3525,6 +3525,9 @@ input.tab:checked + .tab-content,
 .p-8 {
   padding: 2rem;
 }
+.p-\[7px\] {
+  padding: 7px;
+}
 .\!px-0 {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -3608,10 +3611,6 @@ input.tab:checked + .tab-content,
 .py-\[32px\] {
   padding-top: 32px;
   padding-bottom: 32px;
-}
-.py-\[9px\] {
-  padding-top: 9px;
-  padding-bottom: 9px;
 }
 .pb-4 {
   padding-bottom: 1rem;
@@ -4478,6 +4477,10 @@ input.tab:checked + .tab-content,
     position: absolute;
   }
 
+  .lg\:bottom-4 {
+    bottom: 1rem;
+  }
+
   .lg\:top-1\/2 {
     top: 50%;
   }
@@ -4498,6 +4501,10 @@ input.tab:checked + .tab-content,
 
   .lg\:mb-\[24px\] {
     margin-bottom: 24px;
+  }
+
+  .lg\:mt-\[0\] {
+    margin-top: 0;
   }
 
   .lg\:block {

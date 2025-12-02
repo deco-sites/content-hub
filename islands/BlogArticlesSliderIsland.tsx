@@ -119,8 +119,8 @@ export default function BlogArticlesSliderIsland({
       </div>
 
       {/* dots */}
-      <div class="flex items-center justify-center absolute bottom-4 w-full">
-        <div class="flex items-center justify-center gap-2 py-[9px] px-3 bg-white border rounded-[2000px] border-[#7A8A9C]">
+      <div class="flex items-center justify-center lg:absolute lg:bottom-4 lg:mt-[0] mt-2 relative w-full">
+        <div class="flex items-center justify-center gap-2 p-[7px] bg-white border rounded-[2000px] border-[#7A8A9C]">
           {Array.from({ length: count }).map((_, i) => (
             <button
               key={i}

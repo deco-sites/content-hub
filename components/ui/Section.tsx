@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { Text } from "@eluxlab/library-components";
 import { isEmptyText } from "site/utils/text.ts";
 import type { ISection } from "site/types/Section.d.ts";
@@ -32,13 +33,11 @@ export default function Section({
   return (
     <div
       id={`section-${id}`}
-      class={[
-        "section-container flex flex-col justify-center items-center",
-        fullWidth ? "w-screen max-w-none" : "container mx-auto w-full",
-        classesContainer,
-      ]
-        .filter(Boolean)
-        .join(" ")}
+      class={classNames(
+        "section-container flex flex-col justify-center items-center w-full",
+        fullWidth ? "section-container--full max-w-none" : "container mx-auto",
+        classesContainer
+      )}
     >
       {!isEmptyText(title) && (
         <Text
@@ -75,13 +74,16 @@ export default function Section({
       <style>
         {`
           .section-container {
-            --container: 1600px;
-            --padding: 1rem;
-            
-             max-width: calc(var(--container) + var(--padding) * 2);
-            padding: 0 var(--padding);
             margin-top: ${marginTopMobile}px;
             margin-bottom: ${marginBottomMobile}px;
+          }
+
+          .section-container:not(.section-container--full) {
+            --container: 1600px;
+            --padding: 1rem;
+
+            max-width: calc(var(--container) + var(--padding) * 2);
+            padding: 0 var(--padding);
           }
 
           .section-title h1,
@@ -101,10 +103,12 @@ export default function Section({
 
           @media screen and (min-width: 1080px) {
             .section-container {
-              --padding: 2rem;
-              
               margin-top: ${marginTopDesktop}px;
               margin-bottom: ${marginBottomDesktop}px;
+            }
+
+            .section-container:not(.section-container--full) {
+              --padding: 2rem;
             }
 
             .section-title h1,

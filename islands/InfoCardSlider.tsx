@@ -19,7 +19,7 @@ export default function InfoCardSlider({
   rootId,
 }: InfoCardSliderProps) {
   const slides = infoCards.map((props) => {
-    const { typeOfContent, textBackgroundColor, textColor } = props ?? {};
+    const { typeOfContent, textBackgroundColor } = props ?? {};
 
     const typeOfContentVideo = typeOfContent as IInfoCardVideo;
     const typeOfContentImage = typeOfContent as IInfoCardImage;
@@ -49,7 +49,6 @@ export default function InfoCardSlider({
               padding: "0",
               minHeight: "initial",
               backgroundColor: textBackgroundColor || undefined,
-              color: textColor || undefined,
             },
           }}
           classes={{
@@ -59,36 +58,36 @@ export default function InfoCardSlider({
                 : "flex-col-reverse lg:flex-row-reverse"
             } w-full justify-start items-center`,
             children:
-              "infocard-children-container h-full flex flex-col items-start justify-center",
+              "infoCardChildren h-full flex flex-col items-start justify-center",
             button: `flex w-full pt-[0px] text-[14px]`,
             childrenTextContent: `${
               props?.link?.text ? "h-auto" : "h-full"
-            } w-full infocard-children-inner`,
+            } w-full infoCardInner`,
           }}
         />
         <style>
           {`
-            .infocard-children-container .infocard-children-inner,
-            .infocard-children-container .infocard-children-inner + div {
+            .infoCardChildren .infoCardInner,
+            .infoCardChildren .infoCardInner + div {
               max-width: clamp(751px, 48vw, 751px);
               padding: 0 24px;
               width: 100%;
             }
-            .infocard-children-container {
+            .infoCardChildren {
               width: 100% !important;
             }
               
-            .infocard-children-container:first-of-type {
+            .infoCardChildren:first-of-type {
               padding: 24px 0 !important;
             }
 
             @media screen and (min-width: 1081px) {
-              .infocard-children-container {
+              .infoCardChildren {
                 width: 50% !important;
               }
 
-              .infocard-children-container .infocard-children-inner,
-              .infocard-children-container .infocard-children-inner + div {
+              .infoCardChildren .infoCardInner,
+              .infoCardChildren .infoCardInner + div {
                 padding: 0 0 0 24px;
               }
             }

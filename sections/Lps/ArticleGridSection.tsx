@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -42,12 +43,10 @@ export interface ArticleGridSectionProps {
   articles?: Article[];
 }
 
-export default function ArticleGridSection(
-  {
-    section,
-    articles = [],
-  }: ArticleGridSectionProps,
-) {
+export default function ArticleGridSection({
+  section,
+  articles = [],
+}: ArticleGridSectionProps) {
   const id = useId();
 
   if (!articles?.length) return null;
@@ -55,24 +54,24 @@ export default function ArticleGridSection(
   return (
     <Section {...section} id={id}>
       <div class="article-grid-container w-full mx-auto grid grid-cols-2 lg:grid-cols-4 gap-[8px]">
-        {articles.map((
-          article,
-          index,
-        ) => (
+        {articles.map((article, index) => (
           <div
             key={index}
             class="article-grid-item border border-[#dfe7ea] flex flex-col hover:shadow-md transition w-full"
           >
             <a href={article.href}>
               <div class="article-image-container">
-                {article.image?.src?.mobile || article.image?.src?.desktop
-                  ? <ResponsiveImage {...article.image} />
-                  : null}
+                {article.image?.src?.mobile || article.image?.src?.desktop ? (
+                  <ResponsiveImage {...article.image} />
+                ) : null}
               </div>
               <div class="flex flex-col justify-start items-start w-full px-[8px] py-[12px] lg:px-[16px] lg:py-[24px]">
-                <h3 class="text-xl font-semibold text-[#041E50] mb-[8px]">
-                  {article.title}
-                </h3>
+                <Text
+                  title={article.title ?? ""}
+                  classes={{
+                    container: "text-xl font-semibold text-[#041E50] mb-[8px]",
+                  }}
+                />
                 <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux overflow-hidden max-h-[65px] mb-[8px] lg:mb-[16px]">
                   {article.description}
                 </p>

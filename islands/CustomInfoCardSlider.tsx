@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "preact/hooks";
+import { Text } from "@eluxlab/library-components";
 import type { IInfoCardCustom } from "site/types/InfoCardCustom.d.ts";
 import type { ISliderConfigs } from "site/types/Slider.d.ts";
 import { HTMLAttributes } from "react";
@@ -236,9 +237,12 @@ export default function CustomInfoCardSlider({
                       }}
                     >
                       {card.title && (
-                        <h2 class="mb-4 font-bold text-[#041E50] text-[20px] lg:text-[26px]">
-                          {card.title}
-                        </h2>
+                        <Text
+                          title={card.title}
+                          classes={{
+                            container: "mb-4 font-bold text-[#041E50] text-[20px] lg:text-[26px]",
+                          }}
+                        />
                       )}
 
                       {card.description && (

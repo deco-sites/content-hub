@@ -29,8 +29,20 @@ export interface CategoryItem {
 export interface Props {
   section?: ISection;
   title?: string;
+  /**
+   * @title Texto do link abaixo do grid de artigos
+   */
   subtitleLinkText?: string;
+  /**
+   * @title URL do link abaixo do grid
+   * @description Endereço para onde o link deve apontar. Ex: `/inspira/blog`
+   */
   subtitleLinkHref?: string;
+  /**
+   * @title Mostrar link abaixo do grid
+   * @description Define se o link abaixo do grid de artigos deve ser exibido ou não.
+   */
+
   categories?: CategoryItem[];
   articles?: ArticleItem[];
   groupSize?: number;
@@ -57,8 +69,8 @@ const DEFAULT_CATEGORIES: CategoryItem[] = [
 export default function ArticlesWithSidebarSection({
   section,
   title = "Outros artigos",
-  subtitleLinkText = "Conheça todos os nossos outros artigos aqui",
-  subtitleLinkHref = "#",
+  subtitleLinkText,
+  subtitleLinkHref,
   categories = DEFAULT_CATEGORIES,
   articles = [],
   groupSize = 3,
@@ -67,6 +79,11 @@ export default function ArticlesWithSidebarSection({
 }: Props) {
   const id = useId();
   if (!articles.length) return null;
+
+  const resolvedSubtitleLinkText =
+    subtitleLinkText ?? (section?.props?.subtitleLinkText as string | undefined) ?? undefined;
+  const resolvedSubtitleLinkHref =
+    subtitleLinkHref ?? (section?.props?.subtitleLinkHref as string | undefined) ?? "#";
 
   const processedArticles = articles.map((article) => ({
     ...article,
@@ -219,13 +236,13 @@ export default function ArticlesWithSidebarSection({
                 </div>
 
                 {/* Link abaixo do GRID (como no Figma) */}
-                {subtitleLinkText && (
-                  <div class="text-center mt-4">
+                {resolvedSubtitleLinkText && (
+                  <div class="text-center mt-4 rounded-[16px] py-4 px-2">
                     <a
-                      href={subtitleLinkHref}
-                      class="inline-block font-electrolux font-normal text-[16px] leading-[140%] underline decoration-solid text-[#041E50]"
+                      href={resolvedSubtitleLinkHref}
+                      class="inline-block font-electrolux font-normal text-[16px] leading-[140%] underline decoration-solid text-[#041E50] "
                     >
-                      {subtitleLinkText}
+                      {resolvedSubtitleLinkText}
                     </a>
                   </div>
                 )}

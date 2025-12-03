@@ -237,10 +237,10 @@ export default function ArticlesWithSidebarSection({
 
                 {/* Link abaixo do GRID (como no Figma) */}
                 {resolvedSubtitleLinkText && (
-                  <div class="text-center mt-4">
+                  <div class="text-center mt-4 rounded-[16px] py-4 px-2">
                     <a
                       href={resolvedSubtitleLinkHref}
-                      class="inline-block font-electrolux font-normal text-[16px] leading-[140%] underline decoration-solid text-[#041E50]"
+                      class="inline-block font-electrolux font-normal text-[16px] leading-[140%] underline decoration-solid text-[#041E50] "
                     >
                       {resolvedSubtitleLinkText}
                     </a>

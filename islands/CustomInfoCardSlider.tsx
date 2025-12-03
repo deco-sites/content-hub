@@ -7,6 +7,14 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   infoCards?: IInfoCardCustom[];
   rootId: string;
   configs?: ISliderConfigs;
+  onRegisterControls?: (controls: {
+    prev: () => void;
+    next: () => void;
+    setPage?: (p: number) => void;
+    getPage?: () => number;
+    totalPages?: number;
+  }) => void;
+  teste?: string;
 }
 
 /** Tipos seguros para usar globalThis sem 'window' */
@@ -72,6 +80,7 @@ export default function CustomInfoCardSlider({
   infoCards = [],
   rootId,
   configs,
+  onRegisterControls,
 }: Props) {
   const { get, isDesktop, isMobile } = resolveSlidesPerView(configs);
 
@@ -128,6 +137,59 @@ export default function CustomInfoCardSlider({
       return n < totalPages ? n : (configs?.loop ? 0 : p);
     });
 
+  useEffect(() => {
+    if (typeof onRegisterControls === "function") {
+      onRegisterControls({
+        prev,
+        next,
+        setPage: (p: number) => setPage(p),
+        getPage: () => page,
+        totalPages,
+      });
+    }
+   
+  }, [onRegisterControls, prev, next, page, totalPages]);
+
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+
+    const rootEl = document.getElementById(rootId);
+
+    const onDocClick = (e: Event) => {
+      const target = e.target as HTMLElement | null;
+      if (!target) return;
+      const btn = target.closest<HTMLElement>("[data-slider-target][data-slider-action]");
+      if (!btn) return;
+      const t = btn.dataset.sliderTarget;
+      if (!t || t !== rootId) return;
+      const act = btn.dataset.sliderAction;
+      if (act === "prev") {
+        prev();
+      } else if (act === "next") {
+        next();
+      } else if (act === "set-page") {
+        const p = Number(btn.dataset.sliderPage ?? "");
+        if (!Number.isNaN(p)) setPage(p);
+      }
+    };
+
+    const onCustom = (e: Event) => {
+      const ev = e as CustomEvent;
+      const detail = ev?.detail as Record<string, unknown> | undefined;
+      if (!detail) return;
+      if (detail.action === "prev") prev();
+      else if (detail.action === "next") next();
+      else if (detail.action === "set-page" && typeof detail.page === "number") setPage(detail.page);
+    };
+
+    document.addEventListener("click", onDocClick);
+    rootEl?.addEventListener("custom-slider", onCustom as EventListener);
+    return () => {
+      document.removeEventListener("click", onDocClick);
+      rootEl?.removeEventListener("custom-slider", onCustom as EventListener);
+    };
+  }, [rootId, prev, next]);
+
   const itemWidthPct = 100 / Math.max(1, spv);
 
   const showNav =
@@ -172,8 +234,7 @@ export default function CustomInfoCardSlider({
           style={{
             transitionProperty: "transform",
             transitionDuration: `${speed}ms`,
-            transform: `translateX(-${page * 100}%)`, // <- anda 1 viewport por página
-            // REMOVER qualquer 'width: ...' aqui
+            transform: `translateX(-${page * 100}%)`,
           }}
         >
           {hasItems &&
@@ -229,7 +290,7 @@ export default function CustomInfoCardSlider({
 
                     {/* Texto */}
                     <div
-                      class="w-full lg:w-1/2 h-full p-6 lg:p-10 flex flex-col justify-center"
+                      class="w-full lg:w-1/2 h-full p-6 pl-0 mt-2 lg:p-10 flex flex-col justify-center"
                       style={{
                         backgroundColor: card.textBackgroundColor ?? "#FFFFFF",
                         fontFamily: card.fontFamily ?? "Arial",

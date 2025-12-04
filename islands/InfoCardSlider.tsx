@@ -56,41 +56,41 @@ export default function InfoCardSlider({
               props?.direction === "left"
                 ? "flex-col lg:flex-row"
                 : "flex-col-reverse lg:flex-row-reverse"
-            } w-full justify-start items-center`,
+            } info-card w-full justify-start items-center`,
             children:
-              "infoCardChildren h-full flex flex-col items-start justify-center",
+              "infocard-children-container h-full flex flex-col items-start justify-center",
             button: `flex w-full pt-[0px] text-[14px]`,
             childrenTextContent: `${
               props?.link?.text ? "h-auto" : "h-full"
-            } w-full infoCardInner`,
+            } w-full info-card-inner`,
           }}
         />
         <style>
           {`
-            .infoCardChildren .infoCardInner,
-            .infoCardChildren .infoCardInner + div {
-              max-width: clamp(751px, 48vw, 751px);
+            .infocard-children-container .info-card-inner,
+            .infocard-children-container .info-card-inner + div {
+              max-width: 751px;
               padding: 0 24px;
               width: 100%;
             }
-            .infoCardChildren {
+            .infocard-children-container {
               width: 100% !important;
             }
-            .infoCardChildren:first-of-type {
+            .infocard-children-container:first-of-type {
               padding: 24px 0 !important;
             }
 
-            .infoCardInner :is(h1, h2, h3, a, p) {
+            .info-card-inner :is(h1, h2, h3, a, p) {
               margin-bottom: 16px;
             }
 
             @media screen and (min-width: 1081px) {
-              .infoCardChildren {
+              .infocard-children-container {
                 width: 50% !important;
               }
 
-              .infoCardChildren .infoCardInner,
-              .infoCardChildren .infoCardInner + div {
+              .infocard-children-container .info-card-inner,
+              .infocard-children-container .info-card-inner + div {
                 padding: 0 0 0 24px;
               }
             }

@@ -39,9 +39,8 @@ export default function InfoCard(
         <a
           href={href ?? "/#"}
           title={text}
-          class="info-card__link cursor-pointer flex items-center justify-center text-base text-[14px] text-normal"
+          class="info-card__link underline cursor-pointer flex items-center justify-center text-base text-[14px] text-normal"
           style={{
-            textDecoration: "underline",
             color: `${color}`,
           }}
         >

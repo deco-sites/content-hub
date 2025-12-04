@@ -76,9 +76,12 @@ export default function InfoCardSlider({
             .infoCardChildren {
               width: 100% !important;
             }
-              
             .infoCardChildren:first-of-type {
               padding: 24px 0 !important;
+            }
+
+            .infoCardInner :is(h1, h2, h3, a, p) {
+              margin-bottom: 16px;
             }
 
             @media screen and (min-width: 1081px) {

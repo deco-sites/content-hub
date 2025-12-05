@@ -2650,9 +2650,6 @@ input.tab:checked + .tab-content,
 .h-6 {
   height: 1.5rem;
 }
-.h-8 {
-  height: 2rem;
-}
 .h-9 {
   height: 2.25rem;
 }
@@ -2685,6 +2682,9 @@ input.tab:checked + .tab-content,
 }
 .h-\[210px\] {
   height: 210px;
+}
+.h-\[21px\] {
+  height: 21px;
 }
 .h-\[22px\] {
   height: 22px;
@@ -2828,9 +2828,6 @@ input.tab:checked + .tab-content,
 .w-6 {
   width: 1.5rem;
 }
-.w-8 {
-  width: 2rem;
-}
 .w-9 {
   width: 2.25rem;
 }
@@ -2848,6 +2845,9 @@ input.tab:checked + .tab-content,
 }
 .w-\[183px\] {
   width: 183px;
+}
+.w-\[21px\] {
+  width: 21px;
 }
 .w-\[2px\] {
   width: 2px;
@@ -3050,6 +3050,10 @@ input.tab:checked + .tab-content,
 }
 .-rotate-90 {
   --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rotate-0 {
+  --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rotate-180 {

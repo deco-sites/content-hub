@@ -149,7 +149,7 @@ export default function CustomInfoCardSlider({
             type="button"
             aria-label="Anterior"
             onClick={prev}
-            class="hidden lg:flex absolute left-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 items-center justify-center rounded-full border border-black bg-white hover:bg-gray-50 text-[21px] pb-1"
+            class="hidden lg:flex absolute left-2 top-1/2 -translate-y-1/2 z-10 w-[21px] h-[21px] items-center justify-center rounded-full border border-black bg-white hover:bg-gray-50 text-[21px] pb-1 rotate-0 opacity-100"
           >
             ‹
           </button>
@@ -157,7 +157,7 @@ export default function CustomInfoCardSlider({
             type="button"
             aria-label="Próximo"
             onClick={next}
-            class="hidden lg:flex absolute right-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 items-center justify-center rounded-full border border-black bg-white hover:bg-gray-50 text-[21px] pb-1"
+            class="hidden lg:flex absolute right-2 top-1/2 -translate-y-1/2 z-10 w-[21px] h-[21px] items-center justify-center rounded-full border border-black bg-white hover:bg-gray-50 text-[21px] pb-1 rotate-0 opacity-100"
           >
             ›
           </button>

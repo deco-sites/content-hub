@@ -500,7 +500,13 @@
               "href": "/inspira/blog/produtos/tipos-geladeira-black-friday"
             }
           }
-        ]
+        ],
+        "configs": {
+          "customPagination": {
+            "enabledMobile": true,
+            "enabledDesktop": true
+          }
+        }
       }
     },
     {

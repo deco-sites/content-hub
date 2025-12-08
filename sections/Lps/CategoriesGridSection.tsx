@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
 import ResponsiveImage from "site/components/ui/ResponsiveImage.tsx";
@@ -38,9 +39,13 @@ export default function CategoriesGridSection({
               <ResponsiveImage {...category.image} />
 
               <div class="absolute bg-black/50 h-[130px] bottom-0 left-0 w-full flex items-end justify-end pointer-events-none">
-                <span class="text-white text-[24px] lg:text-[36px] font-semibold px-5 pb-6 leading-none">
-                  {category.name}
-                </span>
+                <Text
+                  title={category.name ?? ""}
+                  classes={{
+                    container:
+                      "text-white text-[24px] lg:text-[36px] font-semibold px-5 pb-6 leading-none",
+                  }}
+                />
               </div>
             </div>
           ))}
@@ -62,56 +67,31 @@ export default function CategoriesGridSection({
                 >
                   <ResponsiveImage {...category.image} />
                   <div class="grid-category-item-overlay__mobile absolute inset-0 bg-black opacity-50" />
-                  <span class="grid-category-item-text__mobile absolute text-[#FFFFFF] font-semibold bottom-[8px] right-[12px]">
-                    {category.name}
-                  </span>
+                  <Text
+                    title={category.name ?? ""}
+                    classes={{
+                      container:
+                        "grid-category-item-text__mobile absolute text-[#FFFFFF] font-semibold bottom-[8px] right-[12px]",
+                    }}
+                  />
                 </div>
               );
             })}
           </div>
           <div class="grid-category-container__desktop">
-            <div class="grid-category-item__desktop photo0">
-              <ResponsiveImage {...categories?.[0].image} />
-              <div class="grid-category-item-overlay__desktop"></div>
-              <span class="grid-category-item-text__desktop">
-                {categories?.[0].name}
-              </span>
-            </div>
-            <div class="grid-category-item__desktop photo1">
-              <ResponsiveImage {...categories?.[1].image} />
-              <div class="grid-category-item-overlay__desktop"></div>
-              <span class="grid-category-item-text__desktop">
-                {categories?.[1].name}
-              </span>
-            </div>
-            <div class="grid-category-item__desktop photo2">
-              <ResponsiveImage {...categories?.[2].image} />
-              <div class="grid-category-item-overlay__desktop"></div>
-              <span class="grid-category-item-text__desktop">
-                {categories?.[2].name}
-              </span>
-            </div>
-            <div class="grid-category-item__desktop photo3">
-              <ResponsiveImage {...categories?.[3].image} />
-              <div class="grid-category-item-overlay__desktop"></div>
-              <span class="grid-category-item-text__desktop">
-                {categories?.[3].name}
-              </span>
-            </div>
-            <div class="grid-category-item__desktop photo4">
-              <ResponsiveImage {...categories?.[4].image} />
-              <div class="grid-category-item-overlay__desktop"></div>
-              <span class="grid-category-item-text__desktop">
-                {categories?.[4].name}
-              </span>
-            </div>
-            <div class="grid-category-item__desktop photo5">
-              <ResponsiveImage {...categories?.[5].image} />
-              <div class="grid-category-item-overlay__desktop"></div>
-              <span class="grid-category-item-text__desktop">
-                {categories?.[5].name}
-              </span>
-            </div>
+            {categories?.slice(0, 6).map((category, index) => (
+              <div
+                class={`grid-category-item__desktop photo${index}`}
+                key={index}
+              >
+                <ResponsiveImage {...category.image} />
+                <div class="grid-category-item-overlay__desktop"></div>
+                <Text
+                  title={category.name ?? ""}
+                  classes={{ container: "grid-category-item-text__desktop" }}
+                />
+              </div>
+            ))}
           </div>
         </>
       )}

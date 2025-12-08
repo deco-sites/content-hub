@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -69,11 +70,14 @@ export default function ImageTextCardGridSection({
               src={card.image?.src?.desktop ?? ""}
               alt={card.image?.alt ?? `Card ${index + 1}`}
               class="w-full h-auto object-cover"
-              loading={card.image.loadingOptions?.loading ?? "lazy"}
+              loading={card.image?.loadingOptions?.loading ?? "lazy"}
             />
             <div class="bg-[#001E50] text-white p-4 flex flex-col gap-2 min-h-[160px]">
               <span class="text-sm uppercase opacity-60">{card.tag}</span>
-              <h3 class="text-lg font-semibold">{card.title}</h3>
+              <Text
+                title={card.title ?? ""}
+                classes={{ container: "text-lg font-semibold" }}
+              />
               <p class="text-sm">{card.description}</p>
               {card.linkUrl && (
                 <a

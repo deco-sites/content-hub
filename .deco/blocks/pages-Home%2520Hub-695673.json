@@ -19,7 +19,8 @@
         "section": {
           "title": "<h1>Electrolux Inspira</h1>",
           "children": null,
-          "centralizeTitleAndSubtitle": true
+          "centralizeTitleAndSubtitle": true,
+          "fullWidth": false
         },
         "items": [
           {

@@ -69,7 +69,7 @@ export default function InfoCardSlider({
           {`
             .infocard-children-container .info-card-inner,
             .infocard-children-container .info-card-inner + div {
-              max-width: 751px;
+              max-width: 100%;
               padding: 0 24px;
               width: 100%;
             }
@@ -84,9 +84,29 @@ export default function InfoCardSlider({
               margin-bottom: 16px;
             }
 
-            @media screen and (min-width: 1081px) {
+            @media screen and (min-width: 1079px) {
               .infocard-children-container {
                 width: 50% !important;
+              }
+
+              .infocard-children-container .info-card-inner,
+              .infocard-children-container .info-card-inner + div {
+                max-width: 520px;
+              }
+            }
+
+            @media screen and (min-width: 1279px) {
+              .infocard-children-container .info-card-inner,
+              .infocard-children-container .info-card-inner + div {
+                max-width: 750px;
+              }
+            }
+
+            @media screen and (min-width: 1365px) {
+
+              .infocard-children-container .info-card-inner,
+              .infocard-children-container .info-card-inner + div {
+                max-width: 650px;
               }
             }
           `}

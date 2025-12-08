@@ -83,30 +83,44 @@ export default function InfoCardSlider({
             .info-card-inner :is(h1, h2, h3, a, p) {
               margin-bottom: 16px;
             }
-
-            @media screen and (min-width: 1079px) {
-              .infocard-children-container {
-                width: 50% !important;
-              }
-
+              
+            @media (max-width: 993px) {
               .infocard-children-container .info-card-inner,
               .infocard-children-container .info-card-inner + div {
                 max-width: 520px;
               }
             }
 
-            @media screen and (min-width: 1279px) {
+            @media screen and (min-width: 1081px) {
+              .infocard-children-container {
+                width: 50% !important;
+              }
+
               .infocard-children-container .info-card-inner,
               .infocard-children-container .info-card-inner + div {
-                max-width: 750px;
+                max-width: 600px;
               }
             }
 
-            @media screen and (min-width: 1365px) {
-
+            @media screen and (min-width: 1281px) {
               .infocard-children-container .info-card-inner,
               .infocard-children-container .info-card-inner + div {
                 max-width: 650px;
+              }
+            }
+
+            @media screen and (min-width: 1367px) {
+
+              .infocard-children-container .info-card-inner,
+              .infocard-children-container .info-card-inner + div {
+                max-width: 690px;
+              }
+            }
+
+            @media screen and (min-width: 1440px) {
+              .infocard-children-container .info-card-inner,
+              .infocard-children-container .info-card-inner + div {
+                max-width: 750px;
               }
             }
           `}

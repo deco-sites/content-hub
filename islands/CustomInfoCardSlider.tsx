@@ -28,7 +28,7 @@ const getInnerWidth = (): number => {
 
 /** Adiciona listener de resize de forma tipada e retorna o remover */
 const addResizeListener = (
-  handler: EventListener,
+  handler: EventListener
 ): (() => void) | undefined => {
   const g = getGlobal();
   const add = g.addEventListener;
@@ -46,7 +46,7 @@ const addResizeListener = (
 function resolveSlidesPerView(cfg?: ISliderConfigs) {
   const base = Math.max(
     1,
-    cfg?.slidesPerView ?? cfg?.slidesPerViewResponsive?.mobile ?? 1,
+    cfg?.slidesPerView ?? cfg?.slidesPerViewResponsive?.mobile ?? 1
   );
 
   const get = () => {
@@ -85,7 +85,7 @@ export default function CustomInfoCardSlider({
   const len = Math.max(1, infoCards.length);
   const totalPages = useMemo(
     () => Math.max(1, Math.ceil(len / Math.max(1, spv))),
-    [len, spv],
+    [len, spv]
   );
 
   // Resize (corrige: handler aceita arg opcional; podemos chamar sem args)
@@ -119,14 +119,14 @@ export default function CustomInfoCardSlider({
   ]);
 
   const prev = () =>
-    setPage((
-      p: number,
-    ) => (p > 0 ? p - 1 : (configs?.loop ? totalPages - 1 : 0)));
+    setPage((p: number) =>
+      p > 0 ? p - 1 : configs?.loop ? totalPages - 1 : 0
+    );
 
   const next = () =>
     setPage((p: number) => {
       const n = p + 1;
-      return n < totalPages ? n : (configs?.loop ? 0 : p);
+      return n < totalPages ? n : configs?.loop ? 0 : p;
     });
 
   const itemWidthPct = 100 / Math.max(1, spv);
@@ -180,9 +180,8 @@ export default function CustomInfoCardSlider({
           {hasItems &&
             infoCards.map((card, index) => {
               const tc = card.typeOfContent as MediaContent | undefined;
-              const videoSrc = tc?.src && tc.src.endsWith(".mp4")
-                ? tc.src
-                : undefined;
+              const videoSrc =
+                tc?.src && tc.src.endsWith(".mp4") ? tc.src : undefined;
               const imgSrc = tc?.srcDesktop;
               const imgAlt = tc?.alt ?? "Imagem";
 
@@ -198,34 +197,33 @@ export default function CustomInfoCardSlider({
                 >
                   {/* 50/50 em lg */}
                   <div
-                    class={`flex w-full h-full items-center justify-between ${card.direction === "left"
-                      ? "lg:flex-row"
-                      : "lg:flex-row-reverse"
-                      } flex-col`}
+                    class={`flex w-full h-full items-center justify-between ${
+                      card.direction === "left"
+                        ? "lg:flex-row"
+                        : "lg:flex-row-reverse"
+                    } flex-col`}
                   >
                     {/* Mídia */}
                     <div class="w-full lg:w-1/2 h-full flex justify-center items-center">
-                      {videoSrc
-                        ? (
-                          <video
-                            src={videoSrc}
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            class="w-full h-full object-cover"
-                          />
-                        )
-                        : imgSrc
-                          ? (
-                            <img
-                              src={imgSrc}
-                              alt={imgAlt}
-                              class="w-full h-full object-cover"
-                              loading={configs?.lazy ? "lazy" : "eager"}
-                            />
-                          )
-                          : <div class="w-full h-full bg-gray-200" />}
+                      {videoSrc ? (
+                        <video
+                          src={videoSrc}
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          class="w-full h-full object-cover"
+                        />
+                      ) : imgSrc ? (
+                        <img
+                          src={imgSrc}
+                          alt={imgAlt}
+                          class="w-full h-full object-cover"
+                          loading={configs?.lazy ? "lazy" : "eager"}
+                        />
+                      ) : (
+                        <div class="w-full h-full bg-gray-200" />
+                      )}
                     </div>
 
                     {/* Texto */}
@@ -277,10 +275,11 @@ export default function CustomInfoCardSlider({
               key={i}
               type="button"
               aria-label={`Ir para página ${i + 1}`}
-              class={`w-2.5 h-2.5 rounded-full border ${i === page
-                ? "bg-gray-800 border-gray-800"
-                : "bg-transparent border-gray-400"
-                }`}
+              class={`w-2.5 h-2.5 rounded-full border ${
+                i === page
+                  ? "bg-gray-800 border-gray-800"
+                  : "bg-transparent border-gray-400"
+              }`}
               onClick={() => setPage(i)}
             />
           ))}

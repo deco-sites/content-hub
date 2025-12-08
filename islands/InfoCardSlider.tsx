@@ -88,11 +88,6 @@ export default function InfoCardSlider({
               .infocard-children-container {
                 width: 50% !important;
               }
-
-              .infocard-children-container .info-card-inner,
-              .infocard-children-container .info-card-inner + div {
-                padding: 0 0 0 24px;
-              }
             }
           `}
         </style>

@@ -2719,6 +2719,9 @@ input.tab:checked + .tab-content,
 .h-\[60px\] {
   height: 60px;
 }
+.h-\[84px\] {
+  height: 84px;
+}
 .h-auto {
   height: auto;
 }
@@ -2991,9 +2994,6 @@ input.tab:checked + .tab-content,
 }
 .max-w-none {
   max-width: none;
-}
-.max-w-screen-2xl {
-  max-width: 1536px;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -3395,6 +3395,10 @@ input.tab:checked + .tab-content,
   background-color: rgb(0 40 85 / var(--tw-bg-opacity));
 }
 .bg-\[\#041E50\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 30 80 / var(--tw-bg-opacity));
+}
+.bg-\[\#041e50\] {
   --tw-bg-opacity: 1;
   background-color: rgb(4 30 80 / var(--tw-bg-opacity));
 }
@@ -4771,11 +4775,6 @@ input.tab:checked + .tab-content,
   .lg\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .lg\:px-\[16px\] {

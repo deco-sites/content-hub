@@ -37,8 +37,6 @@ export default function InspireTilesSection({
   gap = 8,
 }: InspireTilesSectionProps) {
   const id = useId();
-  const containDescendants =
-    "[&_*]:!object-contain [&_*]:!h-auto [&_*]:w-full";
 
   return (
     <Section {...section} id={id}>
@@ -47,7 +45,7 @@ export default function InspireTilesSection({
         {mobileImages.map((img, i) => (
           <div
             key={`m-${i}`}
-            class={`w-full overflow-hidden ${containDescendants}`}
+            class={`w-full overflow-hidden`}
             style={{
               backgroundColor: cardBg,
             }}
@@ -61,7 +59,7 @@ export default function InspireTilesSection({
         {desktopImages.map((img, i) => (
           <div
             key={`d-${i}`}
-            class={`w-full overflow-hidden ${containDescendants}`}
+            class={`w-full overflow-hidden`}
             style={{
               backgroundColor: cardBg,
             }}

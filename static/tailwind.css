@@ -619,9 +619,7 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -4021,9 +4019,7 @@ input.tab:checked + .tab-content,
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -4870,10 +4866,6 @@ input.tab:checked + .tab-content,
     width: 33.3%;
   }
 
-  .xl\:max-w-\[1360px\] {
-    max-width: 1360px;
-  }
-
   .xl\:max-w-\[calc\(25\%-5px\)\] {
     max-width: calc(25% - 5px);
   }
@@ -4945,20 +4937,4 @@ input.tab:checked + .tab-content,
   .group:hover .xl\:group-hover\:opacity-100 {
     opacity: 1;
   }
-}
-@media (min-width: 1536px) {
-
-  .\32xl\:max-w-\[1600px\] {
-    max-width: 1600px;
-  }
-}
-.\[\&_\*\]\:\!h-auto * {
-  height: auto !important;
-}
-.\[\&_\*\]\:w-full * {
-  width: 100%;
-}
-.\[\&_\*\]\:\!object-contain * {
-  -o-object-fit: contain !important;
-     object-fit: contain !important;
 }

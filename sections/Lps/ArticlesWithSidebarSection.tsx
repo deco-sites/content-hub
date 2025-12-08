@@ -86,8 +86,7 @@ export default function ArticlesWithSidebarSection({
 
   return (
     <Section {...section} id={id}>
-      {/* 1280→1200, 1440→1360, 1920→1600 */}
-      <div class="w-full max-w-[1200px] xl:max-w-[1360px] 2xl:max-w-[1600px] mx-auto">
+      <div class="w-full mx-auto">
         {/* MOBILE: categorias em pills (scroll horizontal com barra oculta) */}
         {categories.length > 0 && (
           <>

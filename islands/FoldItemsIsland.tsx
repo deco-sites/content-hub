@@ -208,20 +208,7 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
         {`
         @media screen and (min-width: 1280px) {
           .foldItems-container {
-            max-width: 1200px;
             height: 540px;
-          }
-        }
-        
-        @media screen and (min-width: 1440px) {
-          .foldItems-container {
-            max-width: 1360px;
-          }
-        }
-        
-        @media screen and (min-width: 1920px) {
-          .foldItems-container {
-            max-width: 1600px;
           }
         }
       `}

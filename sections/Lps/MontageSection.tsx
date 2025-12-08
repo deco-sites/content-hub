@@ -50,7 +50,7 @@ export default function MontageSection({
   const sliderDefaults: ISliderConfigs = {
     loop: true,
     speed: 300,
-    spaceBetween: 32,
+    spaceBetween: 0,
     slidesPerView: 1,
     slidesPerViewResponsive: { mobile: 1, tablet: 1, desktop: 1 },
     customNavigation: { enabledDesktop: true, enabledMobile: false },
@@ -67,7 +67,7 @@ export default function MontageSection({
 
   return (
     <Section {...section} id={id}>
-      <div id="montage-container-mobile">
+      <div id="montage-container-mobile" className="w-full">
         <CustomInfoCardSlider
           rootId={id}
           infoCards={montageItemsMobile}

@@ -2527,6 +2527,10 @@ input.tab:checked + .tab-content,
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+.my-\[12px\] {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
 .my-\[48px\] {
   margin-top: 48px;
   margin-bottom: 48px;
@@ -3271,6 +3275,9 @@ input.tab:checked + .tab-content,
 .rounded-\[3px\] {
   border-radius: 3px;
 }
+.rounded-\[4px\] {
+  border-radius: 4px;
+}
 .rounded-\[6px\] {
   border-radius: 6px;
 }
@@ -3917,6 +3924,10 @@ input.tab:checked + .tab-content,
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .text-\[color\:var\(--color-foreground-secondary\2c \#2B2936\)\] {
   color: var(--color-foreground-secondary,#2B2936);
 }
@@ -4488,6 +4499,11 @@ input.tab:checked + .tab-content,
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:my-\[24px\] {
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   .lg\:my-\[72px\] {

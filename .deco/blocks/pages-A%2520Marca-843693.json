@@ -17,7 +17,8 @@
         "section": {
           "fullWidth": true,
           "marginTopDesktop": 0,
-          "marginTopMobile": 0
+          "marginTopMobile": 0,
+          "children": null
         },
         "banners": [
           {
@@ -31,7 +32,8 @@
             "src": {
               "desktop": "https://assets.decocache.com/content-hub/60969699-a762-4b14-9a10-059b142a38f7/banner-inspirese.png",
               "mobile": "https://assets.decocache.com/content-hub/65e061a3-f00e-4c8d-bc89-a3fa65ea87d1/banner-inspirese-mobile.png"
-            }
+            },
+            "alt": "Banner Principal"
           }
         ]
       }

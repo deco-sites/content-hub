@@ -1,15 +1,13 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { IResponsiveImage } from "site/types/ResponsiveImage.d.ts";
 
-export default function ResponsiveImage(
-  {
-    src,
-    alt,
-    link,
-    sizes,
-    loadingOptions,
-  }: IResponsiveImage,
-): preact.JSX.Element | null {
+export default function ResponsiveImage({
+  src,
+  alt,
+  link,
+  sizes,
+  loadingOptions,
+}: IResponsiveImage): preact.JSX.Element | null {
   const {
     fullScreen = false,
     height = 440,
@@ -41,6 +39,7 @@ export default function ResponsiveImage(
         <Source
           height={heightMobile}
           media="(max-width: 1023px)"
+          alt={alt}
           src={mobile}
           width={widthMobile}
         />
@@ -67,11 +66,7 @@ export default function ResponsiveImage(
     return ResponsiveImageComponent;
   }
 
-  const {
-    href,
-    title,
-    target = "blank",
-  } = link ?? {};
+  const { href, title, target = "blank" } = link ?? {};
 
   return (
     <a

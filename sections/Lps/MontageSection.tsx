@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -89,9 +90,12 @@ export default function MontageSection({
             <div
               className={`flex flex-col justify-center items-start px-[24px] bg-[#F6F6F6]`}
             >
-              <h3 className={`text-start font-semibold text-xl text-[#2B3227]`}>
-                {montageItemsDesktop[0].title}
-              </h3>
+              <Text
+                title={montageItemsDesktop[0].title}
+                classes={{
+                  container: "text-start font-semibold text-xl text-[#2B3227]",
+                }}
+              />
               <p className={`font-normal text-sm text-[#2B3227]`}>
                 {montageItemsDesktop[0].text}
               </p>
@@ -101,9 +105,12 @@ export default function MontageSection({
             <div
               className={`flex flex-col justify-center items-start px-[24px] bg-[#F6F6F6]`}
             >
-              <h3 className={`text-start font-semibold text-xl text-[#2B3227]`}>
-                {montageItemsDesktop[1].title}
-              </h3>
+              <Text
+                title={montageItemsDesktop[1].title}
+                classes={{
+                  container: "text-start font-semibold text-xl text-[#2B3227]",
+                }}
+              />
               <p className={`font-normal text-sm text-[#2B3227]`}>
                 {montageItemsDesktop[1].text}
               </p>
@@ -122,9 +129,12 @@ export default function MontageSection({
           <div
             className={`absolute py-[32px] px-[40px] bg-black bg-opacity-40`}
           >
-            <h3 className={`text-start font-semibold text-[34px] text-white`}>
-              {montageItemsDesktop[2].title}
-            </h3>
+            <Text
+              title={montageItemsDesktop[2].title}
+              classes={{
+                container: "text-start font-semibold text-[34px] text-white",
+              }}
+            />
             <p className={`text-start font-normal text-sm text-white`}>
               {montageItemsDesktop[2].text}
             </p>

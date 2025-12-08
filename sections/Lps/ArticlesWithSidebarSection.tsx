@@ -1,4 +1,4 @@
-// sections/Lps/ArticlesWithSidebarSection.tsx
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -101,10 +101,12 @@ export default function ArticlesWithSidebarSection({
                   <li key={cat.label} class="inline-block">
                     <a
                       href={cat.href ?? "#"}
-                      class={"whitespace-nowrap text-sm px-3 py-2 rounded-full border " +
+                      class={
+                        "whitespace-nowrap text-sm px-3 py-2 rounded-full border " +
                         (cat.active
                           ? "border-[#041E50] text-[#041E50] font-semibold"
-                          : "border-[#DFE7EA] text-[#5B6A78] hover:text-[#041E50]")}
+                          : "border-[#DFE7EA] text-[#5B6A78] hover:text-[#041E50]")
+                      }
                     >
                       {cat.label}
                     </a>
@@ -140,10 +142,12 @@ export default function ArticlesWithSidebarSection({
                     <li key={cat.label}>
                       <a
                         href={cat.href ?? "#"}
-                        class={"block font-electrolux text-[14px] leading-[14px] text-[#011E41] " +
+                        class={
+                          "block font-electrolux text-[14px] leading-[14px] text-[#011E41] " +
                           (cat.active
                             ? "font-semibold"
-                            : "font-normal hover:opacity-80")}
+                            : "font-normal hover:opacity-80")
+                        }
                       >
                         <span class="block py-3 mr-3 border-b border-[#EAEBED]">
                           {cat.label}
@@ -169,9 +173,13 @@ export default function ArticlesWithSidebarSection({
               <section key={gi} aria-label={`${title} ${gi + 1}`}>
                 {(showTitleOnFirstGroup || gi > 0) && (
                   <div class="text-center mb-4 md:mb-6">
-                    <h2 class="font-electrolux text-[#041E50] font-semibold text-[36px] leading-[40px]">
-                      {title}
-                    </h2>
+                    <Text
+                      title={title}
+                      classes={{
+                        container:
+                          "font-electrolux text-[#041E50] font-semibold text-[36px] leading-[40px]",
+                      }}
+                    />
                     {/* link sai daqui e vai pro final do grid */}
                   </div>
                 )}
@@ -197,10 +205,11 @@ export default function ArticlesWithSidebarSection({
                         </div>
                       )}
 
-                      <h3
-                        class="font-electrolux font-semibold text-[#041E50] text-[24px] leading-[28px] mb-2 px-4"
-                        dangerouslySetInnerHTML={{
-                          __html: article.title ?? "Título do artigo",
+                      <Text
+                        title={article.title ?? "Título do artigo"}
+                        classes={{
+                          container:
+                            "font-electrolux font-semibold text-[#041E50] text-[24px] leading-[28px] mb-2 px-4",
                         }}
                       />
 

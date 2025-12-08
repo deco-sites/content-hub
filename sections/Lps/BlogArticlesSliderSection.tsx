@@ -39,7 +39,7 @@ export default function BlogArticlesSliderSection({
     >
       {/* Section espera 1 único filho */}
       <div>
-        <div class="max-w-screen-2xl mx-auto">
+        <div class="mx-auto">
           <Text
             title={heading}
             classes={{

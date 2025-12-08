@@ -20,7 +20,22 @@
           "title": "<h1>Ar-condicionado Electrolux silencioso: conheça os modelos ideais para o quarto</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/b6a0cf4d-9af1-48e6-bb0f-ff585129d589/558.webp",
+              "mobile": "https://assets.decocache.com/content-hub/73dc536c-68f4-4590-b74c-47fde392d264/558-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

@@ -1,3 +1,4 @@
+import { Text } from "@eluxlab/library-components";
 import { useId } from "site/sdk/useId.ts";
 import Section from "site/components/ui/Section.tsx";
 import type { ISection } from "site/types/Section.d.ts";
@@ -65,9 +66,12 @@ export default function ArticleGridSection({
                 ) : null}
               </div>
               <div class="flex flex-col justify-start items-start w-full px-[8px] py-[12px] lg:px-[16px] lg:py-[24px]">
-                <h3 class="text-xl font-semibold text-[#041E50] mb-[8px]">
-                  {article.title}
-                </h3>
+                <Text
+                  title={article.title ?? ""}
+                  classes={{
+                    container: "text-xl font-semibold text-[#041E50] mb-[8px]",
+                  }}
+                />
                 <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux overflow-hidden max-h-[65px] mb-[8px] lg:mb-[16px]">
                   {article.description}
                 </p>

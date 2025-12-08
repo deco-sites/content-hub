@@ -20,7 +20,22 @@
           "title": "<h1>Micro-ondas com grill Electrolux: vale mais a pena comprar na Black Friday?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/e6135e93-daf1-47f1-8cc2-58bbb988e989/540.webp",
+              "mobile": "https://assets.decocache.com/content-hub/9d43afcd-a069-4a92-9b78-92be1dbc99ea/540-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

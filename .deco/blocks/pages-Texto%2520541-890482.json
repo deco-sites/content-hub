@@ -20,7 +20,22 @@
           "title": "<h1>Aspirador Electrolux silencioso: como escolher na Black Friday?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/606aa864-4d50-4ba1-a4d7-3e107d3415ff/541.webp",
+              "mobile": "https://assets.decocache.com/content-hub/5e353127-9853-4440-a8ef-5b1eaf396ddf/541-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

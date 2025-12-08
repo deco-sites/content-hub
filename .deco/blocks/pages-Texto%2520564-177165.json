@@ -20,7 +20,22 @@
           "title": "<h1>Micro-ondas Electrolux para cozinha inteligente: veja modelos que fazem a diferença</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/33ceb7e3-1f1f-40da-906a-7155096bc61b/564.webp",
+              "mobile": "https://assets.decocache.com/content-hub/c5983ee9-59f3-4b5e-9330-65cb9db487a7/564-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

@@ -20,7 +20,22 @@
           "title": "<h1>Purificador de água é mais econômico?</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/e23c0a36-b8d5-45d5-a861-c97e18c52ff7/555.webp",
+              "mobile": "https://assets.decocache.com/content-hub/a49f09f7-bb46-4d3e-80ad-a967312af849/555-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

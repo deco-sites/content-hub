@@ -37,8 +37,7 @@ export default function InspireTilesSection({
   gap = 8,
 }: InspireTilesSectionProps) {
   const id = useId();
-  const containDescendants =
-    "[&_*]:!object-contain [&_*]:!h-auto [&_*]:w-full";
+  const containDescendants = "[&_*]:!object-contain [&_*]:!h-auto [&_*]:w-full";
 
   return (
     <Section {...section} id={id}>

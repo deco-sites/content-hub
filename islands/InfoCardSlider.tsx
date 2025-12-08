@@ -84,7 +84,7 @@ export default function InfoCardSlider({
               margin-bottom: 16px;
             }
               
-            @media (max-width: 993px) {
+            @media screen and (min-width: 993px) {
               .infocard-children-container .info-card-inner,
               .infocard-children-container .info-card-inner + div {
                 max-width: 520px;

@@ -206,15 +206,15 @@ export default function ArticlesWithSidebarSection({
                       )}
 
                       <Text
-                        title={article.title ?? "Título do artigo"}
+                        title={article.title ?? ""}
                         classes={{
                           container:
-                            "font-electrolux font-semibold text-[#041E50] text-[24px] leading-[28px] mb-2 px-4",
+                            "font-electrolux font-semibold text-[#041E50] text-[24px] leading-none mb-2 px-4 line-clamp-3 h-[72px]",
                         }}
                       />
 
-                      <p class="text-base text-[#4F4F4F] px-4">
-                        {article.description ?? "Descrição do artigo..."}
+                      <p class="text-base text-[#4F4F4F] px-4 leading-[1.4] line-clamp-3 h-[67px]">
+                        {article.description}
                       </p>
 
                       {article.cta && (

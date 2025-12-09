@@ -87,7 +87,7 @@ export default function InfoCardSlider({
             @media screen and (min-width: 993px) {
               .infocard-children-container .info-card-inner,
               .infocard-children-container .info-card-inner + div {
-                max-width: 520px;
+                max-width: 510px;
               }
             }
 
@@ -106,14 +106,6 @@ export default function InfoCardSlider({
               .infocard-children-container .info-card-inner,
               .infocard-children-container .info-card-inner + div {
                 max-width: 650px;
-              }
-            }
-
-            @media screen and (min-width: 1367px) {
-
-              .infocard-children-container .info-card-inner,
-              .infocard-children-container .info-card-inner + div {
-                max-width: 690px;
               }
             }
 

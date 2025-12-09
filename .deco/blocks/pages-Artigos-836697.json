@@ -186,7 +186,19 @@
             "href": "/inspira/blog/sustentabilidade/purificador-economico-black-friday"
           }
         ],
-        "showTitleOnFirstGroup": false
+        "showTitleOnFirstGroup": true,
+        "groups": [
+          {
+            "linkText": "Conheça nossos outros artigos",
+            "linkHref": "teste 1",
+            "title": "xxxx"
+          },
+          {
+            "title": "Teste 2",
+            "linkText": "Teste 2",
+            "linkHref": "teste 2"
+          }
+        ]
       }
     }
   ],

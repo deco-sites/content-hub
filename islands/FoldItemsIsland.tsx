@@ -130,16 +130,15 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
       `}
     >
       <div class="w-full flex flex-col gap-y-[8px] lg:hidden">
-        {foldItems &&
-          foldItems.map((item, index) => (
-            <FoldItem
-              title={item.title}
-              text={item.text}
-              image={item.image}
-              cta={item.cta}
-              key={index}
-            />
-          ))}
+        {foldItems?.map((item, index) => (
+          <FoldItem
+            title={item.title}
+            text={item.text}
+            image={item.image}
+            cta={item.cta}
+            key={index}
+          />
+        ))}
       </div>
 
       <div
@@ -209,20 +208,7 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
         {`
         @media screen and (min-width: 1280px) {
           .foldItems-container {
-            max-width: 1200px;
             height: 540px;
-          }
-        }
-        
-        @media screen and (min-width: 1440px) {
-          .foldItems-container {
-            max-width: 1360px;
-          }
-        }
-        
-        @media screen and (min-width: 1920px) {
-          .foldItems-container {
-            max-width: 1600px;
           }
         }
       `}

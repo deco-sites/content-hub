@@ -2722,12 +2722,6 @@ input.tab:checked + .tab-content,
 .h-\[60px\] {
   height: 60px;
 }
-.h-\[67px\] {
-  height: 67px;
-}
-.h-\[72px\] {
-  height: 72px;
-}
 .h-auto {
   height: auto;
 }
@@ -2809,6 +2803,12 @@ input.tab:checked + .tab-content,
 }
 .min-h-\[60px\] {
   min-height: 60px;
+}
+.min-h-\[67px\] {
+  min-height: 67px;
+}
+.min-h-\[72px\] {
+  min-height: 72px;
 }
 .min-h-\[88px\] {
   min-height: 88px;

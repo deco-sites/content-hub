@@ -51,7 +51,7 @@ export default function InspireTilesSection({
   return (
     <Section {...section} id={id}>
       <div
-        class="inspireTilesGrid grid grid-cols-2 md:grid-cols-4"
+        class="inspireTilesGrid grid grid-cols-2 md:grid-cols-4 w-full"
         style={{ gap: `${gap}px` }}
       >
         {InspireImages.map((img, i) => (

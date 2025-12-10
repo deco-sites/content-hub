@@ -72,12 +72,6 @@ export interface IInfoCard {
   textBackgroundColor?: string;
 
   /**
-   * @title Cor do texto
-   * @description Ex: #ffffff
-   */
-  textColor?: string;
-
-  /**
    * @title Texto
    * @format rich-text
    */

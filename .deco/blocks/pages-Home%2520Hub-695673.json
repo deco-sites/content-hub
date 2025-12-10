@@ -17,7 +17,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/InspireTilesSection.tsx",
         "section": {
-          "title": "<h1>Electrolux Inspira</h1>",
+          "title": "<h1>Electrolux Inspira DEV</h1>",
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "fullWidth": false
@@ -47,128 +47,82 @@
             }
           }
         ],
-        "desktopImages": [
+        "InspireImages": [
           {
-            "link": {
-              "target": "blank",
-              "href": "/content-hub-home-artigos"
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/content-hub-home-artigos",
+                "title": "Blog"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "homem utilizando aspirador de pó Electrolux",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/12781b18-f61f-4846-abaf-1cb503a636de/blog.png",
+                "mobile": "https://assets.decocache.com/content-hub/41330569-f537-424c-80a5-9ea9655783b7/blogmob.png"
+              }
             },
-            "loadingOptions": {
-              "loading": "eager",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png",
-              "mobile": "https://assets.decocache.com/content-hub/9b11fdd4-2c77-4d8a-a910-9f410158a28a/banner-homehub1.png"
-            },
-            "alt": "homem utilizando aspirador de pó Electrolux"
+            "name": "<h2><a href=\"https://loja.electrolux.com.br/content-hub-home-artigos\">Blog</a></h2>"
           },
           {
-            "link": {
-              "target": "blank",
-              "href": "/lancamentos-electrolux"
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/lancamentos-electrolux",
+                "title": "Lançamentos"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "forno inox na cor preto electrolux",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/32519fbc-45bf-40df-ba20-6e3551db306c/lancamentos.png",
+                "mobile": "https://assets.decocache.com/content-hub/c120afaa-9eb2-4fce-ac3f-da6dc441a14f/lancamentosmob.png"
+              }
             },
-            "loadingOptions": {
-              "loading": "eager",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png",
-              "mobile": "https://assets.decocache.com/content-hub/7cae9c98-f444-4570-92bb-2e3e122d4169/banner-homehub2.png"
-            },
-            "alt": "forno inox na cor preto electrolux"
+            "name": "<h2><a href=\"/lancamentos-electrolux\">Lançamentos</a></h2>"
           },
           {
-            "link": {
-              "target": "blank",
-              "href": "/content-hub-ambassadors"
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/content-hub-ambassadors",
+                "title": "Rita Lobo"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "linha de produtos Rita Lobo Electrolux",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/35252598-44ce-42b9-911c-14da38ea115b/rita.png",
+                "mobile": "https://assets.decocache.com/content-hub/08695bb6-e556-46cf-a9d3-5839e9cd9356/ritamob.png"
+              }
             },
-            "loadingOptions": {
-              "loading": "eager",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png",
-              "mobile": "https://assets.decocache.com/content-hub/c97be70b-5c9e-4bf3-b638-515e44c6355d/banner-homehub3.png"
-            },
-            "alt": "linha de produtos Rita Lobo Electrolux"
+            "name": "<h2><a href=\"/content-hub-ambassadors\">Rita Lobo</a></h2>"
           },
           {
-            "link": {
-              "target": "blank",
-              "href": "/sustentabilidade"
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/sustentabilidade",
+                "title": "Sustentabilidade"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "alt": "sustentabilidade electrolux",
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/febe556c-5df8-4a77-a1c8-8ee098b5eafc/sustentabilidade.png",
+                "mobile": "https://assets.decocache.com/content-hub/9ba176ae-a76e-48cd-ab0c-87cd28a8efa9/sustentabilidademob.png"
+              }
             },
-            "loadingOptions": {
-              "loading": "eager",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png",
-              "mobile": "https://assets.decocache.com/content-hub/e1da0612-00b7-4cba-8be9-98bf8c6d88c1/banner-homehub4.png"
-            },
-            "alt": "sustentabilidade electrolux"
-          }
-        ],
-        "mobileImages": [
-          {
-            "link": {
-              "target": "blank",
-              "href": "/content-hub-home-artigos"
-            },
-            "loadingOptions": {
-              "loading": "eager",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png",
-              "mobile": "https://assets.decocache.com/content-hub/ad15e9b7-199e-4154-b8cb-2079e85e6a26/bannermobile-homehub1.png"
-            },
-            "alt": "homem utilizando aspirador de pó Electrolux"
-          },
-          {
-            "link": {
-              "target": "blank",
-              "href": "/lancamentos-electrolux"
-            },
-            "loadingOptions": {
-              "loading": "eager",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png",
-              "mobile": "https://assets.decocache.com/content-hub/7bccae2a-7dbb-4e87-b8a3-01e76339da8c/bannermobile-homehub2.png"
-            },
-            "alt": "forno inox na cor preto electrolux"
-          },
-          {
-            "link": {
-              "target": "blank",
-              "href": "/content-hub-ambassadors"
-            },
-            "loadingOptions": {
-              "loading": "eager",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png",
-              "mobile": "https://assets.decocache.com/content-hub/30bb22b8-81f7-4e89-8cca-138943344a9f/bannermobile-homehub3.png"
-            },
-            "alt": "linha de produtos Rita Lobo Electrolux"
-          },
-          {
-            "link": {
-              "target": "blank",
-              "href": "/sustentabilidade"
-            },
-            "loadingOptions": {
-              "loading": "eager",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png",
-              "mobile": "https://assets.decocache.com/content-hub/16a2a757-cd5f-47bb-ad4f-e32c2383435f/bannermobile-homehub4.png"
-            },
-            "alt": "sustentabilidade electrolux"
+            "name": "<h2><a href=\"/sustentabilidade\">Sustentabilidade</a></h2>"
           }
         ]
       }
@@ -503,7 +457,13 @@
               "href": "/inspira/blog/produtos/tipos-geladeira-black-friday"
             }
           }
-        ]
+        ],
+        "configs": {
+          "customNavigation": {
+            "enabledMobile": true,
+            "enabledDesktop": true
+          }
+        }
       }
     },
     {

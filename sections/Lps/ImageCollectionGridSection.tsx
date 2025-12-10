@@ -17,41 +17,33 @@ export interface ImageCollectionGridSectionProps {
   imageCollection?: IResponsiveImage[];
 }
 
-export default function ImageCollectionGridSection(
-  {
-    section,
-    imageCollection,
-  }: ImageCollectionGridSectionProps,
-) {
+export default function ImageCollectionGridSection({
+  section,
+  imageCollection,
+}: ImageCollectionGridSectionProps) {
   const id = useId();
 
   return (
     <Section {...section} id={id}>
-      {imageCollection && imageCollection?.length === 1
-        ? (
-          <div class="w-full grid sm:grid-cols-1 lg:grid-cols-1 justify-center items-center">
-            {imageCollection.map((image, index) => (
-              <ResponsiveImage src={image.src} key={index} />
-            ))}
-          </div>
-        )
-        : imageCollection?.length === 2
-          ? (
-            <div class="w-full grid sm:grid-cols-1 lg:grid-cols-2 justify-center items-center gap-y-[8px] gap-x-[8px]">
-              {imageCollection.map((image, index) => (
-                <ResponsiveImage src={image.src} key={index} />
-              ))}
-            </div>
-          )
-          : imageCollection?.length === 3
-            ? (
-              <div class="w-full grid sm:grid-cols-1 lg:grid-cols-3 justify-center items-center gap-y-[8px] gap-x-[8px]">
-                {imageCollection.map((image, index) => (
-                  <ResponsiveImage src={image.src} key={index} />
-                ))}
-              </div>
-            )
-            : null}
+      {imageCollection && imageCollection?.length === 1 ? (
+        <div class="w-full grid sm:grid-cols-1 lg:grid-cols-1 justify-center items-center">
+          {imageCollection.map((image, index) => (
+            <ResponsiveImage {...image} key={index} />
+          ))}
+        </div>
+      ) : imageCollection?.length === 2 ? (
+        <div class="w-full grid sm:grid-cols-1 lg:grid-cols-2 justify-center items-center gap-y-[8px] gap-x-[8px]">
+          {imageCollection.map((image, index) => (
+            <ResponsiveImage {...image} key={index} />
+          ))}
+        </div>
+      ) : imageCollection?.length === 3 ? (
+        <div class="w-full grid sm:grid-cols-1 lg:grid-cols-3 justify-center items-center gap-y-[8px] gap-x-[8px]">
+          {imageCollection.map((image, index) => (
+            <ResponsiveImage {...image} key={index} />
+          ))}
+        </div>
+      ) : null}
     </Section>
   );
 }

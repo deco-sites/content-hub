@@ -19,7 +19,7 @@ export default function InfoCardSlider({
   rootId,
 }: InfoCardSliderProps) {
   const slides = infoCards.map((props) => {
-    const { typeOfContent, textBackgroundColor, textColor } = props ?? {};
+    const { typeOfContent, textBackgroundColor } = props ?? {};
 
     const typeOfContentVideo = typeOfContent as IInfoCardVideo;
     const typeOfContentImage = typeOfContent as IInfoCardImage;
@@ -44,62 +44,75 @@ export default function InfoCardSlider({
         <InfoCard
           {...props}
           typeOfContent={enrichedTypeOfContent}
+          styles={{
+            children: {
+              padding: "0",
+              minHeight: "initial",
+              backgroundColor: textBackgroundColor || undefined,
+            },
+          }}
           classes={{
             container: `${
               props?.direction === "left"
                 ? "flex-col lg:flex-row"
                 : "flex-col-reverse lg:flex-row-reverse"
-            } w-full justify-start items-center`,
+            } info-card w-full justify-start items-center`,
             children:
-              `infocard-children-container h-full flex flex-col items-start justify-center gap-[16px]`,
+              "infocard-children-container h-full flex flex-col items-start justify-center",
             button: `flex w-full pt-[0px] text-[14px]`,
             childrenTextContent: `${
               props?.link?.text ? "h-auto" : "h-full"
-            } w-full`,
-          }}
-          styles={{
-            children: {
-              backgroundColor: textBackgroundColor || undefined,
-              color: textColor || undefined,
-            },
+            } w-full info-card-inner`,
           }}
         />
         <style>
           {`
+            .infocard-children-container .info-card-inner,
+            .infocard-children-container .info-card-inner + div {
+              max-width: 100%;
+              padding: 0 24px;
+              width: 100%;
+            }
             .infocard-children-container {
               width: 100% !important;
-              min-height: unset !important;
-              padding: 0 !important;
+            }
+            .infocard-children-container:first-of-type {
+              padding: 24px 0 !important;
             }
 
-            .infocard-children-container > div {
-              padding: 0 24px;
-              gap: 8px;
+            .info-card-inner :is(h1, h2, h3, a, p) {
+              margin-bottom: 16px;
+            }
+              
+            @media screen and (min-width: 993px) {
+              .infocard-children-container .info-card-inner,
+              .infocard-children-container .info-card-inner + div {
+                max-width: 510px;
+              }
             }
 
-            .infocard-children-container > div,
-            .infocard-children-container > div h1,
-            .infocard-children-container > div h2,
-            .infocard-children-container > div h3,
-            .infocard-children-container > div h4,
-            .infocard-children-container > div h5,
-            .infocard-children-container > div h6,
-            .infocard-children-container > div p {
-              text-align: start !important;
+            @media screen and (min-width: 1081px) {
+              .infocard-children-container {
+                width: 50% !important;
+              }
+
+              .infocard-children-container .info-card-inner,
+              .infocard-children-container .info-card-inner + div {
+                max-width: 600px;
+              }
             }
 
-            .infocard-children-container > div:first-child {
-              margin-top: 24px;
+            @media screen and (min-width: 1281px) {
+              .infocard-children-container .info-card-inner,
+              .infocard-children-container .info-card-inner + div {
+                max-width: 650px;
+              }
             }
 
-            .infocard-children-container > div:last-child {
-              margin-bottom: 24px;
-            }
-
-            @media screen and (min-width: 1024px) {
-              .infocard-children-container > div {
-                align-items: flex-start;
-                gap: 16px;
+            @media screen and (min-width: 1441px) {
+              .infocard-children-container .info-card-inner,
+              .infocard-children-container .info-card-inner + div {
+                max-width: 750px;
               }
             }
           `}

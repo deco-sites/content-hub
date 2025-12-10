@@ -126,7 +126,8 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
       class={`
         foldItems-container
         w-full flex flex-col
-        lg:grid lg:grid-cols-[auto_1fr] lg:grid-rows-[1fr] lg:gap-x-[32px]
+        lg:grid lg:grid-cols-[auto_1fr] lg:grid-rows-[1fr] lg:gap-x-[16px] xl:gap-x-[32px]
+        lg:overflow-hidden
       `}
     >
       <div class="w-full flex flex-col gap-y-[8px] lg:hidden">
@@ -144,21 +145,20 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
       <div
         class={`
           hidden relative
-          lg:flex lg:flex-row lg:items-center lg:justify-center lg:h-full lg:gap-x-[8px]
+          lg:flex lg:flex-row lg:items-center lg:justify-start lg:h-full lg:gap-x-[6px] xl:gap-x-[8px]
+          lg:max-w-full lg:overflow-hidden
         `}
       >
         {foldItems?.map((item, index) => (
           <div
             key={index}
             class={`
-              relative cursor-pointer
+              fold-item
+              relative cursor-pointer flex-shrink-0
               transition-all duration-300 ease-in-out
-              ${
-                index === selectedItem.value
-                  ? "w-[380px] h-full"
-                  : "w-[120px] h-[486px]"
-              }
+              overflow-hidden
             `}
+            data-selected={index === selectedItem.value}
             onClick={() => (selectedItem.value = index)}
           >
             <ResponsiveImage {...item.image} link={{}} />
@@ -166,23 +166,21 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
             <Text
               title={item.title ?? ""}
               classes={{
-                container: `absolute bottom-4 text-white font-semibold text-[26px] -rotate-90 transform origin-bottom-left whitespace-nowrap pb-4 pl-4  ${
-                  index === selectedItem.value ? "left-[388px]" : "left-[132px]"
-                }`,
+                container: `fold-item-title absolute text-white font-semibold -rotate-90 transform origin-bottom-left whitespace-nowrap`,
               }}
             />
           </div>
         ))}
       </div>
 
-      <div class="hidden lg:flex flex-col justify-center items-start gap-[16px] pr-8">
+      <div class="hidden lg:flex flex-col justify-center items-start gap-[16px] lg:pr-4 xl:pr-8 lg:min-w-0 lg:overflow-hidden">
         <Text
           title={foldItems?.[selectedItem.value].title ?? ""}
           classes={{
-            container: "text-[#041E50] font-bold text-4xl",
+            container: "text-[#041E50] font-bold lg:text-2xl xl:text-4xl break-words",
           }}
         />
-        <p class="text-[#2B2936] text-base">
+        <p class="text-[#2B2936] text-sm xl:text-base break-words">
           {foldItems?.[selectedItem.value].text}
         </p>
         {foldItems?.[selectedItem.value]?.cta?.text && (
@@ -206,9 +204,59 @@ export default function FoldItemsIsland({ foldItems }: FoldItemsIslandProps) {
       </div>
       <style>
         {`
+        @media screen and (min-width: 1024px) {
+          .foldItems-container {
+            height: 440px;
+          }
+
+          .fold-item {
+            width: 90px;
+            height: 380px;
+          }
+
+          .fold-item[data-selected="true"] {
+            width: 280px;
+            height: 100%;
+          }
+
+          .fold-item-title {
+            font-size: 20px;
+            bottom: 16px;
+            padding-bottom: 16px;
+            padding-left: 16px;
+            left: 98px;
+          }
+
+          .fold-item[data-selected="true"] .fold-item-title {
+            left: 288px;
+          }
+        }
+
         @media screen and (min-width: 1280px) {
           .foldItems-container {
             height: 540px;
+          }
+
+          .fold-item {
+            width: 120px;
+            height: 486px;
+          }
+
+          .fold-item[data-selected="true"] {
+            width: 380px;
+            height: 100%;
+          }
+
+          .fold-item-title {
+            font-size: 26px;
+            bottom: 16px;
+            padding-bottom: 16px;
+            padding-left: 16px;
+            left: 132px;
+          }
+
+          .fold-item[data-selected="true"] .fold-item-title {
+            left: 388px;
           }
         }
       `}

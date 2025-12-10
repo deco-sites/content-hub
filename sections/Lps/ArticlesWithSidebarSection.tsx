@@ -209,7 +209,7 @@ export default function ArticlesWithSidebarSection({
                         title={article.title ?? ""}
                         classes={{
                           container:
-                            "font-electrolux font-semibold text-[#041E50] text-[24px] leading-none mb-2 px-4 line-clamp-3 min-h-[72px]",
+                            "font-electrolux font-semibold text-[#041E50] text-[24px] leading-none mb-2 px-4 line-clamp-3 min-h-[74px]",
                         }}
                       />
 

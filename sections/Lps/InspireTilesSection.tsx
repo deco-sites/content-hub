@@ -50,7 +50,7 @@ export default function InspireTilesSection({
               backgroundColor: cardBg,
             }}
           >
-            <ResponsiveImage src={img.src} />
+            <ResponsiveImage {...img} />
           </div>
         ))}
       </div>
@@ -64,7 +64,7 @@ export default function InspireTilesSection({
               backgroundColor: cardBg,
             }}
           >
-            <ResponsiveImage src={img.src} />
+            <ResponsiveImage {...img} />
           </div>
         ))}
       </div>

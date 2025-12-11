@@ -29,6 +29,10 @@
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/d78f663f-9d6b-4dcb-bd89-272a9af20702/575.webp",
+              "mobile": "https://assets.decocache.com/content-hub/9ea3df7b-fa67-4ca1-b88e-89127a37e827/575-MOBILE.webp"
             }
           }
         ]

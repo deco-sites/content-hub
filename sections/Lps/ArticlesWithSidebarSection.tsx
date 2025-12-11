@@ -52,8 +52,6 @@ export interface Props {
    * @description Configure título e link para cada grupo de artigos
    */
   groups?: GroupConfig[];
-  
-
   categories?: CategoryItem[];
   articles?: ArticleItem[];
   groupSize?: number;

@@ -20,7 +20,22 @@
           "title": "<h1>Como escolher o tamanho de fogão na Black Friday Electrolux?</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/751cb597-6d37-4f8e-9756-3ac4644192d5/537.webp",
+              "mobile": "https://assets.decocache.com/content-hub/fa8e9171-b535-43f0-b696-6b60f6e54d79/537-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

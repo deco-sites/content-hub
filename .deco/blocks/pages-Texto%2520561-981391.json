@@ -20,7 +20,22 @@
           "title": "<h1>Como evitar o mau cheiro na máquina de lavar</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/5f87f96f-32eb-4434-8261-4c6869380046/561.webp",
+              "mobile": "https://assets.decocache.com/content-hub/0819ea4c-4826-46e3-ae28-19f7235c73ae/561-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

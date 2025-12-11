@@ -20,7 +20,22 @@
           "title": "<h1>Como escolher o melhor micro-ondas Electrolux na Black Friday</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/4ab65185-87a0-48b0-92ed-bd7892c41604/568.webp",
+              "mobile": "https://assets.decocache.com/content-hub/40655c41-c15d-464e-802e-6b78e6837b0e/568-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

@@ -20,7 +20,22 @@
           "title": "<h1>Purificador Electrolux: como funciona a vazão de água e como escolher o melhor modelo</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/50210bb6-27c0-48d3-af3b-0d8fcc0c91d6/579.webp",
+              "mobile": "https://assets.decocache.com/content-hub/cddb2b98-4237-4959-b6e2-8c1d3291ceca/579-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

@@ -22,7 +22,22 @@
           "title": "<h1>Geladeira para família grande: qual o melhor modelo?</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/84df62a3-9643-45f4-ab6a-0f93eeb2728b/523.webp",
+              "mobile": "https://assets.decocache.com/content-hub/3ed7ee8c-0b57-4faa-b1b0-5a420c5929a1/523-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

@@ -20,7 +20,22 @@
           "title": "<h1>Black Friday Electrolux: como identificar promoções reais</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/81e101e3-116b-46b2-9ed2-a4306d644ee1/506.webp",
+              "mobile": "https://assets.decocache.com/content-hub/8794b581-c53c-4e9c-be19-8892409d7375/506-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

@@ -20,7 +20,22 @@
           "title": "<h1>Recursos geladeira Electrolux: diferenciais que fazem a diferença</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/4be59d14-ec07-432a-9934-d85dccdbc9e8/528.webp",
+              "mobile": "https://assets.decocache.com/content-hub/e1895181-c5c7-4232-bb12-041aa194f336/528-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

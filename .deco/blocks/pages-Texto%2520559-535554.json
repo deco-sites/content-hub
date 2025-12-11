@@ -22,7 +22,22 @@
           "title": "<h1>Quais máquinas de lavar têm melhor consumo de água e energia?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/f2cb713a-c59d-42e0-b28b-cb19c7049a40/559.webp",
+              "mobile": "https://assets.decocache.com/content-hub/9f009e99-37fb-48e9-939c-0131327aff49/559-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

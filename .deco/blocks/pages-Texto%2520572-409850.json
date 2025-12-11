@@ -20,7 +20,22 @@
           "title": "<h1>6 modelos de micro-ondas Electrolux para conhecer na Black Friday</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/4e36f465-b467-4759-93d6-6e452eea38f8/572.webp",
+              "mobile": "https://assets.decocache.com/content-hub/fef21803-e16b-49f4-a327-41bca2a21833/572-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

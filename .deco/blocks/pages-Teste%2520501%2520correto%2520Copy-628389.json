@@ -19,9 +19,7 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Lavadora Electrolux silenciosa na Black Friday: como escolher?</h1>",
-          "articlePaddingForContent": true,
-          "articlePaddingForTitleAndSubtitle": true
+          "title": "<h1>Lavadora Electrolux silenciosa na Black Friday: como escolher?</h1>"
         },
         "imageCollection": [
           {
@@ -33,8 +31,8 @@
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/de16ccc3-78ca-4ac5-9d44-e57f257e8532/501-(1).webp",
-              "mobile": "https://assets.decocache.com/content-hub/620f9ebd-4bff-4bca-832b-1ccd6326e97a/501-MOBILE.webp"
+              "desktop": "https://assets.decocache.com/content-hub/d59e5fb2-b38a-4dd3-8995-653e4565a060/501.webp",
+              "mobile": "https://assets.decocache.com/content-hub/c075b76e-29e8-47da-9de4-91f619c47bfd/501-MOBILE.webp"
             }
           }
         ]

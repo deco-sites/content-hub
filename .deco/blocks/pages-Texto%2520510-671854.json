@@ -20,7 +20,22 @@
           "title": "<h1>Por que a Black Friday é a melhor época para trocar sua air fryer por um modelo Electrolux</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/b322319f-2617-4c96-af18-68d2bdfd0143/510.webp",
+              "mobile": "https://assets.decocache.com/content-hub/f879bd68-cea7-4cd6-807f-342bd5d471ff/510-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

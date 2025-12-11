@@ -20,7 +20,22 @@
           "title": "<h1>Lava e seca vale a pena? Veja os prós e contras para escolher a sua na Black Friday</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/5b892ec3-dfbf-414d-a73d-a447c1562b58/534.webp",
+              "mobile": "https://assets.decocache.com/content-hub/6c50b79f-41e4-4b0d-8aa0-b327394ecd39/534-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

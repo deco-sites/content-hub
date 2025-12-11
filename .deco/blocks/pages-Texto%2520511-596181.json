@@ -20,7 +20,22 @@
           "title": "<h1>Air fryer Electrolux: descubra quais modelos são mais econômicos em energia</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/d68c46fc-0a7e-4ad6-9ccc-a511f2933538/511.webp",
+              "mobile": "https://assets.decocache.com/content-hub/4ec20832-cd7b-45dd-b74c-48be575b31c8/511-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

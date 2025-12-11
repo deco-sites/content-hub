@@ -213,7 +213,7 @@ export default function ArticlesWithSidebarSection({
                         }}
                       />
 
-                      <p class="text-base text-[#4F4F4F] px-4 leading-[1.4] line-clamp-3 min-h-[67px]">
+                      <p class="text-base text-[#4F4F4F] px-4 leading-[1.4] line-clamp-3 min-h-[68px]">
                         {article.description}
                       </p>
 

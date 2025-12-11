@@ -20,7 +20,22 @@
           "title": "<h1>Quais são as funções do ar-condicionado? Conheça os principais recursos</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/cb34dfb9-86ce-4a32-8b53-59c3b781df46/580.webp",
+              "mobile": "https://assets.decocache.com/content-hub/12c73d7e-f3c8-4dbb-8234-85363254b7c7/580-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

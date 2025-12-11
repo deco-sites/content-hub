@@ -20,7 +20,22 @@
           "title": "<h1>O que é ar-condicionado inverter?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/7ed14ed5-6eab-4c3b-9807-cffbc03eb13b/581.webp",
+              "mobile": "https://assets.decocache.com/content-hub/2f5aabfb-ec82-49a5-a9ef-ad4e4508becd/581-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

@@ -20,7 +20,22 @@
           "title": "<h1>Purificador de água com água quente: quando faz sentido investir</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/4805d875-a61f-47b4-ba1e-47d32a7c2094/577.webp",
+              "mobile": "https://assets.decocache.com/content-hub/4d41be91-7182-4d3e-8de1-6d7f672b4e92/577-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

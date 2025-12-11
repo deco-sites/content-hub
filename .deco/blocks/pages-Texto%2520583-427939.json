@@ -20,7 +20,22 @@
           "title": "<h1>Tipos de ar-condicionado: descubra o ideal para o seu espaço</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/cdb7dcb7-531a-4737-bf96-9441ea2129d8/583.webp",
+              "mobile": "https://assets.decocache.com/content-hub/077b41d2-6b10-41c6-b751-26ce23d76f05/583-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

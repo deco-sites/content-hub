@@ -20,7 +20,22 @@
           "title": "<h1>Purificador e nível de filtragem: o que você precisa saber para ter água de qualidade</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/40635e5b-349e-42cd-a4e8-5d4c4fc6d21d/576.webp",
+              "mobile": "https://assets.decocache.com/content-hub/194d79ae-1946-457c-b8cf-97ae8ddc3348/576-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

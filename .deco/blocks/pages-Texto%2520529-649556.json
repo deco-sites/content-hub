@@ -20,7 +20,22 @@
           "children": null,
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/8f79a82b-2bdd-47f6-b6f0-aec4d584e6b2/529.webp",
+              "mobile": "https://assets.decocache.com/content-hub/35fb2576-8a48-4490-b117-6cc2fa8fd89d/529-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

@@ -263,7 +263,7 @@ export default function ArticlesWithSidebarSection({
                     <div class="text-center mt-4 rounded-[16px] py-4 px-2">
                       <a
                         href={groupLinkHref || "#"}
-                        class="inline-block font-electrolux font-normal text-[16px] leading-[140%] underline decoration-solid text-[#041E50] "
+                        class="inline-block font-electrolux font-normal text-[16px] leading-[140%] underline decoration-solid text-[#041E50]"
                       >
                         {groupLinkText}
                       </a>

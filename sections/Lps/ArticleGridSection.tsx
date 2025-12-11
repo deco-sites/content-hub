@@ -69,10 +69,11 @@ export default function ArticleGridSection({
                 <Text
                   title={article.title ?? ""}
                   classes={{
-                    container: "text-xl font-semibold text-[#041E50] mb-[8px]",
+                    container:
+                      "text-xl font-semibold text-[#041E50] mb-[8px] line-clamp-3 min-h-[84px]",
                   }}
                 />
-                <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux overflow-hidden max-h-[65px] mb-[8px] lg:mb-[16px]">
+                <p class="text-base font-normal leading-[140%] text-[#4F4F4F] font-electrolux overflow-hidden mb-[8px] lg:mb-[16px] min-h-[68px] line-clamp-3">
                   {article.description}
                 </p>
                 {article.cta && (

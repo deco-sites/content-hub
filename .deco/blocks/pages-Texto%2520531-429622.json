@@ -20,7 +20,22 @@
           "title": "<h1>Lavadora Electrolux com abertura frontal ou superior?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/67dfa928-e64c-4f46-bb0d-fe28b6d8d55a/531.webp",
+              "mobile": "https://assets.decocache.com/content-hub/6a43cd6c-7ad6-4621-b618-1a5765eda34d/531-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

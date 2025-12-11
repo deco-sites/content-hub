@@ -20,7 +20,22 @@
           "title": "<h1>Como escolher o micro-ondas Electrolux ideal na Black Friday: grill, espelhado, pequeno ou 34L?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/701e4a56-921d-44ad-981e-2fb6ab72b814/538.webp",
+              "mobile": "https://assets.decocache.com/content-hub/89056873-9811-407a-a218-5403145267b9/538-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

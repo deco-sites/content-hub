@@ -20,7 +20,22 @@
           "title": "<h1>Geladeira inverter vale a pena? Veja os benefícios e os melhores modelos Electrolux</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/e18f2b20-c191-44c1-aefa-c7ede8998bd2/524.webp",
+              "mobile": "https://assets.decocache.com/content-hub/d9542f3b-42d3-47f4-ba09-fb57418c4c91/524-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

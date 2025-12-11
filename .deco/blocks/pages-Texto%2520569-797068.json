@@ -20,7 +20,22 @@
           "title": "<h1>Lava-louças Electrolux na Black Friday: leve praticidade, inovação e design para sua cozinha</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/f1e4ed54-1662-404b-95e9-96624515ecd6/569.webp",
+              "mobile": "https://assets.decocache.com/content-hub/f88cae67-368f-4310-80c1-dbeed23fff4a/569-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

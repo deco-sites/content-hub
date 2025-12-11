@@ -26,11 +26,32 @@ export interface CategoryItem {
   active?: boolean;
 }
 
+/** @titleBy title */
+export interface GroupConfig {
+  /**
+   * @title Título do grupo
+   * @description Título que aparece acima do grid de artigos
+   */
+  title?: string;
+  /**
+   * @title Texto do link
+   * @description Texto do link que aparece abaixo do grid
+   */
+  linkText?: string;
+  /**
+   * @title URL do link
+   * @description URL para onde o link deve apontar. Ex: `/inspira/blog`
+   */
+  linkHref?: string;
+}
+
 export interface Props {
   section?: ISection;
-  title?: string;
-  subtitleLinkText?: string;
-  subtitleLinkHref?: string;
+  /**
+   * @title Configurações dos grupos
+   * @description Configure título e link para cada grupo de artigos
+   */
+  groups?: GroupConfig[];
   categories?: CategoryItem[];
   articles?: ArticleItem[];
   groupSize?: number;
@@ -56,14 +77,12 @@ const DEFAULT_CATEGORIES: CategoryItem[] = [
 
 export default function ArticlesWithSidebarSection({
   section,
-  title = "Outros artigos",
-  subtitleLinkText = "Conheça todos os nossos outros artigos aqui",
-  subtitleLinkHref = "#",
   categories = DEFAULT_CATEGORIES,
   articles = [],
   groupSize = 3,
   showTitleOnFirstGroup = true,
   dividerHeightPx = 720,
+  groups: groupsConfig,
 }: Props) {
   const id = useId();
   if (!articles.length) return null;
@@ -82,7 +101,11 @@ export default function ArticlesWithSidebarSection({
     },
   }));
 
-  const groups = chunk(processedArticles, groupSize);
+  const articleGroups = chunk(processedArticles, groupSize);
+
+  // Obtém configuração dos grupos do section ou do props
+  const sectionGroupsConfig =
+    (section?.props?.groups as GroupConfig[] | undefined) || groupsConfig || [];
 
   return (
     <Section {...section} id={id}>
@@ -95,23 +118,24 @@ export default function ArticlesWithSidebarSection({
               class="lg:hidden -mx-4 px-4 mb-4 overflow-x-auto"
               aria-label="Categorias do blog (mobile)"
             >
-              {/* usar inline-flex + whitespace-nowrap para rolar lateralmente */}
               <ul class="inline-flex gap-3 py-2 whitespace-nowrap">
-                {categories.map((cat) => (
-                  <li key={cat.label} class="inline-block">
-                    <a
-                      href={cat.href ?? "#"}
-                      class={
-                        "whitespace-nowrap text-sm px-3 py-2 rounded-full border " +
-                        (cat.active
-                          ? "border-[#041E50] text-[#041E50] font-semibold"
-                          : "border-[#DFE7EA] text-[#5B6A78] hover:text-[#041E50]")
-                      }
-                    >
-                      {cat.label}
-                    </a>
-                  </li>
-                ))}
+                {categories.map((cat) => {
+                  return (
+                    <li key={cat.label} class="inline-block">
+                      <a
+                        href={cat.href ?? "#"}
+                        class={
+                          "whitespace-nowrap text-sm px-3 py-2 rounded-full border " +
+                          (cat.active
+                            ? "border-[#041E50] text-[#041E50] font-semibold"
+                            : "border-[#DFE7EA] text-[#5B6A78] hover:text-[#041E50]")
+                        }
+                      >
+                        {cat.label}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
 
@@ -169,76 +193,91 @@ export default function ArticlesWithSidebarSection({
 
           {/* Conteúdo */}
           <div class="space-y-10">
-            {groups.map((group, gi) => (
-              <section key={gi} aria-label={`${title} ${gi + 1}`}>
-                {(showTitleOnFirstGroup || gi > 0) && (
-                  <div class="text-center mb-4 md:mb-6">
-                    <Text
-                      title={title}
-                      classes={{
-                        container:
-                          "font-electrolux text-[#041E50] font-semibold text-[36px] leading-[40px]",
-                      }}
-                    />
-                    {/* link sai daqui e vai pro final do grid */}
-                  </div>
-                )}
+            {articleGroups.map((group, gi) => {
+              const groupConfig = sectionGroupsConfig[gi] || {};
+              const groupTitle = groupConfig.title?.trim();
+              const showGroupTitle =
+                (showTitleOnFirstGroup || gi > 0) && groupTitle;
 
-                {/* Grid 1/2/3 */}
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                  {group.map((article, index) => (
-                    <a
-                      key={`${gi}-${index}`}
-                      href={article.href ?? "#"}
-                      class="border border-[#DFE7EA] flex flex-col hover:shadow-md transition bg-white"
-                    >
-                      {article.image?.src && (
-                        <div class="w-full mb-4">
-                          <img
-                            src={article.image.src}
-                            alt={article.image.alt ?? "Imagem do artigo"}
-                            class="w-full h-auto object-cover"
-                            width={article.image.sizes?.width}
-                            height={article.image.sizes?.height}
-                            loading="lazy"
-                          />
-                        </div>
-                      )}
+              const groupLinkText = groupConfig.linkText;
+              const groupLinkHref = groupConfig.linkHref;
+              const hasValidLink =
+                groupLinkText && groupLinkText.trim().length > 0;
 
+              return (
+                <section
+                  key={gi}
+                  aria-label={groupTitle ? `${groupTitle}` : `Grupo ${gi + 1}`}
+                >
+                  {showGroupTitle && (
+                    <div class="text-center mb-4 md:mb-6">
                       <Text
-                        title={article.title ?? ""}
+                        title={groupTitle}
                         classes={{
                           container:
-                            "font-electrolux font-semibold text-[#041E50] text-[24px] leading-none mb-2 px-4 line-clamp-3 min-h-[74px]",
+                            "font-electrolux text-[#041E50] font-semibold text-[36px] leading-[40px]",
                         }}
                       />
+                      {/* título do grupo exibido acima do grid */}
+                    </div>
+                  )}
 
-                      <p class="text-base text-[#4F4F4F] px-4 leading-[1.4] line-clamp-3 min-h-[68px]">
-                        {article.description}
-                      </p>
+                  {/* Grid 1/2/3 */}
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                    {group.map((article, index) => (
+                      <a
+                        key={`${gi}-${index}`}
+                        href={article.href ?? "#"}
+                        class="border border-[#DFE7EA] flex flex-col hover:shadow-md transition bg-white"
+                      >
+                        {article.image?.src && (
+                          <div class="w-full mb-4">
+                            <img
+                              src={article.image.src}
+                              alt={article.image.alt ?? "Imagem do artigo"}
+                              class="w-full h-auto object-cover"
+                              width={article.image.sizes?.width}
+                              height={article.image.sizes?.height}
+                              loading="lazy"
+                            />
+                          </div>
+                        )}
 
-                      {article.cta && (
-                        <span class="mt-4 text-sm font-semibold text-[#5B6A78] px-4 pb-4">
-                          {article.cta}
-                        </span>
-                      )}
-                    </a>
-                  ))}
-                </div>
+                        <Text
+                          title={article.title ?? ""}
+                          classes={{
+                            container:
+                              "font-electrolux font-semibold text-[#041E50] text-[24px] leading-none mb-2 px-4 line-clamp-3 min-h-[74px]",
+                          }}
+                        />
 
-                {/* Link abaixo do GRID (como no Figma) */}
-                {subtitleLinkText && (
-                  <div class="text-center mt-4">
-                    <a
-                      href={subtitleLinkHref}
-                      class="inline-block font-electrolux font-normal text-[16px] leading-[140%] underline decoration-solid text-[#041E50]"
-                    >
-                      {subtitleLinkText}
-                    </a>
+                        <p class="text-base text-[#4F4F4F] px-4 leading-[1.4] line-clamp-3 min-h-[68px]">
+                          {article.description}
+                        </p>
+
+                        {article.cta && (
+                          <span class="mt-4 text-sm font-semibold text-[#5B6A78] px-4 pb-4">
+                            {article.cta}
+                          </span>
+                        )}
+                      </a>
+                    ))}
                   </div>
-                )}
-              </section>
-            ))}
+
+                  {/* Link abaixo do GRID (como no Figma) */}
+                  {hasValidLink && (
+                    <div class="text-center mt-4 rounded-[16px] py-4 px-2">
+                      <a
+                        href={groupLinkHref || "#"}
+                        class="inline-block font-electrolux font-normal text-[16px] leading-[140%] underline decoration-solid text-[#041E50]"
+                      >
+                        {groupLinkText}
+                      </a>
+                    </div>
+                  )}
+                </section>
+              );
+            })}
           </div>
         </div>
       </div>

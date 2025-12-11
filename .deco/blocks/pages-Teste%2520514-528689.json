@@ -20,7 +20,22 @@
           "title": "<h1>Ranking dos modelos de ar-condicionado Electrolux mais vendidos na Black Friday passada</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/4fd393cf-32e1-473a-b7db-772dde5c6112/514.webp",
+              "mobile": "https://assets.decocache.com/content-hub/d4b0e488-76d5-4962-8281-51f2f3ab7236/514-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

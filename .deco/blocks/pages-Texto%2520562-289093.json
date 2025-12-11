@@ -20,7 +20,18 @@
           "title": "<h1>Fogão a gás ou elétrico Electrolux: qual escolher na Black Friday?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            }
+          }
+        ]
       }
     },
     {

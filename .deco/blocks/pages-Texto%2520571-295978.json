@@ -20,7 +20,22 @@
           "title": "<h1>Eletroportáteis Electrolux Black Friday: quais itens valem a pena?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/c3f01f69-83f8-43a7-a539-67b738d2481b/571.webp",
+              "mobile": "https://assets.decocache.com/content-hub/147110a2-2ed1-40d2-a212-ef7dc34a731b/571-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

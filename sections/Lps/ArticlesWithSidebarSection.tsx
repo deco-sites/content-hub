@@ -104,7 +104,8 @@ export default function ArticlesWithSidebarSection({
   const articleGroups = chunk(processedArticles, groupSize);
 
   // Obtém configuração dos grupos do section ou do props
-  const sectionGroupsConfig = ((section?.props?.groups as GroupConfig[] | undefined) || groupsConfig || []);
+  const sectionGroupsConfig =
+    (section?.props?.groups as GroupConfig[] | undefined) || groupsConfig || [];
 
   return (
     <Section {...section} id={id}>
@@ -167,7 +168,9 @@ export default function ArticlesWithSidebarSection({
                         href={cat.href ?? "#"}
                         class={
                           "block font-electrolux text-[14px] leading-[14px] text-[#011E41] " +
-                          (cat.active ? "font-semibold" : "font-normal hover:opacity-80")
+                          (cat.active
+                            ? "font-semibold"
+                            : "font-normal hover:opacity-80")
                         }
                       >
                         <span class="block py-3 mr-3 border-b border-[#EAEBED]">
@@ -193,14 +196,19 @@ export default function ArticlesWithSidebarSection({
             {articleGroups.map((group, gi) => {
               const groupConfig = sectionGroupsConfig[gi] || {};
               const groupTitle = groupConfig.title?.trim();
-              const showGroupTitle = (showTitleOnFirstGroup || gi > 0) && groupTitle;
-              
+              const showGroupTitle =
+                (showTitleOnFirstGroup || gi > 0) && groupTitle;
+
               const groupLinkText = groupConfig.linkText;
               const groupLinkHref = groupConfig.linkHref;
-              const hasValidLink = groupLinkText && groupLinkText.trim().length > 0;
+              const hasValidLink =
+                groupLinkText && groupLinkText.trim().length > 0;
 
               return (
-                <section key={gi} aria-label={groupTitle ? `${groupTitle}` : `Grupo ${gi + 1}`}>
+                <section
+                  key={gi}
+                  aria-label={groupTitle ? `${groupTitle}` : `Grupo ${gi + 1}`}
+                >
                   {showGroupTitle && (
                     <div class="text-center mb-4 md:mb-6">
                       <Text
@@ -236,15 +244,15 @@ export default function ArticlesWithSidebarSection({
                         )}
 
                         <Text
-                          title={article.title ?? "Título do artigo"}
+                          title={article.title ?? ""}
                           classes={{
                             container:
-                              "font-electrolux font-semibold text-[#041E50] text-[24px] leading-[28px] mb-2 px-4",
+                              "font-electrolux font-semibold text-[#041E50] text-[24px] leading-none mb-2 px-4 line-clamp-3 min-h-[74px]",
                           }}
                         />
 
-                        <p class="text-base text-[#4F4F4F] px-4">
-                          {article.description ?? "Descrição do artigo..."}
+                        <p class="text-base text-[#4F4F4F] px-4 leading-[1.4] line-clamp-3 min-h-[68px]">
+                          {article.description}
                         </p>
 
                         {article.cta && (

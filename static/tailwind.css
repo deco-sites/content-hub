@@ -3001,9 +3001,6 @@ input.tab:checked + .tab-content,
 .max-w-none {
   max-width: none;
 }
-.max-w-screen-2xl {
-  max-width: 1536px;
-}
 .max-w-sm {
   max-width: 24rem;
 }
@@ -3558,6 +3555,10 @@ input.tab:checked + .tab-content,
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -3613,6 +3614,10 @@ input.tab:checked + .tab-content,
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .py-6 {
   padding-top: 1.5rem;
@@ -4786,11 +4791,6 @@ input.tab:checked + .tab-content,
   .lg\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .lg\:px-\[16px\] {

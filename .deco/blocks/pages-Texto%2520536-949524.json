@@ -20,7 +20,22 @@
           "title": "<h1>Quais modelos de fogão têm melhor desempenho no forno?</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/6698e2aa-7580-463c-ac99-776b71a2a319/536.webp",
+              "mobile": "https://assets.decocache.com/content-hub/b12495b5-8d0e-4f24-a9d1-51ac8486795e/536-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

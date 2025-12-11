@@ -20,7 +20,22 @@
           "title": "<h1>Qual geladeira comprar? Veja os modelos Electrolux recomendados</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/f5dc5d2c-4f2d-41a5-a100-13da6ea9b6c2/582.webp",
+              "mobile": "https://assets.decocache.com/content-hub/422b2400-d910-4472-8b54-25d1437458bd/582-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

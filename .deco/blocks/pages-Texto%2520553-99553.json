@@ -29,6 +29,10 @@
             "loadingOptions": {
               "loading": "eager",
               "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/1b6f3746-1b82-4107-97bf-fcea382a2d63/553.webp",
+              "mobile": "https://assets.decocache.com/content-hub/f2b630d4-b5dd-4224-a315-8653b0b680d8/553-MOBILE.webp"
             }
           }
         ]

@@ -20,7 +20,18 @@
           "title": "<h1>Qual a diferença entre um forno e uma air fryer?</h1> ",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            }
+          }
+        ]
       }
     },
     {

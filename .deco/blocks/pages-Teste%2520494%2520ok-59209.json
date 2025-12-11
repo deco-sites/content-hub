@@ -20,7 +20,22 @@
           "title": "<h1>Cuidados ao comprar Geladeira na Black Friday</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/686a23e3-74f9-49d6-a31d-5d78be8bbcd8/494-MOBILE.webp",
+              "mobile": "https://assets.decocache.com/content-hub/686a23e3-74f9-49d6-a31d-5d78be8bbcd8/494-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

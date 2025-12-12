@@ -20,7 +20,22 @@
           "title": "<h1>Custo-benefício do ar-condicionado Electrolux: qualidade que vai além do preço justo</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/c695c80b-5adc-4e4b-953b-c48009894349/557.webp",
+              "mobile": "https://assets.decocache.com/content-hub/61dea0e7-cefa-471e-8a03-5e4b2e6a7dbd/557-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

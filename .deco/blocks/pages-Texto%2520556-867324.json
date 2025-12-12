@@ -17,9 +17,9 @@
         "__resolveType": "site/sections/Lps/ImageCollectionGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h1>Split ou portátil: qual ar-condicionado Electrolux escolher?</h1>",
-          "articlePaddingForContent": true,
-          "articlePaddingForTitleAndSubtitle": true
+          "fullWidth": false,
+          "centralizeTitleAndSubtitle": false,
+          "title": "<h1>Split ou portátil: qual ar-condicionado Electrolux escolher?"
         },
         "imageCollection": [
           {
@@ -29,6 +29,10 @@
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/8e913cdc-caa6-4015-a1a9-efa96e0f8cf2/556.webp",
+              "mobile": "https://assets.decocache.com/content-hub/ae2225f8-9df2-41c5-9937-a9b256cf467f/556-MOBILE.webp"
             }
           }
         ]

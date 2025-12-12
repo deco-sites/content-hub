@@ -19,7 +19,9 @@
           "children": null,
           "fullWidth": false,
           "centralizeTitleAndSubtitle": false,
-          "title": "<h1>Split ou portátil: qual ar-condicionado Electrolux escolher?"
+          "title": "<h1>Split ou portátil: qual ar-condicionado Electrolux escolher?",
+          "articlePaddingForTitleAndSubtitle": true,
+          "articlePaddingForContent": true
         },
         "imageCollection": [
           {

@@ -29,7 +29,10 @@
               "loading": "lazy",
               "fetchPriority": "high"
             },
-            "src": {}
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/6c70a676-9752-4853-ade7-fd1bde46f4d3/563.webp",
+              "mobile": "https://assets.decocache.com/content-hub/1e277d40-06d7-4680-91ec-f5371a73529a/563-MOBILE.webp"
+            }
           }
         ]
       }

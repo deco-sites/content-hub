@@ -20,7 +20,22 @@
           "title": "<h1>Purificador Electrolux econômico Black Friday: descubra o modelo ideal para você</h1>",
           "articlePaddingForTitleAndSubtitle": true,
           "articlePaddingForContent": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/c7dd321d-d6cd-40b2-8253-4f4152cd5a05/554.webp",
+              "mobile": "https://assets.decocache.com/content-hub/b08445ec-6043-4304-bf09-fa2cffe91b10/554-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

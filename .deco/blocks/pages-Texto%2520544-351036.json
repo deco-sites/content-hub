@@ -20,7 +20,22 @@
           "title": "<h1>Black Friday Electrolux: air fryer para casal, família ou solteiro, qual modelo escolher?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/a73bd75b-9e96-489a-8b7c-27d2fdfcade3/544.webp",
+              "mobile": "https://assets.decocache.com/content-hub/a35a9561-e092-4899-a31a-54cdba116ee6/544-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

@@ -20,7 +20,22 @@
           "title": "<h1>Black Friday Electrolux: o que esperar dos preços em 2025?</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/f2412980-0625-4dab-99f8-cbc500cd701e/570.webp",
+              "mobile": "https://assets.decocache.com/content-hub/ffa5904f-27da-4cda-83c2-6931bb02c5b1/570-MOBILE.webp"
+            }
+          }
+        ]
       }
     },
     {

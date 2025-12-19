@@ -692,9 +692,9 @@
                 "mobile": "https://assets.decocache.com/content-hub/95c90883-7b8f-4127-b968-36b646fff2a8/9a09b909fdce27e0f7c671471ad297804e38c3e0-(1).jpg"
               }
             },
-            "title": "Bar & Adega",
+            "title": "<h3>Bar & Adega</h3>",
             "text": "Frigobar, cervejeira, adega e acessórios",
-            "link": "/#",
+            "link": "https://www.amazon.com.br/Panelinha-Receitas-Funcionam-Rita-Lobo/dp/8539600528/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=121TXKYOVICOA&dib=eyJ2IjoiMSJ9.Nio6xSAtbAO9YLjh_bEWUcaFYzFAAIqSHRhrQV4rX6tzko-OHNLVMQ8fOfpBhu2Hv5xg_kUWh1ZkPYpAD1Lzoka1eP787EEPZ_6eCU88jy8tUtQ6Fg53Hk1tBWCS_zr8DZRup8eH5w-gi1IkUr0zhekhIQsF7HXiWchfh8VyQjlv4eh-a84Vz_8C2STn58MluxDoROe_hbA80UI0fQnnzkjMVE2K3goT3nifeeibUWb6aGD-I9z9Jh58CM0JsYShdmrQ7dG3mK6QnlH1tmfddbtZL36NBSCbg3t410pFc38.qE6laRcqovfBFF13UbevMwmD_MD8oAPpxLYtV0bS4tM&dib_tag=se&keywords=Panelinha%3A+receitas+que+funcionam&qid=1766179427&sprefix=panelinha+receitas+que+funcionam%2Caps%2C194&sr=8-2",
             "color": {
               "mobile": "#041E50",
               "desktop": "#041E50"
@@ -717,8 +717,8 @@
                 "mobile": "https://assets.decocache.com/content-hub/8b6cb0b1-523d-48f7-a58c-b8c24eaa3621/530cf0586f3422d608f16261ac2117e9986b4618.jpg"
               }
             },
-            "title": "Bem﻿-estar",
-            "link": "/#",
+            "title": "<h3>Bem﻿-estar</h3>",
+            "link": "https://www.editorasenacsp.com.br/livro/panelinha-receitas-que-funcionam-2023-1-edicao",
             "color": {
               "mobile": "#6C7B67",
               "desktop": "#6C7B67"
@@ -742,8 +742,8 @@
               },
               "alt": "O que tem na geladeira"
             },
-            "title": "Lavander﻿ia e Limpeza",
-            "link": "/#",
+            "title": "<h3>Lavander﻿ia e Limpeza</h3>",
+            "link": "https://www.amazon.com.br/que-tem-na-geladeira/dp/6555361069",
             "color": {
               "mobile": "#4A1E18",
               "desktop": "#4A1E18"
@@ -769,7 +769,7 @@
             },
             "title": "Cozi﻿nha",
             "text": "Geladeiras, fogões e acessórios",
-            "link": "/#",
+            "link": "https://www.livrariasenacceara.com.br/livro/pitadas-da-rita-receitas-e-dicas-praticas-para-deixar-o-dia-a-dia-mais-saboroso/",
             "color": {
               "mobile": "#7E6464",
               "desktop": "#7E6464"
@@ -779,34 +779,44 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
-        "section": {
-          "children": null,
-          "centralizeTitleAndSubtitle": true,
-          "title": "<h2>Ecoplus</h2>",
-          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
-          "fullWidth": false
-        },
-        "infoCards": [
-          {
-            "link": {
-              "color": "#041E50",
-              "text": "Ver mais",
-              "href": "/#"
-            },
-            "direction": "left",
-            "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
-              "srcMobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png",
-              "alt": "air fryer"
-            },
-            "richText": "<p><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a></p>",
-            "textColor": "#041E50"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
+              "section": {
+                "children": null,
+                "centralizeTitleAndSubtitle": true,
+                "title": "<h2>Ecoplus</h2>",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ver todos",
+                "fullWidth": false
+              },
+              "infoCards": [
+                {
+                  "link": {
+                    "color": "#041E50",
+                    "text": "Ver mais",
+                    "href": "/#"
+                  },
+                  "direction": "left",
+                  "typeOfContent": {
+                    "srcDesktop": "https://assets.decocache.com/content-hub/9215056e-481a-4252-be07-5ddc173b3893/airfryer.png",
+                    "srcMobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png",
+                    "alt": "air fryer"
+                  },
+                  "richText": "<p><strong><span style=\"font-size: 15pt\">Economizam até 47%* de energia e estão entre mais econômicas do Brasil</span></strong></p><p>*Em relação ao mínimo para a classificação A do Inmetro. Consulte a porcentagem de redução de consumo de cada modelo no site <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a></p>",
+                  "textColor": "#041E50"
+                }
+              ]
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

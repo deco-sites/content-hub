@@ -159,7 +159,7 @@
         "section": {
           "children": null,
           "fullWidth": false,
-          "title": "<h2>Último vídeo</h2>",
+          "title": "<h2>Últimos Vídeos</h2>",
           "subtitle": "Confira os vídeos de Rita Lobo na Suécia e descubra novas experiências.",
           "centralizeTitleAndSubtitle": true
         },
@@ -167,7 +167,6 @@
           {
             "link": {
               "color": "#000000",
-              "text": "Ver mais",
               "href": "/#"
             },
             "direction": "left",
@@ -176,7 +175,7 @@
               "iframeProps": {},
               "src": "https://www.youtube.com/watch?v=oloLKjJ4Eek&list=PLx-RfqJiTFarwIaGaIz6hUfocqG_EhpKi"
             },
-            "richText": "<p></p><h3><strong><span style=\"font-size: 15pt\">Veja a viagem completa da Rita Lobo na Suécia</span></strong></h3><p>Rita Lobo conhece a Suécia, conhecendo a cultura, lugares e comidas.<br>Uma viagem em vídeo para entender o que torna esse país tão singular.<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://electrolux.com\">electrolux.com</a>.</p>"
+            "richText": "<p></p><h3><strong><span style=\"font-size: 15pt\">Veja a viagem completa da Rita Lobo na Suécia</span></strong></h3><p>Rita Lobo conhece a Suécia, explorando a cultura, lugares e sua comida.<br>Uma viagem em vídeo para entender o que torna esse país tão singular.</p>"
           }
         ]
       }
@@ -192,8 +191,8 @@
             "desktop": "center",
             "mobile": "center"
           },
-          "subtitle": "Conheça a linha de produtos Electrolux cocriada com a Rita Lobo.",
-          "centralizeTitleAndSubtitle": true
+          "centralizeTitleAndSubtitle": true,
+          "subtitle": "Conheça as receitas Rita Lobo e aprenda como preparar pratos gostosos."
         },
         "categories": [
           {
@@ -260,7 +259,7 @@
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "title": "<h2>Receitas Air Fryer</h2>",
-          "subtitle": "Descubra no Panelinha receitas deliciosas para preparar na Air Fryer."
+          "subtitle": "Descubra no Panelinha receitas deliciosas da Rita Lobo para preparar na Air Fryer."
         },
         "articles": [
           {
@@ -361,7 +360,8 @@
         "section": {
           "children": null,
           "centralizeTitleAndSubtitle": true,
-          "title": "<h2>Coleção</h2>"
+          "title": "<h2>Coleção</h2>",
+          "subtitle": "Conheça a linha de produtos Electrolux cocriada com a Rita Lobo."
         },
         "montageItemsMobile": [
           {

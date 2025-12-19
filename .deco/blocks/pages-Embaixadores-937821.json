@@ -290,10 +290,10 @@
               "link": {
                 "target": "blank",
                 "title": "Brownie na Air Fryer",
-                "href": "/#"
+                "href": "https://panelinha.com.br/receita/brownie-na-air-fryer-da-rita-lobo"
               },
               "loadingOptions": {
-                "loading": "lazy",
+                "loading": "eager",
                 "fetchPriority": "high"
               },
               "alt": "Brownie na Air Fryer",
@@ -302,9 +302,9 @@
                 "mobile": "https://assets.decocache.com/content-hub/ab510f4d-ede0-400e-8da3-1f445582e329/brownie--BannerMediaSection.png"
               }
             },
-            "title": "Brownie na Air Fryer",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
+            "title": "Brownie Cremoso na Air Fryer",
+            "description": "O bolinho cremoso de chocolate é assado na Air Fryer em potes individuais. No cestinho, podem ser feitas quatro porções...",
+            "href": "https://panelinha.com.br/receita/brownie-na-air-fryer-da-rita-lobo",
             "cta": "Ver receita"
           },
           {
@@ -312,7 +312,7 @@
               "link": {
                 "target": "blank",
                 "title": "Alecrim Açucarado na Air Fryer",
-                "href": "/#"
+                "href": "https://panelinha.com.br/receita/alecrim-acucarado-na-air-fryer"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -325,8 +325,8 @@
               }
             },
             "title": "Alecrim Açucarado na Air Fryer",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
+            "description": "Este ano, vai ter neve na sua cozinha. E é a Air Fryer que trabalha para dar esse efeito maravilhoso com açúcar nas fol...",
+            "href": "https://panelinha.com.br/receita/alecrim-acucarado-na-air-fryer",
             "cta": "Ver receita"
           },
           {
@@ -334,7 +334,7 @@
               "link": {
                 "target": "blank",
                 "title": "Frango Assado na Air Fryer",
-                "href": "/#"
+                "href": "https://panelinha.com.br/receita/coxinha-da-asa-frango-na-air-fryer"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -346,9 +346,9 @@
                 "mobile": "https://assets.decocache.com/content-hub/38cb3df5-1bd4-4739-a8eb-10b4dbfbb404/airfryer-mobile.png"
               }
             },
-            "title": "Frango Assado na Air Fryer",
-            "description": "Somos a primeira empresa do setor a incluir nas entregas um caminhão movido Somos a primeira empresa do setor a incluir...",
-            "href": "/#",
+            "title": "Coxinha da asa de frango na Air Fryer",
+            "description": "O segredo para deixar as coxinhas da asa de frango bem temperadinhas, suculentas e crocantes é envolver cada pedaço com...",
+            "href": "https://panelinha.com.br/receita/coxinha-da-asa-frango-na-air-fryer",
             "cta": "Ver receita"
           }
         ]

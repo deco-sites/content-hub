@@ -186,13 +186,13 @@
         "__resolveType": "site/sections/Lps/CategoriesGridSection.tsx",
         "section": {
           "children": null,
-          "title": "<h2>Receitas Rita Lobo</h2>",
+          "title": "<h2>Conheça mais sobre a linha Rita Lobo</h2>",
           "titleAlignment": {
             "desktop": "center",
             "mobile": "center"
           },
           "centralizeTitleAndSubtitle": true,
-          "subtitle": "Conheça as receitas Rita Lobo e aprenda como preparar pratos gostosos."
+          "subtitle": "Conheça os produtos Rita Lobo e aprenda como preparar pratos deliciosos."
         },
         "categories": [
           {

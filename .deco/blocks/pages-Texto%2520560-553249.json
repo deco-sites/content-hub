@@ -20,7 +20,22 @@
           "title": "<h1>O que significam os programas de lavagem? Guia explicativo</h1>",
           "articlePaddingForContent": true,
           "articlePaddingForTitleAndSubtitle": true
-        }
+        },
+        "imageCollection": [
+          {
+            "link": {
+              "target": "blank"
+            },
+            "loadingOptions": {
+              "loading": "lazy",
+              "fetchPriority": "high"
+            },
+            "src": {
+              "desktop": "https://assets.decocache.com/content-hub/a9a15938-f5d0-4cc2-8afa-0dec691a1b77/560.jpg",
+              "mobile": "https://assets.decocache.com/content-hub/265ff49f-fdef-4b48-b18c-d077b43d854a/560-MOBILE.jpg"
+            }
+          }
+        ]
       }
     },
     {

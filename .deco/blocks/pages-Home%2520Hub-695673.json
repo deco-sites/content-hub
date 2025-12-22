@@ -635,7 +635,7 @@
             "image": {
               "link": {
                 "title": "Assistência",
-                "href": "/#",
+                "href": "/garantia-estendida",
                 "target": "blank"
               },
               "loadingOptions": {
@@ -648,10 +648,10 @@
               },
               "alt": "Assistência"
             },
-            "title": "Assistência",
+            "title": "Garantia Estendida",
             "cta": {
               "text": "Saiba mais",
-              "link": "link02",
+              "link": "/garantia-estendida",
               "target": "_blank"
             }
           },
@@ -660,7 +660,7 @@
             "image": {
               "link": {
                 "title": "Personal Cheff",
-                "href": "/#",
+                "href": "/compra-recorrente-electrolux",
                 "target": "blank"
               },
               "loadingOptions": {
@@ -673,10 +673,10 @@
               },
               "alt": "Personal Cheff"
             },
-            "title": "Personal Cheff",
+            "title": "Assinaturas",
             "cta": {
               "text": "Saiba mais",
-              "link": "link03",
+              "link": "/compra-recorrente-electrolux",
               "target": "_blank"
             }
           },
@@ -685,7 +685,7 @@
             "image": {
               "link": {
                 "title": "Assinatura",
-                "href": "/compra-recorrente-electrolux",
+                "href": "/central-de-servicos-electrolux/instalacao",
                 "target": "blank"
               },
               "loadingOptions": {
@@ -698,9 +698,9 @@
               },
               "alt": "Assinatura"
             },
-            "title": "Assinatura",
+            "title": "Instalação",
             "cta": {
-              "link": "/compra-recorrente-electrolux",
+              "link": "/central-de-servicos-electrolux/instalacao",
               "target": "_blank",
               "text": "Saiba mais"
             }
@@ -710,7 +710,7 @@
             "image": {
               "link": {
                 "title": "Manutenção Preventiva",
-                "href": "/#",
+                "href": "/central-de-servicos-electrolux/conserto",
                 "target": "blank"
               },
               "loadingOptions": {
@@ -723,12 +723,31 @@
               },
               "alt": "Manutenção Preventiva"
             },
-            "title": "Manutenção Preventiva",
+            "title": "Conserto",
             "cta": {
               "text": "Saiba mais",
-              "link": "link05",
+              "link": "/central-de-servicos-electrolux/conserto",
               "target": "_blank"
             }
+          },
+          {
+            "text": "Lorem Lorem Lorem Lorem",
+            "cta": {
+              "text": "Saiba mais",
+              "link": "//central-de-servicos-electrolux/limpeza",
+              "target": "_blank"
+            },
+            "image": {
+              "link": {
+                "target": "blank",
+                "href": "/central-de-servicos-electrolux/limpeza"
+              },
+              "loadingOptions": {
+                "loading": "eager",
+                "fetchPriority": "high"
+              }
+            },
+            "title": "Limpeza"
           }
         ]
       }

@@ -161,130 +161,140 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
-        "section": {
-          "title": "<h2>Quer uma maozinha? Nossos embaixadores te ajudam</h2>",
-          "children": null,
-          "centralizeTitleAndSubtitle": true,
-          "marginBottomMobile": 48,
-          "marginBottomDesktop": 48
-        },
-        "ambassadors": [
-          {
-            "photo": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Embaixadora 1"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Product/ProductAmbassadorSection.tsx",
+              "section": {
+                "title": "<h2>Quer uma maozinha? Nossos embaixadores te ajudam</h2>",
+                "children": null,
+                "centralizeTitleAndSubtitle": true,
+                "marginBottomMobile": 48,
+                "marginBottomDesktop": 48
               },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg",
-                "mobile": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg"
-              },
-              "alt": "Embaixadora 1"
-            },
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
+              "ambassadors": [
+                {
+                  "photo": {
+                    "link": {
+                      "target": "blank",
+                      "href": "/#",
+                      "title": "Embaixadora 1"
+                    },
+                    "loadingOptions": {
+                      "loading": "lazy",
+                      "fetchPriority": "high"
+                    },
+                    "src": {
+                      "desktop": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg",
+                      "mobile": "https://assets.decocache.com/content-hub/32c9ee44-362e-4d0a-9df0-18f278cb4a99/embaixadores-quer-uma-maozinha-1.jpg"
+                    },
+                    "alt": "Embaixadora 1"
+                  },
+                  "products": {
+                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                    "props": {
+                      "sort": "price:desc",
+                      "collection": "2140",
+                      "count": 1
+                    }
+                  }
+                },
+                {
+                  "photo": {
+                    "link": {
+                      "target": "blank",
+                      "href": "/#",
+                      "title": "Embaixador 2"
+                    },
+                    "loadingOptions": {
+                      "loading": "lazy",
+                      "fetchPriority": "high"
+                    },
+                    "src": {
+                      "desktop": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg",
+                      "mobile": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg"
+                    },
+                    "alt": "Embaixador 2"
+                  },
+                  "products": {
+                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                    "props": {
+                      "sort": "price:desc",
+                      "collection": "2140",
+                      "count": 1
+                    }
+                  }
+                },
+                {
+                  "photo": {
+                    "link": {
+                      "target": "blank",
+                      "href": "/#",
+                      "title": "Rita Lobo"
+                    },
+                    "loadingOptions": {
+                      "loading": "lazy",
+                      "fetchPriority": "high"
+                    },
+                    "alt": "Rita Lobo",
+                    "src": {
+                      "desktop": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg",
+                      "mobile": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg"
+                    }
+                  },
+                  "products": {
+                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                    "props": {
+                      "sort": "price:desc",
+                      "collection": "2140",
+                      "count": 1
+                    }
+                  }
+                },
+                {
+                  "photo": {
+                    "link": {
+                      "target": "blank",
+                      "href": "/#",
+                      "title": "Embaixadora 4"
+                    },
+                    "loadingOptions": {
+                      "loading": "lazy",
+                      "fetchPriority": "high"
+                    },
+                    "src": {
+                      "desktop": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg",
+                      "mobile": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg"
+                    },
+                    "alt": "Embaixadora 4"
+                  },
+                  "products": {
+                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+                    "props": {
+                      "sort": "price:desc",
+                      "collection": "2140",
+                      "count": 1
+                    }
+                  }
+                }
+              ],
+              "configs": {
+                "slidesPerViewResponsive": {
+                  "mobile": 1,
+                  "tablet": 1,
+                  "desktop": 4
+                }
               }
             }
           },
-          {
-            "photo": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Embaixador 2"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg",
-                "mobile": "https://assets.decocache.com/content-hub/7b6aa422-4a73-4bb9-bc33-5f1b357e772c/embaixadores-quer-uma-maozinha-2.jpg"
-              },
-              "alt": "Embaixador 2"
-            },
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
-              }
-            }
-          },
-          {
-            "photo": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Rita Lobo"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "alt": "Rita Lobo",
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg",
-                "mobile": "https://assets.decocache.com/content-hub/f3898d4f-0d81-4faa-9534-05059e0a3746/embaixadores-quer-uma-maozinha-3.jpg"
-              }
-            },
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
-              }
-            }
-          },
-          {
-            "photo": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Embaixadora 4"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg",
-                "mobile": "https://assets.decocache.com/content-hub/191b6b0c-deab-4d05-b32a-4e4163184e7c/embaixadores-quer-uma-maozinha-4.jpg"
-              },
-              "alt": "Embaixadora 4"
-            },
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "price:desc",
-                "collection": "2140",
-                "count": 1
-              }
-            }
-          }
-        ],
-        "configs": {
-          "slidesPerViewResponsive": {
-            "mobile": 1,
-            "tablet": 1,
-            "desktop": 4
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
           }
         }
-      }
+      ]
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

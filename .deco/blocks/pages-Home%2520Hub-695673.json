@@ -525,23 +525,23 @@
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar",
-                "title": "quando é a black friday"
+                "title": "quando é a black friday",
+                "href": "/inspira/blog/produtos/geladeira-para-apartamento-pequeno"
               },
               "loadingOptions": {
                 "loading": "lazy",
                 "fetchPriority": "high"
               },
-              "alt": "Lavadora",
+              "alt": "Geladeira para apartamento",
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/8724cdf3-6677-4138-a010-d0105831dc88/462.webp",
-                "mobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp"
+                "desktop": "https://assets.decocache.com/content-hub/f8b067c1-7b58-4698-a447-0571b8c010b1/515.webp",
+                "mobile": "https://assets.decocache.com/content-hub/699ce01b-5a63-4e2d-ada2-3c639d1da2d2/515-MOBILE.webp"
               }
             },
-            "title": "<h3>Black Friday 2025</h3>",
-            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas",
-            "href": "/#",
-            "cta": "Saiba mais"
+            "title": "<h3>Geladeira para apartamento: o que você precisa saber antes de comprar</h3>",
+            "href": "/inspira/blog/produtos/geladeira-para-apartamento-pequeno",
+            "cta": "Saiba mais",
+            "description": "Escolher a geladeira para apartamento certa é fundamental para otimizar o espaço e proporcionar conforto e agilidade à rotina. Afinal, em cômodos pequenos, onde cada centímetro"
           },
           {
             "image": {
@@ -688,7 +688,7 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/2e37f617-9c58-4ed5-aaba-4bfdbc1be38e/rita-lobo.png",
+                "desktop": "https://assets.decocache.com/content-hub/04e97d00-1ee4-4fc0-a0bc-d40ad0119bfa/moca-bebendo-agua.webp",
                 "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
               },
               "alt": "Personal Cheff"
@@ -907,7 +907,6 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "2140",
             "count": 10
           }
         },
@@ -1050,59 +1049,69 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
-        "section": {
-          "children": null,
-          "centralizeTitleAndSubtitle": true,
-          "marginBottomMobile": 48,
-          "marginBottomDesktop": 48,
-          "title": "<h2>Explore por assunto</h2>"
-        },
-        "icons": [
-          {
-            "target": true,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "title": "Blog",
-            "imageSrc": "https://assets.decocache.com/content-hub/9bce9111-3792-4e48-b043-da93ee9480c3/blog.svg",
-            "redirect": "/content-hub-home-artigos"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Lps/CategoriesSection.tsx",
+              "section": {
+                "children": null,
+                "centralizeTitleAndSubtitle": true,
+                "marginBottomMobile": 48,
+                "marginBottomDesktop": 48,
+                "title": "<h2>Explore por assunto</h2>"
+              },
+              "icons": [
+                {
+                  "target": true,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#041E50",
+                  "title": "Blog",
+                  "imageSrc": "https://assets.decocache.com/content-hub/9bce9111-3792-4e48-b043-da93ee9480c3/blog.svg",
+                  "redirect": "/content-hub-home-artigos"
+                },
+                {
+                  "target": true,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#041E50",
+                  "imageSrc": "https://assets.decocache.com/content-hub/d550a16b-3faa-40c5-9ff5-594a2234362f/sustentabilidade.svg",
+                  "redirect": "/sustentabilidade",
+                  "title": "<p class=\"label\">Sustentabilidade</p>"
+                },
+                {
+                  "target": true,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#041E50",
+                  "imageSrc": "https://assets.decocache.com/content-hub/8ba2c67f-8a13-452e-931d-18fb7b0160d3/ambiente.svg",
+                  "redirect": "/#",
+                  "title": "Ambientes"
+                },
+                {
+                  "target": true,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#041E50",
+                  "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
+                  "title": "Embaixadores",
+                  "redirect": "/content-hub-ambassadors"
+                },
+                {
+                  "target": true,
+                  "boxBackgroundColor": "#ffffff",
+                  "boxBackgroundColorHover": "#041E50",
+                  "title": "Lançamentos",
+                  "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
+                  "redirect": "/lancamentos-electrolux"
+                }
+              ]
+            }
           },
-          {
-            "target": true,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "imageSrc": "https://assets.decocache.com/content-hub/d550a16b-3faa-40c5-9ff5-594a2234362f/sustentabilidade.svg",
-            "redirect": "/sustentabilidade",
-            "title": "<p class=\"label\">Sustentabilidade</p>"
-          },
-          {
-            "target": true,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "imageSrc": "https://assets.decocache.com/content-hub/8ba2c67f-8a13-452e-931d-18fb7b0160d3/ambiente.svg",
-            "redirect": "/#",
-            "title": "Ambientes"
-          },
-          {
-            "target": true,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "imageSrc": "https://assets.decocache.com/content-hub/121b842f-e01a-4eb7-aeff-cd756940cde2/support.svg",
-            "title": "Embaixadores",
-            "redirect": "/content-hub-ambassadors"
-          },
-          {
-            "target": true,
-            "boxBackgroundColor": "#ffffff",
-            "boxBackgroundColorHover": "#041E50",
-            "title": "Lançamentos",
-            "imageSrc": "https://assets.decocache.com/content-hub/11db44d6-4e62-45dc-80d2-8879e849476c/bag.svg",
-            "redirect": "/lancamentos-electrolux"
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

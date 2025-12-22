@@ -80,11 +80,6 @@
         },
         "categories": [
           {
-            "label": "Receitas",
-            "active": true,
-            "href": "/inspira/blog/receitas"
-          },
-          {
             "label": "Dicas",
             "href": "/inspira/blog/dicas"
           },
@@ -186,15 +181,15 @@
           {
             "linkText": "Conheça nossos outros artigos",
             "linkHref": "https://loja.electrolux.com.br/inspira/blog/dicas",
-            "title": "Dicas"
+            "title": "<h2>Dicas</h2>"
           },
           {
-            "title": "Produtos",
+            "title": "<h2>Produtos</h2>",
             "linkHref": "https://loja.electrolux.com.br/inspira/blog/produtos",
             "linkText": "Conheça nossos outros artigos"
           },
           {
-            "title": "Sustentabilidade",
+            "title": "<h2>Sustentabilidade</h2>",
             "linkHref": "https://loja.electrolux.com.br/inspira/blog/sustentabilidade",
             "linkText": "Conheça nossos outros artigos"
           }

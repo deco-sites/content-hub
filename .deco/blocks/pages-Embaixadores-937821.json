@@ -489,7 +489,8 @@
         "__resolveType": "site/sections/Product/ShelfSection.tsx",
         "section": {
           "children": null,
-          "centralizeTitleAndSubtitle": false
+          "centralizeTitleAndSubtitle": true,
+          "title": "<h2>Linha de Produtos Rita Lobo</h2>"
         },
         "configs": {
           "slidesPerViewResponsive": {

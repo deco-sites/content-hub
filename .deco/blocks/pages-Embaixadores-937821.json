@@ -370,7 +370,7 @@
             "link": {
               "color": "#2B2936",
               "text": "Ver produtos",
-              "href": "/#"
+              "href": "/eletroportateis/air-fryer"
             },
             "textBackgroundColor": "#F6F6F6",
             "typeOfContent": {
@@ -380,7 +380,7 @@
             },
             "textColor": "#2B3227",
             "description": "As Air Fryers Rita Lobo, nas versões Oven e Efficient , priorizam design e qualidade, permitindo preparar comida de verdade de forma prática e saborosa.",
-            "title": "<h3>Air Fryer</h3>"
+            "title": "<h3><a href=\"/eletroportateis/air-fryer\">Air Fryer</a></h3>"
           },
           {
             "fontFamily": "Arial",
@@ -388,9 +388,9 @@
             "link": {
               "color": "#2B2936",
               "text": "Ver produtos",
-              "href": "/#"
+              "href": "/eletroportateis/panela-eletrica/panela-de-arroz"
             },
-            "title": "<h3>Panela de arroz</h3>",
+            "title": "<h3><a href=\"/eletroportateis/panela-eletrica/panela-de-arroz\">Panela de Arroz</a></h3>",
             "description": "A panela de arroz Electrolux, com visor de vidro e função a vapor, oferece praticidade, segurança e sabor ao preparar arroz e outros alimentos.",
             "textBackgroundColor": "#F6F6F6",
             "typeOfContent": {
@@ -406,7 +406,7 @@
             "link": {
               "color": "#2B2936",
               "text": "Ver produtos",
-              "href": "/#"
+              "href": "/eletroportateis/panela-eletrica/panela-de-pressao"
             },
             "textBackgroundColor": "#F6F6F6",
             "typeOfContent": {
@@ -415,7 +415,7 @@
               "alt": "rita-lobo"
             },
             "textColor": "#2B3227",
-            "title": "<h3>Panela de Pressão Elétrica</h3>",
+            "title": "<h3><a href=\"/eletroportateis/panela-eletrica/panela-de-pressao\">Panela de Pressão Elétrica</a></h3>",
             "description": "As panelas de pressão elétricas cocriadas com Rita Lobo têm receitas pré-programadas e revestimento antiaderente para cozinhar com praticidade."
           }
         ],
@@ -424,8 +424,8 @@
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/#",
-                "title": "Ferro de passar"
+                "title": "Ferro de passar",
+                "href": "/eletroportateis/air-fryer"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -437,14 +437,14 @@
                 "mobile": "https://assets.decocache.com/content-hub/e862947b-3dd2-4e39-831b-026dc0d7605c/rita-lobo-colecao-2.webp"
               }
             },
-            "title": "<h3>Air Fryer</h3>",
+            "title": "<h3><a href=\"/eletroportateis/air-fryer\">Air Fryer</a></h3>",
             "text": "As Air Fryers Rita Lobo, nas versões Oven e Efficient , priorizam design e qualidade, permitindo preparar comida de verdade de forma prática e saborosa."
           },
           {
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/#",
+                "href": "/eletroportateis/panela-eletrica/panela-de-arroz",
                 "title": "Vaporizador"
               },
               "loadingOptions": {
@@ -457,15 +457,15 @@
                 "mobile": "https://assets.decocache.com/content-hub/830fe1d1-c71c-4e36-9c7f-15b827a93e21/panela-de-arroz-rita-lobo.png"
               }
             },
-            "title": "<h3>Panela de arroz</h3>",
+            "title": "<h3><a href=\"/eletroportateis/panela-eletrica/panela-de-arroz\">Panela de Arroz</a></h3>",
             "text": "A panela de arroz Electrolux, com visor de vidro e função a vapor, oferece praticidade, segurança e sabor ao preparar arroz e outros alimentos."
           },
           {
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/#",
-                "title": "Lavadora de alta pressão"
+                "title": "Lavadora de alta pressão",
+                "href": "/eletroportateis/panela-eletrica/panela-de-pressao"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -477,7 +477,7 @@
                 "mobile": "https://assets.decocache.com/content-hub/f239028c-b52f-4655-a0d3-c6214c68ee0f/rita-lobo-categoria-panela-de-arroz.jpg"
               }
             },
-            "title": "<h3>Panela de Pressão Elétrica</h3>",
+            "title": "<h3><a href=\"/eletroportateis/panela-eletrica/panela-de-pressao\">Panela de Pressão Elétrica</a></h3>",
             "text": "As panelas de pressão elétricas cocriadas com Rita Lobo têm receitas pré-programadas e revestimento antiaderente para cozinhar com praticidade."
           }
         ]

@@ -190,13 +190,18 @@
         "groups": [
           {
             "linkText": "Conheça nossos outros artigos",
-            "linkHref": "teste 1",
-            "title": "xxxx"
+            "linkHref": "https://loja.electrolux.com.br/inspira/blog/dicas",
+            "title": "Dicas"
           },
           {
-            "title": "Teste 2",
-            "linkText": "Teste 2",
-            "linkHref": "teste 2"
+            "title": "Produtos",
+            "linkHref": "https://loja.electrolux.com.br/inspira/blog/produtos",
+            "linkText": "Conheça nossos outros artigos"
+          },
+          {
+            "title": "Sustentabilidade",
+            "linkHref": "https://loja.electrolux.com.br/inspira/blog/sustentabilidade",
+            "linkText": "Conheça nossos outros artigos"
           }
         ]
       }

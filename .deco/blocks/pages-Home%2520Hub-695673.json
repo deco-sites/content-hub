@@ -607,7 +607,6 @@
         },
         "foldItems": [
           {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
             "image": {
               "link": {
                 "title": "Retirada & Coleta",
@@ -628,7 +627,8 @@
               "link": "/coleta-descarte-consciente",
               "target": "_blank",
               "text": "Saiba mais"
-            }
+            },
+            "text": "Oferecemos o serviço de Coleta e Descarte Consciente do eletrodoméstico que você está substituindo com a compra do seu novo produto Electrolux. Os produtos serão retirados e enviados para que a reciclagem aconteça corretamente em um de nossos parceiros, ajudando o meio ambiente e facilitando a sua vida."
           },
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",

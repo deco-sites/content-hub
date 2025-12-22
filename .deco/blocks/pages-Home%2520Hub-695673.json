@@ -437,7 +437,8 @@
             "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis",
             "link": {
               "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar"
-            }
+            },
+            "textBackgroundColor": "#ffffff"
           },
           {
             "fontFamily": "Arial",
@@ -451,7 +452,8 @@
             "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux. \nEsses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções da Black Friday",
             "link": {
               "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
-            }
+            },
+            "textBackgroundColor": "#ffffff"
           },
           {
             "fontFamily": "Arial",

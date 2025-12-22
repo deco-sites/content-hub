@@ -417,7 +417,7 @@
         "__resolveType": "site/sections/Lps/HomeHubInfoSection.tsx",
         "section": {
           "title": "<h2>Últimos Artigos</h2>",
-          "subtitle": "Ver todos os artigos",
+          "subtitle": "Veja os últimos artigos do Blog Electrolux",
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
@@ -482,7 +482,7 @@
         "__resolveType": "site/sections/Lps/ArticleGridSection.tsx",
         "section": {
           "title": "<h2>Outros artigos</h2>",
-          "subtitle": "Conheça todos os nossos outros artigos aqui",
+          "subtitle": "Explore outros artigos selecionados especialmente para você",
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
@@ -586,7 +586,7 @@
         "__resolveType": "site/sections/Lps/FoldItemsSection.tsx",
         "section": {
           "title": "<h2>Nossos Serviços</h2>",
-          "subtitle": "Conheça mais sobre nossos serviços",
+          "subtitle": "Descubra os serviços pensados para facilitar sua rotina",
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "fullWidth": false,

@@ -80,14 +80,9 @@
         },
         "categories": [
           {
-            "label": "Todos",
-            "active": false,
-            "href": "/inspira/blog/todos"
-          },
-          {
             "label": "Receitas",
-            "href": "/inspira/blog/receitas",
-            "active": true
+            "active": true,
+            "href": "/inspira/blog/receitas"
           },
           {
             "label": "Dicas",

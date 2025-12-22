@@ -899,7 +899,7 @@
           "title": "<h2>Ofertas especiais para você</h2>",
           "children": null,
           "centralizeTitleAndSubtitle": true,
-          "subtitle": "Veja produtos selecionadas especialmente para você",
+          "subtitle": "Veja produtos com frete grátis",
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48
         },
@@ -907,7 +907,8 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "count": 10
+            "count": 10,
+            "collection": "2834"
           }
         },
         "configs": {

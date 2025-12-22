@@ -1,6 +1,6 @@
 {
   "name": "Home Blog Inspira",
-  "path": "/content-hub-artigos",
+  "path": "/inspira/blog",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -35,15 +35,15 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/8724cdf3-6677-4138-a010-d0105831dc88/462.webp",
-                "mobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp"
+                "desktop": "https://assets.decocache.com/content-hub/f2cb713a-c59d-42e0-b28b-cb19c7049a40/559.webp",
+                "mobile": "https://assets.decocache.com/content-hub/9f009e99-37fb-48e9-939c-0131327aff49/559-MOBILE.webp"
               },
-              "alt": "Mulher pesquisando ofertas de black friday no tablet"
+              "alt": "maquina de lavar"
             },
-            "title": "<h3>Black Friday 2025</h3>",
-            "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar",
+            "title": "<h3>Quais máquinas de lavar têm melhor consumo de água e energia?</h3>",
             "ctaLabel": "Saiba mais",
-            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis da Electrolux! "
+            "description": "Optar por uma lavadora Electrolux econômica na Black Friday representa investir em eficiência, conforto e sustentabilidade na rotina. Com tecnologias que otimizam o consumo de água e energia, esses produtos foram desenvolvidos para oferecer desempenho superior sem desperdícios.",
+            "href": "/inspira/blog/sustentabilidade/lavadora-economica-black-friday"
           },
           {
             "image": {
@@ -55,15 +55,35 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/539edc2f-f239-4fb0-abd8-0fde15368181/485.webp",
-                "mobile": "https://assets.decocache.com/content-hub/7e30e524-59a9-43a2-9464-e1abf578b9dd/485-MOBILE.webp"
+                "desktop": "https://assets.decocache.com/content-hub/29810b31-65de-4185-9eee-8ed7227255ae/485.webp",
+                "mobile": "https://assets.decocache.com/content-hub/fce8029c-344f-4df0-af41-c2c1f4062efc/485-MOBILE.webp"
               },
               "alt": "Geladeira inox Electrolux em destaque em cozinha com iluminação baixa"
             },
-            "title": "<h3>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h3>",
             "ctaLabel": "Saiba mais",
-            "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux.  Esses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções",
-            "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
+            "title": "<h3>Tipos de geladeira Electrolux: descubra qual combina com você</h3>",
+            "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux. Esses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções da Black Friday",
+            "href": "/inspira/blog/produtos/tipos-geladeira-black-friday"
+          },
+          {
+            "image": {
+              "link": {
+                "target": "blank"
+              },
+              "loadingOptions": {
+                "loading": "lazy",
+                "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/557e1121-6c30-436a-baee-dcb9d3f1d40e/486.webp",
+                "mobile": "https://assets.decocache.com/content-hub/d92acf62-414e-4bf4-b946-fd9c2ba75ce8/486-MOBILE.webp"
+              },
+              "alt": "familia próxima de geladeira "
+            },
+            "title": "<h3>Tipos de geladeira Electrolux: descubra qual combina com você</h3>",
+            "description": "Se você está pesquisando sobre tipos de geladeira Electrolux Black Friday, chegou a hora de conhecer em detalhes os modelos que podem transformar sua rotina na cozinha.   Na Black Friday, as geladeiras Electrolux unem inovação, design sofisticado e condições especiais para transformar sua rotina. Descubra qual modelo combina com seu estilo de vida e aproveite o momento ideal para investir em qualidade premium. ",
+            "href": "/inspira/blog/produtos/tipos-geladeira-black-friday",
+            "ctaLabel": "Saiba mais"
           }
         ]
       }

@@ -1,6 +1,6 @@
 {
   "name": "Home Hub",
-  "path": "/content-hub-home-hub",
+  "path": "/inspira",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -688,8 +688,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/04e97d00-1ee4-4fc0-a0bc-d40ad0119bfa/moca-bebendo-agua.webp",
-                "mobile": "https://assets.decocache.com/content-hub/5007f529-71fc-4163-86bc-7de7be1d5d7b/rita-lobo-mobile.png"
+                "desktop": "https://assets.decocache.com/content-hub/8d8e26cb-83fe-4411-82ff-240b2f05ca5a/mulher-digitando-notebook.webp",
+                "mobile": "https://assets.decocache.com/content-hub/8d8e26cb-83fe-4411-82ff-240b2f05ca5a/mulher-digitando-notebook.webp"
               },
               "alt": "Personal Cheff"
             },
@@ -1151,50 +1151,18 @@
           {
             "link": {
               "target": "blank",
-              "href": "/#",
-              "title": "Rita Lobo"
+              "href": "https://www.youtube.com/watch?v=aKOp5nR5YAQ",
+              "title": "youtube"
             },
             "loadingOptions": {
               "loading": "lazy",
               "fetchPriority": "high"
             },
             "src": {
-              "desktop": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png",
-              "mobile": "https://assets.decocache.com/content-hub/655cb16a-d284-459f-bce1-98d5d632204f/rita-lobo--BannerMediaSection.png"
+              "desktop": "https://assets.decocache.com/content-hub/12ce738d-faa7-43da-8967-6f7e1c751411/electrolux-video-capa-youtube.png",
+              "mobile": "https://assets.decocache.com/content-hub/12ce738d-faa7-43da-8967-6f7e1c751411/electrolux-video-capa-youtube.png"
             },
-            "alt": "Rita Lobo"
-          },
-          {
-            "link": {
-              "target": "blank",
-              "href": "/#",
-              "title": "Rita Lobo"
-            },
-            "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/50a91048-2ec8-4139-a8a6-33811a18a2d8/rita-lobo-alecrim.png",
-              "mobile": "https://assets.decocache.com/content-hub/50a91048-2ec8-4139-a8a6-33811a18a2d8/rita-lobo-alecrim.png"
-            },
-            "alt": "Alecrim"
-          },
-          {
-            "link": {
-              "target": "blank",
-              "href": "/#",
-              "title": "Brownie"
-            },
-            "loadingOptions": {
-              "loading": "lazy",
-              "fetchPriority": "high"
-            },
-            "src": {
-              "desktop": "https://assets.decocache.com/content-hub/2e5d12db-13ec-490a-89bf-4e8b09ac0b9e/rita-lobo-brownie.png",
-              "mobile": "https://assets.decocache.com/content-hub/2e5d12db-13ec-490a-89bf-4e8b09ac0b9e/rita-lobo-brownie.png"
-            },
-            "alt": "Brownie"
+            "alt": "Youtube"
           }
         ],
         "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."

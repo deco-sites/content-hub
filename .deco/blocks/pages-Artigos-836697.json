@@ -21,7 +21,7 @@
           "children": null,
           "centralizeTitleAndSubtitle": true
         },
-        "heading": "Últimos artigos:",
+        "heading": "<h2>Últimos artigos:</h2>",
         "panelBgColor": "#041E50",
         "defaultCtaLabel": "Saiba mais",
         "slides": [
@@ -40,7 +40,7 @@
               },
               "alt": "Mulher pesquisando ofertas de black friday no tablet"
             },
-            "title": "Black Friday 2025",
+            "title": "<h3>Black Friday 2025</h3>",
             "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar",
             "ctaLabel": "Saiba mais",
             "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis da Electrolux! "
@@ -60,7 +60,7 @@
               },
               "alt": "Geladeira inox Electrolux em destaque em cozinha com iluminação baixa"
             },
-            "title": "Qual a melhor geladeira Electrolux para comprar na Black Friday?",
+            "title": "<h3>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h3>",
             "ctaLabel": "Saiba mais",
             "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux.  Esses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções",
             "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
@@ -98,7 +98,7 @@
               "alt": "Teste microondas",
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
-            "title": "Por que a Black Friday é a melhor época para trocar sua air fryer por um modelo Electrolux",
+            "title": "<h3>Por que a Black Friday é a melhor época para trocar sua air fryer por um modelo Electrolux</h3>",
             "cta": "Saiba mais",
             "href": "/inspira/blog/dicas/vale-a-pena-trocar-air-fryer-black-friday",
             "description": "Trocar a sua air fryer por um modelo Electrolux na Black Friday ..."
@@ -107,7 +107,7 @@
             "image": {
               "src": "https://assets.decocache.com/content-hub/8724cdf3-6677-4138-a010-d0105831dc88/462.webp"
             },
-            "title": "Black Friday 2025",
+            "title": "<h3>Black Friday 2025</h3>",
             "cta": "Saiba mais",
             "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal...",
             "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar"
@@ -116,7 +116,7 @@
             "image": {
               "src": "https://assets.decocache.com/content-hub/05637f9f-9eb9-4b95-ab93-880e085b9363/500.webp"
             },
-            "title": "Descontos Electrolux Black Friday: renove sua casa com tecnologia e design premium",
+            "title": "<h3>Descontos Electrolux Black Friday: renove sua casa com tecnologia e design premium</h3>",
             "cta": "Saiba mais",
             "description": "Os descontos Electrolux Black Friday são a chance perfeita de tr...",
             "href": "/inspira/blog/dicas/renove-sua-casa-com-descontos-black-friday"
@@ -125,7 +125,7 @@
             "image": {
               "src": "https://assets.decocache.com/content-hub/a58a5fb3-22be-4d4b-bdc1-eb8b48b4c085/485-(1).webp"
             },
-            "title": "Qual a melhor geladeira Electrolux para comprar na Black Friday?",
+            "title": "<h3>Qual a melhor geladeira Electrolux para comprar na Black Friday?</h3>",
             "cta": "Saiba mais",
             "description": "A Black Friday é a oportunidade perfeita para renovar sua cozin... ",
             "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
@@ -135,7 +135,7 @@
               "src": "https://assets.decocache.com/content-hub/ee0f2592-4b64-4ca8-afa9-ec3a01c3b4ba/486.webp"
             },
             "cta": "Saiba mais",
-            "title": "Tipos de geladeira Electrolux Black Friday: descubra qual combina com você",
+            "title": "<h3>Tipos de geladeira Electrolux Black Friday: descubra qual combina com você</h3>",
             "description": "Se você está pesquisando sobre tipos de geladeira Electrolux Bla...",
             "href": "/inspira/blog/produtos/tipos-geladeira-black-friday"
           },
@@ -143,7 +143,7 @@
             "image": {
               "src": "https://assets.decocache.com/content-hub/07583e20-9858-49e2-a38c-34a8088e0fe2/487-(2).webp"
             },
-            "title": "Geladeira Electrolux pequena Black Friday: encontre o modelo ideal para sua cozinha",
+            "title": "<h3>Geladeira Electrolux pequena Black Friday: encontre o modelo ideal para sua cozinha</h3>",
             "cta": "Saiba mais",
             "description": "Chegou a hora mais esperada do ano: o momento de encontrar a gel...",
             "href": "/inspira/blog/produtos/geladeira-pequena-black-friday"
@@ -153,7 +153,7 @@
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
             "cta": "Saiba mais",
-            "title": "Air fryer Electrolux: descubra quais modelos são mais econômicos em energia",
+            "title": "<h3>Air fryer Electrolux: descubra quais modelos são mais econômicos em energia</h3>",
             "description": "Você já imaginou preparar receitas deliciosas gastando menos ene...",
             "href": "/inspira/blog/sustentabilidade/air-fryer-economica-black-friday"
           },
@@ -162,7 +162,7 @@
               "src": "https://assets.decocache.com/content-hub/3aa5e0a0-5ac8-4eae-ad1f-bf070a146365/522.webp"
             },
             "cta": "Saiba mais",
-            "title": "Como escolher uma geladeira econômica e eficiente para o seu lar?",
+            "title": "<h3>Como escolher uma geladeira econômica e eficiente para o seu lar?</h3>",
             "description": "Escolher uma geladeira econômica traz benefícios que ultrapassam...",
             "href": "/inspira/blog/sustentabilidade/geladeira-economica"
           },
@@ -170,7 +170,7 @@
             "image": {
               "src": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
             },
-            "title": "Purificador Electrolux econômico Black Friday: descubra o modelo ideal para você",
+            "title": "<h3>Purificador Electrolux econômico Black Friday: descubra o modelo ideal para você</h3>",
             "cta": "Saiba mais",
             "description": "A procura por um purificador Electrolux econômico Black Friday a...",
             "href": "/inspira/blog/sustentabilidade/purificador-economico-black-friday"

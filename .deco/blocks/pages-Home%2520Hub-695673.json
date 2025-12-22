@@ -128,39 +128,6 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/InfoCardSection.tsx",
-        "section": {
-          "title": "<h2>Inspire-se</h2>",
-          "children": null,
-          "centralizeTitleAndSubtitle": true,
-          "marginBottomMobile": 48,
-          "marginBottomDesktop": 48,
-          "fullWidth": true,
-          "subtitle": "Conteúdos selecionados de acordo com a sua necessidade"
-        },
-        "infoCards": [
-          {
-            "link": {
-              "color": "#041E50",
-              "text": "Ver mais",
-              "href": "/inspira/blog/produtos/geladeira-para-apartamento-pequeno"
-            },
-            "direction": "right",
-            "richText": "<h3><strong><span style=\"color: rgb(4, 30, 80); font-size: 15pt\">Geladeira para apartamento: o que você precisa saber antes de comprar</span></strong></h3><p style=\"text-align: justify\"><span style=\"color: rgb(43, 41, 54)\">Escolher a geladeira para apartamento certa é fundamental para otimizar o espaço e proporcionar conforto e agilidade à rotina</span></p>",
-            "typeOfContent": {
-              "srcDesktop": "https://assets.decocache.com/content-hub/25c6b1c6-38c9-4d31-9f99-c3935c04e9d0/515.webp",
-              "srcMobile": "https://assets.decocache.com/content-hub/41ae8c7e-007e-417b-b866-62e0b9b542c8/515-MOBILE.webp",
-              "alt": "Geladeira Side-by-Side preta electrolux"
-            },
-            "textBackgroundColor": "#f6f6f6",
-            "textColor": "#fff"
-          }
-        ]
-      }
-    },
-    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -306,11 +273,11 @@
               "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
               "section": {
                 "title": "<h2>Sua casa bem vivida</h2>",
-                "subtitle": "lorem ipsum dolor sit amet",
                 "children": null,
                 "centralizeTitleAndSubtitle": true,
                 "marginBottomMobile": 48,
                 "marginBottomDesktop": 48,
+                "subtitle": "lorem ipsum dolor sit amet",
                 "fullWidth": false
               },
               "data": [
@@ -426,13 +393,66 @@
       "section": {
         "__resolveType": "site/sections/Lps/HomeHubInfoSection.tsx",
         "section": {
-          "title": "<h2>Últimos Artigos</h2>",
-          "subtitle": "Veja os últimos artigos do Blog Electrolux",
+          "title": "<h2>Inspire-se</h2>",
+          "subtitle": "Conheça as linhas especiais da Eletrolux",
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48,
           "fullWidth": false
+        },
+        "infoCards": [
+          {
+            "fontFamily": "Arial",
+            "direction": "right",
+            "title": "<h3>Linha Home Pro</h3>",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/b4b099dc-54b6-4ab4-9202-1161ac28112a/linha-home-pro-electrolux.webp",
+              "srcMobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp",
+              "alt": "linha home pro"
+            },
+            "link": {
+              "href": "/linha-home-pro"
+            },
+            "textBackgroundColor": "#ffffff",
+            "description": "Eleve suas experiências do dia a dia.\nA linha Home Pro transforma a sua cozinha em um espaço de sensações."
+          },
+          {
+            "fontFamily": "Arial",
+            "direction": "left",
+            "title": "<h3>Linha Home Pro Series</h3>",
+            "typeOfContent": {
+              "srcDesktop": "https://assets.decocache.com/content-hub/1c2acc5a-a25e-4899-90ba-16f2af7060e5/linha-home-pro-series-electrolux.webp",
+              "srcMobile": "https://assets.decocache.com/content-hub/1c2acc5a-a25e-4899-90ba-16f2af7060e5/linha-home-pro-series-electrolux.webp",
+              "alt": "Família com Cachorro"
+            },
+            "link": {
+              "href": "/linhas-especiais/pro-series"
+            },
+            "textBackgroundColor": "#ffffff",
+            "description": "A linha Pro Series Electrolux segue as tendências mais sofisticadas de design, com estilo e muito charme. É uma coleção de produtos que investe em elegância em cada detalhe, com acabamentos em vidro preto e detalhes em light gold, que atraem a atenção pelo bom gosto de sua concepção."
+          }
+        ],
+        "configs": {
+          "customNavigation": {
+            "enabledMobile": true,
+            "enabledDesktop": true
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Lps/HomeHubInfoSection.tsx",
+        "section": {
+          "title": "<h2>Últimos Artigos</h2>",
+          "children": null,
+          "centralizeTitleAndSubtitle": true,
+          "marginBottomMobile": 48,
+          "marginBottomDesktop": 48,
+          "fullWidth": false,
+          "subtitle": "Veja os últimos artigos do Blog Electrolux"
         },
         "infoCards": [
           {
@@ -444,11 +464,11 @@
               "srcMobile": "https://assets.decocache.com/content-hub/5cf0a31f-63a6-40c7-91d8-4f8676161f51/462-MOBILE.webp",
               "alt": "mulher buscando promoções de black friday no tablet"
             },
-            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis",
             "link": {
               "href": "/inspira/blog/dicas/quando-e-a-black-friday-2025-e-o-que-comprar"
             },
-            "textBackgroundColor": "#ffffff"
+            "textBackgroundColor": "#ffffff",
+            "description": "A Black Friday 2025 já tem data marcada e é a oportunidade ideal para comprar os produtos que você deseja com as melhores ofertas. Saiba quando é a Black Friday e confira como se preparar para aproveitar as promoções imperdíveis"
           },
           {
             "fontFamily": "Arial",
@@ -459,11 +479,11 @@
               "srcMobile": "https://assets.decocache.com/content-hub/7e30e524-59a9-43a2-9464-e1abf578b9dd/485-MOBILE.webp",
               "alt": "Família com Cachorro"
             },
-            "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux. \nEsses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções da Black Friday",
             "link": {
               "href": "/inspira/blog/produtos/qual-melhor-geladeira-black-friday"
             },
-            "textBackgroundColor": "#ffffff"
+            "textBackgroundColor": "#ffffff",
+            "description": "A Black Friday é a oportunidade perfeita para renovar sua cozinha com uma geladeira Electrolux. \nEsses eletrodomésticos unem tecnologia, sofisticação e eficiência para transformar sua rotina. Descubra qual a melhor geladeira Electrolux para aproveitar as promoções da Black Friday"
           },
           {
             "fontFamily": "Arial",
@@ -601,9 +621,9 @@
           "subtitle": "Descubra os serviços pensados para facilitar sua rotina",
           "children": null,
           "centralizeTitleAndSubtitle": true,
-          "fullWidth": false,
           "marginBottomMobile": 48,
-          "marginBottomDesktop": 48
+          "marginBottomDesktop": 48,
+          "fullWidth": false
         },
         "foldItems": [
           {
@@ -877,9 +897,9 @@
         "__resolveType": "site/sections/Product/ShelfSection.tsx",
         "section": {
           "title": "<h2>Ofertas especiais para você</h2>",
-          "subtitle": "Veja produtos selecionadas especialmente para você",
           "children": null,
           "centralizeTitleAndSubtitle": true,
+          "subtitle": "Veja produtos selecionadas especialmente para você",
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48
         },
@@ -1094,6 +1114,28 @@
           "marginBottomMobile": 48,
           "marginBottomDesktop": 48
         },
+        "icons": [
+          {
+            "id": "Facebook",
+            "href": "https://www.facebook.com/electroluxbr/"
+          },
+          {
+            "id": "Instagram",
+            "href": "https://www.instagram.com/electroluxbr/"
+          },
+          {
+            "id": "Pinterest",
+            "href": "https://br.pinterest.com/electroluxbr/"
+          },
+          {
+            "id": "Youtube",
+            "href": "https://www.youtube.com/c/electroluxbr"
+          },
+          {
+            "id": "Linkedin",
+            "href": "https://br.linkedin.com/company/electroluxgroup"
+          }
+        ],
         "title": "Aproveite nossas redes sociais",
         "banners": [
           {
@@ -1143,28 +1185,6 @@
               "mobile": "https://assets.decocache.com/content-hub/2e5d12db-13ec-490a-89bf-4e8b09ac0b9e/rita-lobo-brownie.png"
             },
             "alt": "Brownie"
-          }
-        ],
-        "icons": [
-          {
-            "id": "Facebook",
-            "href": "https://www.facebook.com/electroluxbr/"
-          },
-          {
-            "id": "Instagram",
-            "href": "https://www.instagram.com/electroluxbr/"
-          },
-          {
-            "id": "Pinterest",
-            "href": "https://br.pinterest.com/electroluxbr/"
-          },
-          {
-            "id": "Youtube",
-            "href": "https://www.youtube.com/c/electroluxbr"
-          },
-          {
-            "id": "Linkedin",
-            "href": "https://br.linkedin.com/company/electroluxgroup"
           }
         ],
         "text": "Você pode tirar dúvidas, conhecer mais produtos em ação e suas funcionalidades, além de conferir dicas e mais sobre a Electrolux."

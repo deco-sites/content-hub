@@ -622,7 +622,7 @@
                 "mobile": "https://assets.decocache.com/content-hub/6064c43a-b9c5-4a91-8d04-854139b16858/fold-item-1.png"
               }
             },
-            "title": "Retirada & Coleta",
+            "title": "<h3>Retirada & Coleta</h3>",
             "cta": {
               "link": "/coleta-descarte-consciente",
               "target": "_blank",
@@ -631,7 +631,6 @@
             "text": "Oferecemos o serviço de Coleta e Descarte Consciente do eletrodoméstico que você está substituindo com a compra do seu novo produto Electrolux. Os produtos serão retirados e enviados para que a reciclagem aconteça corretamente em um de nossos parceiros, ajudando o meio ambiente e facilitando a sua vida."
           },
           {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
             "image": {
               "link": {
                 "title": "Assistência",
@@ -648,15 +647,16 @@
               },
               "alt": "Assistência"
             },
-            "title": "Garantia Estendida",
+            "title": "<h3>Garantia Estendida</h3>",
             "cta": {
               "text": "Saiba mais",
               "link": "/garantia-estendida",
               "target": "_blank"
-            }
+            },
+            "text": "Com a Garantia Estendida Electrolux, seu produto está coberto contra qualquer defeito funcional! A garantia Estendida Electrolux além da cobertura contra falhas funcionais, garante a troca do seu produto ou ressarcimento do seu investimento caso o produto não tenha conserto."
           },
           {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
+            "text": "Alguns produtos como filtros de água, filtros de aspirador, protetor de air fryer, etc precisam de compra recorrente. Programe suas compras e ganhe 15% de desconto e frete grátis. Facilite sua vida e garanta terá sempre esses produtos nas melhores condições.\n ",
             "image": {
               "link": {
                 "title": "Personal Cheff",
@@ -673,7 +673,7 @@
               },
               "alt": "Personal Cheff"
             },
-            "title": "Assinaturas",
+            "title": "<h3>Assinaturas</h3>",
             "cta": {
               "text": "Saiba mais",
               "link": "/compra-recorrente-electrolux",
@@ -697,13 +697,13 @@
               },
               "alt": "Assinatura"
             },
-            "title": "Instalação",
+            "title": "<h3>Instalação</h3>",
             "cta": {
               "link": "/central-de-servicos-electrolux/instalacao",
               "target": "_blank",
               "text": "Saiba mais"
             },
-            "text": "Contrate o serviço de Instalação da Electrolux e conte com toda a experiência da marca para que seus produtos sejam instalados de forma segura e que preservem o melhor desempenho desde o primeiro uso. Receba o melhor suporte e garantia de resolução Electrolux em cada detalhe, com o acompanhamento e\na tranquilidade que você merece."
+            "text": "Contrate o serviço de Instalação da Electrolux e conte com toda a experiência da marca para que seus produtos sejam instalados de forma segura e que preservem o melhor desempenho desde o primeiro uso. Receba o melhor suporte e garantia de resolução Electrolux em cada detalhe, com o acompanhamento e a tranquilidade que você merece."
           },
           {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
@@ -723,7 +723,7 @@
               },
               "alt": "Manutenção Preventiva"
             },
-            "title": "Conserto",
+            "title": "<h3>Conserto</h3>",
             "cta": {
               "text": "Saiba mais",
               "link": "/central-de-servicos-electrolux/conserto",
@@ -751,7 +751,7 @@
                 "mobile": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png"
               }
             },
-            "title": "Limpeza"
+            "title": "<h3>Limpeza</h3>"
           }
         ]
       }

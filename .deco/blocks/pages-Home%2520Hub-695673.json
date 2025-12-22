@@ -745,6 +745,10 @@
               "loadingOptions": {
                 "loading": "eager",
                 "fetchPriority": "high"
+              },
+              "src": {
+                "desktop": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png",
+                "mobile": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png"
               }
             },
             "title": "Limpeza"

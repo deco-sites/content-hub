@@ -1,6 +1,6 @@
 {
-  "name": "Categoria dicas",
-  "path": "/content-hub-blog-category",
+  "name": "Categoria Dicas",
+  "path": "/inspira/blog/dicas",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

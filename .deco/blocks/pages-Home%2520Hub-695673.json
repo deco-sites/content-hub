@@ -706,7 +706,6 @@
             "text": "Contrate o serviço de Instalação da Electrolux e conte com toda a experiência da marca para que seus produtos sejam instalados de forma segura e que preservem o melhor desempenho desde o primeiro uso. Receba o melhor suporte e garantia de resolução Electrolux em cada detalhe, com o acompanhamento e a tranquilidade que você merece."
           },
           {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id ullamcorper nibh. Proin vel massa a turpis finibus viverra. Vestibulum eu sem aliquet, lobortis tortor eget, ullamcorper felis. Pellentesque gravida luctus risus vel faucibus. Mauris dapibus justo vel porttitor imperdiet. Nulla facilisi. Etiam et gravida justo, id pulvinar orci. Nulla tempor turpis leo, id ultrices arcu ultricies vel. Aenean feugiat ac libero gravida congue. Cras ut metus vitae ex condimentum semper.",
             "image": {
               "link": {
                 "title": "Manutenção Preventiva",
@@ -718,8 +717,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png",
-                "mobile": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png"
+                "desktop": "https://assets.decocache.com/content-hub/c456376a-e172-4460-8133-92d1d551b386/servico-de-conserto-electrolux.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/c456376a-e172-4460-8133-92d1d551b386/servico-de-conserto-electrolux.jpg"
               },
               "alt": "Manutenção Preventiva"
             },
@@ -728,7 +727,8 @@
               "text": "Saiba mais",
               "link": "/central-de-servicos-electrolux/conserto",
               "target": "_blank"
-            }
+            },
+            "text": "Realize os consertos dos seus produtos Electrolux com especialistas preparados para cuidar daquilo que faz parte do seu dia enquanto você vive sua vida com tranquilidade. Mais do que restaurar, devolvemos a você a tranquilidade e o conforto de uma rotina sem interrupções. Sua casa bem vivida com o cuidado de quem entende do seu eletrodoméstico em todas as fases."
           },
           {
             "text": "Faça a higienização adequada de seus produtos sem complicações. Agende ou reagende a limpeza de seus produtos Electrolux com poucos cliques. Acompanhe a chegada do\ntécnico com transparência, segurança e sem longas esperas. Tudo em tempo real, com a qualidade Electrolux que você confia.",
@@ -747,8 +747,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png",
-                "mobile": "https://assets.decocache.com/content-hub/b2a3e4a8-a99f-4fd8-8eb4-f6878300c7ad/fold-item-5.png"
+                "desktop": "https://assets.decocache.com/content-hub/35865f95-370f-4458-803d-4eecfc5a8e22/servico-de-limpeza-electrolux.jpg",
+                "mobile": "https://assets.decocache.com/content-hub/35865f95-370f-4458-803d-4eecfc5a8e22/servico-de-limpeza-electrolux.jpg"
               }
             },
             "title": "<h3>Limpeza</h3>"

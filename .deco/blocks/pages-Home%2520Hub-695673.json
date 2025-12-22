@@ -90,8 +90,8 @@
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/content-hub-ambassadors",
-                "title": "Rita Lobo"
+                "title": "Rita Lobo",
+                "href": "/linha-rita-lobo"
               },
               "loadingOptions": {
                 "loading": "lazy",
@@ -103,7 +103,7 @@
                 "mobile": "https://assets.decocache.com/content-hub/08695bb6-e556-46cf-a9d3-5839e9cd9356/ritamob.png"
               }
             },
-            "name": "<h2><a href=\"/content-hub-ambassadors\">Rita Lobo</a></h2>"
+            "name": "<h2><a href=\"/linha-rita-lobo\">Rita Lobo</a></h2>"
           },
           {
             "image": {

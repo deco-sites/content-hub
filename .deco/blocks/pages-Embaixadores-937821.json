@@ -368,11 +368,11 @@
             "fontFamily": "Arial",
             "direction": "left",
             "link": {
-              "color": "#2B2936",
+              "color": "#000000",
               "text": "Ver produtos",
               "href": "/eletroportateis/air-fryer"
             },
-            "textBackgroundColor": "#F6F6F6",
+            "textBackgroundColor": "#000000",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/e862947b-3dd2-4e39-831b-026dc0d7605c/rita-lobo-colecao-2.webp",
               "srcMobile": "https://assets.decocache.com/content-hub/e862947b-3dd2-4e39-831b-026dc0d7605c/rita-lobo-colecao-2.webp",
@@ -386,13 +386,13 @@
             "fontFamily": "Arial",
             "direction": "left",
             "link": {
-              "color": "#2B2936",
+              "color": "#000000",
               "text": "Ver produtos",
               "href": "/eletroportateis/panela-eletrica/panela-de-arroz"
             },
             "title": "<h3><a href=\"/eletroportateis/panela-eletrica/panela-de-arroz\">Panela de Arroz</a></h3>",
             "description": "A panela de arroz Electrolux, com visor de vidro e função a vapor, oferece praticidade, segurança e sabor ao preparar arroz e outros alimentos.",
-            "textBackgroundColor": "#F6F6F6",
+            "textBackgroundColor": "#ffffff",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/830fe1d1-c71c-4e36-9c7f-15b827a93e21/panela-de-arroz-rita-lobo.png",
               "srcMobile": "https://assets.decocache.com/content-hub/830fe1d1-c71c-4e36-9c7f-15b827a93e21/panela-de-arroz-rita-lobo.png",

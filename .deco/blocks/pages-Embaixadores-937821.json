@@ -496,7 +496,11 @@
           "slidesPerViewResponsive": {
             "desktop": 4,
             "mobile": 1
-          }
+          },
+          "customNavigation": {
+            "enabledMobile": true
+          },
+          "centeredSlides": true
         },
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",

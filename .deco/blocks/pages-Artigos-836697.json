@@ -16,10 +16,10 @@
         "__resolveType": "site/sections/Lps/BlogArticlesSliderSection.tsx",
         "section": {
           "title": "<h1>Blog</h1>",
-          "subtitle": "Descubra artigos inspiradores, dicas para casa e dia a dia.",
           "fullWidth": false,
           "children": null,
-          "centralizeTitleAndSubtitle": true
+          "centralizeTitleAndSubtitle": true,
+          "subtitle": "Descubra artigos inspiradores e dicas para sua casa"
         },
         "heading": "<h2>Últimos artigos:</h2>",
         "panelBgColor": "#041E50",

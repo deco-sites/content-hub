@@ -602,7 +602,7 @@
               "link": {
                 "title": "Retirada & Coleta",
                 "target": "blank",
-                "href": "https://loja.electrolux.com.br/"
+                "href": "/coleta-descarte-consciente"
               },
               "loadingOptions": {
                 "loading": "eager",
@@ -615,9 +615,9 @@
             },
             "title": "Retirada & Coleta",
             "cta": {
-              "link": "link01",
+              "link": "/coleta-descarte-consciente",
               "target": "_blank",
-              "text": "Retirada & Coleta"
+              "text": "Saiba mais"
             }
           },
           {
@@ -640,7 +640,7 @@
             },
             "title": "Assistência",
             "cta": {
-              "text": "Assistência",
+              "text": "Saiba mais",
               "link": "link02",
               "target": "_blank"
             }
@@ -665,7 +665,7 @@
             },
             "title": "Personal Cheff",
             "cta": {
-              "text": "Personal Cheff",
+              "text": "Saiba mais",
               "link": "link03",
               "target": "_blank"
             }
@@ -675,7 +675,7 @@
             "image": {
               "link": {
                 "title": "Assinatura",
-                "href": "/#",
+                "href": "/compra-recorrente-electrolux",
                 "target": "blank"
               },
               "loadingOptions": {
@@ -690,9 +690,9 @@
             },
             "title": "Assinatura",
             "cta": {
-              "text": "Assinatura",
-              "link": "link04",
-              "target": "_blank"
+              "link": "/compra-recorrente-electrolux",
+              "target": "_blank",
+              "text": "Saiba mais"
             }
           },
           {
@@ -715,7 +715,7 @@
             },
             "title": "Manutenção Preventiva",
             "cta": {
-              "text": "Manutenção Preventiva",
+              "text": "Saiba mais",
               "link": "link05",
               "target": "_blank"
             }

@@ -52,7 +52,7 @@
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/content-hub-home-artigos",
+                "href": "/inspira/blog",
                 "title": "Blog"
               },
               "loadingOptions": {
@@ -65,7 +65,7 @@
                 "mobile": "https://assets.decocache.com/content-hub/41330569-f537-424c-80a5-9ea9655783b7/blogmob.png"
               }
             },
-            "name": "<h2><a href=\"https://loja.electrolux.com.br/content-hub-home-artigos\">Blog</a></h2>"
+            "name": "<h2><a href=\"https://loja.electrolux.com.br/inspira/blog\">Blog</a></h2>"
           },
           {
             "image": {

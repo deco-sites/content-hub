@@ -502,7 +502,7 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "2140",
+            "collection": "rita lobo",
             "count": 10
           }
         }

@@ -17,7 +17,7 @@
       "section": {
         "__resolveType": "site/sections/Lps/InspireTilesSection.tsx",
         "section": {
-          "title": "<h1>Electrolux Inspira DEV</h1>",
+          "title": "<h1>Electrolux Inspira</h1>",
           "children": null,
           "centralizeTitleAndSubtitle": true,
           "fullWidth": false
@@ -148,7 +148,7 @@
               "href": "/inspira/blog/produtos/geladeira-para-apartamento-pequeno"
             },
             "direction": "right",
-            "richText": "<h3><span style=\"color: #041e50; font-size: 10pt\">Geladeira</span></h3><h3><span style=\"color: #041e50; font-size: 15pt\">Geladeira para apartamento: o que você precisa saber antes de comprar</span></h3><p style=\"text-align: justify\"><span style=\"color: #2b2936\">Escolher a geladeira para apartamento certa é fundamental para otimizar o espaço e proporcionar conforto e agilidade à rotina</span></p>",
+            "richText": "<h3><span style=\"color: rgb(4, 30, 80); font-size: 15pt\">Geladeira para apartamento: o que você precisa saber antes de comprar</span></h3><p style=\"text-align: justify\"><span style=\"color: rgb(43, 41, 54)\">Escolher a geladeira para apartamento certa é fundamental para otimizar o espaço e proporcionar conforto e agilidade à rotina</span></p>",
             "typeOfContent": {
               "srcDesktop": "https://assets.decocache.com/content-hub/25c6b1c6-38c9-4d31-9f99-c3935c04e9d0/515.webp",
               "srcMobile": "https://assets.decocache.com/content-hub/41ae8c7e-007e-417b-b866-62e0b9b542c8/515-MOBILE.webp",
@@ -287,119 +287,129 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
-        "section": {
-          "title": "<h2>Sua casa bem vivida</h2>",
-          "subtitle": "lorem ipsum dolor sit amet",
-          "children": null,
-          "centralizeTitleAndSubtitle": true,
-          "marginBottomMobile": 48,
-          "marginBottomDesktop": 48,
-          "fullWidth": false
-        },
-        "data": [
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Para preservar"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Lps/DimmedColorsSection.tsx",
+              "section": {
+                "title": "<h2>Sua casa bem vivida</h2>",
+                "subtitle": "lorem ipsum dolor sit amet",
+                "children": null,
+                "centralizeTitleAndSubtitle": true,
+                "marginBottomMobile": 48,
+                "marginBottomDesktop": 48,
+                "fullWidth": false
               },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "title": "Para preservar",
-            "text": "Lorem ipsum dolor sit amet",
-            "link": "/#",
-            "color": {
-              "mobile": "#041E50",
-              "desktop": "#041E50"
+              "data": [
+                {
+                  "image": {
+                    "link": {
+                      "target": "blank",
+                      "href": "/#",
+                      "title": "Para preservar"
+                    },
+                    "loadingOptions": {
+                      "loading": "lazy",
+                      "fetchPriority": "high"
+                    },
+                    "src": {
+                      "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                      "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                    }
+                  },
+                  "title": "Para preservar",
+                  "text": "Lorem ipsum dolor sit amet",
+                  "link": "/#",
+                  "color": {
+                    "mobile": "#041E50",
+                    "desktop": "#041E50"
+                  }
+                },
+                {
+                  "image": {
+                    "link": {
+                      "target": "blank",
+                      "href": "/#",
+                      "title": "Para preservar"
+                    },
+                    "loadingOptions": {
+                      "loading": "lazy",
+                      "fetchPriority": "high"
+                    },
+                    "src": {
+                      "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                      "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                    },
+                    "alt": "lavadora"
+                  },
+                  "title": "Para preservar",
+                  "text": "Lorem ipsum dolor sit amet",
+                  "link": "/#",
+                  "color": {
+                    "desktop": "#6C7B67",
+                    "mobile": "#6C7B67"
+                  }
+                },
+                {
+                  "image": {
+                    "link": {
+                      "target": "blank",
+                      "href": "/#",
+                      "title": "Para preservar"
+                    },
+                    "loadingOptions": {
+                      "loading": "lazy",
+                      "fetchPriority": "high"
+                    },
+                    "src": {
+                      "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                      "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                    }
+                  },
+                  "title": "Para preservar",
+                  "text": "Lorem ipsum dolor sit amet",
+                  "link": "/#",
+                  "color": {
+                    "mobile": "#4A1E18",
+                    "desktop": "#4A1E18"
+                  }
+                },
+                {
+                  "image": {
+                    "link": {
+                      "target": "blank",
+                      "href": "/#",
+                      "title": "Para preservar"
+                    },
+                    "loadingOptions": {
+                      "loading": "lazy",
+                      "fetchPriority": "high"
+                    },
+                    "src": {
+                      "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
+                      "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
+                    },
+                    "alt": "Lavadora"
+                  },
+                  "title": "Para preservar",
+                  "text": "Lorem ipsum dolor sit amet",
+                  "link": "/#",
+                  "color": {
+                    "mobile": "#7E6464",
+                    "desktop": "#7E6464"
+                  }
+                }
+              ]
             }
           },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Para preservar"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              },
-              "alt": "lavadora"
-            },
-            "title": "Para preservar",
-            "text": "Lorem ipsum dolor sit amet",
-            "link": "/#",
-            "color": {
-              "desktop": "#6C7B67",
-              "mobile": "#6C7B67"
-            }
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Para preservar"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              }
-            },
-            "title": "Para preservar",
-            "text": "Lorem ipsum dolor sit amet",
-            "link": "/#",
-            "color": {
-              "mobile": "#4A1E18",
-              "desktop": "#4A1E18"
-            }
-          },
-          {
-            "image": {
-              "link": {
-                "target": "blank",
-                "href": "/#",
-                "title": "Para preservar"
-              },
-              "loadingOptions": {
-                "loading": "lazy",
-                "fetchPriority": "high"
-              },
-              "src": {
-                "desktop": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png",
-                "mobile": "https://assets.decocache.com/content-hub/f8938e0e-53cf-4cf3-99fa-0b3082c537a6/lavadora-premium-slider.png"
-              },
-              "alt": "Lavadora"
-            },
-            "title": "Para preservar",
-            "text": "Lorem ipsum dolor sit amet",
-            "link": "/#",
-            "color": {
-              "mobile": "#7E6464",
-              "desktop": "#7E6464"
-            }
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

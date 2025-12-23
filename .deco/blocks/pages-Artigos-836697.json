@@ -6,7 +6,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Lps/BreadcrumbSection.tsx",
-        "pathOverride": "/content-hub-artigos",
         "section": {
           "children": null
         }

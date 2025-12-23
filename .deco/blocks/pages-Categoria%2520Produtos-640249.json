@@ -509,7 +509,8 @@
                 "fetchPriority": "high"
               },
               "src": {
-                "desktop": "https://assets.decocache.com/content-hub/3e5edbcf-6f37-4af2-bcdf-618a17932962/543-v-final-(1)-Redimen.webp"
+                "desktop": "https://assets.decocache.com/content-hub/71267e6a-a7f4-45a2-adec-c0554e644764/800x453-desk.webp",
+                "mobile": "https://assets.decocache.com/content-hub/0ed50b0c-99ed-4c3d-97b4-09fa5223515e/352-x-201---mobile.webp"
               }
             },
             "cta": "saiba mais",

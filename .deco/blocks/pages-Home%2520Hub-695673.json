@@ -754,13 +754,13 @@
             "text": "Faça a higienização adequada de seus produtos sem complicações. Agende ou reagende a limpeza de seus produtos Electrolux com poucos cliques. Acompanhe a chegada do\ntécnico com transparência, segurança e sem longas esperas. Tudo em tempo real, com a qualidade Electrolux que você confia.",
             "cta": {
               "text": "Saiba mais",
-              "link": "//central-de-servicos-electrolux/limpeza",
+              "link": "https://central-de-servicos-electrolux/limpeza  ",
               "target": "_blank"
             },
             "image": {
               "link": {
                 "target": "blank",
-                "href": "/central-de-servicos-electrolux/limpeza"
+                "href": "https://central-de-servicos-electrolux/limpeza  "
               },
               "loadingOptions": {
                 "loading": "eager",
